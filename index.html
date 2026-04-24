@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latihan Uji Kompetensi Teknis — Jabatan Struktural KPP</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #ffffff; --bg-2: #f7f6f3; --bg-3: #f0ede8;
+  --text: #1a1a18; --text-2: #5a5a56; --text-3: #9a9994;
+  --border: rgba(0,0,0,0.10); --border-2: rgba(0,0,0,0.18);
+  --blue: #185FA5; --blue-l: #E6F1FB; --blue-m: #378ADD; --blue-d: #0C447C;
+  --green: #3B6D11; --green-l: #EAF3DE; --green-m: #639922;
+  --red: #A32D2D; --red-l: #FCEBEB; --red-m: #E24B4A;
+  --amber: #854F0B; --amber-l: #FAEEDA; --amber-m: #BA7517;
+  --purple: #534AB7; --purple-l: #EEEDFE; --purple-m: #7F77DD;
+  --teal: #0F6E56; --teal-l: #E1F5EE; --teal-m: #1D9E75;
+  --r-md: 8px; --r-lg: 12px; --r-xl: 16px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1c1a; --bg-2: #252522; --bg-3: #2e2e2b;
+    --text: #f0ede8; --text-2: #a8a49e; --text-3: #6a6860;
+    --border: rgba(255,255,255,0.09); --border-2: rgba(255,255,255,0.18);
+    --blue: #5BA3E8; --blue-l: #0C2D4A; --blue-m: #378ADD; --blue-d: #85B7EB;
+    --green: #97C459; --green-l: #173404; --green-m: #639922;
+    --red: #F09595; --red-l: #3A1010; --red-m: #E24B4A;
+    --amber: #EF9F27; --amber-l: #2A1800; --amber-m: #BA7517;
+    --purple: #AFA9EC; --purple-l: #26215C; --purple-m: #7F77DD;
+    --teal: #5DCAA5; --teal-l: #04342C; --teal-m: #1D9E75;
+  }
+}
+
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg-3); color: var(--text); min-height: 100vh; font-size: 15px; line-height: 1.6; }
+
+/* TOP BAR */
+.topbar { background: var(--bg); border-bottom: 0.5px solid var(--border); padding: 0 24px; height: 52px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.topbar-left { display: flex; align-items: center; gap: 10px; }
+.topbar-logo { width: 32px; height: 32px; border-radius: 8px; background: var(--blue); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+.topbar-title { font-size: 14px; font-weight: 500; }
+.topbar-sub { font-size: 11px; color: var(--text-3); }
+.key-wrap { display: flex; align-items: center; gap: 8px; }
+.key-wrap input { width: 210px; height: 30px; padding: 0 10px; font-size: 12px; border: 0.5px solid var(--border-2); border-radius: var(--r-md); background: var(--bg-2); color: var(--text); font-family: monospace; outline: none; }
+.key-wrap input:focus { border-color: var(--blue-m); }
+.key-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--amber-m); }
+.key-dot.ok { background: var(--green-m); }
+
+/* LAYOUT */
+.main { max-width: 740px; margin: 0 auto; padding: 28px 20px 72px; }
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* TYPOGRAPHY HELPERS */
+.label { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); margin-bottom: 10px; }
+hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
+
+/* GATE */
+.gate-hero { text-align: center; padding: 40px 16px 28px; }
+.gate-hero h1 { font-size: 26px; font-weight: 600; margin-bottom: 8px; }
+.gate-hero p { font-size: 14px; color: var(--text-2); max-width: 460px; margin: 0 auto 14px; line-height: 1.7; }
+.gate-chip { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 11px; background: var(--blue-l); color: var(--blue); border: 0.5px solid var(--border); margin: 2px; }
+.gate-box { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 26px; max-width: 420px; margin: 20px auto 0; text-align: center; }
+.gate-box h2 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
+.gate-box p { font-size: 13px; color: var(--text-2); margin-bottom: 18px; line-height: 1.6; }
+.gate-box input { width: 100%; padding: 10px 14px; border: 0.5px solid var(--border-2); border-radius: var(--r-md); font-size: 13px; background: var(--bg-2); color: var(--text); font-family: monospace; margin-bottom: 12px; outline: none; display: block; }
+.gate-box input:focus { border-color: var(--blue-m); }
+.gate-box small { font-size: 11px; color: var(--text-3); display: block; margin-top: 10px; line-height: 1.6; }
+.gate-box a { color: var(--blue); text-decoration: none; }
+
+/* POSITION GRID */
+.pos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 22px; }
+.pos-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 14px 16px; cursor: pointer; transition: all 0.15s; }
+.pos-card:hover { border-color: var(--border-2); background: var(--bg-2); }
+.pos-card.sel { border: 1.5px solid var(--blue-m); background: var(--blue-l); }
+.pos-card.sel .pname { color: var(--blue-d); }
+.pname { font-size: 13px; font-weight: 500; line-height: 1.4; margin-bottom: 3px; }
+.plevel { font-size: 11px; color: var(--text-3); }
+.pbadge { display: inline-block; margin-top: 6px; font-size: 10px; padding: 2px 7px; border-radius: 20px; background: var(--blue-l); color: var(--blue); border: 0.5px solid var(--border); }
+
+/* COMPETENCY PILLS */
+.pill-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.pill { font-size: 11px; padding: 3px 10px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text-2); background: var(--bg-2); }
+.pill.g { background: var(--green-l); color: var(--green); border-color: var(--green-m); }
+
+/* NUM SELECTOR */
+.num-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
+.num-btn { padding: 6px 16px; border: 0.5px solid var(--border); border-radius: var(--r-md); background: var(--bg); font-size: 13px; cursor: pointer; color: var(--text-2); font-family: inherit; transition: all .15s; }
+.num-btn.act { border-color: var(--blue-m); background: var(--blue-l); color: var(--blue-d); font-weight: 500; }
+.num-btn:hover:not(.act) { border-color: var(--border-2); }
+
+/* BUTTONS */
+.btn { padding: 10px 22px; border-radius: var(--r-md); font-size: 14px; cursor: pointer; font-family: inherit; font-weight: 500; border: none; transition: background .15s; }
+.btn-p { background: var(--blue); color: #fff; }
+.btn-p:hover { background: var(--blue-d); }
+.btn-p:disabled { opacity: .35; cursor: not-allowed; }
+.btn-o { background: transparent; border: 0.5px solid var(--border-2); color: var(--text); }
+.btn-o:hover { background: var(--bg-2); }
+
+/* QUIZ SESSION HEADER */
+.session-banner { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 14px 18px; margin-bottom: 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.session-info { }
+.session-title { font-size: 13px; font-weight: 500; }
+.session-sub { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+.session-score { text-align: right; }
+.live-score { font-size: 22px; font-weight: 600; color: var(--blue); line-height: 1; }
+.live-score-lbl { font-size: 10px; color: var(--text-3); margin-top: 2px; }
+
+/* PROGRESS */
+.prog-wrap { margin-bottom: 18px; }
+.prog-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+.q-ctr { font-size: 12px; color: var(--text-3); }
+.q-tag { font-size: 11px; padding: 2px 8px; border-radius: 20px; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.q-tag.regular { background: var(--amber-l); color: var(--amber-m); }
+.q-tag.case { background: var(--purple-l); color: var(--purple-m); }
+.prog-bar { height: 3px; background: var(--bg-3); border-radius: 2px; }
+.prog-fill { height: 100%; border-radius: 2px; transition: width .4s ease; }
+.prog-fill.regular { background: var(--blue-m); }
+.prog-fill.case { background: var(--purple-m); }
+
+/* CASE VIGNETTE */
+.vignette { background: var(--bg); border: 0.5px solid var(--border); border-left: 3px solid var(--purple-m); border-radius: var(--r-lg); padding: 18px 20px; margin-bottom: 14px; }
+.vignette-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.vignette-badge { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; background: var(--purple-l); color: var(--purple-m); letter-spacing: .04em; }
+.vignette-title { font-size: 13px; font-weight: 500; color: var(--purple); }
+.vignette-body { font-size: 13px; color: var(--text-2); line-height: 1.75; }
+.vignette-sub-ctr { font-size: 11px; color: var(--text-3); margin-top: 8px; }
+
+/* QUESTION */
+.q-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 18px 20px; margin-bottom: 12px; }
+.q-text { font-size: 14px; line-height: 1.75; color: var(--text); margin-bottom: 16px; }
+.options { display: flex; flex-direction: column; gap: 8px; }
+.opt { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 11px 16px; text-align: left; font-size: 13px; cursor: pointer; color: var(--text); font-family: inherit; line-height: 1.5; transition: all .12s; }
+.opt:hover:not(:disabled) { border-color: var(--border-2); background: var(--bg-2); }
+.opt.correct { background: var(--green-l); border-color: var(--green-m); color: var(--green); font-weight: 500; }
+.opt.wrong { background: var(--red-l); border-color: var(--red-m); color: var(--red); }
+.opt:disabled { cursor: default; }
+
+/* FEEDBACK */
+.fb { border-radius: var(--r-lg); padding: 16px 18px; margin-bottom: 12px; }
+.fb.ok { background: var(--green-l); border: 0.5px solid var(--green-m); }
+.fb.bad { background: var(--red-l); border: 0.5px solid var(--red-m); }
+.fb-head { font-size: 13px; font-weight: 600; margin-bottom: 7px; }
+.fb.ok .fb-head { color: var(--green); }
+.fb.bad .fb-head { color: var(--red); }
+.fb-body { font-size: 13px; line-height: 1.75; color: var(--text); white-space: pre-wrap; min-height: 20px; }
+.fb-src { display: none; margin-top: 10px; font-size: 11px; padding: 3px 10px; border-radius: 4px; background: var(--bg); color: var(--text-2); border: 0.5px solid var(--border); }
+
+/* SECTION DIVIDER in quiz */
+.sec-divider { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 12px 16px; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+.sec-divider-icon { width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
+.sec-divider-icon.reg { background: var(--amber-l); }
+.sec-divider-icon.cas { background: var(--purple-l); }
+.sec-divider-text { font-size: 12px; color: var(--text-2); }
+.sec-divider-text strong { color: var(--text); }
+
+/* LOADING */
+.loading { display: flex; align-items: center; gap: 10px; padding: 24px 0; color: var(--text-3); font-size: 13px; }
+.spin { width: 18px; height: 18px; border: 2px solid var(--border-2); border-top-color: var(--blue-m); border-radius: 50%; animation: spin .7s linear infinite; flex-shrink: 0; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ERROR */
+.err { background: var(--red-l); border: 0.5px solid var(--red-m); border-radius: var(--r-md); padding: 12px 16px; font-size: 13px; color: var(--red); margin-bottom: 12px; display: none; }
+
+/* RESULT */
+.res-hero { text-align: center; padding: 36px 16px 28px; }
+.res-score { font-size: 72px; font-weight: 700; line-height: 1; }
+.res-sub { font-size: 15px; color: var(--text-2); margin-top: 6px; }
+.res-badge { display: inline-block; margin-top: 12px; padding: 5px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; }
+.res-badge.pass { background: var(--green-l); color: var(--green); }
+.res-badge.fail { background: var(--red-l); color: var(--red); }
+.res-pos { font-size: 12px; color: var(--text-3); margin-top: 8px; }
+.res-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin: 20px 0 8px; }
+.res-stat { background: var(--bg-2); border-radius: var(--r-md); padding: 14px 16px; text-align: center; }
+.res-stat-num { font-size: 24px; font-weight: 600; }
+.res-stat-lbl { font-size: 11px; color: var(--text-3); margin-top: 3px; }
+.res-stat.blue .res-stat-num { color: var(--blue); }
+.res-stat.green .res-stat-num { color: var(--green); }
+.res-stat.red .res-stat-num { color: var(--red); }
+.res-stat.purple .res-stat-num { color: var(--purple); }
+.res-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+
+/* REVIEW */
+.rev-item { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 12px 16px; margin-bottom: 8px; }
+.rev-item.r { border-left: 3px solid var(--green-m); }
+.rev-item.w { border-left: 3px solid var(--red-m); }
+.rev-item.case-item { border-left: 3px solid var(--purple-m); }
+.rev-item.case-item.w { border-left: 3px solid var(--red-m); background: var(--red-l); }
+.rev-q { font-size: 13px; color: var(--text); margin-bottom: 5px; line-height: 1.5; }
+.rev-ans { font-size: 12px; line-height: 1.5; }
+.rev-comp { font-size: 11px; color: var(--text-3); margin-top: 3px; }
+.rev-case-label { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--purple); background: var(--purple-l); padding: 2px 7px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
+
+/* SECTION SUMMARY in review */
+.rev-section { font-size: 12px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; margin: 18px 0 10px; padding-bottom: 6px; border-bottom: 0.5px solid var(--border); }
+
+/* API KEY GUIDE */
+.guide-wrap { max-width: 520px; margin: 20px auto 0; }
+.guide-toggle { width: 100%; background: var(--bg-2); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 10px 16px; font-size: 13px; color: var(--text-2); cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-family: inherit; transition: background .15s; }
+.guide-toggle:hover { background: var(--bg-3); }
+.guide-toggle-label { display: flex; align-items: center; gap: 8px; }
+.guide-toggle-icon { width: 18px; height: 18px; border-radius: 50%; background: var(--blue-l); display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--blue); font-weight: 700; flex-shrink: 0; }
+.guide-arrow { font-size: 10px; color: var(--text-3); transition: transform .2s; }
+.guide-arrow.open { transform: rotate(180deg); }
+.guide-body { display: none; background: var(--bg); border: 0.5px solid var(--border); border-top: none; border-radius: 0 0 var(--r-md) var(--r-md); padding: 18px 20px; }
+.guide-body.open { display: block; }
+.g-step { display: flex; gap: 14px; margin-bottom: 16px; align-items: flex-start; }
+.g-step:last-child { margin-bottom: 0; }
+.g-num { width: 24px; height: 24px; border-radius: 50%; background: var(--blue-l); color: var(--blue); font-size: 12px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.g-step-body { flex: 1; }
+.g-title { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.g-desc { font-size: 12px; color: var(--text-2); line-height: 1.6; }
+.g-desc a { color: var(--blue); text-decoration: none; }
+.g-desc a:hover { text-decoration: underline; }
+.g-connector { width: 1px; height: 12px; background: var(--border); margin-left: 11px; margin-bottom: 4px; }
+.g-chip { display: inline-block; font-family: monospace; font-size: 11px; background: var(--bg-2); border: 0.5px solid var(--border-2); border-radius: 4px; padding: 1px 5px; color: var(--text); }
+.g-free { display: inline-block; font-size: 10px; font-weight: 500; padding: 1px 6px; border-radius: 20px; background: var(--green-l); color: var(--green); border: 0.5px solid var(--green-m); vertical-align: middle; margin-left: 5px; }
+.g-tip { background: var(--amber-l); border: 0.5px solid var(--amber-m); border-radius: var(--r-md); padding: 10px 12px; margin-top: 16px; font-size: 12px; color: var(--amber); line-height: 1.6; }
+.g-tip a { color: var(--amber); font-weight: 500; }
+
+@media (max-width: 600px) {
+  .main { padding: 16px 14px 56px; }
+  .topbar { padding: 0 14px; }
+  .key-wrap input { width: 140px; }
+  .res-score { font-size: 56px; }
+  .pos-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <div class="topbar-logo">DJP</div>
+    <div>
+      <div class="topbar-title">Uji Kompetensi Teknis</div>
+      <div class="topbar-sub">Jabatan Struktural KPP · 60 Soal</div>
+    </div>
+  </div>
+  <div class="key-wrap" id="key-wrap" style="display:none">
+    <span style="font-size:11px;color:var(--text-3)">API Key</span>
+    <input type="password" id="topbar-key" placeholder="sk-ant-..." oninput="onKeyInput()" autocomplete="off">
+    <div class="key-dot" id="key-dot"></div>
+  </div>
+</div>
+
+<div class="main">
+
+<!-- ══ GATE ══ -->
+<div class="screen active" id="screen-gate">
+  <div class="gate-hero">
+    <h1>Latihan Uji Kompetensi Teknis</h1>
+    <p>Platform latihan soal berbasis AI untuk persiapan uji kompetensi jabatan struktural Kantor Pelayanan Pajak — Direktorat Jenderal Pajak.</p>
+    <div>
+      <span class="gate-chip">60 Soal per Sesi</span>
+      <span class="gate-chip">40 Pilihan Ganda</span>
+      <span class="gate-chip">4 Kasus × 5 Soal</span>
+      <span class="gate-chip">Pembahasan AI</span>
+    </div>
+  </div>
+
+  <!-- API KEY GUIDE -->
+  <div class="guide-wrap">
+    <button class="guide-toggle" onclick="toggleGuide()" id="guide-toggle">
+      <span class="guide-toggle-label">
+        <span class="guide-toggle-icon">?</span>
+        Cara mendapatkan Anthropic API Key
+      </span>
+      <span class="guide-arrow" id="guide-arrow">&#9660;</span>
+    </button>
+    <div class="guide-body" id="guide-body">
+      <div class="g-step">
+        <div class="g-num">1</div>
+        <div class="g-step-body">
+          <div class="g-title">Buka Anthropic Console <span class="g-free">Gratis</span></div>
+          <div class="g-desc">Kunjungi <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a> lalu klik <strong>Sign up</strong>. Daftar dengan email atau akun Google.</div>
+        </div>
+      </div>
+      <div class="g-connector"></div>
+      <div class="g-step">
+        <div class="g-num">2</div>
+        <div class="g-step-body">
+          <div class="g-title">Verifikasi nomor HP</div>
+          <div class="g-desc">Anthropic mengirim SMS kode verifikasi. Masukkan kodenya untuk mengaktifkan akun.</div>
+        </div>
+      </div>
+      <div class="g-connector"></div>
+      <div class="g-step">
+        <div class="g-num">3</div>
+        <div class="g-step-body">
+          <div class="g-title">Buka menu API Keys</div>
+          <div class="g-desc">Setelah login, klik <strong>API Keys</strong> di sidebar kiri — atau langsung ke <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com/settings/keys</a>.</div>
+        </div>
+      </div>
+      <div class="g-connector"></div>
+      <div class="g-step">
+        <div class="g-num">4</div>
+        <div class="g-step-body">
+          <div class="g-title">Buat API key baru</div>
+          <div class="g-desc">Klik <strong>Create Key</strong>, beri nama bebas (misal: <span class="g-chip">djp-quiz</span>), lalu klik <strong>Create Key</strong>.</div>
+        </div>
+      </div>
+      <div class="g-connector"></div>
+      <div class="g-step">
+        <div class="g-num">5</div>
+        <div class="g-step-body">
+          <div class="g-title">Salin key-nya sekarang</div>
+          <div class="g-desc">Key hanya ditampilkan <strong>sekali</strong>. Salin teks yang dimulai dengan <span class="g-chip">sk-ant-...</span> dan tempelkan ke kolom di bawah.</div>
+        </div>
+      </div>
+      <div class="g-tip">
+        <strong>Info biaya:</strong> Akun baru mendapat free credits yang cukup untuk ratusan sesi latihan. Tagihan hanya muncul jika credit habis dan kamu menambahkan kartu kredit. Pantau penggunaan di <a href="https://console.anthropic.com/settings/cost" target="_blank">console.anthropic.com/settings/cost</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="gate-box">
+    <h2>Masukkan Anthropic API Key</h2>
+    <p>Soal dibuat secara dinamis oleh AI. API key hanya tersimpan di memori browser kamu, tidak dikirim ke mana pun selain Anthropic.</p>
+    <input type="password" id="gate-key" placeholder="sk-ant-api03-..." autocomplete="off" onkeydown="if(event.key==='Enter')saveKey()">
+    <button class="btn btn-p" style="width:100%" onclick="saveKey()">Mulai →</button>
+    <small>Belum punya API key? Ikuti panduan di atas untuk mendapatkannya secara gratis.</small>
+  </div>
+</div>
+
+<!-- ══ SELECT ══ -->
+<div class="screen" id="screen-select">
+  <div style="margin-bottom:22px">
+    <h2 style="font-size:18px;font-weight:500;margin-bottom:6px">Pilih Jabatan yang Dituju</h2>
+    <p style="font-size:13px;color:var(--text-2)">Format ujian: <strong>60 soal</strong> — 40 pilihan ganda reguler + 4 studi kasus (masing-masing 5 soal = 20 soal kasus). Threshold kelulusan 60%.</p>
+  </div>
+  <div class="label">Jabatan yang tersedia</div>
+  <div class="pos-grid" id="pos-grid"></div>
+  <div id="comp-area" style="display:none">
+    <div class="label">Kompetensi teknis yang diujikan</div>
+    <div class="pill-row" id="comp-pills"></div>
+    <hr class="div">
+    <div class="label">Format ujian</div>
+    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:16px 18px;margin-bottom:22px;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div style="text-align:center;padding:12px;background:var(--amber-l);border-radius:var(--r-md)">
+        <div style="font-size:28px;font-weight:600;color:var(--amber-m)">40</div>
+        <div style="font-size:11px;color:var(--amber);margin-top:3px">Soal Pilihan Ganda</div>
+      </div>
+      <div style="text-align:center;padding:12px;background:var(--purple-l);border-radius:var(--r-md)">
+        <div style="font-size:28px;font-weight:600;color:var(--purple-m)">4 × 5</div>
+        <div style="font-size:11px;color:var(--purple);margin-top:3px">Studi Kasus</div>
+      </div>
+    </div>
+    <button class="btn btn-p" onclick="startQuiz()">Mulai Latihan 60 Soal →</button>
+  </div>
+</div>
+
+<!-- ══ QUIZ ══ -->
+<div class="screen" id="screen-quiz">
+  <div class="session-banner">
+    <div class="session-info">
+      <div class="session-title" id="sess-title">—</div>
+      <div class="session-sub" id="sess-sub">—</div>
+    </div>
+    <div class="session-score">
+      <div class="live-score" id="live-score">0 / 0</div>
+      <div class="live-score-lbl">Benar saat ini</div>
+    </div>
+  </div>
+  <div class="prog-wrap">
+    <div class="prog-meta">
+      <span class="q-ctr" id="q-ctr">—</span>
+      <span class="q-tag regular" id="q-tag">—</span>
+    </div>
+    <div class="prog-bar"><div class="prog-fill regular" id="prog-fill" style="width:0%"></div></div>
+  </div>
+  <div class="err" id="err-banner"></div>
+  <div id="section-notice"></div>
+  <div id="q-area"></div>
+  <div id="fb-area"></div>
+  <div id="act-area"></div>
+</div>
+
+<!-- ══ RESULT ══ -->
+<div class="screen" id="screen-result">
+  <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);overflow:hidden;">
+    <div class="res-hero">
+      <div class="res-score" id="r-score">—</div>
+      <div class="res-sub" id="r-sub">—</div>
+      <span class="res-badge" id="r-badge">—</span>
+      <div class="res-pos" id="r-pos">—</div>
+      <div class="res-grid" id="r-grid"></div>
+      <div class="res-actions">
+        <button class="btn btn-o" onclick="goSelect()">Pilih jabatan lain</button>
+        <button class="btn btn-p" onclick="restartSame()">Ulangi sesi →</button>
+      </div>
+    </div>
+  </div>
+  <hr class="div">
+  <div class="label">Review lengkap jawaban</div>
+  <div id="review"></div>
+  <div style="text-align:center;margin-top:20px"><button class="btn btn-o" onclick="goSelect()">← Kembali</button></div>
+</div>
+
+</div><!-- /main -->
+
+<script>
+"use strict";
+
+/* ────────────────────────────────────
+   POSITION DATA
+──────────────────────────────────── */
+const POSITIONS = [
+  { id:"kasi_pengawasan", name:"Kepala Seksi Pengawasan", level:"Jabatan Pengawas",
+    competencies:[
+      {name:"Analisis Kepatuhan Wajib Pajak",level:3},
+      {name:"Ekstensifikasi Perpajakan",level:3},
+      {name:"Analisis Potensi Pajak",level:3},
+      {name:"Profiling Wajib Pajak",level:3},
+      {name:"Pemeriksaan Pajak",level:2},
+      {name:"Advokasi Kebijakan Perpajakan",level:2}
+    ]},
+  { id:"kasi_pkd", name:"Kepala Seksi Penjaminan Kualitas Data", level:"Jabatan Pengawas",
+    competencies:[
+      {name:"Analisis Potensi Pajak",level:3},
+      {name:"Profiling Wajib Pajak",level:3},
+      {name:"Pengelolaan Database",level:2},
+      {name:"Pengelolaan Aplikasi Umum dan Khusus",level:3},
+      {name:"Pengelolaan Jaringan Internet",level:3},
+      {name:"Advokasi Kebijakan Perpajakan",level:2}
+    ]},
+  { id:"kasi_p3", name:"Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan", level:"Jabatan Pengawas",
+    competencies:[
+      {name:"Pemeriksaan Pajak",level:3},
+      {name:"Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",level:2},
+      {name:"Pelaksanaan Pemetaan untuk Tujuan Perpajakan",level:3},
+      {name:"Penatausahaan Penagihan Pajak",level:3},
+      {name:"Pelaksanaan Tindakan Penagihan Pajak",level:3},
+      {name:"Advokasi Kebijakan Perpajakan",level:2}
+    ]},
+  { id:"kasi_pelayanan", name:"Kepala Seksi Pelayanan", level:"Jabatan Pengawas",
+    competencies:[
+      {name:"Advokasi Kebijakan Perpajakan",level:3},
+      {name:"Analisis Dokumen Layanan Perpajakan",level:3},
+      {name:"Penyusunan Informasi Publik di Bidang Perpajakan",level:3},
+      {name:"Pengelolaan Pengaduan Masyarakat di Bidang Perpajakan",level:3},
+      {name:"Inovasi Pelayanan Publik",level:2},
+      {name:"Pengelolaan Arsip Dinamis",level:2}
+    ]},
+  { id:"kasubbag_suki", name:"Kepala Subbagian Umum & Kepatuhan Internal", level:"Jabatan Pengawas",
+    competencies:[
+      {name:"Manajemen Perkantoran",level:3},
+      {name:"Manajemen Kinerja Organisasi",level:2},
+      {name:"Advokasi Kebijakan Penganggaran",level:3},
+      {name:"Advokasi Kebijakan Pengelolaan Kekayaan Negara/Daerah",level:2},
+      {name:"Manajemen SDM ASN",level:3},
+      {name:"Penegakan Integritas ASN",level:3}
+    ]}
+];
+
+/* ────────────────────────────────────
+   SESSION PLAN CONSTANTS
+   Total: 60 = 40 regular + 4 cases × 5 sub-questions
+   Layout: 10 regular → case 1 (5) → 10 regular → case 2 (5) → 10 regular → case 3 (5) → 10 regular → case 4 (5)
+──────────────────────────────────── */
+const TOTAL_QUESTIONS = 60;      // total items answered
+const REGULAR_COUNT = 40;
+const CASE_COUNT = 4;
+const SUBS_PER_CASE = 5;
+// Positions in the 0-59 sequence where cases START:
+// after item 10,20,30,40 (0-indexed: after answering items 0-9, 10-19, etc.)
+// Sequence: 0-9 reg (10), 10-14 case1 (5), 15-24 reg (10), 25-29 case2 (5), 30-39 reg (10), 40-44 case3(5), 45-54 reg(10), 55-59 case4(5)
+// We'll build a PLAN array describing each "slot"
+function buildPlan() {
+  const plan = [];
+  let regRemain = 40, caseRemain = 4;
+  // Interleave: 10 reg, 5 case, 10 reg, 5 case, 10 reg, 5 case, 10 reg, 5 case
+  for (let block = 0; block < 4; block++) {
+    for (let i = 0; i < 10; i++) plan.push({type:'regular', block});
+    for (let i = 0; i < 5; i++) plan.push({type:'case', caseIdx: block, subIdx: i});
+  }
+  return plan; // 60 items
+}
+
+/* ────────────────────────────────────
+   STATE
+──────────────────────────────────── */
+let apiKey = "";
+let selectedPos = null;
+let plan = [];
+let currentSlot = 0;    // 0-59
+let answered = 0;
+let correctCount = 0;
+let regularCorrect = 0;
+let caseCorrect = 0;
+let answersLog = [];
+let caseVignettes = {};   // caseIdx → {title, body, comp}
+let slotAnswered = false;
+
+/* ────────────────────────────────────
+   API KEY
+──────────────────────────────────── */
+function saveKey() {
+  const v = document.getElementById("gate-key").value.trim();
+  if (!v.startsWith("sk-ant")) { alert("API key tidak valid. Harus dimulai dengan sk-ant-"); return; }
+  apiKey = v;
+  document.getElementById("topbar-key").value = v;
+  document.getElementById("key-dot").className = "key-dot ok";
+  document.getElementById("key-wrap").style.display = "flex";
+  showScreen("screen-select");
+  renderPositions();
+}
+function onKeyInput() {
+  const v = document.getElementById("topbar-key").value.trim();
+  apiKey = v;
+  document.getElementById("key-dot").className = "key-dot" + (v.startsWith("sk-ant") ? " ok" : "");
+}
+
+/* ────────────────────────────────────
+   SCREENS
+──────────────────────────────────── */
+function showScreen(id) {
+  document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+function goSelect() {
+  selectedPos = null; caseVignettes = {};
+  renderPositions();
+  document.getElementById("comp-area").style.display = "none";
+  showScreen("screen-select");
+}
+function restartSame() { startQuiz(); }
+
+/* ────────────────────────────────────
+   POSITION SELECTION
+──────────────────────────────────── */
+function renderPositions() {
+  const g = document.getElementById("pos-grid");
+  g.innerHTML = "";
+  POSITIONS.forEach((p,i) => {
+    const d = document.createElement("div");
+    d.className = "pos-card" + (selectedPos && selectedPos.id===p.id ? " sel" : "");
+    d.onclick = () => selectPos(i);
+    d.innerHTML = `<div class="pname">${p.name}</div><div class="plevel">${p.level}</div><span class="pbadge">${p.competencies.length} kompetensi</span>`;
+    g.appendChild(d);
+  });
+}
+function selectPos(i) {
+  selectedPos = POSITIONS[i];
+  renderPositions();
+  const pills = document.getElementById("comp-pills");
+  pills.innerHTML = "";
+  selectedPos.competencies.forEach(c => {
+    const el = document.createElement("div");
+    el.className = "pill g";
+    el.textContent = `${c.name} — Level ${c.level}`;
+    pills.appendChild(el);
+  });
+  document.getElementById("comp-area").style.display = "";
+  document.getElementById("comp-area").scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+
+/* ────────────────────────────────────
+   START QUIZ
+──────────────────────────────────── */
+function startQuiz() {
+  if (!selectedPos) return;
+  plan = buildPlan();
+  currentSlot = 0;
+  answered = 0; correctCount = 0; regularCorrect = 0; caseCorrect = 0;
+  answersLog = []; caseVignettes = {}; slotAnswered = false;
+  document.getElementById("sess-title").textContent = selectedPos.name;
+  document.getElementById("sess-sub").textContent = "40 soal reguler + 4 studi kasus (5 sub-soal masing-masing)";
+  showScreen("screen-quiz");
+  processSlot();
+}
+
+/* ────────────────────────────────────
+   SLOT PROCESSOR
+──────────────────────────────────── */
+async function processSlot() {
+  slotAnswered = false;
+  document.getElementById("err-banner").style.display = "none";
+  document.getElementById("fb-area").innerHTML = "";
+  document.getElementById("act-area").innerHTML = "";
+  document.getElementById("section-notice").innerHTML = "";
+
+  const slot = plan[currentSlot];
+  updateProgress(slot);
+
+  // Show transition notice at block starts
+  if (slot.type === "regular" && slot.subIdx === undefined) {
+    // First regular of a block — check if this is the very first regular after a case
+    if (currentSlot > 0 && plan[currentSlot-1].type === "case") {
+      document.getElementById("section-notice").innerHTML = `
+        <div class="sec-divider"><div class="sec-divider-icon reg">📝</div>
+        <div class="sec-divider-text"><strong>Kembali ke Soal Pilihan Ganda</strong> — Lanjutkan dengan 10 soal reguler berikutnya.</div></div>`;
+    }
+  }
+  if (slot.type === "case" && slot.subIdx === 0) {
+    document.getElementById("section-notice").innerHTML = `
+      <div class="sec-divider"><div class="sec-divider-icon cas">📋</div>
+      <div class="sec-divider-text"><strong>Studi Kasus ${slot.caseIdx+1} dari 4</strong> — Baca skenario berikut dan jawab 5 pertanyaan terkait.</div></div>`;
+    // Generate the vignette first if not yet done
+    if (!caseVignettes[slot.caseIdx]) {
+      await generateCaseVignette(slot.caseIdx);
+    }
+  }
+
+  if (slot.type === "regular") {
+    await generateRegularQuestion();
+  } else {
+    await generateCaseSubQuestion(slot.caseIdx, slot.subIdx);
+  }
+}
+
+/* ────────────────────────────────────
+   UPDATE PROGRESS
+──────────────────────────────────── */
+function updateProgress(slot) {
+  const pct = (currentSlot / TOTAL_QUESTIONS) * 100;
+  const fill = document.getElementById("prog-fill");
+  const tag = document.getElementById("q-tag");
+  const isCase = slot.type === "case";
+  fill.style.width = pct + "%";
+  fill.className = "prog-fill " + (isCase ? "case" : "regular");
+  tag.className = "q-tag " + (isCase ? "case" : "regular");
+
+  if (isCase) {
+    tag.textContent = `Studi Kasus ${slot.caseIdx+1} — Sub-soal ${slot.subIdx+1}/5`;
+  } else {
+    const comp = pickComp();
+    tag.textContent = comp.name;
+  }
+
+  const regAnswered = answersLog.filter(a=>a.type==="regular").length;
+  const caseAnswered = answersLog.filter(a=>a.type==="case").length;
+  document.getElementById("q-ctr").textContent = `Soal ${currentSlot+1} / ${TOTAL_QUESTIONS}`;
+  document.getElementById("live-score").textContent = `${correctCount} / ${currentSlot}`;
+}
+
+function pickComp() {
+  const comps = selectedPos.competencies;
+  return comps[Math.floor(Math.random() * comps.length)];
+}
+
+/* ────────────────────────────────────
+   GENERATE CASE VIGNETTE
+──────────────────────────────────── */
+async function generateCaseVignette(caseIdx) {
+  document.getElementById("q-area").innerHTML = `<div class="loading"><div class="spin"></div><span>Menyusun skenario studi kasus ${caseIdx+1}…</span></div>`;
+
+  const comp = selectedPos.competencies[caseIdx % selectedPos.competencies.length];
+  const existingTitles = Object.values(caseVignettes).map(v=>v.title).join(", ");
+
+  const prompt = `Kamu adalah penyusun soal uji kompetensi teknis DJP Indonesia.
+
+Buat SKENARIO STUDI KASUS untuk jabatan: ${selectedPos.name}
+Fokus kompetensi: ${comp.name} (Level ${comp.level})
+Kasus sebelumnya (JANGAN DUPLIKASI tema): ${existingTitles || "Belum ada"}
+
+INSTRUKSI:
+- Buat skenario nyata (150-200 kata) yang menggambarkan situasi kerja konkret di KPP
+- Sertakan data spesifik: nama WP fiktif, angka, tanggal, permasalahan yang jelas
+- Skenario harus cukup kaya untuk mendukung 5 pertanyaan berbeda
+- Gunakan terminologi DJP yang tepat
+- Level kesulitan sesuai Level ${comp.level}
+
+BALAS HANYA JSON (tanpa backtick):
+{"title":"judul singkat kasus (max 10 kata)","body":"teks skenario lengkap 150-200 kata","comp":"${comp.name}","compLevel":${comp.level}}`;
+
+  try {
+    const data = await callAPI(prompt, "Penyusun soal DJP. Balas HANYA JSON valid tanpa markdown.", 600);
+    const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
+    caseVignettes[caseIdx] = JSON.parse(txt);
+  } catch(e) {
+    caseVignettes[caseIdx] = {
+      title: `Kasus ${caseIdx+1}: ${comp.name}`,
+      body: `Skenario otomatis untuk ${comp.name} di KPP. Kepala Seksi diminta mengevaluasi situasi terkait kompetensi ini dan menyusun rekomendasi tindak lanjut yang tepat sesuai ketentuan yang berlaku.`,
+      comp: comp.name,
+      compLevel: comp.level
+    };
+  }
+}
+
+/* ────────────────────────────────────
+   GENERATE REGULAR QUESTION
+──────────────────────────────────── */
+async function generateRegularQuestion() {
+  const comp = pickComp();
+  document.getElementById("q-tag").textContent = comp.name;
+  document.getElementById("q-area").innerHTML = `<div class="loading"><div class="spin"></div><span>Menyusun soal ${comp.name}…</span></div>`;
+
+  const prevQs = answersLog.filter(a=>a.type==="regular").slice(-8).map(a=>a.question.slice(0,50)).join(" | ");
+
+  const prompt = `Penyusun soal uji kompetensi teknis DJP.
+
+Jabatan: ${selectedPos.name}
+Kompetensi: ${comp.name} (Level ${comp.level} diperlukan)
+
+Level indikator:
+- Level 2 (Dasar/Pengawas): analisis data, menyusun rencana, melaksanakan kegiatan
+- Level 3 (Menengah/Administrator): mengevaluasi hasil, menelaah, merekomendasikan solusi
+
+Soal sebelumnya (JANGAN DUPLIKASI): ${prevQs || "Belum ada"}
+
+Buat 1 soal pilihan ganda Level ${comp.level} — skenario kasus nyata di KPP, 4 pilihan, 1 benar.
+
+BALAS HANYA JSON:
+{"question":"teks soal","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"penjelasan 3+ kalimat mengapa benar dan mengapa lain salah, kaitkan dengan indikator Level ${comp.level}","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${comp.name}","comp":"${comp.name}","compLevel":${comp.level}}`;
+
+  try {
+    const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
+    const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
+    const q = JSON.parse(txt);
+    q.type = "regular";
+    renderQuestion(q, null);
+  } catch(e) {
+    showError(e.message);
+  }
+}
+
+/* ────────────────────────────────────
+   GENERATE CASE SUB-QUESTION
+──────────────────────────────────── */
+async function generateCaseSubQuestion(caseIdx, subIdx) {
+  const vig = caseVignettes[caseIdx];
+  if (!vig) { showError("Vignette belum tersedia."); return; }
+
+  document.getElementById("q-area").innerHTML = `<div class="loading"><div class="spin"></div><span>Menyusun pertanyaan ${subIdx+1}/5 untuk kasus ini…</span></div>`;
+
+  const prevSubs = answersLog
+    .filter(a=>a.type==="case" && a.caseIdx===caseIdx)
+    .map(a=>a.question.slice(0,50)).join(" | ");
+
+  const aspectGuide = [
+    "identifikasi masalah utama dan akar permasalahan",
+    "analisis data dan informasi yang relevan dari skenario",
+    "evaluasi alternatif solusi atau tindakan yang tersedia",
+    "penentuan rekomendasi tindak lanjut yang paling tepat",
+    "aspek prosedural, dasar hukum, atau mitigasi risiko"
+  ][subIdx];
+
+  const prompt = `Penyusun soal uji kompetensi teknis DJP.
+
+SKENARIO KASUS:
+"${vig.body}"
+
+Jabatan: ${selectedPos.name}
+Kompetensi fokus: ${vig.comp} (Level ${vig.compLevel})
+Pertanyaan ke-${subIdx+1} dari 5 — aspek yang diuji: ${aspectGuide}
+Pertanyaan sebelumnya di kasus ini: ${prevSubs || "Belum ada"}
+
+Buat 1 pertanyaan yang SPESIFIK merujuk detail skenario di atas.
+Pertanyaan harus berbeda aspek dari pertanyaan sebelumnya.
+4 pilihan jawaban, 1 benar.
+
+BALAS HANYA JSON:
+{"question":"pertanyaan spesifik mengacu detail skenario","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"penjelasan 3+ kalimat mengaitkan jawaban dengan skenario dan indikator kompetensi Level ${vig.compLevel}","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${vig.comp}"}`;
+
+  try {
+    const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
+    const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
+    const q = JSON.parse(txt);
+    q.type = "case"; q.caseIdx = caseIdx; q.subIdx = subIdx;
+    q.comp = vig.comp; q.compLevel = vig.compLevel;
+    renderQuestion(q, vig);
+  } catch(e) {
+    showError(e.message);
+  }
+}
+
+/* ────────────────────────────────────
+   RENDER QUESTION
+──────────────────────────────────── */
+function renderQuestion(q, vig) {
+  let html = "";
+
+  if (vig) {
+    html += `<div class="vignette">
+      <div class="vignette-head">
+        <span class="vignette-badge">STUDI KASUS ${plan[currentSlot].caseIdx+1}</span>
+        <span class="vignette-title">${esc(vig.title)}</span>
+      </div>
+      <div class="vignette-body">${esc(vig.body)}</div>
+      <div class="vignette-sub-ctr">Pertanyaan ${plan[currentSlot].subIdx+1} dari 5</div>
+    </div>`;
+  }
+
+  let opts = "";
+  ["a","b","c","d"].forEach(k => {
+    opts += `<button class="opt" id="opt-${k}" onclick="selectAnswer('${k}',event)" data-q='${JSON.stringify(q).replace(/'/g,"&#39;")}'>${k.toUpperCase()}. ${esc(q.options[k])}</button>`;
+  });
+
+  html += `<div class="q-card">
+    <div class="q-text">${esc(q.question)}</div>
+    <div class="options">${opts}</div>
+  </div>`;
+
+  document.getElementById("q-area").innerHTML = html;
+
+  // Store q reference globally for easy access
+  window._currentQ = q;
+}
+
+/* ────────────────────────────────────
+   SELECT ANSWER
+──────────────────────────────────── */
+function selectAnswer(choice) {
+  if (slotAnswered) return;
+  slotAnswered = true;
+  const q = window._currentQ;
+  const isCorrect = choice === q.correct;
+
+  correctCount += isCorrect ? 1 : 0;
+  if (q.type === "regular") regularCorrect += isCorrect ? 1 : 0;
+  else caseCorrect += isCorrect ? 1 : 0;
+
+  answersLog.push({
+    type: q.type, caseIdx: q.caseIdx, subIdx: q.subIdx,
+    question: q.question, chosen: choice, correct: q.correct,
+    isCorrect, competency: q.comp, options: q.options,
+    explanation: q.explanation, source: q.source
+  });
+
+  document.getElementById("live-score").textContent = `${correctCount} / ${currentSlot+1}`;
+
+  ["a","b","c","d"].forEach(k => {
+    const btn = document.getElementById("opt-"+k);
+    if (!btn) return;
+    btn.disabled = true;
+    if (k === q.correct) btn.classList.add("correct");
+    else if (k === choice && !isCorrect) btn.classList.add("wrong");
+  });
+
+  const fbArea = document.getElementById("fb-area");
+  fbArea.innerHTML = `<div class="fb ${isCorrect?"ok":"bad"}">
+    <div class="fb-head">${isCorrect?"✓ Benar!":"✗ Kurang tepat — Jawaban benar: "+q.correct.toUpperCase()}</div>
+    <div class="fb-body" id="fb-txt"></div>
+    <span class="fb-src" id="fb-src"></span>
+  </div>`;
+
+  streamText(q.explanation, "fb-txt", () => {
+    const s = document.getElementById("fb-src");
+    s.textContent = "📖 " + (q.source || "Materi Webinar Kompetensi Teknis Jabatan Struktural KPP");
+    s.style.display = "inline-block";
+  });
+
+  const isLast = currentSlot + 1 >= TOTAL_QUESTIONS;
+  document.getElementById("act-area").innerHTML = `
+    <button class="btn btn-p" onclick="nextSlot()" style="margin-top:4px">
+      ${isLast ? "Selesai — Lihat Hasil →" : "Soal Berikutnya →"}
+    </button>`;
+}
+
+/* ────────────────────────────────────
+   NEXT SLOT
+──────────────────────────────────── */
+function nextSlot() {
+  currentSlot++;
+  if (currentSlot >= TOTAL_QUESTIONS) showResults();
+  else processSlot();
+}
+
+/* ────────────────────────────────────
+   SHOW RESULTS
+──────────────────────────────────── */
+function showResults() {
+  showScreen("screen-result");
+  const total = answersLog.length;
+  const pct = Math.round((correctCount / total) * 100);
+  const pass = pct >= 60;
+  const regTotal = answersLog.filter(a=>a.type==="regular").length;
+  const caseTotal = answersLog.filter(a=>a.type==="case").length;
+
+  document.getElementById("r-score").textContent = pct + "%";
+  document.getElementById("r-score").style.color = pass ? "var(--green)" : "var(--red)";
+  document.getElementById("r-sub").textContent = `${correctCount} dari ${total} soal benar`;
+  const badge = document.getElementById("r-badge");
+  badge.textContent = pass ? "✓ Lulus" : "✗ Belum Lulus";
+  badge.className = "res-badge " + (pass ? "pass" : "fail");
+  document.getElementById("r-pos").textContent = `${selectedPos.name} · Threshold 60% · ${TOTAL_QUESTIONS} Soal`;
+
+  document.getElementById("r-grid").innerHTML = `
+    <div class="res-stat blue"><div class="res-stat-num">${pct}%</div><div class="res-stat-lbl">Skor Akhir</div></div>
+    <div class="res-stat green"><div class="res-stat-num">${correctCount}</div><div class="res-stat-lbl">Benar</div></div>
+    <div class="res-stat red"><div class="res-stat-num">${total-correctCount}</div><div class="res-stat-lbl">Salah</div></div>
+    <div class="res-stat purple"><div class="res-stat-num">${caseCorrect}/${caseTotal}</div><div class="res-stat-lbl">Benar Kasus</div></div>`;
+
+  // Build review
+  const rev = document.getElementById("review");
+  rev.innerHTML = "";
+
+  // Regular questions
+  const regItems = answersLog.filter(a=>a.type==="regular");
+  if (regItems.length) {
+    const h = document.createElement("div"); h.className = "rev-section";
+    h.textContent = `Soal Pilihan Ganda Reguler (${regularCorrect}/${regItems.length} benar)`;
+    rev.appendChild(h);
+    regItems.forEach((a,i) => rev.appendChild(makeRevItem(a, i+1, false)));
+  }
+
+  // Case questions grouped by case
+  for (let ci=0; ci<CASE_COUNT; ci++) {
+    const items = answersLog.filter(a=>a.type==="case" && a.caseIdx===ci);
+    if (!items.length) continue;
+    const vig = caseVignettes[ci];
+    const correct = items.filter(a=>a.isCorrect).length;
+    const h = document.createElement("div"); h.className = "rev-section";
+    h.textContent = `Studi Kasus ${ci+1}${vig?": "+vig.title:""} (${correct}/${items.length} benar)`;
+    rev.appendChild(h);
+    if (vig) {
+      const vd = document.createElement("div");
+      vd.style = "background:var(--purple-l);border:0.5px solid var(--purple-m);border-radius:var(--r-md);padding:12px 14px;margin-bottom:10px;font-size:12px;color:var(--text-2);line-height:1.6";
+      vd.innerHTML = `<strong style="color:var(--purple)">Skenario:</strong> ${esc(vig.body)}`;
+      rev.appendChild(vd);
+    }
+    items.forEach((a,i) => rev.appendChild(makeRevItem(a, i+1, true)));
+  }
+}
+
+function makeRevItem(a, n, isCase) {
+  const d = document.createElement("div");
+  d.className = "rev-item " + (isCase ? "case-item " : "") + (a.isCorrect ? "r" : "w");
+  const correctAns = a.isCorrect ? "" : ` &nbsp;|&nbsp; Jawaban benar: <strong>${a.correct.toUpperCase()}. ${esc(a.options[a.correct])}</strong>`;
+  d.innerHTML = `
+    ${isCase ? `<div class="rev-case-label">Kasus ${a.caseIdx+1} – Sub ${a.subIdx+1}</div>` : ""}
+    <div class="rev-q">${n}. ${esc(a.question)}</div>
+    <div class="rev-ans" style="color:${a.isCorrect?"var(--green)":"var(--red)"}">
+      Jawaban kamu: ${a.chosen.toUpperCase()}. ${esc(a.options[a.chosen])} ${a.isCorrect?"✓":"✗"}${correctAns}
+    </div>
+    <div class="rev-comp">${esc(a.competency||"")}</div>`;
+  return d;
+}
+
+/* ────────────────────────────────────
+   API HELPER
+──────────────────────────────────── */
+async function callAPI(userPrompt, systemPrompt, maxTokens=900) {
+  let resp;
+  try {
+    resp = await fetch("/api/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": apiKey
+      },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-5",
+        max_tokens: maxTokens,
+        system: systemPrompt,
+        messages: [{ role: "user", content: userPrompt }]
+      })
+    });
+  } catch(netErr) {
+    throw new Error("Tidak dapat terhubung ke Anthropic. Pastikan koneksi internet aktif. (" + netErr.message + ")");
+  }
+  if (!resp.ok) {
+    let detail = "HTTP " + resp.status;
+    try {
+      const errBody = await resp.json();
+      detail = errBody.error?.message || detail;
+      if (resp.status === 401) detail = "API key tidak valid atau kedaluwarsa. Generate key baru di console.anthropic.com/settings/keys.";
+      if (resp.status === 429) detail = "Terlalu banyak permintaan. Tunggu beberapa detik lalu coba lagi.";
+      if (resp.status === 403) detail = "API key tidak memiliki akses. Pastikan key aktif.";
+    } catch(_) {}
+    throw new Error(detail);
+  }
+  return resp.json();
+}
+
+/* ────────────────────────────────────
+   STREAM TEXT
+──────────────────────────────────── */
+function streamText(text, id, onDone) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  let i = 0; el.textContent = "";
+  const tick = () => {
+    el.textContent += text.slice(i, i+6); i += 6;
+    if (i < text.length) setTimeout(tick, 10);
+    else if (onDone) onDone();
+  };
+  tick();
+}
+
+/* ────────────────────────────────────
+   SHOW ERROR
+──────────────────────────────────── */
+function showError(msg) {
+  const b = document.getElementById("err-banner");
+  b.textContent = `Gagal memuat soal: ${msg}. Periksa API key.`;
+  b.style.display = "block";
+  document.getElementById("q-area").innerHTML = "";
+  document.getElementById("act-area").innerHTML = `<button class="btn btn-o" onclick="processSlot()">Coba Lagi</button>`;
+}
+
+/* ────────────────────────────────────
+   UTILS
+──────────────────────────────────── */
+function esc(s) {
+  return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+function toggleGuide() {
+  const body = document.getElementById("guide-body");
+  const arrow = document.getElementById("guide-arrow");
+  const open = body.classList.toggle("open");
+  arrow.classList.toggle("open", open);
+  const toggle = document.getElementById("guide-toggle");
+  toggle.style.borderRadius = open ? "var(--r-md) var(--r-md) 0 0" : "var(--r-md)";
+}
+</script>
+</body>
+</html>
