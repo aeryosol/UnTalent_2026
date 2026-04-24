@@ -249,7 +249,7 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 <div class="main">
 
 <!-- ══ GATE ══ -->
-<div class="screen active" id="screen-gate">
+<div class="screen" id="screen-gate">
   <div class="gate-hero">
     <h1>Latihan Uji Kompetensi Teknis</h1>
     <p>Platform latihan soal berbasis AI untuk persiapan uji kompetensi jabatan struktural Kantor Pelayanan Pajak — Direktorat Jenderal Pajak.</p>
@@ -497,6 +497,23 @@ let slotAnswered = false;
 /* ────────────────────────────────────
    API KEY
 ──────────────────────────────────── */
+async function initApp() {
+  try {
+    const res = await fetch("/api/check-key");
+    const data = await res.json();
+    if (data.hasServerKey) {
+      // Server has a key — skip gate, go straight to quiz
+      apiKey = "__server__";
+      document.getElementById("key-wrap").style.display = "none";
+      showScreen("screen-select");
+      renderPositions();
+      return;
+    }
+  } catch(_) {}
+  // No server key — show gate as normal
+  showScreen("screen-gate");
+}
+
 function saveKey() {
   const v = document.getElementById("gate-key").value.trim();
   if (!v.startsWith("sk-ant")) { alert("API key tidak valid. Harus dimulai dengan sk-ant-"); return; }
@@ -939,10 +956,10 @@ async function callAPI(userPrompt, systemPrompt, maxTokens=900) {
   try {
     resp = await fetch("/api/chat", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": apiKey
-      },
+      headers: Object.assign(
+        { "Content-Type": "application/json" },
+        apiKey !== "__server__" ? { "x-api-key": apiKey } : {}
+      ),
       body: JSON.stringify({
         model: "claude-sonnet-4-5",
         max_tokens: maxTokens,
@@ -996,6 +1013,8 @@ function showError(msg) {
 /* ────────────────────────────────────
    UTILS
 ──────────────────────────────────── */
+window.addEventListener("DOMContentLoaded", initApp);
+
 function esc(s) {
   return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 }
