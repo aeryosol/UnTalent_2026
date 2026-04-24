@@ -157,23 +157,23 @@ hr.div { border:none; border-top:0.5px solid var(--border); margin:22px 0; }
   <!-- DONATE -->
   <div class="donate-card">
     <h2>Transfer Donasi</h2>
-    <p>Tidak ada minimum donasi. Silahkan transfer sesuai keinginan ke rekening di bawah ini.</p>
+    <p>Tidak ada minimum donasi. Transfer seikhlasnya ke rekening di bawah ini.</p>
 
     <div class="bank-block">
       <div class="bank-row">
-        <span class="bank-key">E-Wallet</span>
-        <span class="bank-val" id="bnk-name">GoPay</span>
+        <span class="bank-key">Bank</span>
+        <span class="bank-val" id="bnk-name">BCA</span>
       </div>
       <div class="bank-row">
-        <span class="bank-key">Nomor</span>
+        <span class="bank-key">No. Rekening</span>
         <span class="bank-val">
-          <span id="bnk-number">081380374394</span>
+          <span id="bnk-number">1234567890</span>
           <button class="copy-btn" onclick="copyIt('bnk-number', this)">Salin</button>
         </span>
       </div>
       <div class="bank-row">
         <span class="bank-key">Atas Nama</span>
-        <span class="bank-val" id="bnk-holder">Yudi A.P.</span>
+        <span class="bank-val" id="bnk-holder">Nama Anda</span>
       </div>
       <div class="bank-row">
         <span class="bank-key">Nominal dipilih</span>
@@ -215,9 +215,9 @@ hr.div { border:none; border-top:0.5px solid var(--border); margin:22px 0; }
 <script>
 /* ── CONFIG — same as request.html, edit here ── */
 const CFG = {
-  bankName:   "BCA",
-  bankNumber: "1234567890",
-  bankHolder: "Nama Anda",
+  bankName:   "GoPay",
+  bankNumber: "081380374394",
+  bankHolder: "Yudi A.P.",
   costPerSession: 10000,      // in IDR, for display
   costUSD: "0.64"
 };
