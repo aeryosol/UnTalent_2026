@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dukung Layanan — Uji Kompetensi Teknis KPP</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:#ffffff; --bg-2:#f7f6f3; --bg-3:#f0ede8;
+  --text:#1a1a18; --text-2:#5a5a56; --text-3:#9a9994;
+  --border:rgba(0,0,0,0.10); --border-2:rgba(0,0,0,0.18);
+  --blue:#185FA5; --blue-l:#E6F1FB; --blue-m:#378ADD; --blue-d:#0C447C;
+  --green:#3B6D11; --green-l:#EAF3DE; --green-m:#639922;
+  --red:#A32D2D; --red-l:#FCEBEB; --red-m:#E24B4A;
+  --amber:#854F0B; --amber-l:#FAEEDA; --amber-m:#BA7517;
+  --teal:#0F6E56; --teal-l:#E1F5EE; --teal-m:#1D9E75;
+  --r-md:8px; --r-lg:12px; --r-xl:16px;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#1c1c1a; --bg-2:#252522; --bg-3:#2e2e2b;
+  --text:#f0ede8; --text-2:#a8a49e; --text-3:#6a6860;
+  --border:rgba(255,255,255,0.09); --border-2:rgba(255,255,255,0.18);
+  --blue:#5BA3E8; --blue-l:#0C2D4A; --blue-m:#378ADD; --blue-d:#85B7EB;
+  --green:#97C459; --green-l:#173404; --green-m:#639922;
+  --red:#F09595; --red-l:#3A1010; --red-m:#E24B4A;
+  --amber:#EF9F27; --amber-l:#2A1800; --amber-m:#BA7517;
+  --teal:#5DCAA5; --teal-l:#04342C; --teal-m:#1D9E75;
+}}
+
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif; background:var(--bg-3); color:var(--text); min-height:100vh; font-size:15px; line-height:1.6; }
+
+.topbar { background:var(--bg); border-bottom:0.5px solid var(--border); padding:0 24px; height:52px; display:flex; align-items:center; gap:10px; position:sticky; top:0; z-index:100; }
+.topbar-logo { width:32px; height:32px; border-radius:8px; background:var(--blue); display:flex; align-items:center; justify-content:center; color:#fff; font-size:13px; font-weight:700; flex-shrink:0; }
+.topbar-title { font-size:14px; font-weight:500; }
+.topbar-sub { font-size:11px; color:var(--text-3); }
+.back-link { margin-left:auto; font-size:13px; color:var(--blue); text-decoration:none; }
+.back-link:hover { text-decoration:underline; }
+
+.main { max-width:640px; margin:0 auto; padding:32px 20px 72px; }
+
+/* HERO */
+.hero { text-align:center; padding:28px 16px 24px; }
+.hero h1 { font-size:24px; font-weight:600; margin-bottom:10px; }
+.hero p { font-size:14px; color:var(--text-2); line-height:1.75; max-width:480px; margin:0 auto; }
+
+/* LIVE STATUS */
+.status-card { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-xl); padding:20px 22px; margin-bottom:24px; }
+.status-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.status-label { font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:var(--text-3); display:flex; align-items:center; gap:6px; }
+.pulse { width:7px; height:7px; border-radius:50%; flex-shrink:0; }
+.pulse.good     { background:var(--green-m); animation:pg 2s infinite; }
+.pulse.low      { background:var(--amber-m); animation:pa 2s infinite; }
+.pulse.critical { background:var(--red-m);   animation:pr 1.2s infinite; }
+.pulse.loading  { background:var(--text-3); }
+@keyframes pg{0%,100%{box-shadow:0 0 0 0 rgba(99,153,34,.5)}70%{box-shadow:0 0 0 6px rgba(99,153,34,0)}}
+@keyframes pa{0%,100%{box-shadow:0 0 0 0 rgba(186,117,23,.5)}70%{box-shadow:0 0 0 6px rgba(186,117,23,0)}}
+@keyframes pr{0%,100%{box-shadow:0 0 0 0 rgba(226,75,74,.5)}70%{box-shadow:0 0 0 6px rgba(226,75,74,0)}}
+.concurrent { font-size:12px; color:var(--text-3); }
+.concurrent strong { color:var(--text); }
+.bar-track { height:8px; background:var(--bg-3); border-radius:4px; overflow:hidden; margin-bottom:14px; }
+.bar-fill { height:100%; border-radius:4px; transition:width 1.2s ease; }
+.bar-fill.good     { background:var(--green-m); }
+.bar-fill.low      { background:var(--amber-m); }
+.bar-fill.critical { background:var(--red-m); }
+.bar-fill.loading  { background:var(--border-2); width:55% !important; animation:shimmer 1.5s infinite; }
+@keyframes shimmer{0%,100%{opacity:.4}50%{opacity:1}}
+.stat-row { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:12px; }
+.stat-box { background:var(--bg-2); border-radius:var(--r-md); padding:10px 12px; text-align:center; }
+.stat-num { font-size:20px; font-weight:600; color:var(--text); line-height:1; }
+.stat-lbl { font-size:10px; color:var(--text-3); margin-top:3px; line-height:1.4; }
+.status-msg { font-size:13px; color:var(--text-2); line-height:1.65; }
+
+/* TRANSPARENCY */
+.transparency { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-xl); padding:20px 22px; margin-bottom:24px; }
+.transparency h2 { font-size:15px; font-weight:500; margin-bottom:4px; }
+.transparency p { font-size:13px; color:var(--text-2); margin-bottom:14px; line-height:1.65; }
+.cost-row { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:0.5px solid var(--border); font-size:13px; }
+.cost-row:last-child { border-bottom:none; font-weight:500; }
+.cost-key { color:var(--text-2); }
+.cost-val { color:var(--text); font-family:monospace; }
+.cost-row.total .cost-val { color:var(--blue); font-size:14px; }
+
+/* BANK / DONATE */
+.donate-card { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-xl); padding:20px 22px; margin-bottom:24px; }
+.donate-card h2 { font-size:15px; font-weight:500; margin-bottom:4px; }
+.donate-card p { font-size:13px; color:var(--text-2); margin-bottom:18px; line-height:1.65; }
+.bank-block { background:var(--amber-l); border:0.5px solid var(--amber-m); border-radius:var(--r-lg); padding:16px 18px; margin-bottom:16px; }
+.bank-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.bank-row:last-child { margin-bottom:0; }
+.bank-key { font-size:12px; color:var(--amber); }
+.bank-val { font-size:13px; font-weight:500; color:var(--text); font-family:monospace; display:flex; align-items:center; gap:8px; }
+.copy-btn { font-size:10px; padding:2px 8px; border:0.5px solid var(--border-2); border-radius:4px; background:var(--bg); cursor:pointer; color:var(--text-2); font-family:inherit; }
+.copy-btn:hover { background:var(--bg-2); }
+.copy-btn.ok { color:var(--green); border-color:var(--green-m); }
+.suggest-row { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
+.suggest-btn { padding:8px 16px; border:0.5px solid var(--border-2); border-radius:var(--r-md); font-size:13px; cursor:pointer; background:var(--bg-2); color:var(--text); font-family:inherit; transition:all .15s; }
+.suggest-btn:hover, .suggest-btn.act { border-color:var(--amber-m); background:var(--amber-l); color:var(--amber); }
+.custom-amount { width:100%; padding:10px 12px; border:0.5px solid var(--border-2); border-radius:var(--r-md); font-size:13px; background:var(--bg-2); color:var(--text); font-family:inherit; outline:none; margin-bottom:12px; }
+.custom-amount:focus { border-color:var(--blue-m); }
+.amount-preview { font-size:12px; color:var(--text-3); margin-bottom:10px; min-height:16px; }
+.confirm-note { font-size:12px; color:var(--text-2); line-height:1.65; background:var(--teal-l); border:0.5px solid var(--teal-m); border-radius:var(--r-md); padding:10px 14px; }
+
+/* THANK YOU */
+.thankyou { background:var(--green-l); border:0.5px solid var(--green-m); border-radius:var(--r-xl); padding:24px; text-align:center; margin-bottom:24px; }
+.thankyou h2 { font-size:16px; font-weight:500; color:var(--green); margin-bottom:6px; }
+.thankyou p { font-size:13px; color:var(--text-2); line-height:1.65; }
+
+hr.div { border:none; border-top:0.5px solid var(--border); margin:22px 0; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-logo">DJP</div>
+  <div>
+    <div class="topbar-title">Dukung Layanan</div>
+    <div class="topbar-sub">Uji Kompetensi Teknis KPP</div>
+  </div>
+  <a href="/" class="back-link">← Latihan</a>
+</div>
+
+<div class="main">
+
+  <div class="hero">
+    <h1>Bantu Layanan Ini Tetap Hidup 🙏</h1>
+    <p>Platform ini gratis untuk semua pegawai DJP. Biaya API yang digunakan untuk membuat soal dan pembahasan ditanggung secara pribadi. Donasi berapapun sangat membantu.</p>
+  </div>
+
+  <!-- LIVE STATUS -->
+  <div class="status-card">
+    <div class="status-head">
+      <div class="status-label"><div class="pulse loading" id="d-pulse"></div>Status saldo saat ini</div>
+      <div class="concurrent"><strong id="d-concurrent">—</strong> pengguna aktif</div>
+    </div>
+    <div class="bar-track"><div class="bar-fill loading" id="d-bar" style="width:55%"></div></div>
+    <div class="stat-row">
+      <div class="stat-box"><div class="stat-num" id="d-left">—</div><div class="stat-lbl">Sesi tersisa</div></div>
+      <div class="stat-box"><div class="stat-num" id="d-served">—</div><div class="stat-lbl">Sesi digunakan</div></div>
+      <div class="stat-box"><div class="stat-num" id="d-cost">—</div><div class="stat-lbl">Biaya/sesi</div></div>
+    </div>
+    <div class="status-msg" id="d-msg">Memuat data…</div>
+  </div>
+
+  <!-- TRANSPARENCY -->
+  <div class="transparency">
+    <h2>Transparansi Biaya</h2>
+    <p>Berikut rincian biaya yang timbul setiap kali ada satu sesi latihan 60 soal:</p>
+    <div class="cost-row"><span class="cost-key">Model AI</span><span class="cost-val">Claude Sonnet 4.5</span></div>
+    <div class="cost-row"><span class="cost-key">Input tokens / sesi</span><span class="cost-val">~90.000 tokens</span></div>
+    <div class="cost-row"><span class="cost-key">Output tokens / sesi</span><span class="cost-val">~25.000 tokens</span></div>
+    <div class="cost-row"><span class="cost-key">Biaya input</span><span class="cost-val">~$0,27 (Rp 4.300)</span></div>
+    <div class="cost-row"><span class="cost-key">Biaya output</span><span class="cost-val">~$0,38 (Rp 5.900)</span></div>
+    <div class="cost-row total"><span class="cost-key">Total per sesi</span><span class="cost-val" id="cost-per-sess">~$0,64 (Rp 10.000)</span></div>
+  </div>
+
+  <!-- DONATE -->
+  <div class="donate-card">
+    <h2>Transfer Donasi</h2>
+    <p>Tidak ada minimum donasi. Transfer seikhlasnya ke rekening di bawah ini.</p>
+
+    <div class="bank-block">
+      <div class="bank-row">
+        <span class="bank-key">Bank</span>
+        <span class="bank-val" id="bnk-name">BCA</span>
+      </div>
+      <div class="bank-row">
+        <span class="bank-key">No. Rekening</span>
+        <span class="bank-val">
+          <span id="bnk-number">1234567890</span>
+          <button class="copy-btn" onclick="copyIt('bnk-number', this)">Salin</button>
+        </span>
+      </div>
+      <div class="bank-row">
+        <span class="bank-key">Atas Nama</span>
+        <span class="bank-val" id="bnk-holder">Nama Anda</span>
+      </div>
+      <div class="bank-row">
+        <span class="bank-key">Nominal dipilih</span>
+        <span class="bank-val">
+          <span id="bnk-amount">—</span>
+          <button class="copy-btn" id="copy-amount-btn" onclick="copyIt('bnk-amount-raw', this)" style="display:none">Salin</button>
+          <span id="bnk-amount-raw" style="display:none"></span>
+        </span>
+      </div>
+    </div>
+
+    <div class="suggest-row" id="suggest-row">
+      <button class="suggest-btn" onclick="setAmount(10000)">Rp 10.000<br><small style="font-size:10px;opacity:.7">~1 sesi</small></button>
+      <button class="suggest-btn" onclick="setAmount(25000)">Rp 25.000<br><small style="font-size:10px;opacity:.7">~2–3 sesi</small></button>
+      <button class="suggest-btn" onclick="setAmount(50000)">Rp 50.000<br><small style="font-size:10px;opacity:.7">~5 sesi</small></button>
+      <button class="suggest-btn" onclick="setAmount(100000)">Rp 100.000<br><small style="font-size:10px;opacity:.7">~10 sesi</small></button>
+    </div>
+
+    <input type="number" class="custom-amount" id="custom-amount" placeholder="Atau ketik nominal lain (Rp)…" min="1000" oninput="onCustom(this.value)">
+    <div class="amount-preview" id="amount-preview"></div>
+
+    <div class="confirm-note">
+      Setelah transfer, tidak perlu konfirmasi ke siapapun. Saldo akan diperbarui manual oleh admin secara berkala dan tercermin di status di atas. Terima kasih atas kepercayaan dan dukunganmu. 💚
+    </div>
+  </div>
+
+  <!-- THANK YOU -->
+  <div class="thankyou">
+    <h2>Terima Kasih</h2>
+    <p>Platform ini dibuat untuk membantu rekan-rekan pegawai DJP mempersiapkan diri menghadapi uji kompetensi jabatan struktural. Semua materi berasal dari dokumen resmi DJP. Donasi kamu memastikan layanan ini tetap bisa diakses semua orang secara gratis.</p>
+  </div>
+
+  <div style="text-align:center">
+    <a href="/" style="font-size:13px;color:var(--blue);text-decoration:none">← Kembali ke latihan</a>
+  </div>
+
+</div><!-- /main -->
+
+<script>
+/* ── CONFIG — same as request.html, edit here ── */
+const CFG = {
+  bankName:   "BCA",
+  bankNumber: "1234567890",
+  bankHolder: "Nama Anda",
+  costPerSession: 10000,      // in IDR, for display
+  costUSD: "0.64"
+};
+
+document.getElementById("bnk-name").textContent   = CFG.bankName;
+document.getElementById("bnk-number").textContent = CFG.bankNumber;
+document.getElementById("bnk-holder").textContent = CFG.bankHolder;
+document.getElementById("cost-per-sess").textContent = `~$${CFG.costUSD} (Rp ${CFG.costPerSession.toLocaleString("id-ID")})`;
+
+let selectedAmount = 0;
+
+function setAmount(val) {
+  selectedAmount = val;
+  document.getElementById("custom-amount").value = "";
+  document.querySelectorAll(".suggest-btn").forEach(b => b.classList.remove("act"));
+  event.currentTarget.classList.add("act");
+  updateAmountDisplay(val);
+}
+
+function onCustom(val) {
+  selectedAmount = parseInt(val) || 0;
+  document.querySelectorAll(".suggest-btn").forEach(b => b.classList.remove("act"));
+  updateAmountDisplay(selectedAmount);
+}
+
+function updateAmountDisplay(val) {
+  const raw = document.getElementById("bnk-amount-raw");
+  const disp = document.getElementById("bnk-amount");
+  const copyBtn = document.getElementById("copy-amount-btn");
+  const preview = document.getElementById("amount-preview");
+  if (val > 0) {
+    const fmt = val.toLocaleString("id-ID");
+    disp.textContent = "Rp " + fmt;
+    raw.textContent = String(val);
+    copyBtn.style.display = "inline-block";
+    const sessions = (val / CFG.costPerSession).toFixed(1);
+    preview.textContent = `Rp ${fmt} ≈ mendukung sekitar ${sessions} sesi latihan`;
+  } else {
+    disp.textContent = "—";
+    raw.textContent = "";
+    copyBtn.style.display = "none";
+    preview.textContent = "";
+  }
+}
+
+function copyIt(id, btn) {
+  const text = document.getElementById(id).textContent.replace(/\./g,"");
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = "Disalin!";
+    btn.classList.add("ok");
+    setTimeout(() => { btn.textContent = "Salin"; btn.classList.remove("ok"); }, 2000);
+  });
+}
+
+/* Live status */
+async function loadDonateStatus() {
+  try {
+    const res = await fetch("/api/status");
+    const d = await res.json();
+    document.getElementById("d-pulse").className = "pulse " + d.health;
+    const bar = document.getElementById("d-bar");
+    bar.className = "bar-fill " + d.health;
+    bar.style.width = Math.max(2, d.pctRemaining) + "%";
+    document.getElementById("d-concurrent").textContent = d.concurrent;
+    document.getElementById("d-left").textContent       = d.sessionsLeft.toLocaleString("id-ID");
+    document.getElementById("d-served").textContent     = d.sessionsServed.toLocaleString("id-ID");
+    document.getElementById("d-cost").textContent       = "Rp " + Math.round(d.costPerSession * 15000).toLocaleString("id-ID");
+
+    const msgs = {
+      good:     `Saldo masih aman untuk ±${d.sessionsLeft} sesi. Terima kasih telah menggunakan layanan ini!`,
+      low:      `Saldo mulai menipis (±${d.sessionsLeft} sesi tersisa). Donasi kamu sangat berarti sekarang.`,
+      critical: `⚠ Saldo hampir habis! Hanya tersisa ±${d.sessionsLeft} sesi. Tolong bantu agar layanan tidak terhenti.`
+    };
+    document.getElementById("d-msg").textContent = msgs[d.health] || "";
+
+    // Update suggest buttons with session estimates
+    document.querySelectorAll(".suggest-btn").forEach(btn => {
+      const idr = parseInt(btn.textContent.replace(/[^0-9]/g, "").slice(0,7));
+      if (idr > 0) {
+        const approxSessions = Math.round(idr / CFG.costPerSession);
+        const small = btn.querySelector("small");
+        if (small) small.textContent = `~${approxSessions} sesi`;
+      }
+    });
+  } catch(_) {}
+}
+
+loadDonateStatus();
+</script>
+</body>
+</html>

@@ -219,6 +219,65 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 .g-tip { background: var(--amber-l); border: 0.5px solid var(--amber-m); border-radius: var(--r-md); padding: 10px 12px; margin-top: 16px; font-size: 12px; color: var(--amber); line-height: 1.6; }
 .g-tip a { color: var(--amber); font-weight: 500; }
 
+
+/* ACCESS GRID */
+.access-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 680px; margin: 0 auto; }
+@media(max-width:600px) { .access-grid { grid-template-columns: 1fr; } }
+.access-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 24px; display: flex; flex-direction: column; gap: 10px; }
+.access-badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; width: fit-content; }
+.access-badge.team { background: var(--teal-l); color: var(--teal); border: 0.5px solid var(--teal-m); }
+.access-badge.paid { background: var(--purple-l); color: var(--purple); border: 0.5px solid var(--purple-m); }
+.access-title { font-size: 16px; font-weight: 500; color: var(--text); }
+.access-desc { font-size: 13px; color: var(--text-2); line-height: 1.6; }
+.access-card input { width: 100%; padding: 10px 12px; border: 0.5px solid var(--border-2); border-radius: var(--r-md); font-size: 13px; background: var(--bg-2); color: var(--text); font-family: inherit; outline: none; }
+.access-card input:focus { border-color: var(--blue-m); }
+.btn-t { background: var(--teal); color: #fff; border: none; padding: 10px 22px; border-radius: var(--r-md); font-size: 14px; cursor: pointer; font-family: inherit; font-weight: 500; transition: background .15s; width: 100%; }
+.btn-t:hover { background: var(--teal-m); }
+.access-err { font-size: 12px; color: var(--red); min-height: 16px; }
+.access-divider { text-align: center; font-size: 11px; color: var(--text-3); position: relative; margin: 2px 0; }
+.access-divider::before, .access-divider::after { content: ""; position: absolute; top: 50%; width: 38%; height: 0.5px; background: var(--border); }
+.access-divider::before { left: 0; } .access-divider::after { right: 0; }
+.btn-request { display: block; text-align: center; padding: 10px 16px; border: 0.5px solid var(--purple-m); border-radius: var(--r-md); font-size: 13px; color: var(--purple); text-decoration: none; font-weight: 500; transition: background .15s; }
+.btn-request:hover { background: var(--purple-l); }
+
+/* ACCESS TYPE indicator in topbar */
+.access-chip { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; letter-spacing: .04em; }
+.access-chip.team { background: var(--teal-l); color: var(--teal); }
+.access-chip.paid { background: var(--purple-l); color: var(--purple); }
+
+
+/* ── STATUS WIDGET ── */
+.status-widget { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 18px 20px; max-width: 680px; margin: 0 auto 20px; }
+.status-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+.status-title { font-size: 12px; font-weight: 600; color: var(--text-2); letter-spacing: .05em; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
+.pulse { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.pulse.good     { background: var(--green-m); box-shadow: 0 0 0 0 var(--green-m); animation: pulse-green 2s infinite; }
+.pulse.low      { background: var(--amber-m); box-shadow: 0 0 0 0 var(--amber-m); animation: pulse-amber 2s infinite; }
+.pulse.critical { background: var(--red-m);   box-shadow: 0 0 0 0 var(--red-m);   animation: pulse-red   1.2s infinite; }
+.pulse.loading  { background: var(--text-3); }
+@keyframes pulse-green  { 0%,100%{box-shadow:0 0 0 0 rgba(99,153,34,.5)}  70%{box-shadow:0 0 0 6px rgba(99,153,34,0)} }
+@keyframes pulse-amber  { 0%,100%{box-shadow:0 0 0 0 rgba(186,117,23,.5)} 70%{box-shadow:0 0 0 6px rgba(186,117,23,0)} }
+@keyframes pulse-red    { 0%,100%{box-shadow:0 0 0 0 rgba(226,75,74,.5)}  70%{box-shadow:0 0 0 6px rgba(226,75,74,0)} }
+.concurrent-badge { font-size: 12px; color: var(--text-3); display: flex; align-items: center; gap: 5px; }
+.concurrent-num { font-weight: 600; color: var(--text); }
+.status-bar-wrap { margin-bottom: 12px; }
+.status-bar-track { height: 6px; background: var(--bg-3); border-radius: 3px; overflow: hidden; }
+.status-bar-fill { height: 100%; border-radius: 3px; transition: width 1s ease; }
+.status-bar-fill.good     { background: var(--green-m); }
+.status-bar-fill.low      { background: var(--amber-m); }
+.status-bar-fill.critical { background: var(--red-m); }
+.status-bar-fill.loading  { background: var(--border-2); width: 60% !important; animation: shimmer 1.5s infinite; }
+@keyframes shimmer { 0%,100%{opacity:.4} 50%{opacity:1} }
+.status-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
+.stat-box { background: var(--bg-2); border-radius: var(--r-md); padding: 10px 12px; text-align: center; }
+.stat-num { font-size: 20px; font-weight: 600; color: var(--text); line-height: 1; }
+.stat-lbl { font-size: 10px; color: var(--text-3); margin-top: 3px; line-height: 1.3; }
+.status-msg { font-size: 12px; color: var(--text-2); line-height: 1.6; margin-bottom: 12px; }
+.donate-strip { background: var(--amber-l); border: 0.5px solid var(--amber-m); border-radius: var(--r-md); padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.donate-text { font-size: 12px; color: var(--amber); line-height: 1.5; }
+.donate-btn { font-size: 12px; font-weight: 500; padding: 6px 14px; background: var(--amber-m); color: #fff; border: none; border-radius: var(--r-md); cursor: pointer; font-family: inherit; white-space: nowrap; text-decoration: none; display: inline-block; }
+.donate-btn:hover { opacity: .88; }
+
 @media (max-width: 600px) {
   .main { padding: 16px 14px 56px; }
   .topbar { padding: 0 14px; }
@@ -239,10 +298,8 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
       <div class="topbar-sub">Jabatan Struktural KPP · 60 Soal</div>
     </div>
   </div>
-  <div class="key-wrap" id="key-wrap" style="display:none">
-    <span style="font-size:11px;color:var(--text-3)">API Key</span>
-    <input type="password" id="topbar-key" placeholder="sk-ant-..." oninput="onKeyInput()" autocomplete="off">
-    <div class="key-dot" id="key-dot"></div>
+  <div id="access-indicator" style="display:none">
+    <span class="access-chip" id="access-chip"></span>
   </div>
 </div>
 
@@ -261,69 +318,39 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
     </div>
   </div>
 
-  <!-- API KEY GUIDE -->
-  <div class="guide-wrap">
-    <button class="guide-toggle" onclick="toggleGuide()" id="guide-toggle">
-      <span class="guide-toggle-label">
-        <span class="guide-toggle-icon">?</span>
-        Cara mendapatkan Anthropic API Key
-      </span>
-      <span class="guide-arrow" id="guide-arrow">&#9660;</span>
-    </button>
-    <div class="guide-body" id="guide-body">
-      <div class="g-step">
-        <div class="g-num">1</div>
-        <div class="g-step-body">
-          <div class="g-title">Buka Anthropic Console <span class="g-free">Gratis</span></div>
-          <div class="g-desc">Kunjungi <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a> lalu klik <strong>Sign up</strong>. Daftar dengan email atau akun Google.</div>
-        </div>
-      </div>
-      <div class="g-connector"></div>
-      <div class="g-step">
-        <div class="g-num">2</div>
-        <div class="g-step-body">
-          <div class="g-title">Verifikasi nomor HP</div>
-          <div class="g-desc">Anthropic mengirim SMS kode verifikasi. Masukkan kodenya untuk mengaktifkan akun.</div>
-        </div>
-      </div>
-      <div class="g-connector"></div>
-      <div class="g-step">
-        <div class="g-num">3</div>
-        <div class="g-step-body">
-          <div class="g-title">Buka menu API Keys</div>
-          <div class="g-desc">Setelah login, klik <strong>API Keys</strong> di sidebar kiri — atau langsung ke <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com/settings/keys</a>.</div>
-        </div>
-      </div>
-      <div class="g-connector"></div>
-      <div class="g-step">
-        <div class="g-num">4</div>
-        <div class="g-step-body">
-          <div class="g-title">Buat API key baru</div>
-          <div class="g-desc">Klik <strong>Create Key</strong>, beri nama bebas (misal: <span class="g-chip">djp-quiz</span>), lalu klik <strong>Create Key</strong>.</div>
-        </div>
-      </div>
-      <div class="g-connector"></div>
-      <div class="g-step">
-        <div class="g-num">5</div>
-        <div class="g-step-body">
-          <div class="g-title">Salin key-nya sekarang</div>
-          <div class="g-desc">Key hanya ditampilkan <strong>sekali</strong>. Salin teks yang dimulai dengan <span class="g-chip">sk-ant-...</span> dan tempelkan ke kolom di bawah.</div>
-        </div>
-      </div>
-      <div class="g-tip">
-        <strong>Info biaya:</strong> Akun baru mendapat free credits yang cukup untuk ratusan sesi latihan. Tagihan hanya muncul jika credit habis dan kamu menambahkan kartu kredit. Pantau penggunaan di <a href="https://console.anthropic.com/settings/cost" target="_blank">console.anthropic.com/settings/cost</a>.
-      </div>
+  <!-- STATUS WIDGET -->
+  <div class="status-widget" id="status-widget">
+    <div class="status-top">
+      <div class="status-title"><div class="pulse loading" id="s-pulse"></div>Status Layanan</div>
+      <div class="concurrent-badge">&#128100; <span class="concurrent-num" id="s-concurrent">—</span> pengguna aktif</div>
+    </div>
+    <div class="status-bar-wrap">
+      <div class="status-bar-track"><div class="status-bar-fill loading" id="s-bar" style="width:60%"></div></div>
+    </div>
+    <div class="status-stats">
+      <div class="stat-box"><div class="stat-num" id="s-sessions-left">—</div><div class="stat-lbl">Sesi tersisa<br>(estimasi)</div></div>
+      <div class="stat-box"><div class="stat-num" id="s-served">—</div><div class="stat-lbl">Sesi telah<br>digunakan</div></div>
+      <div class="stat-box"><div class="stat-num" id="s-cost">—</div><div class="stat-lbl">Biaya per<br>sesi</div></div>
+    </div>
+    <div class="status-msg" id="s-msg">Memuat status layanan…</div>
+    <div class="donate-strip">
+      <div class="donate-text">Layanan ini gratis dan didanai dari kantong pribadi. Donasi membantu server tetap hidup. 🙏</div>
+      <a href="/donate.html" class="donate-btn">Dukung Layanan →</a>
     </div>
   </div>
 
-  <div class="gate-box">
-    <h2>Masukkan Anthropic API Key</h2>
-    <p>Soal dibuat secara dinamis oleh AI. API key hanya tersimpan di memori browser kamu, tidak dikirim ke mana pun selain Anthropic.</p>
-    <input type="password" id="gate-key" placeholder="sk-ant-api03-..." autocomplete="off" onkeydown="if(event.key==='Enter')saveKey()">
-    <button class="btn btn-p" style="width:100%" onclick="saveKey()">Mulai →</button>
-    <small>Belum punya API key? Ikuti panduan di atas untuk mendapatkannya secara gratis.</small>
+  <div style="max-width:420px;margin:0 auto 20px;">
+    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:26px;text-align:center;">
+      <div style="font-size:15px;font-weight:500;margin-bottom:8px;">Akses Gratis untuk Semua</div>
+      <p style="font-size:13px;color:var(--text-2);margin-bottom:20px;line-height:1.65;">Platform ini terbuka untuk semua pegawai DJP tanpa biaya. Klik tombol di bawah untuk mulai latihan.</p>
+      <button class="btn btn-p" style="width:100%;font-size:15px;padding:12px;" onclick="enterApp()">Mulai Latihan →</button>
+      <p style="font-size:11px;color:var(--text-3);margin-top:12px;line-height:1.6;">
+        Layanan ini berbiaya operasional. Jika kamu merasa terbantu,
+        <a href="/donate.html" style="color:var(--amber-m);text-decoration:none;font-weight:500">pertimbangkan donasi kecil</a>
+        untuk membantu server tetap hidup. 🙏
+      </p>
+    </div>
   </div>
-</div>
 
 <!-- ══ SELECT ══ -->
 <div class="screen" id="screen-select">
@@ -497,38 +524,32 @@ let slotAnswered = false;
 /* ────────────────────────────────────
    API KEY
 ──────────────────────────────────── */
+// accessType: "team" | "paid" | "server"
+let accessType = "server";
+let sessionKeyUsed = null;
+
 async function initApp() {
-  try {
-    const res = await fetch("/api/check-key");
-    const data = await res.json();
-    if (data.hasServerKey) {
-      // Server has a key — skip gate, go straight to quiz
-      apiKey = "__server__";
-      document.getElementById("key-wrap").style.display = "none";
-      showScreen("screen-select");
-      renderPositions();
-      return;
-    }
-  } catch(_) {}
-  // No server key — show gate as normal
+  // Always show gate — open access
   showScreen("screen-gate");
 }
 
-function saveKey() {
-  const v = document.getElementById("gate-key").value.trim();
-  if (!v.startsWith("sk-ant")) { alert("API key tidak valid. Harus dimulai dengan sk-ant-"); return; }
-  apiKey = v;
-  document.getElementById("topbar-key").value = v;
-  document.getElementById("key-dot").className = "key-dot ok";
-  document.getElementById("key-wrap").style.display = "flex";
+function enterApp() {
+  apiKey = "__server__";
+  accessType = "open";
+  setAccessIndicator("open", "Akses Gratis");
   showScreen("screen-select");
   renderPositions();
 }
-function onKeyInput() {
-  const v = document.getElementById("topbar-key").value.trim();
-  apiKey = v;
-  document.getElementById("key-dot").className = "key-dot" + (v.startsWith("sk-ant") ? " ok" : "");
+
+function setAccessIndicator(type, label) {
+  const wrap = document.getElementById("access-indicator");
+  const chip = document.getElementById("access-chip");
+  wrap.style.display = "flex";
+  chip.textContent = label;
+  chip.className = "access-chip " + (type === "team" ? "team" : type === "open" ? "team" : "paid");
 }
+
+
 
 /* ────────────────────────────────────
    SCREENS
@@ -880,7 +901,20 @@ function nextSlot() {
 /* ────────────────────────────────────
    SHOW RESULTS
 ──────────────────────────────────── */
+async function markSessionUsed() {
+  if (accessType === "paid" && sessionKeyUsed) {
+    try {
+      await fetch("/api/validate-key", {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify({type:"use", code:sessionKeyUsed})
+      });
+    } catch(_) {}
+  }
+}
+
 function showResults() {
+  markSessionUsed();
   showScreen("screen-result");
   const total = answersLog.length;
   const pct = Math.round((correctCount / total) * 100);
@@ -1013,7 +1047,71 @@ function showError(msg) {
 /* ────────────────────────────────────
    UTILS
 ──────────────────────────────────── */
-window.addEventListener("DOMContentLoaded", initApp);
+
+/* ────────────────────────────────────
+   STATUS WIDGET + HEARTBEAT
+──────────────────────────────────── */
+const SESSION_ID = Math.random().toString(36).slice(2);
+let heartbeatTimer = null;
+
+async function loadStatus() {
+  try {
+    const res = await fetch("/api/status");
+    const d = await res.json();
+
+    const pulse = document.getElementById("s-pulse");
+    const bar   = document.getElementById("s-bar");
+    if (!pulse) return;
+
+    pulse.className = "pulse " + d.health;
+    bar.className   = "status-bar-fill " + d.health;
+    bar.style.width = Math.max(2, d.pctRemaining) + "%";
+
+    document.getElementById("s-concurrent").textContent   = d.concurrent;
+    document.getElementById("s-sessions-left").textContent = d.sessionsLeft.toLocaleString("id-ID");
+    document.getElementById("s-served").textContent       = d.sessionsServed.toLocaleString("id-ID");
+    document.getElementById("s-cost").textContent         = "Rp " + Math.round(d.costPerSession * 15000).toLocaleString("id-ID");
+
+    const msgs = {
+      good:     `Saldo cukup untuk ±${d.sessionsLeft} sesi lagi. Layanan berjalan normal.`,
+      low:      `Saldo mulai menipis. Hanya tersisa ±${d.sessionsLeft} sesi. Pertimbangkan donasi agar layanan tetap berjalan.`,
+      critical: `⚠ Saldo kritis! Hanya tersisa ±${d.sessionsLeft} sesi. Layanan bisa terhenti sewaktu-waktu. Bantu dengan donasi sekarang.`
+    };
+    document.getElementById("s-msg").textContent = msgs[d.health] || "";
+  } catch(_) {
+    const p = document.getElementById("s-pulse");
+    if (p) { p.className = "pulse loading"; document.getElementById("s-msg").textContent = "Tidak dapat memuat status saat ini."; }
+  }
+}
+
+function startHeartbeat() {
+  stopHeartbeat();
+  const ping = () => fetch("/api/status", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ sessionId: SESSION_ID })
+  }).catch(() => {});
+  ping();
+  heartbeatTimer = setInterval(ping, 20000);
+}
+
+function stopHeartbeat() {
+  if (heartbeatTimer) { clearInterval(heartbeatTimer); heartbeatTimer = null; }
+}
+
+// Refresh status when gate is visible
+const _origShowScreen = showScreen;
+function showScreen(id) {
+  _origShowScreen(id);
+  if (id === "screen-gate") {
+    loadStatus();
+    stopHeartbeat();
+  } else {
+    startHeartbeat();
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => { initApp(); loadStatus(); });
 
 function esc(s) {
   return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
