@@ -278,6 +278,20 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 .donate-btn { font-size: 12px; font-weight: 500; padding: 6px 14px; background: var(--amber-m); color: #fff; border: none; border-radius: var(--r-md); cursor: pointer; font-family: inherit; white-space: nowrap; text-decoration: none; display: inline-block; }
 .donate-btn:hover { opacity: .88; }
 
+
+/* SEGMENT CARDS */
+.seg-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 18px; cursor: pointer; transition: all .15s; display: flex; flex-direction: column; gap: 6px; }
+.seg-card:hover { border-color: var(--border-2); background: var(--bg-2); }
+.seg-card.active-a { border: 1.5px solid var(--blue-m); background: var(--blue-l); }
+.seg-card.active-b { border: 1.5px solid var(--purple-m); background: var(--purple-l); }
+.seg-badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; padding: 2px 8px; border-radius: 20px; border: 0.5px solid; width: fit-content; }
+.seg-title { font-size: 16px; font-weight: 500; color: var(--text); }
+.seg-level { font-size: 11px; color: var(--text-3); }
+.seg-desc { font-size: 12px; color: var(--text-2); line-height: 1.5; }
+.seg-indicator { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.seg-lvl-pill { font-size: 10px; padding: 2px 8px; border-radius: 20px; background: var(--bg-3); color: var(--text-3); border: 0.5px solid var(--border); }
+@media(max-width:520px) { #segment-grid { grid-template-columns: 1fr !important; } }
+
 @media (max-width: 600px) {
   .main { padding: 16px 14px 56px; }
   .topbar { padding: 0 14px; }
@@ -339,16 +353,45 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
     </div>
   </div>
 
-  <div style="max-width:420px;margin:0 auto 20px;">
-    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:26px;text-align:center;">
-      <div style="font-size:15px;font-weight:500;margin-bottom:8px;">Akses Gratis untuk Semua</div>
-      <p style="font-size:13px;color:var(--text-2);margin-bottom:20px;line-height:1.65;">Platform ini terbuka untuk semua pegawai DJP tanpa biaya. Klik tombol di bawah untuk mulai latihan.</p>
-      <button class="btn btn-p" style="width:100%;font-size:15px;padding:12px;" onclick="enterApp()">Mulai Latihan →</button>
-      <p style="font-size:11px;color:var(--text-3);margin-top:12px;line-height:1.6;">
-        Layanan ini berbiaya operasional. Jika kamu merasa terbantu,
-        <a href="/donate.html" style="color:var(--amber-m);text-decoration:none;font-weight:500">pertimbangkan donasi kecil</a>
-        untuk membantu server tetap hidup. 🙏
-      </p>
+  <!-- SEGMENT SELECTOR -->
+  <div style="max-width:640px;margin:0 auto 20px;">
+    <div style="font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3);text-align:center;margin-bottom:12px;">Pilih segmen jabatan yang kamu tuju</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;" id="segment-grid">
+
+      <div class="seg-card" id="seg-a" onclick="selectSegment('A')">
+        <div class="seg-badge" style="background:var(--blue-l);color:var(--blue);border-color:var(--blue-m)">Jabatan Pengawas</div>
+        <div class="seg-title">Kepala Seksi</div>
+        <div class="seg-level">Level kompetensi 2–3</div>
+        <div class="seg-desc">Kasi Pengawasan, Kasi Pelayanan, Kasi P3, Kasi PKD, Kasubbag SUKI</div>
+        <div class="seg-indicator">
+          <span class="seg-lvl-pill">Level 2 — Dasar</span>
+          <span class="seg-lvl-pill">Level 3 — Menengah</span>
+        </div>
+      </div>
+
+      <div class="seg-card" id="seg-b" onclick="selectSegment('B')">
+        <div class="seg-badge" style="background:var(--purple-l);color:var(--purple);border-color:var(--purple-m)">Jabatan Administrator</div>
+        <div class="seg-title">Kepala Kantor</div>
+        <div class="seg-level">Level kompetensi 3–4</div>
+        <div class="seg-desc">Kepala KPP, Kepala KP2KP</div>
+        <div class="seg-indicator">
+          <span class="seg-lvl-pill">Level 3 — Menengah</span>
+          <span class="seg-lvl-pill">Level 4 — Mumpuni</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="seg-enter-wrap" style="display:none">
+      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:22px;text-align:center;">
+        <div style="font-size:14px;font-weight:500;margin-bottom:6px;" id="seg-enter-title">—</div>
+        <div style="font-size:12px;color:var(--text-2);margin-bottom:16px;line-height:1.6;" id="seg-enter-desc">—</div>
+        <button class="btn btn-p" style="width:100%;font-size:15px;padding:12px;" onclick="enterApp()">Mulai Latihan →</button>
+        <p style="font-size:11px;color:var(--text-3);margin-top:12px;line-height:1.6;">
+          Layanan ini berbiaya operasional. Jika kamu merasa terbantu,
+          <a href="/donate.html" style="color:var(--amber-m);text-decoration:none;font-weight:500">pertimbangkan donasi kecil</a> 🙏
+        </p>
+      </div>
     </div>
   </div>
 </div>
@@ -356,8 +399,9 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 <!-- ══ SELECT ══ -->
 <div class="screen" id="screen-select">
   <div style="margin-bottom:22px">
-    <h2 style="font-size:18px;font-weight:500;margin-bottom:6px">Pilih Jabatan yang Dituju</h2>
-    <p style="font-size:13px;color:var(--text-2)">Format ujian: <strong>60 soal</strong> — 40 pilihan ganda reguler + 4 studi kasus (masing-masing 5 soal = 20 soal kasus). Threshold kelulusan 60%.</p>
+    <div style="font-size:11px;color:var(--text-3);margin-bottom:4px;" id="select-segment-label">—</div>
+    <h2 style="font-size:18px;font-weight:500;margin-bottom:6px" id="select-title">Pilih Jabatan yang Dituju</h2>
+    <p style="font-size:13px;color:var(--text-2)">Format ujian: <strong>60 soal</strong> — 40 pilihan ganda + 4 studi kasus × 5 soal. Threshold kelulusan 60%.</p>
   </div>
   <div class="label">Jabatan yang tersedia</div>
   <div class="pos-grid" id="pos-grid"></div>
@@ -435,8 +479,10 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 /* ────────────────────────────────────
    POSITION DATA
 ──────────────────────────────────── */
-const POSITIONS = [
-  { id:"kasi_pengawasan", name:"Kepala Seksi Pengawasan", level:"Jabatan Pengawas",
+// Segment A — Jabatan Pengawas (Kepala Seksi), Level 2–3
+const POSITIONS_PENGAWAS = [
+  { id:"kasi_pengawasan", name:"Kepala Seksi Pengawasan", segment:"A",
+    levelDesc:"Jabatan Pengawas — Level 2–3",
     competencies:[
       {name:"Analisis Kepatuhan Wajib Pajak",level:3},
       {name:"Ekstensifikasi Perpajakan",level:3},
@@ -445,7 +491,8 @@ const POSITIONS = [
       {name:"Pemeriksaan Pajak",level:2},
       {name:"Advokasi Kebijakan Perpajakan",level:2}
     ]},
-  { id:"kasi_pkd", name:"Kepala Seksi Penjaminan Kualitas Data", level:"Jabatan Pengawas",
+  { id:"kasi_pkd", name:"Kepala Seksi Penjaminan Kualitas Data", segment:"A",
+    levelDesc:"Jabatan Pengawas — Level 2–3",
     competencies:[
       {name:"Analisis Potensi Pajak",level:3},
       {name:"Profiling Wajib Pajak",level:3},
@@ -454,7 +501,8 @@ const POSITIONS = [
       {name:"Pengelolaan Jaringan Internet",level:3},
       {name:"Advokasi Kebijakan Perpajakan",level:2}
     ]},
-  { id:"kasi_p3", name:"Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan", level:"Jabatan Pengawas",
+  { id:"kasi_p3", name:"Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan", segment:"A",
+    levelDesc:"Jabatan Pengawas — Level 2–3",
     competencies:[
       {name:"Pemeriksaan Pajak",level:3},
       {name:"Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",level:2},
@@ -463,7 +511,8 @@ const POSITIONS = [
       {name:"Pelaksanaan Tindakan Penagihan Pajak",level:3},
       {name:"Advokasi Kebijakan Perpajakan",level:2}
     ]},
-  { id:"kasi_pelayanan", name:"Kepala Seksi Pelayanan", level:"Jabatan Pengawas",
+  { id:"kasi_pelayanan", name:"Kepala Seksi Pelayanan", segment:"A",
+    levelDesc:"Jabatan Pengawas — Level 2–3",
     competencies:[
       {name:"Advokasi Kebijakan Perpajakan",level:3},
       {name:"Analisis Dokumen Layanan Perpajakan",level:3},
@@ -472,7 +521,8 @@ const POSITIONS = [
       {name:"Inovasi Pelayanan Publik",level:2},
       {name:"Pengelolaan Arsip Dinamis",level:2}
     ]},
-  { id:"kasubbag_suki", name:"Kepala Subbagian Umum & Kepatuhan Internal", level:"Jabatan Pengawas",
+  { id:"kasubbag_suki", name:"Kepala Subbagian Umum & Kepatuhan Internal", segment:"A",
+    levelDesc:"Jabatan Pengawas — Level 2–3",
     competencies:[
       {name:"Manajemen Perkantoran",level:3},
       {name:"Manajemen Kinerja Organisasi",level:2},
@@ -482,6 +532,33 @@ const POSITIONS = [
       {name:"Penegakan Integritas ASN",level:3}
     ]}
 ];
+
+// Segment B — Jabatan Administrator (Kepala Kantor / Eselon III), Level 3–4
+const POSITIONS_ADMINISTRATOR = [
+  { id:"kakpp", name:"Kepala Kantor Pelayanan Pajak", segment:"B",
+    levelDesc:"Jabatan Administrator — Level 3–4",
+    competencies:[
+      {name:"Advokasi Kebijakan Perpajakan",level:3},
+      {name:"Analisis Kepatuhan Wajib Pajak",level:4},
+      {name:"Analisis Dokumen Layanan Perpajakan",level:3},
+      {name:"Analisis Potensi Pajak",level:4},
+      {name:"Ekstensifikasi Perpajakan",level:3},
+      {name:"Pelaksanaan Tindakan Penagihan Pajak",level:3}
+    ]},
+  { id:"kakp2kp", name:"Kepala KP2KP", segment:"B",
+    levelDesc:"Jabatan Administrator — Level 3–4",
+    competencies:[
+      {name:"Advokasi Kebijakan Perpajakan",level:3},
+      {name:"Analisis Dokumen Layanan Perpajakan",level:3},
+      {name:"Analisis Kepatuhan Wajib Pajak",level:3},
+      {name:"Penyusunan Informasi Publik di Bidang Perpajakan",level:3},
+      {name:"Pengelolaan Pengaduan Masyarakat di Bidang Perpajakan",level:3},
+      {name:"Ekstensifikasi Perpajakan",level:3}
+    ]}
+];
+
+// Active positions — set by segment selection
+let POSITIONS = POSITIONS_PENGAWAS;
 
 /* ────────────────────────────────────
    SESSION PLAN CONSTANTS
@@ -534,10 +611,32 @@ async function initApp() {
   showScreen("screen-gate");
 }
 
+let activeSegment = "A";
+
+function selectSegment(seg) {
+  activeSegment = seg;
+  POSITIONS = seg === "A" ? POSITIONS_PENGAWAS : POSITIONS_ADMINISTRATOR;
+  // Update card styles
+  document.getElementById("seg-a").className = "seg-card" + (seg==="A" ? " active-a" : "");
+  document.getElementById("seg-b").className = "seg-card" + (seg==="B" ? " active-b" : "");
+  // Show enter button with segment-appropriate text
+  const wrap = document.getElementById("seg-enter-wrap");
+  wrap.style.display = "block";
+  if (seg === "A") {
+    document.getElementById("seg-enter-title").textContent = "Latihan untuk Jabatan Pengawas (Kepala Seksi)";
+    document.getElementById("seg-enter-desc").textContent = "Soal dirancang pada Level 2–3: analisis data, bimbingan teknis, dan penyelesaian masalah operasional. Sesuai standar KMK 434/MK/PJ/2025.";
+  } else {
+    document.getElementById("seg-enter-title").textContent = "Latihan untuk Jabatan Administrator (Kepala Kantor)";
+    document.getElementById("seg-enter-desc").textContent = "Soal dirancang pada Level 3–4: evaluasi kinerja, rekomendasi strategis, dan pengelolaan lintas fungsi. Sesuai standar KMK 271/MK/SJ/2025.";
+  }
+  wrap.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
 function enterApp() {
   apiKey = "__server__";
   accessType = "open";
-  setAccessIndicator("open", "Akses Gratis");
+  const label = activeSegment === "A" ? "Kasi (L2–3)" : "Kakpp (L3–4)";
+  setAccessIndicator("open", label);
   showScreen("screen-select");
   renderPositions();
 }
@@ -570,6 +669,18 @@ function restartSame() { startQuiz(); }
 function renderPositions() {
   const g = document.getElementById("pos-grid");
   g.innerHTML = "";
+  // Update select screen header
+  const lbl = document.getElementById("select-segment-label");
+  const ttl = document.getElementById("select-title");
+  if (lbl && ttl) {
+    if (activeSegment === "B") {
+      lbl.textContent = "Segmen B — Jabatan Administrator";
+      ttl.textContent = "Pilih Jabatan Administrator yang Dituju";
+    } else {
+      lbl.textContent = "Segmen A — Jabatan Pengawas";
+      ttl.textContent = "Pilih Jabatan Kepala Seksi yang Dituju";
+    }
+  }
   POSITIONS.forEach((p,i) => {
     const d = document.createElement("div");
     d.className = "pos-card" + (selectedPos && selectedPos.id===p.id ? " sel" : "");
@@ -603,7 +714,7 @@ function startQuiz() {
   answered = 0; correctCount = 0; regularCorrect = 0; caseCorrect = 0;
   answersLog = []; caseVignettes = {}; slotAnswered = false;
   document.getElementById("sess-title").textContent = selectedPos.name;
-  document.getElementById("sess-sub").textContent = "40 soal reguler + 4 studi kasus (5 sub-soal masing-masing)";
+  const segLabel = activeSegment === "B" ? "Administrator/Kakpp — Level 3-4" : "Pengawas/Kasi — Level 2-3"; document.getElementById("sess-sub").textContent = `${segLabel} · 40 reguler + 4 studi kasus`;
   showScreen("screen-quiz");
   processSlot();
 }
@@ -686,21 +797,25 @@ async function generateCaseVignette(caseIdx) {
   const comp = selectedPos.competencies[caseIdx % selectedPos.competencies.length];
   const existingTitles = Object.values(caseVignettes).map(v=>v.title).join(", ");
 
-  const prompt = `Kamu adalah penyusun soal uji kompetensi teknis DJP Indonesia.
+  const vigSegCtx = activeSegment === "B"
+    ? "Skenario harus menggambarkan tantangan manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja unit, penetapan kebijakan operasional KPP, atau penanganan eskalasi dari kepala seksi."
+    : "Skenario harus menggambarkan tantangan teknis tingkat seksi: penanganan kasus WP spesifik, pelaksanaan prosedur perpajakan, bimbingan kepada AR/pelaksana, atau penyelesaian masalah operasional seksi.";
+
+  const prompt = `Penyusun soal uji kompetensi teknis DJP Indonesia.
 
 Buat SKENARIO STUDI KASUS untuk jabatan: ${selectedPos.name}
 Fokus kompetensi: ${comp.name} (Level ${comp.level})
+Konteks jabatan: ${vigSegCtx}
 Kasus sebelumnya (JANGAN DUPLIKASI tema): ${existingTitles || "Belum ada"}
 
 INSTRUKSI:
-- Buat skenario nyata (150-200 kata) yang menggambarkan situasi kerja konkret di KPP
-- Sertakan data spesifik: nama WP fiktif, angka, tanggal, permasalahan yang jelas
-- Skenario harus cukup kaya untuk mendukung 5 pertanyaan berbeda
-- Gunakan terminologi DJP yang tepat
-- Level kesulitan sesuai Level ${comp.level}
+- Buat skenario nyata dan detail (160-200 kata) yang menggambarkan situasi kerja konkret
+- Sertakan: nama instansi/WP fiktif, data angka spesifik, tanggal, dan permasalahan yang jelas
+- Skenario harus cukup kompleks untuk mendukung 5 pertanyaan dari berbagai sudut pandang
+- Gunakan terminologi DJP yang tepat (NPWP, SPT, SKP, STP, LHP, dsb.)
 
 BALAS HANYA JSON (tanpa backtick):
-{"title":"judul singkat kasus (max 10 kata)","body":"teks skenario lengkap 150-200 kata","comp":"${comp.name}","compLevel":${comp.level}}`;
+{"title":"judul singkat kasus (max 10 kata)","body":"teks skenario 160-200 kata","comp":"${comp.name}","compLevel":${comp.level}}`;
 
   try {
     const data = await callAPI(prompt, "Penyusun soal DJP. Balas HANYA JSON valid tanpa markdown.", 600);
@@ -726,21 +841,31 @@ async function generateRegularQuestion() {
 
   const prevQs = answersLog.filter(a=>a.type==="regular").slice(-8).map(a=>a.question.slice(0,50)).join(" | ");
 
-  const prompt = `Penyusun soal uji kompetensi teknis DJP.
+  const segCtx = activeSegment === "B"
+    ? `Segmen: Jabatan Administrator/Kepala Kantor (KMK 271/MK/SJ/2025)
+Karakteristik Level ${comp.level}: ${comp.level===4
+  ? "mengevaluasi sistem kerja, memberikan rekomendasi kebijakan tingkat kantor, menyusun standar/indikator kinerja lintas seksi"
+  : "menyelenggarakan dan membimbing pelaksanaan, memecahkan masalah teknis, berkoordinasi lintas seksi"}`
+    : `Segmen: Jabatan Pengawas/Kepala Seksi (KMK 434/MK/PJ/2025)
+Karakteristik Level ${comp.level}: ${comp.level===3
+  ? "mengevaluasi hasil kerja seksi, menelaah permasalahan WP, merekomendasikan tindak lanjut kepada atasan"
+  : "menganalisis data WP, menyusun rencana kegiatan seksi, melaksanakan sesuai petunjuk teknis"}`;
+
+  const prompt = `Penyusun soal uji kompetensi teknis DJP Indonesia. Buat soal yang membedakan kemampuan antar level dengan tepat.
 
 Jabatan: ${selectedPos.name}
-Kompetensi: ${comp.name} (Level ${comp.level} diperlukan)
-
-Level indikator:
-- Level 2 (Dasar/Pengawas): analisis data, menyusun rencana, melaksanakan kegiatan
-- Level 3 (Menengah/Administrator): mengevaluasi hasil, menelaah, merekomendasikan solusi
+Kompetensi: ${comp.name} — Level ${comp.level} diperlukan
+${segCtx}
 
 Soal sebelumnya (JANGAN DUPLIKASI): ${prevQs || "Belum ada"}
 
-Buat 1 soal pilihan ganda Level ${comp.level} — skenario kasus nyata di KPP, 4 pilihan, 1 benar.
+INSTRUKSI:
+- Buat 1 soal skenario kasus nyata di KPP — pilih situasi yang hanya bisa dijawab dengan kompetensi Level ${comp.level}
+- 4 pilihan: satu benar, tiga lainnya plausibel tapi mencerminkan kemampuan level lebih rendah atau pendekatan yang salah
+- Pembahasan harus mengutip indikator perilaku Level ${comp.level} dan menjelaskan mengapa level di bawahnya tidak cukup
 
 BALAS HANYA JSON:
-{"question":"teks soal","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"penjelasan 3+ kalimat mengapa benar dan mengapa lain salah, kaitkan dengan indikator Level ${comp.level}","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${comp.name}","comp":"${comp.name}","compLevel":${comp.level}}`;
+{"question":"teks soal spesifik","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"Jawaban benar karena sesuai indikator Level ${comp.level} yaitu [kutip indikator]. Opsi lain kurang tepat karena [jelaskan per opsi].","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${comp.name} Level ${comp.level}","comp":"${comp.name}","compLevel":${comp.level}}`;
 
   try {
     const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
