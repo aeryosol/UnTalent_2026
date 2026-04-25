@@ -367,7 +367,7 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 @media(max-width:640px) { .seb-layout { grid-template-columns:1fr; } .seb-nav { order:2; } .seb-qpane { order:1; } }
 
 /* NAV PANEL */
-.seb-nav { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-lg); padding:14px; position:sticky; top:66px; max-height:calc(100vh - 80px); overflow-y:auto; }
+.seb-nav { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-lg); padding:14px; position:sticky; top:14px; max-height:calc(100vh - 28px); overflow-y:auto; }
 .seb-nav-head { margin-bottom:10px; }
 .seb-legend { display:flex; flex-direction:column; gap:4px; }
 .seb-leg { font-size:10px; color:var(--text-3); display:flex; align-items:center; gap:5px; }
@@ -662,16 +662,16 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
       <div id="section-notice"></div>
       <div id="q-area"></div>
 
-      <!-- Confidence tag bar (shown after answering) -->
+      <!-- Feedback (shown after answering) -->
+      <div id="fb-area"></div>
+
+      <!-- Confidence tag bar (shown after answering, BELOW feedback) -->
       <div class="conf-bar" id="conf-bar" style="display:none">
-        <span class="conf-label">Tingkat keyakinan:</span>
+        <span class="conf-label">Tandai tingkat keyakinan:</span>
         <button class="conf-btn yakin" id="conf-yakin" onclick="setConfidence('yakin')">✓ Yakin</button>
         <button class="conf-btn ragu"  id="conf-ragu"  onclick="setConfidence('ragu')">? Ragu</button>
         <button class="conf-btn tandai" id="conf-tandai" onclick="setConfidence('tandai')">! Tandai</button>
       </div>
-
-      <!-- Feedback (shown after answering) -->
-      <div id="fb-area"></div>
 
       <!-- Navigation buttons -->
       <div class="seb-nav-btns" id="seb-nav-btns">
@@ -945,6 +945,45 @@ function selectPos(i) {
 /* ────────────────────────────────────
    START QUIZ
 ──────────────────────────────────── */
+/* ────────────────────────────────────
+   HELPERS — PICK COMPETENCY & VIGNETTE
+──────────────────────────────────── */
+function pickComp() {
+  const comps = selectedPos.competencies;
+  return comps[Math.floor(Math.random() * comps.length)];
+}
+
+async function generateCaseVignette(caseIdx) {
+  const comp = selectedPos.competencies[caseIdx % selectedPos.competencies.length];
+  const existingTitles = Object.values(caseVignettes).map(v => v.title).join(", ");
+  const vigSegCtx = activeSegment === "B"
+    ? "Tantangan manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja, penetapan kebijakan operasional KPP, atau penanganan eskalasi dari kepala seksi."
+    : "Tantangan teknis tingkat seksi: penanganan kasus WP spesifik, pelaksanaan prosedur perpajakan, bimbingan kepada AR/pelaksana, atau penyelesaian masalah operasional seksi.";
+
+  const prompt = `Penyusun soal uji kompetensi teknis DJP Indonesia.
+
+Buat SKENARIO STUDI KASUS untuk jabatan: ${selectedPos.name}
+Fokus kompetensi: ${comp.name} (Level ${comp.level})
+Konteks jabatan: ${vigSegCtx}
+Kasus sebelumnya (JANGAN DUPLIKASI tema): ${existingTitles || "Belum ada"}
+
+Buat skenario nyata dan detail (160-200 kata) dengan: nama instansi/WP fiktif, data angka spesifik, tanggal, permasalahan jelas.
+Gunakan terminologi DJP yang tepat (NPWP, SPT, SKP, STP, LHP, dsb.)
+
+BALAS HANYA JSON (tanpa backtick):
+{"title":"judul singkat kasus (max 10 kata)","body":"teks skenario 160-200 kata","comp":"${comp.name}","compLevel":${comp.level}}`;
+
+  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 600);
+  const txt = data.content.filter(d => d.type === "text").map(d => d.text).join("").replace(/```json|```/g, "").trim();
+  let parsed;
+  try { parsed = JSON.parse(txt); }
+  catch(e) { 
+    // Fallback vignette if parse fails
+    parsed = { title: `Kasus ${caseIdx+1}: ${comp.name}`, body: `Skenario kasus untuk ${comp.name} di KPP. Kepala Seksi diminta mengevaluasi situasi terkait kompetensi ini dan menyusun rekomendasi tindak lanjut.`, comp: comp.name, compLevel: comp.level };
+  }
+  caseVignettes[caseIdx] = parsed;
+}
+
 /* ════════════════════════════════════
    SEB QUIZ ENGINE — PRE-GEN ALL QS
 ════════════════════════════════════ */
@@ -1126,14 +1165,20 @@ ${segCtx}
 
 Soal sebelumnya (JANGAN DUPLIKASI): ${prevQs || "Belum ada"}
 
-Buat 1 soal skenario kasus nyata — 4 pilihan, 1 benar, pembahasan mengutip indikator Level ${comp.level}.
+Buat 1 soal skenario kasus nyata — 4 pilihan, 1 benar.
+Pembahasan: max 3 kalimat padat mengutip indikator Level ${comp.level}. Jangan bertele-tele.
 
 BALAS HANYA JSON:
-{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"...","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${comp.name} Level ${comp.level}","comp":"${comp.name}","compLevel":${comp.level}}`;
+{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"3 kalimat pembahasan","source":"Materi Webinar KPP — ${comp.name} L${comp.level}","comp":"${comp.name}","compLevel":${comp.level}}`;
 
-  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
+  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 2000);
   const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
-  const q = JSON.parse(txt);
+  let q;
+  try { q = JSON.parse(txt); }
+  catch(parseErr) {
+    if (txt.length > 1800) throw new Error("Respons AI terpotong (terlalu panjang). Coba lagi.");
+    throw new Error("Format respons tidak valid. Coba lagi.");
+  }
   q.type = "regular";
   questions[idx] = q;
 }
@@ -1165,11 +1210,16 @@ Pertanyaan sebelumnya (JANGAN DUPLIKASI): ${prevSubs||"Belum ada"}
 Buat 1 pertanyaan spesifik mengacu detail skenario, 4 pilihan, 1 benar.
 
 BALAS HANYA JSON:
-{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"...","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${vig.comp}"}`;
+{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"3 kalimat padat mengacu detail skenario dan indikator Level ${vig.compLevel}","source":"Materi Webinar KPP — ${vig.comp}"}`;
 
-  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
+  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 2000);
   const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
-  const q = JSON.parse(txt);
+  let q;
+  try { q = JSON.parse(txt); }
+  catch(parseErr) {
+    if (txt.length > 1800) throw new Error("Respons AI terpotong (terlalu panjang). Coba lagi.");
+    throw new Error("Format respons tidak valid. Coba lagi.");
+  }
   q.type = "case"; q.caseIdx = caseIdx; q.subIdx = subIdx;
   q.comp = vig.comp; q.compLevel = vig.compLevel;
   q.vigTitle = vig.title; q.vigBody = vig.body;
@@ -1226,12 +1276,16 @@ function renderCurrentQuestion() {
 
   slotAnswered = !!answers[currentQ];
 
-  // Section notice
+  // Section notice — based on position in plan, not sequential navigation
   const notice = document.getElementById("section-notice");
-  if (slot.type==="case" && slot.subIdx===0) {
-    notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon cas">📋</div><div class="sec-divider-text"><strong>Studi Kasus ${slot.caseIdx+1} dari 4</strong> — Baca skenario berikut dan jawab 5 pertanyaan terkait.</div></div>`;
-  } else if (slot.type==="regular" && currentQ>0 && plan[currentQ-1]?.type==="case") {
-    notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon reg">📝</div><div class="sec-divider-text"><strong>Kembali ke Soal Pilihan Ganda</strong></div></div>`;
+  const isFirstOfCase  = slot.type==="case"    && slot.subIdx===0;
+  const isFirstRegAfterCase = slot.type==="regular" && currentQ>0 && plan[currentQ-1]?.type==="case";
+  if (isFirstOfCase) {
+    notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon cas">📋</div><div class="sec-divider-text"><strong>Studi Kasus ${slot.caseIdx+1} dari 4</strong> — Skenario dan pertanyaan 1–5 terkait.</div></div>`;
+  } else if (isFirstRegAfterCase) {
+    notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon reg">📝</div><div class="sec-divider-text"><strong>Soal Pilihan Ganda</strong> — Blok reguler.</div></div>`;
+  } else if (slot.type==="case" && slot.subIdx>0) {
+    notice.innerHTML = `<div style="font-size:11px;color:var(--purple);background:var(--purple-l);border-radius:var(--r-md);padding:4px 10px;margin-bottom:10px;display:inline-block;">Studi Kasus ${slot.caseIdx+1} · Pertanyaan ${slot.subIdx+1}/5</div>`;
   } else {
     notice.innerHTML = "";
   }
@@ -1253,18 +1307,17 @@ function renderCurrentQuestion() {
   ["a","b","c","d"].forEach(k => {
     let cls = "opt";
     if (prev) {
-      if (k === q.correct)              cls += " correct";
-      else if (k === prev.chosen)       cls += " wrong";
+      if (k === q.correct)            cls = "opt correct";
+      else if (k === prev.chosen)     cls = "opt wrong";
     }
-    opts += `<button class="opt${prev?(" "+(k===q.correct?"correct":(k===prev.chosen?"wrong":""))):" "}" id="opt-${k}"
-      ${prev?"disabled":""}
-      onclick="selectAnswer('${k}')">${k.toUpperCase()}. ${esc(q.options[k])}</button>`;
+    const dis = prev ? "disabled" : "";
+    opts += `<button class="${cls}" id="opt-${k}" ${dis} onclick="selectAnswer('${k}')">${k.toUpperCase()}. ${esc(q.options[k])}</button>`;
   });
 
   document.getElementById("q-area").innerHTML = `
     ${vigHtml}
     <div class="q-card">
-      <div class="q-text"><span style="font-size:12px;color:var(--text-3);display:block;margin-bottom:6px;">Soal ${currentQ+1} dari ${TOTAL_QUESTIONS} · ${esc(q.comp||"")}</span>${esc(q.question)}</div>
+      <div class="q-text"><span style="font-size:12px;color:var(--text-3);display:block;margin-bottom:6px;">Soal ${currentQ+1} dari ${sessionMode==="static"?questions.length:TOTAL_QUESTIONS} · ${esc(q.comp||"")}</span>${esc(q.question)}</div>
       <div class="options">${opts}</div>
     </div>`;
 
@@ -1546,7 +1599,7 @@ function makeRevItem(a, n, isCase) {
 /* ────────────────────────────────────
    API HELPER
 ──────────────────────────────────── */
-async function callAPI(userPrompt, systemPrompt, maxTokens=900) {
+async function callAPI(userPrompt, systemPrompt, maxTokens=2000) {
   let resp;
   try {
     resp = await fetch("/api/chat", {
@@ -1563,7 +1616,7 @@ async function callAPI(userPrompt, systemPrompt, maxTokens=900) {
       })
     });
   } catch(netErr) {
-    throw new Error("Tidak dapat terhubung ke Anthropic. Pastikan koneksi internet aktif. (" + netErr.message + ")");
+    throw new Error("Koneksi gagal. Pastikan internet aktif. (" + netErr.message + ")");
   }
   if (!resp.ok) {
     let detail = "HTTP " + resp.status;
@@ -1687,7 +1740,7 @@ async function loadStatus() {
     document.getElementById("s-concurrent").textContent   = d.concurrent;
     document.getElementById("s-sessions-left").textContent = d.sessionsLeft.toLocaleString("id-ID");
     document.getElementById("s-served").textContent       = d.sessionsServed.toLocaleString("id-ID");
-    document.getElementById("s-cost").textContent         = "Rp " + Math.round(d.costPerSession * 15000).toLocaleString("id-ID");
+    document.getElementById("s-cost").textContent         = "Rp " + Math.round(d.costPerSession * 17500).toLocaleString("id-ID");
 
     const msgs = {
       good:     `Saldo cukup untuk ±${d.sessionsLeft} sesi lagi. Layanan berjalan normal.`,

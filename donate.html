@@ -145,27 +145,30 @@ hr.div { border:none; border-top:0.5px solid var(--border); margin:22px 0; }
   <!-- TRANSPARENCY -->
   <div class="transparency">
     <h2>Transparansi Biaya</h2>
-    <p>Berikut rincian biaya yang timbul setiap kali ada satu sesi latihan 60 soal:</p>
+    <p>Berikut rincian biaya nyata berdasarkan harga resmi Anthropic (April 2026) untuk setiap sesi latihan 60 soal:</p>
     <div class="cost-row"><span class="cost-key">Model AI</span><span class="cost-val">Claude Sonnet 4.5</span></div>
-    <div class="cost-row"><span class="cost-key">Input tokens / sesi</span><span class="cost-val">~90.000 tokens</span></div>
-    <div class="cost-row"><span class="cost-key">Output tokens / sesi</span><span class="cost-val">~25.000 tokens</span></div>
-    <div class="cost-row"><span class="cost-key">Biaya input</span><span class="cost-val">~$0,27 (Rp 4.300)</span></div>
-    <div class="cost-row"><span class="cost-key">Biaya output</span><span class="cost-val">~$0,38 (Rp 5.900)</span></div>
-    <div class="cost-row total"><span class="cost-key">Total per sesi</span><span class="cost-val" id="cost-per-sess">~$0,64 (Rp 10.000)</span></div>
+    <div class="cost-row"><span class="cost-key">Harga token input</span><span class="cost-val">$3,00 / juta token</span></div>
+    <div class="cost-row"><span class="cost-key">Harga token output</span><span class="cost-val">$15,00 / juta token</span></div>
+    <div class="cost-row"><span class="cost-key">API call per sesi</span><span class="cost-val">64 call (40 soal + 4 vignette + 20 sub-soal kasus)</span></div>
+    <div class="cost-row"><span class="cost-key">Input tokens / sesi</span><span class="cost-val">~22.000 token</span></div>
+    <div class="cost-row"><span class="cost-key">Output tokens / sesi</span><span class="cost-val">~22.000 token</span></div>
+    <div class="cost-row"><span class="cost-key">Biaya input</span><span class="cost-val">~$0,066 (Rp 1.155)</span></div>
+    <div class="cost-row"><span class="cost-key">Biaya output</span><span class="cost-val">~$0,330 (Rp 5.775)</span></div>
+    <div class="cost-row total"><span class="cost-key">Total per sesi</span><span class="cost-val" id="cost-per-sess">~$0,40 (Rp 7.000)</span></div>
   </div>
 
-    <!-- DONATE -->
+  <!-- DONATE -->
   <div class="donate-card">
     <h2>Transfer Donasi</h2>
-    <p>Jika layanan ini dirasa bermanfaat, silahkan berdonasi sesuai keinginan ke:</p>
+    <p>Tidak ada minimum donasi. Setiap Rp 6.500 menanggung 1 sesi latihan penuh (60 soal). Transfer seikhlasnya ke rekening di bawah ini.</p>
 
     <div class="bank-block">
       <div class="bank-row">
-        <span class="bank-key">E-Wallet</span>
+        <span class="bank-key">Bank</span>
         <span class="bank-val" id="bnk-name">BCA</span>
       </div>
       <div class="bank-row">
-        <span class="bank-key">Nomor </span>
+        <span class="bank-key">No. Rekening</span>
         <span class="bank-val">
           <span id="bnk-number">1234567890</span>
           <button class="copy-btn" onclick="copyIt('bnk-number', this)">Salin</button>
@@ -186,10 +189,11 @@ hr.div { border:none; border-top:0.5px solid var(--border); margin:22px 0; }
     </div>
 
     <div class="suggest-row" id="suggest-row">
-      <button class="suggest-btn" onclick="setAmount(10000)">Rp 10.000<br><small style="font-size:10px;opacity:.7">~1 sesi</small></button>
-      <button class="suggest-btn" onclick="setAmount(25000)">Rp 25.000<br><small style="font-size:10px;opacity:.7">~2–3 sesi</small></button>
-      <button class="suggest-btn" onclick="setAmount(50000)">Rp 50.000<br><small style="font-size:10px;opacity:.7">~5 sesi</small></button>
-      <button class="suggest-btn" onclick="setAmount(100000)">Rp 100.000<br><small style="font-size:10px;opacity:.7">~10 sesi</small></button>
+      <button class="suggest-btn" onclick="setAmount(7000)">Rp 7.000<br><small style="font-size:10px;opacity:.7">1 sesi</small></button>
+      <button class="suggest-btn" onclick="setAmount(15000)">Rp 15.000<br><small style="font-size:10px;opacity:.7">~2 sesi</small></button>
+      <button class="suggest-btn" onclick="setAmount(35000)">Rp 35.000<br><small style="font-size:10px;opacity:.7">~5 sesi</small></button>
+      <button class="suggest-btn" onclick="setAmount(50000)">Rp 50.000<br><small style="font-size:10px;opacity:.7">~7 sesi</small></button>
+      <button class="suggest-btn" onclick="setAmount(100000)">Rp 100.000<br><small style="font-size:10px;opacity:.7">~14 sesi</small></button>
     </div>
 
     <input type="number" class="custom-amount" id="custom-amount" placeholder="Atau ketik nominal lain (Rp)…" min="1000" oninput="onCustom(this.value)">
@@ -213,6 +217,7 @@ hr.div { border:none; border-top:0.5px solid var(--border); margin:22px 0; }
 </div><!-- /main -->
 
 <script>
+
 /* ── CONFIG — same as request.html, edit here ── */
 const CFG = {
   bankName:   "GoPay",
@@ -225,7 +230,7 @@ const CFG = {
 document.getElementById("bnk-name").textContent   = CFG.bankName;
 document.getElementById("bnk-number").textContent = CFG.bankNumber;
 document.getElementById("bnk-holder").textContent = CFG.bankHolder;
-document.getElementById("cost-per-sess").textContent = `~$${CFG.costUSD} (Rp ${CFG.costPerSession.toLocaleString("id-ID")})`;
+document.getElementById("cost-per-sess").textContent = `~$${CFG.costUSD} (Rp ${CFG.costPerSession.toLocaleString("id-ID")} · kurs Rp 17.500/USD)`;
 
 let selectedAmount = 0;
 
@@ -284,7 +289,7 @@ async function loadDonateStatus() {
     document.getElementById("d-concurrent").textContent = d.concurrent;
     document.getElementById("d-left").textContent       = d.sessionsLeft.toLocaleString("id-ID");
     document.getElementById("d-served").textContent     = d.sessionsServed.toLocaleString("id-ID");
-    document.getElementById("d-cost").textContent       = "Rp " + Math.round(d.costPerSession * 15000).toLocaleString("id-ID");
+    document.getElementById("d-cost").textContent       = "Rp " + Math.round(d.costPerSession * 17500).toLocaleString("id-ID");
 
     const msgs = {
       good:     `Saldo masih aman untuk ±${d.sessionsLeft} sesi. Terima kasih telah menggunakan layanan ini!`,
