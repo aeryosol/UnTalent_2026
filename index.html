@@ -607,21 +607,53 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 
 <!-- ══ LOADING ══ -->
 <div class="screen" id="screen-loading">
-  <div style="max-width:560px;margin:40px auto 0;text-align:center;">
-    <div style="font-size:16px;font-weight:500;margin-bottom:8px;" id="load-title">Menyiapkan soal ujian…</div>
-    <div style="font-size:13px;color:var(--text-2);margin-bottom:28px;" id="load-sub">Semua soal dibuat sekaligus agar kamu bisa navigasi bebas.</div>
-    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:24px;">
-      <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
-        <span style="font-size:12px;color:var(--text-3);" id="load-count">0 / 60 soal</span>
-        <span style="font-size:12px;color:var(--text-3);" id="load-pct">0%</span>
-      </div>
-      <div style="height:6px;background:var(--bg-3);border-radius:3px;overflow:hidden;margin-bottom:16px;">
-        <div id="load-bar" style="height:100%;background:var(--blue-m);border-radius:3px;width:0%;transition:width .4s ease;"></div>
-      </div>
-      <div style="font-size:12px;color:var(--text-2);min-height:18px;" id="load-status">Memulai…</div>
-      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:4px;justify-content:center;" id="load-dots"></div>
+  <div style="max-width:560px;margin:32px auto 0;">
+
+    <!-- Header -->
+    <div style="text-align:center;margin-bottom:20px;">
+      <div style="font-size:18px;font-weight:500;margin-bottom:6px;" id="load-title">Menyiapkan 60 Soal…</div>
+      <div style="font-size:13px;color:var(--text-2);line-height:1.65;" id="load-sub">Semua soal dibuat sekaligus sebelum ujian dimulai agar kamu bisa navigasi bebas antar soal tanpa biaya tambahan.</div>
     </div>
-    <div class="err" id="load-err" style="margin-top:16px;text-align:left;"></div>
+
+    <!-- Progress card -->
+    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:22px;margin-bottom:14px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:13px;font-weight:500;color:var(--text);" id="load-count">0 / 60 soal</span>
+        <span style="font-size:13px;font-weight:500;color:var(--blue);" id="load-pct">0%</span>
+      </div>
+      <div style="height:8px;background:var(--bg-3);border-radius:4px;overflow:hidden;margin-bottom:14px;">
+        <div id="load-bar" style="height:100%;background:var(--blue-m);border-radius:4px;width:0%;transition:width .5s ease;"></div>
+      </div>
+      <div style="font-size:12px;color:var(--text-2);margin-bottom:12px;min-height:16px;" id="load-status">Memulai…</div>
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:14px;">
+        <div id="load-timer" style="font-size:11px;color:var(--text-3);"></div>
+        <div style="flex:1;"></div>
+        <div id="load-eta" style="font-size:11px;color:var(--text-3);"></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:4px;justify-content:center;" id="load-dots"></div>
+    </div>
+
+    <!-- Time estimate info -->
+    <div style="background:var(--amber-l);border:0.5px solid var(--amber-m);border-radius:var(--r-lg);padding:14px 16px;margin-bottom:14px;">
+      <div style="font-size:12px;font-weight:500;color:var(--amber);margin-bottom:6px;">⏱ Estimasi waktu persiapan</div>
+      <div style="font-size:12px;color:var(--text-2);line-height:1.7;">
+        Pembuatan 60 soal membutuhkan <strong>64 permintaan ke AI</strong> secara berurutan.
+        Estimasi: <strong>10–15 menit</strong> tergantung kecepatan server.<br>
+        <span style="color:var(--text-3);">Harap biarkan tab ini tetap terbuka selama proses berlangsung.</span>
+      </div>
+    </div>
+
+    <!-- Incomplete session info -->
+    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:14px 16px;">
+      <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:6px;">💡 Jika sesi tidak selesai?</div>
+      <div style="font-size:12px;color:var(--text-2);line-height:1.7;">
+        Soal yang sudah terbuat <strong>tidak terbuang</strong> — biaya API hanya dikenakan untuk soal yang berhasil dibuat.
+        Jika gagal di tengah jalan, kamu bisa klik <strong>"Lanjutkan"</strong> untuk melanjutkan dari soal yang gagal tanpa mengulang dari awal.
+        Sesi baru yang lengkap secara otomatis tersimpan ke arsip untuk pengguna lain.
+      </div>
+    </div>
+
+    <div class="err" id="load-err" style="margin-top:14px;"></div>
   </div>
 </div>
 
@@ -1009,6 +1041,38 @@ function goGate() {
   showScreen("screen-gate");
 }
 
+
+/* ────────────────────────────────────
+   ANSWER DISTRIBUTION SHUFFLE
+   Prevents AI from always picking same letter.
+   After generating a question, shuffle options
+   so the correct answer rotates evenly across a,b,c,d.
+──────────────────────────────────── */
+let _answerRotation = ['a','b','c','d','c','b','d','a','b','d','a','c','d','a','c','b']; // 16-cycle sequence
+let _answerIdx = 0;
+
+function getNextCorrectSlot() {
+  // Returns the target letter for the correct answer in this slot
+  const letter = _answerRotation[_answerIdx % _answerRotation.length];
+  _answerIdx++;
+  return letter;
+}
+
+function shuffleQuestionOptions(q, targetCorrectLetter) {
+  // Rearrange options so the correct answer lands on targetCorrectLetter
+  // q.correct = current correct letter (e.g. "b")
+  // targetCorrectLetter = desired position (e.g. "a")
+  if (q.correct === targetCorrectLetter) return q; // already in place
+  const letters = ['a','b','c','d'];
+  const correctText = q.options[q.correct]; // the correct answer text
+  // Swap: put correct answer at targetCorrectLetter, move targetCorrectLetter's content to old correct position
+  const displaced = q.options[targetCorrectLetter];
+  q.options[targetCorrectLetter] = correctText;
+  q.options[q.correct] = displaced;
+  q.correct = targetCorrectLetter;
+  return q;
+}
+
 function startQuiz() {
   if (!selectedPos) {
     // Highlight the position grid so user knows to pick one
@@ -1033,6 +1097,7 @@ function startQuiz() {
   generated   = new Array(TOTAL_QUESTIONS).fill(false);
   caseVignettes = {};
   currentQ    = 0;
+  _answerIdx  = 0; // reset answer rotation
   correctCount = 0; regularCorrect = 0; caseCorrect = 0;
   answersLog  = [];
   slotAnswered = false;
@@ -1043,9 +1108,31 @@ function startQuiz() {
 
 /* ── PRE-GENERATION PHASE ─────────── */
 async function preGenerateAllQuestions() {
+  console.log("preGenerateAllQuestions started, total="+TOTAL_QUESTIONS);
   const total = TOTAL_QUESTIONS;
+  const startTime = Date.now();
+
+  // Live timer
+  const timerInterval = setInterval(() => {
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    const done = generated.filter(Boolean).length;
+    const el_min = Math.floor(elapsed/60), el_sec = elapsed % 60;
+    const timerEl = document.getElementById("load-timer");
+    const etaEl   = document.getElementById("load-eta");
+    if (timerEl) timerEl.textContent = `⏱ ${el_min}:${String(el_sec).padStart(2,'0')} berlalu`;
+    if (etaEl) {
+      if (done > 3) {
+        const rate = done / Math.max(elapsed, 1);
+        const rem  = Math.ceil((total - done) / rate);
+        etaEl.textContent = `~${Math.floor(rem/60)}:${String(rem%60).padStart(2,'0')} lagi`;
+      } else {
+        etaEl.textContent = "estimasi 10–15 menit";
+      }
+    }
+  }, 1000);
+
   document.getElementById("load-title").textContent = `Menyiapkan ${total} soal…`;
-  document.getElementById("load-sub").textContent   = "Harap tunggu — semua soal dibuat sekaligus agar navigasi bebas tanpa biaya tambahan.";
+  document.getElementById("load-sub").textContent   = "Harap tunggu dan jangan tutup tab ini. Semua soal dibuat sekaligus agar kamu bisa navigasi bebas.";
   buildLoadDots(total);
 
   for (let i = 0; i < total; i++) {
@@ -1070,6 +1157,7 @@ async function preGenerateAllQuestions() {
       generated[i] = true;
       setLoadDot(i, "ready");
     } catch(e) {
+      clearInterval(timerInterval);
       setLoadDot(i, "error");
       document.getElementById("load-err").style.display = "block";
       document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, i);
@@ -1077,8 +1165,11 @@ async function preGenerateAllQuestions() {
     }
   }
 
+  clearInterval(timerInterval);
+  clearInterval(timerInterval);
   updateLoadBar(total, total);
   document.getElementById("load-status").textContent = "Semua soal siap!";
+  const etaEl2 = document.getElementById("load-eta"); if(etaEl2) etaEl2.textContent = "";
   setTimeout(() => {
     answersLog = [];
     showScreen("screen-quiz");
@@ -1169,8 +1260,11 @@ async function retryPreGen(fromSlot) {
       return;
     }
   }
+  clearInterval(timerInterval);
+  clearInterval(timerInterval);
   updateLoadBar(total, total);
   document.getElementById("load-status").textContent = "Semua soal siap!";
+  const etaEl2 = document.getElementById("load-eta"); if(etaEl2) etaEl2.textContent = "";
   setTimeout(() => { showScreen("screen-quiz"); buildNavGrid(); renderCurrentQuestion(); }, 600);
 }
 
@@ -1206,6 +1300,8 @@ BALAS HANYA JSON:
     throw new Error("Format respons tidak valid. Coba lagi.");
   }
   q.type = "regular";
+  // Shuffle so correct answer is distributed evenly across a,b,c,d
+  q = shuffleQuestionOptions(q, getNextCorrectSlot());
   questions[idx] = q;
 }
 
@@ -1246,7 +1342,9 @@ BALAS HANYA JSON:
     if (txt.length > 1800) throw new Error("Respons AI terpotong (terlalu panjang). Coba lagi.");
     throw new Error("Format respons tidak valid. Coba lagi.");
   }
-  q.type = "case"; q.caseIdx = caseIdx; q.subIdx = subIdx;
+  q.type = "case";
+  // Shuffle so correct answer is distributed evenly
+  q = shuffleQuestionOptions(q, getNextCorrectSlot()); q.caseIdx = caseIdx; q.subIdx = subIdx;
   q.comp = vig.comp; q.compLevel = vig.compLevel;
   q.vigTitle = vig.title; q.vigBody = vig.body;
   questions[idx] = q;
