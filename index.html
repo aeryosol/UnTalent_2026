@@ -830,8 +830,10 @@ function buildPlan() {
 let apiKey = "";
 let selectedPos = null;
 let plan = [];
-let currentQ = 0;    // 0-59
-// // removed stale answered var -- removed, using answers[] array instead
+let currentQ = 0;        // current question index (0-based)
+let answers = [];        // {chosen, correct, isCorrect, options} per slot
+let confidences = [];    // "yakin"|"ragu"|"tandai"|null per slot
+let generated = [];      // true once question at index is ready
 let correctCount = 0;
 let regularCorrect = 0;
 let caseCorrect = 0;
@@ -997,12 +999,7 @@ BALAS HANYA JSON (tanpa backtick):
 // All questions pre-generated before quiz starts
 // questions[] is indexed 0–59, parallel to plan[]
 // State per slot: answers[], confidences[], generated[]
-
-let confidences  = [];   // "yakin"|"ragu"|"tandai"|null per slot
-let answers      = [];   // {chosen, correct, isCorrect, options} per slot
-let generated    = [];   // true once question at index is ready
-let currentQ     = 0;    // current slot index (0-based)
-let isGenerating = false; // prevents concurrent generation
+// (variables declared in STATE block above: answers, confidences, generated, currentQ)
 
 function goGate() {
   selectedPos = null;
