@@ -830,6 +830,7 @@ function buildPlan() {
 let apiKey = "";
 let selectedPos = null;
 let plan = [];
+let questions = [];      // all 60 question objects, pre-generated
 let currentQ = 0;        // current question index (0-based)
 let answers = [];        // {chosen, correct, isCorrect, options} per slot
 let confidences = [];    // "yakin"|"ragu"|"tandai"|null per slot
