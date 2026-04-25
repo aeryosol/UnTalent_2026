@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daftar Sesi Latihan — Uji Kompetensi Teknis KPP</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #ffffff; --bg-2: #f7f6f3; --bg-3: #f0ede8;
+  --text: #1a1a18; --text-2: #5a5a56; --text-3: #9a9994;
+  --border: rgba(0,0,0,0.10); --border-2: rgba(0,0,0,0.18);
+  --blue: #185FA5; --blue-l: #E6F1FB; --blue-m: #378ADD; --blue-d: #0C447C;
+  --green: #3B6D11; --green-l: #EAF3DE; --green-m: #639922;
+  --red: #A32D2D; --red-l: #FCEBEB; --red-m: #E24B4A;
+  --amber: #854F0B; --amber-l: #FAEEDA; --amber-m: #BA7517;
+  --purple: #534AB7; --purple-l: #EEEDFE; --purple-m: #7F77DD;
+  --r-md: 8px; --r-lg: 12px; --r-xl: 16px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1c1a; --bg-2: #252522; --bg-3: #2e2e2b;
+    --text: #f0ede8; --text-2: #a8a49e; --text-3: #6a6860;
+    --border: rgba(255,255,255,0.09); --border-2: rgba(255,255,255,0.18);
+    --blue: #5BA3E8; --blue-l: #0C2D4A; --blue-m: #378ADD; --blue-d: #85B7EB;
+    --green: #97C459; --green-l: #173404; --green-m: #639922;
+    --red: #F09595; --red-l: #3A1010; --red-m: #E24B4A;
+    --amber: #EF9F27; --amber-l: #2A1800; --amber-m: #BA7517;
+    --purple: #AFA9EC; --purple-l: #26215C; --purple-m: #7F77DD;
+  }
+}
+
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; background: var(--bg-3); color: var(--text); min-height: 100vh; font-size: 15px; line-height: 1.6; }
+
+/* TOPBAR */
+.topbar { background: var(--bg); border-bottom: 0.5px solid var(--border); padding: 0 24px; height: 52px; display: flex; align-items: center; gap: 10px; position: sticky; top: 0; z-index: 100; }
+.topbar-logo { width: 32px; height: 32px; border-radius: 8px; background: var(--blue); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+.topbar-title { font-size: 14px; font-weight: 500; }
+.topbar-sub { font-size: 11px; color: var(--text-3); }
+.back-link { margin-left: auto; font-size: 13px; color: var(--blue); text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+
+/* LAYOUT */
+.main { max-width: 640px; margin: 0 auto; padding: 32px 20px 72px; }
+
+/* HERO */
+.hero { text-align: center; padding: 28px 16px 24px; }
+.hero h1 { font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+.hero p { font-size: 14px; color: var(--text-2); line-height: 1.7; max-width: 440px; margin: 0 auto; }
+
+/* PRICE CARD */
+.price-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 24px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.price-info { }
+.price-label { font-size: 12px; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; font-weight: 600; margin-bottom: 4px; }
+.price-amount { font-size: 32px; font-weight: 600; color: var(--blue); line-height: 1; }
+.price-sub { font-size: 12px; color: var(--text-2); margin-top: 4px; }
+.price-includes { display: flex; flex-direction: column; gap: 4px; }
+.price-item { font-size: 12px; color: var(--text-2); display: flex; align-items: center; gap: 6px; }
+.price-item::before { content: "✓"; color: var(--green); font-weight: 600; }
+
+/* BANK INFO */
+.bank-card { background: var(--amber-l); border: 0.5px solid var(--amber-m); border-radius: var(--r-lg); padding: 18px 20px; margin-bottom: 24px; }
+.bank-title { font-size: 13px; font-weight: 600; color: var(--amber); margin-bottom: 12px; }
+.bank-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.bank-row:last-child { margin-bottom: 0; }
+.bank-key { font-size: 12px; color: var(--amber); }
+.bank-val { font-size: 13px; font-weight: 500; color: var(--text); font-family: monospace; display: flex; align-items: center; gap: 8px; }
+.copy-btn { font-size: 10px; padding: 2px 8px; border: 0.5px solid var(--border-2); border-radius: 4px; background: var(--bg); cursor: pointer; color: var(--text-2); font-family: inherit; transition: background .1s; }
+.copy-btn:hover { background: var(--bg-2); }
+.copy-btn.copied { color: var(--green); border-color: var(--green-m); }
+.bank-note { font-size: 11px; color: var(--amber); margin-top: 10px; line-height: 1.6; }
+
+/* STEPS */
+.steps-title { font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--text-3); margin-bottom: 12px; }
+.step-row { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
+.step-num { width: 24px; height: 24px; border-radius: 50%; background: var(--blue-l); color: var(--blue); font-size: 12px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.step-body { flex: 1; }
+.step-title { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+.step-desc { font-size: 12px; color: var(--text-2); line-height: 1.6; }
+.step-conn { width: 1px; height: 10px; background: var(--border); margin-left: 11px; margin-bottom: 4px; }
+
+/* FORM */
+.form-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 24px; }
+.form-card h2 { font-size: 16px; font-weight: 500; margin-bottom: 6px; }
+.form-card p { font-size: 13px; color: var(--text-2); margin-bottom: 20px; line-height: 1.6; }
+.field { margin-bottom: 14px; }
+.field label { display: block; font-size: 12px; font-weight: 500; color: var(--text-2); margin-bottom: 5px; }
+.field input, .field select, .field textarea {
+  width: 100%; padding: 10px 12px; border: 0.5px solid var(--border-2);
+  border-radius: var(--r-md); font-size: 13px; background: var(--bg-2);
+  color: var(--text); font-family: inherit; outline: none;
+}
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--blue-m); }
+.field textarea { resize: vertical; min-height: 80px; }
+.field select { cursor: pointer; }
+
+/* FILE UPLOAD */
+.upload-area { border: 1.5px dashed var(--border-2); border-radius: var(--r-md); padding: 24px; text-align: center; cursor: pointer; transition: border-color .15s, background .15s; position: relative; }
+.upload-area:hover, .upload-area.drag { border-color: var(--blue-m); background: var(--blue-l); }
+.upload-area input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+.upload-icon { font-size: 24px; margin-bottom: 6px; }
+.upload-text { font-size: 13px; color: var(--text-2); }
+.upload-sub { font-size: 11px; color: var(--text-3); margin-top: 3px; }
+.upload-preview { display: none; margin-top: 10px; font-size: 12px; color: var(--green); font-weight: 500; }
+
+/* SUBMIT */
+.btn-submit { width: 100%; background: var(--blue); color: #fff; border: none; padding: 12px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; font-family: inherit; margin-top: 6px; transition: background .15s; }
+.btn-submit:hover { background: var(--blue-d); }
+.btn-submit:disabled { opacity: .4; cursor: not-allowed; }
+
+/* SUCCESS */
+.success-card { background: var(--green-l); border: 0.5px solid var(--green-m); border-radius: var(--r-xl); padding: 28px; text-align: center; display: none; }
+.success-icon { font-size: 36px; margin-bottom: 12px; }
+.success-title { font-size: 18px; font-weight: 500; color: var(--green); margin-bottom: 8px; }
+.success-desc { font-size: 13px; color: var(--text-2); line-height: 1.7; }
+
+/* ERROR */
+.form-err { font-size: 12px; color: var(--red); margin-top: 8px; display: none; }
+
+hr.div { border: none; border-top: 0.5px solid var(--border); margin: 24px 0; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-logo">DJP</div>
+  <div>
+    <div class="topbar-title">Daftar Sesi Latihan</div>
+    <div class="topbar-sub">Uji Kompetensi Teknis KPP</div>
+  </div>
+  <a href="/" class="back-link">← Kembali</a>
+</div>
+
+<div class="main">
+
+  <div class="hero">
+    <h1>Beli Sesi Latihan</h1>
+    <p>Latihan soal uji kompetensi teknis berbasis AI — 60 soal per sesi dengan pembahasan lengkap dan referensi sumber materi.</p>
+  </div>
+
+  <!-- PRICE -->
+  <div class="price-card">
+    <div class="price-info">
+      <div class="price-label">Harga per sesi</div>
+      <div class="price-amount" id="price-display">Rp 50.000</div>
+      <div class="price-sub">Satu sesi = satu kali latihan 60 soal</div>
+    </div>
+    <div class="price-includes">
+      <div class="price-item">60 soal (40 reguler + 4 studi kasus)</div>
+      <div class="price-item">Pembahasan AI per soal</div>
+      <div class="price-item">Referensi sumber materi</div>
+      <div class="price-item">Kode sesi via WhatsApp/email</div>
+    </div>
+  </div>
+
+  <!-- HOW TO PAY -->
+  <div class="bank-card">
+    <div class="bank-title">Transfer ke rekening berikut</div>
+    <div class="bank-row">
+      <span class="bank-key">Bank</span>
+      <span class="bank-val" id="bank-name">BCA</span>
+    </div>
+    <div class="bank-row">
+      <span class="bank-key">No. Rekening</span>
+      <span class="bank-val">
+        <span id="bank-number">1234567890</span>
+        <button class="copy-btn" onclick="copyText('bank-number', this)">Salin</button>
+      </span>
+    </div>
+    <div class="bank-row">
+      <span class="bank-key">Atas Nama</span>
+      <span class="bank-val" id="bank-holder">Nama Anda</span>
+    </div>
+    <div class="bank-row">
+      <span class="bank-key">Nominal</span>
+      <span class="bank-val">
+        <span id="bank-amount">50000</span>
+        <button class="copy-btn" onclick="copyText('bank-amount', this)">Salin</button>
+      </span>
+    </div>
+    <div class="bank-note">⚠ Transfer sesuai nominal agar mudah diverifikasi. Setelah transfer, isi form di bawah dan upload bukti pembayaran.</div>
+  </div>
+
+  <!-- STEPS -->
+  <div style="margin-bottom: 24px;">
+    <div class="steps-title">Cara mendapatkan kode sesi</div>
+    <div class="step-row"><div class="step-num">1</div><div class="step-body"><div class="step-title">Transfer ke rekening di atas</div><div class="step-desc">Transfer nominal yang tertera, pastikan sesuai.</div></div></div>
+    <div class="step-conn"></div>
+    <div class="step-row"><div class="step-num">2</div><div class="step-body"><div class="step-title">Isi form & upload bukti</div><div class="step-desc">Isi data diri dan upload screenshot/foto bukti transfer di bawah.</div></div></div>
+    <div class="step-conn"></div>
+    <div class="step-row"><div class="step-num">3</div><div class="step-body"><div class="step-title">Tunggu konfirmasi</div><div class="step-desc">Admin akan verifikasi dan kirim kode sesi via WhatsApp atau email dalam 1×24 jam (biasanya lebih cepat).</div></div></div>
+    <div class="step-conn"></div>
+    <div class="step-row"><div class="step-num">4</div><div class="step-body"><div class="step-title">Masukkan kode sesi</div><div class="step-desc">Buka halaman utama, pilih "Kandidat Umum", masukkan kode sesi yang diterima.</div></div></div>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-card" id="form-card">
+    <h2>Form Permintaan Sesi</h2>
+    <p>Isi data dengan benar agar admin dapat memverifikasi dan mengirim kode sesi ke kamu.</p>
+
+    <div class="field">
+      <label>Nama Lengkap *</label>
+      <input type="text" id="f-name" placeholder="Nama sesuai identitas" required>
+    </div>
+    <div class="field">
+      <label>NIP / Nomor Pegawai</label>
+      <input type="text" id="f-nip" placeholder="Opsional">
+    </div>
+    <div class="field">
+      <label>Jabatan yang Dituju *</label>
+      <select id="f-position" required>
+        <option value="">— Pilih jabatan —</option>
+        <option>Kepala Seksi Pengawasan</option>
+        <option>Kepala Seksi Penjaminan Kualitas Data</option>
+        <option>Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan</option>
+        <option>Kepala Seksi Pelayanan</option>
+        <option>Kepala Subbagian Umum &amp; Kepatuhan Internal</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Nomor WhatsApp *</label>
+      <input type="tel" id="f-wa" placeholder="08xxxxxxxxxx" required>
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="f-email" placeholder="Opsional — untuk backup pengiriman kode">
+    </div>
+    <div class="field">
+      <label>Jumlah Sesi yang Dibeli *</label>
+      <select id="f-qty" onchange="updateTotal()" required>
+        <option value="1">1 sesi — Rp 50.000</option>
+        <option value="2">2 sesi — Rp 100.000</option>
+        <option value="3">3 sesi — Rp 150.000</option>
+        <option value="5">5 sesi — Rp 250.000</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Catatan (opsional)</label>
+      <textarea id="f-note" placeholder="Misal: mohon kirim kode setelah pukul 17.00"></textarea>
+    </div>
+
+    <hr class="div" style="margin: 16px 0;">
+
+    <div class="field">
+      <label>Bukti Transfer *</label>
+      <div class="upload-area" id="upload-area">
+        <input type="file" id="f-receipt" accept="image/*,.pdf" onchange="onFileChange(this)">
+        <div class="upload-icon">📎</div>
+        <div class="upload-text">Klik atau drag foto/screenshot bukti transfer</div>
+        <div class="upload-sub">JPG, PNG, atau PDF — maks. 5MB</div>
+        <div class="upload-preview" id="upload-preview"></div>
+      </div>
+    </div>
+
+    <div class="form-err" id="form-err"></div>
+    <button class="btn-submit" id="submit-btn" onclick="submitForm()">Kirim Permintaan →</button>
+    <p style="font-size:11px;color:var(--text-3);margin-top:10px;text-align:center">
+      Dengan mengirim form ini kamu setuju bahwa kode sesi hanya berlaku untuk 1 sesi latihan dan tidak dapat dipindahtangankan.
+    </p>
+  </div>
+
+  <!-- SUCCESS -->
+  <div class="success-card" id="success-card">
+    <div class="success-icon">✅</div>
+    <div class="success-title">Permintaan Terkirim!</div>
+    <div class="success-desc" id="success-msg">
+      Terima kasih. Admin akan memverifikasi bukti transfer kamu dan mengirim kode sesi ke WhatsApp yang didaftarkan dalam 1×24 jam.<br><br>
+      <strong>Simpan nomor WhatsApp admin:</strong> <span id="admin-wa-display"></span>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<script>
+/* ── CONFIG — edit these values ── */
+const CONFIG = {
+  price: 50000,
+  bankName: "BCA",
+  bankNumber: "1234567890",
+  bankHolder: "Nama Anda",
+  adminWA: "08xxxxxxxxxx",       // your WhatsApp number with country code or local
+  adminWALink: "628xxxxxxxxxx",  // for wa.me link (no + sign)
+  formspreeEndpoint: ""          // paste your Formspree endpoint here e.g. "https://formspree.io/f/xyzabc12"
+};
+
+/* Apply config to page */
+document.getElementById("price-display").textContent = "Rp " + CONFIG.price.toLocaleString("id-ID");
+document.getElementById("bank-name").textContent = CONFIG.bankName;
+document.getElementById("bank-number").textContent = CONFIG.bankNumber;
+document.getElementById("bank-holder").textContent = CONFIG.bankHolder;
+document.getElementById("bank-amount").textContent = CONFIG.price.toLocaleString("id-ID");
+document.getElementById("admin-wa-display").textContent = CONFIG.adminWA;
+
+function updateTotal() {
+  const qty = parseInt(document.getElementById("f-qty").value);
+  const total = qty * CONFIG.price;
+  document.getElementById("bank-amount").textContent = total.toLocaleString("id-ID");
+  document.getElementById("price-display").textContent = "Rp " + total.toLocaleString("id-ID");
+}
+
+function copyText(id, btn) {
+  const text = document.getElementById(id).textContent.replace(/\./g,"").replace(/,/g,"");
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = "Disalin!";
+    btn.classList.add("copied");
+    setTimeout(() => { btn.textContent = "Salin"; btn.classList.remove("copied"); }, 2000);
+  });
+}
+
+function onFileChange(input) {
+  const file = input.files[0];
+  const preview = document.getElementById("upload-preview");
+  if (file) {
+    if (file.size > 5 * 1024 * 1024) {
+      document.getElementById("form-err").textContent = "File terlalu besar. Maks. 5MB.";
+      document.getElementById("form-err").style.display = "block";
+      input.value = "";
+      return;
+    }
+    preview.textContent = "✓ " + file.name;
+    preview.style.display = "block";
+    document.getElementById("form-err").style.display = "none";
+  }
+}
+
+// Drag & drop styling
+const ua = document.getElementById("upload-area");
+ua.addEventListener("dragover", e => { e.preventDefault(); ua.classList.add("drag"); });
+ua.addEventListener("dragleave", () => ua.classList.remove("drag"));
+ua.addEventListener("drop", e => { e.preventDefault(); ua.classList.remove("drag"); const f = e.dataTransfer.files[0]; if(f){ document.getElementById("f-receipt").files = e.dataTransfer.files; onFileChange(document.getElementById("f-receipt")); } });
+
+async function submitForm() {
+  const errEl = document.getElementById("form-err");
+  errEl.style.display = "none";
+  const btn = document.getElementById("submit-btn");
+
+  const name     = document.getElementById("f-name").value.trim();
+  const nip      = document.getElementById("f-nip").value.trim();
+  const position = document.getElementById("f-position").value;
+  const wa       = document.getElementById("f-wa").value.trim();
+  const email    = document.getElementById("f-email").value.trim();
+  const qty      = document.getElementById("f-qty").value;
+  const note     = document.getElementById("f-note").value.trim();
+  const receipt  = document.getElementById("f-receipt").files[0];
+
+  if (!name)     { errEl.textContent = "Nama lengkap wajib diisi."; errEl.style.display = "block"; return; }
+  if (!position) { errEl.textContent = "Pilih jabatan yang dituju."; errEl.style.display = "block"; return; }
+  if (!wa)       { errEl.textContent = "Nomor WhatsApp wajib diisi."; errEl.style.display = "block"; return; }
+  if (!receipt)  { errEl.textContent = "Upload bukti transfer terlebih dahulu."; errEl.style.display = "block"; return; }
+
+  btn.disabled = true;
+  btn.textContent = "Mengirim…";
+
+  const total = parseInt(qty) * CONFIG.price;
+
+  /* ── SEND VIA FORMSPREE ── */
+  if (CONFIG.formspreeEndpoint) {
+    try {
+      const fd = new FormData();
+      fd.append("name", name);
+      fd.append("nip", nip || "-");
+      fd.append("position", position);
+      fd.append("wa", wa);
+      fd.append("email", email || "-");
+      fd.append("qty", qty + " sesi");
+      fd.append("total", "Rp " + total.toLocaleString("id-ID"));
+      fd.append("note", note || "-");
+      fd.append("receipt", receipt);
+
+      const res = await fetch(CONFIG.formspreeEndpoint, {
+        method: "POST",
+        body: fd,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (!res.ok) throw new Error("Server error " + res.status);
+      showSuccess(name, qty);
+      return;
+    } catch(e) {
+      btn.disabled = false;
+      btn.textContent = "Kirim Permintaan →";
+      errEl.textContent = "Gagal mengirim form: " + e.message;
+      errEl.style.display = "block";
+      return;
+    }
+  }
+
+  /* ── FALLBACK: open WhatsApp with pre-filled message ── */
+  const msg = encodeURIComponent(
+    `*Permintaan Sesi Latihan Uji Kompetensi*\n\n` +
+    `Nama: ${name}\n` +
+    `NIP: ${nip || "-"}\n` +
+    `Jabatan dituju: ${position}\n` +
+    `WhatsApp: ${wa}\n` +
+    `Jumlah sesi: ${qty} sesi (Rp ${total.toLocaleString("id-ID")})\n` +
+    `Catatan: ${note || "-"}\n\n` +
+    `[Bukti transfer terlampir]`
+  );
+  window.open(`https://wa.me/${CONFIG.adminWALink}?text=${msg}`, "_blank");
+  showSuccess(name, qty);
+}
+
+function showSuccess(name, qty) {
+  document.getElementById("form-card").style.display = "none";
+  const s = document.getElementById("success-card");
+  s.style.display = "block";
+  document.getElementById("success-msg").innerHTML =
+    `Terima kasih, <strong>${name}</strong>. Admin akan memverifikasi bukti transfer dan mengirim <strong>${qty} kode sesi</strong> ke WhatsApp kamu dalam 1×24 jam.<br><br>` +
+    `Hubungi admin langsung jika belum menerima konfirmasi: ` +
+    `<a href="https://wa.me/${CONFIG.adminWALink}" target="_blank" style="color:var(--blue)">${CONFIG.adminWA}</a>`;
+}
+</script>
+</body>
+</html>

@@ -292,6 +292,146 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 .seg-lvl-pill { font-size: 10px; padding: 2px 8px; border-radius: 20px; background: var(--bg-3); color: var(--text-3); border: 0.5px solid var(--border); }
 @media(max-width:520px) { #segment-grid { grid-template-columns: 1fr !important; } }
 
+
+/* SESSION MODE TOGGLE */
+.mode-toggle { display:flex; gap:8px; max-width:640px; margin:0 auto 16px; }
+.mode-btn { flex:1; padding:10px 16px; border:0.5px solid var(--border); border-radius:var(--r-lg); background:var(--bg); cursor:pointer; font-family:inherit; font-size:13px; color:var(--text-2); text-align:left; transition:all .15s; }
+.mode-btn:hover { border-color:var(--border-2); background:var(--bg-2); }
+.mode-btn.active-live { border:1.5px solid var(--amber-m); background:var(--amber-l); }
+.mode-btn.active-live .mode-title { color:var(--amber); }
+.mode-btn.active-static { border:1.5px solid var(--teal-m); background:var(--teal-l); }
+.mode-btn.active-static .mode-title { color:var(--teal); }
+.mode-title { font-size:13px; font-weight:500; margin-bottom:2px; }
+.mode-desc { font-size:11px; color:var(--text-3); line-height:1.5; }
+.mode-tag { display:inline-block; font-size:9px; font-weight:600; padding:1px 6px; border-radius:10px; letter-spacing:.04em; vertical-align:middle; margin-left:4px; }
+.mode-tag.live { background:var(--amber-l); color:var(--amber); }
+.mode-tag.free { background:var(--teal-l); color:var(--teal); }
+
+/* RICH ERROR CARD */
+.err-card { background:var(--bg); border:0.5px solid var(--red-m); border-radius:var(--r-lg); padding:20px; margin-bottom:12px; }
+.err-card-head { display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; }
+.err-icon { width:32px; height:32px; border-radius:50%; background:var(--red-l); display:flex; align-items:center; justify-content:center; font-size:14px; flex-shrink:0; }
+.err-title { font-size:14px; font-weight:500; color:var(--red); margin-bottom:3px; }
+.err-msg { font-size:12px; color:var(--text-2); line-height:1.6; }
+.err-actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+.err-btn { padding:7px 14px; border-radius:var(--r-md); font-size:12px; cursor:pointer; font-family:inherit; font-weight:500; border:none; }
+.err-btn.primary { background:var(--blue); color:#fff; }
+.err-btn.secondary { background:var(--bg-2); color:var(--text); border:0.5px solid var(--border-2); }
+.err-btn.teal { background:var(--teal); color:#fff; }
+
+/* SESSION BROWSER */
+.session-browser { max-width:680px; margin:0 auto; }
+.browser-filters { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+.filter-btn { padding:5px 12px; border:0.5px solid var(--border); border-radius:20px; background:var(--bg); font-size:12px; cursor:pointer; color:var(--text-2); font-family:inherit; transition:all .15s; }
+.filter-btn:hover { border-color:var(--border-2); }
+.filter-btn.act { border-color:var(--teal-m); background:var(--teal-l); color:var(--teal); font-weight:500; }
+.session-count { font-size:12px; color:var(--text-3); margin-bottom:10px; }
+.session-list { display:flex; flex-direction:column; gap:8px; max-height:320px; overflow-y:auto; }
+.session-item { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-md); padding:12px 16px; cursor:pointer; transition:all .15s; display:flex; align-items:center; gap:12px; }
+.session-item:hover { border-color:var(--teal-m); background:var(--teal-l); }
+.session-item.selected { border:1.5px solid var(--teal-m); background:var(--teal-l); }
+.si-score { font-size:22px; font-weight:600; width:54px; text-align:center; flex-shrink:0; }
+.si-score.pass { color:var(--green); }
+.si-score.fail { color:var(--red); }
+.si-body { flex:1; min-width:0; }
+.si-position { font-size:13px; font-weight:500; color:var(--text); margin-bottom:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.si-meta { font-size:11px; color:var(--text-3); }
+.si-seg { font-size:10px; font-weight:600; padding:1px 6px; border-radius:10px; }
+.si-seg.a { background:var(--blue-l); color:var(--blue); }
+.si-seg.b { background:var(--purple-l); color:var(--purple); }
+.browser-empty { text-align:center; padding:32px 16px; color:var(--text-3); font-size:13px; }
+.browser-loading { display:flex; align-items:center; gap:8px; padding:20px; color:var(--text-3); font-size:13px; }
+
+/* SAVE INDICATOR */
+.save-banner { background:var(--teal-l); border:0.5px solid var(--teal-m); border-radius:var(--r-md); padding:10px 14px; font-size:12px; color:var(--teal); margin-bottom:12px; display:none; }
+.save-banner.show { display:flex; align-items:center; gap:8px; }
+
+
+/* ════════════════════════════════
+   SAFE EXAM BROWSER LAYOUT
+════════════════════════════════ */
+/* TOP BAR */
+.seb-topbar { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-lg); padding:12px 16px; margin-bottom:14px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.seb-info { flex:1; min-width:0; }
+.seb-title { font-size:13px; font-weight:500; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.seb-sub { font-size:11px; color:var(--text-3); margin-top:1px; }
+.seb-stats { display:flex; gap:16px; flex-shrink:0; }
+.seb-stat { text-align:center; }
+.seb-stat span:first-child { font-size:18px; font-weight:600; color:var(--text); display:block; line-height:1; }
+.seb-stat-lbl { font-size:10px; color:var(--text-3); }
+.seb-submit-btn { background:var(--blue); color:#fff; border:none; padding:8px 18px; border-radius:var(--r-md); font-size:13px; font-weight:500; cursor:pointer; font-family:inherit; white-space:nowrap; transition:background .15s; }
+.seb-submit-btn:hover { background:var(--blue-d); }
+
+/* LAYOUT */
+.seb-layout { display:grid; grid-template-columns:200px 1fr; gap:14px; align-items:start; }
+@media(max-width:640px) { .seb-layout { grid-template-columns:1fr; } .seb-nav { order:2; } .seb-qpane { order:1; } }
+
+/* NAV PANEL */
+.seb-nav { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-lg); padding:14px; position:sticky; top:66px; max-height:calc(100vh - 80px); overflow-y:auto; }
+.seb-nav-head { margin-bottom:10px; }
+.seb-legend { display:flex; flex-direction:column; gap:4px; }
+.seb-leg { font-size:10px; color:var(--text-3); display:flex; align-items:center; gap:5px; }
+.seb-dot { width:10px; height:10px; border-radius:3px; flex-shrink:0; }
+.seb-dot.unanswered { background:var(--bg-3); border:0.5px solid var(--border-2); }
+.seb-dot.answered   { background:var(--blue-l); border:0.5px solid var(--blue-m); }
+.seb-dot.yakin      { background:var(--green-l); border:0.5px solid var(--green-m); }
+.seb-dot.ragu       { background:var(--amber-l); border:0.5px solid var(--amber-m); }
+.seb-dot.tandai     { background:var(--red-l); border:0.5px solid var(--red-m); }
+.seb-dot.current    { background:var(--blue); }
+.seb-dot.case-q     { border-radius:50%; }
+
+/* NAV GRID */
+.seb-nav-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin-bottom:10px; }
+.seb-nav-btn { width:100%; aspect-ratio:1; border:none; border-radius:4px; font-size:11px; font-weight:500; cursor:pointer; font-family:inherit; transition:all .1s; background:var(--bg-3); color:var(--text-3); border:0.5px solid var(--border); }
+.seb-nav-btn:hover { border-color:var(--border-2); }
+.seb-nav-btn.current  { background:var(--blue); color:#fff; border-color:var(--blue); }
+.seb-nav-btn.answered { background:var(--blue-l); color:var(--blue-d); border-color:var(--blue-m); }
+.seb-nav-btn.yakin    { background:var(--green-l); color:var(--green); border-color:var(--green-m); }
+.seb-nav-btn.ragu     { background:var(--amber-l); color:var(--amber); border-color:var(--amber-m); }
+.seb-nav-btn.tandai   { background:var(--red-l); color:var(--red); border-color:var(--red-m); }
+.seb-nav-btn.case-q   { border-radius:50%; }
+.seb-nav-btn.loading-q { opacity:.4; cursor:default; }
+.seb-nav-btn.generating { animation:nav-pulse 1s ease-in-out infinite; }
+@keyframes nav-pulse { 0%,100%{opacity:.4} 50%{opacity:.9} }
+
+/* NAV SECTION LABELS */
+.seb-nav-sections { display:flex; flex-direction:column; gap:4px; border-top:0.5px solid var(--border); padding-top:10px; }
+.seb-nav-sec { font-size:10px; color:var(--text-3); display:flex; align-items:center; gap:6px; }
+.seb-nav-sec-dot { width:8px; height:8px; border-radius:2px; flex-shrink:0; }
+.seb-nav-sec-dot.reg { background:var(--amber-l); border:0.5px solid var(--amber-m); }
+.seb-nav-sec-dot.cas { background:var(--purple-l); border:0.5px solid var(--purple-m); border-radius:50%; }
+
+/* QUESTION PANE */
+.seb-qpane { }
+
+/* CONFIDENCE BAR */
+.conf-bar { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-md); padding:10px 14px; margin-bottom:12px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.conf-label { font-size:12px; color:var(--text-2); flex-shrink:0; }
+.conf-btn { padding:5px 12px; border-radius:20px; font-size:12px; font-weight:500; cursor:pointer; font-family:inherit; border:0.5px solid; transition:all .12s; background:var(--bg-2); }
+.conf-btn.yakin  { color:var(--green); border-color:var(--green-m); }
+.conf-btn.ragu   { color:var(--amber); border-color:var(--amber-m); }
+.conf-btn.tandai { color:var(--red);   border-color:var(--red-m);   }
+.conf-btn.yakin.active  { background:var(--green-l); }
+.conf-btn.ragu.active   { background:var(--amber-l); }
+.conf-btn.tandai.active { background:var(--red-l); }
+
+/* NAV BUTTONS */
+.seb-nav-btns { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+.seb-prev, .seb-next, .seb-skip { flex:1; min-width:100px; text-align:center; }
+.seb-next { background:var(--blue); color:#fff; border-color:var(--blue); }
+.seb-next:hover { background:var(--blue-d); }
+
+/* SUBMIT CONFIRM MODAL */
+.modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; z-index:200; padding:20px; }
+.modal-box { background:var(--bg); border-radius:var(--r-xl); padding:28px; max-width:420px; width:100%; }
+.modal-title { font-size:16px; font-weight:500; margin-bottom:8px; }
+.modal-body { font-size:13px; color:var(--text-2); line-height:1.7; margin-bottom:20px; }
+.modal-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:20px; }
+.modal-stat { text-align:center; background:var(--bg-2); border-radius:var(--r-md); padding:10px; }
+.modal-stat-num { font-size:20px; font-weight:600; }
+.modal-stat-lbl { font-size:10px; color:var(--text-3); margin-top:2px; }
+.modal-actions { display:flex; gap:10px; }
+
 @media (max-width: 600px) {
   .main { padding: 16px 14px 56px; }
   .topbar { padding: 0 14px; }
@@ -353,7 +493,41 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
     </div>
   </div>
 
-  <!-- SEGMENT SELECTOR -->
+  <!-- MODE TOGGLE -->
+  <div class="mode-toggle" id="mode-toggle">
+    <button class="mode-btn active-live" id="mode-live" onclick="selectMode('live')">
+      <div class="mode-title">Latihan Live <span class="mode-tag live">pakai kredit AI</span></div>
+      <div class="mode-desc">Soal dibuat real-time oleh AI. Setiap sesi unik dan berbeda.</div>
+    </button>
+    <button class="mode-btn" id="mode-static" onclick="selectMode('static')">
+      <div class="mode-title">Latihan dari Arsip <span class="mode-tag free">gratis</span></div>
+      <div class="mode-desc">Gunakan sesi yang sudah diselesaikan pengguna lain. Hemat kredit AI.</div>
+    </button>
+  </div>
+
+  <!-- SESSION BROWSER (shown when static mode) -->
+  <div class="session-browser" id="session-browser" style="display:none">
+    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:20px;">
+      <div style="font-size:14px;font-weight:500;margin-bottom:4px;">Pilih Sesi dari Arsip</div>
+      <p style="font-size:12px;color:var(--text-2);margin-bottom:14px;line-height:1.6;">Sesi-sesi di bawah diselesaikan pengguna lain dan disimpan otomatis. Pilih satu untuk mulai latihan tanpa menggunakan kredit AI.</p>
+      <div class="browser-filters" id="browser-filters">
+        <button class="filter-btn act" onclick="filterSessions('all',this)">Semua</button>
+        <button class="filter-btn" onclick="filterSessions('A',this)">Jabatan Pengawas</button>
+        <button class="filter-btn" onclick="filterSessions('B',this)">Jabatan Administrator</button>
+      </div>
+      <div class="session-count" id="session-count">Memuat sesi tersimpan…</div>
+      <div class="session-list" id="session-list">
+        <div class="browser-loading"><div class="spin"></div><span>Mengambil data dari arsip…</span></div>
+      </div>
+      <div style="margin-top:14px;display:flex;gap:8px;">
+        <button class="btn btn-p" id="start-static-btn" onclick="startStaticSession()" style="display:none">Mulai Sesi Terpilih →</button>
+        <button class="btn btn-o" onclick="selectMode('live')" style="font-size:12px">Buat soal baru saja</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEGMENT SELECTOR (shown when live mode) -->
+  <div id="live-segment-area">
   <div style="max-width:640px;margin:0 auto 20px;">
     <div style="font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3);text-align:center;margin-bottom:12px;">Pilih segmen jabatan yang kamu tuju</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;" id="segment-grid">
@@ -394,6 +568,7 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
       </div>
     </div>
   </div>
+  </div><!-- /live-segment-area -->
 </div>
 
 <!-- ══ SELECT ══ -->
@@ -424,30 +599,89 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
   </div>
 </div>
 
+<!-- ══ LOADING ══ -->
+<div class="screen" id="screen-loading">
+  <div style="max-width:560px;margin:40px auto 0;text-align:center;">
+    <div style="font-size:16px;font-weight:500;margin-bottom:8px;" id="load-title">Menyiapkan soal ujian…</div>
+    <div style="font-size:13px;color:var(--text-2);margin-bottom:28px;" id="load-sub">Semua soal dibuat sekaligus agar kamu bisa navigasi bebas.</div>
+    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:24px;">
+      <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+        <span style="font-size:12px;color:var(--text-3);" id="load-count">0 / 60 soal</span>
+        <span style="font-size:12px;color:var(--text-3);" id="load-pct">0%</span>
+      </div>
+      <div style="height:6px;background:var(--bg-3);border-radius:3px;overflow:hidden;margin-bottom:16px;">
+        <div id="load-bar" style="height:100%;background:var(--blue-m);border-radius:3px;width:0%;transition:width .4s ease;"></div>
+      </div>
+      <div style="font-size:12px;color:var(--text-2);min-height:18px;" id="load-status">Memulai…</div>
+      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:4px;justify-content:center;" id="load-dots"></div>
+    </div>
+    <div class="err" id="load-err" style="margin-top:16px;text-align:left;"></div>
+  </div>
+</div>
+
 <!-- ══ QUIZ ══ -->
 <div class="screen" id="screen-quiz">
-  <div class="session-banner">
-    <div class="session-info">
-      <div class="session-title" id="sess-title">—</div>
-      <div class="session-sub" id="sess-sub">—</div>
+  <div class="save-banner" id="save-banner"></div>
+
+  <!-- TOP BAR -->
+  <div class="seb-topbar">
+    <div class="seb-info">
+      <div class="seb-title" id="sess-title">—</div>
+      <div class="seb-sub" id="sess-sub">—</div>
     </div>
-    <div class="session-score">
-      <div class="live-score" id="live-score">0 / 0</div>
-      <div class="live-score-lbl">Benar saat ini</div>
+    <div class="seb-stats">
+      <div class="seb-stat"><span id="stat-answered">0</span><span class="seb-stat-lbl">dijawab</span></div>
+      <div class="seb-stat"><span id="stat-flagged">0</span><span class="seb-stat-lbl">ditandai</span></div>
+      <div class="seb-stat"><span id="stat-left">60</span><span class="seb-stat-lbl">tersisa</span></div>
     </div>
+    <button class="seb-submit-btn" onclick="confirmSubmit()">Selesai &amp; Nilai</button>
   </div>
-  <div class="prog-wrap">
-    <div class="prog-meta">
-      <span class="q-ctr" id="q-ctr">—</span>
-      <span class="q-tag regular" id="q-tag">—</span>
+
+  <!-- MAIN LAYOUT: nav panel + question area -->
+  <div class="seb-layout">
+
+    <!-- LEFT: Navigation Panel -->
+    <div class="seb-nav" id="seb-nav">
+      <div class="seb-nav-head">
+        <div style="font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-3);margin-bottom:8px;">Navigasi Soal</div>
+        <div class="seb-legend">
+          <span class="seb-leg"><span class="seb-dot unanswered"></span>Belum</span>
+          <span class="seb-leg"><span class="seb-dot answered"></span>Dijawab</span>
+          <span class="seb-leg"><span class="seb-dot yakin"></span>Yakin</span>
+          <span class="seb-leg"><span class="seb-dot ragu"></span>Ragu</span>
+          <span class="seb-leg"><span class="seb-dot tandai"></span>Ditandai</span>
+        </div>
+      </div>
+      <div class="seb-nav-grid" id="seb-nav-grid"></div>
+      <div class="seb-nav-sections" id="seb-nav-sections"></div>
     </div>
-    <div class="prog-bar"><div class="prog-fill regular" id="prog-fill" style="width:0%"></div></div>
+
+    <!-- RIGHT: Question -->
+    <div class="seb-qpane" id="seb-qpane">
+      <div class="err" id="err-banner" style="margin-bottom:12px;"></div>
+      <div id="section-notice"></div>
+      <div id="q-area"></div>
+
+      <!-- Confidence tag bar (shown after answering) -->
+      <div class="conf-bar" id="conf-bar" style="display:none">
+        <span class="conf-label">Tingkat keyakinan:</span>
+        <button class="conf-btn yakin" id="conf-yakin" onclick="setConfidence('yakin')">✓ Yakin</button>
+        <button class="conf-btn ragu"  id="conf-ragu"  onclick="setConfidence('ragu')">? Ragu</button>
+        <button class="conf-btn tandai" id="conf-tandai" onclick="setConfidence('tandai')">! Tandai</button>
+      </div>
+
+      <!-- Feedback (shown after answering) -->
+      <div id="fb-area"></div>
+
+      <!-- Navigation buttons -->
+      <div class="seb-nav-btns" id="seb-nav-btns">
+        <button class="btn btn-o seb-prev" onclick="navQuestion(-1)" id="btn-prev">← Sebelumnya</button>
+        <button class="btn btn-o seb-skip" onclick="skipQuestion()">Lewati →</button>
+        <button class="btn btn-p seb-next" onclick="navQuestion(1)" id="btn-next">Berikutnya →</button>
+      </div>
+    </div>
+
   </div>
-  <div class="err" id="err-banner"></div>
-  <div id="section-notice"></div>
-  <div id="q-area"></div>
-  <div id="fb-area"></div>
-  <div id="act-area"></div>
 </div>
 
 <!-- ══ RESULT ══ -->
@@ -657,11 +891,15 @@ function setAccessIndicator(type, label) {
 // showScreen defined below with status hooks
 function goSelect() {
   selectedPos = null; caseVignettes = {};
+  questions = []; answers = []; confidences = []; generated = []; answersLog = [];
   renderPositions();
   document.getElementById("comp-area").style.display = "none";
   showScreen("screen-select");
 }
-function restartSame() { startQuiz(); }
+function restartSame() {
+  questions = []; answers = []; confidences = []; generated = []; answersLog = [];
+  startQuiz();
+}
 
 /* ────────────────────────────────────
    POSITION SELECTION
@@ -707,322 +945,506 @@ function selectPos(i) {
 /* ────────────────────────────────────
    START QUIZ
 ──────────────────────────────────── */
+/* ════════════════════════════════════
+   SEB QUIZ ENGINE — PRE-GEN ALL QS
+════════════════════════════════════ */
+
+// All questions pre-generated before quiz starts
+// questions[] is indexed 0–59, parallel to plan[]
+// State per slot: answers[], confidences[], generated[]
+
+let confidences  = [];   // "yakin"|"ragu"|"tandai"|null per slot
+let answers      = [];   // {chosen, correct, isCorrect, options} per slot
+let generated    = [];   // true once question at index is ready
+let currentQ     = 0;    // current slot index (0-based)
+let isGenerating = false; // prevents concurrent generation
+
 function startQuiz() {
   if (!selectedPos) return;
-  plan = buildPlan();
-  currentSlot = 0;
-  answered = 0; correctCount = 0; regularCorrect = 0; caseCorrect = 0;
-  answersLog = []; caseVignettes = {}; slotAnswered = false;
-  document.getElementById("sess-title").textContent = selectedPos.name;
-  const segLabel = activeSegment === "B" ? "Administrator/Kakpp — Level 3-4" : "Pengawas/Kasi — Level 2-3"; document.getElementById("sess-sub").textContent = `${segLabel} · 40 reguler + 4 studi kasus`;
-  showScreen("screen-quiz");
-  processSlot();
-}
-
-/* ────────────────────────────────────
-   SLOT PROCESSOR
-──────────────────────────────────── */
-async function processSlot() {
+  plan        = buildPlan();
+  questions   = new Array(TOTAL_QUESTIONS).fill(null);
+  confidences = new Array(TOTAL_QUESTIONS).fill(null);
+  answers     = new Array(TOTAL_QUESTIONS).fill(null);
+  generated   = new Array(TOTAL_QUESTIONS).fill(false);
+  caseVignettes = {};
+  currentQ    = 0;
+  correctCount = 0; regularCorrect = 0; caseCorrect = 0;
+  answersLog  = [];
   slotAnswered = false;
-  document.getElementById("err-banner").style.display = "none";
-  document.getElementById("fb-area").innerHTML = "";
-  document.getElementById("act-area").innerHTML = "";
-  document.getElementById("section-notice").innerHTML = "";
 
-  const slot = plan[currentSlot];
-  updateProgress(slot);
+  showScreen("screen-loading");
+  preGenerateAllQuestions();
+}
 
-  // Show transition notice at block starts
-  if (slot.type === "regular" && slot.subIdx === undefined) {
-    // First regular of a block — check if this is the very first regular after a case
-    if (currentSlot > 0 && plan[currentSlot-1].type === "case") {
-      document.getElementById("section-notice").innerHTML = `
-        <div class="sec-divider"><div class="sec-divider-icon reg">📝</div>
-        <div class="sec-divider-text"><strong>Kembali ke Soal Pilihan Ganda</strong> — Lanjutkan dengan 10 soal reguler berikutnya.</div></div>`;
+/* ── PRE-GENERATION PHASE ─────────── */
+async function preGenerateAllQuestions() {
+  const total = TOTAL_QUESTIONS;
+  document.getElementById("load-title").textContent = `Menyiapkan ${total} soal…`;
+  document.getElementById("load-sub").textContent   = "Harap tunggu — semua soal dibuat sekaligus agar navigasi bebas tanpa biaya tambahan.";
+  buildLoadDots(total);
+
+  for (let i = 0; i < total; i++) {
+    const slot = plan[i];
+    setLoadDot(i, "generating");
+    updateLoadBar(i, total);
+
+    try {
+      if (slot.type === "case") {
+        // Generate vignette first if this is subIdx 0
+        if (slot.subIdx === 0 && !caseVignettes[slot.caseIdx]) {
+          document.getElementById("load-status").textContent = `Menyusun skenario Studi Kasus ${slot.caseIdx+1}…`;
+          await generateCaseVignette(slot.caseIdx);
+        }
+        document.getElementById("load-status").textContent = `Studi Kasus ${slot.caseIdx+1}, pertanyaan ${slot.subIdx+1}/5…`;
+        await generateCaseSubQuestionFor(i, slot.caseIdx, slot.subIdx);
+      } else {
+        const comp = pickComp();
+        document.getElementById("load-status").textContent = `Soal reguler ${i+1}: ${comp.name}…`;
+        await generateRegularQuestionFor(i, comp);
+      }
+      generated[i] = true;
+      setLoadDot(i, "ready");
+    } catch(e) {
+      setLoadDot(i, "error");
+      document.getElementById("load-err").style.display = "block";
+      document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, i);
+      return; // Stop pre-gen on error — show retry
     }
   }
-  if (slot.type === "case" && slot.subIdx === 0) {
-    document.getElementById("section-notice").innerHTML = `
-      <div class="sec-divider"><div class="sec-divider-icon cas">📋</div>
-      <div class="sec-divider-text"><strong>Studi Kasus ${slot.caseIdx+1} dari 4</strong> — Baca skenario berikut dan jawab 5 pertanyaan terkait.</div></div>`;
-    // Generate the vignette first if not yet done
-    if (!caseVignettes[slot.caseIdx]) {
-      await generateCaseVignette(slot.caseIdx);
+
+  updateLoadBar(total, total);
+  document.getElementById("load-status").textContent = "Semua soal siap!";
+  setTimeout(() => {
+    answersLog = [];
+    showScreen("screen-quiz");
+    buildNavGrid();
+    renderCurrentQuestion();
+  }, 600);
+}
+
+function buildLoadDots(total) {
+  const wrap = document.getElementById("load-dots");
+  wrap.innerHTML = "";
+  for (let i=0; i<total; i++) {
+    const d = document.createElement("div");
+    d.id = `ldot-${i}`;
+    d.style.cssText = "width:8px;height:8px;border-radius:2px;background:var(--bg-3);border:0.5px solid var(--border);transition:background .2s,border-color .2s;";
+    if (plan[i]?.type === "case") d.style.borderRadius = "50%";
+    wrap.appendChild(d);
+  }
+}
+
+function setLoadDot(i, state) {
+  const d = document.getElementById(`ldot-${i}`);
+  if (!d) return;
+  const styles = {
+    generating: "background:var(--amber-l);border-color:var(--amber-m);",
+    ready:      "background:var(--green-l);border-color:var(--green-m);",
+    error:      "background:var(--red-l);border-color:var(--red-m);"
+  };
+  d.style.cssText = d.style.cssText.replace(/background:[^;]+;border-color:[^;]+;/, "") + (styles[state] || "");
+}
+
+function updateLoadBar(done, total) {
+  const pct = Math.round((done/total)*100);
+  document.getElementById("load-bar").style.width = pct+"%";
+  document.getElementById("load-count").textContent = `${done} / ${total} soal`;
+  document.getElementById("load-pct").textContent   = pct+"%";
+}
+
+function buildErrorHtml(msg, fromSlot) {
+  let title="Gagal membuat soal", detail=msg, hint="";
+  if (msg.includes("429")||msg.toLowerCase().includes("rate")) {
+    title="Server sibuk"; detail="Terlalu banyak permintaan. Coba lagi dalam 30 detik."; hint="Tunggu sebentar lalu klik Lanjutkan.";
+  } else if (msg.includes("402")||msg.toLowerCase().includes("credit")) {
+    title="Saldo kredit habis"; detail="Kredit API sementara habis."; hint='Coba <a href="/donate.html" style="color:var(--amber-m)">donasi</a> untuk mengisi ulang, atau gunakan sesi dari arsip.';
+  } else if (msg.includes("401")||msg.includes("403")) {
+    title="Masalah autentikasi"; detail="API key bermasalah."; hint="";
+  } else if (msg.toLowerCase().includes("fetch")||msg.toLowerCase().includes("network")) {
+    title="Koneksi terputus"; detail="Gagal terhubung ke server."; hint="Periksa koneksi internet lalu coba lagi.";
+  }
+  return `<div class="err-card">
+    <div class="err-card-head"><div class="err-icon">⚠</div><div>
+      <div class="err-title">${title}</div>
+      <div class="err-msg">${detail}</div>
+    </div></div>
+    ${hint?`<div style="font-size:12px;color:var(--text-3);padding:8px 12px;background:var(--bg-2);border-radius:var(--r-md);margin-bottom:8px;">${hint}</div>`:""}
+    <div class="err-actions">
+      <button class="err-btn primary" onclick="retryPreGen(${fromSlot})">↺ Lanjutkan dari soal ${fromSlot+1}</button>
+      <button class="err-btn secondary" onclick="goToStaticMode()">Gunakan Sesi Arsip</button>
+      <a href="/donate.html" class="err-btn secondary" style="text-decoration:none">Donasi Saldo →</a>
+    </div></div>`;
+}
+
+async function retryPreGen(fromSlot) {
+  document.getElementById("load-err").style.display = "none";
+  const total = TOTAL_QUESTIONS;
+  for (let i = fromSlot; i < total; i++) {
+    if (generated[i]) continue;
+    const slot = plan[i];
+    setLoadDot(i, "generating");
+    updateLoadBar(i, total);
+    try {
+      if (slot.type === "case") {
+        if (slot.subIdx === 0 && !caseVignettes[slot.caseIdx]) {
+          document.getElementById("load-status").textContent = `Studi Kasus ${slot.caseIdx+1}…`;
+          await generateCaseVignette(slot.caseIdx);
+        }
+        await generateCaseSubQuestionFor(i, slot.caseIdx, slot.subIdx);
+      } else {
+        const comp = pickComp();
+        await generateRegularQuestionFor(i, comp);
+      }
+      generated[i] = true;
+      setLoadDot(i, "ready");
+    } catch(e) {
+      setLoadDot(i, "error");
+      document.getElementById("load-err").style.display = "block";
+      document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, i);
+      return;
     }
   }
-
-  if (slot.type === "regular") {
-    await generateRegularQuestion();
-  } else {
-    await generateCaseSubQuestion(slot.caseIdx, slot.subIdx);
-  }
+  updateLoadBar(total, total);
+  document.getElementById("load-status").textContent = "Semua soal siap!";
+  setTimeout(() => { showScreen("screen-quiz"); buildNavGrid(); renderCurrentQuestion(); }, 600);
 }
 
-/* ────────────────────────────────────
-   UPDATE PROGRESS
-──────────────────────────────────── */
-function updateProgress(slot) {
-  const pct = (currentSlot / TOTAL_QUESTIONS) * 100;
-  const fill = document.getElementById("prog-fill");
-  const tag = document.getElementById("q-tag");
-  const isCase = slot.type === "case";
-  fill.style.width = pct + "%";
-  fill.className = "prog-fill " + (isCase ? "case" : "regular");
-  tag.className = "q-tag " + (isCase ? "case" : "regular");
-
-  if (isCase) {
-    tag.textContent = `Studi Kasus ${slot.caseIdx+1} — Sub-soal ${slot.subIdx+1}/5`;
-  } else {
-    const comp = pickComp();
-    tag.textContent = comp.name;
-  }
-
-  const regAnswered = answersLog.filter(a=>a.type==="regular").length;
-  const caseAnswered = answersLog.filter(a=>a.type==="case").length;
-  document.getElementById("q-ctr").textContent = `Soal ${currentSlot+1} / ${TOTAL_QUESTIONS}`;
-  document.getElementById("live-score").textContent = `${correctCount} / ${currentSlot}`;
-}
-
-function pickComp() {
-  const comps = selectedPos.competencies;
-  return comps[Math.floor(Math.random() * comps.length)];
-}
-
-/* ────────────────────────────────────
-   GENERATE CASE VIGNETTE
-──────────────────────────────────── */
-async function generateCaseVignette(caseIdx) {
-  document.getElementById("q-area").innerHTML = `<div class="loading"><div class="spin"></div><span>Menyusun skenario studi kasus ${caseIdx+1}…</span></div>`;
-
-  const comp = selectedPos.competencies[caseIdx % selectedPos.competencies.length];
-  const existingTitles = Object.values(caseVignettes).map(v=>v.title).join(", ");
-
-  const vigSegCtx = activeSegment === "B"
-    ? "Skenario harus menggambarkan tantangan manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja unit, penetapan kebijakan operasional KPP, atau penanganan eskalasi dari kepala seksi."
-    : "Skenario harus menggambarkan tantangan teknis tingkat seksi: penanganan kasus WP spesifik, pelaksanaan prosedur perpajakan, bimbingan kepada AR/pelaksana, atau penyelesaian masalah operasional seksi.";
+/* ── QUESTION GENERATORS ─────────── */
+async function generateRegularQuestionFor(idx, comp) {
+  const prevQs = questions.filter(Boolean).slice(-8).map(q=>q.question?.slice(0,50)).join(" | ");
+  const segCtx = activeSegment === "B"
+    ? `Segmen: Jabatan Administrator/Kepala Kantor (KMK 271/MK/SJ/2025)
+Karakteristik Level ${comp.level}: ${comp.level===4?"mengevaluasi sistem kerja, rekomendasi kebijakan kantor, menyusun standar kinerja lintas seksi":"menyelenggarakan dan membimbing, memecahkan masalah teknis, koordinasi lintas seksi"}`
+    : `Segmen: Jabatan Pengawas/Kepala Seksi (KMK 434/MK/PJ/2025)
+Karakteristik Level ${comp.level}: ${comp.level===3?"mengevaluasi hasil kerja, menelaah permasalahan WP, rekomendasi tindak lanjut":"menganalisis data WP, menyusun rencana, melaksanakan sesuai petunjuk teknis"}`;
 
   const prompt = `Penyusun soal uji kompetensi teknis DJP Indonesia.
 
-Buat SKENARIO STUDI KASUS untuk jabatan: ${selectedPos.name}
-Fokus kompetensi: ${comp.name} (Level ${comp.level})
-Konteks jabatan: ${vigSegCtx}
-Kasus sebelumnya (JANGAN DUPLIKASI tema): ${existingTitles || "Belum ada"}
-
-INSTRUKSI:
-- Buat skenario nyata dan detail (160-200 kata) yang menggambarkan situasi kerja konkret
-- Sertakan: nama instansi/WP fiktif, data angka spesifik, tanggal, dan permasalahan yang jelas
-- Skenario harus cukup kompleks untuk mendukung 5 pertanyaan dari berbagai sudut pandang
-- Gunakan terminologi DJP yang tepat (NPWP, SPT, SKP, STP, LHP, dsb.)
-
-BALAS HANYA JSON (tanpa backtick):
-{"title":"judul singkat kasus (max 10 kata)","body":"teks skenario 160-200 kata","comp":"${comp.name}","compLevel":${comp.level}}`;
-
-  try {
-    const data = await callAPI(prompt, "Penyusun soal DJP. Balas HANYA JSON valid tanpa markdown.", 600);
-    const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
-    caseVignettes[caseIdx] = JSON.parse(txt);
-  } catch(e) {
-    caseVignettes[caseIdx] = {
-      title: `Kasus ${caseIdx+1}: ${comp.name}`,
-      body: `Skenario otomatis untuk ${comp.name} di KPP. Kepala Seksi diminta mengevaluasi situasi terkait kompetensi ini dan menyusun rekomendasi tindak lanjut yang tepat sesuai ketentuan yang berlaku.`,
-      comp: comp.name,
-      compLevel: comp.level
-    };
-  }
-}
-
-/* ────────────────────────────────────
-   GENERATE REGULAR QUESTION
-──────────────────────────────────── */
-async function generateRegularQuestion() {
-  const comp = pickComp();
-  document.getElementById("q-tag").textContent = comp.name;
-  document.getElementById("q-area").innerHTML = `<div class="loading"><div class="spin"></div><span>Menyusun soal ${comp.name}…</span></div>`;
-
-  const prevQs = answersLog.filter(a=>a.type==="regular").slice(-8).map(a=>a.question.slice(0,50)).join(" | ");
-
-  const segCtx = activeSegment === "B"
-    ? `Segmen: Jabatan Administrator/Kepala Kantor (KMK 271/MK/SJ/2025)
-Karakteristik Level ${comp.level}: ${comp.level===4
-  ? "mengevaluasi sistem kerja, memberikan rekomendasi kebijakan tingkat kantor, menyusun standar/indikator kinerja lintas seksi"
-  : "menyelenggarakan dan membimbing pelaksanaan, memecahkan masalah teknis, berkoordinasi lintas seksi"}`
-    : `Segmen: Jabatan Pengawas/Kepala Seksi (KMK 434/MK/PJ/2025)
-Karakteristik Level ${comp.level}: ${comp.level===3
-  ? "mengevaluasi hasil kerja seksi, menelaah permasalahan WP, merekomendasikan tindak lanjut kepada atasan"
-  : "menganalisis data WP, menyusun rencana kegiatan seksi, melaksanakan sesuai petunjuk teknis"}`;
-
-  const prompt = `Penyusun soal uji kompetensi teknis DJP Indonesia. Buat soal yang membedakan kemampuan antar level dengan tepat.
-
 Jabatan: ${selectedPos.name}
-Kompetensi: ${comp.name} — Level ${comp.level} diperlukan
+Kompetensi: ${comp.name} — Level ${comp.level}
 ${segCtx}
 
 Soal sebelumnya (JANGAN DUPLIKASI): ${prevQs || "Belum ada"}
 
-INSTRUKSI:
-- Buat 1 soal skenario kasus nyata di KPP — pilih situasi yang hanya bisa dijawab dengan kompetensi Level ${comp.level}
-- 4 pilihan: satu benar, tiga lainnya plausibel tapi mencerminkan kemampuan level lebih rendah atau pendekatan yang salah
-- Pembahasan harus mengutip indikator perilaku Level ${comp.level} dan menjelaskan mengapa level di bawahnya tidak cukup
+Buat 1 soal skenario kasus nyata — 4 pilihan, 1 benar, pembahasan mengutip indikator Level ${comp.level}.
 
 BALAS HANYA JSON:
-{"question":"teks soal spesifik","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"Jawaban benar karena sesuai indikator Level ${comp.level} yaitu [kutip indikator]. Opsi lain kurang tepat karena [jelaskan per opsi].","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${comp.name} Level ${comp.level}","comp":"${comp.name}","compLevel":${comp.level}}`;
+{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"...","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${comp.name} Level ${comp.level}","comp":"${comp.name}","compLevel":${comp.level}}`;
 
-  try {
-    const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
-    const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
-    const q = JSON.parse(txt);
-    q.type = "regular";
-    renderQuestion(q, null);
-  } catch(e) {
-    showError(e.message);
-  }
+  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
+  const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
+  const q = JSON.parse(txt);
+  q.type = "regular";
+  questions[idx] = q;
 }
 
-/* ────────────────────────────────────
-   GENERATE CASE SUB-QUESTION
-──────────────────────────────────── */
-async function generateCaseSubQuestion(caseIdx, subIdx) {
+async function generateCaseSubQuestionFor(idx, caseIdx, subIdx) {
   const vig = caseVignettes[caseIdx];
-  if (!vig) { showError("Vignette belum tersedia."); return; }
-
-  document.getElementById("q-area").innerHTML = `<div class="loading"><div class="spin"></div><span>Menyusun pertanyaan ${subIdx+1}/5 untuk kasus ini…</span></div>`;
-
-  const prevSubs = answersLog
-    .filter(a=>a.type==="case" && a.caseIdx===caseIdx)
-    .map(a=>a.question.slice(0,50)).join(" | ");
-
-  const aspectGuide = [
-    "identifikasi masalah utama dan akar permasalahan",
-    "analisis data dan informasi yang relevan dari skenario",
+  if (!vig) throw new Error("Vignette missing for case "+caseIdx);
+  const prevSubs = questions.filter((q,i) => q && plan[i]?.type==="case" && plan[i]?.caseIdx===caseIdx).map(q=>q.question?.slice(0,50)).join(" | ");
+  const aspects = [
+    "identifikasi masalah utama dan akar permasalahan dari skenario",
+    "analisis data dan informasi yang relevan dalam skenario",
     "evaluasi alternatif solusi atau tindakan yang tersedia",
-    "penentuan rekomendasi tindak lanjut yang paling tepat",
-    "aspek prosedural, dasar hukum, atau mitigasi risiko"
+    "rekomendasi tindak lanjut yang paling tepat dan dasar hukumnya",
+    "aspek prosedural, risiko, atau mitigasi dalam penyelesaian kasus"
   ][subIdx];
+
+  const vigSegCtx = activeSegment === "B"
+    ? "Tantangan manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja, penetapan kebijakan operasional."
+    : "Tantangan teknis tingkat seksi: penanganan kasus WP spesifik, prosedur perpajakan, bimbingan kepada AR.";
 
   const prompt = `Penyusun soal uji kompetensi teknis DJP.
 
-SKENARIO KASUS:
-"${vig.body}"
+SKENARIO: "${vig.body}"
+Jabatan: ${selectedPos.name} | Kompetensi: ${vig.comp} Level ${vig.compLevel}
+Konteks: ${vigSegCtx}
+Aspek pertanyaan ke-${subIdx+1}: ${aspects}
+Pertanyaan sebelumnya (JANGAN DUPLIKASI): ${prevSubs||"Belum ada"}
 
-Jabatan: ${selectedPos.name}
-Kompetensi fokus: ${vig.comp} (Level ${vig.compLevel})
-Pertanyaan ke-${subIdx+1} dari 5 — aspek yang diuji: ${aspectGuide}
-Pertanyaan sebelumnya di kasus ini: ${prevSubs || "Belum ada"}
-
-Buat 1 pertanyaan yang SPESIFIK merujuk detail skenario di atas.
-Pertanyaan harus berbeda aspek dari pertanyaan sebelumnya.
-4 pilihan jawaban, 1 benar.
+Buat 1 pertanyaan spesifik mengacu detail skenario, 4 pilihan, 1 benar.
 
 BALAS HANYA JSON:
-{"question":"pertanyaan spesifik mengacu detail skenario","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"penjelasan 3+ kalimat mengaitkan jawaban dengan skenario dan indikator kompetensi Level ${vig.compLevel}","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${vig.comp}"}`;
+{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"...","source":"Materi Webinar Kompetensi Teknis Jabatan Struktural KPP — ${vig.comp}"}`;
 
-  try {
-    const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
-    const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
-    const q = JSON.parse(txt);
-    q.type = "case"; q.caseIdx = caseIdx; q.subIdx = subIdx;
-    q.comp = vig.comp; q.compLevel = vig.compLevel;
-    renderQuestion(q, vig);
-  } catch(e) {
-    showError(e.message);
-  }
+  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 900);
+  const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
+  const q = JSON.parse(txt);
+  q.type = "case"; q.caseIdx = caseIdx; q.subIdx = subIdx;
+  q.comp = vig.comp; q.compLevel = vig.compLevel;
+  q.vigTitle = vig.title; q.vigBody = vig.body;
+  questions[idx] = q;
 }
 
-/* ────────────────────────────────────
-   RENDER QUESTION
-──────────────────────────────────── */
-function renderQuestion(q, vig) {
-  let html = "";
+/* ── NAV GRID ────────────────────── */
+function buildNavGrid() {
+  const grid = document.getElementById("seb-nav-grid");
+  grid.innerHTML = "";
+  const navTotal = sessionMode==="static" ? questions.length : TOTAL_QUESTIONS;
+  for (let i=0; i<navTotal; i++) {
+    const btn = document.createElement("button");
+    btn.id = `nb-${i}`;
+    btn.className = "seb-nav-btn" + (plan[i]?.type==="case" ? " case-q" : "");
+    btn.textContent = i+1;
+    btn.onclick = (function(idx){ return function(){ goToQuestion(idx); }; })(i);
+    grid.appendChild(btn);
+  }
+  // Section legend
+  const secs = document.getElementById("seb-nav-sections");
+  secs.innerHTML = `
+    <div class="seb-nav-sec"><div class="seb-nav-sec-dot reg"></div>Soal reguler</div>
+    <div class="seb-nav-sec"><div class="seb-nav-sec-dot cas"></div>Studi kasus (bulat)</div>`;
+  updateNavGrid();
+}
 
-  if (vig) {
-    html += `<div class="vignette">
-      <div class="vignette-head">
-        <span class="vignette-badge">STUDI KASUS ${plan[currentSlot].caseIdx+1}</span>
-        <span class="vignette-title">${esc(vig.title)}</span>
-      </div>
+function updateNavGrid() {
+  const _navT = sessionMode==="static" ? questions.length : TOTAL_QUESTIONS;
+  for (let i=0; i<_navT; i++) {
+    const btn = document.getElementById(`nb-${i}`);
+    if (!btn) continue;
+    const base = plan[i]?.type==="case" ? " case-q" : "";
+    if (i === currentQ)           btn.className = "seb-nav-btn current"+base;
+    else if (confidences[i]==="yakin")  btn.className = "seb-nav-btn yakin"+base;
+    else if (confidences[i]==="ragu")   btn.className = "seb-nav-btn ragu"+base;
+    else if (confidences[i]==="tandai") btn.className = "seb-nav-btn tandai"+base;
+    else if (answers[i])                btn.className = "seb-nav-btn answered"+base;
+    else                                btn.className = "seb-nav-btn"+base;
+  }
+  // Update stats
+  const ans = answers.filter(Boolean).length;
+  const flagged = confidences.filter(c=>c==="tandai"||c==="ragu").length;
+  document.getElementById("stat-answered").textContent = ans;
+  document.getElementById("stat-flagged").textContent  = flagged;
+  const _t2 = sessionMode==="static"?questions.length:TOTAL_QUESTIONS; document.getElementById("stat-left").textContent = _t2 - ans;
+}
+
+/* ── RENDER QUESTION ─────────────── */
+function renderCurrentQuestion() {
+  const q    = questions[currentQ];
+  const slot = plan[currentQ];
+  if (!q) return;
+
+  slotAnswered = !!answers[currentQ];
+
+  // Section notice
+  const notice = document.getElementById("section-notice");
+  if (slot.type==="case" && slot.subIdx===0) {
+    notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon cas">📋</div><div class="sec-divider-text"><strong>Studi Kasus ${slot.caseIdx+1} dari 4</strong> — Baca skenario berikut dan jawab 5 pertanyaan terkait.</div></div>`;
+  } else if (slot.type==="regular" && currentQ>0 && plan[currentQ-1]?.type==="case") {
+    notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon reg">📝</div><div class="sec-divider-text"><strong>Kembali ke Soal Pilihan Ganda</strong></div></div>`;
+  } else {
+    notice.innerHTML = "";
+  }
+
+  // Vignette
+  let vigHtml = "";
+  if (slot.type==="case" && caseVignettes[slot.caseIdx]) {
+    const vig = caseVignettes[slot.caseIdx];
+    vigHtml = `<div class="vignette">
+      <div class="vignette-head"><span class="vignette-badge">STUDI KASUS ${slot.caseIdx+1}</span><span class="vignette-title">${esc(vig.title)}</span></div>
       <div class="vignette-body">${esc(vig.body)}</div>
-      <div class="vignette-sub-ctr">Pertanyaan ${plan[currentSlot].subIdx+1} dari 5</div>
+      <div class="vignette-sub-ctr">Pertanyaan ${slot.subIdx+1} dari 5</div>
     </div>`;
   }
 
+  // Options — restore previously chosen answer if any
+  const prev = answers[currentQ];
   let opts = "";
   ["a","b","c","d"].forEach(k => {
-    opts += `<button class="opt" id="opt-${k}" onclick="selectAnswer('${k}',event)" data-q='${JSON.stringify(q).replace(/'/g,"&#39;")}'>${k.toUpperCase()}. ${esc(q.options[k])}</button>`;
+    let cls = "opt";
+    if (prev) {
+      if (k === q.correct)              cls += " correct";
+      else if (k === prev.chosen)       cls += " wrong";
+    }
+    opts += `<button class="opt${prev?(" "+(k===q.correct?"correct":(k===prev.chosen?"wrong":""))):" "}" id="opt-${k}"
+      ${prev?"disabled":""}
+      onclick="selectAnswer('${k}')">${k.toUpperCase()}. ${esc(q.options[k])}</button>`;
   });
 
-  html += `<div class="q-card">
-    <div class="q-text">${esc(q.question)}</div>
-    <div class="options">${opts}</div>
-  </div>`;
+  document.getElementById("q-area").innerHTML = `
+    ${vigHtml}
+    <div class="q-card">
+      <div class="q-text"><span style="font-size:12px;color:var(--text-3);display:block;margin-bottom:6px;">Soal ${currentQ+1} dari ${TOTAL_QUESTIONS} · ${esc(q.comp||"")}</span>${esc(q.question)}</div>
+      <div class="options">${opts}</div>
+    </div>`;
 
-  document.getElementById("q-area").innerHTML = html;
+  // Feedback if already answered
+  if (prev) {
+    renderFeedback(q, prev.chosen);
+  } else {
+    document.getElementById("fb-area").innerHTML = "";
+  }
 
-  // Store q reference globally for easy access
-  window._currentQ = q;
+  // Confidence bar
+  const confBar = document.getElementById("conf-bar");
+  confBar.style.display = prev ? "" : "none";
+  if (prev) {
+    ["yakin","ragu","tandai"].forEach(level => {
+      document.getElementById("conf-"+level).className = "conf-btn "+level+(confidences[currentQ]===level?" active":"");
+    });
+  }
+
+  // Update progress bar & q-tag
+  updateQuizProgress();
+  updateNavGrid();
+  window.scrollTo({top:0, behavior:"smooth"});
 }
 
-/* ────────────────────────────────────
-   SELECT ANSWER
-──────────────────────────────────── */
+function updateQuizProgress() {
+  const ans = answers.filter(Boolean).length;
+  const pct = Math.round((ans/TOTAL_QUESTIONS)*100);
+  const q   = questions[currentQ];
+  const slot = plan[currentQ];
+  // Update topbar nav buttons
+  document.getElementById("btn-prev").disabled = currentQ === 0;
+  document.getElementById("btn-next").disabled = currentQ === TOTAL_QUESTIONS-1;
+}
+
+/* ── SELECT ANSWER ───────────────── */
 function selectAnswer(choice) {
-  if (slotAnswered) return;
-  slotAnswered = true;
-  const q = window._currentQ;
+  if (answers[currentQ]) return; // Already answered — no re-answer
+  const q = questions[currentQ];
   const isCorrect = choice === q.correct;
+  answers[currentQ] = { chosen: choice, correct: q.correct, isCorrect, options: q.options };
+  if (isCorrect) { correctCount++; if (plan[currentQ].type==="regular") regularCorrect++; else caseCorrect++; }
 
-  correctCount += isCorrect ? 1 : 0;
-  if (q.type === "regular") regularCorrect += isCorrect ? 1 : 0;
-  else caseCorrect += isCorrect ? 1 : 0;
-
-  answersLog.push({
-    type: q.type, caseIdx: q.caseIdx, subIdx: q.subIdx,
-    question: q.question, chosen: choice, correct: q.correct,
-    isCorrect, competency: q.comp, options: q.options,
-    explanation: q.explanation, source: q.source
-  });
-
-  document.getElementById("live-score").textContent = `${correctCount} / ${currentSlot+1}`;
-
+  // Disable options + highlight
   ["a","b","c","d"].forEach(k => {
     const btn = document.getElementById("opt-"+k);
     if (!btn) return;
     btn.disabled = true;
-    if (k === q.correct) btn.classList.add("correct");
-    else if (k === choice && !isCorrect) btn.classList.add("wrong");
+    if (k===q.correct)                    btn.className="opt correct";
+    else if (k===choice && !isCorrect)    btn.className="opt wrong";
   });
 
-  const fbArea = document.getElementById("fb-area");
-  fbArea.innerHTML = `<div class="fb ${isCorrect?"ok":"bad"}">
+  // Show feedback streaming
+  renderFeedback(q, choice);
+
+  // Show confidence bar
+  const confBar = document.getElementById("conf-bar");
+  confBar.style.display = "";
+  ["yakin","ragu","tandai"].forEach(l => document.getElementById("conf-"+l).className="conf-btn "+l);
+
+  // Add to answersLog for result screen
+  answersLog.push({
+    type: plan[currentQ].type, caseIdx: plan[currentQ].caseIdx, subIdx: plan[currentQ].subIdx,
+    question: q.question, chosen: choice, correct: q.correct, isCorrect,
+    competency: q.comp, options: q.options, explanation: q.explanation, source: q.source
+  });
+
+  updateNavGrid();
+}
+
+function renderFeedback(q, choice) {
+  const isCorrect = choice === q.correct;
+  document.getElementById("fb-area").innerHTML = `<div class="fb ${isCorrect?"ok":"bad"}">
     <div class="fb-head">${isCorrect?"✓ Benar!":"✗ Kurang tepat — Jawaban benar: "+q.correct.toUpperCase()}</div>
-    <div class="fb-body" id="fb-txt"></div>
-    <span class="fb-src" id="fb-src"></span>
+    <div class="fb-body" id="fb-txt">${esc(q.explanation||"")}</div>
+    <span class="fb-src" id="fb-src" style="display:${q.source?"inline-block":"none"}">${esc(q.source||"")}</span>
   </div>`;
+}
 
-  streamText(q.explanation, "fb-txt", () => {
-    const s = document.getElementById("fb-src");
-    s.textContent = "📖 " + (q.source || "Materi Webinar Kompetensi Teknis Jabatan Struktural KPP");
-    s.style.display = "inline-block";
+/* ── CONFIDENCE TAGGING ──────────── */
+function setConfidence(level) {
+  confidences[currentQ] = confidences[currentQ]===level ? null : level;
+  ["yakin","ragu","tandai"].forEach(l => {
+    document.getElementById("conf-"+l).className = "conf-btn "+l+(confidences[currentQ]===l?" active":"");
   });
-
-  const isLast = currentSlot + 1 >= TOTAL_QUESTIONS;
-  document.getElementById("act-area").innerHTML = `
-    <button class="btn btn-p" onclick="nextSlot()" style="margin-top:4px">
-      ${isLast ? "Selesai — Lihat Hasil →" : "Soal Berikutnya →"}
-    </button>`;
+  updateNavGrid();
 }
 
-/* ────────────────────────────────────
-   NEXT SLOT
-──────────────────────────────────── */
-function nextSlot() {
-  currentSlot++;
-  if (currentSlot >= TOTAL_QUESTIONS) showResults();
-  else processSlot();
+/* ── NAVIGATION ──────────────────── */
+function goToQuestion(idx) {
+  if (idx<0||idx>=TOTAL_QUESTIONS) return;
+  currentQ = idx;
+  renderCurrentQuestion();
 }
 
-/* ────────────────────────────────────
-   SHOW RESULTS
-──────────────────────────────────── */
+function navQuestion(dir) {
+  const next = currentQ + dir;
+  if (next>=0 && next<TOTAL_QUESTIONS) goToQuestion(next);
+}
+
+function skipQuestion() {
+  // Find next unanswered
+  for (let i=currentQ+1; i<TOTAL_QUESTIONS; i++) {
+    if (!answers[i]) { goToQuestion(i); return; }
+  }
+  for (let i=0; i<currentQ; i++) {
+    if (!answers[i]) { goToQuestion(i); return; }
+  }
+  // All answered — go to next
+  navQuestion(1);
+}
+
+/* ── SUBMIT CONFIRM ──────────────── */
+function confirmSubmit() {
+  const ans = answers.filter(Boolean).length;
+  const unanswered = TOTAL_QUESTIONS - ans;
+  const flagged = confidences.filter(c=>c==="tandai"||c==="ragu").length;
+  const modal = document.createElement("div");
+  modal.className = "modal-overlay";
+  modal.id = "submit-modal";
+  modal.innerHTML = `<div class="modal-box">
+    <div class="modal-title">Selesai dan Kumpulkan?</div>
+    <div class="modal-body">Pastikan kamu sudah menjawab semua soal dan meninjau soal yang ditandai sebelum mengumpulkan.</div>
+    <div class="modal-stats">
+      <div class="modal-stat"><div class="modal-stat-num">${ans}</div><div class="modal-stat-lbl">Dijawab</div></div>
+      <div class="modal-stat"><div class="modal-stat-num" style="color:${unanswered>0?"var(--red)":"var(--green)"}">${unanswered}</div><div class="modal-stat-lbl">Belum</div></div>
+      <div class="modal-stat"><div class="modal-stat-num" style="color:${flagged>0?"var(--amber)":"var(--text)"}">${flagged}</div><div class="modal-stat-lbl">Ditandai</div></div>
+    </div>
+    ${unanswered>0?`<div style="font-size:12px;color:var(--amber);background:var(--amber-l);border-radius:var(--r-md);padding:8px 12px;margin-bottom:16px;">Masih ada ${unanswered} soal yang belum dijawab. Soal yang belum dijawab dianggap salah.</div>`:""}
+    <div class="modal-actions">
+      <button class="btn btn-o" style="flex:1" onclick="document.getElementById('submit-modal').remove()">Kembali</button>
+      <button class="btn btn-p" style="flex:1" onclick="submitQuiz()">Ya, Kumpulkan</button>
+    </div>
+  </div>`;
+  document.body.appendChild(modal);
+}
+
+function submitQuiz() {
+  const modal = document.getElementById("submit-modal");
+  if (modal) modal.remove();
+  showResults();
+}
+
+/* ── STATIC SESSION PLAYER ──────── */
+function renderStaticQuestion() {
+  slotAnswered = !!answers[currentQ];
+  renderCurrentQuestion();
+}
+
+/* ── KEEP OLD nextSlot/processSlot as no-ops for compatibility ── */
+function processSlot() { renderCurrentQuestion(); }
+function nextSlot() { navQuestion(1); }
+
+async function autoSaveLiveSession() {
+  if (sessionMode !== "live") return;
+  // Build session object
+  const sessionId = generateSessionId();
+  const sessionData = {
+    id: sessionId,
+    position: selectedPos.name,
+    segment: activeSegment,
+    segmentLabel: activeSegment === "B" ? "Jabatan Administrator" : "Jabatan Pengawas",
+    score: Math.round((correctCount / answersLog.length) * 100),
+    totalQ: answersLog.length,
+    correct: correctCount,
+    completedAt: new Date().toISOString(),
+    questions: questions.map((q, i) => {
+      const ans = answersLog[i];
+      return {
+        ...q,
+        vigTitle: caseVignettes[q.caseIdx]?.title || null,
+        vigBody:  caseVignettes[q.caseIdx]?.body  || null,
+        userAnswer: ans?.chosen,
+        wasCorrect: ans?.isCorrect
+      };
+    })
+  };
+  await saveSessionToLibrary(sessionData);
+}
+
 async function markSessionUsed() {
   if (accessType === "paid" && sessionKeyUsed) {
     try {
@@ -1037,6 +1459,23 @@ async function markSessionUsed() {
 
 function showResults() {
   markSessionUsed();
+  // Rebuild answersLog from answers[] + questions[] for result/save consistency
+  answersLog = [];
+  for (let i=0; i<TOTAL_QUESTIONS; i++) {
+    const q = questions[i];
+    const a = answers[i];
+    if (!q) continue;
+    answersLog.push({
+      type: plan[i].type, caseIdx: plan[i].caseIdx, subIdx: plan[i].subIdx,
+      question: q.question, chosen: a?.chosen||null, correct: q.correct,
+      isCorrect: !!(a?.isCorrect), competency: q.comp, options: q.options,
+      explanation: q.explanation, source: q.source
+    });
+  }
+  correctCount = answersLog.filter(a=>a.isCorrect).length;
+  regularCorrect = answersLog.filter(a=>a.type==="regular"&&a.isCorrect).length;
+  caseCorrect    = answersLog.filter(a=>a.type==="case"   &&a.isCorrect).length;
+  autoSaveLiveSession();
   showScreen("screen-result");
   const total = answersLog.length;
   const pct = Math.round((correctCount / total) * 100);
@@ -1159,11 +1598,67 @@ function streamText(text, id, onDone) {
    SHOW ERROR
 ──────────────────────────────────── */
 function showError(msg) {
-  const b = document.getElementById("err-banner");
-  b.textContent = `Gagal memuat soal: ${msg}. Periksa API key.`;
-  b.style.display = "block";
+  document.getElementById("err-banner").style.display = "none";
   document.getElementById("q-area").innerHTML = "";
-  document.getElementById("act-area").innerHTML = `<button class="btn btn-o" onclick="processSlot()">Coba Lagi</button>`;
+  document.getElementById("act-area").innerHTML = "";
+
+  // Classify error type
+  let title = "Gagal membuat soal";
+  let detail = msg;
+  let hint = "";
+  let showStatic = false;
+
+  if (msg.includes("429") || msg.toLowerCase().includes("rate limit") || msg.toLowerCase().includes("terlalu banyak")) {
+    title = "Server sedang sibuk";
+    detail = "Terlalu banyak permintaan dalam waktu singkat. Ini biasanya terjadi saat banyak pengguna aktif bersamaan.";
+    hint = "Tunggu 30–60 detik, lalu coba lagi. Atau gunakan sesi dari arsip yang tidak memerlukan kredit AI.";
+    showStatic = true;
+  } else if (msg.includes("402") || msg.toLowerCase().includes("credit") || msg.toLowerCase().includes("saldo")) {
+    title = "Saldo kredit AI habis";
+    detail = "Kredit API untuk layanan ini sementara habis. Layanan akan pulih setelah admin menambah saldo.";
+    hint = "Gunakan sesi dari arsip pengguna lain (gratis), atau donasi untuk membantu mengisi ulang saldo.";
+    showStatic = true;
+  } else if (msg.includes("401") || msg.includes("403") || msg.toLowerCase().includes("api key")) {
+    title = "Masalah autentikasi API";
+    detail = "API key tidak valid atau sudah kedaluwarsa. Admin perlu memperbarui konfigurasi.";
+    hint = "Hubungi admin atau gunakan sesi dari arsip sementara menunggu perbaikan.";
+    showStatic = true;
+  } else if (msg.toLowerCase().includes("fetch") || msg.toLowerCase().includes("network") || msg.toLowerCase().includes("koneksi")) {
+    title = "Tidak dapat terhubung";
+    detail = "Gagal menghubungi server AI. Periksa koneksi internet kamu.";
+    hint = "Pastikan internet aktif, lalu coba lagi. Jika masalah berlanjut, coba muat ulang halaman.";
+  } else if (msg.toLowerCase().includes("json") || msg.toLowerCase().includes("parse")) {
+    title = "Format respons tidak valid";
+    detail = "AI mengembalikan respons yang tidak bisa dibaca. Ini jarang terjadi.";
+    hint = "Coba lagi — biasanya berhasil pada percobaan berikutnya.";
+  }
+
+  const staticBtn = showStatic
+    ? `<button class="err-btn teal" onclick="goToStaticMode()">Coba Sesi dari Arsip</button>`
+    : "";
+
+  document.getElementById("q-area").innerHTML = `
+    <div class="err-card">
+      <div class="err-card-head">
+        <div class="err-icon">⚠</div>
+        <div>
+          <div class="err-title">${title}</div>
+          <div class="err-msg">${detail}</div>
+        </div>
+      </div>
+      ${hint ? `<div style="font-size:12px;color:var(--text-3);line-height:1.6;padding:10px 12px;background:var(--bg-2);border-radius:var(--r-md);margin-bottom:8px;">${hint}</div>` : ""}
+      <div class="err-actions">
+        <button class="err-btn primary" onclick="processSlot()">↺ Coba Lagi</button>
+        <button class="err-btn secondary" onclick="location.reload()">Muat Ulang Halaman</button>
+        ${staticBtn}
+        <a href="/donate.html" class="err-btn secondary" style="text-decoration:none">Donasi Saldo →</a>
+      </div>
+    </div>`;
+}
+
+function goToStaticMode() {
+  showScreen("screen-gate");
+  selectMode("static");
 }
 
 /* ────────────────────────────────────
@@ -1224,7 +1719,8 @@ function stopHeartbeat() {
 // Refresh status when gate is visible — patch into the original showScreen
 const _baseShowScreen = function(id) {
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
+  const el = document.getElementById(id);
+  if (el) el.classList.add("active");
   window.scrollTo({top:0, behavior:"smooth"});
 };
 function showScreen(id) {
@@ -1234,6 +1730,188 @@ function showScreen(id) {
     stopHeartbeat();
   } else {
     startHeartbeat();
+  }
+}
+
+
+/* ────────────────────────────────────
+   SESSION MODE & STATIC BROWSER
+──────────────────────────────────── */
+let sessionMode = "live";         // "live" | "static"
+let selectedStaticSession = null; // full session object
+let allSessions = [];
+
+function selectMode(mode) {
+  sessionMode = mode;
+  document.getElementById("mode-live").className   = "mode-btn" + (mode==="live"   ? " active-live"   : "");
+  document.getElementById("mode-static").className = "mode-btn" + (mode==="static" ? " active-static" : "");
+  document.getElementById("session-browser").style.display   = mode==="static" ? "" : "none";
+  document.getElementById("live-segment-area").style.display = mode==="live"   ? "" : "none";
+  if (mode === "static" && allSessions.length === 0) loadSessionLibrary();
+}
+
+async function loadSessionLibrary() {
+  document.getElementById("session-list").innerHTML = `<div class="browser-loading"><div class="spin"></div><span>Mengambil sesi tersimpan…</span></div>`;
+  document.getElementById("session-count").textContent = "Memuat…";
+  try {
+    const res = await fetch("/api/sessions");
+    const data = await res.json();
+    allSessions = data.sessions || [];
+    renderSessionList(allSessions);
+  } catch(e) {
+    document.getElementById("session-list").innerHTML = `<div class="browser-empty">Gagal memuat arsip sesi. Coba lagi nanti.</div>`;
+    document.getElementById("session-count").textContent = "";
+  }
+}
+
+function filterSessions(seg, btn) {
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("act"));
+  btn.classList.add("act");
+  const filtered = seg === "all" ? allSessions : allSessions.filter(s => s.segment === seg);
+  renderSessionList(filtered);
+}
+
+function renderSessionList(sessions) {
+  const list = document.getElementById("session-list");
+  const count = document.getElementById("session-count");
+  if (!sessions.length) {
+    list.innerHTML = `<div class="browser-empty">Belum ada sesi tersimpan untuk filter ini.<br>Jadilah yang pertama menyelesaikan sesi live! 🎯</div>`;
+    count.textContent = "0 sesi tersimpan";
+    return;
+  }
+  count.textContent = `${sessions.length} sesi tersimpan`;
+  list.innerHTML = sessions.map(s => {
+    const pct = Math.round((s.correct / s.totalQ) * 100);
+    const pass = pct >= 60;
+    const date = new Date(s.completedAt).toLocaleDateString("id-ID", {day:"numeric",month:"short",year:"numeric"});
+    return `<div class="session-item" id="si-${s.id}" onclick="selectStaticSession('${s.id}')">
+      <div class="si-score ${pass?"pass":"fail"}">${pct}%</div>
+      <div class="si-body">
+        <div class="si-position">${esc(s.position)}</div>
+        <div class="si-meta">${s.correct}/${s.totalQ} benar · ${date} · <span class="si-seg ${s.segment.toLowerCase()}">${esc(s.segmentLabel||s.segment)}</span></div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function selectStaticSession(id) {
+  selectedStaticSession = allSessions.find(s => s.id === id) || {id};
+  document.querySelectorAll(".session-item").forEach(el => el.classList.remove("selected"));
+  const el = document.getElementById("si-"+id);
+  if (el) el.classList.add("selected");
+  document.getElementById("start-static-btn").style.display = "";
+}
+
+async function startStaticSession() {
+  if (!selectedStaticSession) return;
+  const btn = document.getElementById("start-static-btn");
+  btn.disabled = true; btn.textContent = "Memuat…";
+  try {
+    // Fetch full session with questions
+    const res = await fetch("/api/sessions", {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({action:"get", id: selectedStaticSession.id})
+    });
+    const session = await res.json();
+    if (session.error) throw new Error(session.error);
+    playStaticSession(session);
+  } catch(e) {
+    btn.disabled = false; btn.textContent = "Mulai Sesi Terpilih →";
+    alert("Gagal memuat sesi: " + e.message);
+  }
+}
+
+function playStaticSession(session) {
+  // Set up state as if playing a live session but from saved questions
+  selectedPos = { name: session.position, competencies: [] };
+  activeSegment = session.segment;
+  questions = session.questions || [];
+  plan = questions.map((q,i) => ({ type: q.type||"regular", caseIdx: q.caseIdx, subIdx: q.subIdx }));
+  currentSlot = 0;
+  answered = 0; correctCount = 0; regularCorrect = 0; caseCorrect = 0;
+  answersLog = []; slotAnswered = false;
+  // Rebuild caseVignettes from saved questions
+  caseVignettes = {};
+  questions.forEach(q => {
+    if (q.type === "case" && q.subIdx === 0 && q.vigTitle) {
+      caseVignettes[q.caseIdx] = { title: q.vigTitle, body: q.vigBody, comp: q.comp, compLevel: q.compLevel };
+    }
+  });
+
+  document.getElementById("sess-title").textContent = session.position;
+  const segLabel = session.segment === "B" ? "Administrator/Kakpp — Level 3-4" : "Pengawas/Kasi — Level 2-3";
+  document.getElementById("sess-sub").textContent = `${segLabel} · Sesi Arsip ${session.id}`;
+  sessionMode = "static";
+  // Reset answers/confidence for fresh play of archived session
+  const qLen = questions.length;
+  answers     = new Array(qLen).fill(null);
+  confidences = new Array(qLen).fill(null);
+  generated   = new Array(qLen).fill(true);
+  correctCount = 0; regularCorrect = 0; caseCorrect = 0; answersLog = [];
+  currentQ = 0;
+  showScreen("screen-quiz");
+  buildNavGrid();
+  renderCurrentQuestion();
+}
+
+function renderStaticQuestion() {
+  slotAnswered = false;
+  document.getElementById("err-banner").style.display = "none";
+  document.getElementById("fb-area").innerHTML = "";
+  document.getElementById("act-area").innerHTML = "";
+  document.getElementById("section-notice").innerHTML = "";
+
+  const slot = plan[currentSlot];
+  if (!slot) { showResults(); return; }
+  updateProgress(slot);
+
+  const q = questions[currentSlot];
+  if (!q) { showError("Soal tidak ditemukan di sesi ini."); return; }
+  window._currentQ = q;
+
+  // Section notices
+  if (q.type === "case" && q.subIdx === 0) {
+    document.getElementById("section-notice").innerHTML = `
+      <div class="sec-divider"><div class="sec-divider-icon cas">📋</div>
+      <div class="sec-divider-text"><strong>Studi Kasus ${q.caseIdx+1} dari 4</strong> — Baca skenario dan jawab 5 pertanyaan terkait.</div></div>`;
+  } else if (q.type === "regular" && currentSlot > 0 && questions[currentSlot-1]?.type === "case") {
+    document.getElementById("section-notice").innerHTML = `
+      <div class="sec-divider"><div class="sec-divider-icon reg">📝</div>
+      <div class="sec-divider-text"><strong>Kembali ke Soal Reguler</strong></div></div>`;
+  }
+
+  const vig = (q.type === "case" && caseVignettes[q.caseIdx]) ? caseVignettes[q.caseIdx] : null;
+  renderQuestion(q, vig);
+}
+
+/* ────────────────────────────────────
+   SESSION SAVING (auto on complete)
+──────────────────────────────────── */
+function generateSessionId() {
+  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  let id = "SES-";
+  for (let i=0; i<6; i++) id += chars[Math.floor(Math.random()*chars.length)];
+  return id;
+}
+
+async function saveSessionToLibrary(sessionData) {
+  const banner = document.getElementById("save-banner");
+  if (banner) { banner.className = "save-banner show"; banner.innerHTML = `<div class="spin" style="width:14px;height:14px;border-width:1.5px"></div> Menyimpan sesi ke arsip…`; }
+  try {
+    const res = await fetch("/api/sessions", {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({action:"save", session: sessionData})
+    });
+    const d = await res.json();
+    if (d.ok && banner) {
+      banner.innerHTML = `✓ Sesi disimpan ke arsip dengan ID <strong>${sessionData.id}</strong>. Pengguna lain bisa menggunakan sesi ini secara gratis.`;
+      setTimeout(() => { banner.className = "save-banner"; }, 8000);
+    }
+  } catch(e) {
+    if (banner) { banner.className = "save-banner"; }
+    console.warn("Session save failed:", e.message);
   }
 }
 
