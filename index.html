@@ -830,8 +830,8 @@ function buildPlan() {
 let apiKey = "";
 let selectedPos = null;
 let plan = [];
-let currentSlot = 0;    // 0-59
-let answered = 0;
+let currentQ = 0;    // 0-59
+// // removed stale answered var -- removed, using answers[] array instead
 let correctCount = 0;
 let regularCorrect = 0;
 let caseCorrect = 0;
@@ -1909,7 +1909,7 @@ function playStaticSession(session) {
   activeSegment = session.segment;
   questions = session.questions || [];
   plan = questions.map((q,i) => ({ type: q.type||"regular", caseIdx: q.caseIdx, subIdx: q.subIdx }));
-  currentSlot = 0;
+  // currentQ removed — use currentQ
   answered = 0; correctCount = 0; regularCorrect = 0; caseCorrect = 0;
   answersLog = []; slotAnswered = false;
   // Rebuild caseVignettes from saved questions
@@ -1943,11 +1943,11 @@ function renderStaticQuestion() {
   document.getElementById("act-area").innerHTML = "";
   document.getElementById("section-notice").innerHTML = "";
 
-  const slot = plan[currentSlot];
+  const slot = plan[currentQ];
   if (!slot) { showResults(); return; }
   updateProgress(slot);
 
-  const q = questions[currentSlot];
+  const q = questions[currentQ];
   if (!q) { showError("Soal tidak ditemukan di sesi ini."); return; }
   window._currentQ = q;
 
@@ -1956,7 +1956,7 @@ function renderStaticQuestion() {
     document.getElementById("section-notice").innerHTML = `
       <div class="sec-divider"><div class="sec-divider-icon cas">📋</div>
       <div class="sec-divider-text"><strong>Studi Kasus ${q.caseIdx+1} dari 4</strong> — Baca skenario dan jawab 5 pertanyaan terkait.</div></div>`;
-  } else if (q.type === "regular" && currentSlot > 0 && questions[currentSlot-1]?.type === "case") {
+  } else if (q.type === "regular" && currentQ > 0 && questions[currentQ-1]?.type === "case") {
     document.getElementById("section-notice").innerHTML = `
       <div class="sec-divider"><div class="sec-divider-icon reg">📝</div>
       <div class="sec-divider-text"><strong>Kembali ke Soal Reguler</strong></div></div>`;
