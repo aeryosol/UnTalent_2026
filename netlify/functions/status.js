@@ -58,7 +58,7 @@ export default async (req, context) => {
 
   // GET — return full status
   const balanceRaw   = parseFloat(process.env.CREDIT_BALANCE_USD || "0");
-  const costPerSess  = parseFloat(process.env.COST_PER_SESSION   || "0.64");
+  const costPerSess  = parseFloat(process.env.COST_PER_SESSION   || "0.40");
   const served       = parseInt(process.env.SESSIONS_SERVED      || "0", 10);
 
   const sessionsLeft = balanceRaw > 0 ? Math.floor(balanceRaw / costPerSess) : 0;
