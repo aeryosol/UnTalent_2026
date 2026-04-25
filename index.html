@@ -573,6 +573,11 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 
 <!-- ══ SELECT ══ -->
 <div class="screen" id="screen-select">
+  <!-- Back button -->
+  <div style="margin-bottom:18px;">
+    <button class="btn btn-o" style="font-size:12px;padding:6px 14px;" onclick="goGate()">← Kembali</button>
+  </div>
+
   <div style="margin-bottom:22px">
     <div style="font-size:11px;color:var(--text-3);margin-bottom:4px;" id="select-segment-label">—</div>
     <h2 style="font-size:18px;font-weight:500;margin-bottom:6px" id="select-title">Pilih Jabatan yang Dituju</h2>
@@ -595,7 +600,8 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
         <div style="font-size:11px;color:var(--purple);margin-top:3px">Studi Kasus</div>
       </div>
     </div>
-    <button class="btn btn-p" onclick="startQuiz()">Mulai Latihan 60 Soal →</button>
+    <button class="btn btn-p" id="start-quiz-btn" onclick="startQuiz()" style="width:100%;padding:12px;font-size:15px;">Mulai Latihan 60 Soal →</button>
+    <p style="font-size:11px;color:var(--text-3);margin-top:10px;text-align:center;">Semua 60 soal akan dibuat terlebih dahulu sebelum ujian dimulai.</p>
   </div>
 </div>
 
@@ -998,8 +1004,30 @@ let generated    = [];   // true once question at index is ready
 let currentQ     = 0;    // current slot index (0-based)
 let isGenerating = false; // prevents concurrent generation
 
+function goGate() {
+  selectedPos = null;
+  questions = []; answers = []; confidences = []; generated = []; answersLog = [];
+  document.getElementById("comp-area").style.display = "none";
+  showScreen("screen-gate");
+}
+
 function startQuiz() {
-  if (!selectedPos) return;
+  if (!selectedPos) {
+    // Highlight the position grid so user knows to pick one
+    const grid = document.getElementById("pos-grid");
+    grid.style.outline = "2px solid var(--red-m)";
+    grid.style.borderRadius = "var(--r-lg)";
+    setTimeout(() => { grid.style.outline = ""; grid.style.borderRadius = ""; }, 2000);
+    // Show inline message
+    const btn = document.getElementById("start-quiz-btn");
+    if (btn) {
+      const orig = btn.textContent;
+      btn.textContent = "⚠ Pilih jabatan dulu di atas";
+      btn.style.background = "var(--amber-m)";
+      setTimeout(() => { btn.textContent = orig; btn.style.background = ""; }, 2000);
+    }
+    return;
+  }
   plan        = buildPlan();
   questions   = new Array(TOTAL_QUESTIONS).fill(null);
   confidences = new Array(TOTAL_QUESTIONS).fill(null);
