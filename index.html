@@ -964,7 +964,12 @@ function renderPositions() {
     const d = document.createElement("div");
     d.className = "pos-card" + (selectedPos && selectedPos.id===p.id ? " sel" : "");
     d.onclick = () => selectPos(i);
-    d.innerHTML = `<div class="pname">${p.name}</div><div class="plevel">${p.levelDesc || p.level || ""}</div><span class="pbadge">${p.competencies.length} kompetensi</span>`;
+    // Build competency pill text: "Advokasi L3 · Analisis L3 · Inovasi L2"
+    const compSummary = p.competencies.map(c => {
+      const short = c.name.split(' ').slice(0,2).join(' ');
+      return `${short} L${c.level}`;
+    }).join(' · ');
+    d.innerHTML = `<div class="pname">${p.name}</div><div class="plevel" style="font-size:10px;line-height:1.5;">${compSummary}</div><span class="pbadge">${p.competencies.length} kompetensi</span>`;
     g.appendChild(d);
   });
 }
