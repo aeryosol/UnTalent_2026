@@ -482,8 +482,8 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
       <div class="status-bar-track"><div class="status-bar-fill loading" id="s-bar" style="width:60%"></div></div>
     </div>
     <div class="status-stats">
-      <div class="stat-box"><div class="stat-num" id="s-sessions-left">—</div><div class="stat-lbl">Sesi tersisa<br>(estimasi)</div></div>
-      <div class="stat-box"><div class="stat-num" id="s-served">—</div><div class="stat-lbl">Sesi telah<br>digunakan</div></div>
+      <div class="stat-box"><div class="stat-num" id="s-sessions-left">—</div><div class="stat-lbl">Sesi tersisa<br>(real-time)</div></div>
+      <div class="stat-box"><div class="stat-num" id="s-served">—</div><div class="stat-lbl">Sesi selesai<br>(otomatis)</div></div>
       <div class="stat-box"><div class="stat-num" id="s-cost">—</div><div class="stat-lbl">Biaya per<br>sesi</div></div>
     </div>
     <div class="status-msg" id="s-msg">Memuat status layanan…</div>
@@ -1866,10 +1866,11 @@ async function loadStatus() {
     document.getElementById("s-served").textContent       = d.sessionsServed.toLocaleString("id-ID");
     document.getElementById("s-cost").textContent         = "Rp " + Math.round(d.costPerSession * 17500).toLocaleString("id-ID");
 
+    const spentIDR = Math.round((d.creditsSpent || 0) * 17500).toLocaleString("id-ID");
     const msgs = {
-      good:     `Saldo cukup untuk ±${d.sessionsLeft} sesi lagi. Layanan berjalan normal.`,
-      low:      `Saldo mulai menipis. Hanya tersisa ±${d.sessionsLeft} sesi. Pertimbangkan donasi agar layanan tetap berjalan.`,
-      critical: `⚠ Saldo kritis! Hanya tersisa ±${d.sessionsLeft} sesi. Layanan bisa terhenti sewaktu-waktu. Bantu dengan donasi sekarang.`
+      good:     `Saldo cukup untuk ±${d.sessionsLeft} sesi lagi. Sudah terpakai Rp ${spentIDR} dari ${d.sessionsServed} sesi. Layanan berjalan normal.`,
+      low:      `Saldo mulai menipis. Tersisa ±${d.sessionsLeft} sesi (sudah terpakai Rp ${spentIDR} dari ${d.sessionsServed} sesi). Pertimbangkan donasi.`,
+      critical: `⚠ Saldo kritis! Hanya tersisa ±${d.sessionsLeft} sesi. Total terpakai Rp ${spentIDR} dari ${d.sessionsServed} sesi. Bantu dengan donasi sekarang.`
     };
     document.getElementById("s-msg").textContent = msgs[d.health] || "";
   } catch(_) {

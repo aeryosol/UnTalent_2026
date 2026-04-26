@@ -219,9 +219,9 @@ hr.div { border:none; border-top:0.5px solid var(--border); margin:22px 0; }
 <script>
 /* ── CONFIG — same as request.html, edit here ── */
 const CFG = {
-  bankName:   "BCA",
-  bankNumber: "1234567890",
-  bankHolder: "Nama Anda",
+  bankName:   "GoPay",
+  bankNumber: "088211274205",
+  bankHolder: "Tn. Aryoso",
   costPerSession: 7000,       // in IDR — actual cost per 60-question session (April 2026, kurs Rp 17.500/USD)
   costUSD: "0.40"
 };
@@ -290,10 +290,11 @@ async function loadDonateStatus() {
     document.getElementById("d-served").textContent     = d.sessionsServed.toLocaleString("id-ID");
     document.getElementById("d-cost").textContent       = "Rp " + Math.round(d.costPerSession * 17500).toLocaleString("id-ID");
 
+    const spentIDR2 = Math.round((d.creditsSpent || 0) * 17500).toLocaleString("id-ID");
     const msgs = {
-      good:     `Saldo masih aman untuk ±${d.sessionsLeft} sesi. Terima kasih telah menggunakan layanan ini!`,
-      low:      `Saldo mulai menipis (±${d.sessionsLeft} sesi tersisa). Donasi kamu sangat berarti sekarang.`,
-      critical: `⚠ Saldo hampir habis! Hanya tersisa ±${d.sessionsLeft} sesi. Tolong bantu agar layanan tidak terhenti.`
+      good:     `Saldo aman untuk ±${d.sessionsLeft} sesi lagi. Total terpakai: Rp ${spentIDR2} dari ${d.sessionsServed} sesi nyata.`,
+      low:      `Saldo menipis — tersisa ±${d.sessionsLeft} sesi. Sudah terpakai Rp ${spentIDR2} dari ${d.sessionsServed} sesi. Donasi kamu berarti.`,
+      critical: `⚠ Kritis! Hanya ±${d.sessionsLeft} sesi tersisa. Sudah terpakai Rp ${spentIDR2} dari ${d.sessionsServed} sesi. Bantu sekarang.`
     };
     document.getElementById("d-msg").textContent = msgs[d.health] || "";
 
