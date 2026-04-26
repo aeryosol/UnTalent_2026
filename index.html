@@ -2012,7 +2012,7 @@ function playStaticSession(session) {
   questions = session.questions || [];
   plan = questions.map((q,i) => ({ type: q.type||"regular", caseIdx: q.caseIdx, subIdx: q.subIdx }));
   // currentQ removed — use currentQ
-  answered = 0; correctCount = 0; regularCorrect = 0; caseCorrect = 0;
+  correctCount = 0; regularCorrect = 0; caseCorrect = 0;
   answersLog = []; slotAnswered = false;
   // Rebuild caseVignettes from saved questions
   caseVignettes = {};
