@@ -126,17 +126,49 @@ export default async (req, context) => {
     if (body.action === "save") {
       const { session } = body;
       if (!session?.id || !session?.questions?.length) return new Response(JSON.stringify({ error: "Invalid session data" }), { status: 400, headers: cors });
+
+      // Strip heavy fields to stay under JSONBin 100KB free-tier limit
+      const slim = {
+        id:           session.id,
+        position:     session.position,
+        segment:      session.segment,
+        segmentLabel: session.segmentLabel,
+        score:        session.score,
+        totalQ:       session.totalQ,
+        correct:      session.correct,
+        completedAt:  session.completedAt,
+        questions: (session.questions || []).map(q => ({
+          type:       q.type,
+          caseIdx:    q.caseIdx,
+          subIdx:     q.subIdx,
+          comp:       q.comp,
+          compLevel:  q.compLevel,
+          question:   (q.question  || "").slice(0, 400),
+          options:    q.options,
+          correct:    q.correct,
+          explanation:(q.explanation || "").slice(0, 280),
+          source:     (q.source     || "").slice(0, 80),
+          vigTitle:   q.vigTitle || null,
+          vigBody:    (q.subIdx === 0 && q.vigBody) ? (q.vigBody || "").slice(0, 500) : null,
+          userAnswer: q.userAnswer || null,
+          wasCorrect: q.wasCorrect || false
+        }))
+      };
+
+      const sizeKB = Math.round(JSON.stringify(slim).length / 1024);
+      if (sizeKB > 95) {
+        return new Response(JSON.stringify({ error: "Session too large: " + sizeKB + "KB. Max 95KB." }), { status: 413, headers: cors });
+      }
+
       try {
         const data = await getBin(apiKey, binId);
         const sessions = data.sessions || [];
-        // Deduplicate
-        const idx = sessions.findIndex(s => s.id === session.id);
-        if (idx >= 0) sessions[idx] = session;
-        else sessions.push(session);
-        // Keep last 200 sessions per bin
-        if (sessions.length > 200) sessions.splice(0, sessions.length - 200);
+        const idx = sessions.findIndex(s => s.id === slim.id);
+        if (idx >= 0) sessions[idx] = slim;
+        else sessions.push(slim);
+        if (sessions.length > 100) sessions.splice(0, sessions.length - 100);
         await updateBin(apiKey, binId, { sessions });
-        return new Response(JSON.stringify({ ok: true, id: session.id }), { status: 200, headers: cors });
+        return new Response(JSON.stringify({ ok: true, id: slim.id, sizeKB }), { status: 200, headers: cors });
       } catch(e) {
         return new Response(JSON.stringify({ error: e.message }), { status: 500, headers: cors });
       }
