@@ -1746,10 +1746,15 @@ function makeRevItem(a, n, isCase) {
    API HELPER
 ──────────────────────────────────── */
 async function callAPI(userPrompt, systemPrompt, maxTokens=2000) {
+  const TIMEOUT_MS = 90000; // 90 seconds — generous for slow servers, but won't hang forever
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
+
   let resp;
   try {
     resp = await fetch("/api/chat", {
       method: "POST",
+      signal: controller.signal,
       headers: Object.assign(
         { "Content-Type": "application/json" },
         apiKey !== "__server__" ? { "x-api-key": apiKey } : {}
@@ -1762,8 +1767,13 @@ async function callAPI(userPrompt, systemPrompt, maxTokens=2000) {
       })
     });
   } catch(netErr) {
+    clearTimeout(timeoutId);
+    if (netErr.name === "AbortError") {
+      throw new Error("Permintaan ke AI melebihi batas waktu (90 detik). Server mungkin sibuk — coba lagi.");
+    }
     throw new Error("Koneksi gagal. Pastikan internet aktif. (" + netErr.message + ")");
   }
+  clearTimeout(timeoutId);
   if (!resp.ok) {
     let detail = "HTTP " + resp.status;
     try {
