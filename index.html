@@ -2083,11 +2083,16 @@ async function saveSessionToLibrary(sessionData) {
     });
     const d = await res.json();
     if (d.ok && banner) {
-      banner.innerHTML = `✓ Sesi disimpan ke arsip dengan ID <strong>${sessionData.id}</strong>. Pengguna lain bisa menggunakan sesi ini secara gratis.`;
-      setTimeout(() => { banner.className = "save-banner"; }, 8000);
+      banner.innerHTML = `✓ Sesi disimpan ke arsip — ID <strong>${sessionData.id}</strong> (~${d.sizeKB}KB). Pengguna lain bisa menggunakan sesi ini secara gratis.`;
+      setTimeout(() => { banner.className = "save-banner"; }, 10000);
+    } else if (banner) {
+      banner.innerHTML = `⚠ Sesi tidak tersimpan ke arsip: ${d.error || "unknown error"}`;
+      banner.style.background = "var(--red-l)";
+      banner.style.color = "var(--red)";
+      console.warn("Session save error:", d);
     }
   } catch(e) {
-    if (banner) { banner.className = "save-banner"; }
+    if (banner) { banner.className = "save-banner show"; banner.innerHTML = `⚠ Gagal menyimpan sesi ke arsip: ${e.message}`; banner.style.background = "var(--red-l)"; banner.style.color = "var(--red)"; }
     console.warn("Session save failed:", e.message);
   }
 }

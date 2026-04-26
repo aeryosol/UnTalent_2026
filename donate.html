@@ -217,14 +217,13 @@ hr.div { border:none; border-top:0.5px solid var(--border); margin:22px 0; }
 </div><!-- /main -->
 
 <script>
-
 /* ── CONFIG — same as request.html, edit here ── */
 const CFG = {
-  bankName:   "GoPay",
-  bankNumber: "088211274205",
-  bankHolder: "Tn. Aryoso",
-  costPerSession: 10000,      // in IDR, for display
-  costUSD: "0.64"
+  bankName:   "BCA",
+  bankNumber: "1234567890",
+  bankHolder: "Nama Anda",
+  costPerSession: 7000,       // in IDR — actual cost per 60-question session (April 2026, kurs Rp 17.500/USD)
+  costUSD: "0.40"
 };
 
 document.getElementById("bnk-name").textContent   = CFG.bankName;
