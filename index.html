@@ -964,7 +964,7 @@ function renderPositions() {
     const d = document.createElement("div");
     d.className = "pos-card" + (selectedPos && selectedPos.id===p.id ? " sel" : "");
     d.onclick = () => selectPos(i);
-    d.innerHTML = `<div class="pname">${p.name}</div><div class="plevel">${p.level}</div><span class="pbadge">${p.competencies.length} kompetensi</span>`;
+    d.innerHTML = `<div class="pname">${p.name}</div><div class="plevel">${p.levelDesc || p.level || ""}</div><span class="pbadge">${p.competencies.length} kompetensi</span>`;
     g.appendChild(d);
   });
 }
