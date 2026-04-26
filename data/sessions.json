@@ -1,8 +1,1201 @@
 {
   "_meta": {
-    "sessionsServedTotal": 0,
-    "creditsSpentUSD": 0.00,
-    "lastUpdated": ""
+    "sessionsServedTotal": 1,
+    "creditsSpentUSD": 0.4,
+    "lastUpdated": "2026-04-26T12:27:42.633Z"
   },
-  "sessions": []
+  "sessions": [
+    {
+      "id": "SES-3RMQBS",
+      "position": "Kepala Seksi Pelayanan",
+      "segment": "A",
+      "segmentLabel": "Jabatan Pengawas",
+      "score": 90,
+      "totalQ": 60,
+      "correct": 54,
+      "completedAt": "2026-04-26T12:27:41.528Z",
+      "questions": [
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan bahwa 15 Wajib Pajak UMKM di wilayah Anda mengeluhkan kesulitan memahami ketentuan PPh Final 0,5% pasca sosialisasi yang telah dilakukan tim Anda. Evaluasi menunjukkan tingkat kepatuhan pelaporan ",
+          "options": {
+            "a": "Mengevaluasi metode sosialisasi sebelumnya, menelaah pola kesulitan WP, kemudian merekomendasikan program asistensi terpadu dengan materi dan pendekat",
+            "b": "Menyerahkan penanganan kepada Account Representative untuk konseling individual kepada setiap WP yang mengeluh",
+            "c": "Membuat surat himbauan massal kepada seluruh WP UMKM untuk segera melaporkan SPT dan menyertakan brosur ketentuan PPh Final",
+            "d": "Mengusulkan sanksi administratif kepada WP yang tidak patuh agar memberikan efek jera dan meningkatkan kepatuhan"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kasi mengevaluasi hasil kerja (sosialisasi sebelumnya), menelaah permasalahan spesifik WP (pola kesulitan pemahaman), dan memberikan rekomendasi tindak lanjut ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Arsip Dinamis",
+          "compLevel": 2,
+          "question": "Kepala Seksi Pelayanan menemukan bahwa arsip permohonan restitusi tahun 2019 yang seharusnya sudah dipindahkan ke arsip inaktif masih tercampur dengan arsip aktif tahun berjalan, menyebabkan kesulitan pencarian dokumen. Setelah menganalisis kondisi a",
+          "options": {
+            "a": "Langsung memusnahkan seluruh arsip tahun 2019 untuk menghemat ruang penyimpanan",
+            "b": "Menyusun rencana pemindahan arsip inaktif dengan membuat jadwal retensi, melakukan pemilahan berdasarkan jenis dan tahun, kemudian memindahkan ke ruan",
+            "c": "Menyimpan semua arsip dalam satu lemari tanpa pemilahan karena masih mungkin diperlukan sewaktu-waktu",
+            "d": "Menugaskan petugas pelayanan untuk memindahkan arsip secara acak tanpa membuat daftar arsip yang dipindahkan"
+          },
+          "correct": "b",
+          "explanation": "Level 2 Pengelolaan Arsip Dinamis mengharuskan kemampuan menganalisis kondisi arsip dan menyusun rencana pemindahan arsip inaktif sesuai jadwal retensi. Pemilahan berdasarkan jenis",
+          "source": "Materi Webinar KPP — Pengelolaan Arsip Dinamis L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan bahwa banyak Wajib Pajak mengeluhkan informasi di website KPP tentang persyaratan pemindahbukuan sudah tidak sesuai dengan peraturan terbaru. Setelah ditelaah, ternyata konten tersebut belum diper",
+          "options": {
+            "a": "Segera menghapus konten lama dari website dan menginstruksikan petugas memberikan informasi secara lisan saja sampai ada konten baru",
+            "b": "Membuat pengumuman di papan informasi KPP bahwa website sedang dalam perbaikan dan WP harus datang langsung untuk informasi akurat",
+            "c": "Mengevaluasi sistem pemutakhiran konten informasi publik, menyusun SOP update berkala, dan merekomendasikan pelatihan konsistensi informasi bagi selur",
+            "d": "Meneruskan keluhan ke Kepala KPP dan menunggu instruksi lebih lanjut sambil tetap menggunakan informasi lama"
+          },
+          "correct": "c",
+          "explanation": "Level 3 memerlukan kemampuan mengevaluasi hasil kerja dengan menelaah akar permasalahan (sistem update tidak berjalan dan inkonsistensi informasi). Solusi harus berupa rekomendasi ",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari tim bahwa terdapat 15 pengaduan WP dalam sebulan terakhir terkait keterlambatan penerbitan SKT PPh dengan rata-rata waktu proses 25 hari kerja (SLA: 15 hari kerja). Setelah ditelaah, ditemuka",
+          "options": {
+            "a": "Menambah jumlah petugas di Seksi Pelayanan dan membuat jadwal cuti yang lebih teratur agar tidak mengganggu proses penerbitan SKT",
+            "b": "Memberikan teguran kepada petugas yang tidak melakukan follow up dokumen dan memprioritaskan penyelesaian 10 kasus yang terhambat konfirmasi Seksi PDI",
+            "c": "Memperpanjang SLA menjadi 30 hari kerja agar lebih realistis dan meminta WP untuk lebih teliti dalam melengkapi dokumen permohonan",
+            "d": "Membuat mekanisme koordinasi terstruktur dengan Seksi PDI untuk validasi data paralel, standarisasi checklist kelengkapan dokumen dengan sistem remind"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja secara menyeluruh dengan mengidentifikasi tiga akar masalah berbeda (koordinasi antar seksi, sistem follow up, dan manaje",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "Kepala Seksi Pelayanan Anda menganalisis data lapor SPT Tahunan dan menemukan 40% Wajib Pajak UMKM terlambat karena kesulitan mengisi formulir secara online. Atasan meminta Anda menyusun rencana inovasi pelayanan untuk mengatasi masalah ini. Apa lang",
+          "options": {
+            "a": "Membuat aplikasi pelaporan SPT baru tanpa koordinasi dengan Kantor Pusat DJP",
+            "b": "Langsung menyelenggarakan kelas bimbingan tanpa analisis kebutuhan dan rencana tertulis",
+            "c": "Menganalisis pola kesulitan WP dari data, menyusun rencana kelas tatap muka dan video tutorial, melaksanakan sesuai petunjuk teknis pelayanan DJP",
+            "d": "Menyerahkan sepenuhnya kepada Account Representative untuk menangani satu per satu"
+          },
+          "correct": "c",
+          "explanation": "Level 2 Inovasi Pelayanan Publik mensyaratkan kemampuan menganalisis data WP untuk mengidentifikasi masalah spesifik, menyusun rencana inovasi terstruktur, dan melaksanakannya sesu",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda mengevaluasi hasil penanganan 45 pengaduan masyarakat dalam sebulan terakhir. Data menunjukkan 12 pengaduan terkait lambatnya penerbitan SKPPKP diselesaikan melebihi batas waktu SOP, 8 pengaduan tentang pelayanan ",
+          "options": {
+            "a": "Memberikan teguran tertulis kepada seluruh staf Seksi Pelayanan dan Seksi Pemeriksaan yang terlibat dalam penanganan pengaduan SKPPKP serta mewajibkan",
+            "b": "Mengusulkan perbaikan mekanisme koordinasi antar seksi melalui SOP terintegrasi, eskalasi perbaikan sistem IT ke Kanwil, dan membuat skema monitoring ",
+            "c": "Menambah jumlah petugas pelayanan khusus pengaduan dan membuat sistem reward bagi petugas yang menyelesaikan pengaduan tepat waktu untuk meningkatkan ",
+            "d": "Memfokuskan perbaikan hanya pada 8 pengaduan yang sudah berhasil diselesaikan tepat waktu sebagai best practice dan menduplikasi metode tersebut untuk"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja secara komprehensif, menelaah akar permasalahan sistemik (koordinasi antar seksi dan sistem IT), dan merekomendasikan tindak lan",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda melakukan evaluasi terhadap penanganan pengaduan masyarakat selama triwulan I. Data menunjukkan 45 pengaduan diterima, 40 selesai tepat waktu, namun 8 kasus mendapat eskalasi ulang dari WP yang tidak puas dengan j",
+          "options": {
+            "a": "Meningkatkan target penyelesaian pengaduan menjadi 100% tepat waktu dan memberikan reward kepada petugas dengan kinerja terbaik",
+            "b": "Meminta Account Representative untuk melakukan kunjungan langsung ke WP yang mengajukan eskalasi ulang guna memberikan penjelasan tambahan",
+            "c": "Membuat surat edaran kepada seluruh petugas agar lebih teliti dalam menjawab pengaduan dan memberikan sanksi bagi yang mendapat eskalasi ulang",
+            "d": "Menyelenggarakan coaching clinic untuk petugas pengaduan tentang teknik komunikasi efektif dan penyusunan jawaban yang user-friendly, serta menyusun t"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja dengan mengidentifikasi akar masalah (jawaban teknis benar namun komunikasi kurang efektif). Rekomendasi tindak lanjut harus",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari petugas bahwa terdapat 15 Wajib Pajak UMKM yang mengeluhkan kesulitan memahami ketentuan tarif PPh Final PP 55 Tahun 2022 versus tarif normal. Setelah menelaah, Anda menemukan bahwa sosialisa",
+          "options": {
+            "a": "Menyelenggarakan kelas pajak khusus dengan materi simulasi perbandingan tarif dan studi kasus riil UMKM, lalu mengevaluasi efektivitasnya melalui surv",
+            "b": "Mengarahkan petugas untuk memberikan konsultasi individual kepada 15 WP tersebut secara bergiliran",
+            "c": "Membuat surat edaran kepada seluruh WP UMKM tentang perbedaan kedua skema tarif tersebut",
+            "d": "Menyarankan WP untuk menggunakan konsultan pajak agar lebih memahami pilihan tarif yang tepat"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Advokasi Kebijakan Perpajakan mengharuskan Kepala Seksi untuk menelaah permasalahan WP secara mendalam dan memberikan rekomendasi tindak lanjut yang terukur. Penyelenggaraa",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menganalisis data dan menemukan bahwa 65% wajib pajak yang datang ke TPT mengalami waktu tunggu lebih dari 30 menit pada jam 09.00-11.00. Berdasarkan petunjuk teknis layanan, standar waktu tunggu maksimal adalah 2",
+          "options": {
+            "a": "Membuat kebijakan baru bahwa TPT hanya melayani dengan sistem appointment untuk mengurangi antrean",
+            "b": "Menganalisis pola kunjungan per jenis layanan di jam puncak, kemudian menyusun rencana penambahan petugas dan pembukaan loket khusus jam 09.00-11.00 s",
+            "c": "Langsung menambah semua petugas di TPT sepanjang hari tanpa menganalisis kebutuhan spesifik",
+            "d": "Menyerahkan sepenuhnya kepada pelaksana untuk mengatur sendiri jadwal dan pembagian tugas di jam sibuk"
+          },
+          "correct": "b",
+          "explanation": "Level 2 Inovasi Pelayanan Publik mensyaratkan kemampuan menganalisis data wajib pajak untuk mengidentifikasi masalah spesifik (waktu tunggu di jam tertentu). Kepala Seksi harus men",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda mengevaluasi tren pengaduan selama 6 bulan terakhir dan menemukan 65% pengaduan terkait keterlambatan penerbitan SKT (Surat Keterangan Tertentu) yang seharusnya selesai 5 hari kerja namun rata-rata memakan waktu 1",
+          "options": {
+            "a": "Menambah jumlah petugas pelayanan front office untuk mempercepat penerimaan berkas permohonan SKT dari wajib pajak",
+            "b": "Mengusulkan perpanjangan standar waktu penyelesaian SKT dari 5 hari menjadi 15 hari kerja agar lebih realistis dengan kondisi lapangan",
+            "c": "Memberikan teguran tertulis kepada seluruh petugas yang menangani permohonan SKT agar lebih disiplin dalam menyelesaikan tugas tepat waktu",
+            "d": "Membuat SOP penelitian kelengkapan dokumen dengan checklist standar, menetapkan petugas verifikator khusus, dan menerapkan sistem monitoring progres h"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dengan mengidentifikasi akar masalah (bottleneck di penelitian dan verifikasi), menelaah permasalahan secara sistematis, dan mem",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 0,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Berdasarkan laporan dari Account Representative dan pertanyaan PT Mitra Elektronika Jaya terkait mekanisme transisi Faktur Pajak, apa yang merupakan akar permasalahan utama yang harus Anda prioritaskan sebagai Kepala Seksi Pelayanan dalam merancang s",
+          "options": {
+            "a": "Kesenjangan pengetahuan WP tentang mekanisme teknis pemberlakuan tarif yang berbeda untuk transaksi lintas periode (saat terutang PPN, saat penerbitan",
+            "b": "Ketidaksiapan infrastruktur teknis WP dalam mengadopsi perubahan sistem e-Faktur dan billing yang berdampak pada risiko kesalahan penerbitan Faktur Pa",
+            "c": "Kurangnya pemahaman WP tentang ketentuan tarif PPN 12% sehingga perlu fokus pada sosialisasi regulasi UU HPP secara massal ke 847 WP Badan di wilayah ",
+            "d": "Minimnya waktu persiapan KPP dari tanggal pengumuman (15 Desember) hingga efektif berlaku (1 Januari) sehingga perlu penambahan sumber daya Account Re"
+          },
+          "correct": "a",
+          "explanation": "Akar masalah utama adalah kesenjangan pemahaman WP tentang mekanisme teknis penerapan tarif PPN berbeda di periode transisi, khususnya mengenai saat terutang pajak versus saat pene",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan",
+          "vigTitle": "Sosialisasi Kenaikan Tarif PPN di Kawasan Industri",
+          "vigBody": "Anda adalah Kepala Seksi Pelayanan di KPP Pratama Cakung Satu yang membawahi wilayah Kawasan Industri Pulogadung. Pada tanggal 15 Desember 2024, Pemerintah mengumumkan kenaikan tarif PPN dari 11% menjadi 12% yang berlaku efektif 1 Januari 2025 sesuai UU HPP. Wilayah kerja Anda mencakup 847 Wajib Paj",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 1,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Berdasarkan laporan dari Account Representative bahwa banyak WP kebingungan tentang penyesuaian sistem billing dan aplikasi e-Faktur terkait kenaikan tarif PPN menjadi 12%, data manakah yang paling relevan Andaanalisis terlebih dahulu untuk merancang",
+          "options": {
+            "a": "Data jumlah SPT Masa PPN yang terlambat dilaporkan selama tahun 2024 dan tingkat kepatuhan formal WP untuk mengidentifikasi WP yang perlu pengawasan i",
+            "b": "Data realisasi penerimaan PPN per sektor usaha di wilayah KPP selama 3 tahun terakhir untuk memproyeksikan potensi kenaikan penerimaan dari tarif 12%",
+            "c": "Data profil WP berdasarkan status PKP, volume transaksi bulanan, dan tingkat literasi digital untuk mengklasifikasikan kebutuhan pendampingan teknis y",
+            "d": "Data historis penggunaan fasilitas PPN (DTP/dibebaskan) oleh WP manufaktur untuk mengantisipasi permohonan restitusi yang meningkat pasca kenaikan tar"
+          },
+          "correct": "c",
+          "explanation": "Advokasi Level 3 mensyaratkan kemampuan menganalisis data stakeholder untuk menyusun strategi komunikasi yang disesuaikan dengan karakteristik audiens. Data profil PKP, volume tran",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan",
+          "vigTitle": "Sosialisasi Kenaikan Tarif PPN di Kawasan Industri",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 2,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Dalam merancang strategi sosialisasi tarif PPN 12% untuk 847 WP Badan di wilayah Kawasan Industri Pulogadung, Anda menerima usulan dari tim bahwa sosialisasi cukup dilakukan melalui surat edaran massal dan unggahan di website KPP. Namun PT Mitra Elek",
+          "options": {
+            "a": "Menyetujui usulan tim karena surat edaran dan website sudah memenuhi kewajiban sosialisasi, sambil menyarankan WP yang membutuhkan klarifikasi untuk d",
+            "b": "Mengusulkan kepada Kepala KPP untuk menunda sosialisasi hingga Kanwil menerbitkan petunjuk teknis lengkap, sambil memberikan himbauan sementara kepada",
+            "c": "Menerima usulan tim dengan modifikasi menambahkan layanan konsultasi via email dan telepon, serta menugaskan 2 AR senior untuk menangani pertanyaan da",
+            "d": "Menolak usulan tim dan merancang strategi berlapis: sosialisasi massal melalui webinar untuk seluruh WP, focus group discussion khusus untuk 16 pengus"
+          },
+          "correct": "d",
+          "explanation": "Level 3 Advokasi Kebijakan mensyaratkan kemampuan merancang strategi komprehensif dengan segmentasi target dan metode yang sesuai kompleksitas permasalahan. Strategi berlapis (webi",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan",
+          "vigTitle": "Sosialisasi Kenaikan Tarif PPN di Kawasan Industri",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 3,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "PT Mitra Elektronika Jaya melaporkan memiliki kontrak penjualan mesin produksi senilai Rp 5.000.000.000 yang ditandatangani 20 Desember 2024 dengan uang muka 30% dibayar 28 Desember 2024, sementara penyerahan barang dan pelunasan dijadwalkan 10 Janua",
+          "options": {
+            "a": "Mengarahkan WP menerbitkan 2 Faktur Pajak terpisah: uang muka 30% dengan PPN 11% dan pelunasan 70% dengan PPN 12% mengacu Pasal 11 ayat (1) UU PPN jo.",
+            "b": "Menginstruksikan AR untuk menyampaikan bahwa seluruh transaksi menggunakan PPN 11% karena kontrak ditandatangani sebelum 1 Januari 2025 berdasarkan as",
+            "c": "Menyarankan WP menerbitkan Faktur Pajak keseluruhan dengan PPN 12% pada saat penyerahan barang 10 Januari 2025 dan melakukan pembetulan Faktur Pajak u",
+            "d": "Mengusulkan WP mengajukan permohonan dispensasi penerapan tarif PPN 11% kepada Kepala KPP dengan melampirkan bukti kontrak dan kronologi transaksi ber"
+          },
+          "correct": "a",
+          "explanation": "Sesuai Pasal 11 ayat (1) UU PPN, saat terutangnya pajak untuk pembayaran uang muka adalah pada saat pembayaran, sehingga uang muka 30% yang dibayar 28 Desember 2024 terutang PPN 11",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan",
+          "vigTitle": "Sosialisasi Kenaikan Tarif PPN di Kawasan Industri",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 4,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Account Representative melaporkan bahwa PT Jaya Logam Mandiri (salah satu PKP di wilayah Anda) melakukan penyerahan BKP senilai Rp500.000.000 pada tanggal 30 Desember 2024 namun baru menerbitkan Faktur Pajak pada tanggal 3 Januari 2025. Dalam memberi",
+          "options": {
+            "a": "Instruksikan AR untuk menyarankan WP membatalkan Faktur Pajak tertanggal 3 Januari 2025 dan menerbitkan kembali dengan tanggal 30 Desember 2024 menggu",
+            "b": "Arahkan AR untuk meminta WP melakukan pembetulan dengan mengubah tanggal Faktur Pajak menjadi 3 Januari 2025 dan menggunakan tarif PPN 12% sesuai tang",
+            "c": "Bimbing AR untuk menjelaskan bahwa Faktur Pajak seharusnya diterbitkan paling lambat pada akhir bulan penyerahan (31 Desember 2024) dengan tarif 11%, ",
+            "d": "Instruksikan AR untuk menyetujui penggunaan tarif PPN 12% pada Faktur Pajak tertanggal 3 Januari 2025 karena tanggal Faktur Pajak menentukan tarif yan"
+          },
+          "correct": "c",
+          "explanation": "Sesuai ketentuan PPN, saat terutang pajak adalah saat penyerahan BKP (30 Desember 2024) sehingga tarif yang berlaku adalah 11%, dan Faktur Pajak harus diterbitkan paling lambat akh",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan",
+          "vigTitle": "Sosialisasi Kenaikan Tarif PPN di Kawasan Industri",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari tim bahwa terdapat lonjakan pengaduan melalui media sosial terkait kesulitan aktivasi EFIN bagi WP orang pribadi, dengan rata-rata waktu penyelesaian mencapai 7 hari padahal SOP menetapkan 1 ",
+          "options": {
+            "a": "Menambah jumlah petugas di TPT dan memperpanjang jam layanan hingga malam hari untuk menampung lonjakan permohonan aktivasi EFIN",
+            "b": "Mengusulkan perbaikan SOP dengan mengintegrasikan verifikasi digital berbasis NIK Dukcapil, menetapkan mekanisme konfirmasi alternatif via email/Whats",
+            "c": "Membuat surat edaran kepada seluruh WP agar mempersiapkan dokumen lengkap dan nomor telepon aktif sebelum mengajukan permohonan aktivasi EFIN",
+            "d": "Melakukan sosialisasi massal tentang pentingnya EFIN dan mengalihkan pengaduan dari media sosial ke saluran resmi complaint handling DJP"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja dengan mengidentifikasi akar masalah (proses manual dan komunikasi tidak efektif), menelaah permasalahan secara komprehen",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima hasil evaluasi bahwa informasi publik terkait kenaikan tarif PPN 12% untuk barang tertentu yang telah disebarluaskan ternyata menimbulkan mispersepsi masif di kalangan pelaku UMKM. Banyak UMKM dengan omze",
+          "options": {
+            "a": "Menyusun klarifikasi komprehensif dengan infografis sederhana yang membedakan pengenaan PPN 12% dan fasilitas UMKM, kemudian mendistribusikan melalui ",
+            "b": "Membuat siaran pers singkat yang menyatakan bahwa informasi sebelumnya keliru dan meminta masyarakat mengabaikan informasi tersebut",
+            "c": "Menunggu arahan dari Kanwil DJP terlebih dahulu sebelum mengambil tindakan klarifikasi agar tidak terjadi inkonsistensi informasi",
+            "d": "Mengadakan tax gathering khusus UMKM secara massal di gedung pertemuan untuk menjelaskan langsung perbedaan ketentuan tersebut"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja komunikasi publik dan menelaah akar permasalahan mispersepsi. Rekomendasi tindak lanjut harus komprehensif dengan strategi k",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan bahwa CV Sejahtera mengajukan permohonan pengembalian kelebihan pembayaran pajak sebesar Rp 450 juta. Dari penelitian dokumen ditemukan: (1) SPT Masa PPN LB akibat ekspor BKP, (2) Faktur pajak kel",
+          "options": {
+            "a": "Menyetujui pengembalian sesuai permohonan karena dokumen ekspor lengkap dan CV Sejahtera adalah PKP terdaftar dengan track record baik",
+            "b": "Merekomendasikan penelitian komprehensif dengan verifikasi lapangan terhadap supplier dan kebenaran transaksi faktur pajak masukan yang mencurigakan s",
+            "c": "Menolak permohonan restitusi dan menerbitkan SKPKB karena terdapat indikasi faktur pajak tidak berdasarkan transaksi sebenarnya",
+            "d": "Memproses pengembalian pendahuluan sebesar 50% sambil menunggu hasil konfirmasi status PKP supplier melalui sistem"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan menelaah permasalahan secara mendalam dengan mengidentifikasi red flags (faktur berurutan 1 hari, deskripsi tidak spesifik, ketidaksesuaian alamat suppli",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Arsip Dinamis",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menemukan bahwa arsip surat keterangan fiskal dan dokumen perpajakan WP tahun 2019-2021 menumpuk di ruang penyimpanan aktif hingga melebihi kapasitas. Berdasarkan analisis, arsip tersebut jarang digunakan namun ma",
+          "options": {
+            "a": "Memindahkan seluruh arsip ke gudang arsip inaktif tanpa proses penilaian dan dokumentasi karena sudah jelas jarang digunakan",
+            "b": "Memusnahkan langsung arsip tahun 2019 karena sudah lebih dari 3 tahun dan membuat ruang penyimpanan untuk arsip baru",
+            "c": "Menganalisis jadwal retensi arsip, menyusun daftar arsip yang memenuhi syarat pindah ke inaktif, kemudian melaksanakan pemindahan sesuai prosedur deng",
+            "d": "Mendigitalisasi semua arsip tersebut lalu membuang arsip fisik untuk menghemat ruang penyimpanan"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis data (mengidentifikasi arsip berdasarkan jadwal retensi), menyusun rencana (membuat daftar arsip yang dipindahkan), dan melaksanakan ses",
+          "source": "Materi Webinar KPP — Pengelolaan Arsip Dinamis L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari tim bahwa terdapat lonjakan permohonan pemindahbukuan (Pbk) senilai total Rp 8,7 miliar dari 15 WP berbeda dalam 2 hari, yang seluruhnya mengajukan Pbk dari lebih bayar PPh Pasal 25 ke kurang",
+          "options": {
+            "a": "Memerintahkan petugas untuk segera memproses seluruh permohonan Pbk tersebut agar tidak melewati batas waktu penyelesaian dan menghindari komplain WP ",
+            "b": "Menolak seluruh permohonan Pbk dengan alasan bahwa lebih bayar PPh Pasal 25 hanya dapat dikompensasikan ke masa pajak berikutnya sesuai ketentuan, buk",
+            "c": "Memproses Pbk yang nilainya di bawah Rp 500 juta terlebih dahulu karena tidak memerlukan penelitian mendalam, sementara yang di atas Rp 500 juta dimin",
+            "d": "Menunda proses seluruh Pbk dan melakukan penelitian mendalam terhadap kebenaran lebih bayar PPh 25, kepatuhan pelaporan PPN WP tersebut, serta berkoor"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menelaah permasalahan WP secara komprehensif dengan mengidentifikasi pola abnormal (lonjakan Pbk mendadak, perubahan status PPN tidak wajar) yang mengind",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan bahwa terdapat 15 permohonan pemindahbukuan yang diajukan oleh CV Sentosa Abadi dalam 6 bulan terakhir dengan pola yang tidak wajar: pembayaran selalu melebihi tagihan kemudian diminta pemindahbuk",
+          "options": {
+            "a": "Menyetujui semua permohonan karena dokumen lengkap dan telah sesuai prosedur administrasi pemindahbukuan",
+            "b": "Menolak seluruh permohonan pemindahbukuan berikutnya dan meminta WP membayar ulang sesuai masa pajak yang benar",
+            "c": "Mengevaluasi pola transaksi, menelaah kemungkinan indikasi rekayasa pembayaran untuk menghindari sanksi keterlambatan, dan merekomendasikan koordinasi",
+            "d": "Meminta Account Representative melakukan konseling kepada WP agar tidak sering melakukan kesalahan pembayaran"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja tim dengan menelaah pola abnormal dari frekuensi pemindahbukuan yang mengindikasikan potensi rekayasa untuk menghindari s",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari helpdesk bahwa terdapat 15 WP Badan yang mengajukan permohonan sertifikat elektronik secara bersamaan untuk implementasi e-Faktur 4.0, namun 8 permohonan ditolak sistem karena data NIK pengur",
+          "options": {
+            "a": "Meminta WP mengajukan ulang permohonan dengan melampirkan KTP elektronik terbaru pengurus dan memberikan toleransi waktu 14 hari tanpa sanksi keterlam",
+            "b": "Mengevaluasi prosedur validasi data dengan merekomendasikan helpdesk melakukan verifikasi manual NIK melalui Dukcapil terlebih dahulu, kemudian mengin",
+            "c": "Menolak seluruh permohonan dan meminta WP memperbaiki akta pendirian terlebih dahulu agar NIK sesuai dengan database Dukcapil sebelum mengajukan kemba",
+            "d": "Meneruskan permasalahan ke Seksi Pengawasan dan Konsultasi untuk dilakukan pemeriksaan kebenaran identitas pengurus WP yang bersangkutan"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja helpdesk dan menelaah akar permasalahan yaitu ketidaksinkronan data akibat perubahan NIK pascaperekaman. Rekomendasi tind",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menganalisis data kunjungan Wajib Pajak di TPT dan menemukan waktu tunggu rata-rata 45 menit dengan komplain meningkat 30%. Dari 200 WP per hari, 60% datang antara pukul 09.00-11.00. Anda diminta menyusun rencana ",
+          "options": {
+            "a": "Menambah loket pelayanan secara permanen dan merekrut petugas baru untuk mengatasi antrian di jam sibuk",
+            "b": "Memberikan instruksi kepada petugas untuk mempercepat layanan di jam sibuk tanpa perubahan sistem",
+            "c": "Langsung memberlakukan sistem nomor antrian prioritas untuk WP tertentu tanpa konsultasi atasan",
+            "d": "Menyusun rencana sistem appointment online berbasis analisis jam sibuk, mengajukan usulan ke Kepala KPP dengan roadmap implementasi bertahap sesuai SE"
+          },
+          "correct": "d",
+          "explanation": "Level 2 mengharuskan Kepala Seksi menganalisis data WP (waktu tunggu, pola kunjungan), menyusun rencana inovasi terstruktur dengan roadmap implementasi, dan melaksanakannya sesuai ",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima hasil evaluasi pelaksanaan sosialisasi kebijakan PMK terbaru tentang PPN PMSE yang dilakukan oleh tim. Data menunjukkan 60% peserta masih bingung dengan mekanisme pemungutan. Beberapa Wajib Pajak pengusah",
+          "options": {
+            "a": "Menelaah substansi keberatan WP dan pola kesalahpahaman peserta, kemudian merekomendasikan penyempurnaan materi sosialisasi dengan penambahan studi ka",
+            "b": "Meneruskan surat keberatan WP ke Kepala KPP dan melaporkan hasil sosialisasi yang kurang efektif kepada atasan",
+            "c": "Menugaskan pelaksana untuk membuat FAQ sederhana dan mengunggahnya di website KPP tanpa evaluasi lebih lanjut",
+            "d": "Segera mengadakan sosialisasi ulang dengan materi yang sama kepada seluruh peserta sebelumnya"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kepala Seksi untuk mengevaluasi hasil kerja tim (efektivitas sosialisasi), menelaah permasalahan substantif yang dihadapi WP (kesalahpahaman mekanisme dan kebe",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda mengidentifikasi bahwa 60% wajib pajak UMKM di wilayah Anda terlambat melaporkan SPT Tahunan karena kesulitan mengoperasikan e-Form. Data menunjukkan mayoritas dari mereka adalah pengusaha berusia 50+ tahun dengan",
+          "options": {
+            "a": "Membuat video tutorial e-Form dan mengunggahnya di media sosial KPP agar dapat diakses semua wajib pajak secara mandiri",
+            "b": "Menganalisis profil dan kebutuhan segmen WP UMKM 50+ tahun, menyusun rencana kelas tatap muka 'Asistensi e-Form untuk Pemula', kemudian melaksanakanny",
+            "c": "Mengirimkan surat himbauan kepada seluruh UMKM untuk segera mempelajari e-Form dan mengancam sanksi jika tetap terlambat lapor",
+            "d": "Mengusulkan kepada Kanwil agar sistem e-Form disederhanakan karena terlalu rumit bagi wajib pajak dengan literasi digital rendah"
+          },
+          "correct": "b",
+          "explanation": "Level 2 Inovasi Pelayanan Publik mengharuskan Kasi menganalisis data dan profil WP spesifik (UMKM 50+ tahun dengan literasi digital rendah), menyusun rencana inovasi pelayanan yang",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 0,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Berdasarkan temuan Account Representative terhadap permohonan restitusi PT Karya Ekspor Nusantara, apa identifikasi masalah utama yang menjadi akar permasalahan dalam kasus ini?",
+          "options": {
+            "a": "Keterlambatan pengajuan restitusi dan permintaan percepatan proses dari Wajib Pajak yang memerlukan dana segera untuk pembayaran supplier",
+            "b": "Dokumen PEB menunjukkan nilai ekspor USD 450.000 yang tidak sesuai dengan faktur pajak keluaran sebesar Rp 1.200.000.000 sehingga terjadi selisih kurs",
+            "c": "Nilai restitusi Rp 2.450.000.000 terlalu besar untuk perusahaan garmen ekspor dengan omzet yang tercatat dari faktur pajak keluaran hanya Rp 1.200.000",
+            "d": "Inkonsistensi substansial antara nilai ekspor dengan impor bahan baku serta terdapat 25 faktur pajak masukan bermasalah (8 NTPN tidak valid, 5 melampa"
+          },
+          "correct": "d",
+          "explanation": "Akar permasalahan utama adalah ketidakabsahan pengkreditan pajak masukan dimana 25 dari 47 faktur (53,2%) bermasalah secara material yang dapat membatalkan hak restitusi. Inkonsist",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan",
+          "vigTitle": "Verifikasi Dokumen Restitusi PPN Perusahaan Ekspor",
+          "vigBody": "Anda adalah Kepala Seksi Pelayanan di KPP Pratama Jakarta Utara Satu. Pada tanggal 15 Januari 2025, PT Karya Ekspor Nusantara mengajukan permohonan restitusi PPN Masa Pajak November 2024 sebesar Rp 2.450.000.000. Perusahaan ini bergerak di bidang garmen ekspor dengan NPWP 01.234.567.8-012.000. Accou",
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 1,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Berdasarkan analisis data faktur pajak masukan yang dilaporkan dalam SPT Masa PPN November 2024 PT Karya Ekspor Nusantara, berapa jumlah maksimal faktur pajak masukan yang dapat dikreditkan sesuai ketentuan PMK 155/2022 tentang Pengkreditan Pajak Mas",
+          "options": {
+            "a": "22 faktur pajak masukan yang dapat dikreditkan setelah mengeliminasi 8 faktur NTPN tidak valid, 5 faktur melampaui batas waktu 3 bulan, dan 12 faktur ",
+            "b": "35 faktur pajak masukan dapat dikreditkan setelah mengeluarkan 12 faktur dari PKP berisiko tinggi berdasarkan data PASTI",
+            "c": "47 faktur pajak masukan dapat dikreditkan seluruhnya karena WP memerlukan dana mendesak untuk pembayaran supplier",
+            "d": "39 faktur pajak masukan dapat dikreditkan dengan hanya mengeluarkan 8 faktur NTPN tidak valid karena kriteria lain masih dapat diperbaiki"
+          },
+          "correct": "a",
+          "explanation": "Sesuai PMK 155/2022, faktur pajak masukan tidak dapat dikreditkan jika NTPN tidak valid (8 faktur), melampaui batas waktu 3 bulan pengkreditan (5 faktur), dan berasal dari PKP beri",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan",
+          "vigTitle": "Verifikasi Dokumen Restitusi PPN Perusahaan Ekspor",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 2,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Mengacu pada permohonan restitusi PT Karya Ekspor Nusantara dengan temuan 8 faktur NTPN tidak valid, 5 faktur melampaui batas waktu pengkreditan, dan 12 faktur dari PKP berisiko tinggi, serta ketidakproporsionalan PIB impor dengan volume produksi, la",
+          "options": {
+            "a": "Menerbitkan SKPKB Masa November 2024 dengan menghitung kembali PPN yang seharusnya terutang, kemudian menolak permohonan restitusi karena terdapat 25 ",
+            "b": "Menyetujui permohonan restitusi dengan prosedur penelitian biasa mengingat nilai ekspor USD 450.000 terbukti dari PEB, namun memberikan catatan kepada",
+            "c": "Mengalihkan penanganan restitusi ke prosedur pemeriksaan sesuai PMK 39/PMK.03/2018 karena terdapat indikasi ketidakwajaran data (faktur NTPN tidak val",
+            "d": "Meminta WP melakukan pembetulan SPT Masa PPN November 2024 terlebih dahulu dengan mengeluarkan 25 faktur pajak masukan bermasalah, baru kemudian mempr"
+          },
+          "correct": "c",
+          "explanation": "Berdasarkan PMK 39/PMK.03/2018, permohonan restitusi dialihkan ke prosedur pemeriksaan jika terdapat data yang tidak wajar atau indikasi PPN tidak seharusnya dikompensasi/dikembali",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan",
+          "vigTitle": "Verifikasi Dokumen Restitusi PPN Perusahaan Ekspor",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 3,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, rekomendasi tindak lanjut yang paling tepat terhadap permohonan restitusi PT Karya Ekspor Nusantara dengan mempertimbangkan 8 faktur NTPN tidak valid, 5 faktur melampaui batas waktu pengkreditan, 12 faktur dari PKP ber",
+          "options": {
+            "a": "Menerbitkan SKPKPP menolak seluruh permohonan restitusi karena terdapat faktur pajak tidak valid dan melampaui batas waktu pengkreditan sesuai Pasal 9",
+            "b": "Mengembalikan berkas permohonan kepada WP untuk dilengkapi dan menyarankan pembetulan SPT Masa PPN November 2024 tanpa proses penelitian lebih lanjut",
+            "c": "Segera menyetujui restitusi sebesar Rp 2.450.000.000 karena dokumen PEB valid menunjukkan ekspor riil, dengan catatan pemantauan khusus pada periode b",
+            "d": "Melakukan penelitian administrasi mendalam dengan koreksi faktur pajak masukan tidak sah sebesar Rp 890.000.000 (25 faktur bermasalah), mengusulkan pe"
+          },
+          "correct": "d",
+          "explanation": "Sebagai Kasi Pelayanan Level 3, wajib melakukan analisis komprehensif dengan koreksi sistematis atas 25 faktur bermasalah (8+5+12) yang berpotensi mengurangi dasar restitusi, mengi",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan",
+          "vigTitle": "Verifikasi Dokumen Restitusi PPN Perusahaan Ekspor",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 4,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Dalam konteks permohonan restitusi PT Karya Ekspor Nusantara dengan temuan 8 faktur NTPN tidak valid, 5 faktur melampaui batas waktu pengkreditan, dan 12 faktur dari PKP berisiko tinggi, serta ketidakproporsionalan PIB impor dengan volume produksi, l",
+          "options": {
+            "a": "Menerbitkan Surat Permintaan Kelengkapan Dokumen untuk klarifikasi 25 faktur bermasalah, rekonsiliasi data produksi dengan PIB/PEB, dan konfirmasi ke ",
+            "b": "Mengusulkan pemeriksaan bukti permulaan kepada Kepala KPP karena indikasi ketidakproporsionalan PIB dengan volume produksi mengarah pada dugaan ekspor",
+            "c": "Menerbitkan Surat Keputusan Penolakan Restitusi mengingat terdapat 25 faktur pajak masukan bermasalah dari total 47 faktur yang melebihi 50% sehingga ",
+            "d": "Menyetujui restitusi dipercepat sesuai PMK-39/PMK.03/2018 untuk nilai faktur yang valid sebesar Rp 2.100.000.000 dan menunda pemrosesan nilai dari 25 "
+          },
+          "correct": "a",
+          "explanation": "Sesuai prosedur penelitian restitusi, Kasi Pelayanan wajib memberikan kesempatan WP untuk klarifikasi melalui Surat Permintaan Kelengkapan Dokumen sebelum menentukan langkah lanjut",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan",
+          "vigTitle": "Verifikasi Dokumen Restitusi PPN Perusahaan Ekspor",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": false
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari tim bahwa CV Mandiri Jaya mengajukan keberatan atas Surat Ketetapan Pajak Kurang Bayar (SKPKB) PPh Badan senilai Rp450 juta dengan alasan telah melakukan penyusutan fiskal sesuai ketentuan, n",
+          "options": {
+            "a": "Menolak keberatan WP karena pemeriksa berwenang menentukan metode penyusutan yang paling menguntungkan negara sesuai prinsip kehati-hatian",
+            "b": "Menyarankan WP untuk mengajukan pembetulan SPT Tahunan dengan mengubah metode penyusutan menjadi garis lurus agar sesuai dengan hasil pemeriksaan",
+            "c": "Merekomendasikan mengabulkan sebagian keberatan dengan membatalkan koreksi penyusutan, lalu memberikan edukasi kepada tim pemeriksa tentang hak opsi W",
+            "d": "Mengusulkan kompromi dengan mengurangi SKPKB menjadi 50% dari koreksi sebagai solusi win-win solution antara kepentingan negara dan WP"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan menelaah permasalahan WP secara komprehensif dan memberikan rekomendasi tindak lanjut yang tepat. Berdasarkan Pasal 11 ayat (1) UU PPh, WP berhak mem",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Arsip Dinamis",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima disposisi dari Kepala KPP untuk melakukan analisis terhadap sistem penyimpanan arsip dinamis di seksi Anda. Hasil audit internal menunjukkan bahwa 35% arsip SPT Tahunan tahun 2019-2020 belum dipindahkan k",
+          "options": {
+            "a": "Segera membeli lemari arsip tambahan untuk menampung arsip aktif yang terus bertambah dan menunda pemindahan arsip hingga ada ruang penyimpanan yang m",
+            "b": "Menyusun rencana pemindahan arsip inaktif berdasarkan JRA, mengidentifikasi arsip yang telah melewati masa retensi aktif, dan mengkoordinasikan dengan",
+            "c": "Langsung memusnahkan seluruh arsip SPT Tahunan tahun 2019 untuk mengosongkan ruang penyimpanan dan meminta wajib pajak menyerahkan ulang dokumen jika ",
+            "d": "Menginstruksikan staf untuk memindahkan semua arsip lama ke gudang tanpa melakukan klasifikasi dan pencatatan terlebih dahulu agar ruang penyimpanan s"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis kondisi arsip dan menyusun rencana pemindahan berdasarkan JRA yang berlaku. Pelaksanaan pemindahan arsip dari aktif ke inaktif harus dil",
+          "source": "Materi Webinar KPP — Pengelolaan Arsip Dinamis L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari petugas TPT bahwa terdapat 15 WP UMKM yang mengeluhkan kebingungan terkait penerapan tarif PPh Final 0,5% pasca terbitnya PP 55/2022. Mereka mempertanyakan apakah omzet bruto yang digunakan s",
+          "options": {
+            "a": "Menyelenggarakan kelas pajak khusus untuk segmen UMKM dengan materi PP 55/2022, menghadirkan narasumber kompeten, dan menyiapkan FAQ tertulis untuk di",
+            "b": "Mengarahkan petugas TPT untuk menjawab pertanyaan WP secara individual melalui email resmi sesuai ketentuan teknis yang berlaku",
+            "c": "Membuat surat edaran internal kepada seluruh Account Representative untuk memberikan jawaban seragam kepada WP yang bertanya",
+            "d": "Mengusulkan kepada Kepala KPP agar membentuk tim khusus penanganan pengaduan UMKM terkait PPh Final"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi permasalahan yang bersifat masif (15 WP plus keluhan di media sosial) dan memberikan rekomendasi solusi komprehensif. Kelas pajak den",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari petugas TPT bahwa terdapat lonjakan pengaduan Wajib Pajak terkait kesulitan pelaporan SPT Tahunan melalui e-Form akibat error sistem yang berulang. Beberapa WP mengancam akan melapor ke media",
+          "options": {
+            "a": "Menginstruksikan petugas TPT untuk mengarahkan semua WP menggunakan e-Filing saja dan menutup sementara layanan e-Form hingga perbaikan selesai",
+            "b": "Mengevaluasi hasil troubleshooting tim IT, menelaah pola error dan dampaknya terhadap WP, kemudian merekomendasikan kepada Kepala KPP untuk mengaktifk",
+            "c": "Membuat surat permohonan perpanjangan batas waktu pelaporan SPT untuk seluruh WP di KPP tanpa perlu analisis lebih lanjut",
+            "d": "Langsung membuat press release untuk media massa bahwa sistem sedang dalam perbaikan dan meminta WP bersabar menunggu"
+          },
+          "correct": "b",
+          "explanation": "Level 3 Advokasi Kebijakan Perpajakan mengharuskan Kepala Seksi mengevaluasi hasil kerja tim IT, menelaah permasalahan WP secara komprehensif termasuk pola error dan dampaknya, ser",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menganalisis data menunjukkan 65% wajib pajak UMKM di wilayah KPP masih datang langsung untuk konsultasi perpajakan sederhana yang sebenarnya bisa diselesaikan secara daring. Hal ini menyebabkan loket pelayanan se",
+          "options": {
+            "a": "Membuat aplikasi konsultasi pajak berbasis AI tanpa persetujuan Kanwil karena situasi mendesak dan langsung mengimplementasikan ke seluruh wajib pajak",
+            "b": "Mengurangi jam pelayanan tatap muka dan memaksa semua wajib pajak untuk menggunakan email tanpa sosialisasi terlebih dahulu",
+            "c": "Menyusun rencana pelaksanaan program 'Konsultasi Pajak via WhatsApp Business' dengan menganalisis kebutuhan WP UMKM, menyiapkan SOP sesuai petunjuk te",
+            "d": "Menambah jumlah loket pelayanan dan petugas tanpa mengubah metode pelayanan yang sudah ada"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mengharuskan menganalisis data WP (identifikasi 65% WP UMKM masih datang langsung), menyusun rencana inovasi yang terstruktur (program WhatsApp Business dengan SOP), dan me",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari petugas bahwa CV Mitra Jaya mengajukan pemindahbukuan (Pbk) senilai Rp450 juta dari SSP yang tercatat atas nama PT Mitra Jaya Abadi (NPWP berbeda) dengan alasan kesalahan penulisan nama saat ",
+          "options": {
+            "a": "Menolak permohonan Pbk karena NPWP pada SSP berbeda dengan pemohon, menyarankan WP mengajukan restitusi atas nama PT dan melakukan pembayaran baru ata",
+            "b": "Menyetujui Pbk langsung karena alamat sama dan ada keterkaitan manajemen, dengan catatan memberikan himbauan agar WP lebih teliti dalam pengisian SSP",
+            "c": "Mengeskalasi kasus ke Kepala KPP untuk keputusan kebijakan karena melibatkan dua NPWP berbeda yang berpotensi penyalahgunaan fasilitas Pbk",
+            "d": "Menyetujui permohonan Pbk setelah meminta konfirmasi tertulis dari PT Mitra Jaya Abadi bahwa setoran tersebut memang keliru dan ditujukan untuk CV Mit"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menelaah permasalahan dengan komprehensif dan memberikan rekomendasi yang seimbang antara kepastian hukum dan fleksibilitas layanan. Pbk antar NPWP berbe",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menerima laporan dari pelaksana bahwa terdapat permohonan pemindahbukuan dari WP CV Mitra Jaya sebesar Rp 250 juta yang telah diproses sesuai SOP. Namun setelah ditelaah, Anda menemukan bahwa pemindahbukuan terseb",
+          "options": {
+            "a": "Menyetujui pemindahbukuan karena secara formal dokumen telah lengkap dan sesuai prosedur administrasi",
+            "b": "Menolak permohonan pemindahbukuan dan meminta WP mengajukan permohonan baru dengan melampirkan SPT pembetulan",
+            "c": "Menunda pemindahbukuan dan merekomendasikan penelitian ulang terhadap konsistensi data dengan SPT Tahunan serta meminta klarifikasi tertulis dari WP t",
+            "d": "Menyetujui pemindahbukuan namun membuat catatan bahwa terdapat potensi masalah untuk ditindaklanjuti saat pemeriksaan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja bawahan dan menelaah permasalahan secara mendalam, bukan hanya aspek formal dokumen. Ditemukan inkonsistensi antara hasil pemind",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Arsip Dinamis",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda melakukan analisis terhadap sistem penyimpanan arsip di seksi Anda dan menemukan bahwa 40% berkas SPT Tahunan tahun 2019 masih tersimpan di filing cabinet aktif meskipun sudah melewati masa retensi aktif 5 tahun. ",
+          "options": {
+            "a": "Meminta penambahan filing cabinet baru kepada Kepala Kantor untuk menampung semua arsip tanpa melakukan pemindahan",
+            "b": "Menyusun rencana pemindahan arsip SPT Tahunan 2019 ke penyimpanan inaktif dan melakukan penilaian untuk arsip yang sudah habis masa retensinya sesuai ",
+            "c": "Langsung memusnahkan semua berkas SPT Tahunan 2019 karena sudah melewati 5 tahun masa retensi aktif",
+            "d": "Mengembalikan semua berkas SPT Tahunan 2019 kepada Wajib Pajak untuk disimpan sendiri"
+          },
+          "correct": "b",
+          "explanation": "Level 2 menuntut kemampuan menganalisis data (kondisi arsip dan masa retensi), menyusun rencana (pemindahan ke inaktif dan penilaian penyusutan), serta melaksanakan sesuai petunjuk",
+          "source": "Materi Webinar KPP — Pengelolaan Arsip Dinamis L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Arsip Dinamis",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda menemukan bahwa arsip surat keberatan dan banding tahun 2020-2022 masih tersimpan di ruang kerja pelaksana dalam kondisi tidak teratur, meskipun jangka waktu retensi aktifnya sudah berakhir. Hasil analisis menunju",
+          "options": {
+            "a": "Langsung memindahkan seluruh arsip ke arsip inaktif tanpa melakukan penilaian karena masa retensi aktif sudah berakhir",
+            "b": "Memusnahkan arsip yang masa retensinya sudah habis dan membuat salinan digital untuk arsip sengketa yang masih berjalan",
+            "c": "Menginstruksikan pelaksana untuk tetap menyimpan semua arsip di ruang kerja sampai seluruh sengketa selesai untuk memudahkan akses",
+            "d": "Menyusun rencana pemilahan arsip berdasarkan status sengketa, memisahkan arsip yang masih diperlukan untuk tetap dalam arsip aktif dan memindahkan ars"
+          },
+          "correct": "d",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis data dan menyusun rencana pengelolaan arsip sesuai petunjuk teknis. Pemilahan arsip berdasarkan kebutuhan operasional (sengketa berjalan",
+          "source": "Materi Webinar KPP — Pengelolaan Arsip Dinamis L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pelayanan, Anda mengidentifikasi bahwa 65% konsultasi tatap muka di TPT berkaitan dengan aktivasi EFIN dan lupa password. Rata-rata waktu tunggu mencapai 45 menit pada jam sibuk. Anda diminta menyusun rencana inovasi pelayanan. L",
+          "options": {
+            "a": "Menganalisis data kunjungan per jam, menyusun rencana layanan self-service kiosk EFIN, dan melaksanakan pilot project sesuai petunjuk teknis DJP",
+            "b": "Menambah loket pelayanan dan menugaskan lebih banyak petugas di jam sibuk tanpa mengubah prosedur yang ada",
+            "c": "Langsung mengadakan kiosk digital tanpa analisis data dan menyerahkan implementasi sepenuhnya kepada pelaksana",
+            "d": "Membuat inovasi aplikasi mobile baru secara mandiri tanpa mengacu pada standar sistem DJP yang berlaku"
+          },
+          "correct": "a",
+          "explanation": "Level 2 Inovasi Pelayanan Publik mensyaratkan kemampuan menganalisis data WP untuk mengidentifikasi masalah pelayanan secara terukur. Menyusun rencana inovasi berbasis analisis dat",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 0,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Berdasarkan 47 pengaduan yang diterima KPP Pratama Jakarta Kebon Jeruk terkait e-Bupot 21/26, apa akar permasalahan utama yang harus menjadi prioritas strategi penyusunan informasi publik Anda sebagai Kasi Pelayanan?",
+          "options": {
+            "a": "Kurangnya jumlah Account Representative untuk memberikan asistensi langsung kepada 47 pengadu sehingga perlu penambahan SDM di seksi pelayanan",
+            "b": "Tidak tersedianya informasi terstruktur dan panduan khusus untuk segmen UMKM naik kelas PKP yang mengalami transisi kewajiban pembuatan bukti potong e",
+            "c": "Kesalahan teknis aplikasi e-Bupot 21/26 dalam proses validasi data dan impor file CSV yang memerlukan perbaikan sistem oleh DJP pusat",
+            "d": "Jadwal sosialisasi yang bentrok dengan masa pelaporan SPT Tahunan sehingga WP tidak dapat mengikuti edukasi penggunaan e-Bupot"
+          },
+          "correct": "b",
+          "explanation": "Akar masalah utama adalah gap informasi terstruktur untuk segmen spesifik (UMKM naik kelas PKP dengan omzet >Rp4,8 miliar) yang menghadapi kewajiban baru e-Bupot, bukan masalah tek",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Penyusunan Informasi Layanan e-Bupot untuk UMKM Naik Kelas",
+          "vigBody": "KPP Pratama Jakarta Kebon Jeruk menerima 47 pengaduan melalui email dan kring pajak selama periode Januari-Februari 2024 terkait kesulitan penggunaan aplikasi e-Bupot 21/26. Mayoritas pengadu adalah pelaku UMKM yang baru naik kelas menjadi PKP dengan omzet di atas Rp4,8 miliar yang wajib membuat buk",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 1,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Dalam menganalisis 47 pengaduan e-Bupot 21/26 periode Januari-Februari 2024, data manakah yang paling KRUSIAL untuk menyusun konten informasi publik yang tepat sasaran bagi segmen UMKM naik kelas?",
+          "options": {
+            "a": "Daftar lengkap nama dan NPWP seluruh pengadu untuk melakukan profiling individual dan mengirimkan panduan khusus via pos tercatat",
+            "b": "Data historis pengaduan tahun sebelumnya di seluruh KPP se-Indonesia untuk membandingkan tren nasional dengan kondisi lokal",
+            "c": "Rata-rata waktu respons kring pajak dan email untuk mengevaluasi kinerja petugas pelayanan dalam menangani keluhan wajib pajak",
+            "d": "Klasifikasi jenis kesalahan teknis (validasi data, impor CSV, input karyawan) beserta frekuensi kemunculan untuk menyusun FAQ bertingkat sesuai priori"
+          },
+          "correct": "d",
+          "explanation": "Klasifikasi jenis kesalahan teknis dengan frekuensi kemunculan menjadi basis penyusunan konten informasi publik yang terstruktur dan menjawab kebutuhan riil WP. Skenario menunjukka",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Penyusunan Informasi Layanan e-Bupot untuk UMKM Naik Kelas",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 2,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Dalam mengevaluasi alternatif strategi diseminasi informasi untuk mengatasi 47 pengaduan e-Bupot 21/26 dari UMKM naik kelas dengan target penurunan pengaduan 60% dalam 2 bulan, manakah kombinasi kanal komunikasi yang PALING EFEKTIF mempertimbangkan k",
+          "options": {
+            "a": "Mengembangkan microsite khusus segmen UMKM naik kelas berisi panduan step-by-step interaktif, FAQ troubleshooting kasus PT Berkah Sentosa dan CV Mitra",
+            "b": "Membuat video tutorial komprehensif di YouTube DJP dan mengirim broadcast email massal ke seluruh PKP terdaftar di KPP disertai hotline khusus yang di",
+            "c": "Menyelenggarakan sosialisasi tatap muka intensif setiap hari kerja di KPP dengan mengalokasikan seluruh AR untuk memberikan asistensi langsung kepada ",
+            "d": "Menerbitkan siaran pers di media massa dan membagikan infografis di media sosial KPP disertai pengumuman di papan informasi kantor tentang prosedur pe"
+          },
+          "correct": "a",
+          "explanation": "Opsi B paling efektif karena microsite tersegmentasi menjawab kebutuhan spesifik UMKM naik kelas dengan panduan terstruktur, FAQ mengatasi kasus aktual (validasi gagal PT Berkah Se",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Penyusunan Informasi Layanan e-Bupot untuk UMKM Naik Kelas",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 3,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Berdasarkan kasus PT Berkah Sentosa (NPWP 01.234.567.8-012.000) yang mengalami kesalahan input data karyawan menyebabkan validasi e-Bupot gagal dan CV Mitra Jaya dengan kendala impor file CSV, rekomendasi tindak lanjut yang paling tepat untuk menurun",
+          "options": {
+            "a": "Membuat video tutorial umum e-Bupot 21/26 yang diunggah di YouTube DJP dan mengirimkan broadcast email massal ke seluruh PKP terdaftar di KPP Pratama ",
+            "b": "Mengundang seluruh 47 pengadu untuk menghadiri sosialisasi tatap muka di kantor KPP pada masa pelaporan SPT Tahunan dengan materi presentasi PowerPoin",
+            "c": "Menyusun Panduan Teknis e-Bupot 21/26 Khusus UMKM Naik Kelas dalam format infografis dan video tutorial berjenjang, mendistribusikan melalui WhatsApp ",
+            "d": "Menugaskan seluruh Account Representative untuk memberikan asistensi door-to-door ke alamat WP yang mengadu sambil membawa laptop untuk demonstrasi la"
+          },
+          "correct": "c",
+          "explanation": "Opsi B tepat karena menjawab semua permasalahan: (1) Panduan terstruktur khusus segmen UMKM naik kelas mengatasi ketiadaan panduan spesifik, (2) Distribusi via WhatsApp Business de",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Penyusunan Informasi Layanan e-Bupot untuk UMKM Naik Kelas",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 4,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Dalam menyusun prosedur mitigasi risiko kegagalan implementasi strategi diseminasi informasi e-Bupot 21/26, khususnya terkait kendala impor data CSV yang dialami CV Mitra Jaya dan validasi data PT Berkah Sentosa, langkah prosedural manakah yang palin",
+          "options": {
+            "a": "Membentuk tim khusus dari AR untuk memberikan asistensi door-to-door kepada 47 pengadu secara bergiliran dalam waktu 2 minggu sambil menyusun dokument",
+            "b": "Mengirimkan broadcast email berisi link tutorial video e-Bupot kepada seluruh PKP terdaftar di KPP Pratama Jakarta Kebon Jeruk dan mewajibkan konfirma",
+            "c": "Menunda seluruh sosialisasi hingga periode SPT Tahunan selesai, kemudian mengadakan pertemuan tatap muka dengan seluruh UMKM naik kelas untuk menghind",
+            "d": "Menyusun Standard Operating Procedure (SOP) penanganan eskalasi kasus teknis e-Bupot dengan kategorisasi tingkat kesulitan, dilengkapi troubleshooting"
+          },
+          "correct": "d",
+          "explanation": "Pilihan B merupakan pendekatan prosedural Level 3 yang komprehensif dengan menyusun SOP penanganan eskalasi yang terstruktur, troubleshooting guide spesifik untuk kasus PT Berkah S",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Penyusunan Informasi Layanan e-Bupot untuk UMKM Naik Kelas",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "KPP Pratama Bandung Karees menerima 63 pengaduan melalui saluran Kring Pajak selama Januari-Maret 2025, dengan 41 pengaduan terkait keterlambatan respons konsultasi pajak melalui email yang melebihi standar 3x24 jam. Sebagai Kepala Seksi Pelayanan, A",
+          "options": {
+            "a": "Mengklasifikasi 41 pengaduan berdasarkan jenis pertanyaan, waktu respons aktual, dan volume pertanyaan per Account Representative untuk mengidentifika",
+            "b": "Membuat survei kepuasan secara massal kepada seluruh WP terdaftar untuk mengukur tingkat kepuasan layanan konsultasi tanpa melakukan segmentasi pengad",
+            "c": "Langsung mengusulkan penambahan pegawai Seksi Pelayanan kepada Kepala Kantor tanpa melakukan analisis penyebab keterlambatan respons",
+            "d": "Menghentikan sementara layanan konsultasi email dan mengalihkan seluruh pertanyaan ke layanan tatap muka untuk mengurangi beban kerja digital"
+          },
+          "correct": "a",
+          "explanation": "Level 2 Inovasi Pelayanan Publik mensyaratkan kemampuan menganalisis data WP secara mendalam untuk mengidentifikasi akar masalah sebelum menyusun rencana inovasi. Klasifikasi penga",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "KPP Pratama Malang Selatan menerima 89 pengaduan melalui berbagai kanal dalam triwulan I tahun 2025. Setelah ditelaah, 34 pengaduan terkait keterlambatan aktivasi EFIN (rata-rata 7 hari kerja), 28 pengaduan mengenai kesalahan perhitungan sistem e-Fil",
+          "options": {
+            "a": "Menambah jumlah petugas layanan front office dan memperpanjang jam operasional pelayanan untuk meningkatkan kapasitas penanganan pengaduan",
+            "b": "Mengadakan sosialisasi massal kepada seluruh wajib pajak terdaftar mengenai tata cara penggunaan layanan digital dan sistem perpajakan",
+            "c": "Membentuk task force khusus untuk menyelesaikan backlog pengaduan EFIN dan berkoordinasi dengan Kanwil untuk eskalasi perbaikan bug sistem e-Filing PP",
+            "d": "Menyusun laporan bulanan kepada Kanwil tentang jumlah pengaduan dan mendelegasikan seluruh penanganan pengaduan kepada Account Representative"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja dengan mengidentifikasi permasalahan sistemik (aktivasi EFIN lambat, bug sistem, kurangnya edukasi), menelaah akar masalah d",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Tangerang Barat menerima 127 pengaduan WP terkait penolakan validasi Faktur Pajak pada sistem e-Faktur dalam 2 bulan terakhir. Hasil analisis menunjukkan: 52 kasus disebabkan kesalahan input identitas lawan transaksi, 38 kasus karena NSFP",
+          "options": {
+            "a": "Membentuk tim khusus untuk melakukan pendampingan tatap muka kepada 127 WP yang mengadu dan menyusun panduan teknis e-Faktur versi cetak",
+            "b": "Menyusun program diseminasi bertarget dengan prioritas: (1) webinar validasi data lawan transaksi untuk 52 WP kelompok pertama, (2) broadcast reminder",
+            "c": "Mengusulkan perbaikan sistem e-Faktur ke Kantor Pusat DJP agar dapat mendeteksi otomatis kesalahan input dan memperpanjang masa berlaku NSFP secara de",
+            "d": "Menerbitkan surat edaran kepada seluruh PKP terdaftar tentang tata cara penggunaan e-Faktur dan meningkatkan kuota layanan konsultasi di TPT"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan menelaah permasalahan berdasarkan pola pengaduan dan merekomendasikan tindak lanjut terukur. Opsi B menunjukkan evaluasi segmentasi masalah (52-38-24",
+          "source": "Modul Diklat Analisis Dokumen Layanan Perpajakan — Level Kep",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "KPP Pratama Surabaya Rungkut menerima 156 pengaduan dari wajib pajak UMKM terkait kesulitan aktivasi EFIN secara daring dalam periode Januari-Februari 2025. Dari analisis data, 78% pengadu berusia di atas 50 tahun dengan literasi digital rendah, 62% ",
+          "options": {
+            "a": "Mengadakan kelas literasi digital mingguan di KPP, menyederhanakan formulir aktivasi EFIN dengan QR code auto-fill, dan membentuk tim respons cepat Wh",
+            "b": "Membuat video tutorial aktivasi EFIN yang diunggah ke media sosial KPP dan menambah kuota layanan tatap muka khusus wajib pajak lansia dengan asistens",
+            "c": "Mengirim surat edaran ke seluruh UMKM tentang tata cara aktivasi EFIN dan menambah jumlah loket pelayanan dari 4 menjadi 6 loket pada jam operasional",
+            "d": "Mengusulkan perubahan sistem verifikasi foto selfie ke Kantor Pusat DJP dan sementara waktu menonaktifkan fitur aktivasi EFIN daring hingga ada perbai"
+          },
+          "correct": "a",
+          "explanation": "Level 2 Inovasi Pelayanan Publik mensyaratkan kemampuan menganalisis data WP (identifikasi segmen lansia, masalah verifikasi foto, kompleksitas proses) dan menyusun rencana inovasi",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Semarang Candisari menerima 213 pengaduan terkait penerbitan SKT (Surat Keterangan Tertentu) dalam 2 bulan terakhir. Hasil analisis menunjukkan 78% kasus disebabkan ketidaklengkapan dokumen persyaratan yang telah diunggah WP, namun sistem",
+          "options": {
+            "a": "Menambah petugas verifikator dokumen SKT dan memperpanjang SLA penelitian kelengkapan dari 3 hari menjadi 7 hari kerja untuk memastikan akurasi",
+            "b": "Mengevaluasi rule engine validasi sistem dengan menambahkan parameter checklist substansi dokumen sesuai KEP-371/PJ/2019 dan menyusun panduan unggah d",
+            "c": "Membuat surat edaran kepada seluruh WP untuk lebih teliti mengunggah dokumen dan meningkatkan sosialisasi persyaratan SKT melalui media sosial KPP",
+            "d": "Menunda sementara layanan SKT online dan mengalihkan ke layanan manual di TPT hingga sistem diperbaiki oleh Kantor Pusat DJP"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi akar masalah sistemik dan merekomendasikan solusi holistik yang menyasar proses dan sistem. Perbaikan rule engine validasi (preventif) dikom",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Yogyakarta Sleman menerima 178 pengaduan wajib pajak UMKM terkait kesulitan mengakses insentif PPh Final 0,5% pascaimplementasi Coretax DJP. Dari hasil evaluasi tim, ditemukan 89 kasus kesalahan klasifikasi KLU, 52 kasus belum update data",
+          "options": {
+            "a": "Membuat surat edaran ke seluruh WP UMKM tentang tata cara pengajuan insentif dan membuka helpdesk khusus untuk konsultasi langsung",
+            "b": "Menugaskan seluruh Account Representative untuk melakukan kunjungan ke 178 Wajib Pajak tersebut guna memberikan asistensi individual",
+            "c": "Menyusun program advokasi bertahap: sosialisasi massal untuk kesalahan KLU dan update data, bimbingan teknis untuk prosedur, eskalasi sistem error ke ",
+            "d": "Mengusulkan perpanjangan masa transisi implementasi Coretax dan memberikan relaksasi persyaratan insentif bagi UMKM yang mengalami kesulitan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dengan menelaah permasalahan berdasarkan data terklasifikasi (89-52-24-13 kasus) dan menyusun rekomendasi tindak lanjut yang sis",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "KPP Pratama Jakarta Kebayoran Baru mencatat rata-rata waktu tunggu pelayanan tatap muka mencapai 47 menit per Wajib Pajak, dengan 234 pengaduan terkait antrian panjang dalam 3 bulan terakhir. Data menunjukkan 68% pengaduan terjadi pada hari Senin dan",
+          "options": {
+            "a": "Menambah jumlah petugas loket pelayanan dari 4 menjadi 8 petugas secara permanen untuk mengurangi waktu tunggu",
+            "b": "Memperpanjang jam operasional pelayanan dari pukul 08.00-16.00 menjadi 08.00-20.00 setiap hari untuk menyebarkan jumlah kunjungan",
+            "c": "Membuat surat edaran kepada seluruh WP agar tidak datang pada hari Senin dan Selasa serta mengarahkan semua konsultasi ke email resmi KPP",
+            "d": "Menyusun sistem appointment online khusus Senin-Selasa dan mengembangkan video tutorial konsultasi sederhana yang terintegrasi dengan notifikasi Whats"
+          },
+          "correct": "d",
+          "explanation": "Level 2 Inovasi Pelayanan Publik mengharuskan Kepala Seksi menganalisis data WP (identifikasi pola 68% pengaduan di hari tertentu dan 72% konsultasi sederhana) dan menyusun rencana",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Arsip Dinamis",
+          "compLevel": 2,
+          "question": "KPP Pratama Bekasi Utara memiliki 2.847 berkas arsip aktif tahun 2023-2024 dan 4.156 berkas inaktif tahun 2019-2022 yang tersimpan campur di ruang arsip seluas 48 m². Anda sebagai Kepala Seksi Pelayanan mendapat instruksi melakukan penataan arsip unt",
+          "options": {
+            "a": "Memindahkan seluruh arsip inaktif ke gudang eksternal dan menata ulang arsip aktif menggunakan sistem klasifikasi berdasarkan jenis pajak dengan pembe",
+            "b": "Mendigitalkan seluruh arsip aktif dan inaktif secara sekaligus menggunakan scanner berkecepatan tinggi untuk menghilangkan kebutuhan ruang fisik dan m",
+            "c": "Melakukan pemisahan fisik arsip aktif dan inaktif, menyusun daftar klasifikasi arsip berdasarkan JRA (Jadwal Retensi Arsip) DJP, kemudian menata arsip",
+            "d": "Membuat sistem kartu kendali manual untuk semua berkas dan melatih petugas arsip menggunakan metode pencarian berdasarkan nomor urut kronologis peneri"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis kondisi arsip dan menyusun rencana penataan sesuai petunjuk teknis. Pemisahan arsip aktif-inaktif sesuai JRA dan penerapan sistem berkas",
+          "source": "Materi Webinar KPP — Pengelolaan Arsip Dinamis L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Arsip Dinamis",
+          "compLevel": 2,
+          "question": "KPP Pratama Denpasar Timur memiliki 3.456 berkas arsip aktif dengan tingkat pertumbuhan 45 berkas per bulan. Hasil analisis menunjukkan 1.234 berkas telah melampaui masa retensi aktif dan 892 berkas di antaranya memenuhi kriteria dinilai kembali. Seb",
+          "options": {
+            "a": "Memindahkan seluruh 1.234 berkas yang melampaui masa retensi langsung ke arsip inaktif tanpa penilaian ulang untuk mempercepat proses",
+            "b": "Menganalisis 892 berkas yang memenuhi kriteria dinilai kembali terlebih dahulu, menyusun berita acara penilaian, kemudian melaksanakan pemindahan sesu",
+            "c": "Memusnahkan 892 berkas yang memenuhi kriteria dinilai kembali karena sudah tidak digunakan dalam pelayanan sehari-hari",
+            "d": "Menunggu hingga seluruh 3.456 berkas aktif melampaui masa retensi baru melakukan pemindahan sekaligus untuk efisiensi waktu"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mengharuskan analisis data arsip untuk mengidentifikasi berkas yang memenuhi kriteria perpindahan status. Penyusunan rencana pemindahan harus didahului berita acara penilai",
+          "source": "Materi Webinar KPP — Pengelolaan Arsip Dinamis L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Inovasi Pelayanan Publik",
+          "compLevel": 2,
+          "question": "KPP Pratama Bandung Karees mencatat 234 Wajib Pajak mengajukan permohonan aktivasi EFIN secara walk-in dalam sebulan, dengan waktu tunggu rata-rata 45 menit per WP. Anda sebagai Kasi Pelayanan diminta menyusun rencana inovasi untuk mengurangi waktu t",
+          "options": {
+            "a": "Menambah loket pelayanan EFIN dari 2 menjadi 4 loket secara permanen untuk semua jam kerja",
+            "b": "Membuat surat edaran agar Wajib Pajak tidak datang pada jam istirahat untuk pemerataan kunjungan",
+            "c": "Mengusulkan penghapusan layanan walk-in dan mengalihkan seluruh permohonan EFIN ke kanal online",
+            "d": "Menyusun rencana layanan EFIN berbasis appointment system dengan slot prioritas jam 12.00-13.00 dan menyiapkan petunjuk teknis pelaksanaannya"
+          },
+          "correct": "d",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis data WP (identifikasi pola 78% di jam tertentu), menyusun rencana inovasi terstruktur (appointment system), dan melaksanakan sesuai petu",
+          "source": "Materi Webinar KPP — Inovasi Pelayanan Publik L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 0,
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Berdasarkan skenario pengaduan massal pemblokiran NPWP di KPP Pratama Jakarta Kemayoran, apa yang merupakan akar masalah utama yang harus menjadi fokus penyelesaian Anda sebagai Kepala Seksi Pelayanan?",
+          "options": {
+            "a": "Kesalahan teknis sistem pada update data November 2024 yang tidak merekam penyampaian SPT untuk NIK dengan format tertentu sehingga NPWP menjadi Non-E",
+            "b": "Tingginya volume pengaduan sebanyak 47 kasus yang masuk melalui 4 kanal berbeda dalam waktu 3 hari sehingga membebani kapasitas pelayanan seksi",
+            "c": "Ancaman Wajib Pajak untuk melapor ke media massa dan Ombudsman yang dapat merusak reputasi KPP jika pengaduan tidak segera ditangani",
+            "d": "Kurangnya koordinasi antara Seksi Pelayanan dengan Seksi Pengolahan Data dan Informasi dalam melakukan monitoring status NPWP secara berkala"
+          },
+          "correct": "a",
+          "explanation": "Akar masalah utama adalah kesalahan teknis sistem update data November 2024 yang tidak merekam SPT untuk NIK format tertentu, menyebabkan pemblokiran status NPWP menjadi NE secara ",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": "Penanganan Pengaduan Massal Pemblokiran NPWP Wajib Pajak",
+          "vigBody": "Pada tanggal 15 Januari 2025, Seksi Pelayanan KPP Pratama Jakarta Kemayoran menerima 47 pengaduan melalui berbagai kanal dalam waktu 3 hari terkait pemblokiran status NPWP. Para Wajib Pajak melaporkan bahwa NPWP mereka tiba-tiba berstatus Non-Efektif (NE) meskipun telah menyampaikan SPT Tahunan 2023",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 1,
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Dalam menganalisis data pengaduan massal pemblokiran NPWP yang diterima sejak 15 Januari 2025, pola informasi manakah yang PALING KRUSIAL untuk diidentifikasi guna memverifikasi hipotesis adanya kesalahan sistemik terkait format NIK tertentu?",
+          "options": {
+            "a": "Perbandingan jumlah pengaduan berdasarkan kanal penerimaan (email 23, LAPOR! 15, surat 6, datang langsung 3) untuk menentukan prioritas respons sesuai",
+            "b": "Pola kesamaan karakteristik NIK dari 47 WP yang terdampak (struktur digit, tanggal lahir, atau kode wilayah) yang berkorelasi dengan waktu update sist",
+            "c": "Distribusi waktu penerimaan pengaduan dalam 3 hari untuk mengidentifikasi tren peningkatan dan memproyeksikan potensi pengaduan lanjutan yang akan mas",
+            "d": "Identifikasi WP yang mengancam melapor ke media massa dan Ombudsman untuk diprioritaskan penyelesaiannya terlebih dahulu sebelum kasus meluas"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan kemampuan analisis data untuk identifikasi akar masalah sistemik. Menganalisis pola kesamaan karakteristik NIK dari 47 WP yang terdampak (format digit, struktu",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": "Penanganan Pengaduan Massal Pemblokiran NPWP Wajib Pajak",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 2,
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Dalam mengevaluasi alternatif solusi untuk menangani 47 pengaduan pemblokiran NPWP akibat kesalahan sistem, manakah pendekatan yang PALING TEPAT untuk memprioritaskan tindakan korektif sekaligus menjaga kepercayaan publik?",
+          "options": {
+            "a": "Segera membuat pengumuman publik melalui media massa tentang kesalahan sistem dan meminta semua WP terdampak mengirim ulang SPT Tahunan 2023 secara ma",
+            "b": "Memprioritaskan penyelesaian 3 pengaduan datang langsung terlebih dahulu karena urgensi tinggi, kemudian menangani email (23), LAPOR! (15), dan surat ",
+            "c": "Membentuk tim khusus untuk memeriksa satu per satu dari 47 kasus secara manual dengan meminta WP melengkapi dokumen pendukung SPT 2023, lalu mengaktif",
+            "d": "Berkoordinasi dengan Seksi PDI untuk verifikasi dan pemulihan massal status NPWP yang terdampak format NIK tertentu, memberikan respons tertulis kepad"
+          },
+          "correct": "d",
+          "explanation": "Opsi C paling tepat karena menangani akar masalah secara sistemik melalui koordinasi dengan Seksi PDI untuk solusi massal yang efisien, memenuhi kewajiban responsivitas dengan memb",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": "Penanganan Pengaduan Massal Pemblokiran NPWP Wajib Pajak",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 3,
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pelayanan yang harus menyusun laporan analisis akar masalah dan rekomendasi pencegahan kepada Kepala KPP terkait 47 pengaduan pemblokiran status NPWP akibat kesalahan sistem update data November 2024, rekomendasi tindak lanjut ma",
+          "options": {
+            "a": "Merekomendasikan perbaikan sistemik oleh unit teknis terkait untuk NIK format tertentu yang terdampak, pembuatan mekanisme validasi silang antara data",
+            "b": "Merekomendasikan audit menyeluruh sistem oleh Kantor Pusat DJP, penundaan sementara seluruh proses penetapan status NE hingga sistem diperbaiki, pembe",
+            "c": "Merekomendasikan pemulihan status NPWP secara manual untuk 47 WP terdampak, pembuatan SOP verifikasi manual penyampaian SPT setiap bulan oleh Seksi Pe",
+            "d": "Merekomendasikan kompensasi administrasi kepada 47 WP berupa pembebasan sanksi administrasi selama 1 tahun, penerbitan surat keterangan resmi sebagai "
+          },
+          "correct": "a",
+          "explanation": "Opsi C paling tepat karena Level 3 memerlukan rekomendasi sistemik-strategis yang mencakup perbaikan akar masalah (sistem NIK format tertentu), mekanisme pencegahan (validasi silan",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": "Penanganan Pengaduan Massal Pemblokiran NPWP Wajib Pajak",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 4,
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Dalam menyusun mekanisme mitigasi risiko reputasional dan eskalasi pengaduan ke Ombudsman/media massa terkait kasus pemblokiran massal NPWP ini, langkah prosedural prioritas yang harus Anda lakukan sebagai Kepala Seksi Pelayanan adalah:",
+          "options": {
+            "a": "Mengirimkan surat permintaan maaf massal kepada 47 WP melalui email blast, menerbitkan siaran pers klarifikasi di website KPP, dan menyiapkan tim khus",
+            "b": "Meminta Seksi PDI untuk segera memperbaiki sistem tanpa dokumentasi, menunda respons pengaduan hingga masalah teknis selesai 100%, dan meminta WP yang",
+            "c": "Menyusun kronologi lengkap insiden untuk laporan kepada Kepala KPP, melakukan komunikasi proaktif dengan timeline pasti kepada seluruh pengadu melalui",
+            "d": "Membentuk tim investigasi internal yang melibatkan auditor eksternal, melakukan suspend sementara layanan update status NPWP untuk mencegah kesalahan "
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan mengelola risiko reputasional dengan pendekatan sistematis: pelaporan ke atasan dengan kronologi lengkap, komunikasi proaktif transparan kepada penga",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": "Penanganan Pengaduan Massal Pemblokiran NPWP Wajib Pajak",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        }
+      ]
+    }
+  ]
 }
