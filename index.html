@@ -847,12 +847,12 @@ const SUBS_PER_CASE = 5;
 // We'll build a PLAN array describing each "slot"
 function buildPlan() {
   const plan = [];
-  let regRemain = 40, caseRemain = 4;
-  // Interleave: 10 reg, 5 case, 10 reg, 5 case, 10 reg, 5 case, 10 reg, 5 case
-  for (let block = 0; block < 4; block++) {
-    for (let i = 0; i < 10; i++) plan.push({type:'regular', block});
-    for (let i = 0; i < 5; i++) plan.push({type:'case', caseIdx: block, subIdx: i});
+  // Order: 4 case blocks first (0-19), then 40 regular (20-59)
+  // Cases come first = generated while API is fresh, not fatigued
+  for (let c = 0; c < 4; c++) {
+    for (let s = 0; s < 5; s++) plan.push({type:'case', caseIdx: c, subIdx: s});
   }
+  for (let i = 0; i < 40; i++) plan.push({type:'regular', block: Math.floor(i/10)});
   return plan; // 60 items
 }
 
@@ -1113,11 +1113,9 @@ function startQuiz() {
 
 /* ── PRE-GENERATION PHASE ─────────── */
 async function preGenerateAllQuestions() {
-  console.log("preGenerateAllQuestions started, total="+TOTAL_QUESTIONS);
   const total = TOTAL_QUESTIONS;
   const startTime = Date.now();
 
-  // Live timer
   const timerInterval = setInterval(() => {
     const elapsed = Math.floor((Date.now() - startTime) / 1000);
     const done = generated.filter(Boolean).length;
@@ -1130,35 +1128,46 @@ async function preGenerateAllQuestions() {
         const rate = done / Math.max(elapsed, 1);
         const rem  = Math.ceil((total - done) / rate);
         etaEl.textContent = `~${Math.floor(rem/60)}:${String(rem%60).padStart(2,'0')} lagi`;
-      } else {
-        etaEl.textContent = "estimasi 10–15 menit";
-      }
+      } else { etaEl.textContent = "estimasi 8–12 menit"; }
     }
   }, 1000);
 
   document.getElementById("load-title").textContent = `Menyiapkan ${total} soal…`;
-  document.getElementById("load-sub").textContent   = "Harap tunggu dan jangan tutup tab ini. Semua soal dibuat sekaligus agar kamu bisa navigasi bebas.";
+  document.getElementById("load-sub").textContent   = "Harap tunggu dan jangan tutup tab ini.";
   buildLoadDots(total);
 
-  for (let i = 0; i < total; i++) {
-    const slot = plan[i];
+  // ── PHASE 1: 4 bundled case calls (vignette + 5 soal per call = 4 calls total) ──
+  // Done FIRST while API is fresh. Each bundle = 1 API call instead of 6.
+  for (let caseIdx = 0; caseIdx < 4; caseIdx++) {
+    const startSlot = caseIdx * 5;
+    for (let s = 0; s < 5; s++) setLoadDot(startSlot + s, "generating");
+    updateLoadBar(startSlot, total);
+    document.getElementById("load-status").textContent = `Studi Kasus ${caseIdx+1}/4 — vignette + 5 soal (1 permintaan)…`;
+    try {
+      await generateCaseBundle(caseIdx);
+      for (let s = 0; s < 5; s++) {
+        generated[startSlot + s] = true;
+        setLoadDot(startSlot + s, "ready");
+      }
+    } catch(e) {
+      clearInterval(timerInterval);
+      setLoadDot(startSlot, "error");
+      document.getElementById("load-err").style.display = "block";
+      document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, startSlot);
+      return;
+    }
+    updateLoadBar((caseIdx + 1) * 5, total);
+    if (caseIdx < 3) await pauseBetweenCalls();
+  }
+
+  // ── PHASE 2: 40 regular questions ──
+  for (let i = 20; i < total; i++) {
     setLoadDot(i, "generating");
     updateLoadBar(i, total);
-
+    const comp = pickComp();
+    document.getElementById("load-status").textContent = `Soal reguler ${i - 19}/40: ${comp.name}…`;
     try {
-      if (slot.type === "case") {
-        // Generate vignette first if this is subIdx 0
-        if (slot.subIdx === 0 && !caseVignettes[slot.caseIdx]) {
-          document.getElementById("load-status").textContent = `Menyusun skenario Studi Kasus ${slot.caseIdx+1}…`;
-          await generateCaseVignette(slot.caseIdx);
-        }
-        document.getElementById("load-status").textContent = `Studi Kasus ${slot.caseIdx+1}, pertanyaan ${slot.subIdx+1}/5…`;
-        await generateCaseSubQuestionFor(i, slot.caseIdx, slot.subIdx);
-      } else {
-        const comp = pickComp();
-        document.getElementById("load-status").textContent = `Soal reguler ${i+1}: ${comp.name}…`;
-        await generateRegularQuestionFor(i, comp);
-      }
+      await generateRegularQuestionFor(i, comp);
       generated[i] = true;
       setLoadDot(i, "ready");
     } catch(e) {
@@ -1166,15 +1175,15 @@ async function preGenerateAllQuestions() {
       setLoadDot(i, "error");
       document.getElementById("load-err").style.display = "block";
       document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, i);
-      return; // Stop pre-gen on error — show retry
+      return;
     }
+    if (i < total - 1) await pauseBetweenCalls();
   }
 
   clearInterval(timerInterval);
-  clearInterval(timerInterval);
   updateLoadBar(total, total);
   document.getElementById("load-status").textContent = "Semua soal siap!";
-  const etaEl2 = document.getElementById("load-eta"); if(etaEl2) etaEl2.textContent = "";
+  const etaEl2 = document.getElementById("load-eta"); if (etaEl2) etaEl2.textContent = "";
   setTimeout(() => {
     answersLog = [];
     showScreen("screen-quiz");
@@ -1240,22 +1249,36 @@ function buildErrorHtml(msg, fromSlot) {
 async function retryPreGen(fromSlot) {
   document.getElementById("load-err").style.display = "none";
   const total = TOTAL_QUESTIONS;
-  for (let i = fromSlot; i < total; i++) {
+
+  // Retry case bundles first (slots 0-19)
+  for (let caseIdx = 0; caseIdx < 4; caseIdx++) {
+    const startSlot = caseIdx * 5;
+    if (startSlot + 4 < fromSlot) continue; // this bundle already done
+    if (generated[startSlot]) continue;
+    for (let s = 0; s < 5; s++) setLoadDot(startSlot + s, "generating");
+    document.getElementById("load-status").textContent = `Melanjutkan Studi Kasus ${caseIdx+1}…`;
+    try {
+      await generateCaseBundle(caseIdx);
+      for (let s = 0; s < 5; s++) { generated[startSlot+s]=true; setLoadDot(startSlot+s,"ready"); }
+    } catch(e) {
+      setLoadDot(startSlot, "error");
+      document.getElementById("load-err").style.display = "block";
+      document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, startSlot);
+      return;
+    }
+    if (caseIdx < 3) await pauseBetweenCalls();
+  }
+
+  // Retry regular questions (slots 20-59)
+  const regStart = Math.max(20, fromSlot);
+  for (let i = regStart; i < total; i++) {
     if (generated[i]) continue;
-    const slot = plan[i];
     setLoadDot(i, "generating");
     updateLoadBar(i, total);
+    const comp = pickComp();
+    document.getElementById("load-status").textContent = `Melanjutkan soal reguler ${i-19}/40…`;
     try {
-      if (slot.type === "case") {
-        if (slot.subIdx === 0 && !caseVignettes[slot.caseIdx]) {
-          document.getElementById("load-status").textContent = `Studi Kasus ${slot.caseIdx+1}…`;
-          await generateCaseVignette(slot.caseIdx);
-        }
-        await generateCaseSubQuestionFor(i, slot.caseIdx, slot.subIdx);
-      } else {
-        const comp = pickComp();
-        await generateRegularQuestionFor(i, comp);
-      }
+      await generateRegularQuestionFor(i, comp);
       generated[i] = true;
       setLoadDot(i, "ready");
     } catch(e) {
@@ -1264,13 +1287,82 @@ async function retryPreGen(fromSlot) {
       document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, i);
       return;
     }
+    if (i < total - 1) await pauseBetweenCalls();
   }
-  clearInterval(timerInterval);
-  clearInterval(timerInterval);
+
   updateLoadBar(total, total);
   document.getElementById("load-status").textContent = "Semua soal siap!";
-  const etaEl2 = document.getElementById("load-eta"); if(etaEl2) etaEl2.textContent = "";
   setTimeout(() => { showScreen("screen-quiz"); buildNavGrid(); renderCurrentQuestion(); }, 600);
+}
+
+/* ── CASE BUNDLE GENERATOR ───────────
+   One API call generates: vignette + 5 sub-questions.
+   Replaces 6 separate calls (1 vignette + 5 sub-questions).
+   Cuts total case API calls from 24 → 4.
+──────────────────────────────────── */
+async function generateCaseBundle(caseIdx) {
+  const comp = selectedPos.competencies[caseIdx % selectedPos.competencies.length];
+  const vigSegCtx = activeSegment === "B"
+    ? "manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja, penetapan kebijakan operasional KPP"
+    : "teknis tingkat seksi: penanganan kasus WP, prosedur perpajakan, bimbingan kepada AR/pelaksana";
+
+  const aspects = [
+    "identifikasi masalah utama",
+    "analisis data dan informasi relevan",
+    "evaluasi alternatif solusi",
+    "rekomendasi tindak lanjut dan dasar hukum",
+    "aspek prosedural atau mitigasi risiko"
+  ];
+
+  const prompt = `Penyusun soal DJP. Buat 1 studi kasus LENGKAP untuk:
+Jabatan: ${selectedPos.name} | Kompetensi: ${comp.name} Level ${comp.level}
+Konteks: ${vigSegCtx}
+
+OUTPUT: JSON dengan struktur PERSIS ini (tanpa teks lain):
+{
+  "vignette": {
+    "title": "judul kasus max 8 kata",
+    "body": "skenario 120-150 kata dengan nama WP fiktif, angka spesifik, permasalahan jelas",
+    "comp": "${comp.name}",
+    "compLevel": ${comp.level}
+  },
+  "questions": [
+    {"aspect": "${aspects[0]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "a", "explanation": "2 kalimat"},
+    {"aspect": "${aspects[1]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "b", "explanation": "2 kalimat"},
+    {"aspect": "${aspects[2]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "c", "explanation": "2 kalimat"},
+    {"aspect": "${aspects[3]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "d", "explanation": "2 kalimat"},
+    {"aspect": "${aspects[4]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "a", "explanation": "2 kalimat"}
+  ]
+}`;
+
+  const data = await callAPIWithRetry(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 3500);
+  const txt = data.content.filter(d => d.type === "text").map(d => d.text).join("").replace(/```json|```/g,"").trim();
+
+  let bundle;
+  try { bundle = JSON.parse(txt); }
+  catch(e) {
+    if (txt.length > 3200) throw new Error(`Studi Kasus ${caseIdx+1} terpotong. Coba lagi.`);
+    throw new Error(`Format Studi Kasus ${caseIdx+1} tidak valid. Coba lagi.`);
+  }
+
+  if (!bundle.vignette || !bundle.questions || bundle.questions.length < 5) {
+    throw new Error(`Studi Kasus ${caseIdx+1} tidak lengkap. Coba lagi.`);
+  }
+
+  // Store vignette
+  caseVignettes[caseIdx] = bundle.vignette;
+
+  // Store 5 questions into the correct plan slots (slots 0-4 for case 0, 5-9 for case 1, etc.)
+  bundle.questions.forEach((q, subIdx) => {
+    const slotIdx = caseIdx * 5 + subIdx;
+    const shuffled = shuffleQuestionOptions(
+      { ...q, type:"case", caseIdx, subIdx, comp: comp.name, compLevel: comp.level,
+        vigTitle: bundle.vignette.title, vigBody: bundle.vignette.body,
+        source: `Materi Webinar KPP — ${comp.name} L${comp.level}` },
+      getNextCorrectSlot()
+    );
+    questions[slotIdx] = shuffled;
+  });
 }
 
 /* ── QUESTION GENERATORS ─────────── */
@@ -1321,14 +1413,19 @@ async function callAPIWithRetry(prompt, system, maxTokens, maxRetries=2) {
       return await callAPI(prompt, system, maxTokens);
     } catch(e) {
       lastErr = e;
-      // Only retry on timeout or server errors, not auth/parse errors
       if (e.message.includes("batas waktu") || e.message.includes("502") || e.message.includes("503") || e.message.includes("504")) {
         if (attempt < maxRetries) continue;
       }
-      throw e; // non-retryable error
+      throw e;
     }
   }
   throw lastErr;
+}
+
+// Deliberate pause between calls — prevents rate limit exhaustion on long sessions
+// 1.5s gives ~40 calls/min headroom while adding only ~1.5 min total to 64-call session
+function pauseBetweenCalls() {
+  return new Promise(r => setTimeout(r, 1500));
 }
 
 async function generateCaseSubQuestionFor(idx, caseIdx, subIdx) {
