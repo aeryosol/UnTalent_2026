@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "sessionsServedTotal": 1,
+    "creditsSpentUSD": 0.40,
+    "lastUpdated": ""
+  },
+  "sessions": [
+    {
+      "id": "SES-LWZB67",
+      "position": "Kepala Seksi Pengawasan",
+      "segment": "A",
+      "segmentLabel": "Jabatan Pengawas",
+      "score": 85,
+      "totalQ": 60,
+      "correct": 51,
+      "completedAt": "2026-04-26T02:28:14.256Z",
+      "questions": []
+    }
+  ]
+}
