@@ -159,23 +159,38 @@ export default async (req, context) => {
           type:        q.type,
           caseIdx:     q.caseIdx,
           subIdx:      q.subIdx,
-          comp:        q.comp,
+          comp:        (q.comp || "").slice(0, 50),
           compLevel:   q.compLevel,
-          question:    (q.question    || "").slice(0, 400),
-          options:     q.options,
+          question:    (q.question    || "").slice(0, 250),
+          options:     Object.fromEntries(
+                         Object.entries(q.options || {}).map(([k,v]) => [k, (v||"").slice(0, 150)])
+                       ),
           correct:     q.correct,
-          explanation: (q.explanation || "").slice(0, 280),
-          source:      (q.source      || "").slice(0, 80),
-          vigTitle:    q.vigTitle || null,
-          vigBody:     (q.subIdx === 0 && q.vigBody) ? (q.vigBody || "").slice(0, 500) : null,
+          explanation: (q.explanation || "").slice(0, 180),
+          source:      (q.source      || "").slice(0, 60),
+          vigTitle:    q.vigTitle ? (q.vigTitle || "").slice(0, 80) : null,
+          vigBody:     (q.subIdx === 0 && q.vigBody) ? (q.vigBody || "").slice(0, 300) : null,
           userAnswer:  q.userAnswer || null,
           wasCorrect:  q.wasCorrect || false
         }))
       };
 
-      const sizeKB = Math.round(JSON.stringify(slim).length / 1024);
+      let sizeKB = Math.round(JSON.stringify(slim).length / 1024);
+
+      // If still too large, apply emergency truncation
+      if (sizeKB > 88) {
+        slim.questions = slim.questions.map(q => ({
+          ...q,
+          question:    (q.question    || "").slice(0, 160),
+          options:     Object.fromEntries(Object.entries(q.options||{}).map(([k,v])=>[k,(v||"").slice(0,100)])),
+          explanation: (q.explanation || "").slice(0, 100),
+          vigBody:     q.vigBody ? (q.vigBody||"").slice(0, 150) : null,
+        }));
+        sizeKB = Math.round(JSON.stringify(slim).length / 1024);
+      }
+
       if (sizeKB > 95) {
-        return new Response(JSON.stringify({ error: `Session too large: ${sizeKB}KB. Max 95KB.` }), { status: 413, headers: cors });
+        return new Response(JSON.stringify({ error: `Session too large: ${sizeKB}KB even after truncation. Max 95KB.` }), { status: 413, headers: cors });
       }
 
       try {
