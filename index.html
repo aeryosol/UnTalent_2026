@@ -1310,45 +1310,67 @@ BALAS HANYA JSON:
   questions[idx] = q;
 }
 
+async function callAPIWithRetry(prompt, system, maxTokens, maxRetries=2) {
+  let lastErr;
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    if (attempt > 0) {
+      // Wait before retry: 5s then 10s
+      await new Promise(r => setTimeout(r, attempt * 5000));
+    }
+    try {
+      return await callAPI(prompt, system, maxTokens);
+    } catch(e) {
+      lastErr = e;
+      // Only retry on timeout or server errors, not auth/parse errors
+      if (e.message.includes("batas waktu") || e.message.includes("502") || e.message.includes("503") || e.message.includes("504")) {
+        if (attempt < maxRetries) continue;
+      }
+      throw e; // non-retryable error
+    }
+  }
+  throw lastErr;
+}
+
 async function generateCaseSubQuestionFor(idx, caseIdx, subIdx) {
   const vig = caseVignettes[caseIdx];
   if (!vig) throw new Error("Vignette missing for case "+caseIdx);
   const prevSubs = questions.filter((q,i) => q && plan[i]?.type==="case" && plan[i]?.caseIdx===caseIdx).map(q=>q.question?.slice(0,50)).join(" | ");
   const aspects = [
-    "identifikasi masalah utama dan akar permasalahan dari skenario",
-    "analisis data dan informasi yang relevan dalam skenario",
-    "evaluasi alternatif solusi atau tindakan yang tersedia",
-    "rekomendasi tindak lanjut yang paling tepat dan dasar hukumnya",
-    "aspek prosedural, risiko, atau mitigasi dalam penyelesaian kasus"
+    "identifikasi masalah utama dan akar permasalahan",
+    "analisis data dan informasi yang relevan",
+    "evaluasi alternatif solusi yang tersedia",
+    "rekomendasi tindak lanjut dan dasar hukumnya",
+    "aspek prosedural atau mitigasi risiko"
   ][subIdx];
 
   const vigSegCtx = activeSegment === "B"
-    ? "Tantangan manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja, penetapan kebijakan operasional."
-    : "Tantangan teknis tingkat seksi: penanganan kasus WP spesifik, prosedur perpajakan, bimbingan kepada AR.";
+    ? "manajerial tingkat kantor"
+    : "teknis tingkat seksi";
 
-  const prompt = `Penyusun soal uji kompetensi teknis DJP.
+  // Trim vignette body to reduce prompt size and avoid timeouts
+  const vigSnippet = (vig.body || "").slice(0, 200);
 
-SKENARIO: "${vig.body}"
-Jabatan: ${selectedPos.name} | Kompetensi: ${vig.comp} Level ${vig.compLevel}
-Konteks: ${vigSegCtx}
-Aspek pertanyaan ke-${subIdx+1}: ${aspects}
-Pertanyaan sebelumnya (JANGAN DUPLIKASI): ${prevSubs||"Belum ada"}
+  const prompt = `Soal DJP — Studi Kasus.
 
-Buat 1 pertanyaan spesifik mengacu detail skenario, 4 pilihan, 1 benar.
+Skenario (ringkas): "${vigSnippet}..."
+Jabatan: ${selectedPos.name} | ${vig.comp} L${vig.compLevel} | ${vigSegCtx}
+Aspek: ${aspects}
+Hindari duplikasi: ${prevSubs||"-"}
 
-BALAS HANYA JSON:
-{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"3 kalimat padat mengacu detail skenario dan indikator Level ${vig.compLevel}","source":"Materi Webinar KPP — ${vig.comp}"}`;
+1 soal pilihan ganda, 4 opsi, 1 benar. Pembahasan 2 kalimat.
 
-  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 2000);
+JSON:
+{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"2 kalimat","source":"Materi Webinar KPP — ${vig.comp}"}`;
+
+  const data = await callAPIWithRetry(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 1200);
   const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
   let q;
   try { q = JSON.parse(txt); }
   catch(parseErr) {
-    if (txt.length > 1800) throw new Error("Respons AI terpotong (terlalu panjang). Coba lagi.");
+    if (txt.length > 1100) throw new Error("Respons AI terpotong (terlalu panjang). Coba lagi.");
     throw new Error("Format respons tidak valid. Coba lagi.");
   }
   q.type = "case";
-  // Shuffle so correct answer is distributed evenly
   q = shuffleQuestionOptions(q, getNextCorrectSlot()); q.caseIdx = caseIdx; q.subIdx = subIdx;
   q.comp = vig.comp; q.compLevel = vig.compLevel;
   q.vigTitle = vig.title; q.vigBody = vig.body;
