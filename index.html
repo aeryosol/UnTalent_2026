@@ -1602,29 +1602,40 @@ function nextSlot() { navQuestion(1); }
 
 async function autoSaveLiveSession() {
   if (sessionMode !== "live") return;
-  // Build session object
   const sessionId = generateSessionId();
+  // Build questions array aligned by plan index (not answersLog index)
+  const sessionQuestions = questions.map((q, i) => {
+    if (!q) return null;
+    const ans = answers[i]; // answers[] is indexed same as questions[]
+    return {
+      ...q,
+      vigTitle:   caseVignettes[q.caseIdx]?.title || null,
+      vigBody:    caseVignettes[q.caseIdx]?.body  || null,
+      userAnswer: ans?.chosen    || null,
+      wasCorrect: ans?.isCorrect || false
+    };
+  }).filter(Boolean);
+
   const sessionData = {
-    id: sessionId,
-    position: selectedPos.name,
-    segment: activeSegment,
+    id:           sessionId,
+    position:     selectedPos.name,
+    segment:      activeSegment,
     segmentLabel: activeSegment === "B" ? "Jabatan Administrator" : "Jabatan Pengawas",
-    score: Math.round((correctCount / answersLog.length) * 100),
-    totalQ: answersLog.length,
-    correct: correctCount,
-    completedAt: new Date().toISOString(),
-    questions: questions.map((q, i) => {
-      const ans = answersLog[i];
-      return {
-        ...q,
-        vigTitle: caseVignettes[q.caseIdx]?.title || null,
-        vigBody:  caseVignettes[q.caseIdx]?.body  || null,
-        userAnswer: ans?.chosen,
-        wasCorrect: ans?.isCorrect
-      };
-    })
+    score:        Math.round((correctCount / Math.max(answersLog.length, 1)) * 100),
+    totalQ:       answersLog.length,
+    correct:      correctCount,
+    completedAt:  new Date().toISOString(),
+    questions:    sessionQuestions
   };
+
+  // Warn user not to close tab while saving
+  const beforeUnloadHandler = (e) => { e.preventDefault(); e.returnValue = "Sesi sedang disimpan ke arsip. Tunggu sebentar sebelum menutup tab."; };
+  window.addEventListener("beforeunload", beforeUnloadHandler);
+
   await saveSessionToLibrary(sessionData);
+
+  // Remove warning once saved
+  window.removeEventListener("beforeunload", beforeUnloadHandler);
 }
 
 async function markSessionUsed() {
@@ -1659,6 +1670,12 @@ function showResults() {
   caseCorrect    = answersLog.filter(a=>a.type==="case"   &&a.isCorrect).length;
   autoSaveLiveSession();
   showScreen("screen-result");
+  // Show save notice at top of result screen
+  const saveBanner = document.getElementById("save-banner");
+  if (saveBanner && sessionMode === "live") {
+    saveBanner.className = "save-banner show";
+    saveBanner.innerHTML = `<div class="spin" style="width:14px;height:14px;border-width:1.5px;flex-shrink:0"></div> <span>Menyimpan sesi ke arsip… <strong>Jangan tutup tab ini</strong> sampai muncul konfirmasi ✓</span>`;
+  }
   const total = answersLog.length;
   const pct = Math.round((correctCount / total) * 100);
   const pass = pct >= 60;
@@ -1886,11 +1903,22 @@ async function loadStatus() {
 
 function startHeartbeat() {
   stopHeartbeat();
-  const ping = () => fetch("/api/status", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ sessionId: SESSION_ID })
-  }).catch(() => {});
+  const ping = async () => {
+    try {
+      const res = await fetch("/api/status", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId: SESSION_ID })
+      });
+      // POST response includes concurrent count — update topbar if visible
+      const d = await res.json();
+      if (d.concurrent !== undefined) {
+        // Update gate screen concurrent badge if it's visible
+        const el = document.getElementById("s-concurrent");
+        if (el) el.textContent = d.concurrent;
+      }
+    } catch(_) {}
+  };
   ping();
   heartbeatTimer = setInterval(ping, 20000);
 }
