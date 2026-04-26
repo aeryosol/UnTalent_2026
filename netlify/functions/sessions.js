@@ -1,62 +1,93 @@
 /*
+  GitHub-backed session storage.
+
   ENV VARS needed in Netlify:
-  JSONBIN_API_KEY   — your JSONBin master key
-  JSONBIN_BIN_ID    — bin ID (auto-created on first deploy if empty)
+  GITHUB_TOKEN  — Personal Access Token with repo scope
+  GITHUB_REPO   — e.g. "YourUsername/djp-quiz"
 
-  Bin structure:
+  Sessions are stored in data/sessions.json in the repo root.
+  The file is read/written via the GitHub Contents API.
+  No key rotation, no size limits beyond GitHub's 100MB file cap,
+  no request limits that matter at this scale.
+
+  File structure:
   {
-    "_meta": {
-      "sessionsServedTotal": 12,
-      "creditsSpentUSD": 4.80,
-      "lastUpdated": "2026-04-25T..."
-    },
-    "sessions": [ ... ]
+    "_meta": { "sessionsServedTotal": N, "creditsSpentUSD": X, "lastUpdated": "..." },
+    "sessions": [ ...slim session objects... ]
   }
-
-  _meta is read by status.js to calculate real remaining sessions.
-  It increments automatically every time a session is saved.
 */
 
-const BASE = "https://api.jsonbin.io/v3/b";
 const COST_PER_SESSION = parseFloat(process.env.COST_PER_SESSION || "0.40");
+const DATA_PATH = "data/sessions.json";
 
-async function getBin(apiKey, binId) {
-  const res = await fetch(`${BASE}/${binId}/latest`, {
-    headers: { "X-Master-Key": apiKey }
-  });
-  if (!res.ok) throw new Error(`JSONBin GET failed: ${res.status}`);
-  const d = await res.json();
-  return d.record;
+function githubHeaders(token) {
+  return {
+    "Authorization": `Bearer ${token}`,
+    "Accept": "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+    "Content-Type": "application/json"
+  };
 }
 
-async function updateBin(apiKey, binId, data) {
-  const res = await fetch(`${BASE}/${binId}`, {
+async function getFile(token, repo) {
+  const url = `https://api.github.com/repos/${repo}/contents/${DATA_PATH}`;
+  const res = await fetch(url, { headers: githubHeaders(token) });
+  if (res.status === 404) {
+    // File doesn't exist yet — return empty structure
+    return { content: { _meta: { sessionsServedTotal: 0, creditsSpentUSD: 0, lastUpdated: "" }, sessions: [] }, sha: null };
+  }
+  if (!res.ok) throw new Error(`GitHub GET failed: ${res.status} ${await res.text()}`);
+  const file = await res.json();
+  const decoded = JSON.parse(Buffer.from(file.content, "base64").toString("utf8"));
+  return { content: decoded, sha: file.sha };
+}
+
+async function putFile(token, repo, data, sha) {
+  const url = `https://api.github.com/repos/${repo}/contents/${DATA_PATH}`;
+  const encoded = Buffer.from(JSON.stringify(data, null, 2)).toString("base64");
+  const body = {
+    message: `Update sessions [${new Date().toISOString()}]`,
+    content: encoded,
+    ...(sha ? { sha } : {})
+  };
+  const res = await fetch(url, {
     method: "PUT",
-    headers: { "Content-Type": "application/json", "X-Master-Key": apiKey },
-    body: JSON.stringify(data)
+    headers: githubHeaders(token),
+    body: JSON.stringify(body)
   });
-  if (!res.ok) throw new Error(`JSONBin PUT failed: ${res.status}`);
+  if (!res.ok) throw new Error(`GitHub PUT failed: ${res.status} ${await res.text()}`);
   return res.json();
 }
 
-async function createBin(apiKey) {
-  const initial = {
-    _meta: { sessionsServedTotal: 0, creditsSpentUSD: 0, lastUpdated: new Date().toISOString() },
-    sessions: []
+function slimSession(session) {
+  return {
+    id:           session.id,
+    position:     session.position,
+    segment:      session.segment,
+    segmentLabel: session.segmentLabel,
+    score:        session.score,
+    totalQ:       session.totalQ,
+    correct:      session.correct,
+    completedAt:  session.completedAt,
+    questions: (session.questions || []).map(q => ({
+      type:        q.type,
+      caseIdx:     q.caseIdx,
+      subIdx:      q.subIdx,
+      comp:        (q.comp         || "").slice(0, 50),
+      compLevel:   q.compLevel,
+      question:    (q.question     || "").slice(0, 250),
+      options:     Object.fromEntries(
+                     Object.entries(q.options || {}).map(([k, v]) => [k, (v || "").slice(0, 150)])
+                   ),
+      correct:     q.correct,
+      explanation: (q.explanation  || "").slice(0, 180),
+      source:      (q.source       || "").slice(0, 60),
+      vigTitle:    q.vigTitle ? (q.vigTitle || "").slice(0, 80) : null,
+      vigBody:     (q.subIdx === 0 && q.vigBody) ? (q.vigBody || "").slice(0, 300) : null,
+      userAnswer:  q.userAnswer  || null,
+      wasCorrect:  q.wasCorrect  || false
+    }))
   };
-  const res = await fetch(BASE, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Master-Key": apiKey,
-      "X-Bin-Name": "djp-quiz-sessions",
-      "X-Bin-Private": "false"
-    },
-    body: JSON.stringify(initial)
-  });
-  if (!res.ok) throw new Error(`JSONBin CREATE failed: ${res.status}`);
-  const d = await res.json();
-  return d.metadata.id;
 }
 
 export default async (req, context) => {
@@ -69,50 +100,48 @@ export default async (req, context) => {
     });
   }
 
-  const apiKey = process.env.JSONBIN_API_KEY;
-  if (!apiKey) return new Response(JSON.stringify({ error: "Storage not configured" }), { status: 503, headers: cors });
+  const token = process.env.GITHUB_TOKEN;
+  const repo  = process.env.GITHUB_REPO;
 
-  let binId = process.env.JSONBIN_BIN_ID;
-  if (!binId) {
-    try { binId = await createBin(apiKey); }
-    catch(e) { return new Response(JSON.stringify({ error: "Could not create storage: " + e.message }), { status: 503, headers: cors }); }
+  if (!token || !repo) {
+    return new Response(JSON.stringify({ error: "GitHub storage not configured. Set GITHUB_TOKEN and GITHUB_REPO env vars." }), { status: 503, headers: cors });
   }
 
-  // ── GET /api/sessions — list sessions ──
+  // ── GET — list sessions ──
   if (req.method === "GET") {
-    const url = new URL(req.url);
+    const url      = new URL(req.url);
     const position = url.searchParams.get("position");
     const segment  = url.searchParams.get("segment");
     const id       = url.searchParams.get("id");
 
     try {
-      const data = await getBin(apiKey, binId);
+      const { content } = await getFile(token, repo);
 
-      // Fetch single session by ID
+      // Fetch single full session by ID
       if (id) {
-        const session = (data.sessions || []).find(s => s.id === id);
+        const session = (content.sessions || []).find(s => s.id === id);
         if (!session) return new Response(JSON.stringify({ error: "Session not found" }), { status: 404, headers: cors });
         return new Response(JSON.stringify(session), { status: 200, headers: cors });
       }
 
-      // List sessions with optional filter
-      let sessions = (data.sessions || []).map(s => ({
-        id: s.id,
-        position: s.position,
-        segment: s.segment,
-        segmentLabel: s.segmentLabel,
-        score: s.score,
-        totalQ: s.totalQ,
-        correct: s.correct,
-        completedAt: s.completedAt,
+      // List sessions — strip questions array for list view
+      let sessions = (content.sessions || []).map(s => ({
+        id:            s.id,
+        position:      s.position,
+        segment:       s.segment,
+        segmentLabel:  s.segmentLabel,
+        score:         s.score,
+        totalQ:        s.totalQ,
+        correct:       s.correct,
+        completedAt:   s.completedAt,
         questionCount: s.questions?.length || 0
       }));
+
       if (position) sessions = sessions.filter(s => s.position === position);
-      if (segment)  sessions = sessions.filter(s => s.segment === segment);
+      if (segment)  sessions = sessions.filter(s => s.segment  === segment);
       sessions.sort((a, b) => new Date(b.completedAt) - new Date(a.completedAt));
 
-      // Include _meta so status.js can read it without a separate call
-      const meta = data._meta || { sessionsServedTotal: 0, creditsSpentUSD: 0 };
+      const meta = content._meta || { sessionsServedTotal: 0, creditsSpentUSD: 0 };
       return new Response(JSON.stringify({ sessions, total: sessions.length, _meta: meta }), { status: 200, headers: cors });
 
     } catch(e) {
@@ -120,17 +149,17 @@ export default async (req, context) => {
     }
   }
 
-  // ── POST /api/sessions ──
+  // ── POST ──
   if (req.method === "POST") {
     let body;
     try { body = await req.json(); }
     catch { return new Response(JSON.stringify({ error: "Invalid JSON" }), { status: 400, headers: cors }); }
 
-    // action: "get" — fetch one full session
+    // action: "get" — fetch one full session by ID
     if (body.action === "get" && body.id) {
       try {
-        const data = await getBin(apiKey, binId);
-        const session = (data.sessions || []).find(s => s.id === body.id);
+        const { content } = await getFile(token, repo);
+        const session = (content.sessions || []).find(s => s.id === body.id);
         if (!session) return new Response(JSON.stringify({ error: "Session not found" }), { status: 404, headers: cors });
         return new Response(JSON.stringify(session), { status: 200, headers: cors });
       } catch(e) {
@@ -138,90 +167,46 @@ export default async (req, context) => {
       }
     }
 
-    // action: "save" — save completed session + increment _meta counters
+    // action: "save" — save completed session
     if (body.action === "save") {
       const { session } = body;
       if (!session?.id || !session?.questions?.length) {
         return new Response(JSON.stringify({ error: "Invalid session data" }), { status: 400, headers: cors });
       }
 
-      // Slim the session to stay under JSONBin 100KB limit
-      const slim = {
-        id:           session.id,
-        position:     session.position,
-        segment:      session.segment,
-        segmentLabel: session.segmentLabel,
-        score:        session.score,
-        totalQ:       session.totalQ,
-        correct:      session.correct,
-        completedAt:  session.completedAt,
-        questions: (session.questions || []).map(q => ({
-          type:        q.type,
-          caseIdx:     q.caseIdx,
-          subIdx:      q.subIdx,
-          comp:        (q.comp || "").slice(0, 50),
-          compLevel:   q.compLevel,
-          question:    (q.question    || "").slice(0, 250),
-          options:     Object.fromEntries(
-                         Object.entries(q.options || {}).map(([k,v]) => [k, (v||"").slice(0, 150)])
-                       ),
-          correct:     q.correct,
-          explanation: (q.explanation || "").slice(0, 180),
-          source:      (q.source      || "").slice(0, 60),
-          vigTitle:    q.vigTitle ? (q.vigTitle || "").slice(0, 80) : null,
-          vigBody:     (q.subIdx === 0 && q.vigBody) ? (q.vigBody || "").slice(0, 300) : null,
-          userAnswer:  q.userAnswer || null,
-          wasCorrect:  q.wasCorrect || false
-        }))
-      };
-
-      let sizeKB = Math.round(JSON.stringify(slim).length / 1024);
-
-      // If still too large, apply emergency truncation
-      if (sizeKB > 88) {
-        slim.questions = slim.questions.map(q => ({
-          ...q,
-          question:    (q.question    || "").slice(0, 160),
-          options:     Object.fromEntries(Object.entries(q.options||{}).map(([k,v])=>[k,(v||"").slice(0,100)])),
-          explanation: (q.explanation || "").slice(0, 100),
-          vigBody:     q.vigBody ? (q.vigBody||"").slice(0, 150) : null,
-        }));
-        sizeKB = Math.round(JSON.stringify(slim).length / 1024);
-      }
-
-      if (sizeKB > 95) {
-        return new Response(JSON.stringify({ error: `Session too large: ${sizeKB}KB even after truncation. Max 95KB.` }), { status: 413, headers: cors });
-      }
+      const slim = slimSession(session);
 
       try {
-        const data = await getBin(apiKey, binId);
+        // Read current file (with sha for update)
+        const { content, sha } = await getFile(token, repo);
 
-        // Update sessions array
-        const sessions = data.sessions || [];
-        const isNew = sessions.findIndex(s => s.id === slim.id) < 0;
-        const idx = sessions.findIndex(s => s.id === slim.id);
-        if (idx >= 0) sessions[idx] = slim;
-        else sessions.push(slim);
-        if (sessions.length > 100) sessions.splice(0, sessions.length - 100);
+        const sessions = content.sessions || [];
+        const existingIdx = sessions.findIndex(s => s.id === slim.id);
+        const isNew = existingIdx < 0;
 
-        // Update _meta — only increment for genuinely new sessions, not re-saves
-        const meta = data._meta || { sessionsServedTotal: 0, creditsSpentUSD: 0 };
+        if (isNew) sessions.push(slim);
+        else sessions[existingIdx] = slim;
+
+        // Keep latest 150 sessions
+        if (sessions.length > 150) sessions.splice(0, sessions.length - 150);
+
+        // Update _meta only for new sessions
+        const meta = content._meta || { sessionsServedTotal: 0, creditsSpentUSD: 0 };
         if (isNew) {
           meta.sessionsServedTotal = (meta.sessionsServedTotal || 0) + 1;
-          meta.creditsSpentUSD = parseFloat(((meta.creditsSpentUSD || 0) + COST_PER_SESSION).toFixed(4));
+          meta.creditsSpentUSD    = parseFloat(((meta.creditsSpentUSD || 0) + COST_PER_SESSION).toFixed(4));
         }
         meta.lastUpdated = new Date().toISOString();
 
-        await updateBin(apiKey, binId, { _meta: meta, sessions });
+        await putFile(token, repo, { _meta: meta, sessions }, sha);
 
+        const sizeKB = Math.round(JSON.stringify(slim).length / 1024);
         return new Response(JSON.stringify({
           ok: true,
           id: slim.id,
           sizeKB,
-          meta: {
-            sessionsServedTotal: meta.sessionsServedTotal,
-            creditsSpentUSD: meta.creditsSpentUSD
-          }
+          storage: "github",
+          meta: { sessionsServedTotal: meta.sessionsServedTotal, creditsSpentUSD: meta.creditsSpentUSD }
         }), { status: 200, headers: cors });
 
       } catch(e) {

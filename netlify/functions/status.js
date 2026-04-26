@@ -1,23 +1,16 @@
 /*
-  ENV VARS (set in Netlify dashboard):
-  - CREDIT_BALANCE_USD   : your current balance e.g. "5.00"  (update manually after top-up)
-  - SESSIONS_SERVED      : running total of sessions completed (you can reset to 0 anytime)
-
-  Cost model (claude-sonnet-4-5, as of 2025):
-  - Input:  $3.00 / 1M tokens
-  - Output: $15.00 / 1M tokens
-  Per 60-question session estimate:
-  - ~90k input tokens (65 prompts × ~1400 tokens each)
-  - ~25k output tokens (65 responses × ~385 tokens each)
-  → ~$0.27 + $0.375 ≈ $0.64 per session (conservative)
-  We store this as COST_PER_SESSION env var so you can tune it.
+  ENV VARS:
+  CREDIT_BALANCE_USD  — your current Anthropic credit balance (update manually after top-up)
+  COST_PER_SESSION    — cost per 60-question session in USD (default: 0.40)
+  GITHUB_TOKEN        — Personal Access Token with repo scope
+  GITHUB_REPO         — e.g. "YourUsername/djp-quiz"
 */
 
-// Simple in-memory concurrent user tracking (resets on cold start — intentional,
-// Netlify functions are ephemeral. Good enough for a live indicator.)
+const DATA_PATH = "data/sessions.json";
+
 let activeSessions = new Set();
-const HEARTBEAT_TTL = 30000; // 30s — clients ping every 20s
 const sessionTimestamps = new Map();
+const HEARTBEAT_TTL = 30000;
 
 function pruneStale() {
   const now = Date.now();
@@ -26,6 +19,26 @@ function pruneStale() {
       activeSessions.delete(id);
       sessionTimestamps.delete(id);
     }
+  }
+}
+
+async function fetchMeta(token, repo) {
+  if (!token || !repo) return null;
+  try {
+    const url = `https://api.github.com/repos/${repo}/contents/${DATA_PATH}`;
+    const res = await fetch(url, {
+      headers: {
+        "Authorization": `Bearer ${token}`,
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28"
+      }
+    });
+    if (!res.ok) return null;
+    const file = await res.json();
+    const data = JSON.parse(Buffer.from(file.content, "base64").toString("utf8"));
+    return data._meta || null;
+  } catch {
+    return null;
   }
 }
 
@@ -57,26 +70,34 @@ export default async (req, context) => {
   }
 
   // GET — return full status
-  const balanceRaw   = parseFloat(process.env.CREDIT_BALANCE_USD || "0");
-  const costPerSess  = parseFloat(process.env.COST_PER_SESSION   || "0.40");
-  const served       = parseInt(process.env.SESSIONS_SERVED      || "0", 10);
+  const balanceRaw  = parseFloat(process.env.CREDIT_BALANCE_USD || "0");
+  const costPerSess = parseFloat(process.env.COST_PER_SESSION   || "0.40");
+  const token       = process.env.GITHUB_TOKEN;
+  const repo        = process.env.GITHUB_REPO;
 
-  const sessionsLeft = balanceRaw > 0 ? Math.floor(balanceRaw / costPerSess) : 0;
-  const pctRemaining = balanceRaw > 0
-    ? Math.min(100, Math.round((sessionsLeft / Math.max(sessionsLeft + served, 1)) * 100))
+  const meta           = await fetchMeta(token, repo);
+  const creditsSpent   = meta ? parseFloat(meta.creditsSpentUSD  || 0) : 0;
+  const sessionsServed = meta ? parseInt(meta.sessionsServedTotal || 0) : 0;
+
+  const remainingBalance = Math.max(0, balanceRaw - creditsSpent);
+  const sessionsLeft     = remainingBalance > 0 ? Math.floor(remainingBalance / costPerSess) : 0;
+  const pctRemaining     = balanceRaw > 0
+    ? Math.min(100, Math.round((remainingBalance / balanceRaw) * 100))
     : 0;
 
-  // Health level: green ≥40%, amber 15–39%, red <15%
   const health = pctRemaining >= 40 ? "good" : pctRemaining >= 15 ? "low" : "critical";
 
   return new Response(JSON.stringify({
-    balance: balanceRaw.toFixed(2),
-    costPerSession: costPerSess.toFixed(2),
+    balance:          balanceRaw.toFixed(2),
+    creditsSpent:     creditsSpent.toFixed(4),
+    remainingBalance: remainingBalance.toFixed(4),
+    costPerSession:   costPerSess.toFixed(2),
     sessionsLeft,
-    sessionsServed: served,
+    sessionsServed,
     pctRemaining,
     health,
-    concurrent: activeSessions.size
+    concurrent:  activeSessions.size,
+    metaSource:  meta ? "github" : "fallback"
   }), { status: 200, headers: cors });
 };
 
