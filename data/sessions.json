@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "sessionsServedTotal": 6,
-    "creditsSpentUSD": 2.4,
-    "lastUpdated": "2026-04-27T05:23:33.873Z"
+    "sessionsServedTotal": 7,
+    "creditsSpentUSD": 2.8,
+    "lastUpdated": "2026-04-27T09:31:30.450Z"
   },
   "sessions": [
     {
@@ -7150,6 +7150,1199 @@
           "correct": "c",
           "explanation": "Level 2 Advokasi Kebijakan Perpajakan mengharuskan Kasi Pengawasan menganalisis data WP untuk memahami permasalahan spesifik mereka. Setelah analisis, menyusun rencana sosialisasi ",
           "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "SES-9ZYK2Y",
+      "position": "Kepala Kantor Pelayanan Pajak",
+      "segment": "B",
+      "segmentLabel": "Jabatan Administrator",
+      "score": 95,
+      "totalQ": 60,
+      "correct": 57,
+      "completedAt": "2026-04-27T09:31:28.859Z",
+      "questions": [
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 0,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala KPP Pratama Jakarta Pusat yang mendapat arahan mengawasi 150 wajib pajak besar, apa masalah utama yang harus diidentifikasi terlebih dahulu?",
+          "options": {
+            "a": "Keterbatasan jumlah account representative (AR) dan kompetensi SDM dalam menangani wajib pajak besar secara intensif",
+            "b": "Lokasi kantor yang kurang strategis untuk melayani wajib pajak besar",
+            "c": "Kurangnya fasilitas komputer di kantor untuk input data",
+            "d": "Tingkat kepatuhan wajib pajak kecil yang masih rendah"
+          },
+          "correct": "a",
+          "explanation": "Kapasitas dan kompetensi SDM merupakan fondasi utama keberhasilan pengawasan intensif terhadap wajib pajak besar yang kompleks.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Resistensi Implementasi Kebijakan Pengawasan Wajib Pajak Besar",
+          "vigBody": "Sebagai Kepala KPP Pratama Jakarta Pusat, Anda mendapat arahan DJP untuk mengimplementasikan kebijakan baru pengawasan intensif terhadap 150 wajib pajak besar dengan omzet di atas Rp50 miliar. Kebijakan ini memerlukan redistribusi AR dan perubahan fokus pengawasan dari 400 WP UMKM. Kepala Seksi Peng",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 1,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Data manakah yang paling relevan untuk dianalisis dalam menyusun strategi pengawasan intensif 150 wajib pajak besar tersebut?",
+          "options": {
+            "a": "Data jumlah kunjungan wajib pajak ke TPT dalam 6 bulan terakhir",
+            "b": "Profil risiko kepatuhan, rasio pajak, benchmarking industri, dan riwayat pemeriksaan 5 tahun terakhir dari 150 wajib pajak tersebut",
+            "c": "Data jumlah pegawai KPP yang sudah mengikuti diklat umum",
+            "d": "Statistik penggunaan e-filing oleh wajib pajak orang pribadi"
+          },
+          "correct": "b",
+          "explanation": "Data profil risiko komprehensif memungkinkan pemetaan prioritas pengawasan dan alokasi sumber daya yang efektif untuk wajib pajak besar.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Resistensi Implementasi Kebijakan Pengawasan Wajib Pajak Besar",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 2,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Dalam mengevaluasi alternatif solusi pengawasan intensif, pendekatan manakah yang paling optimal untuk diterapkan?",
+          "options": {
+            "a": "Melakukan pemeriksaan pajak serentak terhadap seluruh 150 wajib pajak",
+            "b": "Mengirim surat himbauan massal kepada semua wajib pajak besar",
+            "c": "Menerapkan stratifikasi risiko dengan kombinasi visit, himbauan, konseling, dan pemeriksaan berbasis risiko secara bertahap",
+            "d": "Menyerahkan seluruh pengawasan kepada Kanwil DJP"
+          },
+          "correct": "c",
+          "explanation": "Pendekatan bertingkat berbasis risiko mengoptimalkan sumber daya terbatas dan memberikan treatment sesuai profil kepatuhan masing-masing wajib pajak.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Resistensi Implementasi Kebijakan Pengawasan Wajib Pajak Besar",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 3,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut apa yang paling strategis untuk memastikan keberhasilan implementasi kebijakan pengawasan intensif ini?",
+          "options": {
+            "a": "Mengusulkan penambahan pegawai baru sebanyak 50 orang",
+            "b": "Memindahkan semua AR dari seksi lain ke seksi pengawasan",
+            "c": "Membentuk tim khusus lintas seksi, menyusun roadmap pengawasan 12 bulan dengan milestone terukur, serta mengusulkan pelatihan spesialisasi industri un",
+            "d": "Menunggu arahan teknis lebih lanjut dari Kantor Pusat DJP"
+          },
+          "correct": "d",
+          "explanation": "Pendekatan holistik dengan tim khusus, perencanaan terstruktur, dan peningkatan kompetensi SDM memastikan pengawasan berjalan efektif dan berkelanjutan.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Resistensi Implementasi Kebijakan Pengawasan Wajib Pajak Besar",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 4,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Risiko prosedural apa yang harus dimitigasi dalam pelaksanaan pengawasan intensif terhadap wajib pajak besar ini?",
+          "options": {
+            "a": "Risiko kehabisan kertas untuk mencetak surat",
+            "b": "Kemungkinan pegawai terlambat datang ke kantor",
+            "c": "Potensi pelanggaran hak wajib pajak jika pengawasan tidak sesuai SOP, risiko kebocoran data rahasia perpajakan, dan ketidakseragaman treatment yang da",
+            "d": "Kemungkinan sistem e-filing mengalami gangguan teknis"
+          },
+          "correct": "c",
+          "explanation": "Kepatuhan pada SOP, kerahasiaan data, dan konsistensi perlakuan adalah aspek krusial untuk menghindari sengketa hukum dan menjaga kepercayaan publik dalam pengawasan pajak.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Resistensi Implementasi Kebijakan Pengawasan Wajib Pajak Besar",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 0,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "Berdasarkan skenario penurunan rasio kepatuhan formal sektor manufaktur dari 78% menjadi 65%, apa masalah utama yang harus diidentifikasi terlebih dahulu?",
+          "options": {
+            "a": "Perubahan kebijakan perpajakan nasional yang berlaku untuk semua sektor",
+            "b": "Pola keterlambatan atau ketidaklengkapan pelaporan SPT oleh Wajib Pajak manufaktur dalam semester tersebut",
+            "c": "Penurunan penerimaan pajak secara keseluruhan di wilayah Jakarta Barat",
+            "d": "Kurangnya jumlah Account Representative di KPP Pratama"
+          },
+          "correct": "b",
+          "explanation": "Kepatuhan formal berkaitan langsung dengan pelaporan SPT, sehingga identifikasi pola pelaporan sektor manufaktur menjadi prioritas untuk menemukan akar masalah penurunan tersebut.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": "Evaluasi Pola Kepatuhan Sektor Industri Wilayah KPP",
+          "vigBody": "Sebagai Kepala KPP Pratama Jakarta Barat Satu, Anda mengidentifikasi tren penurunan rasio kepatuhan formal sektor industri manufaktur dari 78% menjadi 65% dalam semester pertama 2024. Data menunjukkan 45 dari 120 WP besar seperti PT Karya Mandiri Sejahtera dan PT Indah Tekstil Prima terlambat lapor ",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 1,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "Data relevan apa yang paling krusial untuk dianalisis dalam mengevaluasi penurunan kepatuhan formal sektor manufaktur?",
+          "options": {
+            "a": "Data pembayaran pajak karyawan sektor manufaktur",
+            "b": "Jumlah kunjungan Wajib Pajak ke KPP dalam semester tersebut",
+            "c": "Data tingkat inflasi dan pertumbuhan ekonomi nasional",
+            "d": "Segmentasi Wajib Pajak manufaktur berdasarkan omzet, jenis industri, dan histori pelaporan SPT masa dan tahunan"
+          },
+          "correct": "d",
+          "explanation": "Segmentasi WP manufaktur memberikan gambaran komprehensif untuk mengidentifikasi kelompok mana yang paling berkontribusi pada penurunan kepatuhan dan pola spesifik yang terjadi.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": "Evaluasi Pola Kepatuhan Sektor Industri Wilayah KPP",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 2,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "Dari alternatif solusi berikut, mana yang paling efektif untuk mengatasi penurunan kepatuhan formal sektor manufaktur berdasarkan analisis data?",
+          "options": {
+            "a": "Implementasi strategi edukasi tersegmentasi dan reminder otomatis berbasis profil risiko ketidakpatuhan, disertai bimbingan teknis untuk kelompok WP t",
+            "b": "Menambah jumlah Account Representative tanpa analisis penyebab spesifik",
+            "c": "Melakukan pemeriksaan pajak secara massal terhadap seluruh WP manufaktur",
+            "d": "Menurunkan sanksi administrasi untuk meningkatkan daya tarik pelaporan"
+          },
+          "correct": "a",
+          "explanation": "Solusi tersegmentasi dan preventif lebih efektif karena menangani akar masalah dengan pendekatan edukatif sambil menjaga enforcement melalui sistem reminder dan bimbingan yang tepa",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": "Evaluasi Pola Kepatuhan Sektor Industri Wilayah KPP",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 3,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "Sebagai Kepala KPP, rekomendasi tindak lanjut apa yang harus Anda prioritaskan untuk meningkatkan kepatuhan formal dalam 3 bulan ke depan?",
+          "options": {
+            "a": "Membentuk tim khusus untuk audit intensif semua WP manufaktur yang tidak patuh",
+            "b": "Membentuk task force untuk melakukan mapping WP berisiko tinggi, intensifikasi himbauan, konseling pajak, dan penegakan hukum bertahap dengan monitori",
+            "c": "Melakukan relokasi Account Representative ke sektor lain yang lebih patuh",
+            "d": "Mengajukan perubahan regulasi perpajakan sektor manufaktur ke kantor pusat"
+          },
+          "correct": "b",
+          "explanation": "Task force dengan pendekatan bertahap (mapping, himbauan, konseling, enforcement) disertai monitoring rutin memberikan solusi komprehensif dan terukur untuk meningkatkan kepatuhan ",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": "Evaluasi Pola Kepatuhan Sektor Industri Wilayah KPP",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 4,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "Risiko prosedural apa yang harus diantisipasi dalam implementasi program peningkatan kepatuhan formal sektor manufaktur?",
+          "options": {
+            "a": "Perubahan struktur organisasi KPP yang harus dilakukan",
+            "b": "Penurunan jumlah kunjungan WP ke KPP selama program berjalan",
+            "c": "Peningkatan biaya operasional KPP yang tidak signifikan",
+            "d": "Potensi gugatan hukum dari WP akibat prosedur enforcement yang tidak sesuai ketentuan formal, serta inkonsistensi penerapan sanksi yang dapat menimbul"
+          },
+          "correct": "d",
+          "explanation": "Risiko prosedural terbesar adalah ketidaksesuaian dengan aturan formal dalam proses enforcement dan inkonsistensi penerapan sanksi yang dapat menimbulkan sengketa hukum dan merusak",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": "Evaluasi Pola Kepatuhan Sektor Industri Wilayah KPP",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 0,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Apa masalah utama yang harus diidentifikasi oleh Kepala KPP Pratama Jakarta Sudirman dari laporan Kanwil DJP Jakarta Khusus?",
+          "options": {
+            "a": "Tingginya tingkat pembatalan SKP di tingkat banding yang mengindikasikan lemahnya kualitas pemeriksaan atau penetapan pajak",
+            "b": "Rendahnya kepatuhan wajib pajak dalam melaporkan SPT Tahunan",
+            "c": "Kurangnya jumlah petugas pemeriksa pajak di KPP Pratama",
+            "d": "Tidak optimalnya penerimaan pajak dari sektor usaha tertentu"
+          },
+          "correct": "a",
+          "explanation": "Masalah utama adalah tingginya pembatalan SKP di banding yang menunjukkan adanya kelemahan dalam proses pemeriksaan, penelitian, atau penetapan pajak oleh KPP.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Kualitas Layanan Berkas Keberatan dan Banding",
+          "vigBody": "Kepala KPP Pratama Jakarta Sudirman menerima laporan dari Kanwil DJP Jakarta Khusus mengenai tingginya tingkat pembatalan Surat Ketetapan Pajak di tingkat banding selama semester I tahun 2024. Data menunjukkan 15 dari 23 kasus banding dimenangkan wajib pajak dengan total nilai Rp 8,4 miliar. Analisi",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 1,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Data apa yang paling relevan untuk dianalisis guna mengidentifikasi akar penyebab tingginya pembatalan SKP di tingkat banding?",
+          "options": {
+            "a": "Jumlah wajib pajak terdaftar dan tingkat kepatuhan pelaporan SPT",
+            "b": "Data pembayaran pajak bulanan dan realisasi penerimaan pajak",
+            "c": "Rincian jenis SKP yang dibatalkan, dasar pembatalan, dan performa pemeriksa pajak yang menerbitkan SKP tersebut",
+            "d": "Jumlah surat teguran dan surat paksa yang diterbitkan semester I"
+          },
+          "correct": "c",
+          "explanation": "Analisis jenis SKP, alasan pembatalan, dan performa pemeriksa pajak memberikan informasi spesifik untuk menemukan pola dan akar masalah pembatalan SKP.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Kualitas Layanan Berkas Keberatan dan Banding",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 2,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Manakah alternatif solusi yang paling tepat untuk mengatasi tingginya pembatalan SKP di tingkat banding?",
+          "options": {
+            "a": "Meningkatkan target penerimaan pajak untuk mengkompensasi SKP yang dibatalkan",
+            "b": "Mengurangi jumlah pemeriksaan pajak untuk meminimalkan risiko banding",
+            "c": "Mempercepat proses penerbitan SKP tanpa review mendalam agar target tercapai",
+            "d": "Melakukan quality assurance SKP sebelum diterbitkan, pelatihan intensif pemeriksa, dan penguatan supervisi proses pemeriksaan"
+          },
+          "correct": "d",
+          "explanation": "Quality assurance, pelatihan, dan supervisi adalah solusi sistemik yang memperbaiki kualitas SKP dan mengurangi risiko pembatalan di tingkat banding.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Kualitas Layanan Berkas Keberatan dan Banding",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 3,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut apa yang harus segera dilakukan Kepala KPP kepada Kanwil DJP Jakarta Khusus?",
+          "options": {
+            "a": "Mengusulkan pembentukan tim khusus untuk menelaah ulang proses bisnis pemeriksaan dan membangun mekanisme review berjenjang sebelum SKP diterbitkan",
+            "b": "Meminta perpanjangan waktu penyelesaian pemeriksaan pajak untuk semua kasus",
+            "c": "Mengajukan penambahan anggaran untuk merekrut lebih banyak account representative",
+            "d": "Menghentikan sementara seluruh kegiatan pemeriksaan hingga masalah terselesaikan"
+          },
+          "correct": "a",
+          "explanation": "Pembentukan tim khusus dan mekanisme review berjenjang merupakan langkah strategis dan terstruktur untuk mencegah kesalahan berulang dalam penerbitan SKP.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Kualitas Layanan Berkas Keberatan dan Banding",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 4,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Risiko prosedural apa yang perlu dimitigasi jika KPP tidak segera menindaklanjuti tingginya pembatalan SKP?",
+          "options": {
+            "a": "Berkurangnya jumlah pemeriksaan pajak yang dapat dilakukan di semester berikutnya",
+            "b": "Meningkatnya jumlah wajib pajak yang mendaftar di KPP lain",
+            "c": "Potensi penurunan kredibilitas DJP, kerugian penerimaan negara, dan risiko sanksi administratif bagi pejabat yang terkait dengan penerbitan SKP yang c",
+            "d": "Penurunan kinerja sistem aplikasi perpajakan online"
+          },
+          "correct": "c",
+          "explanation": "Pembatalan SKP yang tinggi berdampak pada kredibilitas institusi, potensi loss penerimaan negara, dan dapat berujung pada sanksi administratif sesuai regulasi kepegawaian dan perpa",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Kualitas Layanan Berkas Keberatan dan Banding",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 0,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "Sebagai Kepala KPP Pratama Jakarta Timur, apa identifikasi masalah utama dari laporan realisasi penerimaan pajak sektor properti yang baru mencapai 65% dari target?",
+          "options": {
+            "a": "Kurangnya jumlah pegawai di Seksi Pengawasan dan Konsultasi",
+            "b": "Adanya gap penerimaan pajak sektor properti sebesar 35% yang mengindikasikan potensi pajak belum tergali optimal",
+            "c": "Target penerimaan pajak yang ditetapkan terlalu tinggi dan tidak realistis",
+            "d": "Sistem administrasi perpajakan yang sudah ketinggalan zaman"
+          },
+          "correct": "b",
+          "explanation": "Masalah utama adalah gap 35% yang menunjukkan potensi pajak sektor properti belum terkelola optimal dan perlu analisis mendalam untuk mengidentifikasi penyebab shortfall.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": "Optimalisasi Potensi Pajak Sektor Properti Wilayah KPP",
+          "vigBody": "Anda adalah Kepala KPP Pratama Jakarta Timur yang menerima laporan dari Seksi Pengawasan dan Konsultasi bahwa realisasi penerimaan pajak sektor properti baru mencapai 65% dari target Rp 450 miliar per triwulan III. Seksi Ekstensifikasi menemukan 87 developer baru belum terdaftar, sementara Seksi PDI",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 1,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "Data relevan apa yang paling prioritas untuk dianalisis guna memahami penyebab rendahnya realisasi penerimaan pajak sektor properti?",
+          "options": {
+            "a": "Data Wajib Pajak sektor properti, tingkat kepatuhan, transaksi properti, dan hasil pemeriksaan/penagihan",
+            "b": "Perbandingan realisasi penerimaan sektor properti dengan sektor lain di wilayah yang sama",
+            "c": "Data absensi pegawai Seksi Pengawasan dan Konsultasi",
+            "d": "Data anggaran belanja operasional KPP Pratama Jakarta Timur"
+          },
+          "correct": "a",
+          "explanation": "Data compliance WP properti, volume transaksi, dan hasil pengawasan memberikan gambaran komprehensif tentang potensi pajak yang belum tergali dan tingkat kepatuhan sektor.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": "Optimalisasi Potensi Pajak Sektor Properti Wilayah KPP",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 2,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "Dalam mengevaluasi alternatif solusi untuk meningkatkan penerimaan pajak sektor properti, strategi mana yang paling efektif dan berkelanjutan?",
+          "options": {
+            "a": "Menaikkan target penerimaan pajak sektor properti untuk periode berikutnya",
+            "b": "Mengintegrasikan data transaksi properti eksternal, melakukan profiling WP berisiko tinggi, dan intensifikasi pengawasan berbasis risiko",
+            "c": "Melakukan pemeriksaan massal terhadap semua Wajib Pajak sektor properti tanpa analisis risiko",
+            "d": "Menunda penagihan pajak untuk memberikan kelonggaran kepada sektor properti"
+          },
+          "correct": "b",
+          "explanation": "Pendekatan berbasis risiko dengan integrasi data eksternal dan profiling WP memastikan sumber daya digunakan efisien untuk menggali potensi pajak tertinggi secara terukur dan berke",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": "Optimalisasi Potensi Pajak Sektor Properti Wilayah KPP",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 3,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "Rekomendasi tindak lanjut apa yang paling strategis untuk dilaporkan kepada Kanwil DJP terkait upaya peningkatan penerimaan pajak sektor properti?",
+          "options": {
+            "a": "Mengusulkan pengurangan target penerimaan pajak sektor properti sebesar 35%",
+            "b": "Meminta penambahan pegawai untuk meningkatkan kapasitas pengawasan",
+            "c": "Menyusun action plan komprehensif berisi analisis gap, pemetaan potensi, strategi intensifikasi-ekstensifikasi, dan timeline implementasi dengan targe",
+            "d": "Melaporkan bahwa target tidak tercapai karena kondisi ekonomi yang sulit",
+            "e": ""
+          },
+          "correct": "c",
+          "explanation": "Action plan komprehensif menunjukkan kepemimpinan proaktif dengan solusi terstruktur, terukur, dan dapat dimonitor oleh Kanwil untuk memastikan pencapaian target penerimaan.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": "Optimalisasi Potensi Pajak Sektor Properti Wilayah KPP",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 4,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "Dari aspek prosedural dan manajemen risiko, apa yang harus diperhatikan Kepala KPP dalam mengimplementasikan strategi peningkatan penerimaan pajak sektor properti?",
+          "options": {
+            "a": "Mengutamakan kecepatan penagihan dengan mengabaikan due process hukum",
+            "b": "Fokus hanya pada pencapaian target tanpa memperhatikan aspek kepatuhan prosedur",
+            "c": "Mendelegasikan seluruh tanggung jawab kepada Seksi Pengawasan dan Konsultasi",
+            "d": "Memastikan seluruh tindakan pengawasan dan penagihan sesuai prosedur hukum, menghindari penyalahgunaan wewenang, dan mendokumentasikan setiap langkah "
+          },
+          "correct": "d",
+          "explanation": "Kepatuhan prosedur dan dokumentasi yang baik melindungi institusi dari risiko hukum, menjaga integritas proses perpajakan, dan memastikan tindakan dapat dipertanggungjawabkan secar",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": "Optimalisasi Potensi Pajak Sektor Properti Wilayah KPP",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Bandung Karees mengalami lonjakan pengajuan surat keterangan fiskal sebesar 180% dalam sebulan terakhir, menyebabkan keterlambatan penyelesaian hingga 25 hari dari standar 5 hari kerja. Hasil analisis dokumen menunjukkan 62% berkas tidak ",
+          "options": {
+            "a": "Menambah tenaga operator di Seksi Pelayanan dan memperpanjang jam kerja pelayanan hingga malam hari untuk mengejar tunggakan berkas",
+            "b": "Mengembalikan semua berkas tidak lengkap kepada wajib pajak dan fokus menyelesaikan berkas lengkap terlebih dahulu sesuai urutan antrian",
+            "c": "Membentuk tim lintas seksi dengan SOP terintegrasi, menetapkan checklist kelengkapan berkas di front office, dan melakukan koordinasi harian untuk mon",
+            "d": "Mengusulkan penambahan pegawai baru ke Kanwil dan sementara menghentikan penerimaan berkas baru sampai tunggakan selesai"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan kemampuan memecahkan masalah teknis melalui koordinasi lintas seksi dan membimbing penyelesaian sistematis. Pembentukan tim lintas seksi dengan SOP terintegras",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Surabaya Rungkut menerima temuan dari Tim Quality Assurance bahwa terdapat 127 berkas keberatan yang telah melewati batas waktu penelitian administratif 5 hari sebagaimana diatur dalam PER-11/PJ/2015. Berkas tersebut tersebar di 3 seksi b",
+          "options": {
+            "a": "Menugaskan Kepala Seksi Pelayanan untuk segera memproses semua berkas keberatan tersebut secara manual dan melaporkan hasilnya kepada Kanwil",
+            "b": "Menyelenggarakan rapat koordinasi lintas seksi untuk memetakan akar masalah per kategori, menetapkan skema prioritas penyelesaian, dan membentuk tim a",
+            "c": "Membuat surat permohonan perpanjangan waktu penelitian kepada Kanwil mengingat keterbatasan SDM dan masalah teknis yang dihadapi oleh seluruh seksi",
+            "d": "Mendelegasikan penyelesaian masalah kepada masing-masing Kepala Seksi terkait untuk diselesaikan secara internal tanpa intervensi langsung dari Kepala"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan koordinasi lintas seksi untuk memecahkan masalah teknis kompleks yang melibatkan berbagai unit. Pendekatan sistematis melalui rapat ",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Medan Polonia menerima keluhan masif dari wajib pajak UMKM terkait kesulitan implementasi PMK baru tentang batasan PKP yang baru ditetapkan. Sebagai Kepala KPP, Anda diminta menyusun rekomendasi kebijakan untuk level Kanwil. Langkah advok",
+          "options": {
+            "a": "Langsung menyurati Direktorat Jenderal Pajak untuk merevisi PMK tanpa koordinasi dengan Kanwil",
+            "b": "Menyerahkan penanganan keluhan sepenuhnya kepada Seksi Pelayanan tanpa melakukan eskalasi kebijakan",
+            "c": "Menunda implementasi PMK di wilayah KPP sampai ada klarifikasi resmi dari pusat",
+            "d": "Menyelenggarakan forum koordinasi lintas seksi untuk mengidentifikasi pola keluhan, membimbing tim menyusun analisis dampak regulasi berbasis data lap"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan koordinasi lintas seksi untuk memecahkan masalah teknis implementasi kebijakan. Kepala KPP harus membimbing tim menyusun rekomendasi ber",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Makassar Utara mengidentifikasi 5 sektor usaha dominan di wilayah kerjanya menunjukkan tren penurunan rasio kepatuhan formal dan material selama 3 tahun terakhir, sementara data eksternal BPS menunjukkan pertumbuhan ekonomi sektor tersebu",
+          "options": {
+            "a": "Menyusun standar operasional prosedur (SOP) analisis kepatuhan berbasis risiko per sektor, merancang profil kepatuhan sektoral terintegrasi, dan merek",
+            "b": "Membentuk tim gabungan dari Seksi Pengawasan dan Penagihan untuk melakukan pemeriksaan massal terhadap seluruh Wajib Pajak di 5 sektor tersebut secara",
+            "c": "Meningkatkan frekuensi himbauan dan penyuluhan kepada asosiasi pengusaha di 5 sektor tersebut sambil menunggu arahan kebijakan lebih lanjut dari Kanto",
+            "d": "Mengirimkan surat teguran massal kepada semua Wajib Pajak di 5 sektor dan mengusulkan sanksi administratif kepada Kanwil untuk memberikan efek jera"
+          },
+          "correct": "a",
+          "explanation": "Level 4 menuntut kemampuan mengevaluasi sistem kerja dan menyusun standar kinerja lintas seksi dengan pendekatan strategis. Menyusun SOP analisis kepatuhan berbasis risiko sektoral",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Tangerang Barat menghadapi situasi kompleks: Seksi Pelayanan melaporkan 127 WP yang dokumen persyaratan restitusi tidak lengkap dalam 2 bulan terakhir, Seksi Pengawasan dan Konsultasi menemukan pola kesalahan serupa pada pengisian formuli",
+          "options": {
+            "a": "Menganalisis seluruh berkas restitusi 127 WP secara individual dan meminta setiap seksi membuat laporan terpisah untuk diselesaikan sesuai SOP masing-",
+            "b": "Menyelenggarakan koordinasi lintas seksi untuk menganalisis sampel representatif dokumen dari ketiga kelompok, mengidentifikasi pola kesalahan sistemi",
+            "c": "Mendelegasikan analisis dokumen kepada masing-masing kepala seksi dan meminta mereka menyelesaikan masalah di unit kerjanya tanpa perlu koordinasi khu",
+            "d": "Fokus menganalisis dokumen restitusi terlebih dahulu karena paling banyak kasusnya, baru setelah selesai menangani masalah pengisian formulir dan pena"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan koordinasi lintas seksi untuk memecahkan masalah teknis kompleks yang bersifat sistemik. Analisis terintegrasi terhadap sampel repre",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Denpasar Timur menemukan 847 objek pajak hotel dan villa baru dari pemetaan digital yang belum terdaftar. Seksi Ekstensifikasi mengusulkan pendataan serentak, namun Seksi Pelayanan keberatan karena loket sudah overload. Seksi Pengawasan m",
+          "options": {
+            "a": "Memerintahkan Seksi Ekstensifikasi untuk tetap melakukan pendataan serentak sesuai rencana awal, karena target ekstensifikasi adalah prioritas utama K",
+            "b": "Membagi tugas secara terpisah: Seksi Ekstensifikasi fokus pendataan lapangan, Seksi Pelayanan hanya terima pendaftaran, tanpa perlu koordinasi lebih l",
+            "c": "Menunda seluruh kegiatan ekstensifikasi sampai Seksi Pelayanan menyelesaikan backlog loket terlebih dahulu agar tidak menambah beban kerja",
+            "d": "Menyelenggarakan rapat koordinasi lintas seksi untuk menyusun skema bertahap: gelombang pertama objek high-value dengan dukungan tim gabungan, sambil "
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan koordinasi lintas seksi dalam memecahkan masalah teknis kompleks dengan pendekatan integratif. Solusi skema bertahap dengan tim gabungan menunjukkan kemampuan ",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Semarang Candisari menemukan inkonsistensi data dalam 320 dokumen SPT Tahunan Badan yang dilaporkan oleh konsultan pajak X, di mana terdapat perbedaan signifikan antara laporan keuangan yang dilampirkan dengan data transaksi di sistem e-F",
+          "options": {
+            "a": "Membentuk tim gabungan Seksi Pelayanan, PDI, dan Ekstensifikasi untuk melakukan analisis komprehensif dokumen, pemetaan risiko per wajib pajak, kemudi",
+            "b": "Langsung menerbitkan Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) kepada seluruh 320 wajib pajak secara serentak dan menyampaikan",
+            "c": "Menugaskan Seksi PDI untuk fokus menangani 45 wajib pajak potensial saja dan mengabaikan sementara 275 wajib pajak lainnya sambil menunggu arahan lebi",
+            "d": "Mengundang konsultan pajak X untuk memberikan klarifikasi secara informal dan memberikan kesempatan memperbaiki semua dokumen dalam waktu 30 hari tanp"
+          },
+          "correct": "a",
+          "explanation": "Kepala KPP Level 3 harus menyelenggarakan koordinasi lintas seksi (Pelayanan, PDI, Ekstensifikasi) untuk memecahkan masalah teknis kompleks dengan pendekatan bertahap dan terstrukt",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Palembang Ilir Barat menemukan 230 bangunan komersial di kawasan sepanjang Jalan Sudirman tidak terdaftar sebagai objek pajak. Data diperoleh dari citra satelit dan survei lapangan, namun terdapat kendala karena 3 kelurahan menolak member",
+          "options": {
+            "a": "Menunda ekstensifikasi hingga seluruh data kelurahan dan Dispenda tersedia lengkap, kemudian melakukan pendaftaran massal sekaligus untuk efisiensi ad",
+            "b": "Mendelegasikan seluruh proses negosiasi data kepada Seksi Ekstensifikasi dan fokus pada target kuantitas pendaftaran objek pajak tanpa mempertimbangka",
+            "c": "Mengkoordinasikan rapat tripartit dengan Pemda dan kelurahan untuk menyepakati protokol pertukaran data sesuai ketentuan privasi, sambil memulai penda",
+            "d": "Menggunakan kewenangan formal untuk memaksa kelurahan menyerahkan data dengan mengancam sanksi administratif, dan mengabaikan permintaan Dispenda kare"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan koordinasi lintas instansi dan memecahkan masalah teknis kompleks secara strategis. Pendekatan tripartit menyelesaikan hambatan legal-prosedural pert",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Yogyakarta mendeteksi 156 pelaku UMKM sektor kuliner yang belum memanfaatkan insentif PPh Final 0,5% karena kesalahpahaman aturan. Survei menunjukkan 78% dari mereka masih menggunakan skema norma penghitungan lama yang tidak efisien. Situ",
+          "options": {
+            "a": "Mengirim surat himbauan massal kepada seluruh UMKM untuk segera memanfaatkan insentif dan melaporkan perubahan skema perhitungan ke KPP",
+            "b": "Membuat video tutorial pemanfaatan insentif dan mengunggahnya di media sosial KPP sebagai bentuk sosialisasi digital",
+            "c": "Menyerahkan penanganan kepada Seksi Pengawasan dan Konsultasi untuk melakukan konseling individual kepada 156 wajib pajak secara bertahap",
+            "d": "Menyelenggarakan program edukasi terstruktur dengan melibatkan Seksi Ekstensifikasi, PDI, dan Waskon untuk membimbing transisi skema perpajakan serta "
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan dan membimbing dengan pendekatan terstruktur melibatkan koordinasi lintas seksi (Ekstensifikasi, PDI, Waskon). Pemecahan masalah tek",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": false
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "KPP Pratama Banjarmasin Selatan menghadapi 312 kasus tunggakan pajak dengan total Rp 47,2 miliar yang telah melewati jatuh tempo lebih dari 6 bulan. Seksi Penagihan menemukan 89 wajib pajak badan sudah tidak beroperasi di alamat terdaftar, 127 wajib ",
+          "options": {
+            "a": "Membentuk tim koordinasi lintas seksi untuk validasi data alamat dan status usaha, membimbing strategi penagihan bertahap berdasarkan kategori risiko,",
+            "b": "Menerbitkan Surat Paksa serentak untuk seluruh 312 wajib pajak tunggakan dan mendelegasikan pelaksanaan penagihan sepenuhnya kepada Kepala Seksi Penag",
+            "c": "Mengusulkan penghapusan piutang pajak untuk seluruh tunggakan mengingat kesulitan pelacakan wajib pajak dan fokus hanya pada kasus-kasus yang mudah di",
+            "d": "Menunggu proses keberatan selesai untuk seluruh 96 kasus terlebih dahulu, kemudian melakukan penagihan massal dengan menyewa jasa debt collector ekste"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menyelenggarakan koordinasi lintas seksi untuk sinkronisasi data dan validasi informasi WP. Kepala KPP harus membimbing strategi penagihan tersegmentasi berdasarkan kategor",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Surabaya Mulyorejo menerima laporan dari 42 perusahaan konstruksi yang kebingungan menerapkan PMK terbaru tentang PPN Kegiatan Membangun Sendiri, karena interpretasi berbeda antara Account Representative dengan tim pemeriksa. Sebagai Kepa",
+          "options": {
+            "a": "Membentuk tim khusus untuk memeriksa seluruh laporan 42 perusahaan dan memberikan keputusan kasus per kasus sesuai kondisi lapangan masing-masing",
+            "b": "Menyerahkan penanganan kepada Kepala Seksi Waskon untuk berkoordinasi dengan Kanwil dan meminta petunjuk teknis resmi dari Direktorat Peraturan",
+            "c": "Menyelenggarakan forum advokasi internal lintas seksi (Waskon, Pemeriksaan, Ekstensifikasi) untuk menyamakan persepsi, kemudian menggelar kelas pajak ",
+            "d": "Menunda penerapan PMK tersebut di wilayah KPP dan melaporkan kendala ke Kanwil untuk dimintakan klarifikasi lebih lanjut kepada Kementerian Keuangan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing dalam advokasi kebijakan, memecahkan masalah teknis interpretasi aturan, serta melakukan koordinasi lintas seksi untuk me",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Medan Polonia menemukan 423 Wajib Pajak badan di sektor properti yang belum melaporkan transaksi penjualan aset secara benar, menyebabkan potensi pajak Rp 18,7 miliar belum terpungut. Ditemukan pula inkonsistensi interpretasi aturan PPh P",
+          "options": {
+            "a": "Langsung melakukan pemeriksaan bukti permulaan terhadap seluruh 423 WP tersebut dan menyerahkan kasusnya ke penyidikan untuk memberikan efek jera",
+            "b": "Menyelenggarakan forum koordinasi lintas seksi untuk menyamakan pemahaman aturan, kemudian membimbing pelaksanaan sosialisasi terpadu kepada WP sektor",
+            "c": "Membentuk tim khusus dari satu seksi untuk menangani kasus ini secara tertutup agar tidak menimbulkan kepanikan di kalangan pengusaha properti",
+            "d": "Meminta Kanwil untuk mengeluarkan surat edaran baru tentang interpretasi aturan tersebut dan menunggu arahan lebih lanjut sebelum mengambil tindakan"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kepala KPP menyelenggarakan dan membimbing advokasi dengan memecahkan masalah teknis inkonsistensi interpretasi melalui koordinasi lintas seksi. Pendekatan ini",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Makassar Utara menghadapi penolakan masif dari 89 pengusaha restoran yang menolak kenaikan tarif PB1 sebesar 15% yang baru ditetapkan Pemda. Para pengusaha mengancam akan menutup usaha dan melakukan aksi demonstrasi. Media lokal mulai mem",
+          "options": {
+            "a": "Menyelenggarakan forum koordinasi dengan Bapenda, asosiasi pengusaha, dan tokoh masyarakat untuk menjelaskan regulasi serta membimbing tim dalam menyu",
+            "b": "Menunda seluruh kegiatan sosialisasi dan menunggu instruksi dari Kanwil DJP untuk menghindari konflik dengan Pemda",
+            "c": "Menyerahkan penanganan kepada Kepala Seksi Ekstensifikasi untuk berkoordinasi langsung dengan pengusaha tanpa melibatkan stakeholder lain",
+            "d": "Membuat surat kepada Kepala Daerah untuk merekomendasikan pembatalan kenaikan tarif demi menjaga hubungan baik dengan Wajib Pajak"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Advokasi Kebijakan Perpajakan mengharuskan Kepala KPP menyelenggarakan dan membimbing forum koordinasi lintas stakeholder untuk memecahkan masalah teknis penolakan kebijaka",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Malang Utara menemukan 523 objek pajak reklame tidak terdaftar hasil kerjasama dengan Bapenda Kota Malang. Data menunjukkan 189 objek milik perusahaan terdaftar di KPP lain, 267 objek milik pengusaha lokal belum terdaftar sama sekali, dan",
+          "options": {
+            "a": "Menugaskan seksi Ekstensifikasi mendata ulang semua objek secara mandiri dan membuat surat himbauan massal kepada seluruh pemilik reklame",
+            "b": "Mengkoordinasikan seksi Ekstensifikasi dengan seksi Pengawasan dan Konsultasi untuk mapping lintas KPP, melakukan pembimbingan pendaftaran segmen loka",
+            "c": "Menyerahkan seluruh data kepada seksi Pengawasan dan Konsultasi untuk ditindaklanjuti sesuai kewenangan masing-masing tanpa koordinasi khusus",
+            "d": "Membentuk satgas khusus ekstensifikasi reklame dan melakukan pemeriksaan lapangan ke semua objek secara bersamaan dalam satu bulan"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan dan membimbing dengan koordinasi lintas seksi untuk memecahkan masalah teknis kompleks. Strategi yang tepat adalah mapping lintas KP",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Denpasar Barat menemukan 847 villa dan guest house di wilayah pariwisata yang belum terdaftar sebagai Wajib Pajak, tersebar di 6 kecamatan dengan karakteristik usaha beragam. Sebagai Kepala KPP, Anda mendapat tekanan dari asosiasi pengusa",
+          "options": {
+            "a": "Menunda seluruh kegiatan ekstensifikasi selama 6 bulan dan fokus pada sosialisasi persuasif kepada asosiasi pengusaha",
+            "b": "Menyerahkan sepenuhnya kepada Seksi Ekstensifikasi untuk melakukan pendaftaran massal tanpa mempertimbangkan kondisi Wajib Pajak",
+            "c": "Membentuk tim koordinasi lintas seksi untuk menyusun strategi bertahap dengan skala prioritas, melakukan pendekatan kolaboratif melalui forum multista",
+            "d": "Melaporkan kasus ke Kanwil dan meminta petunjuk teknis tanpa mengambil inisiatif penyelesaian di tingkat KPP"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan Kepala KPP menyelenggarakan dan membimbing kegiatan ekstensifikasi dengan koordinasi lintas seksi untuk strategi komprehensif. Pemecahan masalah teknis dilakuk",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Semarang Tengah menemukan 645 pelaku usaha marketplace digital yang belum terdaftar sebagai PKP padahal omzetnya telah melampaui Rp4,8 miliar per tahun. Sebagian besar pelaku usaha menolak dikukuhkan sebagai PKP karena ketidakpahaman tent",
+          "options": {
+            "a": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar (SKPKB) PPN kepada seluruh pelaku usaha marketplace yang tidak kooperatif sebagai tindakan teg",
+            "b": "Menyerahkan seluruh kasus kepada Kanwil DJP untuk penanganan lebih lanjut karena jumlahnya terlalu banyak dan kompleksitas regulasi PPN PMSE memerluka",
+            "c": "Membentuk tim khusus untuk melakukan pemeriksaan pajak serentak terhadap 645 pelaku usaha tersebut agar segera memenuhi kewajiban perpajakan sesuai ke",
+            "d": "Menyelenggarakan forum sosialisasi terpadu dengan melibatkan platform marketplace, membimbing pelaku usaha tentang kewajiban PPN PMSE, serta berkoordi"
+          },
+          "correct": "d",
+          "explanation": "Level 3 Advokasi Kebijakan Perpajakan mengharuskan Kepala KPP menyelenggarakan dan membimbing pemahaman kebijakan kepada wajib pajak melalui forum sosialisasi yang terstruktur. Koo",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Palembang Ilir Barat menemukan 734 unit ruko di kawasan perdagangan strategis yang tidak terdaftar sebagai objek pajak, sementara data konsumsi listrik menunjukkan aktivitas usaha tinggi. Sistem pengawasan existing hanya berbasis laporan ",
+          "options": {
+            "a": "Menugaskan masing-masing seksi melakukan sensus ulang terhadap 734 ruko secara paralel dan melaporkan hasilnya dalam rapat koordinasi bulanan",
+            "b": "Membentuk tim khusus dari Seksi Pengawasan untuk melakukan pemeriksaan langsung ke 734 ruko dan menerbitkan surat himbauan pendaftaran NPWP",
+            "c": "Mengevaluasi sistem kerja lintas seksi, menyusun SOP terintegrasi berbasis data digital dengan standar kinerja waktu verifikasi maksimal 14 hari, dan ",
+            "d": "Mengadakan sosialisasi massal kepada pengusaha ruko tentang kewajiban perpajakan dan memberikan insentif bagi yang mendaftar dalam 3 bulan"
+          },
+          "correct": "c",
+          "explanation": "Level 4 menuntut kepala kantor mengevaluasi sistem kerja lintas seksi untuk mengatasi inefisiensi (duplikasi 23%, verifikasi 45 hari) dengan menyusun standar kinerja terukur dan SO",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": false
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Tangerang Barat menemukan 1.247 unit ruko di 5 kawasan komersial dengan tingkat kepatuhan pelaporan hanya 34%, sementara data PBJT menunjukkan transaksi aktif. Analisis awal menunjukkan potensi Rp 8,7 miliar, namun metode penggalian berbe",
+          "options": {
+            "a": "Menugaskan Seksi Ekstensifikasi melakukan pendataan ulang seluruh ruko dan menyerahkan hasil ke Seksi Penagihan untuk tindak lanjut",
+            "b": "Mengevaluasi metode penggalian potensi yang ada, menyusun standar operasional prosedur terintegrasi lintas seksi, dan menetapkan target kinerja berbas",
+            "c": "Membentuk tim gabungan dari semua seksi untuk melakukan pemeriksaan serentak terhadap 1.247 ruko dalam waktu 3 bulan",
+            "d": "Mengusulkan penambahan pegawai dan anggaran ke Kanwil untuk optimalisasi penggalian potensi di kawasan komersial"
+          },
+          "correct": "b",
+          "explanation": "Level 4 mengharuskan Kepala KPP mengevaluasi sistem kerja yang ada dan menyusun standar kinerja lintas seksi untuk memastikan konsistensi metode penggalian potensi. Penyusunan SOP ",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Balikpapan menemukan 892 pelaku UMKM digital yang belum terdaftar sebagai Wajib Pajak meskipun omzet sudah melebihi batasan PKP. Media lokal memberitakan secara negatif bahwa DJP tidak pro-UMKM. Asosiasi pengusaha lokal meminta keringanan",
+          "options": {
+            "a": "Menyurati media massa untuk meralat pemberitaan dan menunda tindakan penagihan sambil menunggu instruksi Kanwil",
+            "b": "Membentuk tim khusus dari Seksi Pengawasan saja untuk melakukan sosialisasi door-to-door ke setiap pelaku UMKM",
+            "c": "Langsung menerbitkan Surat Teguran kepada 892 UMKM tersebut dan mengumumkan di media sebagai bentuk penegakan hukum",
+            "d": "Menyelenggarakan forum multistakeholder dengan asosiasi, media, dan Pemda untuk menjelaskan kebijakan, memberikan bimbingan teknis pendaftaran, serta "
+          },
+          "correct": "d",
+          "explanation": "Level 3 menyelenggarakan forum advokasi dengan membimbing stakeholder memahami kebijakan perpajakan yang benar. Memecahkan masalah teknis sentimen negatif melalui pendekatan edukat",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Surabaya Rungkut mengidentifikasi 1.156 Wajib Pajak Badan yang melaporkan peredaran bruto mendekati batas PKP (Rp4,5-4,8 miliar) selama 3 tahun berturut-turut, namun tidak mengukuhkan diri sebagai PKP. Analisis data menunjukkan 78% memili",
+          "options": {
+            "a": "Menyusun standar operasional prosedur (SOP) pengawasan kepatuhan pengukuhan PKP lintas seksi yang mengintegrasikan data pihak ketiga, sistem early war",
+            "b": "Menerbitkan Surat Teguran massal kepada 1.156 WP dan menetapkan target pengukuhan PKP 80% dalam 3 bulan dengan sanksi administrasi bagi yang tidak pat",
+            "c": "Menugaskan Seksi Pengawasan dan Konsultasi untuk melakukan pemeriksaan bukti permulaan terhadap seluruh WP tersebut dan menerbitkan SKP jika terbukti ",
+            "d": "Membentuk tim khusus untuk melakukan himbauan langsung kepada 1.156 WP agar segera mengukuhkan diri sebagai PKP dan memberikan kemudahan administrasi "
+          },
+          "correct": "a",
+          "explanation": "Level 4 menuntut kemampuan mengevaluasi sistem kerja dan menyusun standar kinerja lintas seksi dengan pendekatan komprehensif. SOP yang mengintegrasikan data pihak ketiga, sistem e",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Bandung Karees mengidentifikasi 1.834 Wajib Pajak berstatus Non-Efektif dengan pola: 67% tidak melapor SPT 3 tahun berturut-turut, 21% alamat tidak ditemukan, 12% usaha tutup tanpa laporan. Rasio kepatuhan pelaporan SPT KPP turun dari 78%",
+          "options": {
+            "a": "Membentuk tim khusus visitasi lapangan untuk memverifikasi 1.834 WP Non-Efektif secara serentak dalam 3 bulan dan menerbitkan surat teguran massal",
+            "b": "Mengevaluasi sistem pemantauan kepatuhan lintas seksi dengan menetapkan SOP deteksi dini berbasis risk scoring, integrasi data keuangan eksternal, dan",
+            "c": "Meningkatkan target penerbitan STP dan sanksi administratif terhadap WP Non-Efektif serta mengalihkan fokus pengawasan ke WP dengan omzet di atas 4,8 ",
+            "d": "Melakukan sosialisasi massal kewajiban pelaporan SPT dan memberikan perpanjangan waktu pelaporan khusus bagi WP Non-Efektif yang ingin mengaktifkan ke"
+          },
+          "correct": "b",
+          "explanation": "Level 4 mengharuskan evaluasi sistem kerja lintas seksi dengan menyusun standar kinerja terintegrasi, bukan hanya tindakan operasional jangka pendek. Rekomendasi kebijakan harus me",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Makassar Selatan mengidentifikasi 1.456 pelaku e-commerce di wilayahnya yang belum terdaftar sebagai PKP meskipun omzetnya di atas Rp4,8 miliar per tahun. Data diperoleh dari marketplace, rekening koran, dan survei lapangan. Sebagai Kepal",
+          "options": {
+            "a": "Melakukan pemeriksaan bukti permulaan terhadap 100 pelaku e-commerce terbesar dan menunggu hasil pemeriksaan sebelum melakukan tindakan lebih lanjut",
+            "b": "Menambah jumlah pegawai di Seksi Pengawasan dan Konsultasi untuk mempercepat proses survei lapangan terhadap seluruh pelaku e-commerce yang teridentif",
+            "c": "Mengirim surat himbauan kepada 1.456 pelaku e-commerce untuk mendaftar sebagai PKP dan melaporkan SPT secara sukarela dalam 30 hari",
+            "d": "Membentuk tim khusus e-commerce lintas seksi dan menyusun SOP baru dengan target waktu identifikasi 2 bulan serta mengintegrasikan database seksi untu"
+          },
+          "correct": "d",
+          "explanation": "Level 4 menuntut kemampuan mengevaluasi sistem kerja dan menyusun standar kinerja lintas seksi untuk meningkatkan efektivitas organisasi. Pembentukan tim lintas seksi dengan SOP te",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Medan Belawan mengidentifikasi 1.523 Wajib Pajak orang pribadi yang memiliki transaksi e-commerce dengan omzet di atas Rp500 juta per tahun namun belum terdaftar atau tidak melaporkan SPT. Data diperoleh dari hasil pertukaran data marketp",
+          "options": {
+            "a": "Mengkoordinasikan Seksi Ekstensifikasi untuk pendaftaran jabatan, Seksi Pengawasan menerbitkan himbauan bertahap dengan batas waktu, dan Seksi Pemerik",
+            "b": "Menugaskan Seksi Ekstensifikasi melakukan penerbitan NPWP jabatan secara massal kemudian menerbitkan STP atas seluruh WP yang teridentifikasi",
+            "c": "Menyerahkan seluruh kasus kepada Seksi Pemeriksaan untuk dilakukan pemeriksaan komprehensif terhadap 1.523 WP secara bertahap",
+            "d": "Menginstruksikan Seksi Pelayanan untuk melakukan sosialisasi ulang dan memberikan kesempatan self-assessment tanpa sanksi kepada seluruh WP"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan koordinasi lintas seksi untuk memecahkan masalah teknis secara komprehensif. Pendekatan bertahap dengan membagi tugas sesuai kompetensi masing-masing seksi (ek",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Denpasar Barat mengidentifikasi 2.156 villa dan homestay di wilayah kerjanya yang beroperasi melalui platform digital, namun hanya 38% yang terdaftar sebagai Wajib Pajak. Data menunjukkan okupansi rata-rata 72% dengan tarif Rp 850.000/mal",
+          "options": {
+            "a": "Membentuk tim khusus intensifikasi untuk melakukan pemeriksaan bukti permulaan terhadap 1.336 pelaku usaha villa yang belum terdaftar dengan target pe",
+            "b": "Mengirimkan surat himbauan massal kepada seluruh pelaku usaha villa dan homestay untuk segera mendaftar sebagai Wajib Pajak disertai ancaman sanksi ad",
+            "c": "Menyusun kebijakan koordinasi terintegrasi dengan Dinas Pariwisata dan platform digital melalui perjanjian kerja sama (PKS), merancang sistem pertukar",
+            "d": "Meningkatkan kegiatan sosialisasi perpajakan bagi pelaku UMKM sektor pariwisata dengan mengadakan seminar dan penyuluhan di setiap kecamatan"
+          },
+          "correct": "c",
+          "explanation": "Level 4 menuntut kemampuan mengevaluasi sistem kerja dan merekomendasikan kebijakan kantor yang sistematis. Penyusunan kebijakan koordinasi terintegrasi dengan pemangku kepentingan",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Semarang Candisari mengidentifikasi 1.680 pelaku usaha di sektor perdagangan ritel yang belum memahami insentif PPh Final UMKM pascakenaikan batas omzet menjadi Rp4,8 miliar. Ditemukan kesalahan masif dalam pelaporan dengan 67% UMKM tidak",
+          "options": {
+            "a": "Menyerahkan data UMKM kepada Account Representative untuk melakukan himbauan individual kepada seluruh 1.680 pelaku usaha",
+            "b": "Membentuk satgas khusus untuk melakukan pemeriksaan compliance terhadap UMKM yang tidak memanfaatkan insentif",
+            "c": "Mengirimkan surat edaran kepada seluruh UMKM terdaftar dan menunggu respons untuk konsultasi di KPP",
+            "d": "Menyelenggarakan kegiatan advokasi massal dengan melibatkan stakeholder (asosiasi pedagang, pemda) dan membimbing tim teknis untuk menyusun materi edu"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kepala KPP menyelenggarakan dan membimbing kegiatan advokasi untuk memecahkan masalah teknis secara sistematis. Koordinasi dengan stakeholder eksternal (asosia",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "KPP Pratama Palembang Ilir Barat memiliki 1.678 tunggakan pajak dengan total Rp 45,2 miliar. Seksi Penagihan melaporkan 387 kasus sulit dieksekusi karena Wajib Pajak pindah alamat tidak jelas, 234 kasus aset tersembunyi atas nama pihak ketiga, dan 15",
+          "options": {
+            "a": "Membentuk tim koordinasi lintas seksi (Penagihan, Pemeriksaan, Ekstensifikasi) untuk melakukan investigasi terintegrasi, meminta bimbingan teknis Kanw",
+            "b": "Menginstruksikan Seksi Penagihan untuk segera menerbitkan Surat Paksa terhadap semua 1.678 tunggakan dan mempercepat lelang aset yang sudah teridentif",
+            "c": "Mendelegasikan seluruh penyelesaian kasus kepada Kepala Seksi Penagihan dan meminta laporan hasil penagihan setiap akhir bulan",
+            "d": "Fokus menagih 156 kasus sengketa dengan kreditor terlebih dahulu karena nilai nominalnya paling besar dan mengabaikan kasus Wajib Pajak pindah alamat"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing dengan koordinasi lintas seksi untuk memecahkan masalah teknis kompleks. Pembentukan tim koordinasi lintas seksi memungki",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Pontianak Timur menghadapi penolakan keras dari 456 pengusaha tambang batubara skala menengah yang menganggap perubahan ketentuan PPh Pasal 4 ayat (2) atas royalti merugikan mereka. Asosiasi pengusaha tambang setempat meminta audiensi den",
+          "options": {
+            "a": "Menyerahkan penanganan kepada Kanwil DJP Kalimantan Barat karena melibatkan jumlah WP yang besar dan memerlukan keputusan level yang lebih tinggi",
+            "b": "Membentuk tim khusus dari seksi ekstensifikasi untuk melakukan sosialisasi door-to-door ke 456 pengusaha tersebut agar mereka memahami kebijakan baru",
+            "c": "Menyelenggarakan forum diskusi multi-pihak yang melibatkan Kanwil, Pemda, asosiasi, dan akademisi untuk menjelaskan rasionalisasi kebijakan serta meny",
+            "d": "Mengirimkan surat edaran kepada seluruh pengusaha tambang tentang sanksi administratif dan pidana bagi yang menghentikan setoran pajak sebagai bentuk "
+          },
+          "correct": "c",
+          "explanation": "Level 3 menyelenggarakan forum advokasi dengan membimbing pemangku kepentingan melalui pendekatan koordinatif lintas instansi. Kepala KPP harus memecahkan masalah teknis penolakan ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Depok Sawangan mengalami ketidakseimbangan kinerja antar seksi dalam penanganan Wajib Pajak Non-Efektif (NE). Seksi Pengawasan I menyelesaikan 780 kasus konfirmasi NE (78% target), sementara Seksi Pengawasan II hanya 420 kasus (42% target",
+          "options": {
+            "a": "Memindahkan sebagian WP binaan dari Seksi Pengawasan II ke Seksi Pengawasan I untuk mempercepat penyelesaian kasus dan mencapai target konsolidasi kan",
+            "b": "Menyusun Standar Operating Procedure (SOP) terintegrasi untuk verifikasi dan eskalasi kasus NE yang mengikat seluruh seksi pengawasan, dilengkapi indi",
+            "c": "Memberikan teguran tertulis kepada Kepala Seksi Pengawasan II dan menetapkan target tambahan untuk mengejar ketertinggalan kinerja dibanding seksi lai",
+            "d": "Mengadakan bimbingan teknis khusus bagi Account Representative Seksi Pengawasan II tentang prosedur konfirmasi NE sesuai praktik terbaik Seksi Pengawa"
+          },
+          "correct": "b",
+          "explanation": "Level 4 menuntut kemampuan mengevaluasi sistem kerja dan menyusun standar kinerja lintas seksi untuk mengatasi disparitas struktural. Penyusunan SOP terintegrasi dengan indikator t",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Surabaya Wonocolo mengidentifikasi 2.347 berkas permohonan restitusi PPN yang menumpuk selama 3 bulan terakhir dengan tingkat penyelesaian hanya 42%. Hasil analisis menunjukkan: 856 berkas ditolak sistem validasi karena ketidaklengkapan d",
+          "options": {
+            "a": "Menyelenggarakan rapat koordinasi lintas seksi untuk membagi alur kerja: Seksi Pelayanan memperbaiki SOP validasi otomatis, Seksi Pemeriksaan memprior",
+            "b": "Menginstruksikan Seksi Pelayanan untuk mempercepat proses verifikasi manual dengan menambah jam kerja dan fokus menyelesaikan 623 berkas tertunda terl",
+            "c": "Membimbing Seksi Pelayanan untuk membuat surat edaran kepada seluruh Wajib Pajak terkait kelengkapan dokumen restitusi dan menunda pemrosesan berkas y",
+            "d": "Memfokuskan penyelesaian 334 berkas yang siap diterbitkan terlebih dahulu untuk meningkatkan statistik kinerja, kemudian menangani berkas lainnya seca"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan koordinasi lintas seksi untuk memecahkan masalah teknis kompleks secara sistematis. Solusi harus mencakup pembagian tugas yang jelas",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Tangerang Karawaci mengidentifikasi 1.847 objek pajak potensial dari data kerjasama dengan Pemda, namun Seksi Ekstensifikasi melaporkan kendala koordinasi internal karena Seksi PDI menolak memprioritaskan verifikasi data tersebut karena s",
+          "options": {
+            "a": "Menunda seluruh kegiatan ekstensifikasi hingga program nasional NIK-NPWP selesai dan mengalihkan seluruh SDM Seksi Ekstensifikasi untuk membantu Seksi",
+            "b": "Menyelenggarakan rapat koordinasi lintas seksi untuk menyusun pembagian tugas dan timeline terintegrasi, membimbing Seksi Ekstensifikasi melakukan pem",
+            "c": "Memerintahkan Seksi Ekstensifikasi untuk melakukan verifikasi dan pemeriksaan sendiri terhadap 1.847 objek pajak tersebut tanpa melibatkan seksi lain ",
+            "d": "Membuat surat ke Kanwil untuk meminta penambahan pegawai khusus ekstensifikasi dan menunggu approval sebelum melanjutkan program ekstensifikasi di KPP"
+          },
+          "correct": "b",
+          "explanation": "Level 3 memerlukan kemampuan menyelenggarakan koordinasi lintas seksi untuk mengatasi konflik prioritas kerja antar unit. Kepala KPP harus membimbing tim dalam memecahkan masalah t",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Makassar Utara mengidentifikasi 1.847 usaha UMKM di kawasan pergudangan yang belum terdaftar sebagai WP. Kepala Seksi Ekstensifikasi melaporkan kendala koordinasi dengan pemda, data yang diperoleh dari 3 seksi berbeda tidak sinkron (Wasko",
+          "options": {
+            "a": "Memerintahkan Kasi Ekstensifikasi untuk fokus mengejar target 1.847 WP baru dengan menggunakan data Waskon II dan menunda rekonsiliasi data hingga akh",
+            "b": "Mendelegasikan sepenuhnya kepada Kasi Ekstensifikasi untuk menyelesaikan masalah koordinasi dan melaporkan hasilnya setiap bulan tanpa intervensi lebi",
+            "c": "Menyelenggarakan rapat koordinasi lintas seksi untuk rekonsiliasi data, membentuk tim gabungan untuk sosialisasi massal kepada UMKM, dan memfasilitasi",
+            "d": "Menggunakan data rata-rata (1.787 WP) sebagai target dan memprioritaskan penerbitan SKPD kepada subjek pajak yang menolak tanpa sosialisasi tambahan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan dan membimbing pelaksanaan ekstensifikasi serta koordinasi lintas seksi untuk memecahkan masalah teknis. Kepala KPP harus memfasilit",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "KPP Pratama Bandung Karees mengidentifikasi 1.523 tunggakan pajak dengan total Rp 87,4 miliar. Setelah dilakukan analisis, ditemukan 347 kasus sengketa di pengadilan pajak, 289 kasus penanggung pajak meninggal tanpa ahli waris yang jelas, 156 kasus p",
+          "options": {
+            "a": "Menginstruksikan Seksi Penagihan untuk segera mengajukan usulan penghapusan seluruh 1.523 tunggakan ke Kanwil agar target collection ratio tercapai",
+            "b": "Fokus melakukan penyitaan dan lelang terhadap seluruh 1.523 tunggakan tersebut untuk memaksimalkan penerimaan negara sebelum mempertimbangkan penghapu",
+            "c": "Menyerahkan sepenuhnya kepada Seksi Penagihan untuk menentukan tunggakan mana yang akan diusulkan penghapusannya sesuai pertimbangan teknis mereka",
+            "d": "Menyelenggarakan rapat koordinasi lintas seksi untuk menetapkan kriteria penghapusan berdasarkan PMK 68/2012 dan membimbing tim menyusun usulan yang t"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan koordinasi lintas seksi untuk memecahkan masalah teknis kompleks seperti perbedaan pendapat kriteria penghapusan. Kepala KPP harus membi",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Medan Kota mengidentifikasi 2.156 Wajib Pajak Badan dengan rasio pembayaran pajak terhadap omzet di bawah 0,5% selama 3 tahun berturut-turut, terkonsentrasi di sektor perdagangan dan jasa konsultan. Data profiling menunjukkan 67% di antar",
+          "options": {
+            "a": "Menerbitkan Surat Himbauan massal kepada seluruh 2.156 WP untuk melakukan pembetulan SPT dan meningkatkan frekuensi kunjungan rutin ke lokasi usaha ol",
+            "b": "Mengusulkan pemeriksaan serentak terhadap semua WP yang terindikasi dan berkoordinasi dengan KPP lain untuk melakukan benchmarking pola penanganan ser",
+            "c": "Menyusun sistem stratifikasi risiko berbasis skor kepatuhan, menetapkan standar penanganan berjenjang lintas seksi (Pengawasan-Pemeriksaan-Penagihan),",
+            "d": "Membentuk tim khusus untuk melakukan edukasi perpajakan intensif dan memberikan insentif tax amnesty jilid II kepada WP yang bersedia melakukan pengun"
+          },
+          "correct": "c",
+          "explanation": "Level 4 menuntut Kepala KPP mengevaluasi sistem kerja dan menyusun standar kinerja lintas seksi yang terstruktur dan berkelanjutan. Stratifikasi risiko dengan standar penanganan be",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Semarang Candisari memiliki 3.247 Wajib Pajak Badan dengan rasio kepatuhan pelaporan SPT Tahunan 68%, sementara rata-rata nasional 78%. Hasil analisis menunjukkan: (1) Seksi Pengawasan I-IV memiliki metode pendekatan berbeda dalam himbaua",
+          "options": {
+            "a": "Membentuk satgas gabungan semua seksi untuk melakukan kunjungan langsung ke 3.247 Wajib Pajak Badan secara bertahap dalam 6 bulan ke depan",
+            "b": "Menyusun Standar Operasional Prosedur pengawasan berbasis segmentasi risiko dengan prioritas wilayah geografis tertentu dan mengintegrasikan pemutakhi",
+            "c": "Mengusulkan penambahan pegawas fungsional dan meningkatkan target penegakan hukum melalui pemeriksaan massal terhadap 2.247 WP yang tidak patuh",
+            "d": "Menyelenggarakan sosialisasi massal perpajakan di 3 kecamatan prioritas dan mengirimkan surat teguran kepada seluruh WP yang belum menyampaikan SPT"
+          },
+          "correct": "b",
+          "explanation": "Level 4 menuntut kemampuan mengevaluasi sistem kerja dan menyusun standar kinerja lintas seksi. SOP berbasis segmentasi risiko dengan integrasi pemutakhiran data mengatasi akar mas",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "KPP Pratama Palembang Ilir Barat menghadapi situasi kritis: 1.892 Wajib Pajak dengan tunggakan Rp 47,3 miliar telah memasuki tahap sita, namun Seksi Penagihan melaporkan hanya 15% yang berhasil dieksekusi karena objek sita tidak ditemukan, alamat fik",
+          "options": {
+            "a": "Menginstruksikan Seksi Penagihan untuk segera melakukan lelang atas seluruh objek sita yang sudah diamankan, kemudian fokus pada penerbitan SPMP baru ",
+            "b": "Mengusulkan penghapusan piutang untuk Wajib Pajak dengan alamat fiktif, kemudian fokus pada penagihan pasif melalui pemantauan restitusi dan kompensas",
+            "c": "Mendelegasikan sepenuhnya kepada Kepala Seksi Penagihan untuk menyelesaikan masalah objek sita dan menambah personel Juru Sita dari seksi lain sebagai",
+            "d": "Membentuk tim gabungan Seksi Penagihan, PDI, dan Waskon untuk memetakan 420 Wajib Pajak prioritas, menyusun strategi sita berbasis data intelijen, men"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing serta koordinasi lintas seksi untuk memecahkan masalah teknis kompleks. Pembentukan tim gabungan memanfaatkan sinergi dat",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "KPP Pratama Denpasar Timur menghadapi kompleksitas penagihan pajak dimana Seksi Penagihan melaporkan 1.834 Wajib Pajak menunggak dengan total Rp 47,2 miliar, namun Juru Sita mengalami kendala eksekusi karena 40% aset sudah dijaminkan ke bank, 25% Waj",
+          "options": {
+            "a": "Membentuk tim koordinasi lintas seksi (Penagihan, Pemeriksaan, Pelayanan) untuk memetakan prioritas penagihan berdasarkan potensi keberhasilan, membim",
+            "b": "Menginstruksikan Seksi Penagihan fokus menyelesaikan kasus-kasus mudah terlebih dahulu dan menunda kasus rumit sambil menunggu petunjuk dari Kanwil",
+            "c": "Mendelegasikan sepenuhnya kepada Kepala Seksi Penagihan untuk menyelesaikan permasalahan internal dan melaporkan hasilnya setiap bulan dalam rapat eva",
+            "d": "Mengusulkan penghapusan piutang pajak untuk kasus-kasus yang sulit dieksekusi dan mengalihkan fokus Juru Sita hanya pada Wajib Pajak yang mudah ditemu"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing pelaksanaan penagihan dengan memecahkan masalah teknis kompleks seperti eksekusi aset yang dijaminkan dan WP tidak ditemu",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "KPP Pratama Yogyakarta Sleman memiliki 1.876 kasus tunggakan pajak senilai Rp47,2 miliar yang tersebar di tiga seksi. Seksi Penagihan melaporkan 340 kasus siap lelang tetapi terkendala koordinasi dengan KPKNL, Seksi Pemeriksaan menemukan 127 WP menun",
+          "options": {
+            "a": "Menginstruksikan Seksi Penagihan fokus menyelesaikan proses lelang 340 kasus terlebih dahulu, sementara Seksi Pemeriksaan dan PDI menunggu giliran koo",
+            "b": "Membentuk tim koordinasi lintas seksi dengan kepala seksi sebagai anggota, menetapkan SOP serah terima kasus pemeriksaan-penagihan, mengagendakan pert",
+            "c": "Mendelegasikan seluruh penyelesaian masalah kepada masing-masing kepala seksi sesuai tupoksi dan meminta laporan hasil penagihan setiap akhir triwulan",
+            "d": "Memprioritaskan penyelesaian 89 kasus WP pindah alamat terlebih dahulu karena jumlahnya paling sedikit, baru kemudian menangani koordinasi KPKNL dan s"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan koordinasi lintas seksi secara sistematis dan membimbing pemecahan masalah teknis terpadu. Pembentukan tim koordinasi dengan SOP serah t",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "KPP Pratama Surabaya Rungkut mengidentifikasi 2.341 Wajib Pajak dengan tunggakan mencapai Rp 47,8 miliar yang tersebar di 4 seksi pengawasan. Dari hasil analisis, 872 kasus berpotensi diselesaikan melalui pemblokiran rekening, 654 kasus memerlukan pe",
+          "options": {
+            "a": "Mendelegasikan seluruh kewenangan kepada Kepala Seksi Penagihan untuk menentukan strategi dan melaksanakan tindakan penagihan sesuai prioritas masing-",
+            "b": "Fokus menangani 292 kasus lintas wilayah secara langsung dan menyerahkan 2.049 kasus lainnya kepada Account Representative untuk diselesaikan sesuai k",
+            "c": "Memerintahkan setiap Kepala Seksi Pengawasan untuk menyelesaikan kasus di seksinya masing-masing dengan memprioritaskan penerbitan Surat Paksa tanpa p",
+            "d": "Membentuk tim koordinasi lintas seksi, menetapkan target dan timeline tindakan penagihan berdasarkan segmentasi kasus, membimbing pelaksanaan pembloki"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan pelaksanaan tindakan penagihan dengan membentuk koordinasi lintas seksi untuk efektivitas penanganan. Kepala KPP harus membimbing pelaks",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 4,
+          "question": "KPP Pratama Tangerang Barat mengidentifikasi fenomena 2.789 Wajib Pajak badan dengan omzet di atas Rp 50 miliar yang konsisten melaporkan rugi fiskal selama 3 tahun berturut-turut, namun tetap aktif melakukan ekspansi usaha dan impor bahan baku dalam",
+          "options": {
+            "a": "Menyusun standar operating procedure (SOP) analisis risiko cross-sectional berbasis industri dengan parameter benchmark financial ratio dan rekomendas",
+            "b": "Menerbitkan Surat Himbauan kepada seluruh 2.789 Wajib Pajak untuk melakukan pembetulan SPT dan melakukan intensifikasi pemeriksaan acak terhadap 100 W",
+            "c": "Menugaskan Seksi Pengawasan dan Konsultasi untuk melakukan kunjungan (visit) ke seluruh Wajib Pajak tersebut guna memverifikasi kondisi riil usaha dan",
+            "d": "Mengusulkan penetapan seluruh Wajib Pajak tersebut sebagai objek pemeriksaan tahun berjalan dan menambah alokasi pemeriksa pajak dari KPP lain untuk m"
+          },
+          "correct": "a",
+          "explanation": "Level 4 menuntut kemampuan mengevaluasi sistem kerja dan menyusun rekomendasi kebijakan yang bersifat strategis lintas unit. Penyusunan SOP analisis risiko dengan parameter benchma",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L4",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KPP Pratama Makassar Utara mengidentifikasi 1.847 dokumen permohonan pengurangan sanksi administrasi yang masuk dalam 3 bulan terakhir dengan tingkat kelengkapan dokumen pendukung hanya 42%. Kepala Seksi Pelayanan melaporkan bahwa 67% permohonan dito",
+          "options": {
+            "a": "Menginstruksikan Seksi Pelayanan untuk lebih selektif menerima permohonan dan menolak langsung dokumen yang tidak lengkap di loket untuk mengurangi be",
+            "b": "Mendelegasikan penuh kepada Kepala Seksi Pelayanan untuk membuat SOP baru tanpa melibatkan seksi lain karena ini merupakan domain Seksi Pelayanan",
+            "c": "Menyelenggarakan koordinasi lintas seksi (Pelayanan, Waskon I-II, dan Ekstensifikasi) untuk menyusun checklist standar, membimbing petugas dalam pre-s",
+            "d": "Mengadakan sosialisasi massal kepada Wajib Pajak setiap minggu dan memperpanjang waktu pemrosesan permohonan dari 5 hari menjadi 15 hari kerja"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan Kepala KPP menyelenggarakan koordinasi lintas seksi untuk memecahkan masalah teknis sistemik, bukan hanya instruktif. Pembimbingan petugas melalui standarisasi",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
           "vigTitle": null,
           "vigBody": null,
           "userAnswer": "c",
