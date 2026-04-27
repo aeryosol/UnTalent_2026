@@ -1327,15 +1327,15 @@ OUTPUT: JSON dengan struktur PERSIS ini (tanpa teks lain):
     "compLevel": ${comp.level}
   },
   "questions": [
-    {"aspect": "${aspects[0]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "a", "explanation": "2 kalimat"},
-    {"aspect": "${aspects[1]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "b", "explanation": "2 kalimat"},
-    {"aspect": "${aspects[2]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "c", "explanation": "2 kalimat"},
-    {"aspect": "${aspects[3]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "d", "explanation": "2 kalimat"},
-    {"aspect": "${aspects[4]}", "question": "...", "options": {"a":"...","b":"...","c":"...","d":"..."}, "correct": "a", "explanation": "2 kalimat"}
+    {"aspect":"${aspects[0]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"a","explanation":"..."},
+    {"aspect":"${aspects[1]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"..."},
+    {"aspect":"${aspects[2]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"..."},
+    {"aspect":"${aspects[3]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"d","explanation":"..."},
+    {"aspect":"${aspects[4]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"a","explanation":"..."}
   ]
 }`;
 
-  const data = await callAPIWithRetry(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 3500);
+  const data = await callAPIWithRetry(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 2500);
   const txt = data.content.filter(d => d.type === "text").map(d => d.text).join("").replace(/```json|```/g,"").trim();
 
   let bundle;
@@ -1413,7 +1413,7 @@ async function callAPIWithRetry(prompt, system, maxTokens, maxRetries=2) {
       return await callAPI(prompt, system, maxTokens);
     } catch(e) {
       lastErr = e;
-      if (e.message.includes("batas waktu") || e.message.includes("502") || e.message.includes("503") || e.message.includes("504")) {
+      if (e.message.includes("batas waktu") || e.message.includes("timeout") || e.message.includes("408") || e.message.includes("502") || e.message.includes("503") || e.message.includes("504")) {
         if (attempt < maxRetries) continue;
       }
       throw e;
