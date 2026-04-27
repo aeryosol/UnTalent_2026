@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "sessionsServedTotal": 5,
-    "creditsSpentUSD": 2,
-    "lastUpdated": "2026-04-27T04:58:53.701Z"
+    "sessionsServedTotal": 6,
+    "creditsSpentUSD": 2.4,
+    "lastUpdated": "2026-04-27T05:23:33.873Z"
   },
   "sessions": [
     {
@@ -5958,6 +5958,1198 @@
           "correct": "c",
           "explanation": "Level 2 Pengelolaan Database mengharuskan kemampuan menganalisis data WP untuk mengidentifikasi pola dan akar masalah inkonsistensi. Menyusun rencana perbaikan bertahap sesuai prio",
           "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "SES-NEJVXZ",
+      "position": "Kepala Seksi Pengawasan",
+      "segment": "A",
+      "segmentLabel": "Jabatan Pengawas",
+      "score": 93,
+      "totalQ": 60,
+      "correct": 56,
+      "completedAt": "2026-04-27T05:23:32.280Z",
+      "questions": [
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 0,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Apa masalah utama yang harus menjadi prioritas identifikasi dari laporan penurunan omzet 40% PT Mitra Sejahtera Abadi?",
+          "options": {
+            "a": "Potensi ketidaksesuaian antara penurunan omzet dengan data produksi, biaya operasional, dan kewajiban pajak yang dilaporkan",
+            "b": "Kemungkinan kesalahan input data oleh staf administrasi perusahaan dalam SPT Tahunan",
+            "c": "Penurunan kinerja manajemen perusahaan yang berdampak pada efisiensi operasional",
+            "d": "Keterlambatan pembayaran pajak akibat kesulitan likuiditas perusahaan"
+          },
+          "correct": "a",
+          "explanation": "Masalah utama adalah konsistensi data karena penurunan omzet signifikan harus berbanding lurus dengan komponen biaya, produksi, dan beban pajak lainnya.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Analisis Pola Kepatuhan PT Mitra Sejahtera Abadi",
+          "vigBody": "Sebagai Kepala Seksi Pengawasan, Anda menerima laporan dari AR bahwa PT Mitra Sejahtera Abadi menunjukkan pola tidak wajar. Perusahaan manufaktur ini melaporkan penurunan omzet 40% dari Rp 15 miliar menjadi Rp 9 miliar dalam setahun, namun impor bahan baku justru meningkat 25%. Rasio beban usaha ter",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 1,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Data relevan manakah yang PALING PENTING untuk dianalisis guna memvalidasi kewajaran penurunan omzet tersebut?",
+          "options": {
+            "a": "Data kepegawaian dan struktur organisasi perusahaan selama 2 tahun terakhir",
+            "b": "Perbandingan laporan keuangan, SPT Masa PPN, biaya produksi, pembelian bahan baku, dan konsumsi listrik/utilitas dengan periode sebelumnya",
+            "c": "Rekam jejak kepatuhan pembayaran angsuran PPh Pasal 25 tahun berjalan",
+            "d": "Surat keterangan domisili dan izin usaha dari pemerintah daerah"
+          },
+          "correct": "b",
+          "explanation": "Data operasional seperti PPN, biaya produksi, dan utilitas akan menunjukkan apakah penurunan omzet konsisten dengan aktivitas bisnis riil perusahaan.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Analisis Pola Kepatuhan PT Mitra Sejahtera Abadi",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 2,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Setelah analisis awal menunjukkan inkonsistensi data, alternatif tindakan manakah yang PALING TEPAT sebagai langkah berikutnya?",
+          "options": {
+            "a": "Langsung menerbitkan Surat Perintah Pemeriksaan untuk pemeriksaan lengkap",
+            "b": "Memberikan teguran tertulis dan sanksi administratif atas dugaan pelanggaran",
+            "c": "Melakukan himbauan dan permintaan klarifikasi data melalui Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) terlebih dahulu",
+            "d": "Menyerahkan kasus langsung ke Penyidik Pajak untuk proses pidana"
+          },
+          "correct": "c",
+          "explanation": "SP2DK adalah instrumen pengawasan yang tepat untuk klarifikasi awal sebelum eskalasi ke tindakan pemeriksaan yang lebih invasif sesuai prinsip proporsionalitas.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Analisis Pola Kepatuhan PT Mitra Sejahtera Abadi",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 3,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Berdasarkan hasil analisis dan klarifikasi, rekomendasi tindak lanjut apa yang PALING SESUAI jika ditemukan indikasi kuat penggelapan pajak?",
+          "options": {
+            "a": "Menunggu SPT tahun berikutnya untuk melihat pola yang lebih jelas",
+            "b": "Memberikan edukasi perpajakan dan membiarkan Wajib Pajak melakukan pembetulan sukarela",
+            "c": "Merekomendasikan konseling dengan Account Representative secara informal",
+            "d": "Mengusulkan pemeriksaan bukti permulaan dan pemeriksaan untuk menghitung kewajiban pajak yang sebenarnya serta potensi sanksi"
+          },
+          "correct": "d",
+          "explanation": "Indikasi kuat penggelapan pajak memerlukan tindakan tegas berupa pemeriksaan formal untuk memastikan kepatuhan dan perhitungan pajak yang terutang sesuai peraturan.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Analisis Pola Kepatuhan PT Mitra Sejahtera Abadi",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 4,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Aspek prosedural atau risiko apa yang harus diperhatikan Kepala Seksi Pengawasan dalam menangani kasus ini?",
+          "options": {
+            "a": "Mengumumkan temuan kepada publik sebagai bentuk transparansi dan efek jera",
+            "b": "Mempercepat proses dengan melewati tahap klarifikasi untuk efisiensi waktu",
+            "c": "Memastikan seluruh proses pengawasan dan pemeriksaan sesuai prosedur, terdokumentasi dengan baik, dan menjaga kerahasiaan data Wajib Pajak untuk mengh",
+            "d": "Berkoordinasi dengan media massa untuk publikasi kasus sebagai pembelajaran"
+          },
+          "correct": "c",
+          "explanation": "Kepatuhan prosedural dan kerahasiaan data adalah kewajiban hukum yang melindungi DJP dari risiko gugatan dan menjaga integritas proses penegakan hukum pajak.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Analisis Pola Kepatuhan PT Mitra Sejahtera Abadi",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 0,
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pengawasan, apa masalah utama yang harus Anda identifikasi dari laporan AR Budi tentang Sentosa Industrial Park yang telah beroperasi 6 bulan?",
+          "options": {
+            "a": "Kualitas infrastruktur jalan menuju kawasan industri baru",
+            "b": "Potensi wajib pajak baru yang belum terdaftar dan kepatuhan perpajakan di kawasan industri tersebut",
+            "c": "Persaingan bisnis dengan kawasan industri lain di Karawang",
+            "d": "Ketersediaan tenaga kerja lokal untuk industri baru"
+          },
+          "correct": "b",
+          "explanation": "Masalah utama dari perspektif pengawasan pajak adalah identifikasi potensi wajib pajak baru yang belum terdaftar dan memastikan kepatuhan perpajakan sejak awal operasi.",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": "Identifikasi Potensi Pajak dari Kawasan Industri Baru",
+          "vigBody": "Anda adalah Kepala Seksi Pengawasan di KPP Pratama Karawang. AR Budi melaporkan adanya kawasan industri baru 'Sentosa Industrial Park' yang telah beroperasi sejak 6 bulan lalu dengan 25 unit pabrik. Dari basis data, hanya 8 pabrik yang terdaftar sebagai Wajib Pajak. AR Budi menemukan aktivitas produ",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 1,
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Data apa yang paling relevan untuk Anda kumpulkan guna menganalisis potensi pajak dari Sentosa Industrial Park?",
+          "options": {
+            "a": "Data harga tanah dan properti di sekitar kawasan",
+            "b": "Laporan keuangan KPP Pratama dari tahun sebelumnya",
+            "c": "Data demografi penduduk Karawang",
+            "d": "Daftar perusahaan tenant, NPWP, izin usaha, jenis industri, dan estimasi omzet masing-masing perusahaan"
+          },
+          "correct": "d",
+          "explanation": "Data tenant, NPWP, izin usaha, jenis industri, dan estimasi omzet adalah informasi krusial untuk menilai potensi pajak dan tingkat kepatuhan di kawasan industri baru.",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": "Identifikasi Potensi Pajak dari Kawasan Industri Baru",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 2,
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Manakah alternatif solusi terbaik untuk menindaklanjuti temuan kawasan industri baru ini secara efektif?",
+          "options": {
+            "a": "Melakukan sensus pajak nasional untuk kawasan industri, sosialisasi, dan pendaftaran wajib pajak baru disertai pengawasan berkala",
+            "b": "Langsung melakukan pemeriksaan pajak terhadap semua tenant",
+            "c": "Menunggu perusahaan melaporkan diri secara sukarela",
+            "d": "Menutup kawasan industri sampai semua izin pajak lengkap"
+          },
+          "correct": "a",
+          "explanation": "Pendekatan komprehensif melalui sensus pajak nasional, sosialisasi, pendaftaran, dan pengawasan berkala adalah solusi paling efektif untuk ekstensifikasi dan meningkatkan kepatuhan",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": "Identifikasi Potensi Pajak dari Kawasan Industri Baru",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 3,
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Apa rekomendasi tindak lanjut prioritas yang harus Anda laporkan kepada Kepala KPP?",
+          "options": {
+            "a": "Mengajukan penambahan anggaran untuk renovasi kantor",
+            "b": "Mengirim surat teguran kepada pengelola kawasan industri",
+            "c": "Membentuk tim khusus untuk melakukan pemetaan, pendataan tenant, dan menyusun rencana aksi ekstensifikasi serta intensifikasi pajak di kawasan tersebu",
+            "d": "Meminta penambahan pegawai dari kantor pusat"
+          },
+          "correct": "b",
+          "explanation": "Rekomendasi prioritas adalah membentuk tim khusus untuk pemetaan, pendataan, dan menyusun rencana aksi komprehensif yang mencakup ekstensifikasi dan intensifikasi sesuai tugas Kasi",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": "Identifikasi Potensi Pajak dari Kawasan Industri Baru",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 4,
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Apa risiko prosedural utama yang harus Anda antisipasi dalam proses ekstensifikasi di kawasan industri baru ini?",
+          "options": {
+            "a": "Tidak tersedianya formulir pendaftaran NPWP",
+            "b": "Jauhnya jarak kawasan dari kantor pajak",
+            "c": "Kurangnya alat tulis kantor untuk administrasi",
+            "d": "Ketidaklengkapan data dan dokumen dari wajib pajak baru, resistensi pengusaha, serta koordinasi dengan instansi terkait (pemda, pengelola kawasan) yan"
+          },
+          "correct": "d",
+          "explanation": "Risiko prosedural utama meliputi ketidaklengkapan dokumen, resistensi wajib pajak baru, dan tantangan koordinasi lintas instansi yang dapat menghambat proses ekstensifikasi perpaja",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": "Identifikasi Potensi Pajak dari Kawasan Industri Baru",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 0,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pengawasan, apa masalah utama yang harus Anda identifikasi dari laporan AR tentang PT Maju Jaya Sejahtera dengan omzet yang dilaporkan Rp 8,5 (milyar/juta - data tidak lengkap)?",
+          "options": {
+            "a": "Data laporan tidak lengkap sehingga tidak dapat dilakukan analisis potensi pajak yang akurat",
+            "b": "Omzet perusahaan terlalu rendah untuk dilakukan pengawasan intensif",
+            "c": "AR Budi Santoso tidak kompeten dalam melaporkan data wajib pajak",
+            "d": "PT Maju Jaya Sejahtera pasti melakukan penghindaran pajak"
+          },
+          "correct": "a",
+          "explanation": "Masalah utama adalah ketidaklengkapan data laporan (satuan omzet tidak jelas: milyar/juta/ribu) yang menghambat analisis potensi pajak yang tepat.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Potensi Pajak WP Pengusaha Multi Usaha",
+          "vigBody": "Saudara Budi Santoso, AR di Seksi Pengawasan, melaporkan bahwa PT Maju Jaya Sejahtera (NPWP 01.234.567.8-012.000) bergerak di bidang perdagangan umum dengan omzet dilaporkan Rp 8,5 miliar per tahun. Namun dari data LPAD terlihat pembelian listrik mencapai Rp 180 juta/bulan dan terdapat 3 rekening be",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 1,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Data relevan apa yang paling prioritas Anda minta kepada AR untuk melengkapi analisis potensi pajak PT Maju Jaya Sejahtera?",
+          "options": {
+            "a": "Data kepemilikan saham dan struktur manajemen perusahaan",
+            "b": "Laporan keuangan komisaris dan direksi perusahaan",
+            "c": "Omzet lengkap dengan satuan yang jelas, SPT Tahunan 3 tahun terakhir, dan data pembanding sektor sejenis",
+            "d": "Data rekening pribadi pemilik perusahaan"
+          },
+          "correct": "c",
+          "explanation": "Data omzet yang lengkap, historis SPT, dan benchmark industri merupakan data primer untuk analisis potensi pajak yang akurat dan objektif.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Potensi Pajak WP Pengusaha Multi Usaha",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 2,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Setelah data lengkap diterima dan menunjukkan indikasi ketidakwajaran omzet dibanding rata-rata industri, alternatif solusi manakah yang paling tepat untuk dievaluasi terlebih dahulu?",
+          "options": {
+            "a": "Langsung melakukan pemeriksaan pajak komprehensif",
+            "b": "Memanggil direktur PT Maju Jaya Sejahtera untuk investigasi",
+            "c": "Menerbitkan Surat Tagihan Pajak berdasarkan estimasi potensi",
+            "d": "Melakukan analisis risiko (risk assessment) dan himbauan/konseling terlebih dahulu sebelum tindakan pemeriksaan"
+          },
+          "correct": "d",
+          "explanation": "Pendekatan bertahap melalui analisis risiko dan himbauan sesuai prinsip pengawasan modern yang memberikan kesempatan pembetulan sebelum tindakan penegakan hukum.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Potensi Pajak WP Pengusaha Multi Usaha",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 3,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Berdasarkan hasil analisis risiko yang menunjukkan profil risiko tinggi, rekomendasi tindak lanjut apa yang paling tepat Anda sampaikan kepada Kepala Kantor?",
+          "options": {
+            "a": "Mengusulkan pemeriksaan pajak dengan ruang lingkup yang jelas disertai analisis cost-benefit dan prioritas pemeriksaan",
+            "b": "Memberikan sanksi administratif maksimal tanpa pemeriksaan",
+            "c": "Mengabaikan karena nilai pajak terlalu kecil",
+            "d": "Menutup kegiatan usaha PT Maju Jaya Sejahtera"
+          },
+          "correct": "a",
+          "explanation": "Rekomendasi pemeriksaan harus disertai justifikasi yang kuat, ruang lingkup yang jelas, dan pertimbangan efektivitas sumber daya sesuai kewenangan struktural.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Potensi Pajak WP Pengusaha Multi Usaha",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 4,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Dari aspek prosedural dan mitigasi risiko, apa yang harus Anda pastikan sebelum menindaklanjuti kasus PT Maju Jaya Sejahtera?",
+          "options": {
+            "a": "Mendapatkan persetujuan dari wajib pajak untuk dilakukan pemeriksaan",
+            "b": "Memastikan media massa sudah dihubungi untuk publikasi",
+            "c": "Semua dokumentasi analisis, koordinasi dengan pihak terkait, dan dasar hukum tindakan pengawasan sudah terpenuhi sesuai SOP untuk menghindari gugatan ",
+            "d": "Menunggu laporan masyarakat sebagai bukti awal"
+          },
+          "correct": "c",
+          "explanation": "Kelengkapan dokumentasi, koordinasi internal, dan kepatuhan pada SOP adalah kunci mitigasi risiko hukum dan administratif dalam pengawasan pajak.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Potensi Pajak WP Pengusaha Multi Usaha",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 0,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Dari laporan AR mengenai PT Mitra Sejahtera yang mengalami penurunan laba drastis dengan omzet Rp 85 miliar, apa identifikasi masalah utama yang perlu menjadi fokus pengawasan?",
+          "options": {
+            "a": "Penurunan pangsa pasar akibat persaingan bisnis elektronik",
+            "b": "Kemungkinan window dressing laporan keuangan untuk menurunkan beban pajak",
+            "c": "Masalah likuiditas perusahaan dalam membayar utang",
+            "d": "Ketidakefisienan operasional distribusi produk elektronik"
+          },
+          "correct": "b",
+          "explanation": "Sebagai Kepala Seksi Pengawasan DJP, fokus utama adalah potensi manipulasi laba untuk menghindari kewajiban perpajakan, bukan aspek bisnis umum perusahaan.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil dan Pola Kepatuhan Kelompok WP",
+          "vigBody": "Sebagai Kepala Seksi Pengawasan, Anda menerima laporan dari AR bahwa PT Mitra Sejahtera, perusahaan distributor elektronik dengan omzet Rp 85 miliar, menunjukkan penurunan laba drastis dari 12% menjadi 2% dalam dua tahun terakhir. Hasil analisis awal menunjukkan adanya peningkatan biaya promosi sebe",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 1,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Data mana yang PALING relevan untuk dianalisis guna memvalidasi dugaan kepatuhan pajak PT Mitra Sejahtera?",
+          "options": {
+            "a": "Perbandingan rasio laba kotor terhadap penjualan dengan periode sebelumnya dan industri sejenis",
+            "b": "Laporan proyeksi pertumbuhan industri elektronik nasional",
+            "c": "Data jumlah karyawan dan struktur organisasi perusahaan",
+            "d": "Daftar supplier dan kontrak kerja sama distribusi"
+          },
+          "correct": "a",
+          "explanation": "Analisis rasio profitabilitas komparatif (time series dan cross section) adalah metode efektif untuk mendeteksi anomali kewajaran laba yang dilaporkan.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil dan Pola Kepatuhan Kelompok WP",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 2,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Dalam mengevaluasi alternatif tindakan pengawasan, pendekatan mana yang PALING tepat untuk kasus ini?",
+          "options": {
+            "a": "Langsung melakukan pemeriksaan bukti permulaan sesuai pasal 43A UU KUP",
+            "b": "Melakukan analisis risiko mendalam melalui penelitian SPT dan permintaan data pendukung",
+            "c": "Memberikan himbauan tertulis kepada Wajib Pajak untuk pembetulan SPT",
+            "d": "Menyerahkan kasus langsung ke penyidik pajak untuk investigasi pidana"
+          },
+          "correct": "b",
+          "explanation": "Prinsip pengawasan bertahap mengharuskan analisis risiko dan penelitian SPT terlebih dahulu sebelum eskalasi ke pemeriksaan atau penyidikan.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil dan Pola Kepatuhan Kelompok WP",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 3,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut apa yang PALING tepat Anda usulkan kepada Kepala Kantor berdasarkan temuan awal?",
+          "options": {
+            "a": "Mengajukan perusahaan untuk dilakukan konseling oleh KPP",
+            "b": "Memasukkan PT Mitra Sejahtera dalam daftar nominasi pemeriksaan dengan kriteria khusus",
+            "c": "Mengusulkan pencabutan NPWP karena ketidakpatuhan",
+            "d": "Meminta AR untuk melakukan kunjungan lapangan informal"
+          },
+          "correct": "c",
+          "explanation": "Berdasarkan analisis risiko tinggi dengan indikasi penurunan laba tidak wajar, nominasi pemeriksaan adalah langkah prosedural yang tepat untuk verifikasi mendalam.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil dan Pola Kepatuhan Kelompok WP",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 4,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Aspek risiko prosedural apa yang harus Anda perhatikan dalam menindaklanjuti kasus ini?",
+          "options": {
+            "a": "Mengutamakan target penerimaan pajak daripada kualitas analisis",
+            "b": "Menghindari komunikasi dengan Wajib Pajak agar tidak terjadi kebocoran informasi",
+            "c": "Mempercepat proses dengan melewati persetujuan Kepala Kantor",
+            "d": "Memastikan usulan pemeriksaan didukung analisis risiko tertulis dan memenuhi kriteria seleksi sesuai SE Dirjen Pajak"
+          },
+          "correct": "d",
+          "explanation": "Prosedur pengawasan dan usulan pemeriksaan harus terdokumentasi dengan baik dan memenuhi kriteria formal untuk menghindari pembatalan atau gugatan di kemudian hari.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil dan Pola Kepatuhan Kelompok WP",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menerima informasi dari Account Representative bahwa PT Karya Mandiri (WP Patuh) mengajukan keberatan atas hasil pemeriksaan karena merasa kurang memahami dasar koreksi fiskal terkait biaya entertainment. WP menyampaikan ",
+          "options": {
+            "a": "Segera menyetujui pengurangan koreksi untuk menghindari eksposur negatif di media massa dan menjaga hubungan baik dengan WP Patuh",
+            "b": "Menyerahkan kasus langsung ke Bidang Hukum tanpa klarifikasi lebih lanjut karena sudah masuk tahap keberatan formal",
+            "c": "Menyelenggarakan konsultasi tatap muka dengan WP untuk menjelaskan dasar hukum koreksi, perhitungan detail, dan hak-hak WP dalam proses keberatan sesu",
+            "d": "Mengirim surat pemberitahuan tertulis saja tanpa dialog langsung karena koreksi sudah pasti benar sesuai ketentuan perpajakan"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mensyaratkan kemampuan melaksanakan advokasi sesuai petunjuk teknis dengan menyusun rencana komunikasi yang tepat. Konsultasi tatap muka merupakan bentuk advokasi preventif",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kasi Pengawasan, Anda menerima laporan profiling dari AR yang mengidentifikasi CV Berkah Jaya memiliki anomali: omzet 2022 naik 340% dari Rp 890 juta menjadi Rp 3,9 miliar, namun PPN Masukan meningkat 720% dan jumlah karyawan tetap 8 orang ta",
+          "options": {
+            "a": "Melakukan himbauan kepada WP untuk melakukan pembetulan SPT Masa PPN secara sukarela karena indikasi kesalahan administrasi",
+            "b": "Mengusulkan pemeriksaan komprehensif dengan fokus kebenaran materil transaksi dan penelusuran PKP penerbit faktur pajak berindikasi fiktif",
+            "c": "Menerbitkan SP2DK untuk meminta klarifikasi WP terkait lonjakan omzet dan melakukan konfirmasi langsung ke alamat PKP pembeli",
+            "d": "Merekomendasikan penelitian formal karena data masih perlu verifikasi lebih lanjut sebelum mengambil tindakan pengawasan intensif"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil profiling AR dan menelaah permasalahan untuk memberikan rekomendasi tindak lanjut yang tepat. Indikasi kuat skema faktur pajak tid",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menemukan CV Bina Karya selama 3 tahun berturut-turut melaporkan peredaran bruto mendekati batas PKP (Rp4,7 miliar) namun tidak mendaftar sebagai PKP. Dari penelitian profil usaha diketahui CV tersebut rutin memasok baran",
+          "options": {
+            "a": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar PPN karena terbukti melampaui batas omzet PKP",
+            "b": "Menyampaikan laporan ke Penyidik Pajak untuk dugaan tindak pidana perpajakan karena tidak mendaftar sebagai PKP",
+            "c": "Memberikan himbauan tertulis agar segera mendaftar sebagai PKP tanpa penelusuran lebih lanjut",
+            "d": "Mengusulkan pemeriksaan komprehensif dengan fokus penelusuran transaksi penjualan dan kemungkinan pembeli memotong sendiri PPN"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan menelaah permasalahan dengan mengevaluasi data profil usaha dan pola transaksi secara komprehensif sebelum memberikan rekomendasi. Mengusulkan pemeri",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima laporan dari Account Representative bahwa dalam wilayah kerja ditemukan 15 bangunan ruko baru di kawasan komersial yang belum terdaftar sebagai Wajib Pajak, padahal sudah beroperasi lebih dari 6 bulan. Dari hasil",
+          "options": {
+            "a": "Mengevaluasi kelengkapan data hasil observasi AR, menelaah kriteria kewajiban perpajakan masing-masing objek, kemudian merekomendasikan penerbitan him",
+            "b": "Langsung menerbitkan Surat Teguran kepada seluruh pemilik ruko karena telah memenuhi syarat subjektif dan objektif Wajib Pajak",
+            "c": "Memerintahkan AR untuk segera mendaftarkan secara jabatan seluruh pemilik ruko tersebut tanpa konfirmasi terlebih dahulu",
+            "d": "Menunda tindakan sampai ada pengaduan pihak ketiga atau data dari instansi lain yang lebih valid"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja bawahan (validasi data observasi AR), menelaah permasalahan subjek pajak potensial dengan menganalisis pemenuhan kriteria kewaji",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi hasil analisis kepatuhan PT Maju Jaya yang menunjukkan: (1) Peredaran usaha naik 45% namun laba turun 18%, (2) Beban gaji meningkat 120% tanpa penambahan karyawan signifikan, (3) Pembelian dari supplier terte",
+          "options": {
+            "a": "Memberikan apresiasi karena histori kepatuhan baik dan hanya melakukan monitoring rutin tanpa tindakan khusus",
+            "b": "Mengusulkan pemeriksaan mendalam dengan fokus pada kewajaran transaksi hubungan istimewa dan biaya yang dibebankan",
+            "c": "Mengeluarkan imbauan tertulis untuk melengkapi dokumentasi transfer pricing tanpa penelitian lebih lanjut",
+            "d": "Merekomendasikan konseling langsung kepada Wajib Pajak untuk memperbaiki pencatatan pembukuan secara umum"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kasi mengevaluasi hasil analisis secara komprehensif dan menemukan indikasi ketidakwajaran material pada beban dan transaksi dengan pihak terkait yang berpoten",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": false
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 2,
+          "question": "Sebagai Kasi Pengawasan, Anda menerima hasil analisis risiko kepatuhan PT Maju Jaya yang menunjukkan: (1) Penurunan omzet 35% namun beban gaji naik 40%, (2) Pembelian aset tetap Rp 2,5 M tidak dilaporkan di SPT, (3) Rekanan utama adalah pihak afilias",
+          "options": {
+            "a": "Langsung menerbitkan SP2 untuk pemeriksaan lengkap karena terdapat indikasi transfer pricing dan ketidakpatuhan material",
+            "b": "Melakukan koordinasi dengan Seksi Pelayanan untuk meminta WP melakukan pembetulan SPT secara sukarela",
+            "c": "Mengirim surat permintaan penjelasan kepada WP dan menunggu tanggapan sebelum melakukan tindakan lebih lanjut",
+            "d": "Menyusun usulan pemeriksaan dengan menganalisis lebih lanjut profil WP, pola transaksi afiliasi, dan pemetaan risiko fiskal untuk diserahkan kepada at"
+          },
+          "correct": "d",
+          "explanation": "Level 2 Pemeriksaan Pajak mensyaratkan kemampuan menganalisis data WP dan menyusun rencana sesuai petunjuk teknis sebelum eksekusi. Kasi Pengawasan harus melakukan analisis mendala",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menemukan PT Sejahtera Mandiri yang bergerak di bidang konstruksi melaporkan peredaran bruto Rp 18 miliar dalam SPT Tahunan 2023, namun hasil analisis data pihak ketiga menunjukkan nilai kontrak dari berbagai proyek menca",
+          "options": {
+            "a": "Mengusulkan pemeriksaan bukti permulaan karena terdapat indikasi kuat tindak pidana perpajakan dengan selisih material dan riwayat pelanggaran",
+            "b": "Menerbitkan Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) untuk meminta klarifikasi perbedaan peredaran bruto",
+            "c": "Melakukan himbauan kepada WP untuk melakukan pembetulan SPT Tahunan secara sukarela sebelum dilakukan tindakan lebih lanjut",
+            "d": "Mengusulkan pemeriksaan rutin untuk menguji kepatuhan material karena terdapat indikasi penghasilan yang belum dilaporkan"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan menelaah permasalahan dan memberikan rekomendasi tindak lanjut yang tepat. Dengan selisih hampir 100%, didukung bukti pembelian material yang tidak sesua",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": false
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi PT Mitra Sejahtera yang melaporkan penurunan omzet 40% namun hasil analisis menunjukkan rekening koran mencatat transfer masuk meningkat 35%, ekuitas naik signifikan, dan terdapat penambahan aset tetap senila",
+          "options": {
+            "a": "Menerima klarifikasi WP karena kooperatif dan menutup kasus dengan catatan khusus untuk pengawasan tahun depan",
+            "b": "Mengirim surat himbauan kepada WP untuk melakukan pembetulan SPT secara sukarela tanpa tindakan lebih lanjut",
+            "c": "Mengusulkan pemeriksaan bukti permulaan karena terdapat indikasi kuat ketidaksesuaian antara data internal dan eksternal yang material",
+            "d": "Melakukan konseling kepada WP dan meminta penjelasan tambahan sampai data sesuai sebelum mengambil keputusan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dan menelaah permasalahan WP secara komprehensif untuk memberikan rekomendasi tindak lanjut yang tepat. Data eksternal (rekening",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi hasil analisis data perbankan yang menunjukkan UD Makmur Jaya (belum ber-NPWP) memiliki omzet Rp 8,5 miliar per tahun dari hasil penjualan sembako ke berbagai toko. Saat dilakukan konfirmasi lapangan, pemilik",
+          "options": {
+            "a": "Memberikan himbauan tertulis kepada UD Makmur Jaya untuk mendaftar NPWP secara sukarela dan melakukan monitoring berkala",
+            "b": "Menunda tindakan ekstensifikasi sambil mengumpulkan data tambahan dari semua toko langganan selama 6 bulan ke depan",
+            "c": "Menyerahkan kasus ke penyidik pajak karena terdapat indikasi penggelapan pajak dengan perbedaan omzet yang signifikan",
+            "d": "Menerbitkan Surat Penerbitan NPWP secara jabatan, melakukan profiling kewajiban perpajakan, dan menyusun rencana intensifikasi dengan menghubungkan da"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja dan menelaah permasalahan WP untuk memberikan rekomendasi tindak lanjut yang komprehensif. Penerbitan NPWP jabatan diperluka",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menganalisis data WP Badan PT Karya Mandiri yang melaporkan penurunan omzet 40% namun biaya operasional meningkat 35%. Dari hasil ekstraksi data diketahui terdapat transaksi penjualan ke pihak afiliasi di luar negeri seni",
+          "options": {
+            "a": "Menyusun Usulan Pemeriksaan dengan menganalisis risiko transfer pricing dan kelengkapan dokumentasi, kemudian mengajukan ke Kepala Kantor untuk perset",
+            "b": "Langsung menerbitkan Surat Perintah Pemeriksaan Bukti Permulaan karena terdapat indikasi pidana perpajakan",
+            "c": "Melakukan pemeriksaan lapangan secara langsung tanpa usulan karena nilai transaksi sudah melebihi threshold Rp 5 miliar",
+            "d": "Mengirim himbauan kepada WP untuk melakukan pembetulan SPT Tahunan dan menutup kasus setelah WP melakukan pembetulan"
+          },
+          "correct": "a",
+          "explanation": "Level 2 mengharuskan menganalisis data WP dan menyusun rencana pemeriksaan sesuai petunjuk teknis. Temuan transaksi afiliasi luar negeri yang tidak dilaporkan memerlukan analisis r",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi hasil ekstensifikasi di wilayah kerja KPP yang menunjukkan ditemukan 45 objek pajak baru dari sektor properti dengan potensi penerimaan Rp 2,3 miliar. Namun, tim pelaksana melaporkan kendala dalam validasi da",
+          "options": {
+            "a": "Langsung menerbitkan SPPT untuk 27 objek yang jelas kepemilikannya dan menutup kasus 18 objek yang bermasalah karena tidak memiliki dasar hukum yang k",
+            "b": "Menunda seluruh penerbitan SPPT hingga 45 objek terklarifikasi semua kepemilikannya untuk menghindari sengketa hukum di kemudian hari",
+            "c": "Melakukan koordinasi dengan BPN untuk klarifikasi kepemilikan 18 objek bermasalah, menerbitkan SPPT untuk 27 objek yang valid, dan menyusun strategi p",
+            "d": "Menerbitkan SPPT atas nama pengelola untuk seluruh 45 objek pajak karena mereka adalah pihak yang menguasai fisik objek pajak tersebut"
+          },
+          "correct": "c",
+          "explanation": "Level 3 Ekstensifikasi Perpajakan mengharuskan Kasi mengevaluasi hasil kerja tim dengan menelaah permasalahan secara komprehensif (validasi kepemilikan) dan memberikan rekomendasi ",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan diminta menyusun rencana advokasi kebijakan perpajakan untuk sektor UMKM di wilayah kerja KPP Anda yang menunjukkan tingkat kepatuhan rendah (30%) dalam pemanfaatan insentif Pajak Penghasilan Final 0,5%. Berdasarkan anali",
+          "options": {
+            "a": "Langsung melakukan sosialisasi massal ke seluruh WP UMKM tanpa klasifikasi untuk menghemat waktu dan anggaran",
+            "b": "Menganalisis profil dan segmentasi 450 WP UMKM berdasarkan omzet dan kendala pemanfaatan insentif, kemudian menyusun rencana advokasi bertahap sesuai ",
+            "c": "Membuat surat himbauan massal kepada seluruh WP UMKM untuk segera memanfaatkan insentif tanpa pendampingan lebih lanjut",
+            "d": "Menunggu arahan detail dari kantor pusat DJP sebelum melakukan tindakan apapun karena kebijakan bersifat nasional"
+          },
+          "correct": "b",
+          "explanation": "Level 2 Advokasi Kebijakan Perpajakan mensyaratkan kemampuan menganalisis data WP secara mendalam untuk mengidentifikasi segmentasi dan kendala spesifik. Penyusunan rencana advokas",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 2,
+          "question": "Sebagai Kasi Pengawasan, Anda menganalisis data PT Karya Mandiri yang melaporkan penjualan Rp15 miliar dengan laba kotor 8%, sementara data LKPM menunjukkan rata-rata industri sejenis memiliki laba kotor 22-25%. Profil risiko menunjukkan perusahaan m",
+          "options": {
+            "a": "Melakukan analisis lebih mendalam terhadap komponen biaya dan transaksi transfer pricing, kemudian menyusun usulan pemeriksaan dengan fokus khusus dis",
+            "b": "Langsung mengusulkan pemeriksaan lengkap karena terdapat indikasi penggeseran laba ke luar negeri",
+            "c": "Menunggu hasil pemeriksaan tahun sebelumnya selesai sebelum mengambil tindakan lebih lanjut",
+            "d": "Menerbitkan himbauan kepada WP untuk melakukan pembetulan SPT Tahunan secara sukarela"
+          },
+          "correct": "a",
+          "explanation": "Level 2 memerlukan kemampuan menganalisis data WP secara mendalam sebelum menyusun rencana tindakan. Perbedaan laba kotor yang signifikan dan adanya transaksi afiliasi memerlukan a",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menemukan CV Berkah Jaya mengajukan keberatan atas ketetapan pajak karena merasa kebijakan peredaran bruto tertentu tidak mengakomodasi kondisi usaha musiman mereka. Account Representative melaporkan bahwa WP ini memiliki",
+          "options": {
+            "a": "Langsung menolak keberatan dan menegaskan bahwa kebijakan perpajakan bersifat mengikat tanpa pengecualian untuk semua WP",
+            "b": "Menganalisis data peredaran bruto WP per bulan, menyusun matriks perbandingan dengan ketentuan, kemudian memberikan penjelasan tertulis bagaimana kebi",
+            "c": "Menyarankan WP untuk mengajukan permohonan judicial review karena masalah ini menyangkut kebijakan yang berada di luar kewenangan KPP",
+            "d": "Mengundang WP untuk konsultasi informal dan memberikan solusi agar WP meratakan penghasilan secara artifisial agar sesuai ketentuan"
+          },
+          "correct": "b",
+          "explanation": "Level 2 advokasi kebijakan mengharuskan Kasi Pengawasan menganalisis data WP secara konkret (pola peredaran bruto), menyusun penjelasan terstruktur dengan matriks perbandingan, dan",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi PT Karya Abadi yang bergerak di bidang konstruksi. Hasil analisis menunjukkan: (1) Omzet naik 150% dari Rp 12 M menjadi Rp 30 M, (2) Laba turun dari 8% menjadi 2%, (3) Biaya subkontraktor naik 400%, (4) Pembe",
+          "options": {
+            "a": "Langsung menerbitkan SP2 untuk pemeriksaan karena ada indikasi penggelapan pajak melalui skema subkontraktor fiktif",
+            "b": "Mengirim surat himbauan kepada WP untuk memperbaiki pembukuan dan melaporkan SPT pembetulan dalam 14 hari",
+            "c": "Melakukan penelitian mendalam terhadap kewajaran transaksi subkontraktor, verifikasi keberadaan dan validitas usaha subkontraktor, serta analisis kewa",
+            "d": "Menyerahkan kasus langsung ke Waskon II karena nilainya di atas Rp 25 M dan melibatkan dugaan subkontraktor fiktif"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan menelaah permasalahan WP secara komprehensif sebelum memberikan rekomendasi. Kasus ini memerlukan evaluasi mendalam terhadap profil risiko melalui pe",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menemukan PT Sentosa Abadi melaporkan penjualan Rp 8 miliar di SPT Tahunan, namun dari data LPAD pihak ketiga menunjukkan transaksi penjualan mencapai Rp 12 miliar. Setelah analisis awal, ditemukan indikasi penggunaan fak",
+          "options": {
+            "a": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar atas selisih omzet yang ditemukan",
+            "b": "Mengirim surat permintaan penjelasan kepada wajib pajak dan menunggu tanggapan sebelum mengambil keputusan",
+            "c": "Melakukan konseling kepada wajib pajak untuk membetulkan SPT Tahunan sebelum dilakukan tindakan lebih lanjut",
+            "d": "Menyusun usulan pemeriksaan lengkap dengan analisis data, perhitungan potensi pajak, dan kronologi temuan untuk diajukan ke Kepala KPP"
+          },
+          "correct": "d",
+          "explanation": "Level 2 Pemeriksaan Pajak mengharuskan Kasi Pengawasan mampu menganalisis data WP dan menyusun rencana pemeriksaan berdasarkan temuan awal. Menyusun usulan pemeriksaan lengkap deng",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima laporan dari Account Representative bahwa PT Mitra Sejahtera, perusahaan distributor pupuk, melaporkan penurunan omzet 45% pada tahun 2024 dibanding 2023, namun dari data pihak ketiga diketahui volume pembelian d",
+          "options": {
+            "a": "Langsung menerbitkan SP2 dan melakukan pemeriksaan bukti permulaan karena terindikasi tindak pidana perpajakan atas penggelapan omzet",
+            "b": "Meminta WP menyampaikan klarifikasi tertulis terkait penurunan omzet dan menunggu jawaban WP sebelum mengambil tindakan lebih lanjut",
+            "c": "Menyusun rekomendasi untuk dilakukan analisis risiko mendalam dengan konfirmasi pihak ketiga, penelitian pembukuan, dan evaluasi transaksi rekening ba",
+            "d": "Menyarankan pemeriksaan rutin untuk tahun pajak 2024 tanpa perlu analisis lebih lanjut karena penurunan omzet sudah cukup menjadi indikator"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan Kasi menelaah permasalahan WP secara komprehensif dengan mengintegrasikan berbagai sumber data (pihak ketiga, industri, rekening bank) untuk mengidentifikasi k",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menemukan UD Maju Lancar yang bergerak di bidang distribusi sembako memiliki omzet Rp 12 miliar per tahun namun belum terdaftar sebagai PKP. Saat Anda melakukan himbauan, pemilik menolak dengan alasan takut biaya administ",
+          "options": {
+            "a": "Langsung menerbitkan surat teguran dan ancaman sanksi administratif karena WP sudah melewati batas omzet wajib PKP sesuai ketentuan perpajakan",
+            "b": "Menyusun materi edukasi yang menjelaskan mekanisme pengkreditan pajak masukan, kesetaraan kompetisi dengan sesama PKP, dan dampak positif status PKP t",
+            "c": "Menyarankan WP untuk memecah usaha menjadi beberapa badan usaha agar omzet masing-masing di bawah batas PKP sehingga tidak wajib dikukuhkan",
+            "d": "Melaporkan ke Kanwil untuk dilakukan pemeriksaan bukti permulaan karena WP diduga melakukan penghindaran kewajiban perpajakan secara sistematis"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mengharuskan Kasi Pengawasan melaksanakan advokasi sesuai petunjuk teknis dengan menyusun rencana edukasi berbasis analisis data kompetitor dan kondisi WP. Pendekatan eduka",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi PT Surya Abadi yang melaporkan penurunan omzet 45% di tahun 2024, namun hasil analisis menunjukkan: (1) data retur pembelian meningkat 60% tanpa bukti retur fisik, (2) rekening koran menunjukkan transfer ruti",
+          "options": {
+            "a": "Menerbitkan himbauan untuk pembetulan SPT dan melakukan konseling kepada Wajib Pajak terkait ketidaksesuaian data",
+            "b": "Menyampaikan data ke Bidang Pemeriksaan tanpa analisis lanjutan karena indikasi pelanggaran sudah jelas terlihat",
+            "c": "Melakukan kunjungan (visit) untuk memastikan kebenaran data laporan keuangan dan memberikan edukasi perpajakan",
+            "d": "Mengusulkan pemeriksaan khusus dengan fokus pada rekonstruksi omzet, verifikasi retur fiktif, dan penelusuran transfer transfer pricing"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menelaah permasalahan kompleks dengan mengidentifikasi red flags (retur fiktif, transfer pricing, inkonsistensi data). Evaluasi hasil analisis menunjukka",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menerima Surat Perintah Pemeriksaan untuk melakukan pemeriksaan lapangan terhadap PT Nusantara Sejahtera dengan ruang lingkup PPh Badan dan PPN Tahun 2023. Dalam analisis data awal, Anda menemukan omzet yang dilaporkan Rp",
+          "options": {
+            "a": "Menyusun program pemeriksaan yang fokus pada pengujian penjualan dengan konfirmasi pihak ketiga dan penelusuran validitas faktur pajak masukan, kemudi",
+            "b": "Langsung menerbitkan SPHP untuk meminta klarifikasi selisih omzet dan membatalkan seluruh faktur pajak masukan dari vendor tidak aktif",
+            "c": "Mengusulkan pemeriksaan bukti permulaan karena terdapat indikasi kuat tindak pidana pajak dan melaporkan kasus ke penyidik",
+            "d": "Melakukan himbauan kepada WP untuk pembetulan SPT dan membatalkan pemeriksaan jika WP kooperatif melakukan pembetulan"
+          },
+          "correct": "a",
+          "explanation": "Level 2 Pemeriksaan Pajak mensyaratkan kemampuan menganalisis data WP dan menyusun rencana pemeriksaan yang sistematis. Langkah prioritas adalah menyusun program pemeriksaan yang f",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan mendapati PT Armada Nusantara mengajukan keberatan atas penerbitan STP PPN karena merasa telah melakukan pembayaran tepat waktu. Dalam penelitian, Anda menemukan adanya perbedaan interpretasi terkait penerapan PP 44 Tahun",
+          "options": {
+            "a": "Langsung menolak keberatan dan menegaskan bahwa sistem sudah benar sehingga WP harus membayar STP yang diterbitkan",
+            "b": "Menganalisis data omzet WP dari berbagai sumber, menyusun klarifikasi tertulis mengenai ketentuan threshold PKP sesuai regulasi terkini, kemudian mela",
+            "c": "Menyerahkan kasus ini kepada Account Representative karena advokasi kebijakan bukan tugas Kasi Pengawasan",
+            "d": "Membatalkan STP untuk menghindari konflik dengan WP dan memberikan kesempatan WP mengurus sendiri kewajiban perpajakannya"
+          },
+          "correct": "b",
+          "explanation": "Level 2 Advokasi mensyaratkan kemampuan menganalisis data WP secara komprehensif untuk mengidentifikasi akar permasalahan. Menyusun rencana klarifikasi tertulis dan melaksanakan ko",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan mengidentifikasi bahwa 15 WP UMKM di wilayah binaan Anda mengeluhkan kebingungan terkait pemberlakuan tarif PPh Final 0,5% pasca terbitnya PP baru tentang fasilitas perpajakan UMKM. Beberapa WP menyampaikan keberatan mela",
+          "options": {
+            "a": "Langsung membuat surat imbauan kepada seluruh WP UMKM untuk patuh tanpa melakukan analisis lebih lanjut terhadap permasalahan yang dikeluhkan",
+            "b": "Menunggu instruksi dari Kepala KPP tanpa melakukan tindakan preventif meskipun potensi viral di media sosial semakin besar",
+            "c": "Menyerahkan sepenuhnya kepada Seksi Pelayanan karena sosialisasi kebijakan bukan tupoksi Seksi Pengawasan",
+            "d": "Menganalisis data keluhan WP, menyusun rencana kegiatan sosialisasi tatap muka dan daring sesuai petunjuk teknis advokasi, kemudian melaksanakan eduka"
+          },
+          "correct": "d",
+          "explanation": "Level 2 Advokasi Kebijakan mensyaratkan kemampuan menganalisis data WP yang mengalami kesulitan pemahaman regulasi, menyusun rencana intervensi edukatif yang terstruktur, dan melak",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi CV Tirta Jaya yang melaporkan peredaran bruto Rp4,2 miliar dan menggunakan tarif PPh Final 0,5%. Dari data e-commerce ditemukan transaksi marketplace sebesar Rp8,7 miliar, sedangkan data BI menunjukkan mutasi",
+          "options": {
+            "a": "Menerbitkan usulan pemeriksaan dengan fokus penelitian pengakuan pendapatan dan kebenaran penggunaan tarif PPh Final disertai analisis rekonsiliasi om",
+            "b": "Menerima argumen WP karena sistem konsinyasi memang belum menimbulkan kewajiban pajak sampai barang terjual",
+            "c": "Langsung menerbitkan Surat Permintaan Penjelasan Data dan/atau Keterangan (SP2DK) untuk meminta klarifikasi selisih omzet",
+            "d": "Melakukan himbauan kepada WP untuk melakukan pembetulan SPT Tahunan tanpa analisis lebih lanjut"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengevaluasi hasil kerja dengan menelaah permasalahan substansial berupa indikasi underreporting signifikan (selisih >100%) dari multiple sources. Rekomendasi pemeriksaan m",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi PT Megah Konstruksi yang melaporkan peredaran usaha Rp 45 miliar namun rasio laba bersih hanya 0,8% sementara benchmark industri konstruksi 4-6%. Dari analisis profil risiko ditemukan: pembayaran ke pemasok f",
+          "options": {
+            "a": "Menerbitkan Surat Himbauan untuk melakukan pembetulan SPT Tahunan disertai penjelasan analisis rasio profitabilitas dan memberikan batas waktu 14 hari",
+            "b": "Melakukan konseling kepada Wajib Pajak untuk menjelaskan ketidakwajaran rasio keuangan dan meminta klarifikasi dokumen pendukung biaya operasional",
+            "c": "Mengusulkan pemeriksaan dengan kriteria Wajib Pajak yang menyampaikan SPT lebih bayar, disertai Analisis Risiko yang memuat indikasi penggelapan pajak",
+            "d": "Menerbitkan Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) terkait seluruh transaksi dengan pemasok dan subkontraktor yang mencurig"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dan merekomendasikan tindak lanjut berdasarkan telaah permasalahan komprehensif. Temuan indikasi biaya fiktif bernilai material ",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima hasil analisis kepatuhan PT Bintang Terang yang menunjukkan rasio HPP/Penjualan 85% (industri rata-rata 65%), laba bruto 15% turun dari tahun lalu 35%, namun pembelian dari supplier tertentu meningkat 300% tanpa ",
+          "options": {
+            "a": "Menyetujui LPK dan langsung menerbitkan SP2 karena terdapat indikasi ketidakwajaran rasio keuangan yang signifikan",
+            "b": "Merekomendasikan konseling kepada WP untuk menjelaskan penyebab penurunan laba dan meminta WP melakukan pembetulan SPT sendiri",
+            "c": "Mengembalikan LPK ke pelaksana untuk melakukan himbauan tertulis agar WP memperbaiki rasio keuangannya sesuai rata-rata industri",
+            "d": "Menelaah lebih dalam hubungan istimewa dengan supplier, mengevaluasi kewajaran transaksi, dan merekomendasikan pemeriksaan bukti pembukuan serta usula"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kasi menelaah permasalahan secara mendalam dengan mengidentifikasi potensi transfer pricing dari peningkatan pembelian tidak wajar. Evaluasi mencakup analisis ",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi CV Bintang Terang yang melaporkan penurunan omzet 45% di SPT Tahunan 2023, namun dari data AEoI terdeteksi transfer masuk ke rekening direktur meningkat 120%. Analisis laporan staf menunjukkan adanya 15 faktu",
+          "options": {
+            "a": "Merekomendasikan pemeriksaan bukti permulaan dengan fokus pada transaksi penjualan tidak dilaporkan dan ketidaksesuaian data AEoI sebagai indikasi pen",
+            "b": "Menerima penjelasan WP dan menutup kasus karena persaingan usaha adalah alasan wajar penurunan omzet",
+            "c": "Mengirim himbauan kepada WP untuk melakukan pembetulan SPT secara sukarela tanpa sanksi",
+            "d": "Mengusulkan konseling kepada WP untuk memberikan edukasi tentang pentingnya pelaporan yang benar"
+          },
+          "correct": "a",
+          "explanation": "Level 3 memerlukan evaluasi menyeluruh terhadap ketidaksesuaian data material (faktur tidak dilaporkan Rp 2,4 miliar dan anomali AEoI 120%) yang mengindikasikan ketidakpatuhan subs",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima laporan dari pelaksana ekstensifikasi bahwa terdapat UD Cahaya Baru yang bergerak di bidang perdagangan material bangunan dengan omzet Rp 800 juta per bulan namun belum memiliki NPWP. Hasil penelusuran menunjukka",
+          "options": {
+            "a": "Menerbitkan Surat Himbauan kepada saudara pemilik yang di luar negeri untuk mendaftarkan diri memperoleh NPWP",
+            "b": "Menunggu saudara pemilik pulang ke Indonesia untuk dimintai klarifikasi dan mendaftarkan NPWP secara sukarela",
+            "c": "Merekomendasikan penerbitan NPWP secara jabatan atas nama pemilik yang ber-NPWP karena ia adalah subjek pajak yang sebenarnya menjalankan usaha berdas",
+            "d": "Menyarankan pemilik untuk mengubah dokumen kepemilikan toko terlebih dahulu sebelum dilakukan penerbitan NPWP jabatan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan Kasi menelaah permasalahan dan memberikan rekomendasi tindak lanjut berdasarkan evaluasi fakta. Berdasarkan dokumen kepemilikan dan pengendalian usaha yang fak",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima laporan dari pelaksana seksi bahwa di wilayah kerja KPP terdapat 15 klinik kecantikan yang beroperasi secara aktif namun hanya 6 yang terdaftar sebagai Wajib Pajak. Hasil observasi menunjukkan 9 klinik lainnya me",
+          "options": {
+            "a": "Menyerahkan seluruh data ke Account Representative untuk dilakukan pendekatan persuasif kepada 9 klinik tersebut",
+            "b": "Mengevaluasi kelengkapan data hasil observasi, menelaah profil usaha dan potensi pajak masing-masing klinik, kemudian menyusun rekomendasi prioritas e",
+            "c": "Langsung menerbitkan himbauan kepada 9 klinik tersebut untuk segera mendaftar sebagai Wajib Pajak",
+            "d": "Meminta pelaksana untuk melakukan observasi ulang dan menunggu data yang lebih lengkap sebelum mengambil tindakan"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja bawahan (kelengkapan data observasi), menelaah permasalahan dari aspek profil dan potensi pajak setiap objek, serta menyusun",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima laporan hasil observasi lapangan bahwa terdapat kompleks pertokoan baru di wilayah kerja KPP dengan 45 unit usaha yang beroperasi namun belum seluruhnya terdaftar sebagai Wajib Pajak. Tim ekstensifikasi telah mel",
+          "options": {
+            "a": "Mengevaluasi data hasil observasi, menelaah potensi pajak dari 12 unit yang belum terdaftar, dan merekomendasikan prioritas tindak lanjut ekstensifika",
+            "b": "Segera menerbitkan surat himbauan kepada seluruh 17 unit yang belum terdaftar untuk mendaftarkan diri sebagai Wajib Pajak",
+            "c": "Menugaskan AR untuk melakukan kunjungan ke semua 45 unit usaha dan meminta mereka melaporkan omzet bulanan",
+            "d": "Membuat laporan statistik jumlah unit usaha yang sudah dan belum terdaftar untuk disampaikan kepada Kepala KPP"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Ekstensifikasi Perpajakan mengharuskan Kasi Pengawasan mengevaluasi hasil kerja tim (hasil observasi lapangan), menelaah permasalahan WP potensial (menganalisis 12 unit yan",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menemukan PT Sentosa Jaya melaporkan penjualan Rp 8 miliar namun analisis data pihak ketiga menunjukkan omzet transaksi digital mencapai Rp 14 miliar. Gross profit margin industri sejenis 35%, namun WP melaporkan 18%. Apa",
+          "options": {
+            "a": "Langsung menerbitkan Surat Perintah Pemeriksaan Bukti Permulaan karena ada indikasi pidana pajak",
+            "b": "Menyusun usulan pemeriksaan dengan analisis selisih omzet Rp 6 miliar dan ketidakwajaran gross profit margin sebagai dasar penetapan kriteria pemeriks",
+            "c": "Menunggu laporan SPT Tahunan tahun berikutnya untuk melihat konsistensi data sebelum mengambil tindakan",
+            "d": "Mengirim surat himbauan kepada WP untuk melakukan pembetulan SPT tanpa analisis lebih lanjut"
+          },
+          "correct": "b",
+          "explanation": "Level 2 Pemeriksaan Pajak mengharuskan Kasi Pengawasan menganalisis data WP dari berbagai sumber dan menyusun rencana tindak lanjut yang terstruktur. Usulan pemeriksaan harus diduk",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan mendapat instruksi dari Kepala KPP untuk melakukan advokasi kepada Asosiasi Pengusaha Kuliner terkait kebijakan kewajiban penggunaan aplikasi POS (Point of Sales) untuk pencatatan transaksi sesuai PMK terbaru. Dari analis",
+          "options": {
+            "a": "Langsung melakukan pemeriksaan kepada seluruh anggota asosiasi yang belum menggunakan aplikasi POS sebagai tindakan penegakan hukum",
+            "b": "Menunda pelaksanaan advokasi sampai menunggu arahan lebih detail dari Kantor Pusat DJP mengenai strategi implementasi kebijakan",
+            "c": "Menyusun rencana kegiatan advokasi berupa sosialisasi kelompok dengan materi teknis penggunaan aplikasi POS dan implikasi perpajakannya sesuai petunju",
+            "d": "Menerbitkan surat himbauan massal kepada seluruh anggota asosiasi tanpa perlu melakukan pendekatan persuasif terlebih dahulu"
+          },
+          "correct": "c",
+          "explanation": "Level 2 Advokasi Kebijakan mensyaratkan kemampuan menganalisis data WP (85% belum paham) dan menyusun rencana kegiatan advokasi yang terstruktur. Pelaksanaan advokasi harus sesuai ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima laporan bahwa terdapat 15 bangunan ruko baru di Jalan Perdagangan yang telah beroperasi sejak 6 bulan lalu namun belum terdaftar sebagai Wajib Pajak. Setelah dilakukan observasi lapangan, diketahui 10 ruko berope",
+          "options": {
+            "a": "Segera melakukan penerbitan NPWP secara jabatan untuk seluruh 15 ruko tersebut dan menerbitkan Surat Teguran kepada pemilik yang tidak kooperatif",
+            "b": "Langsung melakukan pemeriksaan bukti permulaan terhadap 13 ruko yang beroperasi karena diduga melakukan penghindaran kewajiban perpajakan",
+            "c": "Melimpahkan seluruh hasil observasi kepada Seksi Pelayanan untuk melakukan pendekatan persuasif dan memberikan waktu 3 bulan untuk pendaftaran mandiri",
+            "d": "Menyusun prioritas ekstensifikasi dengan fokus pada 10 toko retail dan 3 kantor jasa konsultan, melakukan himbauan pendaftaran, dan menyiapkan usulan "
+          },
+          "correct": "d",
+          "explanation": "Level 3 Ekstensifikasi mengharuskan Kasi mengevaluasi hasil observasi dan menyusun prioritas berdasarkan potensi pajak, menelaah kondisi WP dengan membedakan yang aktif beroperasi ",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menganalisis data PT Maju Jaya yang melaporkan peredaran usaha Rp 12 miliar namun GPM hanya 8% sementara rata-rata industri sejenis 25%. Hasil analisis menunjukkan adanya transaksi pembelian fiktif senilai Rp 3,5 miliar. ",
+          "options": {
+            "a": "Langsung menerbitkan Surat Perintah Pemeriksaan (SP2) untuk pemeriksaan lengkap tanpa konsultasi lebih lanjut",
+            "b": "Mengirim Surat Himbauan kepada WP untuk melakukan pembetulan SPT tanpa melakukan penelitian lebih lanjut",
+            "c": "Menyusun usulan pemeriksaan lengkap dengan menganalisis data pendukung, membuat matriks risiko, dan mengonsultasikan ke Kasi Pemeriksaan sesuai SOP",
+            "d": "Menunggu instruksi dari Kepala Kantor untuk menentukan jenis pemeriksaan yang akan dilakukan"
+          },
+          "correct": "c",
+          "explanation": "Level 2 Pemeriksaan Pajak mengharuskan Kasi Pengawasan menganalisis data WP secara komprehensif dan menyusun rencana pemeriksaan berdasarkan temuan risiko. Penyusunan usulan pemeri",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan mengevaluasi hasil analisis kepatuhan PT Maju Jaya yang menunjukkan peredaran usaha Rp15 miliar namun rasio HPP/Penjualan hanya 35% (rata-rata industri 65%). Pemeriksaan sederhana menunjukkan pembelian bahan baku tercatat",
+          "options": {
+            "a": "Langsung mengusulkan pemeriksaan bukti permulaan karena ada indikasi penggelapan pajak dari markup laba yang tidak wajar",
+            "b": "Melakukan penelaahan mendalam terhadap model bisnis WP untuk memastikan apakah margin laba tinggi merupakan karakteristik bisnis yang sesungguhnya ata",
+            "c": "Menerbitkan Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) untuk meminta klarifikasi seluruh transaksi pembelian dan penjualan",
+            "d": "Memasukkan WP ke dalam daftar usulan pemeriksaan rutin karena rasio keuangan berbeda signifikan dengan industri sejenis"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kasi menelaah permasalahan secara komprehensif sebelum memberikan rekomendasi. Margin laba tinggi yang konsisten perlu ditelaah lebih mendalam karena bisa jadi",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menganalisis data PT Mitra Jaya yang melaporkan peredaran bruto Rp 8,5 miliar namun laba bruto hanya 2% sementara rata-rata industri sejenis 18%. Hasil analisis menunjukkan adanya pembelian fiktif dari pemasok tidak wajar",
+          "options": {
+            "a": "Langsung menerbitkan Surat Perintah Pemeriksaan Pajak dan melakukan pemeriksaan mendalam ke seluruh rekanan PT Mitra Jaya",
+            "b": "Memanggil Wajib Pajak untuk klarifikasi dan memberikan sanksi administrasi atas dugaan pembelian fiktif tersebut",
+            "c": "Menunggu instruksi dari Kepala KPP tanpa melakukan tindakan apapun karena bukan kewenangan langsung Kasi Pengawasan",
+            "d": "Menyusun usulan pemeriksaan dengan analisis risiko, indikasi pelanggaran, dan ruang lingkup pemeriksaan sesuai petunjuk teknis untuk disampaikan ke at"
+          },
+          "correct": "d",
+          "explanation": "Level 2 Pemeriksaan Pajak mensyaratkan kemampuan menganalisis data WP dan menyusun rencana pemeriksaan dengan identifikasi risiko sesuai petunjuk teknis. Kasi Pengawasan tidak berw",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menerima pengaduan dari asosiasi pengusaha UMKM yang mengeluhkan kebingungan penerapan tarif PPh Final PP 55 Tahun 2022 versus PMK 164 Tahun 2023 di wilayah binaan Anda. Data menunjukkan 120 WP UMKM dengan peredaran bruto",
+          "options": {
+            "a": "Menganalisis data 120 WP untuk mengidentifikasi pola kesalahan pemahaman, menyusun rencana advokasi bertahap dengan materi spesifik sesuai segmen usah",
+            "b": "Langsung mengundang seluruh 120 WP UMKM untuk sosialisasi massal tanpa melakukan analisis lebih lanjut terhadap pola ketidakpahaman mereka",
+            "c": "Menyerahkan permasalahan kepada Seksi Pelayanan karena ini bukan ranah pengawasan dan fokus pada pekerjaan pemeriksaan saja",
+            "d": "Membuat surat edaran kepada seluruh WP UMKM tanpa melakukan pendekatan personal atau segmentasi berdasarkan karakteristik usaha mereka"
+          },
+          "correct": "a",
+          "explanation": "Level 2 mengharuskan Kasi Pengawasan menganalisis data WP untuk mengidentifikasi pola masalah, menyusun rencana advokasi yang terstruktur dan tersegmentasi, serta melaksanakannya s",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima laporan dari Account Representative bahwa terdapat 15 bangunan ruko baru di wilayah kerja KPP yang belum terdaftar sebagai objek pajak. Hasil validasi lapangan menunjukkan 12 ruko sudah beroperasi komersial sejak",
+          "options": {
+            "a": "Menerbitkan Surat Teguran kepada seluruh pemilik 15 ruko dan mewajibkan pendaftaran NPWP dalam 7 hari",
+            "b": "Melakukan sosialisasi kewajiban perpajakan kepada 12 pemilik ruko yang beroperasi, mendampingi proses pendaftaran NPWP dan PKP, serta menyusun program",
+            "c": "Segera melakukan pemeriksaan bukti permulaan terhadap 12 ruko yang beroperasi karena diduga melakukan penghindaran pajak",
+            "d": "Menunggu pemilik ruko mendaftarkan diri secara sukarela sambil memasukkan data ke dalam sistem administrasi untuk monitoring"
+          },
+          "correct": "b",
+          "explanation": "Level 3 Ekstensifikasi mengharuskan Kasi mengevaluasi hasil validasi dan menelaah akar permasalahan (ketidakpahaman WP). Rekomendasi tindak lanjut harus komprehensif: sosialisasi e",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima hasil evaluasi tim yang menemukan PT Maju Jaya memiliki omzet Rp 15 miliar per tahun namun hanya melaporkan laba 1% sementara rata-rata industri sejenis 8-12%. Data menunjukkan perusahaan memiliki 5 related party",
+          "options": {
+            "a": "Langsung menerbitkan Surat Perintah Pemeriksaan Pajak karena indikasi penggelapan pajak melalui transfer pricing sangat jelas dari data yang ada",
+            "b": "Menyerahkan kasus ini ke Kantor Wilayah untuk ditangani tim khusus karena melibatkan transaksi internasional yang kompleks",
+            "c": "Meminta Account Representative melakukan himbauan agar WP melakukan pembetulan SPT dan melengkapi dokumentasi transfer pricing dalam 14 hari",
+            "d": "Menelaah seluruh permasalahan secara komprehensif mencakup analisis komparasi industri, evaluasi skema transaksi afiliasi, dan merekomendasikan usulan"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kasi mengevaluasi hasil kerja tim secara menyeluruh, menelaah permasalahan WP dari berbagai aspek (komparasi industri, skema afiliasi), dan memberikan rekomend",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kasi Pengawasan menerima hasil penelitian kepatuhan formal PT Maju Sentosa yang menunjukkan: SPT Masa PPN selalu terlambat 2-3 bulan, namun selalu membayar sanksi denda keterlambatan. Dari analisis substantif ditemukan: omzet meningkat 4",
+          "options": {
+            "a": "Mengusulkan pemeriksaan pajak karena terdapat indikasi kuat ketidakpatuhan material yang berdampak signifikan terhadap penerimaan negara",
+            "b": "Menerbitkan Surat Teguran atas keterlambatan pelaporan SPT karena masalah utamanya adalah kepatuhan formal",
+            "c": "Melakukan himbauan kepada WP untuk lebih tertib dalam pelaporan dan memberikan edukasi tentang sanksi administrasi",
+            "d": "Menerbitkan Surat Permintaan Penjelasan Data dan/atau Keterangan (SP2DK) untuk mengkonfirmasi selisih kenaikan omzet dan PPN"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kasi mengevaluasi hasil kerja dan menelaah permasalahan secara komprehensif untuk mengidentifikasi risiko material. Ditemukan ketidakpatuhan substantif berupa ",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda sebagai Kasi Pengawasan menemukan bahwa 15 Wajib Pajak UMKM di wilayah binaan mengeluhkan kesulitan memahami ketentuan PPh Final PP 55 Tahun 2022 yang baru diterapkan. Mereka mengancam akan mengajukan keberatan massal dan melibatkan media massa.",
+          "options": {
+            "a": "Segera membuat surat edaran kepada seluruh WP UMKM bahwa kebijakan tersebut sudah final dan tidak dapat diganggu gugat serta meminta mereka mematuhi t",
+            "b": "Langsung melaporkan kasus ini ke Kanwil dan meminta tim khusus dari pusat untuk menangani karena sudah menyangkut ancaman pemberitaan media massa",
+            "c": "Menyusun rencana sosialisasi terfokus dengan menganalisis profil dan permasalahan spesifik 15 WP tersebut, kemudian melaksanakan edukasi sesuai petunj",
+            "d": "Menyarankan WP untuk mengajukan keberatan formal terlebih dahulu sambil menunggu arahan lebih lanjut dari atasan terkait penanganan keluhan mereka"
+          },
+          "correct": "c",
+          "explanation": "Level 2 Advokasi Kebijakan Perpajakan mengharuskan Kasi Pengawasan menganalisis data WP untuk memahami permasalahan spesifik mereka. Setelah analisis, menyusun rencana sosialisasi ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
           "vigTitle": null,
           "vigBody": null,
           "userAnswer": "c",
