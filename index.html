@@ -1303,62 +1303,74 @@ async function retryPreGen(fromSlot) {
 async function generateCaseBundle(caseIdx) {
   const comp = selectedPos.competencies[caseIdx % selectedPos.competencies.length];
   const vigSegCtx = activeSegment === "B"
-    ? "manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja, penetapan kebijakan operasional KPP"
-    : "teknis tingkat seksi: penanganan kasus WP, prosedur perpajakan, bimbingan kepada AR/pelaksana";
+    ? "manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja, penetapan kebijakan KPP"
+    : "teknis tingkat seksi: penanganan kasus WP, prosedur perpajakan, bimbingan kepada AR";
 
-  const aspects = [
-    "identifikasi masalah utama",
-    "analisis data dan informasi relevan",
-    "evaluasi alternatif solusi",
-    "rekomendasi tindak lanjut dan dasar hukum",
-    "aspek prosedural atau mitigasi risiko"
-  ];
-
-  const prompt = `Penyusun soal DJP. Buat 1 studi kasus LENGKAP untuk:
+  // ── CALL 1: Generate vignette only (~250 tokens, ~6s) ──
+  const vigPrompt = `Buat skenario studi kasus DJP untuk:
 Jabatan: ${selectedPos.name} | Kompetensi: ${comp.name} Level ${comp.level}
 Konteks: ${vigSegCtx}
 
-OUTPUT: JSON dengan struktur PERSIS ini (tanpa teks lain):
-{
-  "vignette": {
-    "title": "judul kasus max 8 kata",
-    "body": "skenario 120-150 kata dengan nama WP fiktif, angka spesifik, permasalahan jelas",
-    "comp": "${comp.name}",
-    "compLevel": ${comp.level}
-  },
-  "questions": [
-    {"aspect":"${aspects[0]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"a","explanation":"..."},
-    {"aspect":"${aspects[1]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"..."},
-    {"aspect":"${aspects[2]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"..."},
-    {"aspect":"${aspects[3]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"d","explanation":"..."},
-    {"aspect":"${aspects[4]}","question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"a","explanation":"..."}
-  ]
-}`;
+JSON (tanpa teks lain):
+{"title":"judul max 8 kata","body":"skenario 120-150 kata dengan nama WP fiktif, angka, permasalahan jelas","comp":"${comp.name}","compLevel":${comp.level}}`;
 
-  const data = await callAPIWithRetry(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 2500);
-  const txt = data.content.filter(d => d.type === "text").map(d => d.text).join("").replace(/```json|```/g,"").trim();
+  const vigData = await callAPIWithRetry(vigPrompt, "Balas HANYA JSON valid.", 600);
+  const vigTxt = vigData.content.filter(d=>d.type==="text").map(d=>d.text).join("").replace(/```json|```/g,"").trim();
+  let vignette;
+  try { vignette = JSON.parse(vigTxt); }
+  catch(e) { throw new Error(`Vignette Kasus ${caseIdx+1} tidak valid. Coba lagi.`); }
+  caseVignettes[caseIdx] = vignette;
 
-  let bundle;
-  try { bundle = JSON.parse(txt); }
+  await pauseBetweenCalls();
+
+  // ── CALL 2: Generate 5 sub-questions referencing the vignette (~1200 tokens, ~15s) ──
+  const aspects = [
+    "identifikasi masalah utama",
+    "analisis data relevan",
+    "evaluasi alternatif solusi",
+    "rekomendasi tindak lanjut",
+    "aspek prosedural atau risiko"
+  ];
+  const vigSnippet = (vignette.body || "").slice(0, 180);
+
+  const qPrompt = `Soal DJP — Studi Kasus.
+Skenario: "${vigSnippet}"
+Jabatan: ${selectedPos.name} | ${comp.name} L${comp.level}
+
+Buat 5 soal pilihan ganda (4 opsi, 1 benar, penjelasan 1 kalimat) untuk aspek:
+1. ${aspects[0]}  2. ${aspects[1]}  3. ${aspects[2]}  4. ${aspects[3]}  5. ${aspects[4]}
+
+JSON array (tanpa teks lain):
+[
+  {"q":1,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"a","explanation":"..."},
+  {"q":2,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"..."},
+  {"q":3,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"..."},
+  {"q":4,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"d","explanation":"..."},
+  {"q":5,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"a","explanation":"..."}
+]`;
+
+  const qData = await callAPIWithRetry(qPrompt, "Balas HANYA JSON array valid. Tanpa teks lain.", 1800);
+  const qTxt = qData.content.filter(d=>d.type==="text").map(d=>d.text).join("").replace(/```json|```/g,"").trim();
+  let qArr;
+  try { qArr = JSON.parse(qTxt); }
   catch(e) {
-    if (txt.length > 3200) throw new Error(`Studi Kasus ${caseIdx+1} terpotong. Coba lagi.`);
-    throw new Error(`Format Studi Kasus ${caseIdx+1} tidak valid. Coba lagi.`);
+    if (qTxt.length > 1600) throw new Error(`Soal Kasus ${caseIdx+1} terpotong. Coba lagi.`);
+    throw new Error(`Format soal Kasus ${caseIdx+1} tidak valid. Coba lagi.`);
+  }
+  if (!Array.isArray(qArr) || qArr.length < 5) {
+    throw new Error(`Soal Kasus ${caseIdx+1} tidak lengkap (${qArr?.length||0}/5). Coba lagi.`);
   }
 
-  if (!bundle.vignette || !bundle.questions || bundle.questions.length < 5) {
-    throw new Error(`Studi Kasus ${caseIdx+1} tidak lengkap. Coba lagi.`);
-  }
-
-  // Store vignette
-  caseVignettes[caseIdx] = bundle.vignette;
-
-  // Store 5 questions into the correct plan slots (slots 0-4 for case 0, 5-9 for case 1, etc.)
-  bundle.questions.forEach((q, subIdx) => {
+  // Store 5 questions into correct plan slots
+  qArr.forEach((q, subIdx) => {
     const slotIdx = caseIdx * 5 + subIdx;
     const shuffled = shuffleQuestionOptions(
-      { ...q, type:"case", caseIdx, subIdx, comp: comp.name, compLevel: comp.level,
-        vigTitle: bundle.vignette.title, vigBody: bundle.vignette.body,
-        source: `Materi Webinar KPP — ${comp.name} L${comp.level}` },
+      { ...q, type:"case", caseIdx, subIdx,
+        comp: comp.name, compLevel: comp.level,
+        vigTitle: vignette.title, vigBody: vignette.body,
+        source: `Materi Webinar KPP — ${comp.name} L${comp.level}`,
+        question: q.question, options: q.options, correct: q.correct, explanation: q.explanation
+      },
       getNextCorrectSlot()
     );
     questions[slotIdx] = shuffled;
