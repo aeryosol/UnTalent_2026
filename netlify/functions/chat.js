@@ -14,7 +14,6 @@ export default async (req, context) => {
     return new Response("Method not allowed", { status: 405 });
   }
 
-  // Use server-side env var first, fall back to user-supplied key
   const serverKey = process.env.ANTHROPIC_API_KEY;
   const clientKey = req.headers.get("x-api-key");
   const apiKey = serverKey || clientKey;
@@ -33,9 +32,15 @@ export default async (req, context) => {
     return new Response("Invalid JSON", { status: 400 });
   }
 
+  // Abort the Anthropic request after 24s — gives us 2s buffer before
+  // Netlify's 26s hard limit kills the function with a 504
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 24000);
+
   try {
     const upstream = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
+      signal: controller.signal,
       headers: {
         "Content-Type": "application/json",
         "x-api-key": apiKey,
@@ -44,6 +49,7 @@ export default async (req, context) => {
       body: JSON.stringify(body)
     });
 
+    clearTimeout(timeoutId);
     const data = await upstream.json();
     return new Response(JSON.stringify(data), {
       status: upstream.status,
@@ -53,10 +59,19 @@ export default async (req, context) => {
       }
     });
   } catch (err) {
-    return new Response(JSON.stringify({ error: { message: "Proxy error: " + err.message } }), {
-      status: 502,
-      headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
-    });
+    clearTimeout(timeoutId);
+    // Return 408 (Request Timeout) so the client knows to retry
+    const isTimeout = err.name === "AbortError";
+    return new Response(
+      JSON.stringify({ error: { message: isTimeout
+        ? "Anthropic API timeout — server took too long. Retry."
+        : "Proxy error: " + err.message
+      }}),
+      {
+        status: isTimeout ? 408 : 502,
+        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
+      }
+    );
   }
 };
 
