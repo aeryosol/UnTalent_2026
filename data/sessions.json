@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "sessionsServedTotal": 4,
-    "creditsSpentUSD": 1.6,
-    "lastUpdated": "2026-04-27T04:21:53.271Z"
+    "sessionsServedTotal": 5,
+    "creditsSpentUSD": 2,
+    "lastUpdated": "2026-04-27T04:58:53.701Z"
   },
   "sessions": [
     {
@@ -4766,6 +4766,1198 @@
           "correct": "c",
           "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing pelaksanaan ekstensifikasi dengan koordinasi lintas fungsi. Pembentukan tim koordinasi dan strategi pendekatan bertahap m",
           "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "SES-H9QCUN",
+      "position": "Kepala Seksi Penjaminan Kualitas Data",
+      "segment": "A",
+      "segmentLabel": "Jabatan Pengawas",
+      "score": 100,
+      "totalQ": 60,
+      "correct": 60,
+      "completedAt": "2026-04-27T04:58:52.185Z",
+      "questions": [
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 0,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kasi Penjaminan Kualitas Data, apa masalah utama yang perlu Anda identifikasi pertama kali dari laporan AR terkait PT Mandiri Jaya?",
+          "options": {
+            "a": "Potensi ketidaksesuaian data transaksi elektronik dengan omzet yang dilaporkan dalam SPT Tahunan",
+            "b": "Perusahaan belum melakukan pembayaran pajak bulan berjalan",
+            "c": "Account Representative tidak memiliki kompetensi yang memadai",
+            "d": "Sistem teknologi informasi DJP mengalami gangguan"
+          },
+          "correct": "a",
+          "explanation": "Fokus utama Kasi Penjaminan Kualitas Data adalah memastikan konsistensi dan keakuratan data perpajakan Wajib Pajak dengan profil bisnisnya sebagai distributor elektronik beromzet b",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Ketidakkonsistenan Data Pelaporan PT Mandiri Jaya",
+          "vigBody": "Account Representative (AR) melaporkan kepada Anda selaku Kasi Penjaminan Kualitas Data bahwa PT Mandiri Jaya, perusahaan distributor elektronik dengan omzet Rp 85 miliar, menunjukkan inkonsistensi data signifikan. SPT Tahunan 2023 melaporkan penjualan Rp 85 miliar dengan laba kotor 15%, namun data ",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 1,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Data mana yang paling relevan untuk dianalisis guna memvalidasi kualitas pelaporan pajak PT Mandiri Jaya sebagai distributor elektronik?",
+          "options": {
+            "a": "Data kepegawaian dan struktur organisasi perusahaan",
+            "b": "Perbandingan rasio PPN Masukan-Keluaran, gross profit margin, dan data pihak ketiga dari supplier/pembeli",
+            "c": "Riwayat pendidikan pimpinan perusahaan",
+            "d": "Lokasi dan luas bangunan kantor perusahaan"
+          },
+          "correct": "b",
+          "explanation": "Analisis rasio PPN, margin keuntungan, dan data pihak ketiga merupakan indikator kualitas data paling relevan untuk mendeteksi ketidakwajaran pelaporan pada perusahaan distributor.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Ketidakkonsistenan Data Pelaporan PT Mandiri Jaya",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 2,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Jika ditemukan indikasi inkonsistensi data signifikan, alternatif solusi mana yang paling tepat untuk dievaluasi terlebih dahulu?",
+          "options": {
+            "a": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar",
+            "b": "Menutup kasus dan mengabaikan temuan karena omzet masih di bawah Rp 100 miliar",
+            "c": "Melakukan himbauan perbaikan data dan permintaan klarifikasi kepada Wajib Pajak melalui mekanisme konseling",
+            "d": "Menyerahkan kasus langsung ke penyidik untuk dilakukan pemeriksaan bukti permulaan"
+          },
+          "correct": "c",
+          "explanation": "Pendekatan bertahap melalui konseling dan klarifikasi lebih efektif dan sesuai prinsip keadilan sebelum melakukan tindakan yang lebih keras seperti pemeriksaan atau penetapan.",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Ketidakkonsistenan Data Pelaporan PT Mandiri Jaya",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 3,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut apa yang paling tepat Anda berikan kepada Kepala Kantor terkait temuan AR terhadap PT Mandiri Jaya?",
+          "options": {
+            "a": "Menunda semua tindakan hingga akhir tahun pajak",
+            "b": "Menyarankan pembatalan NPWP perusahaan",
+            "c": "Menolak laporan AR karena tidak ada bukti kuat",
+            "d": "Mengusulkan penetapan sebagai Wajib Pajak prioritas untuk dilakukan analisis risiko mendalam dan/atau pemeriksaan pajak"
+          },
+          "correct": "d",
+          "explanation": "Penetapan sebagai WP prioritas memungkinkan monitoring intensif dan pemeriksaan lebih lanjut yang berbasis risiko sesuai kewenangan Kasi Penjaminan Kualitas Data dalam memastikan k",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Ketidakkonsistenan Data Pelaporan PT Mandiri Jaya",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 4,
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Dari aspek prosedural, risiko apa yang perlu Anda antisipasi dalam menindaklanjuti kasus PT Mandiri Jaya?",
+          "options": {
+            "a": "Risiko perusahaan pindah ke luar negeri dalam waktu dekat",
+            "b": "Risiko kehilangan pendapatan pribadi Account Representative",
+            "c": "Risiko gugatan Wajib Pajak jika proses tidak sesuai ketentuan dan tidak didukung data/analisis yang memadai",
+            "d": "Risiko turunnya harga saham perusahaan distributor elektronik"
+          },
+          "correct": "c",
+          "explanation": "Setiap tindakan DJP harus berbasis pada ketentuan yang berlaku dan didukung analisis data yang kuat untuk menghindari risiko hukum berupa gugatan atau banding yang merugikan negara",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": "Analisis Ketidakkonsistenan Data Pelaporan PT Mandiri Jaya",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 0,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, apa masalah utama yang harus segera Anda identifikasi dari kasus PT Mitra Sejahtera Abadi?",
+          "options": {
+            "a": "Keterlambatan pelaporan SPT Tahunan yang menyebabkan data tidak akurat",
+            "b": "Inkonsistensi antara peredaran usaha yang dilaporkan dalam SPT dengan data transaksi eksternal atau internal lainnya",
+            "c": "Kurangnya dokumen pendukung dalam pelaporan SPT Tahunan",
+            "d": "Kesalahan perhitungan pajak terutang akibat human error"
+          },
+          "correct": "b",
+          "explanation": "Masalah utama adalah gap antara data SPT (Rp 45 miliar) dengan data pembanding lain yang mengindikasikan inkonsistensi signifikan dalam peredaran usaha.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil WP dengan Inkonsistensi Data Signifikan",
+          "vigBody": "Seksi Penjaminan Kualitas Data menemukan PT Mitra Sejahtera Abadi memiliki inkonsistensi data yang signifikan. Data SPT Tahunan 2023 melaporkan peredaran usaha Rp 45 miliar, namun dari data pihak ketiga (e-Faktur supplier dan data perbankan) menunjukkan transaksi mencapai Rp 78 miliar. Profil usaha ",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 1,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Data mana yang paling relevan untuk Anda analisis dalam memvalidasi inkonsistensi peredaran usaha PT Mitra Sejahtera Abadi?",
+          "options": {
+            "a": "Data kepemilikan saham dan struktur manajemen perusahaan",
+            "b": "Data aset tetap dan inventaris perusahaan",
+            "c": "Data historis pembayaran pajak 5 tahun terakhir",
+            "d": "Data SPT Masa PPN, laporan pihak ketiga, data transaksi perbankan, dan e-faktur untuk membandingkan dengan SPT Tahunan"
+          },
+          "correct": "d",
+          "explanation": "SPT Masa PPN, data pihak ketiga, transaksi perbankan, dan e-faktur memberikan validasi independen terhadap peredaran usaha yang dilaporkan dalam SPT Tahunan.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil WP dengan Inkonsistensi Data Signifikan",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 2,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Setelah menganalisis data, Anda menemukan peredaran usaha sebenarnya mencapai Rp 78 miliar. Manakah alternatif solusi yang paling tepat untuk dievaluasi?",
+          "options": {
+            "a": "Melakukan konfirmasi data dengan Wajib Pajak, kemudian menentukan apakah perlu pemeriksaan bukti permulaan atau pemeriksaan rutin berdasarkan tingkat ",
+            "b": "Mengabaikan temuan karena selisihnya masih dalam batas toleransi",
+            "c": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar tanpa konfirmasi",
+            "d": "Menyerahkan kasus langsung ke penyidikan tanpa proses klarifikasi"
+          },
+          "correct": "a",
+          "explanation": "Prosedur yang benar adalah klarifikasi dengan WP terlebih dahulu, lalu menentukan tindak lanjut (pemeriksaan/bukper) sesuai assessment risiko dan besaran selisih.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil WP dengan Inkonsistensi Data Signifikan",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 3,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Berdasarkan hasil profiling, Anda harus memberikan rekomendasi tindak lanjut. Apa rekomendasi paling tepat untuk kasus ini?",
+          "options": {
+            "a": "Memberikan teguran tertulis dan menutup kasus",
+            "b": "Mengusulkan pemeriksaan komprehensif dengan fokus pada pengujian kebenaran peredaran usaha dan kewajiban PPN serta PPh Badan",
+            "c": "Memberikan sanksi administratif langsung tanpa penelitian lebih lanjut",
+            "d": "Menunggu WP melaporkan pembetulan SPT secara sukarela"
+          },
+          "correct": "b",
+          "explanation": "Dengan selisih signifikan (Rp 33 miliar), diperlukan pemeriksaan komprehensif untuk memastikan kebenaran material seluruh kewajiban perpajakan WP.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil WP dengan Inkonsistensi Data Signifikan",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 4,
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Dalam melaksanakan profiling dan rekomendasi ini, risiko prosedural apa yang harus Anda perhatikan?",
+          "options": {
+            "a": "Menggunakan data dari sumber tidak resmi untuk memperkuat argumen",
+            "b": "Menghindari komunikasi dengan Wajib Pajak agar tidak terjadi kebocoran informasi",
+            "c": "Mempercepat proses tanpa dokumentasi untuk efisiensi waktu",
+            "d": "Memastikan seluruh analisis dan rekomendasi didukung data valid, terdokumentasi dengan baik, dan sesuai kewenangan Seksi Penjaminan Kualitas Data untu"
+          },
+          "correct": "d",
+          "explanation": "Dokumentasi lengkap, validitas data, dan kesesuaian kewenangan adalah kunci untuk memastikan hasil profiling dapat dipertanggungjawabkan secara hukum dan administratif.",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": "Analisis Profil WP dengan Inkonsistensi Data Signifikan",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 0,
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, apa masalah utama yang harus Anda identifikasi dari laporan AR tentang ketidaksesuaian data profil PT Mitra Sejahtera?",
+          "options": {
+            "a": "Adanya inkonsistensi atau ketidakakuratan data profil wajib pajak dalam sistem yang dapat mempengaruhi validitas database perpajakan",
+            "b": "AR tidak melakukan pemeriksaan lapangan secara menyeluruh terhadap wajib pajak",
+            "c": "PT Mitra Sejahtera tidak melaporkan SPT Tahunan tepat waktu",
+            "d": "Sistem aplikasi DJP mengalami gangguan teknis sementara"
+          },
+          "correct": "a",
+          "explanation": "Masalah utama adalah inkonsistensi data profil yang menjadi tanggung jawab langsung Seksi Penjaminan Kualitas Data untuk memastikan akurasi database.",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": "Ketidaksesuaian Data Profil Wajib Pajak Terintegrasi",
+          "vigBody": "Anda adalah Kepala Seksi Penjaminan Kualitas Data di KPP Pratama Jakarta Selatan. AR melaporkan adanya ketidaksesuaian data profil PT Mitra Sejahtera (NPWP 01.234.567.8-012.000) antara data master file, aplikasi e-registration, dan SIDJP. Data omzet di master file tercatat Rp 8,5 miliar, namun di si",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 1,
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Data mana yang paling relevan untuk dianalisis dalam menindaklanjuti laporan ketidaksesuaian data profil PT Mitra Sejahtera?",
+          "options": {
+            "a": "Data historis pembayaran pajak lima tahun terakhir",
+            "b": "Data restitusi pajak yang pernah diajukan wajib pajak",
+            "c": "Perbandingan data profil di sistem DJP dengan dokumen pendukung (akta, NIB, SIUP) dan hasil konfirmasi lapangan AR",
+            "d": "Laporan keuangan audited tahun berjalan"
+          },
+          "correct": "c",
+          "explanation": "Analisis ketidaksesuaian data profil memerlukan perbandingan antara data sistem dengan dokumen legal dan hasil verifikasi lapangan untuk menemukan sumber ketidaksesuaian.",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": "Ketidaksesuaian Data Profil Wajib Pajak Terintegrasi",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 2,
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Dalam mengevaluasi solusi untuk mengatasi ketidaksesuaian data profil, alternatif mana yang paling tepat?",
+          "options": {
+            "a": "Langsung menghapus data wajib pajak dari sistem dan meminta registrasi ulang",
+            "b": "Menyerahkan kasus kepada Penyidik Pajak untuk investigasi pidana",
+            "c": "Membekukan NPWP hingga wajib pajak datang sendiri untuk klarifikasi",
+            "d": "Melakukan pemutakhiran data profil berdasarkan verifikasi dokumen, koordinasi dengan wajib pajak, dan validasi silang dengan instansi terkait sesuai S"
+          },
+          "correct": "d",
+          "explanation": "Pemutakhiran data melalui verifikasi dokumen dan koordinasi adalah solusi proporsional yang sesuai prosedur untuk menjamin kualitas data tanpa tindakan ekstrem.",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": "Ketidaksesuaian Data Profil Wajib Pajak Terintegrasi",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 3,
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Apa rekomendasi tindak lanjut yang paling tepat untuk memastikan kualitas data profil PT Mitra Sejahtera diperbaiki secara berkelanjutan?",
+          "options": {
+            "a": "Menerbitkan surat permintaan pemutakhiran data kepada wajib pajak, melakukan validasi dokumen, update sistem, dan menetapkan mekanisme quality check b",
+            "b": "Melakukan audit pajak komprehensif terhadap wajib pajak",
+            "c": "Membuat laporan investigasi khusus untuk Kanwil",
+            "d": "Mengenakan sanksi administratif kepada wajib pajak"
+          },
+          "correct": "a",
+          "explanation": "Rekomendasi komprehensif mencakup pemutakhiran data, validasi, dan mekanisme kontrol berkelanjutan untuk menjamin kualitas data jangka panjang sesuai fungsi seksi.",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": "Ketidaksesuaian Data Profil Wajib Pajak Terintegrasi",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 4,
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Risiko prosedural apa yang harus Anda antisipasi jika ketidaksesuaian data profil tidak segera ditindaklanjuti?",
+          "options": {
+            "a": "Sistem aplikasi DJP akan crash karena data corrupt",
+            "b": "Wajib pajak akan otomatis dikategorikan sebagai non-efektif",
+            "c": "Database perpajakan menjadi tidak reliable, berpotensi salah penetapan, kesalahan pengawasan, dan menurunkan kredibilitas administrasi perpajakan di K",
+            "d": "KPP akan kehilangan hak untuk melakukan pemeriksaan pajak"
+          },
+          "correct": "c",
+          "explanation": "Risiko utama adalah unreliable database yang berdampak sistemik pada seluruh proses perpajakan dan kredibilitas administrasi, sesuai dengan tanggung jawab penjaminan kualitas data.",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": "Ketidaksesuaian Data Profil Wajib Pajak Terintegrasi",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 0,
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Berdasarkan laporan dari Account Representative tentang anomali data 15 WP Badan di SIDJP, apa masalah utama yang harus diidentifikasi terlebih dahulu?",
+          "options": {
+            "a": "Jumlah Account Representative yang melaporkan masalah tersebut",
+            "b": "Jenis dan pola anomali data yang terjadi serta dampaknya terhadap integritas database dan proses bisnis DJP",
+            "c": "Nilai pajak yang terutang dari 15 WP Badan tersebut",
+            "d": "Lokasi geografis dari 15 WP Badan yang mengalami anomali"
+          },
+          "correct": "b",
+          "explanation": "Sebagai Kepala Seksi Penjaminan Kualitas Data, prioritas utama adalah mengidentifikasi karakteristik anomali dan dampaknya terhadap sistem untuk menentukan langkah penanganan yang ",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": "Anomali Data SPT WP Badan di Aplikasi SIDJP",
+          "vigBody": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan dari Account Representative bahwa terdapat anomali data pada aplikasi SIDJP terkait 15 WP Badan di wilayah kerja Anda. PT Maju Sejahtera melaporkan SPT Tahunan dengan omzet Rp 50 miliar, namun di sistem tercatat Rp 5 juta. Setelah ",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 1,
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Data manakah yang paling relevan untuk dianalisis dalam menginvestigasi anomali data 15 WP Badan tersebut?",
+          "options": {
+            "a": "Log sistem SIDJP, master data WP, riwayat transaksi, dan validasi silang dengan aplikasi terkait untuk menemukan sumber anomali",
+            "b": "Data profil pribadi pegawai Account Representative yang melaporkan",
+            "c": "Data keuangan pribadi dari pemilik 15 WP Badan",
+            "d": "Statistik kunjungan WP ke kantor pajak dalam 6 bulan terakhir"
+          },
+          "correct": "a",
+          "explanation": "Analisis mendalam terhadap log sistem dan validasi silang data merupakan pendekatan teknis yang tepat untuk mengidentifikasi akar penyebab anomali data secara sistematis.",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": "Anomali Data SPT WP Badan di Aplikasi SIDJP",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 2,
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Setelah mengidentifikasi bahwa anomali disebabkan oleh kesalahan migrasi data, alternatif solusi manakah yang paling tepat?",
+          "options": {
+            "a": "Menghapus seluruh data 15 WP Badan dan meminta mereka mendaftar ulang",
+            "b": "Melakukan rollback data ke backup terakhir, perbaikan script migrasi, dan re-migrasi dengan pengujian validasi data",
+            "c": "Membiarkan anomali tersebut karena hanya mempengaruhi 15 WP saja",
+            "d": "Memindahkan 15 WP Badan ke KPP lain untuk menghindari masalah sistem"
+          },
+          "correct": "b",
+          "explanation": "Solusi teknis yang sistematis dengan rollback, perbaikan akar masalah, dan validasi memastikan integritas data dan mencegah anomali berulang di masa depan.",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": "Anomali Data SPT WP Badan di Aplikasi SIDJP",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 3,
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut apa yang harus Anda sampaikan kepada Kepala Kantor untuk mencegah kejadian serupa?",
+          "options": {
+            "a": "Mengurangi jumlah WP Badan yang dilayani di wilayah kerja",
+            "b": "Merotasi Account Representative setiap bulan",
+            "c": "Implementasi prosedur quality assurance berlapis, automated data validation, dan pelatihan rutin pengelolaan data bagi tim teknis",
+            "d": "Menghapus fitur migrasi data dari sistem SIDJP"
+          },
+          "correct": "c",
+          "explanation": "Pendekatan preventif melalui penguatan quality assurance, automasi validasi, dan peningkatan kompetensi SDM merupakan strategi komprehensif untuk menjamin kualitas data jangka panj",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": "Anomali Data SPT WP Badan di Aplikasi SIDJP",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 4,
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Dari aspek prosedural dan manajemen risiko, apa yang harus diprioritaskan dalam penanganan anomali data ini?",
+          "options": {
+            "a": "Menunda penanganan hingga ada arahan dari kantor pusat",
+            "b": "Menyembunyikan informasi anomali agar tidak merusak reputasi kantor",
+            "c": "Segera mengirim surat teguran kepada 15 WP Badan tersebut",
+            "d": "Dokumentasi lengkap incident report, eskalasi sesuai SOP, koordinasi dengan unit terkait, dan penetapan business continuity plan untuk meminimalkan ga"
+          },
+          "correct": "d",
+          "explanation": "Prosedur yang terstruktur dengan dokumentasi, eskalasi tepat, dan kontinuitas layanan memastikan penanganan risiko sesuai tata kelola dan meminimalkan dampak operasional.",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": "Anomali Data SPT WP Badan di Aplikasi SIDJP",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima hasil evaluasi bahwa terdapat 450 WP Badan di wilayah kerja KPP dengan omzet yang dilaporkan dalam SPT Tahunan jauh lebih rendah (selisih >40%) dibandingkan data pihak ketiga dari sistem e-",
+          "options": {
+            "a": "Menerbitkan Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) secara massal kepada seluruh 450 WP untuk memberikan kesempatan klarifik",
+            "b": "Langsung merekomendasikan pemeriksaan rutin kepada seluruh 280 WP yang memiliki pola konsisten karena telah memenuhi kriteria indikasi pelanggaran per",
+            "c": "Menyusun daftar prioritas berdasarkan materialitas selisih dan profil risiko, kemudian merekomendasikan pemeriksaan bukti permulaan untuk 50 WP dengan",
+            "d": "Melakukan himbauan melalui media massa dan portal DJP agar WP melakukan pembetulan SPT secara sukarela sebelum dilakukan tindakan penegakan hukum"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dengan menelaah permasalahan WP secara mendalam dan memberikan rekomendasi tindak lanjut yang proporsional. Stratifikasi berdasa",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Setelah melakukan evaluasi bulanan, Anda menemukan bahwa bandwidth jaringan kantor mengalami lonjakan penggunaan hingga 95% pada jam kerja, menyebabkan layanan aplikasi DJP Core Tax lambat. Hasil analisis menunjukkan 60% trafik berasal dari streaming",
+          "options": {
+            "a": "Mengajukan penambahan bandwidth internet menjadi 2x lipat agar semua aktivitas dapat terakomodasi tanpa hambatan",
+            "b": "Menerapkan Quality of Service (QoS) untuk memprioritaskan trafik aplikasi DJP Core Tax dan memberlakukan policy pembatasan akses konten non-operasiona",
+            "c": "Melarang total penggunaan internet untuk keperluan pribadi dan memblokir semua situs media sosial secara permanen",
+            "d": "Menunda penanganan hingga anggaran firewall tersedia sambil mengeluarkan surat edaran imbauan penghematan bandwidth"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dengan mengidentifikasi akar masalah (trafik non-operasional 60%) dan menelaah permasalahan secara teknis-manajerial. Rekomendas",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Dalam evaluasi triwulanan, Anda menemukan 15 WP sektor perdagangan besar dengan rata-rata peredaran bruto Rp 85 miliar per tahun namun rasio PPh Badan yang disetor hanya 0,3% dari omzet (rata-rata industri 1,2%). Setelah ditelaah, tim menemukan adany",
+          "options": {
+            "a": "Menerbitkan Surat Himbauan kepada 15 WP tersebut untuk melakukan pembetulan SPT secara sukarela dengan tenggat 30 hari",
+            "b": "Mengusulkan penyesuaian benchmark ratio industri dari 1,2% menjadi 0,3% karena mayoritas WP menunjukkan pola yang konsisten",
+            "c": "Segera melakukan pemeriksaan komprehensif terhadap semua 15 WP secara bersamaan untuk mengoptimalkan penerimaan pajak",
+            "d": "Menyusun rekomendasi pemeriksaan bukti permulaan dengan fokus pada transfer pricing dan transaksi afiliasi, disertai usulan kriteria khusus pendalaman"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan menelaah permasalahan WP secara mendalam dan memberikan rekomendasi tindak lanjut berbasis evaluasi komprehensif. Temuan indikasi transfer pricing memerlukan r",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda menerima hasil profiling dari tim yang menunjukkan 25 WP orang pribadi dengan omzet di atas Rp10 miliar per tahun namun masih terdaftar sebagai WP Non-PKP dan melaporkan SPT 1770 SS. Setelah ditelusuri, ditemukan bahwa 20 di antaranya adalah ben",
+          "options": {
+            "a": "Menelaah kebenaran profil dengan meminta Account Representative melakukan penelitian mendalam terkait hubungan kepemilikan dan transaksi usaha, kemudi",
+            "b": "Merekomendasikan pemindahan seluruh WP tersebut ke KPP Pratama lain yang lebih berpengalaman menangani WP high profile",
+            "c": "Langsung mengusulkan pemeriksaan pajak terhadap 25 WP tersebut tanpa penelitian lebih lanjut karena jelas terdapat ketidaksesuaian data",
+            "d": "Membuat surat imbauan kepada WP untuk melaporkan SPT dengan benar tanpa melakukan penelitian profil lebih lanjut"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan kemampuan menelaah permasalahan WP secara komprehensif dengan mempertimbangkan hubungan kepemilikan dan karakteristik usaha sebenarnya. Evaluasi yang tepat ada",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Anda menemukan 25 Wajib Pajak sektor konstruksi yang melaporkan penurunan omzet 40-60% pada tahun 2024, namun data LPPD menunjukkan proyek pemerintah daerah di wilayah tersebut meningkat 35%. Sebagai Kepala Seksi Penjaminan Kualitas Data, langkah adv",
+          "options": {
+            "a": "Langsung menerbitkan Surat Himbauan kepada 25 WP tersebut untuk melakukan pembetulan SPT Tahunan",
+            "b": "Menyusun analisis ketidaksesuaian data dan mengusulkan sosialisasi targeted kepada sektor konstruksi disertai program konsultasi untuk meningkatkan ke",
+            "c": "Meneruskan data anomali kepada Kepala Seksi Pemeriksaan untuk dilakukan pemeriksaan komprehensif terhadap seluruh WP tersebut",
+            "d": "Membuat laporan kepada Kepala KPP bahwa terdapat indikasi tax evasion masif di sektor konstruksi yang memerlukan penanganan khusus"
+          },
+          "correct": "b",
+          "explanation": "Level 2 memerlukan kemampuan menganalisis data WP dan menyusun rencana advokasi yang terukur sesuai petunjuk teknis. Pendekatan preventif melalui sosialisasi targeted dan konsultas",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan bahwa 18 Wajib Pajak di sektor perdagangan besar memiliki pola transaksi ekspor yang konsisten namun tidak pernah melaporkan PPN keluaran. Setelah penelaahan lebih lanjut, ditemukan",
+          "options": {
+            "a": "Langsung menerbitkan Surat Tagihan Pajak (STP) kepada seluruh WP karena telah menggunakan SKB yang tidak berlaku",
+            "b": "Memberikan edukasi kepada WP mengenai kewajiban perpanjangan SKB dan menutup kasus setelah WP berjanji memperbaiki",
+            "c": "Menyampaikan temuan ke Kepala KPP dan menunggu instruksi lebih lanjut tanpa melakukan analisis lebih dalam",
+            "d": "Mengevaluasi validitas SKB, menelaah dampak materialitas terhadap penerimaan negara, dan merekomendasikan pemeriksaan komprehensif dengan prioritas ti"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja profiling secara komprehensif dengan menelaah permasalahan materialitas dan validitas data SKB. Rekomendasi tindak lanjut ha",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Anda sebagai Kepala Seksi Penjaminan Kualitas Data menerima laporan bahwa bandwidth internet kantor sering mengalami bottleneck pada jam 09.00-11.00, menyebabkan aplikasi SIDJP lambat. Hasil monitoring menunjukkan 60% bandwidth digunakan untuk stream",
+          "options": {
+            "a": "Merekomendasikan implementasi QoS untuk prioritas trafik SIDJP, filtering konten non-produktif, dan sosialisasi kebijakan penggunaan internet kepada p",
+            "b": "Langsung memblokir semua situs streaming dan media sosial tanpa pemberitahuan kepada seluruh pegawai",
+            "c": "Menambah bandwidth internet hingga 2x lipat agar semua kebutuhan termasuk streaming dapat terakomodasi",
+            "d": "Membuat jadwal shift penggunaan internet untuk membagi kuota bandwidth secara merata antar pegawai"
+          },
+          "correct": "a",
+          "explanation": "Level 3 memerlukan evaluasi menyeluruh terhadap akar masalah dan rekomendasi solusi komprehensif. Implementasi QoS memastikan prioritas trafik aplikasi kritikal (SIDJP), filtering ",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Anda menemukan 40 Wajib Pajak Badan di sektor perdagangan yang melaporkan peredaran bruto Rp 4,8 miliar namun hanya menyetor pajak Rp 2 juta per tahun. Setelah analisis database, teridentifikasi adanya inkonsistensi antara data SPT dengan data pihak ",
+          "options": {
+            "a": "Langsung menerbitkan Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) kepada seluruh 40 WP tersebut untuk klarifikasi segera",
+            "b": "Menunggu hasil pemeriksaan dari Seksi Pemeriksaan karena penjaminan kualitas data hanya fokus pada validitas input data di sistem",
+            "c": "Menyusun rencana perbaikan data dengan menganalisis pola inkonsistensi, melakukan stratifikasi risiko kepatuhan WP, kemudian menyampaikan rekomendasi ",
+            "d": "Melakukan pemutakhiran data secara sepihak berdasarkan data pihak ketiga tanpa koordinasi dengan seksi pengawasan dan konsultasi"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis data WP untuk mengidentifikasi pola dan risiko kepatuhan, menyusun rencana perbaikan data secara terstruktur dengan stratifikasi, serta ",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menemukan bahwa 30 Wajib Pajak e-commerce yang terdaftar di KPP Anda menunjukkan pola transaksi mencurigakan: IP address login berasal dari luar negeri (Singapura dan Malaysia) namun SPT melaporkan ",
+          "options": {
+            "a": "Langsung melakukan pemblokiran akses DJP Online untuk semua WP tersebut dan menyarankan untuk datang langsung ke KPP dalam pelaporan SPT",
+            "b": "Mengabaikan temuan tersebut karena penggunaan VPN adalah hal wajar bagi pelaku e-commerce yang berbisnis lintas negara",
+            "c": "Membuat laporan sederhana tentang penggunaan VPN dan menyerahkan seluruh penanganan kepada Kepala KPP tanpa analisis lebih lanjut",
+            "d": "Mengevaluasi pola traffic dan geo-location data secara komprehensif, melakukan cross-check dengan data SPT dan profil usaha, kemudian merekomendasikan"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kepala Seksi untuk mengevaluasi hasil kerja secara komprehensif dengan menganalisis pola traffic dan geo-location, menelaah permasalahan WP terkait kesesuaian ",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Hasil rekonsiliasi data internal menunjukkan 18 Wajib Pajak sektor properti memiliki aset tanah dan bangunan senilai rata-rata Rp 45 miliar namun melaporkan PBB dengan NJOP hanya Rp 8 miliar per objek. Penelusuran data eksternal dari BPN menunjukkan ",
+          "options": {
+            "a": "Melakukan evaluasi mendalam dengan membandingkan data NJOP, harga pasar dari BPN, dan laporan keuangan WP, kemudian menyusun rekomendasi berupa usulan",
+            "b": "Langsung menerbitkan surat himbauan kepada 18 WP untuk melakukan pembetulan SPT Tahunan dan membuat nota dinas ke Seksi Pengawasan dan Konsultasi untu",
+            "c": "Menyerahkan seluruh data temuan kepada Seksi Pemeriksaan untuk dilakukan pemeriksaan komprehensif terhadap semua WP properti tersebut dan menunggu has",
+            "d": "Membuat laporan temuan kepada Kepala KPP dan menyarankan dilakukan penilaian ulang NJOP oleh tim penilai internal tanpa melibatkan data eksternal dari"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan evaluasi komprehensif dengan menelaah permasalahan WP melalui perbandingan multi-sumber data (internal, eksternal BPN, dan laporan keuangan). Rekomendasi harus",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Anda menerima laporan dari tim analisis yang menunjukkan 30 Wajib Pajak di sektor pertambangan memiliki pola pelaporan SPT Masa PPN dengan Pajak Keluaran yang konsisten rendah (rata-rata 2% dari omzet) padahal DPP ekspor meningkat 150% dalam 6 bulan ",
+          "options": {
+            "a": "Langsung menerbitkan SP2DK kepada seluruh 30 WP tersebut untuk meminta klarifikasi atas ketidaksesuaian data PPN dengan data kepabeanan",
+            "b": "Menyerahkan seluruh daftar 30 WP kepada Seksi Pengawasan dan Konsultasi untuk dilakukan himbauan pembayaran PPN yang kurang dibayar",
+            "c": "Mengevaluasi metode profiling yang digunakan tim, menelaah matching data PPN dengan data ekspor per WP, kemudian merekomendasikan prioritas pemeriksaa",
+            "d": "Membuat nota dinas kepada Kepala KPP untuk segera melakukan pemeriksaan bukti permulaan terhadap 30 WP tersebut karena terindikasi penghindaran pajak "
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan mengevaluasi hasil kerja tim (validasi metode profiling), menelaah permasalahan per WP dengan matching data multi-sumber untuk identifikasi akar masalah, dan m",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Anda sebagai Kepala Seksi Penjaminan Kualitas Data menemukan 32 Wajib Pajak sektor perdagangan retail yang melaporkan penurunan omzet 60% pada SPT Tahunan 2024, namun data POS menunjukkan transaksi EDC meningkat 25%. Setelah dilakukan konfirmasi awal",
+          "options": {
+            "a": "Langsung menerbitkan Surat Permintaan Penjelasan kepada 32 Wajib Pajak tersebut untuk memastikan kebenaran data",
+            "b": "Menyusun rencana pemutakhiran data berdasarkan prioritas risiko, membuat petunjuk teknis perbaikan data, dan melakukan pendampingan pembetulan SPT kep",
+            "c": "Mengusulkan seluruh WP untuk dilakukan pemeriksaan mengingat terdapat ketidaksesuaian data yang signifikan",
+            "d": "Menunggu instruksi dari Kepala Kantor karena kasus ini memerlukan kebijakan khusus terkait pembetulan massal"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis data WP dan menyusun rencana tindak lanjut yang terstruktur. Dalam kasus ini, analisis telah dilakukan dan mengidentifikasi 28 WP yang m",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Sistem monitoring jaringan di KPP Anda mendeteksi trafik data mencurigakan pada server SIDJP dengan volume upload 15 GB dalam 2 jam ke IP eksternal tidak dikenal, terjadi saat jam kerja dari workstation ruang Seksi Pengolahan Data. Log menunjukkan au",
+          "options": {
+            "a": "Mengisolasi workstation tersebut dari jaringan, melakukan analisis forensik log autentikasi dan transfer data, kemudian menyusun rekomendasi perbaikan",
+            "b": "Segera memblokir semua akses internet di Seksi Pengolahan Data dan mengganti password seluruh user untuk mencegah kebocoran data lebih lanjut",
+            "c": "Melaporkan kejadian ke Kepala KPP dan menunggu instruksi tim IT pusat untuk melakukan investigasi terhadap aktivitas mencurigakan tersebut",
+            "d": "Menegur pegawai yang menggunakan workstation tersebut dan memasang software monitoring tambahan untuk mencegah terulangnya insiden serupa"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil monitoring jaringan dengan analisis forensik mendalam terhadap log dan pola trafik abnormal. Menelaah permasalahan dengan mengisolasi ",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda mengidentifikasi 65 Wajib Pajak UMKM di wilayah kerja KPP yang belum memanfaatkan insentif PPh Final 0,5% meskipun memenuhi syarat. Dari analisis data, ditemukan bahwa mereka tidak paham mekanisme p",
+          "options": {
+            "a": "Langsung menerbitkan Surat Himbauan kepada seluruh WP UMKM tersebut untuk segera memanfaatkan insentif tanpa penjelasan lebih lanjut",
+            "b": "Menyusun rencana sosialisasi terfokus dengan materi petunjuk teknis pemanfaatan insentif PPh Final 0,5%, kemudian melaksanakan edukasi kepada 65 WP te",
+            "c": "Menunggu instruksi dari Kepala KPP untuk menentukan apakah perlu dilakukan tindakan advokasi atau tidak",
+            "d": "Membuat kebijakan baru di tingkat KPP yang mewajibkan semua UMKM menggunakan insentif tersebut dan mengenakan sanksi bagi yang tidak patuh"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mengharuskan menganalisis data WP (identifikasi 65 WP UMKM yang belum manfaatkan insentif), menyusun rencana (rencana sosialisasi terfokus dengan materi petunjuk teknis), d",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima hasil profiling data yang menunjukkan 25 Wajib Pajak Orang Pribadi dengan omzet di atas Rp10 miliar masih menggunakan Norma Penghitungan Penghasilan Neto (NPPN), padahal seharusnya mengguna",
+          "options": {
+            "a": "Langsung menerbitkan Surat Teguran kepada seluruh 25 Wajib Pajak untuk segera beralih ke pembukuan dan melaporkan ulang SPT Tahunan mereka",
+            "b": "Menyerahkan seluruh data kepada Seksi Pemeriksaan untuk dilakukan audit menyeluruh terhadap semua 25 Wajib Pajak tanpa melakukan analisis lebih lanjut",
+            "c": "Menyusun rekomendasi prioritas penanganan untuk 15 WP dengan transaksi afiliasi melalui usulan pemeriksaan dan himbauan terstruktur untuk 10 WP lainny",
+            "d": "Mengirimkan surat himbauan massal kepada 25 WP dan menunggu respons mereka sambil melakukan monitoring pasif melalui sistem"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja dengan menelaah permasalahan WP secara mendalam dan memberikan rekomendasi tindak lanjut yang terstruktur. Prioritas penanga",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan bahwa bandwidth internet di kantor mengalami penurunan signifikan hingga 75% pada jam kerja. Hasil monitoring menunjukkan terdapat 15 perangkat yang mengakses streaming video dan ga",
+          "options": {
+            "a": "Menyetujui pemblokiran total akses multimedia untuk memastikan bandwidth optimal bagi aplikasi DJP tanpa pengecualian",
+            "b": "Merekomendasikan upgrade bandwidth internet menjadi 2x lipat untuk mengakomodasi semua kebutuhan akses tanpa pembatasan",
+            "c": "Menunda pengambilan keputusan dan menunggu keluhan dari lebih banyak pegawai sebelum melakukan tindakan apapun",
+            "d": "Mengevaluasi pola penggunaan bandwidth, menelaah kebutuhan legitimate streaming, dan merekomendasikan implementasi Quality of Service (QoS) dengan whi"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil monitoring bandwidth secara komprehensif, menelaah permasalahan dengan membedakan kebutuhan legitimate dan non-legitimate, serta m",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan bahwa terdapat inkonsistensi data pada aplikasi SIDJP terkait 250 SPT Tahunan yang sudah diterima namun status pembayarannya tidak terekam di MPN. Setelah ditelusuri, ditemukan gang",
+          "options": {
+            "a": "Menginstruksikan tim untuk segera melakukan input manual data pembayaran dari modul billing ke MPN agar data tersinkronisasi",
+            "b": "Melaporkan kejadian ini ke Kantor Wilayah dan meminta tim IT pusat untuk melakukan investigasi teknis terhadap sistem",
+            "c": "Mengevaluasi dampak inkonsistensi data terhadap proses bisnis, melakukan rekonsiliasi menyeluruh antara billing system dan MPN, serta merekomendasikan",
+            "d": "Memberikan toleransi waktu kepada Wajib Pajak yang terdampak dan memperpanjang batas waktu pelaporan SPT mereka"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan Kepala Seksi untuk mengevaluasi dampak sistemik dari permasalahan aplikasi terhadap proses bisnis secara menyeluruh. Tindakan rekonsiliasi menyeluruh diperluka",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Kantor Wilayah DJP meminta Anda menyusun materi sosialisasi kebijakan baru pengampunan pajak untuk stakeholder eksternal di wilayah kerja KPP Anda. Terdapat 15 asosiasi pengusaha yang akan hadir dan mereka meminta penjelasan teknis implementasi. Namu",
+          "options": {
+            "a": "Menyusun materi sosialisasi berdasarkan interpretasi sendiri dan langsung menyampaikannya kepada stakeholder untuk menunjukkan proaktivitas",
+            "b": "Berkoordinasi dengan Kanwil untuk klarifikasi ketentuan yang belum jelas, kemudian menyusun materi sosialisasi sesuai petunjuk teknis yang telah dipas",
+            "c": "Menunda sosialisasi hingga ada revisi Perdirjen yang lebih jelas agar tidak terjadi kesalahan penyampaian informasi",
+            "d": "Menyerahkan seluruh proses sosialisasi kepada Kanwil karena kebijakan baru memerlukan penanganan tingkat pusat"
+          },
+          "correct": "b",
+          "explanation": "Level 2 menuntut kemampuan melaksanakan advokasi sesuai petunjuk teknis yang jelas. Koordinasi dengan atasan untuk klarifikasi ketentuan yang belum jelas merupakan langkah analitis",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Tim Anda menemukan data 15 perusahaan konstruksi di wilayah kerja KPP yang melaporkan omzet Rp 4-5 miliar per tahun namun rasio laba bersih konsisten di angka 0,8-1,2%, jauh di bawah norma industri 8-12%. Hasil pemeriksaan silang menunjukkan beberapa",
+          "options": {
+            "a": "Langsung menerbitkan rekomendasi pemeriksaan komprehensif untuk semua 15 perusahaan karena terdapat indikasi penggelapan pajak yang signifikan",
+            "b": "Membuat profil risiko keseluruhan 15 perusahaan dan mengajukan usulan agar semua masuk program pengawasan intensif tahun berikutnya",
+            "c": "Menyerahkan seluruh data kepada Kepala KPP untuk pengambilan keputusan tindak lanjut karena kasus ini bersifat strategis dan melibatkan banyak wajib p",
+            "d": "Menelaah lebih mendalam 5 perusahaan dengan kontrak proyek terbesar, analisis perbandingan biaya dengan benchmark industri, kemudian susun rekomendasi"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan kemampuan menelaah permasalahan WP secara mendalam dengan menganalisis perusahaan berisiko tinggi berdasarkan nilai kontrak dan membandingkan dengan benchmark ",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Anda sebagai Kepala Seksi Penjaminan Kualitas Data menerima laporan bahwa terjadi penurunan kualitas koneksi internet di KPP pada jam kerja, namun normal di luar jam kerja. Setelah analisis traffic, ditemukan penggunaan bandwidth tertinggi dari 5 wor",
+          "options": {
+            "a": "Mengevaluasi pola penggunaan bandwidth seluruh workstation, menelaah dampaknya terhadap kinerja sistem DJP, kemudian merekomendasikan penerapan Qualit",
+            "b": "Langsung memblokir akses internet kelima workstation tersebut dan membuat surat teguran kepada pegawai yang bersangkutan",
+            "c": "Meningkatkan kapasitas bandwidth internet KPP dan mengajukan anggaran tambahan untuk upgrade infrastruktur jaringan",
+            "d": "Membuat pengumuman larangan streaming video dan meminta seluruh pegawai menandatangani surat pernyataan tidak akan menggunakan internet untuk keperlua"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan evaluasi menyeluruh terhadap hasil monitoring jaringan, penelaahan akar masalah penggunaan bandwidth yang berdampak pada kinerja sistem, dan rekomendasi solusi",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Dalam rangka implementasi aplikasi e-Reporting baru untuk pelaporan SPT Masa PPN, Tim Anda menemukan bahwa 40% data yang masuk mengalami error validasi NPWP karena format lama masih digunakan oleh 250 Wajib Pajak. Aplikasi lama akan dimatikan dalam 2",
+          "options": {
+            "a": "Meminta bagian IT untuk mematikan aplikasi lama lebih cepat agar WP dipaksa migrasi ke format baru dan segera menyesuaikan data NPWP mereka",
+            "b": "Mengevaluasi pola error validasi, mengidentifikasi segmen WP terdampak, menyusun rekomendasi penambahan fitur konversi otomatis format NPWP pada aplik",
+            "c": "Menunda penutupan aplikasi lama hingga semua WP berhasil migrasi dan membiarkan kedua aplikasi berjalan paralel tanpa batas waktu untuk kenyamanan WP",
+            "d": "Meneruskan permasalahan kepada Account Representative untuk menghubungi satu per satu 250 WP dan meminta mereka datang ke KPP untuk pembetulan data ma"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja aplikasi dengan menganalisis pola error secara sistematis dan menelaah dampaknya terhadap segmen WP tertentu. Rekomendasi tindak",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan dari tim bahwa terdapat inkonsistensi data SPT Masa PPN di aplikasi SIDJP dengan data e-Faktur untuk 120 Wajib Pajak PKP, di mana nilai DPP yang dilaporkan berbeda signifikan (selis",
+          "options": {
+            "a": "Memerintahkan tim untuk menghubungi seluruh 120 WP PKP tersebut secara langsung agar segera melakukan pembetulan SPT dan meminta mereka datang ke KPP ",
+            "b": "Menunggu hingga akhir tahun pajak untuk melihat apakah inkonsistensi data tersebut terulang kembali, baru kemudian membuat laporan evaluasi kepada Kep",
+            "c": "Langsung membuat Surat Permintaan Penjelasan (SP2) kepada seluruh 120 WP PKP tersebut dan meneruskan temuan ke Seksi Pemeriksaan untuk dilakukan pemer",
+            "d": "Mengevaluasi hasil penelusuran tim untuk mengidentifikasi pola kesalahan sistem, mengkoordinasikan perbaikan mapping data dengan unit TI, dan merekome"
+          },
+          "correct": "d",
+          "explanation": "Level 3 memerlukan kemampuan mengevaluasi hasil kerja tim dengan menelaah akar permasalahan secara komprehensif. Rekomendasi tindak lanjut harus bersifat preventif dan korektif den",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima hasil analisis tim yang menunjukkan 25 WP sektor perdagangan besar memiliki rasio Laba/Penjualan di bawah 1% selama 3 tahun berturut-turut, padahal rata-rata industri 4-6%. Data penelusuran",
+          "options": {
+            "a": "Mengevaluasi ulang hasil analisis dengan meminta tim melakukan stratifikasi risiko berdasarkan materialitas dan kompleksitas transaksi, kemudian merek",
+            "b": "Menyetujui rekomendasi pemeriksaan menyeluruh ke-25 WP karena terdapat indikasi kuat penggelapan pajak melalui transfer pricing",
+            "c": "Menolak rekomendasi dan meminta tim fokus pada WP dengan omzet terbesar saja untuk efisiensi sumber daya pemeriksa",
+            "d": "Meneruskan seluruh hasil analisis langsung ke Kepala KPP tanpa evaluasi karena data sudah lengkap dan tim sudah memberikan rekomendasi"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja tim dengan menelaah permasalahan secara komprehensif, tidak sekedar menerima atau menolak mentah-mentah. Stratifikasi risiko",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan bahwa proses sinkronisasi data perpajakan dari 12 KPP Pratama ke server pusat mengalami kegagalan intermiten selama 3 hari terakhir. Tim teknis melaporkan packet loss 25% pada jalur",
+          "options": {
+            "a": "Segera menghentikan semua proses sinkronisasi data dan meminta seluruh KPP mengirim data secara manual melalui media fisik hingga masalah jaringan sel",
+            "b": "Langsung menginstruksikan vendor untuk mengganti seluruh perangkat core switch dan menambah bandwidth tanpa analisis lebih lanjut karena situasi mende",
+            "c": "Mengevaluasi hasil monitoring jaringan untuk mengidentifikasi root cause, menelaah pola traffic dan kapasitas infrastruktur, kemudian merekomendasikan",
+            "d": "Meminta KPP yang terdampak untuk mengulang upload data secara bersamaan pada waktu yang sama agar proses sinkronisasi dapat diselesaikan dengan cepat"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja dengan menganalisis data monitoring untuk identifikasi akar masalah. Menelaah permasalahan dilakukan melalui kajian pola tra",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima hasil analisis tim yang menunjukkan 25 WP sektor perdagangan di wilayah Anda melaporkan margin laba kotor hanya 2-3%, sementara data BI Checking menunjukkan transaksi perbankan mencapai 500",
+          "options": {
+            "a": "Langsung menerbitkan SP2DK kepada seluruh 25 WP tersebut untuk meminta klarifikasi perbedaan data omzet dengan transaksi perbankan",
+            "b": "Membuat laporan hasil analisis dan menunggu arahan dari Kepala Kantor sebelum mengambil tindakan apapun",
+            "c": "Menyerahkan seluruh data kepada Seksi Pemeriksaan untuk dilakukan pemeriksaan komprehensif terhadap 25 WP secara bersamaan",
+            "d": "Mengevaluasi hasil profiling tim, menelaah lebih mendalam 5 WP dengan gap terbesar menggunakan analisis rasio keuangan dan data pihak ketiga, kemudian"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja tim dengan menelaah lebih mendalam WP prioritas berdasarkan materialitas gap. Penelaahan menggunakan analisis rasio dan d",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan bahwa aplikasi SIDJP menunjukkan inkonsistensi data SPT Masa PPN untuk 250 Wajib Pajak PKP di wilayah Anda, dimana nilai DPP pada modul pelaporan berbeda dengan modul pembayaran mes",
+          "options": {
+            "a": "Mengevaluasi alur bisnis proses perekaman data, mengidentifikasi titik kritis penyebab inkonsistensi antara modul pelaporan dan pembayaran, lalu merek",
+            "b": "Memerintahkan tim untuk menghubungi seluruh 250 WP agar melakukan pembetulan SPT secara manual melalui e-Filing",
+            "c": "Langsung membuat memo kepada Kantor Pusat untuk mematikan sementara fitur pelaporan SPT Masa PPN hingga masalah selesai",
+            "d": "Membentuk tim khusus untuk melakukan rekonsiliasi manual data seluruh 250 WP dan mengupdate database secara langsung"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja dengan menelaah akar permasalahan secara sistematis, bukan hanya solusi teknis parsial. Identifikasi titik kritis dalam a",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda mengidentifikasi 250 data Wajib Pajak yang memiliki inkonsistensi antara klasifikasi lapangan usaha (KLU) dengan jenis penghasilan yang dilaporkan dalam SPT Tahunan. Sebagian besar adalah WP sektor ",
+          "options": {
+            "a": "Langsung mengubah KLU seluruh WP tersebut menjadi sektor real estate tanpa konfirmasi lebih lanjut untuk mempercepat perbaikan data",
+            "b": "Menyerahkan seluruh daftar data kepada Seksi Pengawasan dan Konsultasi untuk melakukan pemeriksaan formal terhadap 250 WP tersebut",
+            "c": "Menganalisis pola inkonsistensi data, menyusun rencana validasi bertahap dengan membuat matriks prioritas berdasarkan materialitas, kemudian melaksana",
+            "d": "Mengirim surat teguran kepada seluruh WP untuk mengubah KLU mereka sendiri melalui sistem e-Registration dalam waktu 14 hari"
+          },
+          "correct": "c",
+          "explanation": "Level 2 Pengelolaan Database mensyaratkan kemampuan menganalisis data WP untuk mengidentifikasi pola masalah, menyusun rencana kerja yang sistematis dan terukur, serta melaksanakan",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan dari tim bahwa terdapat 15 WP Badan di sektor konstruksi dengan omzet di atas Rp50 miliar namun rasio beban terhadap penghasilan bruto mencapai 92-95%, jauh di atas rata-rata indust",
+          "options": {
+            "a": "Langsung menerbitkan Surat Perintah Pemeriksaan untuk seluruh 15 WP Badan tersebut karena terdapat indikasi skema penghindaran pajak yang terstruktur",
+            "b": "Menyusun profil risiko WP dan merekomendasikan pengawasan intensif dengan himbauan perbaikan data SPT, disertai usulan pemeriksaan untuk 3-5 WP dengan",
+            "c": "Mengirimkan surat himbauan kepada seluruh WP untuk melakukan pembetulan SPT Tahunan karena terdapat ketidakwajaran rasio keuangan",
+            "d": "Melakukan analisis ulang dengan menambah sampel WP dari sektor lain untuk memastikan pola tersebut bukan merupakan praktik umum industri konstruksi"
+          },
+          "correct": "b",
+          "explanation": "Level 3 Analisis Potensi Pajak mengharuskan evaluasi komprehensif dengan menelaah permasalahan WP secara mendalam sebelum memberikan rekomendasi. Rekomendasi harus proporsional dan",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menemukan inkonsistensi data alamat Wajib Pajak antara database SIDJP dengan data profiling eksternal dari pihak ketiga. Terdapat 15.000 record dengan perbedaan alamat yang signifikan. Atasan memint",
+          "options": {
+            "a": "Menganalisis pola inkonsistensi berdasarkan segmentasi WP, menyusun rencana verifikasi bertahap dengan prioritas WP kritikal, dan melaksanakan rekonsi",
+            "b": "Langsung melakukan update massal seluruh data alamat menggunakan data eksternal karena dianggap lebih akurat dan real-time",
+            "c": "Membuat surat edaran kepada seluruh WP yang datanya tidak konsisten untuk melakukan pemutakhiran data mandiri melalui portal DJP",
+            "d": "Menghapus semua data yang inkonsisten dari sistem dan menunggu WP melaporkan data terbaru pada saat pelaporan SPT tahunan"
+          },
+          "correct": "a",
+          "explanation": "Level 2 Pengelolaan Database mensyaratkan kemampuan menganalisis data WP untuk mengidentifikasi pola masalah dan segmentasi. Menyusun rencana verifikasi bertahap dengan prioritas m",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menemukan bahwa 350 WP UMKM di wilayah kerja belum memanfaatkan insentif PPh Final 0,5% karena ketidakpahaman mengenai syarat dan prosedur pemanfaatannya. Data menunjukkan 60% di antaranya memiliki ",
+          "options": {
+            "a": "Langsung melakukan sosialisasi massal kepada seluruh WP UMKM tanpa analisis lebih lanjut mengenai karakteristik dan kendala spesifik yang mereka hadap",
+            "b": "Menganalisis profil dan kendala 350 WP tersebut berdasarkan data yang ada, menyusun rencana kegiatan advokasi bertarget dengan materi sederhana tentan",
+            "c": "Membuat kebijakan baru untuk mempermudah akses insentif dan mengirimkan surat edaran kepada seluruh WP UMKM tanpa koordinasi dengan pihak terkait",
+            "d": "Menyerahkan seluruh tugas advokasi kepada Account Representative dan hanya memantau hasil akhir tanpa menyusun rencana strategis terlebih dahulu"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mengharuskan Kepala Seksi menganalisis data WP untuk mengidentifikasi profil dan permasalahan spesifik sebagai dasar penyusunan rencana advokasi yang tepat sasaran. Setelah",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Potensi Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan dari tim bahwa terdapat 150 WP dengan omzet di atas Rp50 miliar yang melaporkan rasio HPP/Penjualan di atas 95% secara konsisten selama 3 tahun, padahal rata-rata industri sejenis h",
+          "options": {
+            "a": "Menerbitkan Surat Permintaan Penjelasan atas Data dan/atau Keterangan (SP2DK) secara massal kepada seluruh 150 WP tersebut untuk meminta klarifikasi r",
+            "b": "Langsung menerbitkan rekomendasi pemeriksaan khusus kepada seluruh WP karena rasio HPP yang abnormal sudah cukup menjadi bukti adanya ketidakpatuhan",
+            "c": "Melakukan evaluasi mendalam terhadap pola transaksi dan hubungan istimewa antar WP, kemudian merekomendasikan pemeriksaan terpadu dengan fokus pada ke",
+            "d": "Melakukan analisis benchmarking ulang dengan memperluas sampel industri dan menunggu data tahun berikutnya untuk memastikan konsistensi pola sebelum m"
+          },
+          "correct": "c",
+          "explanation": "Level 3 memerlukan kemampuan menelaah permasalahan secara komprehensif dengan mengidentifikasi pola abnormal (rasio HPP tinggi, lokasi pemasok sama) yang mengindikasikan potensi sk",
+          "source": "Materi Webinar KPP — Analisis Potensi Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan bahwa sistem validasi data NPWP mengalami gangguan intermittent dengan packet loss 15% pada jam sibuk (08.00-10.00). Setelah dilakukan monitoring, teridentifikasi bandwidth link uta",
+          "options": {
+            "a": "Segera menambah bandwidth link utama menjadi 2x lipat dan melakukan pengadaan router baru dengan kapasitas lebih besar",
+            "b": "Memindahkan seluruh sistem validasi data ke server cadangan dan melakukan migrasi database ke cloud computing",
+            "c": "Mematikan sementara layanan backup otomatis dari seluruh KPP dan menginstruksikan backup manual di luar jam kerja",
+            "d": "Mengevaluasi pola traffic dan merekomendasikan implementasi traffic shaping dengan QoS prioritas untuk layanan validasi NPWP, serta penjadwalan ulang "
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengevaluasi hasil monitoring yang menunjukkan saturasi bandwidth akibat backup bersamaan, kemudian menelaah akar permasalahan yaitu manajemen traffic yang tidak optimal. R",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Profiling Wajib Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan dari tim analisis yang menemukan anomali data pada 25 WP dengan peredaran usaha di atas Rp50 miliar namun memiliki rasio pajak kurang dari 0,5%. Setelah menelaah, ditemukan bahwa 15",
+          "options": {
+            "a": "Mengusulkan pemeriksaan pajak untuk seluruh 25 WP karena rasio pajak yang rendah menunjukkan potensi ketidakpatuhan",
+            "b": "Menyerahkan seluruh kasus kepada Seksi Pemeriksaan untuk dilakukan audit komprehensif tanpa kategorisasi lebih lanjut",
+            "c": "Merekomendasikan penelitian mendalam untuk 2 WP dengan indikasi transfer pricing, monitoring intensif untuk 8 WP dengan kompensasi kerugian, dan updat",
+            "d": "Meminta tim untuk melakukan profiling ulang terhadap seluruh WP tersebut karena data anomali menunjukkan kesalahan sistem"
+          },
+          "correct": "c",
+          "explanation": "Level 3 Profiling WP mengharuskan kemampuan menelaah permasalahan dengan mengidentifikasi penyebab anomali secara spesifik (fasilitas, kompensasi kerugian, transfer pricing). Evalu",
+          "source": "Materi Webinar KPP — Profiling Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan dari tim bahwa terdapat anomali traffic jaringan yang menyebabkan sistem data warehouse DJP mengalami penurunan performa hingga 60% pada jam kerja. Hasil monitoring menunjukkan adan",
+          "options": {
+            "a": "Segera memblokir semua akses internet ke situs streaming dan menegur pegawai yang melanggar melalui email blast kepada seluruh unit kerja",
+            "b": "Mengevaluasi hasil monitoring traffic untuk mengidentifikasi sumber anomali, menelaah kebijakan QoS yang ada, kemudian merekomendasikan penerapan band",
+            "c": "Meningkatkan kapasitas bandwidth internet secara keseluruhan dan membiarkan pegawai menggunakan internet sesuai kebutuhan masing-masing",
+            "d": "Melaporkan kejadian kepada atasan dan menunggu instruksi lebih lanjut tanpa melakukan analisis mendalam terhadap pola traffic jaringan"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kepala Seksi untuk mengevaluasi hasil monitoring traffic secara komprehensif, menelaah akar permasalahan dari aspek teknis (QoS) dan non-teknis (perilaku user)",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Dalam audit database Sistem Informasi DJP, Anda menemukan 15.000 record NPWP dengan status 'Non-Efektif' namun masih memiliki transaksi SPT Masa PPN dalam 6 bulan terakhir. Tim IT menyatakan sistem berjalan normal tanpa error. Sebagai Kepala Seksi Pe",
+          "options": {
+            "a": "Langsung melaporkan temuan ini kepada Kepala Kanwil sebagai indikasi fraud sistemik yang perlu penanganan investigasi khusus",
+            "b": "Meminta vendor sistem untuk melakukan patching sistem karena ini merupakan bug aplikasi yang harus segera diperbaiki",
+            "c": "Menginstruksikan Account Representative untuk menonaktifkan seluruh NPWP tersebut dan membatalkan SPT yang telah dilaporkan",
+            "d": "Menganalisis pola inkonsistensi data tersebut, menyusun rencana validasi silang dengan database master file WP, dan melaksanakan cleansing data sesuai"
+          },
+          "correct": "d",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis inkonsistensi data WP untuk mengidentifikasi akar masalah. Menyusun rencana validasi sistematis dan melaksanakan cleansing data sesuai p",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Jaringan Internet",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan bahwa sistem e-Filing mengalami timeout intermittent pada jam sibuk (peak hours). Setelah ditelusuri, tim menemukan bottleneck terjadi pada firewall dengan CPU usage mencapai 95% da",
+          "options": {
+            "a": "Merekomendasikan implementasi load balancing firewall setelah mengevaluasi bahwa bottleneck ada pada processing capacity, bukan bandwidth, disertai au",
+            "b": "Menyetujui upgrade bandwidth segera karena peningkatan traffic e-Filing pada musim pelaporan SPT",
+            "c": "Menginstruksikan tim untuk melakukan optimasi firewall rules terlebih dahulu karena solusi paling murah dan cepat",
+            "d": "Menunda semua solusi dan meminta tim monitoring selama 2 minggu untuk mengumpulkan data lebih lengkap"
+          },
+          "correct": "a",
+          "explanation": "Level 3 membutuhkan kemampuan mengevaluasi akar masalah (CPU overload pada firewall, bukan bandwidth) dan menelaah solusi komprehensif yang mengatasi kapasitas processing. Rekomend",
+          "source": "Materi Webinar KPP — Pengelolaan Jaringan Internet L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menemukan 15.000 data NIK Wajib Pajak yang tidak valid pada database master file. Setelah analisis, ditemukan 40% kesalahan input manual, 35% data migrasi sistem lama, dan 25% duplikasi. Kanwil meng",
+          "options": {
+            "a": "Langsung menghapus seluruh data yang tidak valid dan meminta Wajib Pajak mendaftar ulang melalui pengumuman di website",
+            "b": "Menyusun rencana perbaikan bertahap dengan prioritas berdasarkan analisis penyebab, melaksanakan validasi sesuai petunjuk teknis Kanwil, dan membuat j",
+            "c": "Menyerahkan seluruh penanganan kepada tim IT untuk membuat algoritma otomatis pembersihan data tanpa verifikasi manual",
+            "d": "Melakukan rekonsiliasi manual seluruh 15.000 data dalam satu minggu dengan seluruh pegawai seksi tanpa skala prioritas"
+          },
+          "correct": "b",
+          "explanation": "Level 2 Pengelolaan Database mensyaratkan kemampuan menganalisis data (identifikasi penyebab kesalahan), menyusun rencana (prioritas dan jadwal bertahap), dan melaksanakan sesuai p",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Anda menemukan inkonsistensi data NPWP pada database master wajib pajak dimana 2.500 NPWP terdaftar ganda dengan alamat berbeda namun nama dan NIK identik. Setelah analisis, 60% kasus terjadi karena migrasi sistem lama. Atasan meminta solusi sistemat",
+          "options": {
+            "a": "Langsung menghapus semua data duplikat dan meminta wajib pajak daftar ulang untuk memastikan data bersih",
+            "b": "Menggabungkan semua data duplikat menjadi satu NPWP secara otomatis menggunakan script database",
+            "c": "Membuat laporan temuan kepada atasan dan menunggu instruksi selanjutnya tanpa melakukan tindakan apapun",
+            "d": "Menganalisis pola duplikasi per kategori penyebab, menyusun rencana rekonsiliasi bertahap dengan skala prioritas, dan melaksanakan perbaikan sesuai pe"
+          },
+          "correct": "d",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis data WP untuk mengidentifikasi pola masalah secara terstruktur. Menyusun rencana rekonsiliasi bertahap dengan skala prioritas menunjukka",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Aplikasi Umum dan Khusus",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Penjaminan Kualitas Data, Anda menerima laporan bahwa aplikasi e-Registration mengalami lonjakan error rate hingga 35% dalam pengajuan NPWP online selama 3 hari terakhir. Setelah investigasi, ditemukan bahwa validasi NIK pada apl",
+          "options": {
+            "a": "Mengevaluasi root cause permasalahan dengan melibatkan vendor dan tim IT, menyusun action plan perbaikan API gateway dengan timeline jelas, memberikan",
+            "b": "Menginstruksikan tim untuk segera menonaktifkan fitur validasi NIK otomatis dan memproses semua permohonan secara manual sambil menunggu vendor memper",
+            "c": "Langsung menghubungi pihak Dukcapil untuk meminta mereka mengembalikan API gateway ke versi sebelumnya agar sistem dapat berfungsi normal kembali",
+            "d": "Membuat surat teguran kepada vendor dan meminta mereka bertanggung jawab penuh atas permasalahan sambil menunda pemrosesan semua permohonan NPWP hingg"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja dengan analisis mendalam terhadap root cause dan dampak sistemik. Jawaban B menunjukkan kompetensi menelaah permasalahan sec",
+          "source": "Materi Webinar KPP — Pengelolaan Aplikasi Umum dan Khusus L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Database",
+          "compLevel": 2,
+          "question": "Dalam monitoring database master file Wajib Pajak, Anda menemukan 15.000 data NPWP dengan status 'Non-Efektif' namun masih memiliki transaksi SPT Masa aktif dalam 6 bulan terakhir. Sistem juga menunjukkan adanya duplikasi NIK pada 2.300 NPWP berbeda.",
+          "options": {
+            "a": "Langsung menonaktifkan semua transaksi SPT Masa pada NPWP Non-Efektif dan menghapus data NPWP yang terduplikasi untuk membersihkan database",
+            "b": "Membuat laporan temuan kepada atasan dan menunggu instruksi lebih lanjut tanpa melakukan analisis mendalam terhadap penyebab masalah",
+            "c": "Menganalisis pola inkonsistensi data dengan mengelompokkan kasus berdasarkan jenis transaksi dan penyebab duplikasi, menyusun rencana perbaikan bertah",
+            "d": "Meminta vendor sistem informasi untuk melakukan perbaikan otomatis terhadap semua inkonsistensi data tanpa melakukan validasi manual"
+          },
+          "correct": "c",
+          "explanation": "Level 2 Pengelolaan Database mengharuskan kemampuan menganalisis data WP untuk mengidentifikasi pola dan akar masalah inkonsistensi. Menyusun rencana perbaikan bertahap sesuai prio",
+          "source": "Materi Webinar KPP — Pengelolaan Database L2",
           "vigTitle": null,
           "vigBody": null,
           "userAnswer": "c",
