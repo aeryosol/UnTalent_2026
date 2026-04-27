@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "sessionsServedTotal": 1,
-    "creditsSpentUSD": 0.4,
-    "lastUpdated": "2026-04-26T12:27:42.633Z"
+    "sessionsServedTotal": 2,
+    "creditsSpentUSD": 0.8,
+    "lastUpdated": "2026-04-27T02:35:03.728Z"
   },
   "sessions": [
     {
@@ -1191,6 +1191,1198 @@
           "explanation": "Level 3 mensyaratkan kemampuan mengelola risiko reputasional dengan pendekatan sistematis: pelaporan ke atasan dengan kronologi lengkap, komunikasi proaktif transparan kepada penga",
           "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
           "vigTitle": "Penanganan Pengaduan Massal Pemblokiran NPWP Wajib Pajak",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "SES-279CKV",
+      "position": "Kepala Subbagian Umum & Kepatuhan Internal",
+      "segment": "A",
+      "segmentLabel": "Jabatan Pengawas",
+      "score": 93,
+      "totalQ": 60,
+      "correct": 56,
+      "completedAt": "2026-04-27T02:35:02.313Z",
+      "questions": [
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 0,
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, apa masalah utama yang harus diidentifikasi ketika AR melaporkan adanya kendala dalam pemeriksaan terhadap wajib pajak?",
+          "options": {
+            "a": "Potensi pelanggaran prosedur pemeriksaan yang dapat mempengaruhi kepatuhan internal dan validitas hasil pemeriksaan",
+            "b": "Keterlambatan AR dalam menyelesaikan target pemeriksaan bulanan",
+            "c": "Kurangnya kompetensi AR dalam melakukan pemeriksaan pajak",
+            "d": "Minimnya anggaran untuk mendukung kegiatan pemeriksaan"
+          },
+          "correct": "a",
+          "explanation": "Sebagai Kepala Subbagian Kepatuhan Internal, fokus utama adalah memastikan prosedur pemeriksaan dijalankan sesuai ketentuan untuk menjaga integritas dan validitas hasil pemeriksaan",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": "Pengelolaan Administrasi Pemeriksaan dan Koordinasi Tim AR",
+          "vigBody": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal di KPP Pratama Jakarta Selatan, Anda menghadapi situasi kompleks. Account Representative (AR) melaporkan bahwa pemeriksaan terhadap PT Mitra Sejahtera dengan omzet Rp 45 miliar mengalami kendala administrasi. Dokumen permohonan perpanjangan jangka w",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 1,
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Data manakah yang paling relevan untuk dianalisis dalam mengevaluasi laporan AR tentang kendala pemeriksaan?",
+          "options": {
+            "a": "Data realisasi penerimaan pajak tahun berjalan",
+            "b": "Dokumentasi prosedur pemeriksaan, surat tugas, berita acara, dan kronologi kendala yang dihadapi AR",
+            "c": "Data kepegawaian dan riwayat mutasi AR di KPP",
+            "d": "Statistik pengaduan wajib pajak secara umum"
+          },
+          "correct": "b",
+          "explanation": "Dokumentasi pemeriksaan dan kronologi kendala merupakan data primer yang paling relevan untuk mengidentifikasi akar masalah dan memastikan kepatuhan prosedural.",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": "Pengelolaan Administrasi Pemeriksaan dan Koordinasi Tim AR",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 2,
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Dalam mengevaluasi alternatif solusi terhadap kendala pemeriksaan yang dilaporkan AR, pendekatan manakah yang paling tepat?",
+          "options": {
+            "a": "Langsung menghentikan pemeriksaan dan menutup kasus",
+            "b": "Menyerahkan sepenuhnya kepada AR untuk menyelesaikan tanpa supervisi",
+            "c": "Melakukan klarifikasi mendalam, koordinasi dengan pihak terkait, dan memberikan solusi sesuai ketentuan dengan tetap menjaga kepatuhan prosedur",
+            "d": "Memindahkan kasus ke AR lain tanpa evaluasi lebih lanjut"
+          },
+          "correct": "c",
+          "explanation": "Solusi yang efektif memerlukan klarifikasi menyeluruh dan koordinasi sesuai prosedur untuk memastikan penyelesaian yang tepat dan patuh aturan.",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": "Pengelolaan Administrasi Pemeriksaan dan Koordinasi Tim AR",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 3,
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut yang paling tepat untuk memastikan kepatuhan internal dan kelancaran pemeriksaan adalah:",
+          "options": {
+            "a": "Membuat laporan kepada Kepala KPP tanpa memberikan solusi konkret",
+            "b": "Menunda semua pemeriksaan hingga masalah terselesaikan",
+            "c": "Mengabaikan laporan AR karena bukan kewenangan Subbagian Umum",
+            "d": "Menyusun rekomendasi perbaikan prosedur, melakukan monitoring berkala, dan membuat mekanisme pelaporan kendala yang terstruktur untuk mencegah masalah"
+          },
+          "correct": "d",
+          "explanation": "Sebagai Kepala Subbagian Kepatuhan Internal, tindak lanjut harus sistematis dengan perbaikan prosedur dan monitoring untuk mencegah masalah berulang.",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": "Pengelolaan Administrasi Pemeriksaan dan Koordinasi Tim AR",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 4,
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Risiko prosedural apa yang paling krusial untuk dimitigasi dalam situasi ini?",
+          "options": {
+            "a": "Berkurangnya jumlah wajib pajak yang terdaftar",
+            "b": "Keterlambatan pencairan tunjangan kinerja AR",
+            "c": "Potensi cacat hukum dalam proses pemeriksaan yang dapat membatalkan hasil pemeriksaan dan menimbulkan sengketa pajak serta melemahkan posisi DJP",
+            "d": "Meningkatnya beban kerja administrasi umum"
+          },
+          "correct": "c",
+          "explanation": "Cacat prosedur pemeriksaan dapat membatalkan penetapan pajak dan merugikan negara, sehingga menjadi risiko paling krusial yang harus dimitigasi.",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": "Pengelolaan Administrasi Pemeriksaan dan Koordinasi Tim AR",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 0,
+          "comp": "Manajemen Kinerja Organisasi",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, apa masalah utama yang perlu Anda identifikasi dari data monitoring triwulan III tahun 2024 Seksi Pengawasan dan Konsultasi I?",
+          "options": {
+            "a": "Kurangnya jumlah pegawai di Seksi Pengawasan dan Konsultasi I",
+            "b": "Penurunan kinerja atau ketidakpatuhan terhadap target pengawasan dan konsultasi yang telah ditetapkan",
+            "c": "Tingginya anggaran operasional yang digunakan oleh seksi tersebut",
+            "d": "Adanya keluhan dari wajib pajak tentang pelayanan konsultasi"
+          },
+          "correct": "b",
+          "explanation": "Masalah utama yang relevan dengan peran Kepatuhan Internal adalah identifikasi gap kinerja atau deviasi dari target yang ditetapkan berdasarkan data monitoring triwulanan.",
+          "source": "Materi Webinar KPP — Manajemen Kinerja Organisasi L2",
+          "vigTitle": "Penurunan Kinerja Seksi Pengawasan dan Konsultasi",
+          "vigBody": "Anda adalah Kepala Subbagian Umum & Kepatuhan Internal di KPP Pratama Jakarta Veteran. Dari data monitoring triwulan III tahun 2024, Seksi Pengawasan dan Konsultasi I menunjukkan penurunan kinerja signifikan: pencapaian target visit WP hanya 65% (target 90%), keluhan WP meningkat 40%, dan waktu peny",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 1,
+          "comp": "Manajemen Kinerja Organisasi",
+          "compLevel": 2,
+          "question": "Data mana yang paling relevan untuk Anda analisis dalam mengevaluasi kinerja Seksi Pengawasan dan Konsultasi I pada triwulan III?",
+          "options": {
+            "a": "Data absensi pegawai dan cuti tahunan",
+            "b": "Jumlah surat masuk dan keluar dari seksi tersebut",
+            "c": "Data pengadaan barang dan jasa untuk seksi tersebut",
+            "d": "Perbandingan antara target dan realisasi kegiatan pengawasan, persentase penyelesaian kasus, dan tingkat kepatuhan terhadap SOP"
+          },
+          "correct": "d",
+          "explanation": "Data kinerja yang membandingkan target vs realisasi serta kepatuhan SOP merupakan indikator paling relevan untuk menilai efektivitas fungsi pengawasan dan konsultasi.",
+          "source": "Materi Webinar KPP — Manajemen Kinerja Organisasi L2",
+          "vigTitle": "Penurunan Kinerja Seksi Pengawasan dan Konsultasi",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 2,
+          "comp": "Manajemen Kinerja Organisasi",
+          "compLevel": 2,
+          "question": "Dalam mengevaluasi alternatif solusi untuk meningkatkan kinerja Seksi Pengawasan dan Konsultasi I, manakah pendekatan yang paling komprehensif?",
+          "options": {
+            "a": "Melakukan analisis akar masalah, memberikan bimbingan teknis, memperbaiki sistem monitoring, dan mengoptimalkan alokasi sumber daya",
+            "b": "Menambah anggaran operasional untuk kegiatan pengawasan",
+            "c": "Langsung mengganti kepala seksi yang dinilai tidak kompeten",
+            "d": "Mengurangi target kinerja agar lebih mudah dicapai"
+          },
+          "correct": "a",
+          "explanation": "Pendekatan komprehensif yang mengidentifikasi akar masalah dan mengombinasikan berbagai intervensi (kapasitas SDM, sistem, dan sumber daya) lebih efektif daripada solusi parsial.",
+          "source": "Materi Webinar KPP — Manajemen Kinerja Organisasi L2",
+          "vigTitle": "Penurunan Kinerja Seksi Pengawasan dan Konsultasi",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 3,
+          "comp": "Manajemen Kinerja Organisasi",
+          "compLevel": 2,
+          "question": "Rekomendasi tindak lanjut apa yang paling tepat Anda sampaikan kepada Kepala KPP terkait hasil monitoring triwulan III ini?",
+          "options": {
+            "a": "Memberikan sanksi administratif kepada seluruh pegawai di Seksi Pengawasan dan Konsultasi I",
+            "b": "Menyusun action plan perbaikan dengan timeline jelas, melakukan pembinaan intensif, dan meningkatkan frekuensi monitoring menjadi bulanan untuk memast",
+            "c": "Mengabaikan hasil monitoring karena masih ada satu triwulan lagi untuk perbaikan",
+            "d": "Menghapus Seksi Pengawasan dan Konsultasi I karena tidak berkinerja"
+          },
+          "correct": "b",
+          "explanation": "Rekomendasi yang konstruktif dengan action plan terukur, pembinaan, dan penguatan monitoring merupakan pendekatan manajemen kinerja yang tepat untuk mendorong perbaikan berkelanjut",
+          "source": "Materi Webinar KPP — Manajemen Kinerja Organisasi L2",
+          "vigTitle": "Penurunan Kinerja Seksi Pengawasan dan Konsultasi",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 4,
+          "comp": "Manajemen Kinerja Organisasi",
+          "compLevel": 2,
+          "question": "Dari aspek prosedural dan manajemen risiko, apa yang harus Anda pastikan sebelum mengimplementasikan rekomendasi perbaikan kinerja?",
+          "options": {
+            "a": "Hanya membuat laporan tertulis tanpa rencana implementasi konkret",
+            "b": "Langsung mengimplementasikan tanpa perlu konsultasi untuk menghemat waktu",
+            "c": "Menunggu arahan dari Kanwil tanpa melakukan inisiatif di tingkat KPP",
+            "d": "Memastikan rekomendasi telah dikonsultasikan dengan Kepala KPP, didokumentasikan secara formal, sesuai dengan kewenangan, dan memiliki mekanisme monit"
+          },
+          "correct": "d",
+          "explanation": "Prinsip tata kelola yang baik mengharuskan adanya konsultasi dengan pimpinan, dokumentasi formal, kejelasan kewenangan, dan mekanisme mitigasi risiko sebelum implementasi kebijakan",
+          "source": "Materi Webinar KPP — Manajemen Kinerja Organisasi L2",
+          "vigTitle": "Penurunan Kinerja Seksi Pengawasan dan Konsultasi",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 0,
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, apa identifikasi masalah utama dari penurunan kepatuhan Wajib Pajak sebesar 15% di semester pertama 2024?",
+          "options": {
+            "a": "Gap komunikasi dan edukasi kepada Wajib Pajak serta kemungkinan lemahnya pengawasan kepatuhan internal",
+            "b": "Kurangnya jumlah pegawai di KPP Pratama Jakarta Selatan",
+            "c": "Sistem teknologi informasi yang sudah usang dan tidak dapat diakses",
+            "d": "Anggaran operasional KPP yang terlalu kecil untuk semester ini"
+          },
+          "correct": "a",
+          "explanation": "Masalah utama terkait penurunan kepatuhan adalah gap komunikasi/edukasi dan pengawasan internal yang merupakan tanggung jawab langsung Subbagian Kepatuhan Internal.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": "Realokasi Anggaran untuk Peningkatan Kapasitas AR",
+          "vigBody": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal di KPP Pratama Jakarta Selatan, Anda menemukan bahwa tingkat kepatuhan Wajib Pajak menurun 15% dalam semester pertama 2024. Dari evaluasi internal, teridentifikasi bahwa 25 dari 40 Account Representative (AR) belum memiliki kompetensi memadai dalam ",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 1,
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Data mana yang paling relevan untuk dianalisis guna memahami akar penyebab penurunan tingkat kepatuhan 15% tersebut?",
+          "options": {
+            "a": "Data kepegawaian dan mutasi pegawai KPP dalam 6 bulan terakhir",
+            "b": "Laporan keuangan dan realisasi anggaran semester pertama 2024",
+            "c": "Segmentasi Wajib Pajak yang tidak patuh, tingkat partisipasi program edukasi, dan hasil monitoring kepatuhan per sektor usaha",
+            "d": "Data jumlah kunjungan ke website DJP dari wilayah Jakarta Selatan"
+          },
+          "correct": "c",
+          "explanation": "Segmentasi WP tidak patuh, partisipasi edukasi, dan monitoring per sektor memberikan insight mendalam tentang pola dan penyebab penurunan kepatuhan.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": "Realokasi Anggaran untuk Peningkatan Kapasitas AR",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 2,
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Dari berbagai alternatif solusi, mana yang paling efektif untuk meningkatkan kepatuhan Wajib Pajak dengan sumber daya terbatas?",
+          "options": {
+            "a": "Menambah jumlah Account Representative untuk pengawasan intensif ke seluruh Wajib Pajak",
+            "b": "Membuat sistem reward berupa pengurangan pajak bagi Wajib Pajak patuh",
+            "c": "Melakukan penyidikan massal terhadap semua Wajib Pajak yang terlambat lapor",
+            "d": "Mengintensifkan edukasi tersegmentasi, penguatan monitoring berbasis risiko, dan kemitraan dengan asosiasi bisnis lokal"
+          },
+          "correct": "d",
+          "explanation": "Pendekatan tersegmentasi, monitoring berbasis risiko, dan kemitraan merupakan solusi cost-effective yang menyasar akar masalah tanpa membebani sumber daya berlebihan.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": "Realokasi Anggaran untuk Peningkatan Kapasitas AR",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 3,
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut apa yang harus Anda sampaikan kepada Kepala KPP untuk mengatasi penurunan kepatuhan ini?",
+          "options": {
+            "a": "Implementasi program edukasi bertarget, optimalisasi SOP monitoring kepatuhan, dan pembentukan tim satgas kepatuhan dengan KPI terukur per bulan",
+            "b": "Meminta perpanjangan waktu pelaporan pajak untuk semua Wajib Pajak",
+            "c": "Merekrut konsultan eksternal untuk menangani program kepatuhan",
+            "d": "Mengusulkan penambahan anggaran 50% untuk kampanye media massa"
+          },
+          "correct": "a",
+          "explanation": "Rekomendasi komprehensif dengan program terukur, optimalisasi SOP, dan pembentukan satgas dengan KPI jelas memberikan solusi terstruktur dan dapat dievaluasi progresnya.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": "Realokasi Anggaran untuk Peningkatan Kapasitas AR",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 4,
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Dari aspek prosedural dan manajemen risiko, apa yang harus Anda perhatikan dalam mengimplementasikan program peningkatan kepatuhan?",
+          "options": {
+            "a": "Mengabaikan prosedur baku demi efisiensi waktu dalam mencapai target kepatuhan",
+            "b": "Fokus pada pencapaian target jangka pendek tanpa mempertimbangkan dampak jangka panjang",
+            "c": "Memastikan setiap tindakan sesuai SE Dirjen Pajak tentang pengawasan, mendokumentasikan proses untuk audit internal, dan mengelola risiko reputasi dar",
+            "d": "Memprioritaskan tindakan punitif maksimal tanpa mempertimbangkan aspek edukasi"
+          },
+          "correct": "c",
+          "explanation": "Kepatuhan pada SE Dirjen, dokumentasi untuk audit, dan manajemen risiko reputasi adalah kunci dalam implementasi program yang sustainable dan sesuai good governance.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": "Realokasi Anggaran untuk Peningkatan Kapasitas AR",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 0,
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, apa masalah utama yang harus diidentifikasi dari pengelolaan 8 kendaraan dinas senilai Rp 2,4 miliar di KPP Pratama Bekasi Selatan?",
+          "options": {
+            "a": "Harga kendaraan yang terlalu mahal dibanding standar pasar",
+            "b": "Ketidaksesuaian antara pencatatan aset dengan kondisi fisik kendaraan dan penggunaannya",
+            "c": "Jumlah kendaraan yang terlalu sedikit untuk operasional kantor",
+            "d": "Merk kendaraan yang tidak sesuai dengan preferensi pegawai"
+          },
+          "correct": "b",
+          "explanation": "Masalah utama pengelolaan aset negara adalah memastikan kesesuaian antara administrasi pencatatan dengan kondisi fisik dan pemanfaatan aktual sesuai ketentuan Barang Milik Negara.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": "Pengelolaan Aset Negara Kantor Pajak Bermasalah",
+          "vigBody": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal di KPP Pratama Bekasi Selatan, Anda menemukan permasalahan dalam pengelolaan kendaraan dinas senilai Rp 2,4 miliar. Terdapat 8 mobil operasional yang digunakan Account Representative (AR) untuk kunjungan WP, namun 3 unit tidak memiliki STNK yang val",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 1,
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Data apa yang paling relevan untuk dianalisis dalam mengevaluasi pengelolaan kendaraan dinas tersebut?",
+          "options": {
+            "a": "Laporan penggunaan kendaraan, logbook, biaya pemeliharaan, dan status kepemilikan BPKB/STNK",
+            "b": "Data kepuasan pegawai terhadap fasilitas kendaraan",
+            "c": "Data perbandingan harga kendaraan dengan kantor lain",
+            "d": "Survei kebutuhan kendaraan dari setiap seksi"
+          },
+          "correct": "a",
+          "explanation": "Data operasional seperti logbook, biaya pemeliharaan, dan kelengkapan dokumen legal merupakan indikator utama untuk menilai kepatuhan pengelolaan Barang Milik Negara.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": "Pengelolaan Aset Negara Kantor Pajak Bermasalah",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 2,
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Jika ditemukan 3 kendaraan jarang digunakan dan 2 kendaraan tidak memiliki STNK yang lengkap, alternatif solusi manakah yang paling tepat?",
+          "options": {
+            "a": "Menjual semua kendaraan dan membeli yang baru",
+            "b": "Usulan penghapusan untuk kendaraan yang tidak efisien dan pengurusan legal dokumen yang tidak lengkap melalui mekanisme BMN",
+            "c": "Membiarkan kondisi tersebut karena tidak mengganggu operasional",
+            "d": "Memindahkan kendaraan ke kantor lain tanpa proses administrasi"
+          },
+          "correct": "b",
+          "explanation": "Penghapusan aset yang tidak efisien dan penyelesaian administrasi dokumen legal harus melalui prosedur pengelolaan BMN sesuai regulasi untuk menjaga akuntabilitas dan kepatuhan.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": "Pengelolaan Aset Negara Kantor Pajak Bermasalah",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 3,
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Rekomendasi tindak lanjut apa yang harus Anda usulkan kepada Kepala Kantor terkait temuan pengelolaan kendaraan dinas ini?",
+          "options": {
+            "a": "Merekomendasikan pembelian kendaraan baru untuk mengganti yang lama",
+            "b": "Mengusulkan sanksi bagi semua pegawai yang menggunakan kendaraan",
+            "c": "Menyusun proposal pengalihan kendaraan ke instansi lain secara informal",
+            "d": "Membuat laporan temuan dan mengusulkan perbaikan sistem monitoring, optimalisasi pemanfaatan, serta penyelesaian administrasi sesuai ketentuan BMN"
+          },
+          "correct": "c",
+          "explanation": "Rekomendasi komprehensif harus mencakup dokumentasi temuan, perbaikan sistem pengendalian internal, optimalisasi aset, dan penyelesaian masalah administrasi sesuai regulasi pengelo",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": "Pengelolaan Aset Negara Kantor Pajak Bermasalah",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": false
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 4,
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Risiko utama apa yang mungkin timbul jika permasalahan pengelolaan kendaraan dinas ini tidak segera ditindaklanjuti sesuai prosedur?",
+          "options": {
+            "a": "Kenaikan biaya operasional yang tidak signifikan",
+            "b": "Ketidakpuasan pegawai terhadap fasilitas kantor",
+            "c": "Penurunan motivasi kerja pegawai secara umum",
+            "d": "Temuan dalam audit BPK/BPKP yang dapat mengakibatkan status disclaimer atau adverse opinion serta potensi tuntutan ganti rugi"
+          },
+          "correct": "d",
+          "explanation": "Ketidakpatuhan dalam pengelolaan BMN berisiko menghasilkan temuan material dalam audit yang dapat menurunkan opini laporan keuangan dan berpotensi menjadi kerugian negara yang dapa",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": "Pengelolaan Aset Negara Kantor Pajak Bermasalah",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Anda menemukan data bahwa 15 unit komputer di kantor berusia lebih dari 10 tahun dan sering rusak, biaya pemeliharaan tahunan mencapai Rp 45 juta, sementara nilai buku hanya Rp 15 juta. Sebagai Kepala Subbagian Umum, langkah analisis apa yang paling ",
+          "options": {
+            "a": "Langsung mengusulkan penghapusan karena nilai buku sudah rendah dan biaya pemeliharaan tinggi",
+            "b": "Menunggu instruksi dari atasan langsung karena penghapusan BMN merupakan kewenangan pimpinan unit",
+            "c": "Menganalisis perbandingan biaya pemeliharaan vs nilai ekonomis, tingkat utilisasi, ketersediaan anggaran pengadaan pengganti, dan dampak operasional j",
+            "d": "Membuat laporan kerusakan dan menyerahkan kepada bagian TIK untuk diperbaiki terlebih dahulu"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis data secara komprehensif dengan mempertimbangkan aspek teknis, finansial, dan operasional sebelum menyusun rekomendasi. Analisis harus m",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen SDM ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima laporan bahwa tingkat kehadiran pegawai di seksi tertentu menurun drastis dalam 3 bulan terakhir (dari 95% menjadi 78%), disertai penurunan capaian kinerja. Setelah evaluasi awal, Anda",
+          "options": {
+            "a": "Memberikan surat peringatan kepada seluruh pegawai di seksi tersebut dan meningkatkan monitoring kehadiran harian",
+            "b": "Mengusulkan redistribusi beban kerja sementara, asistensi psikososial bagi pegawai terdampak, dan coaching untuk atasan langsung dalam supervisi tim",
+            "c": "Meminta kepala seksi untuk menunda semua pekerjaan non-prioritas sampai situasi kehadiran kembali normal",
+            "d": "Mengajukan mutasi pegawai bermasalah ke seksi lain agar tidak mengganggu kinerja unit"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dan menelaah permasalahan secara komprehensif, bukan hanya aspek disiplin. Rekomendasi tindak lanjut harus bersifat solutif dan ",
+          "source": "Materi Webinar KPP — Manajemen SDM ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Kantor Anda memiliki 2 unit mobil dinas operasional yang sudah berusia 12 tahun dengan biaya pemeliharaan tahun lalu mencapai Rp 45 juta per unit, sedangkan nilai buku hanya Rp 25 juta per unit. Hasil analisis menunjukkan tingkat utilisasi hanya 40% ",
+          "options": {
+            "a": "Mengusulkan penghapusan kedua kendaraan langsung tanpa kajian lebih lanjut karena sudah tua dan sering rusak",
+            "b": "Menyerahkan sepenuhnya kepada atasan untuk memutuskan karena nilai kendaraan sudah di bawah kapitalisasi aset",
+            "c": "Menambah anggaran pemeliharaan menjadi Rp 60 juta per unit agar kendaraan dapat beroperasi optimal tanpa perlu penghapusan",
+            "d": "Menyusun kajian cost-benefit analysis pemeliharaan vs penghapusan, mengidentifikasi dampak operasional, dan mengusulkan penghapusan dengan rencana pen"
+          },
+          "correct": "d",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis data (biaya, utilisasi, nilai buku) dan menyusun rencana advokasi berbasis kajian komprehensif. Langkah melakukan cost-benefit analysis,",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima laporan bahwa sistem presensi elektronik menunjukkan 8 pegawai secara konsisten terlambat lebih dari 15 menit dalam 3 bulan terakhir, namun tidak ada tindak lanjut dari atasan langsung",
+          "options": {
+            "a": "Menyusun rekomendasi komprehensif berupa sosialisasi ulang SOP kedisiplinan, implementasi dashboard monitoring otomatis, dan penetapan mekanisme eskal",
+            "b": "Langsung memberikan sanksi administratif kepada 8 pegawai tersebut dan melaporkan ke Kepala Kantor untuk tindakan lebih lanjut",
+            "c": "Mengirim surat teguran tertulis kepada atasan langsung yang tidak melakukan tindak lanjut dan meminta pertanggungjawaban tertulis",
+            "d": "Membuat laporan keterlambatan pegawai untuk diarsipkan sebagai dokumentasi dan menunggu instruksi dari pimpinan"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Manajemen Perkantoran memerlukan kemampuan mengevaluasi hasil kerja dan memberikan rekomendasi tindak lanjut sistemik yang mengatasi akar masalah. Rekomendasi komprehensif ",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Dalam evaluasi triwulanan, Anda menemukan bahwa seorang staf bagian umum telah 4 kali terlambat mengunggah laporan Gratifikasi di sistem LHKPN, dan 2 laporan dari pegawai lain diketahui tidak lengkap mencantumkan nilai barang yang diterima. Sebagai K",
+          "options": {
+            "a": "Memberikan teguran lisan kepada staf yang terlambat dan meminta pegawai lain melengkapi laporan secara sukarela tanpa sanksi",
+            "b": "Menelaah akar masalah keterlambatan dan ketidaklengkapan, mengevaluasi efektivitas sosialisasi LHKPN, lalu merekomendasikan pembinaan terstruktur sert",
+            "c": "Langsung membuat surat rekomendasi sanksi administratif kepada Kepala Kantor untuk semua pegawai yang terlibat tanpa melakukan analisis penyebab",
+            "d": "Menunda tindakan dan menunggu evaluasi tahunan sambil mengumpulkan lebih banyak data pelanggaran serupa"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dan menelaah akar permasalahan secara komprehensif sebelum memberikan rekomendasi. Penelaahan penyebab keterlambatan dan ketidak",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen SDM ASN",
+          "compLevel": 3,
+          "question": "Anda menemukan bahwa tingkat kehadiran pegawai di unit Anda mencapai 98%, namun output kerja hanya 65% dari target tahunan. Setelah ditelaah, ternyata 40% pegawai menghabiskan waktu untuk tugas-tugas administratif rutin yang sebenarnya bisa diotomati",
+          "options": {
+            "a": "Memberikan teguran tertulis kepada seluruh pegawai yang outputnya rendah dan meningkatkan monitoring kehadiran harian",
+            "b": "Membuat sistem lembur wajib untuk semua pegawai hingga target output tercapai minimal 90%",
+            "c": "Menambah jumlah pegawai baru untuk membantu menyelesaikan pekerjaan administratif yang menumpuk",
+            "d": "Mengusulkan program digitalisasi tugas administratif dan realokasi SDM ke pekerjaan strategis disertai pelatihan kompetensi teknis"
+          },
+          "correct": "d",
+          "explanation": "Level 3 memerlukan kemampuan mengevaluasi hasil kerja secara mendalam dan menelaah akar permasalahan, bukan hanya gejala permukaan. Rekomendasi harus berbasis analisis efisiensi da",
+          "source": "Materi Webinar KPP — Manajemen SDM ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima laporan dari tim audit internal bahwa terdapat selisih pencatatan antara logbook pemakaian BBM kendaraan dinas dengan realisasi pengisian di SPBU sebesar 150 liter per bulan selama 6 b",
+          "options": {
+            "a": "Membuat evaluasi komprehensif atas sistem pengendalian internal pemakaian kendaraan dinas, mengusulkan penerapan GPS tracking, merekomendasi sanksi se",
+            "b": "Memberikan teguran lisan kepada pengemudi dan meminta penggantian biaya BBM yang digunakan untuk keperluan pribadi, kemudian melaporkan ke atasan lang",
+            "c": "Langsung memberikan sanksi disiplin berat kepada pengemudi dan merekomendasikan pemecatan karena telah melakukan tindakan yang merugikan negara",
+            "d": "Menutup kasus dengan peringatan tertulis kepada pengemudi dan menambah frekuensi pengecekan logbook tanpa perlu melibatkan pihak lain"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja dan menelaah permasalahan secara menyeluruh dengan rekomendasi tindak lanjut sistemik. Penanganan pelanggaran integritas har",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Dalam evaluasi kepatuhan internal tahunan, Anda menemukan bahwa 3 orang pegawai di unit Anda telah menerima gratifikasi berupa hampers senilai Rp 2,5 juta dari rekanan vendor pengadaan barang kantor, namun tidak melaporkannya ke UPG. Setelah ditelusu",
+          "options": {
+            "a": "Menegur secara lisan ketiga pegawai tersebut dan meminta mereka berjanji tidak mengulangi, tanpa perlu melaporkan ke atasan karena nilainya masih di b",
+            "b": "Langsung memberikan sanksi administratif berat kepada ketiga pegawai dan memutus hubungan dengan vendor tanpa perlu analisis lebih lanjut karena grati",
+            "c": "Menelaah kronologi penerimaan gratifikasi, mengevaluasi tingkat pelanggaran sesuai regulasi, melaporkan temuan ke pimpinan dan UPG, serta merekomendas",
+            "d": "Meminta ketiga pegawai segera mengembalikan hampers kepada vendor dan menganggap kasus selesai, tanpa perlu dokumentasi atau pelaporan formal"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja dan menelaah permasalahan secara komprehensif sebelum memberikan rekomendasi tindak lanjut. Kasus gratifikasi tidak dilapork",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan bahwa penggunaan Anggaran Belanja Barang (ABB) untuk kebutuhan ATK semester I mencapai 78% padahal masih ada 6 bulan tersisa. Hasil telaah menunjukkan beberapa seksi melakukan pembeli",
+          "options": {
+            "a": "Langsung memblokir semua pengajuan ATK untuk semester II dan meminta setiap seksi menggunakan stok yang ada sampai akhir tahun anggaran",
+            "b": "Mengusulkan revisi anggaran untuk menambah alokasi ABB ATK dan mendistribusikan secara merata ke seluruh seksi untuk semester II",
+            "c": "Membuat surat teguran kepada seluruh kepala seksi yang melakukan pembelian berlebihan dan menyerahkan penanganan ke Bagian Keuangan",
+            "d": "Melakukan analisis pola penggunaan ATK per seksi, menelaah kesesuaian dengan kebutuhan operasional, kemudian merekomendasikan pemberlakuan sistem kuot"
+          },
+          "correct": "d",
+          "explanation": "Level 3 Manajemen Perkantoran mensyaratkan kemampuan mengevaluasi hasil kerja dengan menganalisis pola penggunaan secara komprehensif per unit. Menelaah permasalahan dengan mengide",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen SDM ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima laporan bahwa terdapat 5 pegawai yang telah melampaui batas cuti tahunan yang diizinkan dan 3 pegawai lainnya tidak mengajukan cuti sama sekali meskipun hak cutinya masih banyak. Setel",
+          "options": {
+            "a": "Mengevaluasi sistem pencatatan cuti yang ada, mengidentifikasi gap antara sistem manual dan absensi elektronik, kemudian merekomendasikan integrasi si",
+            "b": "Memberikan surat teguran kepada 5 pegawai yang melampaui batas cuti dan mengimbau 3 pegawai lainnya untuk segera mengambil cuti",
+            "c": "Melaporkan temuan kepada atasan dan meminta bagian IT untuk segera mengintegrasikan sistem pencatatan cuti dengan absensi elektronik",
+            "d": "Membuat pengumuman kepada seluruh pegawai tentang pentingnya disiplin penggunaan cuti dan menunjuk petugas khusus untuk mengecek cuti secara manual se"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Manajemen SDM ASN mengharuskan kemampuan mengevaluasi hasil kerja dengan mengidentifikasi akar masalah sistemik (gap sistem pencatatan). Kemudian menelaah permasalahan seca",
+          "source": "Materi Webinar KPP — Manajemen SDM ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen SDM ASN",
+          "compLevel": 3,
+          "question": "Dalam rapat tinjauan manajemen, Anda menerima laporan bahwa 3 dari 15 pegawai di unit Anda telah mencapai masa kerja 25 tahun dan akan memasuki masa persiapan pensiun dalam 2 tahun ke depan. Posisi mereka sangat strategis dalam pengelolaan kepegawaia",
+          "options": {
+            "a": "Mengusulkan pengangkatan pegawai baru untuk mengisi posisi tersebut dan memberikan pelatihan dasar sebelum pegawai senior pensiun",
+            "b": "Mendokumentasikan seluruh prosedur kerja pegawai senior dalam bentuk SOP tertulis dan menyerahkannya kepada pegawai pengganti nanti",
+            "c": "Menyusun program knowledge transfer terstruktur dengan menelaah kompetensi kritis yang dimiliki pegawai senior, memetakan successor yang potensial, da",
+            "d": "Mengevaluasi kinerja pegawai senior tersebut dan meminta mereka memperpanjang masa kerja agar tidak terjadi kekosongan posisi"
+          },
+          "correct": "c",
+          "explanation": "Level 3 Manajemen SDM ASN mengharuskan kepala unit melakukan evaluasi mendalam terhadap kebutuhan SDM jangka panjang dan menelaah risiko succession gap. Tindakan menyusun program k",
+          "source": "Materi Webinar KPP — Manajemen SDM ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima laporan bahwa terdapat ketidaksesuaian antara data aset inventaris dalam sistem dengan kondisi fisik di lapangan. Hasil audit internal menunjukkan selisih 15% dengan aset senilai Rp 45",
+          "options": {
+            "a": "Segera membentuk tim investigasi untuk mencari barang hilang dan memberikan sanksi kepada petugas gudang yang bertanggung jawab",
+            "b": "Mengevaluasi sistem manajemen aset yang ada, menyusun SOP serah terima dan stok opname berkala, serta merekomendasikan implementasi sistem barcode unt",
+            "c": "Melaporkan kejadian ini kepada atasan dan meminta penambahan personel untuk pengelolaan aset agar pengawasan lebih ketat",
+            "d": "Melakukan rekonsiliasi data inventaris dengan cara menghapus aset yang tidak ditemukan dari sistem dan memulai pencatatan ulang"
+          },
+          "correct": "b",
+          "explanation": "Level 3 Manajemen Perkantoran mensyaratkan kemampuan mengevaluasi sistem yang ada, menelaah akar permasalahan prosedural, dan memberikan rekomendasi solusi komprehensif. Menyusun S",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Anda menerima laporan dari whistleblower bahwa seorang staf di subbagian Anda diduga menerima gratifikasi dari pihak ketiga terkait pengadaan ATK. Setelah penelaahan awal, ditemukan transfer mencurigakan sebesar Rp 15 juta ke rekening staf tersebut. ",
+          "options": {
+            "a": "Melakukan investigasi mendalam dengan melibatkan inspektorat, mengumpulkan bukti kronologi transaksi dan hubungan dengan proses pengadaan, kemudian me",
+            "b": "Menegur staf secara lisan dan memintanya mengembalikan uang tersebut secara diam-diam untuk menghindari publikasi negatif",
+            "c": "Langsung melaporkan staf tersebut ke kepolisian tanpa verifikasi lebih lanjut karena sudah ada pengakuan penerimaan uang",
+            "d": "Meminta staf membuat surat pernyataan bahwa uang tersebut bukan gratifikasi dan menutup kasus karena nilainya di bawah Rp 50 juta"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja dan menelaah permasalahan secara komprehensif sebelum memberikan rekomendasi tindak lanjut. Investigasi menyeluruh dengan me",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Kinerja Organisasi",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menganalisis data capaian kinerja 6 bulan pertama dan menemukan bahwa realisasi penerimaan pajak baru mencapai 42% dari target tahunan, sementara di periode yang sama tahun lalu sudah mencapai ",
+          "options": {
+            "a": "Langsung mengusulkan revisi target tahunan menjadi lebih rendah agar lebih realistis dan mudah dicapai oleh seluruh unit kerja",
+            "b": "Menganalisis data lebih detail per seksi, mengidentifikasi penyebab gap kinerja, kemudian menyusun rencana aksi perbaikan dengan mengacu pada petunjuk",
+            "c": "Membuat instruksi kepada seluruh pegawai untuk meningkatkan intensitas kerja dan menambah jam lembur tanpa analisis lebih lanjut",
+            "d": "Menunggu arahan lengkap dari atasan dan kantor pusat tentang strategi yang harus dilakukan tanpa melakukan analisis sendiri"
+          },
+          "correct": "b",
+          "explanation": "Level 2 Manajemen Kinerja Organisasi mensyaratkan kemampuan menganalisis data kinerja secara detail untuk mengidentifikasi akar masalah. Setelah analisis, menyusun rencana aksi per",
+          "source": "Materi Webinar KPP — Manajemen Kinerja Organisasi L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan bahwa realisasi anggaran belanja operasional kantor triwulan II mencapai 65% dari pagu tahunan, padahal rata-rata 5 tahun terakhir hanya 45% di periode yang sama. Setelah ditelusuri, ",
+          "options": {
+            "a": "Menghentikan sementara semua pengadaan barang dan melakukan audit mendalam terhadap seluruh transaksi triwulan II untuk memastikan tidak ada penyimpan",
+            "b": "Melaporkan temuan langsung kepada Inspektorat dan meminta dilakukan investigasi khusus terhadap pejabat pembuat komitmen yang menandatangani kontrak p",
+            "c": "Mengevaluasi kesesuaian spesifikasi pengadaan dengan kebutuhan riil, menelaah penyebab penyimpangan pola belanja, dan merekomendasikan revisi SOP peng",
+            "d": "Mengusulkan pengurangan pagu anggaran triwulan selanjutnya untuk mengkompensasi pembengkakan belanja dan menginstruksikan pengetatan persetujuan setia"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan mengevaluasi hasil kerja dengan menelaah akar permasalahan secara komprehensif, bukan hanya reaksi administratif. Rekomendasi tindak lanjut harus sistemik beru",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda mengevaluasi laporan realisasi anggaran triwulan III yang menunjukkan penyerapan belanja operasional mencapai 85% sedangkan belanja modal baru 45%. Dalam analisis lebih lanjut, ditemukan bahwa ",
+          "options": {
+            "a": "Mengusulkan realokasi anggaran belanja modal yang tidak terserap ke belanja operasional untuk meningkatkan capaian penyerapan secara keseluruhan",
+            "b": "Membuat laporan evaluasi keterlambatan dan menyerahkan sepenuhnya kepada kantor pusat untuk menentukan kebijakan realokasi anggaran",
+            "c": "Menginstruksikan unit pengadaan untuk segera melaksanakan tender ulang dengan spesifikasi yang ada tanpa revisi DIPA agar penyerapan belanja modal dap",
+            "d": "Menyusun rekomendasi revisi DIPA dengan menelaah urgensi belanja modal yang tertunda, mengusulkan percepatan pengadaan untuk item kritikal, dan realok"
+          },
+          "correct": "d",
+          "explanation": "Level 3 Advokasi Kebijakan Penganggaran mensyaratkan kemampuan mengevaluasi hasil kerja dan menelaah permasalahan secara komprehensif untuk memberikan rekomendasi tindak lanjut yan",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda mendapat informasi bahwa terdapat 3 unit kendaraan dinas yang sudah berusia lebih dari 15 tahun dengan kondisi rusak berat dan biaya pemeliharaan mencapai 75% dari nilai buku. Data menunjukkan ",
+          "options": {
+            "a": "Langsung mengajukan penghapusan aset tanpa analisis lebih lanjut karena kondisi sudah rusak berat dan usia melebihi standar",
+            "b": "Menyerahkan seluruh proses penghapusan kepada Bagian Umum Kanwil karena pengelolaan aset merupakan kewenangan penuh unit vertikal di atasnya",
+            "c": "Menganalisis data kondisi, biaya pemeliharaan, dan nilai ekonomis kendaraan, kemudian menyusun usulan penghapusan BMN sesuai PMK tentang pengelolaan B",
+            "d": "Melakukan tender ulang pengadaan kendaraan baru sambil tetap mempertahankan kendaraan lama sebagai cadangan operasional"
+          },
+          "correct": "c",
+          "explanation": "Level 2 memerlukan kemampuan menganalisis data kondisi aset dan menyusun rencana pengelolaan BMN berdasarkan petunjuk teknis. Proses penghapusan BMN harus didahului analisis kompre",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan hasil evaluasi menunjukkan 3 pegawai di unit Anda secara konsisten terlambat mengunggah LHKPN selama 2 tahun berturut-turut meskipun telah diberikan teguran lisan. Saat ditelusuri, me",
+          "options": {
+            "a": "Memberikan perpanjangan waktu dan pendampingan teknis sambil memantau progres harian hingga semua LHKPN terunggah",
+            "b": "Mengusulkan sanksi administratif sesuai regulasi kepada atasan, membuat SOP pendampingan teknis, dan menetapkan sistem monitoring berkala dengan konse",
+            "c": "Melaporkan ketiga pegawai ke Inspektorat untuk dilakukan audit khusus dan penyelidikan dugaan pelanggaran gratifikasi",
+            "d": "Menyelenggarakan sosialisasi ulang LHKPN untuk seluruh pegawai dan memberikan peringatan tertulis tanpa sanksi karena masih tahap pembelajaran"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan evaluasi hasil (pola pelanggaran 2 tahun), menelaah akar masalah (kesulitan teknis vs kelalaian), dan rekomendasi komprehensif (sanksi + perbaikan sistem). Tin",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan bahwa realisasi anggaran belanja perjalanan dinas triwulan II mencapai 78% dari pagu tahunan, sementara realisasi output kinerja baru 35%. Analisis menunjukkan banyak perjalanan dinas",
+          "options": {
+            "a": "Memblokir seluruh pengajuan perjalanan dinas untuk triwulan III-IV agar tidak terjadi overspending dan melaporkan temuan ini ke Inspektorat",
+            "b": "Menerbitkan surat edaran pembatasan perjalanan dinas hanya untuk pejabat eselon III ke atas dan mewajibkan perjalanan dinas dilakukan secara kolektif ",
+            "c": "Mengusulkan pemangkasan pagu belanja perjalanan dinas sebesar 50% dan mengalihkannya ke belanja barang operasional yang realisasinya masih rendah",
+            "d": "Mengevaluasi pola perjalanan dinas versus capaian kinerja per seksi, menyusun rekomendasi revisi kebijakan perjalanan dinas dengan mekanisme koordinas"
+          },
+          "correct": "d",
+          "explanation": "Level 3 Advokasi Kebijakan Penganggaran mensyaratkan kemampuan mengevaluasi hasil kerja (realisasi vs output), menelaah permasalahan mendasar (inefisiensi koordinasi), dan memberik",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan bahwa tingkat kehadiran pegawai di unit Anda mencapai 98%, namun hasil evaluasi kinerja menunjukkan 40% target output administrasi tidak tercapai tepat waktu. Setelah ditelusuri, dite",
+          "options": {
+            "a": "Mengevaluasi dan merekomendasikan implementasi sistem manajemen surat elektronik serta perbaikan sistem kearsipan berbasis klasifikasi fungsi perkanto",
+            "b": "Memberikan teguran tertulis kepada seluruh pegawai yang tidak mencapai target dan meningkatkan monitoring kehadiran menjadi 2 kali sehari",
+            "c": "Menambah jumlah pegawai di bagian administrasi dan mengusulkan penambahan anggaran untuk operasional perkantoran",
+            "d": "Mengadakan rapat koordinasi bulanan dengan seluruh pegawai untuk membahas pentingnya disiplin kerja dan ketepatan waktu"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Manajemen Perkantoran mengharuskan kemampuan mengevaluasi akar masalah dari hasil kerja yang tidak optimal, bukan hanya gejala permukaan. Rekomendasi harus berbasis analisi",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima usulan revisi anggaran dari tiga seksi untuk triwulan IV. Seksi Pemeriksaan mengusulkan penambahan Rp 150 juta untuk biaya perjalanan dinas pemeriksaan lapangan yang meningkat 40% dari",
+          "options": {
+            "a": "Menyetujui semua usulan revisi anggaran karena merupakan kebutuhan operasional masing-masing seksi dan masih dalam tahun anggaran berjalan",
+            "b": "Menolak usulan Seksi Pemeriksaan dan Seksi Ekstensifikasi, hanya menyetujui realokasi Seksi Penagihan dengan catatan disertai justifikasi efisiensi da",
+            "c": "Menyetujui usulan Seksi Pemeriksaan dan Seksi Ekstensifikasi karena terkait pencapaian target kinerja, menunda usulan Seksi Penagihan hingga evaluasi ",
+            "d": "Mengusulkan revisi DIPA secara menyeluruh dengan menambah pagu anggaran total untuk mengakomodir seluruh usulan seksi"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dengan menganalisis realisasi anggaran yang rendah pada Seksi Pemeriksaan (62%) dan Seksi Ekstensifikasi (85% namun usulan tamba",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": false
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Anda menerima laporan dari Tim Kepatuhan Internal bahwa seorang pelaksana di seksi pelayanan diduga menerima uang Rp 2.000.000 dari Wajib Pajak untuk mempercepat pengurusan surat keterangan fiskal. Hasil penelaahan menunjukkan adanya transfer bank, c",
+          "options": {
+            "a": "Memberikan teguran lisan kepada pegawai tersebut dan memintanya mengembalikan uang, kemudian menutup kasus karena sudah ada pengakuan dan itikad baik",
+            "b": "Meminta pegawai mengundurkan diri secara sukarela dengan alasan pribadi agar kasus tidak berkembang dan tidak mencoreng reputasi organisasi",
+            "c": "Memediasi antara pegawai dengan Wajib Pajak untuk menyelesaikan masalah secara kekeluargaan agar tidak merusak nama baik unit kerja",
+            "d": "Menyusun Laporan Hasil Penelaahan dengan rekomendasi pemrosesan pelanggaran kode etik dan gratifikasi ke Tim Pemeriksa, serta melaporkan ke Inspektora"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil penelaahan dan memberikan rekomendasi tindak lanjut sesuai prosedur formal. Gratifikasi dalam konteks pelayanan publik merupakan p",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda mengevaluasi realisasi anggaran triwulan II yang menunjukkan penyerapan belanja operasional hanya 35% dengan sisa waktu 6 bulan, sementara ada usulan penambahan anggaran pelatihan SDM sebesar R",
+          "options": {
+            "a": "Mengevaluasi pola penyerapan anggaran eksisting, mengidentifikasi penyebab rendahnya realisasi, kemudian merekomendasikan realokasi dari pos yang unde",
+            "b": "Menyetujui langsung usulan penambahan anggaran pelatihan karena masih ada sisa waktu 6 bulan untuk penyerapan dan pengembangan SDM adalah prioritas st",
+            "c": "Menolak usulan penambahan anggaran pelatihan dan fokus pada percepatan penyerapan anggaran yang sudah dialokasikan agar tidak terjadi penumpukan di ak",
+            "d": "Mengusulkan revisi anggaran dengan menambah pagu dari dana cadangan kantor pusat tanpa melakukan evaluasi penyerapan anggaran yang sudah berjalan"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Advokasi Kebijakan Penganggaran mengharuskan kemampuan mengevaluasi hasil kerja berupa analisis pola realisasi anggaran eksisting sebelum mengambil keputusan. Penelaahan pe",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan data gedung kantor DJP yang telah berusia 30 tahun dengan nilai buku Rp 8 miliar namun kondisi fisik rusak berat dan biaya renovasi mencapai Rp 12 miliar. Sementara itu, terdapat tawa",
+          "options": {
+            "a": "Langsung menyetujui tukar guling karena lebih menguntungkan secara finansial dan melaporkan ke atasan setelah proses selesai",
+            "b": "Segera mengajukan penghapusan aset dan pembelian gedung baru tanpa perlu analisis mendalam karena kondisi sudah jelas rusak berat",
+            "c": "Menganalisis data aset meliputi kondisi fisik, nilai ekonomis, dan kebutuhan operasional, menyusun rencana opsi penghapusan/tukar guling dengan kajian",
+            "d": "Melakukan renovasi bertahap dengan anggaran Rp 12 miliar karena sudah tercatat sebagai BMN dan tidak boleh dialihkan"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mengharuskan analisis data komprehensif terhadap kondisi BMN termasuk aspek teknis dan ekonomis. Penyusunan rencana harus mencakup opsi alternatif dengan kajian cost-benefi",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda mengevaluasi laporan kinerja pengelolaan arsip dan dokumen di unit kerja selama triwulan II. Hasil evaluasi menunjukkan: (1) 15% dokumen persuratan belum diarsipkan sesuai klasifikasi, (2) Wakt",
+          "options": {
+            "a": "Menambah jumlah SDM pengelola arsip menjadi 6 orang dan melakukan pelatihan klasifikasi arsip kepada seluruh pegawai unit kerja",
+            "b": "Mengalihkan seluruh tanggung jawab pengelolaan arsip kepada bagian TI untuk digitalisasi dan mengurangi penggunaan arsip fisik",
+            "c": "Memberikan teguran tertulis kepada pengelola arsip yang ada dan mewajibkan lembur untuk menyelesaikan backlog pengarsipan dokumen",
+            "d": "Melakukan audit menyeluruh sistem kearsipan, menyusun SOP reklasifikasi dokumen, implementasi aplikasi e-arsip, dan realokasi SDM berdasarkan beban ke"
+          },
+          "correct": "d",
+          "explanation": "Level 3 Manajemen Perkantoran mensyaratkan kemampuan mengevaluasi hasil kerja secara komprehensif dan memberikan rekomendasi berbasis analisis akar masalah. Opsi B menunjukkan pend",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan hasil audit menunjukkan bahwa seorang pegawai Account Representative telah menerima hadiah dari Wajib Pajak senilai Rp 3 juta saat perayaan pernikahan anaknya. Pegawai tersebut melapo",
+          "options": {
+            "a": "Menolak rekomendasi dan merekomendasikan proses pemeriksaan lebih lanjut ke Inspektorat karena hadiah dari WP binaan dalam kondisi apapun berpotensi k",
+            "b": "Menyetujui rekomendasi teguran tertulis karena pegawai sudah melaporkan dalam LHKPN dan nilai masih dalam batas wajar hubungan sosial",
+            "c": "Menerima penjelasan pegawai dan menutup kasus karena pemberian terkait acara pribadi bukan transaksi kedinasan",
+            "d": "Merekomendasikan pegawai mengembalikan hadiah dan memberikan konseling tanpa sanksi administratif karena sudah ada itikad baik melaporkan LHKPN"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja tim dan menelaah permasalahan secara mendalam dengan mempertimbangkan potensi pelanggaran integritas. Hadiah dari WP binaan kepa",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": false
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Kinerja Organisasi",
+          "compLevel": 2,
+          "question": "Anda ditugaskan menyusun rencana perbaikan kinerja unit kerja setelah hasil evaluasi triwulan menunjukkan capaian IKU penyelesaian layanan administrasi hanya 72% dari target 90%. Data menunjukkan keterlambatan terutama terjadi pada proses verifikasi ",
+          "options": {
+            "a": "Membentuk tim khusus untuk mengambil alih seluruh proses verifikasi dan pengadaan agar lebih cepat selesai",
+            "b": "Langsung menambah pegawai di bagian verifikasi dan pengadaan untuk mempercepat penyelesaian pekerjaan",
+            "c": "Menganalisis data bottleneck per proses, menyusun action plan perbaikan dengan timeline spesifik, dan melaksanakan monitoring berkala sesuai SOP yang ",
+            "d": "Menyampaikan laporan kepada atasan dan menunggu instruksi lebih lanjut tanpa melakukan analisis mendalam"
+          },
+          "correct": "c",
+          "explanation": "Level 2 Manajemen Kinerja Organisasi mengharuskan kemampuan menganalisis data kinerja untuk mengidentifikasi akar masalah secara spesifik. Menyusun rencana perbaikan dengan action ",
+          "source": "Materi Webinar KPP — Manajemen Kinerja Organisasi L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan data bahwa terdapat 15 unit kendaraan dinas operasional yang telah berusia lebih dari 10 tahun dengan biaya pemeliharaan mencapai 65% dari nilai buku. Hasil analisis menunjukkan efisi",
+          "options": {
+            "a": "Langsung mengusulkan penghapusan seluruh kendaraan dan pengadaan baru tanpa kajian lebih lanjut karena sudah jelas tidak efisien",
+            "b": "Menganalisis data kondisi setiap kendaraan, membandingkan cost-benefit pemeliharaan vs penggantian, menyusun usulan penghapusan bertahap dengan justif",
+            "c": "Menunggu instruksi detail dari atasan tentang kendaraan mana yang harus dihapus karena keputusan pengelolaan aset adalah kewenangan pimpinan",
+            "d": "Membuat surat edaran pembatasan penggunaan kendaraan lama dan menyarankan pegawai menggunakan kendaraan pribadi untuk menekan biaya pemeliharaan"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis data kondisi aset secara komprehensif dan menyusun rencana pengelolaan berbasis justifikasi teknis. Usulan harus disusun sesuai petunjuk",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen SDM ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan hasil evaluasi kinerja tahunan menunjukkan 3 pegawai di unit Anda memiliki capaian SKP di bawah 60 dengan pola: Pegawai A sering terlambat masuk kantor, Pegawai B mengalami penurunan ",
+          "options": {
+            "a": "Menelaah akar masalah setiap pegawai secara spesifik, kemudian merekomendasikan konseling & pembinaan disiplin untuk Pegawai A, mentoring adaptasi unt",
+            "b": "Memberikan surat peringatan kepada ketiga pegawai secara bersamaan dan menetapkan target perbaikan dalam 1 bulan ke depan",
+            "c": "Mengusulkan rotasi ketiga pegawai ke unit lain agar mendapat suasana kerja baru yang dapat meningkatkan motivasi dan kinerja mereka",
+            "d": "Membuat program coaching massal untuk seluruh pegawai di unit sebagai upaya preventif dan meningkatkan kinerja secara merata"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Manajemen SDM ASN mensyaratkan kemampuan menelaah permasalahan secara mendalam dan memberikan rekomendasi tindak lanjut yang spesifik sesuai akar masalah. Pendekatan indivi",
+          "source": "Materi Webinar KPP — Manajemen SDM ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Dalam evaluasi triwulanan, Anda menemukan bahwa tingkat kehadiran pegawai di unit Anda mencapai 96%, namun realisasi penyelesaian disposisi surat masuk hanya 68% dari target 90%. Setelah menelaah, diketahui terdapat bottleneck pada proses verifikasi ",
+          "options": {
+            "a": "Memberikan surat peringatan kepada 2 petugas yang sering melakukan kesalahan dan menetapkan sanksi pemotongan tunjangan kinerja",
+            "b": "Menyelenggarakan pelatihan teknis verifikasi dokumen khusus untuk seluruh petugas, menyusun checklist standar verifikasi, dan menetapkan mekanisme qua",
+            "c": "Menambah jumlah petugas verifikasi dari 5 menjadi 8 orang untuk mempercepat proses penyelesaian disposisi surat masuk",
+            "d": "Mendelegasikan seluruh proses verifikasi kepada 3 petugas terbaik dan memindahkan 2 petugas bermasalah ke bagian lain"
+          },
+          "correct": "b",
+          "explanation": "Level 3 Manajemen Perkantoran mensyaratkan kemampuan mengevaluasi akar masalah secara komprehensif dan memberikan rekomendasi sistemik. Opsi B tepat karena mengatasi masalah kompet",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima laporan bahwa tingkat kepatuhan penggunaan aplikasi e-office di unit Anda hanya mencapai 65% selama 3 bulan terakhir, padahal target minimal 90%. Hasil evaluasi menunjukkan penyebab ut",
+          "options": {
+            "a": "Langsung mengeluarkan surat teguran kepada seluruh pegawai yang belum menggunakan e-office dan menetapkan sanksi administratif bagi yang tidak patuh",
+            "b": "Menyerahkan penanganan masalah kepada tim IT untuk melakukan sosialisasi ulang tanpa melakukan analisis lebih lanjut terhadap akar permasalahan",
+            "c": "Menelaah pola resistensi per kelompok pegawai, mengidentifikasi gap kompetensi digital, lalu merekomendasikan program bimbingan teknis bertahap disert",
+            "d": "Menurunkan target kepatuhan menjadi 70% agar lebih realistis dengan kondisi pegawai saat ini dan mengurangi tekanan pada unit kerja"
+          },
+          "correct": "c",
+          "explanation": "Level 3 Manajemen Perkantoran menuntut kemampuan mengevaluasi hasil kerja secara mendalam dengan menelaah akar permasalahan, bukan sekadar reaktif. Rekomendasi tindak lanjut harus ",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": false
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima laporan dari whistleblower bahwa terdapat pegawai di unit Anda yang secara rutin meminta imbalan dari rekanan penyedia jasa kebersihan. Setelah penelusuran awal, Anda menemukan bukti k",
+          "options": {
+            "a": "Langsung melaporkan pegawai tersebut ke Polisi tanpa proses internal, karena terindikasi tindak pidana korupsi yang harus ditangani aparat penegak huk",
+            "b": "Memanggil pegawai tersebut untuk dimintai klarifikasi secara kekeluargaan, lalu menyarankan untuk mengembalikan uang dan berjanji tidak mengulangi",
+            "c": "Memberikan teguran keras kepada pegawai yang bersangkutan dan memindahkannya ke bagian lain agar tidak mengulang perbuatan serupa",
+            "d": "Mengevaluasi temuan secara komprehensif dengan mengumpulkan bukti tambahan, melakukan konfirmasi kepada pihak terkait, kemudian merekomendasikan prose"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja dan menelaah permasalahan secara mendalam dengan mengumpulkan bukti komprehensif. Rekomendasi tindak lanjut harus sesuai pro",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Penganggaran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menerima laporan bahwa realisasi anggaran perjalanan dinas mencapai 85% di triwulan III, namun output kegiatan pengawasan hanya 60% dari target. Setelah menelaah, ditemukan banyak perjalanan di",
+          "options": {
+            "a": "Meminta tambahan anggaran perjalanan dinas untuk triwulan IV agar target output 100% dapat tercapai dengan intensifikasi kegiatan",
+            "b": "Menghentikan sementara semua perjalanan dinas dan mengalihkan seluruh anggaran ke kegiatan pengawasan internal kantor",
+            "c": "Mengevaluasi efektivitas perjalanan dinas dengan menetapkan kriteria ketat persetujuan perjalanan dinas dan mengarahkan realokasi anggaran ke kegiatan",
+            "d": "Membuat surat peringatan kepada seluruh pegawai yang melakukan perjalanan dinas tanpa menghasilkan laporan yang baik"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja dengan menelaah akar permasalahan efektivitas penggunaan anggaran. Rekomendasi tindak lanjut harus berbasis analisis risiko ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Penganggaran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen SDM ASN",
+          "compLevel": 3,
+          "question": "Anda menerima laporan bahwa produktivitas tim administrasi kepegawaian menurun 25% dalam 2 bulan terakhir. Dari penelusuran awal, terdapat 3 pegawai yang sering terlambat menyelesaikan tugas, dan 2 pegawai mengeluhkan beban kerja tidak merata. Sebaga",
+          "options": {
+            "a": "Memberikan teguran tertulis kepada 3 pegawai yang terlambat dan mendistribusikan ulang tugas secara merata kepada seluruh anggota tim",
+            "b": "Melakukan evaluasi mendalam terhadap distribusi beban kerja dan kompetensi masing-masing pegawai, mengidentifikasi akar masalah keterlambatan, kemudia",
+            "c": "Menambah jumlah pegawai di tim administrasi kepegawaian dan mengusulkan pelatihan produktivitas untuk semua anggota tim",
+            "d": "Membuat sistem monitoring harian untuk semua pegawai dan menetapkan sanksi progresif bagi yang tidak mencapai target waktu penyelesaian tugas"
+          },
+          "correct": "b",
+          "explanation": "Level 3 Manajemen SDM ASN mensyaratkan kemampuan mengevaluasi hasil kerja secara komprehensif untuk mengidentifikasi akar masalah, bukan hanya gejala. Evaluasi mendalam terhadap di",
+          "source": "Materi Webinar KPP — Manajemen SDM ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan indikasi pelanggaran kode etik berupa penerimaan gratifikasi oleh seorang staf pelaksana dari pihak ketiga yang sedang mengurus perizinan. Setelah melakukan penelaahan awal, gratifika",
+          "options": {
+            "a": "Memberikan teguran lisan kepada staf tersebut karena nilai gratifikasi masih di bawah batas pelaporan wajib dan sudah dilaporkan di LHKPN",
+            "b": "Menutup kasus karena gratifikasi sudah dilaporkan di LHKPN sehingga dianggap telah memenuhi ketentuan transparansi dan tidak perlu tindak lanjut",
+            "c": "Langsung menyerahkan kasus ke Inspektorat tanpa melakukan penelaahan lebih lanjut karena menyangkut gratifikasi dari pihak yang sedang mengurus perizi",
+            "d": "Melakukan evaluasi mendalam terhadap kronologi penerimaan gratifikasi, menilai potensi konflik kepentingan dengan tugas jabatan, dan merekomendasikan "
+          },
+          "correct": "d",
+          "explanation": "Level 3 Penegakan Integritas ASN mensyaratkan kemampuan mengevaluasi hasil kerja dan menelaah permasalahan secara mendalam sebelum memberikan rekomendasi. Meskipun gratifikasi tela",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen SDM ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan bahwa 3 dari 8 staf administrasi sering terlambat menyelesaikan laporan bulanan, menyebabkan keterlambatan konsolidasi data kantor. Setelah evaluasi, diketahui mereka kurang memahami ",
+          "options": {
+            "a": "Menyelenggarakan bimbingan teknis khusus untuk ketiga staf, menetapkan mentor dari staf yang sudah kompeten, dan memonitor progres mingguan selama seb",
+            "b": "Memberikan surat peringatan kepada ketiga staf tersebut dan menetapkan sanksi administratif sesuai aturan kepegawaian",
+            "c": "Memindahkan ketiga staf ke bagian lain yang tidak menggunakan sistem baru dan merekrut pegawai baru yang sudah terampil",
+            "d": "Mengubah sistem pelaporan kembali ke sistem lama agar semua staf dapat bekerja dengan nyaman tanpa hambatan"
+          },
+          "correct": "a",
+          "explanation": "Level 3 Manajemen SDM ASN menuntut kemampuan mengevaluasi hasil kerja dan menelaah akar permasalahan secara mendalam. Solusi tepat adalah pengembangan kompetensi melalui bimbingan ",
+          "source": "Materi Webinar KPP — Manajemen SDM ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen SDM ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan dari analisis absensi dan kinerja bahwa 3 pegawai yang baru dipromosikan menunjukkan penurunan output sebesar 40% dibanding sebelum promosi, meskipun tingkat kehadiran tetap baik. Has",
+          "options": {
+            "a": "Memberikan surat peringatan kepada ketiga pegawai tersebut atas penurunan kinerja dan mewajibkan mereka bekerja lembur hingga target tercapai",
+            "b": "Mengevaluasi proses onboarding jabatan baru, merancang program mentoring terstruktur dengan penugasan atasan pendamping, dan menyusun modul pelatihan ",
+            "c": "Merotasi ketiga pegawai kembali ke posisi lama mereka dan menunda promosi hingga mereka dianggap benar-benar siap untuk tanggung jawab baru",
+            "d": "Mengusulkan pengurangan target kinerja untuk pegawai yang baru dipromosikan dan meminta unit lain membantu menyelesaikan pekerjaan mereka"
+          },
+          "correct": "b",
+          "explanation": "Level 3 Manajemen SDM ASN mensyaratkan kemampuan mengevaluasi hasil kerja secara komprehensif dengan menelaah akar permasalahan sistemik (gap kompetensi pasca promosi dan lemahnya ",
+          "source": "Materi Webinar KPP — Manajemen SDM ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Manajemen Perkantoran",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda mengevaluasi sistem pengelolaan arsip dan menemukan bahwa 35% dokumen penting tahun 2023 belum dipindai ke sistem digital, menyebabkan keterlambatan pencarian dokumen hingga 3 hari. Tim menjela",
+          "options": {
+            "a": "Langsung mengajukan pengadaan scanner baru melalui prosedur pengadaan barang standar dan menugaskan tim untuk segera memindai semua dokumen tertunggak",
+            "b": "Membentuk tim khusus digitalisasi dokumen dengan menambah jam kerja lembur, meminjam scanner dari KPP terdekat, dan membuat laporan evaluasi setelah s",
+            "c": "Memberikan teguran tertulis kepada penanggung jawab arsip atas kelalaian tidak segera melaporkan kerusakan dan menginstruksikan penggunaan scanner dar",
+            "d": "Mengevaluasi penyebab keterlambatan penanganan kerusakan, mengajukan pengadaan scanner baru sambil menyewa perangkat sementara, menyusun SOP pemelihar"
+          },
+          "correct": "d",
+          "explanation": "Level 3 Manajemen Perkantoran mensyaratkan kemampuan mengevaluasi hasil kerja secara menyeluruh dengan mengidentifikasi akar masalah (keterlambatan penanganan kerusakan dan tidak a",
+          "source": "Materi Webinar KPP — Manajemen Perkantoran L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penegakan Integritas ASN",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan hasil audit internal menunjukkan bahwa seorang staf telah memanipulasi daftar hadir elektronik selama 3 bulan terakhir dengan pola clock-in tepat waktu namun meninggalkan kantor lebih",
+          "options": {
+            "a": "Mengevaluasi bukti audit secara komprehensif, menelaah dampak terhadap produktivitas unit, dan merekomendasikan sanksi disiplin sesuai PP 94/2021 kepa",
+            "b": "Memberikan teguran lisan kepada staf tersebut dan meminta komitmen tidak mengulangi, sambil meningkatkan pengawasan kehadiran secara berkala",
+            "c": "Memanggil staf tersebut untuk klarifikasi, meminta penjelasan tertulis, kemudian memberikan Surat Peringatan I jika terbukti bersalah",
+            "d": "Melaporkan temuan kepada Inspektorat dan menunggu arahan lebih lanjut sambil menjaga kerahasiaan kasus agar tidak mempengaruhi iklim kerja"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja (audit internal), menelaah permasalahan secara mendalam termasuk dampaknya, dan memberikan rekomendasi tindak lanjut yang te",
+          "source": "Materi Webinar KPP — Penegakan Integritas ASN L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Pengelolaan Kekayaan Negara/Dae",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Subbagian Umum & Kepatuhan Internal, Anda menemukan 15 unit kendaraan dinas operasional di kantor yang sudah berusia lebih dari 10 tahun dengan biaya pemeliharaan mencapai 60% dari nilai perolehan dalam 2 tahun terakhir. Data menunjukk",
+          "options": {
+            "a": "Segera mengajukan usulan penghapusan seluruh kendaraan dan pengadaan kendaraan baru kepada atasan tanpa analisis lebih lanjut",
+            "b": "Menyerahkan sepenuhnya kepada bagian pemeliharaan untuk menentukan kendaraan mana yang perlu dihapus berdasarkan pengalaman mereka",
+            "c": "Menganalisis data kondisi, nilai, biaya pemeliharaan, dan utilisasi setiap kendaraan, kemudian menyusun rencana penghapusan bertahap disertai justifik",
+            "d": "Menunggu instruksi dari kantor pusat tentang kebijakan penghapusan kendaraan dinas tanpa melakukan analisis internal terlebih dahulu"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis data (kondisi fisik, nilai ekonomis, biaya pemeliharaan, utilisasi) sebagai dasar pengambilan keputusan. Menyusun rencana penghapusan be",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": null,
           "vigBody": null,
           "userAnswer": "c",
           "wasCorrect": true
