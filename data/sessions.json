@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "sessionsServedTotal": 2,
-    "creditsSpentUSD": 0.8,
-    "lastUpdated": "2026-04-27T02:35:03.728Z"
+    "sessionsServedTotal": 3,
+    "creditsSpentUSD": 1.2,
+    "lastUpdated": "2026-04-27T02:55:05.650Z"
   },
   "sessions": [
     {
@@ -2382,6 +2382,1198 @@
           "correct": "c",
           "explanation": "Level 2 mensyaratkan kemampuan menganalisis data (kondisi fisik, nilai ekonomis, biaya pemeliharaan, utilisasi) sebagai dasar pengambilan keputusan. Menyusun rencana penghapusan be",
           "source": "Materi Webinar KPP — Advokasi Kebijakan Pengelolaan Kekayaan",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "SES-LXBZ8D",
+      "position": "Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan",
+      "segment": "A",
+      "segmentLabel": "Jabatan Pengawas",
+      "score": 100,
+      "totalQ": 60,
+      "correct": 60,
+      "completedAt": "2026-04-27T02:55:04.257Z",
+      "questions": [
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 0,
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kasi Pemeriksaan, apa masalah utama yang harus Anda identifikasi dari laporan AR mengenai PT Mitra Sejahtera yang memiliki transaksi afiliasi?",
+          "options": {
+            "a": "Potensi praktik transfer pricing yang tidak sesuai dengan prinsip kewajaran dan kelaziman usaha (arm's length principle)",
+            "b": "Keterlambatan pelaporan SPT Tahunan oleh Wajib Pajak",
+            "c": "Kurangnya pembayaran angsuran PPh Pasal 25",
+            "d": "Tidak adanya dokumen pendukung transaksi domestik"
+          },
+          "correct": "a",
+          "explanation": "Transaksi afiliasi berpotensi menimbulkan praktik transfer pricing yang menyimpang dari arm's length principle sehingga dapat menggerus basis pajak.",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": "Penanganan Pemeriksaan WP dengan Transaksi Transfer Pricing",
+          "vigBody": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan dari AR yang menangani PT Mitra Sejahtera (WP) yang memiliki transaksi afiliasi dengan perusahaan induk di Singapura senilai Rp 45 miliar. Hasil penelitian awal menunjukkan harga transfer tidak wajar dan berpotensi pen",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 1,
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Data apa yang paling relevan untuk Anda minta kepada AR dalam menganalisis transaksi afiliasi PT Mitra Sejahtera?",
+          "options": {
+            "a": "Daftar aset tetap perusahaan dan jadwal penyusutannya",
+            "b": "Dokumen TP Doc (Master File, Local File, CbCR) dan bukti transaksi dengan pihak afiliasi termasuk metode penetapan harga",
+            "c": "Rekening koran seluruh direktur perusahaan",
+            "d": "Surat izin usaha dan NPWP karyawan"
+          },
+          "correct": "b",
+          "explanation": "TP Doc dan bukti transaksi afiliasi merupakan data kunci untuk mengevaluasi kewajaran harga transfer sesuai ketentuan perpajakan.",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": "Penanganan Pemeriksaan WP dengan Transaksi Transfer Pricing",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 2,
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Setelah menganalisis data, Anda menemukan indikasi transfer pricing yang signifikan. Alternatif solusi manakah yang paling tepat untuk dievaluasi terlebih dahulu?",
+          "options": {
+            "a": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar tanpa pemeriksaan",
+            "b": "Mengabaikan temuan karena nilai transaksi dibawah threshold",
+            "c": "Melakukan pemeriksaan komprehensif dengan melibatkan tim khusus transfer pricing dan mempertimbangkan Advance Pricing Agreement (APA) untuk masa depan",
+            "d": "Memberikan teguran lisan kepada direktur perusahaan"
+          },
+          "correct": "c",
+          "explanation": "Pemeriksaan komprehensif dengan tim ahli transfer pricing adalah pendekatan yang tepat untuk menangani kasus kompleks dan APA dapat mencegah sengketa di masa depan.",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": "Penanganan Pemeriksaan WP dengan Transaksi Transfer Pricing",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 3,
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Berdasarkan hasil evaluasi, rekomendasi tindak lanjut apa yang harus Anda sampaikan kepada Kepala Kantor terkait PT Mitra Sejahtera?",
+          "options": {
+            "a": "Menunda pemeriksaan hingga tahun depan",
+            "b": "Menutup kasus karena WP kooperatif",
+            "c": "Memberikan penghargaan kepada WP atas kepatuhan pajak",
+            "d": "Mengusulkan pemeriksaan khusus dengan fokus transfer pricing, melibatkan tenaga ahli, dan mengkoordinasikan dengan tax treaty partner jika diperlukan"
+          },
+          "correct": "d",
+          "explanation": "Rekomendasi pemeriksaan khusus transfer pricing dengan koordinasi internasional adalah langkah strategis untuk memastikan kepatuhan dan melindungi basis pajak negara.",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": "Penanganan Pemeriksaan WP dengan Transaksi Transfer Pricing",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 4,
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Aspek prosedural atau risiko apa yang harus Anda perhatikan dalam menangani kasus transfer pricing PT Mitra Sejahtera?",
+          "options": {
+            "a": "Mengabaikan prosedur formal untuk mempercepat proses",
+            "b": "Hanya memperhatikan target penerimaan pajak kantor",
+            "c": "Memastikan kepatuhan terhadap jangka waktu pemeriksaan sesuai PMK, dokumentasi lengkap sesuai PER-22/PJ/2013, dan mitigasi risiko sengketa dengan peny",
+            "d": "Fokus pada peningkatan jumlah kasus yang ditangani"
+          },
+          "correct": "c",
+          "explanation": "Kepatuhan prosedur, dokumentasi memadai, dan dasar koreksi yang kuat adalah kunci untuk meminimalkan risiko sengketa dan memastikan pemeriksaan defensible secara hukum.",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": "Penanganan Pemeriksaan WP dengan Transaksi Transfer Pricing",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 0,
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Apa masalah utama yang harus diidentifikasi dari revaluasi aset PT Graha Properti Nusantara yang meningkat dari Rp 45 miliar menjadi Rp 120 miliar?",
+          "options": {
+            "a": "Perusahaan tidak memiliki izin untuk melakukan revaluasi aset tetap",
+            "b": "Kemungkinan nilai revaluasi tidak sesuai dengan nilai pasar wajar dan indikasi penggelapan pajak",
+            "c": "Laporan revaluasi disampaikan melewati batas waktu yang ditentukan",
+            "d": "Perusahaan menggunakan metode akuntansi yang tidak sesuai standar"
+          },
+          "correct": "b",
+          "explanation": "Kenaikan nilai aset 167% mengindikasikan potensi overvaluation untuk mengurangi beban pajak atau manipulasi nilai wajar yang perlu diverifikasi kebenarannya.",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": "Penilaian Aset Perusahaan Real Estate untuk Revaluasi",
+          "vigBody": "PT Graha Properti Nusantara melaporkan revaluasi aset tetap berupa tanah dan bangunan senilai Rp 45 miliar menjadi Rp 120 miliar. Account Representative (AR) menemukan indikasi nilai pasar wajar tidak sesuai dengan NJOP dan laporan penilai independen. Sebagai Kasi Waskon II, Anda diminta AR untuk me",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 1,
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Data apa yang paling relevan untuk dianalisis dalam memverifikasi kewajaran nilai revaluasi aset PT Graha Properti Nusantara?",
+          "options": {
+            "a": "Laporan keuangan tahun-tahun sebelumnya perusahaan",
+            "b": "Riwayat pembayaran pajak penghasilan badan perusahaan",
+            "c": "Data jumlah karyawan dan struktur organisasi perusahaan",
+            "d": "Laporan penilai independen (KJPP), NJOP, dan harga pasar properti sejenis di lokasi yang sama"
+          },
+          "correct": "d",
+          "explanation": "Laporan KJPP, NJOP, dan nilai pasar komparatif adalah data objektif yang dapat memvalidasi kewajaran nilai revaluasi aset properti.",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": "Penilaian Aset Perusahaan Real Estate untuk Revaluasi",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 2,
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Manakah alternatif solusi yang paling tepat jika ditemukan nilai revaluasi tidak mencerminkan nilai pasar wajar?",
+          "options": {
+            "a": "Melakukan penilaian ulang dengan penilai independen yang ditunjuk DJP dan mengoreksi nilai revaluasi serta PPh Final Pasal 19",
+            "b": "Membiarkan laporan revaluasi karena sudah sesuai prosedur formal",
+            "c": "Langsung menerbitkan surat ketetapan pajak tanpa konfirmasi kepada wajib pajak",
+            "d": "Menolak seluruh laporan revaluasi dan mewajibkan perusahaan membatalkannya"
+          },
+          "correct": "a",
+          "explanation": "Penilaian ulang oleh penilai yang ditunjuk DJP memastikan objektivitas nilai wajar dan koreksi PPh Final Pasal 19 sesuai nilai yang seharusnya.",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": "Penilaian Aset Perusahaan Real Estate untuk Revaluasi",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 3,
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Apa rekomendasi tindak lanjut yang paling tepat setelah analisis revaluasi PT Graha Properti Nusantara?",
+          "options": {
+            "a": "Melakukan pemeriksaan mendalam terhadap kepatuhan formal pelaporan SPT",
+            "b": "Menerbitkan surat ketetapan pajak kurang bayar (SKPKB) jika terbukti ada kekurangan pembayaran PPh Final Pasal 19 dan mempertimbangkan pemeriksaan buk",
+            "c": "Menyarankan perusahaan mengganti penilai independennya",
+            "d": "Memberikan surat teguran kepada perusahaan untuk melengkapi dokumen"
+          },
+          "correct": "b",
+          "explanation": "SKPKB untuk menagih kekurangan pajak yang seharusnya dibayar, dan pemeriksaan bukti permulaan diperlukan jika ada indikasi kesengajaan manipulasi nilai untuk tujuan pajak.",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": "Penilaian Aset Perusahaan Real Estate untuk Revaluasi",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 4,
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Apa risiko prosedural utama yang harus diantisipasi dalam menangani kasus revaluasi aset ini?",
+          "options": {
+            "a": "Biaya administrasi pemeriksaan yang terlalu tinggi",
+            "b": "Perusahaan akan kehilangan reputasi di mata publik",
+            "c": "Nilai aset akan terus meningkat di masa mendatang",
+            "d": "Kesalahan prosedur penerbitan SKPKB dapat membatalkan penetapan pajak dan perusahaan dapat mengajukan keberatan atau banding yang merugikan negara"
+          },
+          "correct": "d",
+          "explanation": "Kepatuhan prosedural dalam penerbitan SKPKB sangat krusial karena kesalahan prosedur dapat membatalkan penetapan pajak saat upaya hukum wajib pajak.",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": "Penilaian Aset Perusahaan Real Estate untuk Revaluasi",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 0,
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Apa masalah utama yang perlu diidentifikasi dari realisasi penerimaan pajak sektor perdagangan grosir yang rendah?",
+          "options": {
+            "a": "Kesenjangan antara potensi pajak dengan realisasi penerimaan dari sektor perdagangan grosir yang mengindikasikan adanya tax gap",
+            "b": "Kurangnya jumlah Wajib Pajak terdaftar di sektor perdagangan grosir",
+            "c": "Keterlambatan pelaporan SPT dari sektor perdagangan grosir",
+            "d": "Rendahnya kualitas pelayanan perpajakan untuk sektor perdagangan grosir"
+          },
+          "correct": "a",
+          "explanation": "Masalah utama adalah adanya tax gap yang menunjukkan potensi pajak tidak tergali optimal sehingga memerlukan pemetaan dan intensifikasi.",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": "Pemetaan Potensi Pajak Sektor Perdagangan Grosir",
+          "vigBody": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan di KPP Pratama Jakarta Selatan, Anda menemukan bahwa realisasi penerimaan pajak dari sektor perdagangan grosir hanya mencapai 65% dari target. Data menunjukkan terdapat 450 WP terdaftar, namun 180 WP diantaranya tidak melaporkan SPT Tahunan.",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 1,
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Data apa yang paling relevan untuk dianalisis dalam mengevaluasi penerimaan pajak sektor perdagangan grosir?",
+          "options": {
+            "a": "Data jumlah pegawai DJP di KPP Pratama",
+            "b": "Data jumlah surat teguran yang diterbitkan tahun lalu",
+            "c": "Data profil Wajib Pajak, omzet, rasio pajak, compliance rate, dan benchmarking dengan sektor sejenis",
+            "d": "Data anggaran operasional KPP Pratama"
+          },
+          "correct": "c",
+          "explanation": "Data profil WP, omzet, rasio pajak, dan benchmarking memberikan gambaran komprehensif tentang potensi dan kepatuhan sektor perdagangan grosir.",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": "Pemetaan Potensi Pajak Sektor Perdagangan Grosir",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 2,
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Alternatif solusi mana yang paling efektif untuk mengatasi rendahnya realisasi penerimaan dari sektor perdagangan grosir?",
+          "options": {
+            "a": "Menambah jumlah petugas pajak di KPP Pratama",
+            "b": "Menunda pemeriksaan hingga tahun fiskal berikutnya",
+            "c": "Menurunkan tarif pajak untuk sektor perdagangan grosir",
+            "d": "Melakukan pemetaan potensi pajak berbasis data, ekstensifikasi Wajib Pajak baru, dan pemeriksaan tersegmentasi berdasarkan risk profile"
+          },
+          "correct": "d",
+          "explanation": "Pemetaan potensi, ekstensifikasi, dan pemeriksaan berbasis risiko adalah pendekatan sistematis untuk mengoptimalkan penerimaan sesuai potensi sebenarnya.",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": "Pemetaan Potensi Pajak Sektor Perdagangan Grosir",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 3,
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Apa rekomendasi tindak lanjut yang paling tepat sebagai Kasi Pemeriksaan, Penilaian, dan Penagihan?",
+          "options": {
+            "a": "Menyusun program kerja pemetaan potensi pajak, penetapan target pemeriksaan tersegmentasi, dan koordinasi dengan Seksi Pengawasan dan Konsultasi untuk",
+            "b": "Menunggu arahan dari Kantor Wilayah DJP",
+            "c": "Fokus hanya pada penagihan tunggakan pajak yang ada",
+            "d": "Membuat laporan kepada Kepala Kantor tanpa tindakan konkret"
+          },
+          "correct": "a",
+          "explanation": "Program kerja komprehensif yang melibatkan pemetaan, pemeriksaan tersegmentasi, dan koordinasi lintas seksi merupakan langkah strategis untuk meningkatkan penerimaan secara terstru",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": "Pemetaan Potensi Pajak Sektor Perdagangan Grosir",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 4,
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Risiko prosedural apa yang harus diantisipasi dalam melakukan pemeriksaan massal terhadap sektor perdagangan grosir?",
+          "options": {
+            "a": "Ketidaktersediaan ruang kantor untuk menyimpan berkas",
+            "b": "Kekurangan anggaran untuk operasional pemeriksaan",
+            "c": "Tidak memenuhi prosedur pemeriksaan sesuai PMK tentang Pemeriksaan yang dapat berakibat hasil pemeriksaan dibatalkan dan menimbulkan sengketa pajak",
+            "d": "Penolakan dari Kepala KPP Pratama"
+          },
+          "correct": "c",
+          "explanation": "Kepatuhan terhadap prosedur pemeriksaan sesuai regulasi sangat krusial karena pelanggaran prosedur dapat membatalkan hasil pemeriksaan dan menimbulkan sengketa hukum.",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": "Pemetaan Potensi Pajak Sektor Perdagangan Grosir",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 0,
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan yang menerima laporan dari Account Representative bahwa PT Mitra Sejahtera memiliki tunggakan pajak, apa identifikasi masalah utama yang harus Anda tetapkan terlebih dahulu?",
+          "options": {
+            "a": "Langsung menerbitkan Surat Paksa tanpa perlu mengecek riwayat pembayaran wajib pajak",
+            "b": "Memverifikasi jenis pajak, besaran tunggakan, dan jangka waktu keterlambatan pembayaran untuk menentukan tahapan penagihan yang tepat",
+            "c": "Menunggu wajib pajak melaporkan sendiri alasan keterlambatan pembayaran",
+            "d": "Mengalihkan kasus ke Seksi Pelayanan karena tunggakan merupakan masalah administrasi"
+          },
+          "correct": "b",
+          "explanation": "Identifikasi masalah utama harus mencakup verifikasi jenis pajak, besaran tunggakan, dan jangka waktu untuk menentukan tahapan penagihan sesuai prosedur.",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": "Penanganan Penagihan Tunggakan Pajak PT Mitra Sejahtera",
+          "vigBody": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan di KPP Pratama Jakarta Selatan, Anda menerima laporan dari Account Representative bahwa PT Mitra Sejahtera memiliki tunggakan pajak sebesar Rp 850 juta yang telah melewati jatuh tempo 45 hari. AR telah menerbitkan Surat Teguran namun belum a",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 1,
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Data manakah yang paling relevan untuk Anda analisis dalam menentukan strategi penagihan tunggakan PT Mitra Sejahtera?",
+          "options": {
+            "a": "Riwayat penerbitan surat teguran, surat paksa, kondisi keuangan perusahaan, dan daftar aset yang dapat dijadikan jaminan atau disita",
+            "b": "Data kepemilikan kendaraan pribadi direktur perusahaan",
+            "c": "Daftar karyawan dan struktur organisasi perusahaan",
+            "d": "Data pesaing bisnis PT Mitra Sejahtera di industri yang sama"
+          },
+          "correct": "a",
+          "explanation": "Data riwayat penagihan, kondisi keuangan, dan aset wajib pajak adalah informasi paling relevan untuk menentukan efektivitas strategi penagihan.",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": "Penanganan Penagihan Tunggakan Pajak PT Mitra Sejahtera",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 2,
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Dalam mengevaluasi alternatif solusi penagihan tunggakan PT Mitra Sejahtera, manakah pendekatan yang paling tepat?",
+          "options": {
+            "a": "Langsung melakukan penyitaan aset tanpa memberikan kesempatan wajib pajak untuk membayar",
+            "b": "Menawarkan program angsuran pembayaran dengan jaminan aset sesuai ketentuan sambil meneruskan tahapan penagihan aktif jika tidak kooperatif",
+            "c": "Memberikan pembebasan tunggakan pajak agar perusahaan dapat melanjutkan usaha",
+            "d": "Menghapus tunggakan dari sistem dan menganggap kasus selesai"
+          },
+          "correct": "b",
+          "explanation": "Evaluasi alternatif terbaik adalah menawarkan solusi angsuran dengan jaminan sesuai regulasi sambil tetap meneruskan tahapan penagihan jika wajib pajak tidak kooperatif.",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": "Penanganan Penagihan Tunggakan Pajak PT Mitra Sejahtera",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 3,
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Apa rekomendasi tindak lanjut yang paling tepat jika PT Mitra Sejahtera tidak merespons Surat Teguran dan Surat Paksa yang telah diterbitkan?",
+          "options": {
+            "a": "Menghentikan proses penagihan dan menunggu inisiatif wajib pajak",
+            "b": "Membuat laporan ke kepolisian atas dugaan penggelapan pajak",
+            "c": "Melaksanakan penyitaan aset wajib pajak sesuai ketentuan UU Penagihan Pajak dengan Surat Negara dan melanjutkan ke lelang jika diperlukan",
+            "d": "Menurunkan besaran tunggakan secara sepihak agar lebih mudah dibayar"
+          },
+          "correct": "c",
+          "explanation": "Rekomendasi tindak lanjut yang tepat adalah melaksanakan penyitaan aset sesuai UU Penagihan Pajak setelah tahapan sebelumnya tidak direspons.",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": "Penanganan Penagihan Tunggakan Pajak PT Mitra Sejahtera",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 4,
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Dalam aspek prosedural penagihan tunggakan pajak PT Mitra Sejahtera, risiko apa yang harus Anda antisipasi dan minimalisir?",
+          "options": {
+            "a": "Risiko penurunan reputasi perusahaan di media sosial",
+            "b": "Risiko kehilangan data pribadi petugas pajak",
+            "c": "Risiko perusahaan pindah ke wilayah kerja KPP lain",
+            "d": "Risiko gugatan hukum dari wajib pajak akibat prosedur penagihan yang tidak sesuai ketentuan UU KUP dan UU Penagihan Pajak, serta risiko kerugian negar"
+          },
+          "correct": "d",
+          "explanation": "Risiko utama adalah gugatan hukum akibat prosedur tidak tepat dan kerugian negara akibat keterlambatan tindakan penagihan yang harus dimitigasi dengan kepatuhan prosedur.",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": "Penanganan Penagihan Tunggakan Pajak PT Mitra Sejahtera",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menemukan 15 WP badan di sektor perdagangan yang mengalami penurunan omzet signifikan pasca kenaikan tarif PPN 12%. Beberapa WP mengajukan keberatan atas ketetapan pajak. Dalam konteks ",
+          "options": {
+            "a": "Membuat laporan statistik sederhana jumlah keberatan dan meneruskan langsung ke Kanwil tanpa analisis lebih lanjut",
+            "b": "Menolak semua keberatan karena kenaikan tarif merupakan kebijakan nasional yang tidak bisa diganggu gugat",
+            "c": "Menganalisis pola penurunan omzet per subsektor, korelasi dengan kenaikan tarif, lalu menyusun rencana usulan penyesuaian kebijakan sesuai petunjuk te",
+            "d": "Langsung mengusulkan pembebasan pajak kepada seluruh WP terdampak tanpa analisis mendalam"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mensyaratkan kemampuan menganalisis data WP secara mendalam untuk mengidentifikasi pola dan dampak kebijakan. Penyusunan rencana usulan kebijakan harus berbasis analisis ko",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Anda menerima Laporan Hasil Pemeriksaan (LHP) atas PT Maju Jaya yang menunjukkan koreksi positif Rp 2,4 miliar dari biaya promosi yang tidak didukung bukti memadai. Namun, Anda menemukan tim pemeriksa belum menggali skema pembayaran melalui pihak ket",
+          "options": {
+            "a": "Menyetujui LHP dan menyerahkan proses keberatan kepada seksi keberatan karena sudah sesuai prosedur formal pemeriksaan",
+            "b": "Merekomendasikan pemeriksaan ulang terbatas untuk menelusuri transaksi afiliasi sebelum LHP diterbitkan guna memastikan kelengkapan temuan material",
+            "c": "Menerbitkan Surat Ketetapan Pajak segera untuk mengamankan potensi penerimaan sambil menunggu hasil penelitian keberatan",
+            "d": "Meminta tim pemeriksa menambahkan temuan transaksi afiliasi dalam LHP tanpa verifikasi tambahan agar target selesai tepat waktu"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kasi mengevaluasi kelengkapan dan kualitas hasil pemeriksaan, bukan sekadar aspek prosedural formal. Indikasi transaksi afiliasi merupakan temuan material yang",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menemukan PT Maju Jaya melaporkan penjualan gedung kantor senilai Rp 5 miliar kepada pihak afiliasi, padahal NJOP wilayah tersebut Rp 4 miliar dan gedung serupa di kawasan sama baru ter",
+          "options": {
+            "a": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar berdasarkan NJOP Rp 4 miliar sebagai nilai minimum yang aman secara hukum",
+            "b": "Menggunakan nilai tertinggi Rp 8 miliar sebagai dasar koreksi karena merupakan harga pasar terkini di kawasan tersebut",
+            "c": "Meminta Wajib Pajak menyerahkan laporan penilai independen terlebih dahulu sebelum melakukan analisis lebih lanjut",
+            "d": "Mengumpulkan data transaksi pembanding properti sejenis di lokasi sama, menganalisis kondisi fisik objek, dan menyusun kertas kerja penilaian dengan m"
+          },
+          "correct": "d",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis data WP dengan mengumpulkan data pembanding yang relevan dan menyusun rencana penilaian sesuai petunjuk teknis. Metode perbandingan data",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menemukan bahwa pelaksanaan penagihan aktif terhadap 15 WP dengan tunggakan total Rp 8,5 miliar menunjukkan hasil bahwa 9 WP telah dilakukan penyitaan, 4 WP sedang proses pemblokiran re",
+          "options": {
+            "a": "Mempercepat proses lelang aset sitaan yang bernilai ekonomis tinggi, mengintensifkan koordinasi dengan KPKNL, dan memprioritaskan pencairan piutang da",
+            "b": "Meningkatkan kuantitas penyitaan dengan menambah jumlah WP yang disita tanpa memperhatikan kualitas objek sitaan dan potensi pencairannya",
+            "c": "Menunda seluruh tindakan penagihan baru dan fokus menunggu hasil lelang yang sudah dijadwalkan sambil melakukan monitoring pasif terhadap WP",
+            "d": "Mengalihkan seluruh fokus penagihan hanya kepada 4 WP dengan pemblokiran rekening dan menghentikan sementara proses lelang aset sitaan"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi efektivitas pelaksanaan penagihan dan merekomendasikan perbaikan strategis. Rekomendasi yang tepat harus mengatasi bottleneck utama (penunda",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Tim pemeriksa Anda menyelesaikan pemeriksaan PT Maju Jaya dengan temuan koreksi positif Rp 2,4 miliar. Dalam pembahasan akhir, Wajib Pajak menyampaikan keberatan atas koreksi biaya entertainment Rp 800 juta dengan argumen bahwa ada bukti pendukung ta",
+          "options": {
+            "a": "Menerima permintaan Wajib Pajak dan mengurangi koreksi menjadi Rp 1,6 miliar untuk menghindari keberatan formal yang akan menambah beban kerja",
+            "b": "Mengevaluasi substansi bukti tambahan yang disampaikan, jika valid dan material maka rekomendasikan perbaikan LHP sesuai ketentuan, namun jika tidak r",
+            "c": "Menolak bukti tambahan karena sudah melewati masa pemeriksaan dan menegaskan bahwa Wajib Pajak harus mengajukan keberatan formal jika tidak setuju",
+            "d": "Menyetujui pengurangan koreksi sebesar 50% menjadi Rp 400 juta sebagai kompromi untuk menjaga hubungan baik dengan Wajib Pajak"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja tim dan menelaah permasalahan Wajib Pajak secara objektif berdasarkan substansi, bukan tekanan atau kompromi administratif. ",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Dalam rangka penilaian kembali aktiva tetap PT Karya Sentosa untuk tujuan perpajakan, Anda sebagai Kepala Seksi menerima laporan bahwa perusahaan telah menyampaikan penilaian dari penilai independen yang menunjukkan nilai pasar tanah dan bangunan pab",
+          "options": {
+            "a": "Menolak seluruh hasil penilaian dan memerintahkan WP menggunakan nilai buku lama tanpa penilaian ulang",
+            "b": "Menyetujui hasil penilaian karena peningkatan nilai wajar dan segera memproses permohonan revaluasi aktiva tetap",
+            "c": "Menerima hasil penilaian dengan catatan dan melakukan koreksi sepihak berdasarkan estimasi internal kantor",
+            "d": "Menganalisis kesesuaian penilai dengan ketentuan, menyusun nota dinas penolakan hasil penilaian, dan meminta WP menunjuk penilai berizin sesuai PMK ya"
+          },
+          "correct": "d",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis data WP dan melaksanakan sesuai petunjuk teknis. Penilai untuk tujuan perpajakan wajib memiliki izin Kemenkeu dan menggunakan SPI sesuai",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima pengaduan dari PT Sejahtera yang keberatan terhadap penetapan nilai jual objek pajak (NJOP) PBB-P2 yang naik 300% dibanding tahun sebelumnya, padahal tidak ada perubahan fisik ",
+          "options": {
+            "a": "Menganalisis data penetapan NJOP dan ZNT, kemudian menyelenggarakan sosialisasi terbatas untuk menjelaskan dasar hukum dan mekanisme penyesuaian nilai",
+            "b": "Menolak pengaduan WP karena penetapan NJOP sudah sesuai prosedur dan menyarankan WP mengajukan keberatan formal tanpa perlu penjelasan lebih lanjut",
+            "c": "Segera menurunkan kembali NJOP ke nilai tahun sebelumnya untuk menghindari konflik dengan pengusaha dan menjaga citra positif DJP di mata publik",
+            "d": "Meneruskan kasus ke Kepala KPP dan menunggu arahan atasan tanpa melakukan komunikasi dengan WP yang bersangkutan untuk menghindari kesalahan prosedur"
+          },
+          "correct": "a",
+          "explanation": "Level 2 Advokasi Kebijakan mensyaratkan kemampuan menganalisis data WP dan menyusun rencana komunikasi sesuai petunjuk teknis. Langkah yang tepat adalah menganalisis validitas data",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima keluhan dari WP Badan sektor manufaktur yang keberatan atas kenaikan tarif PPN 12% yang baru berlaku. WP meminta penjelasan teknis mengenai dampak kebijakan tersebut terhadap r",
+          "options": {
+            "a": "Menyarankan WP untuk mengajukan keberatan formal terhadap kebijakan PPN 12% melalui mekanisme pengaduan resmi ke DJP pusat",
+            "b": "Mengarahkan WP untuk berkonsultasi langsung dengan Kantor Pusat DJP karena kebijakan tarif PPN bukan kewenangan KPP",
+            "c": "Menganalisis data transaksi dan struktur bisnis WP, menyusun penjelasan teknis mengenai mekanisme pengkreditan PPN berdasarkan PMK terkait, kemudian m",
+            "d": "Memberikan dispensasi khusus kepada WP untuk tetap menggunakan tarif PPN lama sambil menunggu klarifikasi lebih lanjut dari pusat"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mengharuskan menganalisis data WP (struktur bisnis dan transaksi), menyusun rencana komunikasi (penjelasan teknis mekanisme pengkreditan), dan melaksanakan advokasi sesuai ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda mengevaluasi pelaksanaan penyitaan terhadap CV Berkah yang memiliki tunggakan pajak Rp 850 juta. Jurusita menemukan: (1) mesin produksi senilai Rp 600 juta masih digunakan operasional, ",
+          "options": {
+            "a": "Menyetujui keberatan WP dan mengecualikan mesin produksi dari penyitaan, fokus sita persediaan barang jadi dan kendaraan operasional untuk menutupi tu",
+            "b": "Menolak keberatan karena seluruh harta WP dapat disita, melakukan penyitaan terhadap mesin produksi, kendaraan, dan persediaan barang secara bersamaan",
+            "c": "Merekomendasikan penyitaan piutang usaha dan persediaan barang jadi saja, memberikan kesempatan WP melunasi dalam 14 hari dengan mesin produksi tetap ",
+            "d": "Melakukan penyitaan bertahap dengan prioritas persediaan barang jadi dan kendaraan operasional terlebih dahulu, mesin produksi disita jika WP tidak ko"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi pelaksanaan penagihan dengan mempertimbangkan aspek kelangsungan usaha WP dan efektivitas penagihan. Penyitaan bertahap dimulai dari ase",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "PT Mitra Logistik mengajukan permohonan penilaian atas 15 unit truk bekas yang akan dijual kepada anak perusahaan dengan harga Rp 3 miliar. Dari data historis, truk tersebut dibeli tahun 2018 seharga Rp 8 miliar dan telah disusutkan Rp 6 miliar. Hasi",
+          "options": {
+            "a": "Menganalisis indikasi transfer pricing dan menyusun rencana penilaian dengan penunjukan penilai eksternal mengacu pada petunjuk teknis penilaian hubun",
+            "b": "Menyetujui nilai Rp 3 miliar karena sesuai dengan nilai buku fiskal (Rp 8 M - Rp 6 M = Rp 2 M) bahkan lebih tinggi",
+            "c": "Langsung menolak permohonan dan menetapkan nilai Rp 5 miliar sesuai harga pasar tertinggi tanpa penilaian lebih lanjut",
+            "d": "Menerbitkan Surat Ketetapan Pajak Kurang Bayar atas selisih Rp 2 miliar tanpa melakukan penilaian terlebih dahulu"
+          },
+          "correct": "a",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis data WP untuk mengidentifikasi indikasi undervaluation dalam transaksi hubungan istimewa (penjualan ke anak perusahaan di bawah harga pa",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan dari tim pemeriksa bahwa PT Sukses Makmur ditemukan melakukan revaluasi aktiva tetap tanpa pemberitahuan ke DJP, namun WP mengklaim telah melaporkannya dalam SPT Tahuna",
+          "options": {
+            "a": "Menolak revaluasi secara keseluruhan dan mengoreksi penuh nilai revaluasi sebagai penghasilan kena pajak karena tidak memenuhi ketentuan formal",
+            "b": "Mengakui revaluasi karena sudah tercantum di SPT Tahunan dan hanya mengenakan sanksi administrasi atas keterlambatan penyampaian laporan revaluasi",
+            "c": "Memberikan kesempatan pembetulan SPT dengan mewajibkan WP menyampaikan laporan revaluasi lengkap, membayar PPh final 3% atas selisih revaluasi, baru k",
+            "d": "Menyarankan WP untuk membatalkan revaluasi dalam pembukuan komersial agar tidak menimbulkan permasalahan perpajakan lebih lanjut"
+          },
+          "correct": "c",
+          "explanation": "Level 3 memerlukan kemampuan menelaah permasalahan WP dan memberikan rekomendasi tindak lanjut yang mempertimbangkan aspek kepatuhan material dan formal. Revaluasi aktiva tetap unt",
+          "source": "PMK-191/PMK.010/2015 jo. Materi Webinar KPP — Pemeriksaan Pa",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Tim pemeriksa Anda menemukan indikasi transfer pricing pada transaksi PT Sejahtera dengan pihak afiliasi di Singapura. Hasil analisis menunjukkan harga jual ekspor 30% di bawah harga pasar wajar, namun WP menyatakan memiliki Advance Pricing Agreement",
+          "options": {
+            "a": "Menerima argumentasi WP karena sudah pernah memiliki APA bilateral dan menganggap prinsip yang sama masih berlaku",
+            "b": "Melakukan koreksi positif atas transaksi afiliasi dengan metode comparable uncontrolled price dan merekomendasikan penelitian kepatuhan tahun-tahun se",
+            "c": "Menghentikan pemeriksaan dan menyerahkan kasus ke Direktorat Perpajakan Internasional untuk penanganan khusus",
+            "d": "Memberikan kesempatan WP untuk memperpanjang APA secara retroaktif sebelum menerbitkan Surat Ketetapan Pajak"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan evaluasi hasil temuan dan rekomendasi tindak lanjut yang tepat terhadap permasalahan WP. APA yang sudah berakhir tidak dapat dijadikan dasar pembenar sehingga ",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan dari Juru Sita bahwa hasil lelang aset CV Buana Jaya hanya menghasilkan Rp 450 juta, sedangkan tunggakan pajak tercatat Rp 680 juta. Juru Sita mengusulkan penerbitan SP",
+          "options": {
+            "a": "Menunda penerbitan SPMP dan menginstruksikan penelusuran harta penanggung pajak lebih lanjut termasuk piutang usaha dan kemungkinan penerbitan SKPKPP ",
+            "b": "Menyetujui penerbitan SPMP karena lelang telah dilaksanakan sesuai prosedur dan hasil penjualan tidak mencukupi untuk melunasi utang pajak",
+            "c": "Menerbitkan SPMP untuk selisih Rp 230 juta dan menutup kasus penagihan karena upaya paksa sudah dilakukan maksimal melalui pelelangan",
+            "d": "Menginstruksikan pelelangan ulang aset yang sama dengan harga dasar lebih tinggi untuk menutupi kekurangan pelunasan tunggakan"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan menelaah permasalahan secara komprehensif sebelum menyetujui penghapusan piutang pajak. Evaluasi menunjukkan masih ada potensi penagihan melalui piutang usaha ",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan hasil pemetaan WP strategis di wilayah kerja yang menunjukkan 15 grup usaha dengan omzet gabungan di atas Rp 50 miliar, namun hanya 3 grup yang melaporkan transaksi hub",
+          "options": {
+            "a": "Langsung menerbitkan SP2 untuk pemeriksaan kepada 12 grup yang tidak melaporkan hubungan istimewa karena indikasi penghindaran pajak yang jelas",
+            "b": "Menelaah lebih lanjut profil 12 grup tersebut dengan analisis keterkaitan kepemilikan dan transaksi, kemudian merekomendasikan prioritas pemeriksaan b",
+            "c": "Menyerahkan seluruh data kepada Kanwil untuk dilakukan analisis ulang karena kompleksitas kasus grup usaha memerlukan penanganan level yang lebih ting",
+            "d": "Fokus hanya pada 8 WP dengan pembayaran fluktuatif dan mengabaikan isu hubungan istimewa karena memerlukan pembuktian yang lebih rumit"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kasi mengevaluasi hasil pemetaan secara komprehensif dan menelaah permasalahan WP dengan analisis mendalam terhadap keterkaitan kepemilikan dan transaksi antar",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan hasil pemetaan dari Account Representative yang menunjukkan bahwa CV Sejahtera Bersama (perdagangan retail) memiliki 15 outlet di berbagai kota namun hanya melaporkan o",
+          "options": {
+            "a": "Langsung menerbitkan SP2 untuk pemeriksaan komprehensif tanpa koordinasi dengan KPP lain karena WP terdaftar di wilayah Anda",
+            "b": "Menolak rekomendasi AR dan hanya melakukan himbauan kepada WP untuk membetulkan SPT karena pemeriksaan lintas wilayah terlalu kompleks",
+            "c": "Mengevaluasi hasil pemetaan, menelaah sebaran geografis outlet, kemudian merekomendasikan pemeriksaan dengan melibatkan koordinasi antar KPP dan mempr",
+            "d": "Menyerahkan seluruh kasus ke Kanwil untuk ditangani karena melibatkan multi lokasi dan memerlukan koordinasi tingkat regional"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil pemetaan secara komprehensif, menelaah kompleksitas permasalahan WP yang memiliki usaha multi-lokasi, dan memberikan rekomendasi tinda",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan bahwa pelaksanaan lelang terhadap barang sitaan milik CV Karya Sejahtera telah dilakukan namun hasil lelang hanya mencapai Rp450 juta dari utang pajak Rp680 juta. Juru ",
+          "options": {
+            "a": "Menghentikan penagihan karena Wajib Pajak telah kooperatif dan lelang telah dilaksanakan sesuai prosedur",
+            "b": "Langsung mengusulkan pencegahan dan penyanderaan terhadap pengurus CV Karya Sejahtera atas sisa utang yang belum dilunasi",
+            "c": "Menyetujui permohonan Wajib Pajak dan mengusulkan penghapusan sisa utang pajak karena tidak ada lagi aset yang dapat disita",
+            "d": "Mengevaluasi hasil lelang dan menerbitkan Surat Paksa baru untuk sisa utang, kemudian melakukan penyitaan terhadap piutang dagang dengan koordinasi pe"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil pelaksanaan lelang yang masih menyisakan tunggakan Rp230 juta dan menelaah masih adanya objek sita berupa piutang dagang. Rekomendasi ",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan hasil analisis data bahwa PT Andalan Properti melaporkan penjualan tanah dan bangunan kepada pihak afiliasi senilai Rp 5 miliar, sedangkan hasil analisis data SPPT menu",
+          "options": {
+            "a": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar (SKPKB) berdasarkan NJOP karena jelas terjadi undervaluation dalam transaksi afiliasi",
+            "b": "Meminta WP untuk mengubah nilai transaksi menjadi sesuai NJOP karena NJOP merupakan nilai minimum yang harus digunakan dalam transaksi properti",
+            "c": "Menyusun rencana pelaksanaan penilaian dengan melakukan analisis pasar properti sejenis, meminta data pembanding dari BPN, dan melakukan inspeksi lapa",
+            "d": "Menyerahkan kasus ini kepada Kantor Wilayah DJP karena nilai transaksi di atas Rp 5 miliar memerlukan penilaian oleh Tim Penilai Khusus tingkat pusat"
+          },
+          "correct": "c",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis data WP dan menyusun rencana pelaksanaan penilaian sesuai petunjuk teknis. Penilaian properti harus dilakukan dengan pendekatan yang kom",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Tim pemeriksa melaporkan bahwa PT Sinergi Mandiri tahun pajak 2022 mencatat penjualan ekspor senilai Rp 45 miliar dengan tarif PPN 0%, namun ditemukan 15 faktur pajak keluaran yang tidak dilaporkan dalam SPT Masa PPN senilai Rp 2,3 miliar, serta terd",
+          "options": {
+            "a": "Menerbitkan Surat Perintah Pemeriksaan Bukti Permulaan karena terdapat indikasi tindak pidana perpajakan dan menghentikan pemeriksaan rutin",
+            "b": "Mengevaluasi temuan sebagai indikasi kurang bayar material, menugaskan tim untuk menelusuri selisih persediaan ke dokumen pendukung, dan merekomendasi",
+            "c": "Langsung menerbitkan SPHP atas seluruh temuan dan menetapkan koreksi sebesar Rp 4,1 miliar tanpa penelusuran lebih lanjut",
+            "d": "Menutup pemeriksaan dengan nota penghitungan berdasarkan temuan yang ada dan menyerahkan kasus persediaan ke Seksi Pengawasan"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja tim dengan menelaah materialitas dan keterkaitan temuan. Kepala Seksi harus merekomendasikan perluasan pemeriksaan untuk men",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan bahwa PT Karya Abadi memiliki tunggakan pajak Rp2,8 miliar yang telah jatuh tempo 6 bulan lalu. Juru Sita telah menerbitkan Surat Paksa namun WP tidak kooperatif. Hasil",
+          "options": {
+            "a": "Menunda penyitaan dan menunggu hasil keberatan terlebih dahulu karena sebagian besar tunggakan masih dalam proses sengketa, sambil memantau kondisi ke",
+            "b": "Mengusulkan pencegahan ke luar negeri terhadap direktur WP dan melakukan penyitaan terhadap seluruh aset termasuk yang diperlukan untuk operasional pe",
+            "c": "Memberikan penundaan penagihan dengan jaminan bank senilai seluruh tunggakan dan mewajibkan WP menyerahkan laporan keuangan bulanan hingga keberatan s",
+            "d": "Segera menerbitkan Surat Perintah Melaksanakan Penyitaan untuk mengamankan aset tanah dan bangunan, karena tunggakan yang tidak dalam keberatan (Rp1,3"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengevaluasi hasil kerja Juru Sita dan menelaah kondisi WP secara komprehensif dengan mempertimbangkan: materialitas tunggakan yang tidak dalam sengketa (Rp1,3 M), urgensi ",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Hasil pemetaan profil Wajib Pajak menunjukkan PT Quantum Digital melaporkan penjualan ekspor jasa IT sebesar Rp 45 miliar dengan margin laba kotor 8%, sementara benchmark industri sejenis berkisar 25-35%. Analisis transaksi mengungkap 78% pembayaran ",
+          "options": {
+            "a": "Menelaah kewajaran transfer pricing dengan membandingkan metode penentuan harga, menganalisis substance over form transaksi afiliasi, dan merekomendas",
+            "b": "Langsung menerbitkan surat perintah pemeriksaan bukti permulaan karena terdapat indikasi kuat penggelapan pajak melalui skema transfer pricing",
+            "c": "Mengirim himbauan kepada Wajib Pajak untuk melakukan pembetulan SPT Tahunan dan menyesuaikan margin laba sesuai benchmark industri yang berlaku",
+            "d": "Menetapkan besaran koreksi positif berdasarkan selisih margin benchmark kemudian mengusulkan penerbitan Surat Ketetapan Pajak Kurang Bayar"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mensyaratkan kemampuan menelaah permasalahan WP secara komprehensif dengan menganalisis substansi transaksi, membandingkan dengan benchmark, dan mengevaluasi kelayakan meto",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan bahwa Jurusita telah menerbitkan Surat Paksa kepada CV Mitra Sejahtera senilai Rp 850 juta pada 15 Januari 2025. Namun hingga batas waktu 2x24 jam, Wajib Pajak tidak me",
+          "options": {
+            "a": "Langsung menerbitkan Surat Perintah Melaksanakan Penyitaan terhadap seluruh aset yang teridentifikasi untuk mengamankan potensi pelunasan utang pajak",
+            "b": "Mengevaluasi urgensi dan proporsionalitas tindakan, merekomendasikan penyitaan bertahap dimulai dari deposito dan piutang usaha sambil memonitor kemam",
+            "c": "Menunda seluruh tindakan penagihan dan memberikan kesempatan angsuran otomatis mengingat WP masih memiliki usaha operasional yang menghasilkan omzet",
+            "d": "Menyita mesin produksi terlebih dahulu karena nilainya paling tinggi, kemudian melakukan lelang segera untuk memaksimalkan penerimaan negara"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja Jurusita dan menelaah permasalahan WP secara komprehensif dengan mempertimbangkan aspek hukum, ekonomi, dan proporsionalitas. Re",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan dari Juru Sita bahwa lelang aset PT Maju Jaya senilai Rp 2,4 miliar telah dilaksanakan dengan nilai limit Rp 1,8 miliar namun hanya terjual Rp 1,5 miliar, sementara uta",
+          "options": {
+            "a": "Menolak hasil lelang karena di bawah nilai limit dan langsung menerbitkan Surat Perintah Melaksanakan Penyitaan terhadap mesin produksi untuk dilelang",
+            "b": "Menyetujui hasil lelang dan menutup berkas penagihan karena perusahaan telah menunjukkan itikad baik dengan mengikuti proses lelang meskipun hasilnya ",
+            "c": "Membatalkan lelang dan memerintahkan penilaian ulang aset dengan melibatkan penilai independen agar mencapai nilai limit yang lebih tinggi sebelum mel",
+            "d": "Menerima hasil lelang sesuai ketentuan lelang di bawah nilai limit, menerbitkan pencairan sita atas aset yang terjual, kemudian melakukan penyitaan te"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil pelaksanaan lelang dan menelaah aset tersisa untuk rekomendasi tindak lanjut penagihan. Lelang di bawah nilai limit tetap sah sesuai k",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Dalam evaluasi pelaksanaan penagihan aktif di wilayah kerja Anda, ditemukan bahwa dari 150 Surat Paksa yang diterbitkan dalam triwulan I, sebanyak 45 SP tidak dapat disampaikan karena alamat Wajib Pajak tidak ditemukan, 30 SP dikembalikan karena Waji",
+          "options": {
+            "a": "Melakukan pemutakhiran data Wajib Pajak secara menyeluruh melalui koordinasi dengan instansi terkait, menyusun strategi penyampaian alternatif untuk k",
+            "b": "Mempercepat penerbitan Surat Perintah Penyitaan untuk semua Surat Paksa yang telah disampaikan tanpa mempertimbangkan potensi pelunasan",
+            "c": "Mengusulkan penghapusan piutang pajak untuk semua kasus yang Surat Paksanya tidak dapat disampaikan karena dianggap tidak dapat ditagih",
+            "d": "Fokus hanya pada kasus yang telah menerima Surat Paksa dan langsung menerbitkan Surat Perintah Melaksanakan Penyitaan tanpa tindakan preventif"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan mengevaluasi hasil kerja dengan mengidentifikasi akar masalah dari rendahnya efektivitas (60% SP bermasalah). Rekomendasi tindak lanjut harus komprehensi",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pemeriksaan Pajak",
+          "compLevel": 3,
+          "question": "Tim pemeriksa melaporkan kepada Anda bahwa dalam pemeriksaan PT Mitra Sejahtera ditemukan selisih pencatatan persediaan akhir Rp 2,4 miliar dan pembayaran sewa kantor kepada pihak afiliasi di luar negeri tanpa pemotongan PPh Pasal 26. Tim mengusulkan",
+          "options": {
+            "a": "Menyetujui langsung usulan koreksi tim dan menginstruksikan segera menerbitkan SPHP karena didukung bukti yang kuat",
+            "b": "Mengembalikan berkas kepada tim pemeriksa untuk melakukan pembahasan akhir dengan Wajib Pajak tanpa evaluasi lebih lanjut",
+            "c": "Menelaah kembali apakah selisih persediaan didukung stock opname, mengevaluasi substansi transaksi afiliasi berdasarkan P3B yang berlaku, dan meminta ",
+            "d": "Fokus hanya pada koreksi PPh Badan karena nilainya lebih besar dan mengabaikan PPh Pasal 26 untuk efisiensi waktu pemeriksaan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja tim dengan menelaah kecukupan bukti fisik (stock opname), aspek perjanjian pajak berganda untuk validitas pemotongan PPh ",
+          "source": "Materi Webinar KPP — Pemeriksaan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima informasi bahwa beberapa Wajib Pajak sektor UMKM di wilayah binaan mengajukan keberatan atas kebijakan kewajiban penggunaan e-Faktur untuk transaksi tertentu. Mereka mengeluhka",
+          "options": {
+            "a": "Memberikan sanksi administratif kepada UMKM yang tidak patuh menggunakan e-Faktur dan mempercepat tindakan penagihan agar mereka segera mematuhi kebij",
+            "b": "Menyerahkan seluruh penanganan kepada Account Representative untuk mensosialisasikan secara individual tanpa melakukan analisis dan perencanaan lebih ",
+            "c": "Mengusulkan pembatalan kebijakan e-Faktur untuk UMKM kepada Kantor Pusat DJP karena tingkat kepatuhan yang masih rendah di wilayah binaan",
+            "d": "Menganalisis data tingkat literasi digital 150 UMKM tersebut, menyusun rencana sosialisasi bertahap dengan materi sederhana, dan melaksanakan bimbinga"
+          },
+          "correct": "d",
+          "explanation": "Level 2 Advokasi Kebijakan Perpajakan mensyaratkan kemampuan menganalisis data Wajib Pajak (tingkat literasi 150 UMKM) untuk memahami akar permasalahan ketidakpatuhan. Selanjutnya ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Anda menerima laporan dari account representative bahwa PT Karya Abadi, perusahaan developer properti, melakukan penjualan tanah kavling senilai Rp 25 miliar kepada anak perusahaannya dengan harga Rp 18 miliar. Hasil analisis data menunjukkan harga p",
+          "options": {
+            "a": "Menyusun rencana penilaian untuk menentukan nilai pasar wajar tanah tersebut dan mengusulkan koreksi nilai transaksi berdasarkan hasil penilaian sesua",
+            "b": "Langsung menerbitkan Surat Ketetapan Pajak Kurang Bayar atas selisih nilai transaksi tanpa melakukan penilaian lebih lanjut",
+            "c": "Menyerahkan kasus ini langsung kepada tim pemeriksa untuk dilakukan pemeriksaan bukti pembukuan tanpa melakukan penilaian terlebih dahulu",
+            "d": "Menerima nilai transaksi Rp 18 miliar karena sudah ada kesepakatan tertulis antara kedua pihak yang bertransaksi"
+          },
+          "correct": "a",
+          "explanation": "Level 2 mengharuskan kemampuan menganalisis data WP untuk mengidentifikasi indikasi transfer pricing dan menyusun rencana penilaian. Penilaian untuk menentukan nilai pasar wajar ha",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan dari Juru Sita bahwa telah dilakukan penyitaan aset PT Maju Jaya berupa 3 unit kendaraan operasional senilai Rp 800 juta untuk tunggakan pajak Rp 1,2 miliar. Namun sete",
+          "options": {
+            "a": "Menyetujui penyitaan karena kendaraan berada di lokasi usaha WP sehingga dianggap aset perusahaan, dan memerintahkan segera dilakukan lelang untuk men",
+            "b": "Mempertahankan hasil penyitaan sambil bernegosiasi dengan perusahaan leasing agar mau melepas hak atas kendaraan tersebut dengan kompensasi tertentu",
+            "c": "Memerintahkan pembatalan penyitaan atas kendaraan leasing karena bukan milik WP, menelaah ulang daftar harta WP, dan merekomendasikan penyitaan kendar",
+            "d": "Menunda eksekusi lelang kendaraan leasing hingga masa kontrak selesai sambil menerbitkan Surat Paksa ulang untuk memberikan kesempatan WP melunasi"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil kerja dan menelaah permasalahan untuk memberikan rekomendasi tindak lanjut yang tepat. Penyitaan objek leasing yang bukan milik WP",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Dalam rangka penerbitan SPPT PBB tahun 2025, Anda menemukan bahwa PT Surya Indah memiliki aset berupa gedung perkantoran yang telah direnovasi total pada tahun 2024 dengan penambahan 3 lantai, namun SPOP yang disampaikan masih menggunakan data tahun ",
+          "options": {
+            "a": "Langsung menerbitkan SPPT berdasarkan SPOP lama karena Wajib Pajak belum menyampaikan pemutakhiran data",
+            "b": "Menyusun rencana penilaian lapangan, melakukan verifikasi fisik sesuai petunjuk teknis, dan menganalisis data komparatif NJOP kawasan untuk penetapan ",
+            "c": "Menunggu Wajib Pajak melaporkan sendiri perubahan objek pajak karena merupakan kewajiban pelaporan mereka",
+            "d": "Mengenakan sanksi administrasi kepada Wajib Pajak karena tidak melaporkan perubahan data objek pajak secara tepat waktu"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mengharuskan Kasi menganalisis data WP untuk mengidentifikasi ketidaksesuaian objek pajak, menyusun rencana penilaian lapangan yang sistematis, dan melaksanakan verifikasi ",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Dalam rapat evaluasi triwulanan, Anda menemukan bahwa dari 45 penerbitan Surat Paksa di wilayah kerja KPP, terdapat 12 kasus yang telah melewati jangka waktu 2x24 jam untuk pelaksanaan penyitaan namun belum ditindaklanjuti oleh Jurusita Pajak. Setela",
+          "options": {
+            "a": "Menelaah setiap kasus secara rinci, merekomendasikan pencarian alamat baru melalui koordinasi dengan instansi terkait untuk 8 kasus pertama, dan mengu",
+            "b": "Menginstruksikan Jurusita Pajak untuk segera melaksanakan penyitaan pada semua kasus dalam waktu 1 minggu tanpa mempertimbangkan kendala yang ada",
+            "c": "Menerbitkan Surat Perintah Melaksanakan Penyitaan (SPMP) ulang untuk semua kasus dan memperpanjang jangka waktu pelaksanaan menjadi 7 hari kerja",
+            "d": "Mengalihkan seluruh kasus bermasalah kepada Kanwil untuk penanganan lebih lanjut dan fokus pada penerbitan Surat Paksa baru"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mensyaratkan kemampuan menelaah permasalahan secara mendalam dengan mengidentifikasi akar kendala pada setiap kasus (alamat tidak ditemukan vs aset di luar wilayah). Kepala",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Anda menerima laporan dari Jurusita Pajak bahwa terdapat 15 Surat Paksa yang telah jatuh tempo namun belum dapat dieksekusi karena berbagai kendala: 5 WP tidak ditemukan di alamat, 4 WP mengajukan keberatan setelah SP terbit, 3 objek lelang sulit din",
+          "options": {
+            "a": "Menginstruksikan Jurusita untuk segera melakukan penyitaan terhadap semua objek yang dapat diakses tanpa menunggu proses lainnya selesai",
+            "b": "Menelaah dan mengelompokkan kasus berdasarkan kendala, memprioritaskan 3 kasus objek lelang untuk koordinasi Tim Penilai dan Seksi Lelang, mengusulkan",
+            "c": "Mengusulkan penghapusan seluruh piutang pajak yang terkendala karena sudah melewati jangka waktu penagihan yang wajar",
+            "d": "Membentuk tim khusus untuk menangani semua kasus secara serentak dan menetapkan target eksekusi dalam waktu 1 bulan"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan kemampuan mengevaluasi hasil kerja Jurusita dan menelaah permasalahan berdasarkan karakteristik kendala yang berbeda. Rekomendasi tindak lanjut harus terstrukt",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima hasil pemetaan WP potensial di sektor properti yang menunjukkan 45 WP dengan omzet di atas Rp50 miliar namun rasio pajak di bawah industri. Tim AR telah melakukan analisis awal",
+          "options": {
+            "a": "Memerintahkan pemeriksaan serentak terhadap semua 45 WP dengan membagi tim menjadi 6 kelompok agar semua potensi dapat digali secara menyeluruh dan ti",
+            "b": "Fokus pemeriksaan pada 10 WP baru terdaftar karena mereka belum pernah diperiksa sehingga potensi temuan lebih besar dan proses pemeriksaan lebih muda",
+            "c": "Mengevaluasi dan memprioritaskan 15 WP dengan transaksi afiliasi untuk pemeriksaan mendalam, merekomendasikan intensifikasi untuk 20 WP rugi berturut-",
+            "d": "Menyerahkan seluruh hasil pemetaan kepada Kepala Kantor untuk menentukan skala prioritas karena keputusan strategis merupakan kewenangan pimpinan tert"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan mengevaluasi hasil pemetaan dengan menelaah karakteristik permasalahan masing-masing kelompok WP (transaksi afiliasi berisiko tinggi, kerugian bertur",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima hasil pemetaan wilayah kerja yang menunjukkan adanya klaster pelaku usaha perdagangan emas batangan di Kawasan Pasar Tradisional yang sebagian besar belum memiliki NPWP dan tid",
+          "options": {
+            "a": "Segera melakukan pemeriksaan bukti permulaan terhadap seluruh pelaku usaha tersebut dan menerbitkan surat panggilan untuk klarifikasi kegiatan usaha",
+            "b": "Meneruskan laporan kepada Kepala KPP untuk dikoordinasikan dengan instansi terkait dan menunggu arahan lebih lanjut sebelum melakukan tindakan",
+            "c": "Menugaskan account representative untuk melakukan pendataan ulang dan mengirimkan himbauan tertulis kepada seluruh pelaku usaha agar segera mendaftark",
+            "d": "Menyusun rekomendasi pembentukan tim intensifikasi terintegrasi dengan analisis risiko per segmen usaha, strategi ekstensifikasi bertahap, dan koordin"
+          },
+          "correct": "d",
+          "explanation": "Level 3 Kepala Seksi harus mampu mengevaluasi hasil pemetaan secara komprehensif dan menelaah permasalahan ketidakpatuhan massal dengan pendekatan strategis. Rekomendasi tindak lan",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan dari Jurusita Pajak bahwa telah dilakukan penyitaan aset berupa 2 unit mobil dan mesin produksi terhadap PT Maju Jaya senilai Rp 800 juta untuk tunggakan pajak Rp 650 j",
+          "options": {
+            "a": "Menolak keberatan karena penyitaan sudah sah dan aset sudah terlanjur disita sesuai SPMP yang diterbitkan",
+            "b": "Memerintahkan Jurusita untuk tetap melanjutkan ke tahap lelang karena nilai sita sudah mencukupi dan proses sudah sesuai prosedur",
+            "c": "Mengevaluasi hasil penyitaan dan merekomendasikan pembatalan sita atas mobil pribadi direktur tersebut, kemudian menugaskan Jurusita untuk melakukan p",
+            "d": "Menyerahkan kasus ini ke Kepala KPP karena terdapat kesalahan objek sita yang memerlukan keputusan pimpinan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan Kepala Seksi untuk mengevaluasi hasil kerja Jurusita dan menelaah permasalahan yang muncul terkait keabsahan objek sita. Berdasarkan penelaahan dokumen, mobil ",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",
+          "compLevel": 2,
+          "question": "Anda sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan menerima permintaan penilaian dari Seksi Ekstensifikasi terkait objek pajak berupa gedung perkantoran 15 lantai milik PT Maju Sejahtera yang baru selesai dibangun namun belum memiliki NJ",
+          "options": {
+            "a": "Langsung menetapkan NJOP berdasarkan NJOP gedung sejenis di sekitarnya tanpa melakukan penilaian lapangan karena lebih efisien",
+            "b": "Menyusun rencana kerja penilaian dengan menugaskan tim penilai untuk melakukan penilaian massal menggunakan pendekatan data pasar dan biaya sesuai pet",
+            "c": "Menunggu Wajib Pajak melaporkan sendiri nilai bangunan dalam SPT Tahunan, baru kemudian melakukan verifikasi",
+            "d": "Menunjuk penilai publik eksternal untuk melakukan penilaian karena objek bernilai tinggi dan kompleks"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mengharuskan kepala seksi menganalisis data objek pajak dan menyusun rencana kerja penilaian yang sistematis. Sesuai petunjuk teknis penilaian massal untuk tujuan perpajaka",
+          "source": "Materi Webinar KPP — Penilaian Untuk Tujuan Perpajakan di Bi",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penatausahaan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Anda sebagai Kepala Seksi menerima laporan dari tim bahwa terdapat 15 Surat Paksa yang telah diterbitkan 3 bulan lalu namun belum dilaksanakan penyitaan karena Jurusita kesulitan menemui Penanggung Pajak. Dari penelusuran data, 10 WP di antaranya mem",
+          "options": {
+            "a": "Menginstruksikan Jurusita untuk menunggu hingga Penanggung Pajak ditemui secara langsung sebelum melakukan tindakan penyitaan",
+            "b": "Menerbitkan Surat Perintah Melaksanakan Penyitaan untuk semua WP dan menyerahkan sepenuhnya kepada Jurusita untuk menentukan strategi pelaksanaan",
+            "c": "Mengevaluasi kinerja Jurusita dan memberikan teguran tertulis karena tidak segera melaksanakan penyitaan setelah Surat Paksa diterbitkan",
+            "d": "Menelaah kendala per WP, merekomendasikan pemblokiran rekening untuk 10 WP, penyitaan kendaraan untuk 3 WP, dan usulan pencegahan untuk 2 WP yang tida"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja tim dan menelaah permasalahan per WP dengan solusi spesifik sesuai kondisi masing-masing. Rekomendasi tindak lanjut harus",
+          "source": "Materi Webinar KPP — Penatausahaan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Tim pemetaan Anda telah menyelesaikan identifikasi 150 objek pajak baru di kawasan industri. Dari hasil analisis, 80 objek merupakan bangunan pabrik dengan NJOP rata-rata Rp 5 miliar, 50 objek gudang dengan NJOP rata-rata Rp 2 miliar, dan 20 objek fa",
+          "options": {
+            "a": "Mengevaluasi kualitas data pemetaan, memprioritaskan penerbitan SPPT untuk 40% objek yang lengkap dokumennya, dan merekomendasikan koordinasi intensif",
+            "b": "Menerbitkan SPPT untuk semua objek berdasarkan hasil pemetaan lapangan tanpa menunggu dokumen pendukung agar target penerimaan tercapai",
+            "c": "Mengembalikan seluruh hasil pemetaan ke tim untuk dilengkapi dokumen IMB dan sertifikat tanah terlebih dahulu sebelum dilakukan proses lebih lanjut",
+            "d": "Langsung menerbitkan SPPT dengan NJOP minimal untuk semua objek yang belum lengkap dokumennya guna menghindari kehilangan potensi pajak"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja tim dengan mengidentifikasi kualitas dan kelengkapan data pemetaan. Rekomendasi harus berbasis analisis risiko dengan mem",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Dalam rangka sosialisasi perubahan tarif PPN menjadi 12%, Anda sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan diminta menyusun strategi advokasi kepada 50 Wajib Pajak PKP di wilayah Anda yang mayoritas adalah UMKM sektor perdagangan. Data",
+          "options": {
+            "a": "Langsung mengundang seluruh PKP untuk mengikuti sosialisasi massal di kantor dan menyerahkan materi presentasi standar dari Kantor Pusat tanpa penyesu",
+            "b": "Menganalisis profil dan pola transaksi 50 PKP tersebut, menyusun rencana sosialisasi bertahap berdasarkan segmentasi tingkat pemahaman, kemudian melak",
+            "c": "Mengirimkan email blast berisi peraturan perubahan tarif PPN kepada semua PKP dan meminta mereka mempelajari sendiri karena sudah ada petunjuk teknis ",
+            "d": "Membentuk tim khusus untuk melakukan kunjungan door-to-door ke semua PKP tanpa perencanaan terlebih dahulu agar lebih cepat tersosialisasi"
+          },
+          "correct": "b",
+          "explanation": "Level 2 mengharuskan Kepala Seksi menganalisis data WP (profil dan tingkat pemahaman PKP), menyusun rencana advokasi yang terstruktur dan tersegmentasi, serta melaksanakannya sesua",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Pemetaan untuk Tujuan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima hasil pemetaan dari tim yang menunjukkan bahwa 15 Wajib Pajak di sektor perdagangan ekspor memiliki pola pelaporan SPT Masa PPN dengan Lebih Bayar berturut-turut selama 12 bula",
+          "options": {
+            "a": "Langsung menerbitkan Surat Perintah Pemeriksaan untuk seluruh 15 WP tersebut secara serentak dengan fokus pemeriksaan PPh Badan dan PPN",
+            "b": "Menugaskan tim untuk melakukan himbauan kepada seluruh 15 WP agar melakukan pembetulan SPT secara sukarela dan memberikan jangka waktu 30 hari",
+            "c": "Menyerahkan hasil pemetaan kepada Kepala KPP untuk diputuskan sendiri karena keputusan pemeriksaan merupakan kewenangan pejabat eselon III",
+            "d": "Mengevaluasi kualitas data pemetaan, menelaah tingkat risiko masing-masing WP berdasarkan materiality dan risk scoring, kemudian merekomendasikan prio"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kepala Seksi mengevaluasi hasil kerja tim pemetaan dengan menelaah kualitas data dan tingkat risiko. Rekomendasi tindak lanjut harus berbasis risk-based approa",
+          "source": "Materi Webinar KPP — Pelaksanaan Pemetaan untuk Tujuan Perpa",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 2,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda mengidentifikasi bahwa 15 WP besar di sektor manufaktur menunjukkan penurunan penyetoran pajak pascapemberlakuan insentif PPN DTP untuk sektor tertentu. Beberapa WP menyampaikan ketidak",
+          "options": {
+            "a": "Menyusun rencana kegiatan advokasi berbasis data WP tersebut dengan mengidentifikasi pola ketidakpahaman, kemudian melaksanakan bimbingan teknis sesua",
+            "b": "Langsung melakukan pemeriksaan mendalam terhadap seluruh WP manufaktur untuk memastikan kepatuhan mereka terhadap ketentuan PPN DTP",
+            "c": "Menyerahkan penanganan kepada Account Representative karena advokasi kebijakan bukan tugas Seksi Pemeriksaan, Penilaian, dan Penagihan",
+            "d": "Mengirimkan surat edaran massal kepada seluruh WP di wilayah kerja tentang perubahan kebijakan PPN DTP tanpa melakukan analisis kebutuhan spesifik"
+          },
+          "correct": "a",
+          "explanation": "Level 2 Advokasi Kebijakan mensyaratkan kemampuan menganalisis data WP untuk mengidentifikasi pola masalah pemahaman kebijakan. Setelah analisis, disusun rencana kegiatan advokasi ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L2",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pelaksanaan Tindakan Penagihan Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan, Anda menerima laporan hasil penyitaan aset WP senilai Rp 800 juta untuk tunggakan pajak Rp 1,2 miliar. Juru Sita mengusulkan lelang segera karena aset berupa kendaraan yang nilainya cepat me",
+          "options": {
+            "a": "Menyetujui usulan lelang segera untuk mengamankan pencairan piutang sebelum nilai kendaraan turun lebih jauh",
+            "b": "Melakukan lelang kendaraan terlebih dahulu sambil tetap memproses permohonan angsuran untuk sisa tunggakan",
+            "c": "Menunda lelang dan mempercepat proses verifikasi jaminan tanah, karena nilai jaminan yang diajukan memadai dan dapat mengamankan seluruh tunggakan den",
+            "d": "Menolak permohonan angsuran dan memerintahkan pencarian aset tambahan sebelum melakukan lelang"
+          },
+          "correct": "c",
+          "explanation": "Level 3 memerlukan kemampuan mengevaluasi hasil kerja tim dan menelaah permasalahan WP secara komprehensif untuk memberikan rekomendasi tindak lanjut yang optimal. Jaminan tanah se",
+          "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
           "vigTitle": null,
           "vigBody": null,
           "userAnswer": "c",
