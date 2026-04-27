@@ -2,17 +2,5 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
-[functions."chat"]
-  timeout = 26
-
 [functions."sessions"]
   timeout = 26
-
-[functions."status"]
-  timeout = 10
-
-[functions."check-key"]
-  timeout = 10
-
-[functions."validate-key"]
-  timeout = 10

@@ -41,11 +41,6 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Ne
 .topbar-logo { width: 32px; height: 32px; border-radius: 8px; background: var(--blue); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; font-weight: 700; flex-shrink: 0; }
 .topbar-title { font-size: 14px; font-weight: 500; }
 .topbar-sub { font-size: 11px; color: var(--text-3); }
-.key-wrap { display: flex; align-items: center; gap: 8px; }
-.key-wrap input { width: 210px; height: 30px; padding: 0 10px; font-size: 12px; border: 0.5px solid var(--border-2); border-radius: var(--r-md); background: var(--bg-2); color: var(--text); font-family: monospace; outline: none; }
-.key-wrap input:focus { border-color: var(--blue-m); }
-.key-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--amber-m); }
-.key-dot.ok { background: var(--green-m); }
 
 /* LAYOUT */
 .main { max-width: 740px; margin: 0 auto; padding: 28px 20px 72px; }
@@ -56,39 +51,11 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Ne
 .label { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); margin-bottom: 10px; }
 hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 
-/* GATE */
-.gate-hero { text-align: center; padding: 40px 16px 28px; }
-.gate-hero h1 { font-size: 26px; font-weight: 600; margin-bottom: 8px; }
-.gate-hero p { font-size: 14px; color: var(--text-2); max-width: 460px; margin: 0 auto 14px; line-height: 1.7; }
+/* GATE HERO */
+.gate-hero { text-align: center; padding: 36px 16px 24px; }
+.gate-hero h1 { font-size: 24px; font-weight: 600; margin-bottom: 8px; }
+.gate-hero p { font-size: 14px; color: var(--text-2); max-width: 480px; margin: 0 auto 14px; line-height: 1.7; }
 .gate-chip { display: inline-block; padding: 3px 12px; border-radius: 20px; font-size: 11px; background: var(--blue-l); color: var(--blue); border: 0.5px solid var(--border); margin: 2px; }
-.gate-box { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 26px; max-width: 420px; margin: 20px auto 0; text-align: center; }
-.gate-box h2 { font-size: 15px; font-weight: 500; margin-bottom: 8px; }
-.gate-box p { font-size: 13px; color: var(--text-2); margin-bottom: 18px; line-height: 1.6; }
-.gate-box input { width: 100%; padding: 10px 14px; border: 0.5px solid var(--border-2); border-radius: var(--r-md); font-size: 13px; background: var(--bg-2); color: var(--text); font-family: monospace; margin-bottom: 12px; outline: none; display: block; }
-.gate-box input:focus { border-color: var(--blue-m); }
-.gate-box small { font-size: 11px; color: var(--text-3); display: block; margin-top: 10px; line-height: 1.6; }
-.gate-box a { color: var(--blue); text-decoration: none; }
-
-/* POSITION GRID */
-.pos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 22px; }
-.pos-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 14px 16px; cursor: pointer; transition: all 0.15s; }
-.pos-card:hover { border-color: var(--border-2); background: var(--bg-2); }
-.pos-card.sel { border: 1.5px solid var(--blue-m); background: var(--blue-l); }
-.pos-card.sel .pname { color: var(--blue-d); }
-.pname { font-size: 13px; font-weight: 500; line-height: 1.4; margin-bottom: 3px; }
-.plevel { font-size: 11px; color: var(--text-3); }
-.pbadge { display: inline-block; margin-top: 6px; font-size: 10px; padding: 2px 7px; border-radius: 20px; background: var(--blue-l); color: var(--blue); border: 0.5px solid var(--border); }
-
-/* COMPETENCY PILLS */
-.pill-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
-.pill { font-size: 11px; padding: 3px 10px; border-radius: 20px; border: 0.5px solid var(--border); color: var(--text-2); background: var(--bg-2); }
-.pill.g { background: var(--green-l); color: var(--green); border-color: var(--green-m); }
-
-/* NUM SELECTOR */
-.num-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 22px; }
-.num-btn { padding: 6px 16px; border: 0.5px solid var(--border); border-radius: var(--r-md); background: var(--bg); font-size: 13px; cursor: pointer; color: var(--text-2); font-family: inherit; transition: all .15s; }
-.num-btn.act { border-color: var(--blue-m); background: var(--blue-l); color: var(--blue-d); font-weight: 500; }
-.num-btn:hover:not(.act) { border-color: var(--border-2); }
 
 /* BUTTONS */
 .btn { padding: 10px 22px; border-radius: var(--r-md); font-size: 14px; cursor: pointer; font-family: inherit; font-weight: 500; border: none; transition: background .15s; }
@@ -98,26 +65,104 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 .btn-o { background: transparent; border: 0.5px solid var(--border-2); color: var(--text); }
 .btn-o:hover { background: var(--bg-2); }
 
-/* QUIZ SESSION HEADER */
-.session-banner { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 14px 18px; margin-bottom: 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.session-info { }
-.session-title { font-size: 13px; font-weight: 500; }
-.session-sub { font-size: 11px; color: var(--text-3); margin-top: 2px; }
-.session-score { text-align: right; }
-.live-score { font-size: 22px; font-weight: 600; color: var(--blue); line-height: 1; }
-.live-score-lbl { font-size: 10px; color: var(--text-3); margin-top: 2px; }
+/* SESSION BROWSER */
+.session-browser { max-width: 680px; margin: 0 auto; }
+.browser-filters { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.filter-btn { padding: 5px 12px; border: 0.5px solid var(--border); border-radius: 20px; background: var(--bg); font-size: 12px; cursor: pointer; color: var(--text-2); font-family: inherit; transition: all .15s; }
+.filter-btn:hover { border-color: var(--border-2); }
+.filter-btn.act { border-color: var(--teal-m); background: var(--teal-l); color: var(--teal); font-weight: 500; }
+.session-count { font-size: 12px; color: var(--text-3); margin-bottom: 10px; }
+.session-list { display: flex; flex-direction: column; gap: 8px; max-height: 380px; overflow-y: auto; }
+.session-item { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 12px 16px; cursor: pointer; transition: all .15s; display: flex; align-items: center; gap: 12px; }
+.session-item:hover { border-color: var(--teal-m); background: var(--teal-l); }
+.session-item.selected { border: 1.5px solid var(--teal-m); background: var(--teal-l); }
+.si-score { font-size: 22px; font-weight: 600; width: 54px; text-align: center; flex-shrink: 0; }
+.si-score.pass { color: var(--green); }
+.si-score.fail { color: var(--red); }
+.si-body { flex: 1; min-width: 0; }
+.si-position { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.si-meta { font-size: 11px; color: var(--text-3); }
+.si-seg { font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 10px; }
+.si-seg.a { background: var(--blue-l); color: var(--blue); }
+.si-seg.b { background: var(--purple-l); color: var(--purple); }
+.browser-empty { text-align: center; padding: 40px 16px; color: var(--text-3); font-size: 13px; line-height: 1.7; }
+.browser-loading { display: flex; align-items: center; gap: 8px; padding: 20px; color: var(--text-3); font-size: 13px; }
 
-/* PROGRESS */
-.prog-wrap { margin-bottom: 18px; }
-.prog-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
-.q-ctr { font-size: 12px; color: var(--text-3); }
-.q-tag { font-size: 11px; padding: 2px 8px; border-radius: 20px; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.q-tag.regular { background: var(--amber-l); color: var(--amber-m); }
-.q-tag.case { background: var(--purple-l); color: var(--purple-m); }
-.prog-bar { height: 3px; background: var(--bg-3); border-radius: 2px; }
-.prog-fill { height: 100%; border-radius: 2px; transition: width .4s ease; }
-.prog-fill.regular { background: var(--blue-m); }
-.prog-fill.case { background: var(--purple-m); }
+/* LOADING */
+.loading { display: flex; align-items: center; gap: 10px; padding: 24px 0; color: var(--text-3); font-size: 13px; }
+.spin { width: 18px; height: 18px; border: 2px solid var(--border-2); border-top-color: var(--blue-m); border-radius: 50%; animation: spin .7s linear infinite; flex-shrink: 0; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ERROR */
+.err { background: var(--red-l); border: 0.5px solid var(--red-m); border-radius: var(--r-md); padding: 12px 16px; font-size: 13px; color: var(--red); margin-bottom: 12px; display: none; }
+
+/* QUIZ SESSION HEADER (SEB style) */
+.seb-topbar { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 12px 16px; margin-bottom: 14px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.seb-info { flex: 1; min-width: 0; }
+.seb-title { font-size: 13px; font-weight: 500; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.seb-sub { font-size: 11px; color: var(--text-3); margin-top: 1px; }
+.seb-stats { display: flex; gap: 16px; flex-shrink: 0; }
+.seb-stat { text-align: center; }
+.seb-stat span:first-child { font-size: 18px; font-weight: 600; color: var(--text); display: block; line-height: 1; }
+.seb-stat-lbl { font-size: 10px; color: var(--text-3); }
+.seb-submit-btn { background: var(--blue); color: #fff; border: none; padding: 8px 18px; border-radius: var(--r-md); font-size: 13px; font-weight: 500; cursor: pointer; font-family: inherit; white-space: nowrap; transition: background .15s; }
+.seb-submit-btn:hover { background: var(--blue-d); }
+
+/* LAYOUT */
+.seb-layout { display: grid; grid-template-columns: 200px 1fr; gap: 14px; align-items: start; }
+@media(max-width:640px) { .seb-layout { grid-template-columns: 1fr; } .seb-nav { order: 2; } .seb-qpane { order: 1; } }
+
+/* NAV PANEL */
+.seb-nav { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-lg); padding: 14px; position: sticky; top: 14px; max-height: calc(100vh - 28px); overflow-y: auto; }
+.seb-nav-head { margin-bottom: 10px; }
+.seb-legend { display: flex; flex-direction: column; gap: 4px; }
+.seb-leg { font-size: 10px; color: var(--text-3); display: flex; align-items: center; gap: 5px; }
+.seb-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+.seb-dot.unanswered { background: var(--bg-3); border: 0.5px solid var(--border-2); }
+.seb-dot.answered   { background: var(--blue-l); border: 0.5px solid var(--blue-m); }
+.seb-dot.yakin      { background: var(--green-l); border: 0.5px solid var(--green-m); }
+.seb-dot.ragu       { background: var(--amber-l); border: 0.5px solid var(--amber-m); }
+.seb-dot.tandai     { background: var(--red-l); border: 0.5px solid var(--red-m); }
+.seb-dot.current    { background: var(--blue); }
+.seb-dot.case-q     { border-radius: 50%; }
+
+/* NAV GRID */
+.seb-nav-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 4px; margin-bottom: 10px; }
+.seb-nav-btn { width: 100%; aspect-ratio: 1; border: none; border-radius: 4px; font-size: 11px; font-weight: 500; cursor: pointer; font-family: inherit; transition: all .1s; background: var(--bg-3); color: var(--text-3); border: 0.5px solid var(--border); }
+.seb-nav-btn:hover { border-color: var(--border-2); }
+.seb-nav-btn.current  { background: var(--blue); color: #fff; border-color: var(--blue); }
+.seb-nav-btn.answered { background: var(--blue-l); color: var(--blue-d); border-color: var(--blue-m); }
+.seb-nav-btn.yakin    { background: var(--green-l); color: var(--green); border-color: var(--green-m); }
+.seb-nav-btn.ragu     { background: var(--amber-l); color: var(--amber); border-color: var(--amber-m); }
+.seb-nav-btn.tandai   { background: var(--red-l); color: var(--red); border-color: var(--red-m); }
+.seb-nav-btn.case-q   { border-radius: 50%; }
+
+/* NAV SECTION LABELS */
+.seb-nav-sections { display: flex; flex-direction: column; gap: 4px; border-top: 0.5px solid var(--border); padding-top: 10px; }
+.seb-nav-sec { font-size: 10px; color: var(--text-3); display: flex; align-items: center; gap: 6px; }
+.seb-nav-sec-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+.seb-nav-sec-dot.reg { background: var(--amber-l); border: 0.5px solid var(--amber-m); }
+.seb-nav-sec-dot.cas { background: var(--purple-l); border: 0.5px solid var(--purple-m); border-radius: 50%; }
+
+/* QUESTION PANE */
+.seb-qpane { }
+
+/* CONFIDENCE BAR */
+.conf-bar { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 10px 14px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.conf-label { font-size: 12px; color: var(--text-2); flex-shrink: 0; }
+.conf-btn { padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; cursor: pointer; font-family: inherit; border: 0.5px solid; transition: all .12s; background: var(--bg-2); }
+.conf-btn.yakin  { color: var(--green); border-color: var(--green-m); }
+.conf-btn.ragu   { color: var(--amber); border-color: var(--amber-m); }
+.conf-btn.tandai { color: var(--red);   border-color: var(--red-m);   }
+.conf-btn.yakin.active  { background: var(--green-l); }
+.conf-btn.ragu.active   { background: var(--amber-l); }
+.conf-btn.tandai.active { background: var(--red-l); }
+
+/* NAV BUTTONS */
+.seb-nav-btns { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.seb-prev, .seb-next, .seb-skip { flex: 1; min-width: 100px; text-align: center; }
+.seb-next { background: var(--blue); color: #fff; border-color: var(--blue); }
+.seb-next:hover { background: var(--blue-d); }
 
 /* CASE VIGNETTE */
 .vignette { background: var(--bg); border: 0.5px solid var(--border); border-left: 3px solid var(--purple-m); border-radius: var(--r-lg); padding: 18px 20px; margin-bottom: 14px; }
@@ -147,7 +192,7 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 .fb-body { font-size: 13px; line-height: 1.75; color: var(--text); white-space: pre-wrap; min-height: 20px; }
 .fb-src { display: none; margin-top: 10px; font-size: 11px; padding: 3px 10px; border-radius: 4px; background: var(--bg); color: var(--text-2); border: 0.5px solid var(--border); }
 
-/* SECTION DIVIDER in quiz */
+/* SECTION DIVIDER */
 .sec-divider { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 12px 16px; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
 .sec-divider-icon { width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 13px; flex-shrink: 0; }
 .sec-divider-icon.reg { background: var(--amber-l); }
@@ -155,13 +200,16 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 .sec-divider-text { font-size: 12px; color: var(--text-2); }
 .sec-divider-text strong { color: var(--text); }
 
-/* LOADING */
-.loading { display: flex; align-items: center; gap: 10px; padding: 24px 0; color: var(--text-3); font-size: 13px; }
-.spin { width: 18px; height: 18px; border: 2px solid var(--border-2); border-top-color: var(--blue-m); border-radius: 50%; animation: spin .7s linear infinite; flex-shrink: 0; }
-@keyframes spin { to { transform: rotate(360deg); } }
-
-/* ERROR */
-.err { background: var(--red-l); border: 0.5px solid var(--red-m); border-radius: var(--r-md); padding: 12px 16px; font-size: 13px; color: var(--red); margin-bottom: 12px; display: none; }
+/* SUBMIT CONFIRM MODAL */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.4); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 20px; }
+.modal-box { background: var(--bg); border-radius: var(--r-xl); padding: 28px; max-width: 420px; width: 100%; }
+.modal-title { font-size: 16px; font-weight: 500; margin-bottom: 8px; }
+.modal-body { font-size: 13px; color: var(--text-2); line-height: 1.7; margin-bottom: 20px; }
+.modal-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-bottom: 20px; }
+.modal-stat { text-align: center; background: var(--bg-2); border-radius: var(--r-md); padding: 10px; }
+.modal-stat-num { font-size: 20px; font-weight: 600; }
+.modal-stat-lbl { font-size: 10px; color: var(--text-3); margin-top: 2px; }
+.modal-actions { display: flex; gap: 10px; }
 
 /* RESULT */
 .res-hero { text-align: center; padding: 36px 16px 28px; }
@@ -191,253 +239,12 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 .rev-ans { font-size: 12px; line-height: 1.5; }
 .rev-comp { font-size: 11px; color: var(--text-3); margin-top: 3px; }
 .rev-case-label { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--purple); background: var(--purple-l); padding: 2px 7px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
-
-/* SECTION SUMMARY in review */
 .rev-section { font-size: 12px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: .06em; margin: 18px 0 10px; padding-bottom: 6px; border-bottom: 0.5px solid var(--border); }
-
-/* API KEY GUIDE */
-.guide-wrap { max-width: 520px; margin: 20px auto 0; }
-.guide-toggle { width: 100%; background: var(--bg-2); border: 0.5px solid var(--border); border-radius: var(--r-md); padding: 10px 16px; font-size: 13px; color: var(--text-2); cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-family: inherit; transition: background .15s; }
-.guide-toggle:hover { background: var(--bg-3); }
-.guide-toggle-label { display: flex; align-items: center; gap: 8px; }
-.guide-toggle-icon { width: 18px; height: 18px; border-radius: 50%; background: var(--blue-l); display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--blue); font-weight: 700; flex-shrink: 0; }
-.guide-arrow { font-size: 10px; color: var(--text-3); transition: transform .2s; }
-.guide-arrow.open { transform: rotate(180deg); }
-.guide-body { display: none; background: var(--bg); border: 0.5px solid var(--border); border-top: none; border-radius: 0 0 var(--r-md) var(--r-md); padding: 18px 20px; }
-.guide-body.open { display: block; }
-.g-step { display: flex; gap: 14px; margin-bottom: 16px; align-items: flex-start; }
-.g-step:last-child { margin-bottom: 0; }
-.g-num { width: 24px; height: 24px; border-radius: 50%; background: var(--blue-l); color: var(--blue); font-size: 12px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
-.g-step-body { flex: 1; }
-.g-title { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 2px; }
-.g-desc { font-size: 12px; color: var(--text-2); line-height: 1.6; }
-.g-desc a { color: var(--blue); text-decoration: none; }
-.g-desc a:hover { text-decoration: underline; }
-.g-connector { width: 1px; height: 12px; background: var(--border); margin-left: 11px; margin-bottom: 4px; }
-.g-chip { display: inline-block; font-family: monospace; font-size: 11px; background: var(--bg-2); border: 0.5px solid var(--border-2); border-radius: 4px; padding: 1px 5px; color: var(--text); }
-.g-free { display: inline-block; font-size: 10px; font-weight: 500; padding: 1px 6px; border-radius: 20px; background: var(--green-l); color: var(--green); border: 0.5px solid var(--green-m); vertical-align: middle; margin-left: 5px; }
-.g-tip { background: var(--amber-l); border: 0.5px solid var(--amber-m); border-radius: var(--r-md); padding: 10px 12px; margin-top: 16px; font-size: 12px; color: var(--amber); line-height: 1.6; }
-.g-tip a { color: var(--amber); font-weight: 500; }
-
-
-/* ACCESS GRID */
-.access-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 680px; margin: 0 auto; }
-@media(max-width:600px) { .access-grid { grid-template-columns: 1fr; } }
-.access-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 24px; display: flex; flex-direction: column; gap: 10px; }
-.access-badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; width: fit-content; }
-.access-badge.team { background: var(--teal-l); color: var(--teal); border: 0.5px solid var(--teal-m); }
-.access-badge.paid { background: var(--purple-l); color: var(--purple); border: 0.5px solid var(--purple-m); }
-.access-title { font-size: 16px; font-weight: 500; color: var(--text); }
-.access-desc { font-size: 13px; color: var(--text-2); line-height: 1.6; }
-.access-card input { width: 100%; padding: 10px 12px; border: 0.5px solid var(--border-2); border-radius: var(--r-md); font-size: 13px; background: var(--bg-2); color: var(--text); font-family: inherit; outline: none; }
-.access-card input:focus { border-color: var(--blue-m); }
-.btn-t { background: var(--teal); color: #fff; border: none; padding: 10px 22px; border-radius: var(--r-md); font-size: 14px; cursor: pointer; font-family: inherit; font-weight: 500; transition: background .15s; width: 100%; }
-.btn-t:hover { background: var(--teal-m); }
-.access-err { font-size: 12px; color: var(--red); min-height: 16px; }
-.access-divider { text-align: center; font-size: 11px; color: var(--text-3); position: relative; margin: 2px 0; }
-.access-divider::before, .access-divider::after { content: ""; position: absolute; top: 50%; width: 38%; height: 0.5px; background: var(--border); }
-.access-divider::before { left: 0; } .access-divider::after { right: 0; }
-.btn-request { display: block; text-align: center; padding: 10px 16px; border: 0.5px solid var(--purple-m); border-radius: var(--r-md); font-size: 13px; color: var(--purple); text-decoration: none; font-weight: 500; transition: background .15s; }
-.btn-request:hover { background: var(--purple-l); }
-
-/* ACCESS TYPE indicator in topbar */
-.access-chip { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; letter-spacing: .04em; }
-.access-chip.team { background: var(--teal-l); color: var(--teal); }
-.access-chip.paid { background: var(--purple-l); color: var(--purple); }
-
-
-/* ── STATUS WIDGET ── */
-.status-widget { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 18px 20px; max-width: 680px; margin: 0 auto 20px; }
-.status-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; }
-.status-title { font-size: 12px; font-weight: 600; color: var(--text-2); letter-spacing: .05em; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
-.pulse { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-.pulse.good     { background: var(--green-m); box-shadow: 0 0 0 0 var(--green-m); animation: pulse-green 2s infinite; }
-.pulse.low      { background: var(--amber-m); box-shadow: 0 0 0 0 var(--amber-m); animation: pulse-amber 2s infinite; }
-.pulse.critical { background: var(--red-m);   box-shadow: 0 0 0 0 var(--red-m);   animation: pulse-red   1.2s infinite; }
-.pulse.loading  { background: var(--text-3); }
-@keyframes pulse-green  { 0%,100%{box-shadow:0 0 0 0 rgba(99,153,34,.5)}  70%{box-shadow:0 0 0 6px rgba(99,153,34,0)} }
-@keyframes pulse-amber  { 0%,100%{box-shadow:0 0 0 0 rgba(186,117,23,.5)} 70%{box-shadow:0 0 0 6px rgba(186,117,23,0)} }
-@keyframes pulse-red    { 0%,100%{box-shadow:0 0 0 0 rgba(226,75,74,.5)}  70%{box-shadow:0 0 0 6px rgba(226,75,74,0)} }
-.concurrent-badge { font-size: 12px; color: var(--text-3); display: flex; align-items: center; gap: 5px; }
-.concurrent-num { font-weight: 600; color: var(--text); }
-.status-bar-wrap { margin-bottom: 12px; }
-.status-bar-track { height: 6px; background: var(--bg-3); border-radius: 3px; overflow: hidden; }
-.status-bar-fill { height: 100%; border-radius: 3px; transition: width 1s ease; }
-.status-bar-fill.good     { background: var(--green-m); }
-.status-bar-fill.low      { background: var(--amber-m); }
-.status-bar-fill.critical { background: var(--red-m); }
-.status-bar-fill.loading  { background: var(--border-2); width: 60% !important; animation: shimmer 1.5s infinite; }
-@keyframes shimmer { 0%,100%{opacity:.4} 50%{opacity:1} }
-.status-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
-.stat-box { background: var(--bg-2); border-radius: var(--r-md); padding: 10px 12px; text-align: center; }
-.stat-num { font-size: 20px; font-weight: 600; color: var(--text); line-height: 1; }
-.stat-lbl { font-size: 10px; color: var(--text-3); margin-top: 3px; line-height: 1.3; }
-.status-msg { font-size: 12px; color: var(--text-2); line-height: 1.6; margin-bottom: 12px; }
-.donate-strip { background: var(--amber-l); border: 0.5px solid var(--amber-m); border-radius: var(--r-md); padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
-.donate-text { font-size: 12px; color: var(--amber); line-height: 1.5; }
-.donate-btn { font-size: 12px; font-weight: 500; padding: 6px 14px; background: var(--amber-m); color: #fff; border: none; border-radius: var(--r-md); cursor: pointer; font-family: inherit; white-space: nowrap; text-decoration: none; display: inline-block; }
-.donate-btn:hover { opacity: .88; }
-
-
-/* SEGMENT CARDS */
-.seg-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--r-xl); padding: 18px; cursor: pointer; transition: all .15s; display: flex; flex-direction: column; gap: 6px; }
-.seg-card:hover { border-color: var(--border-2); background: var(--bg-2); }
-.seg-card.active-a { border: 1.5px solid var(--blue-m); background: var(--blue-l); }
-.seg-card.active-b { border: 1.5px solid var(--purple-m); background: var(--purple-l); }
-.seg-badge { display: inline-block; font-size: 10px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; padding: 2px 8px; border-radius: 20px; border: 0.5px solid; width: fit-content; }
-.seg-title { font-size: 16px; font-weight: 500; color: var(--text); }
-.seg-level { font-size: 11px; color: var(--text-3); }
-.seg-desc { font-size: 12px; color: var(--text-2); line-height: 1.5; }
-.seg-indicator { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
-.seg-lvl-pill { font-size: 10px; padding: 2px 8px; border-radius: 20px; background: var(--bg-3); color: var(--text-3); border: 0.5px solid var(--border); }
-@media(max-width:520px) { #segment-grid { grid-template-columns: 1fr !important; } }
-
-
-/* SESSION MODE TOGGLE */
-.mode-toggle { display:flex; gap:8px; max-width:640px; margin:0 auto 16px; }
-.mode-btn { flex:1; padding:10px 16px; border:0.5px solid var(--border); border-radius:var(--r-lg); background:var(--bg); cursor:pointer; font-family:inherit; font-size:13px; color:var(--text-2); text-align:left; transition:all .15s; }
-.mode-btn:hover { border-color:var(--border-2); background:var(--bg-2); }
-.mode-btn.active-live { border:1.5px solid var(--amber-m); background:var(--amber-l); }
-.mode-btn.active-live .mode-title { color:var(--amber); }
-.mode-btn.active-static { border:1.5px solid var(--teal-m); background:var(--teal-l); }
-.mode-btn.active-static .mode-title { color:var(--teal); }
-.mode-title { font-size:13px; font-weight:500; margin-bottom:2px; }
-.mode-desc { font-size:11px; color:var(--text-3); line-height:1.5; }
-.mode-tag { display:inline-block; font-size:9px; font-weight:600; padding:1px 6px; border-radius:10px; letter-spacing:.04em; vertical-align:middle; margin-left:4px; }
-.mode-tag.live { background:var(--amber-l); color:var(--amber); }
-.mode-tag.free { background:var(--teal-l); color:var(--teal); }
-
-/* RICH ERROR CARD */
-.err-card { background:var(--bg); border:0.5px solid var(--red-m); border-radius:var(--r-lg); padding:20px; margin-bottom:12px; }
-.err-card-head { display:flex; align-items:flex-start; gap:12px; margin-bottom:12px; }
-.err-icon { width:32px; height:32px; border-radius:50%; background:var(--red-l); display:flex; align-items:center; justify-content:center; font-size:14px; flex-shrink:0; }
-.err-title { font-size:14px; font-weight:500; color:var(--red); margin-bottom:3px; }
-.err-msg { font-size:12px; color:var(--text-2); line-height:1.6; }
-.err-actions { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
-.err-btn { padding:7px 14px; border-radius:var(--r-md); font-size:12px; cursor:pointer; font-family:inherit; font-weight:500; border:none; }
-.err-btn.primary { background:var(--blue); color:#fff; }
-.err-btn.secondary { background:var(--bg-2); color:var(--text); border:0.5px solid var(--border-2); }
-.err-btn.teal { background:var(--teal); color:#fff; }
-
-/* SESSION BROWSER */
-.session-browser { max-width:680px; margin:0 auto; }
-.browser-filters { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
-.filter-btn { padding:5px 12px; border:0.5px solid var(--border); border-radius:20px; background:var(--bg); font-size:12px; cursor:pointer; color:var(--text-2); font-family:inherit; transition:all .15s; }
-.filter-btn:hover { border-color:var(--border-2); }
-.filter-btn.act { border-color:var(--teal-m); background:var(--teal-l); color:var(--teal); font-weight:500; }
-.session-count { font-size:12px; color:var(--text-3); margin-bottom:10px; }
-.session-list { display:flex; flex-direction:column; gap:8px; max-height:320px; overflow-y:auto; }
-.session-item { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-md); padding:12px 16px; cursor:pointer; transition:all .15s; display:flex; align-items:center; gap:12px; }
-.session-item:hover { border-color:var(--teal-m); background:var(--teal-l); }
-.session-item.selected { border:1.5px solid var(--teal-m); background:var(--teal-l); }
-.si-score { font-size:22px; font-weight:600; width:54px; text-align:center; flex-shrink:0; }
-.si-score.pass { color:var(--green); }
-.si-score.fail { color:var(--red); }
-.si-body { flex:1; min-width:0; }
-.si-position { font-size:13px; font-weight:500; color:var(--text); margin-bottom:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.si-meta { font-size:11px; color:var(--text-3); }
-.si-seg { font-size:10px; font-weight:600; padding:1px 6px; border-radius:10px; }
-.si-seg.a { background:var(--blue-l); color:var(--blue); }
-.si-seg.b { background:var(--purple-l); color:var(--purple); }
-.browser-empty { text-align:center; padding:32px 16px; color:var(--text-3); font-size:13px; }
-.browser-loading { display:flex; align-items:center; gap:8px; padding:20px; color:var(--text-3); font-size:13px; }
-
-/* SAVE INDICATOR */
-.save-banner { background:var(--teal-l); border:0.5px solid var(--teal-m); border-radius:var(--r-md); padding:10px 14px; font-size:12px; color:var(--teal); margin-bottom:12px; display:none; }
-.save-banner.show { display:flex; align-items:center; gap:8px; }
-
-
-/* ════════════════════════════════
-   SAFE EXAM BROWSER LAYOUT
-════════════════════════════════ */
-/* TOP BAR */
-.seb-topbar { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-lg); padding:12px 16px; margin-bottom:14px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
-.seb-info { flex:1; min-width:0; }
-.seb-title { font-size:13px; font-weight:500; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.seb-sub { font-size:11px; color:var(--text-3); margin-top:1px; }
-.seb-stats { display:flex; gap:16px; flex-shrink:0; }
-.seb-stat { text-align:center; }
-.seb-stat span:first-child { font-size:18px; font-weight:600; color:var(--text); display:block; line-height:1; }
-.seb-stat-lbl { font-size:10px; color:var(--text-3); }
-.seb-submit-btn { background:var(--blue); color:#fff; border:none; padding:8px 18px; border-radius:var(--r-md); font-size:13px; font-weight:500; cursor:pointer; font-family:inherit; white-space:nowrap; transition:background .15s; }
-.seb-submit-btn:hover { background:var(--blue-d); }
-
-/* LAYOUT */
-.seb-layout { display:grid; grid-template-columns:200px 1fr; gap:14px; align-items:start; }
-@media(max-width:640px) { .seb-layout { grid-template-columns:1fr; } .seb-nav { order:2; } .seb-qpane { order:1; } }
-
-/* NAV PANEL */
-.seb-nav { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-lg); padding:14px; position:sticky; top:14px; max-height:calc(100vh - 28px); overflow-y:auto; }
-.seb-nav-head { margin-bottom:10px; }
-.seb-legend { display:flex; flex-direction:column; gap:4px; }
-.seb-leg { font-size:10px; color:var(--text-3); display:flex; align-items:center; gap:5px; }
-.seb-dot { width:10px; height:10px; border-radius:3px; flex-shrink:0; }
-.seb-dot.unanswered { background:var(--bg-3); border:0.5px solid var(--border-2); }
-.seb-dot.answered   { background:var(--blue-l); border:0.5px solid var(--blue-m); }
-.seb-dot.yakin      { background:var(--green-l); border:0.5px solid var(--green-m); }
-.seb-dot.ragu       { background:var(--amber-l); border:0.5px solid var(--amber-m); }
-.seb-dot.tandai     { background:var(--red-l); border:0.5px solid var(--red-m); }
-.seb-dot.current    { background:var(--blue); }
-.seb-dot.case-q     { border-radius:50%; }
-
-/* NAV GRID */
-.seb-nav-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:4px; margin-bottom:10px; }
-.seb-nav-btn { width:100%; aspect-ratio:1; border:none; border-radius:4px; font-size:11px; font-weight:500; cursor:pointer; font-family:inherit; transition:all .1s; background:var(--bg-3); color:var(--text-3); border:0.5px solid var(--border); }
-.seb-nav-btn:hover { border-color:var(--border-2); }
-.seb-nav-btn.current  { background:var(--blue); color:#fff; border-color:var(--blue); }
-.seb-nav-btn.answered { background:var(--blue-l); color:var(--blue-d); border-color:var(--blue-m); }
-.seb-nav-btn.yakin    { background:var(--green-l); color:var(--green); border-color:var(--green-m); }
-.seb-nav-btn.ragu     { background:var(--amber-l); color:var(--amber); border-color:var(--amber-m); }
-.seb-nav-btn.tandai   { background:var(--red-l); color:var(--red); border-color:var(--red-m); }
-.seb-nav-btn.case-q   { border-radius:50%; }
-.seb-nav-btn.loading-q { opacity:.4; cursor:default; }
-.seb-nav-btn.generating { animation:nav-pulse 1s ease-in-out infinite; }
-@keyframes nav-pulse { 0%,100%{opacity:.4} 50%{opacity:.9} }
-
-/* NAV SECTION LABELS */
-.seb-nav-sections { display:flex; flex-direction:column; gap:4px; border-top:0.5px solid var(--border); padding-top:10px; }
-.seb-nav-sec { font-size:10px; color:var(--text-3); display:flex; align-items:center; gap:6px; }
-.seb-nav-sec-dot { width:8px; height:8px; border-radius:2px; flex-shrink:0; }
-.seb-nav-sec-dot.reg { background:var(--amber-l); border:0.5px solid var(--amber-m); }
-.seb-nav-sec-dot.cas { background:var(--purple-l); border:0.5px solid var(--purple-m); border-radius:50%; }
-
-/* QUESTION PANE */
-.seb-qpane { }
-
-/* CONFIDENCE BAR */
-.conf-bar { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--r-md); padding:10px 14px; margin-bottom:12px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
-.conf-label { font-size:12px; color:var(--text-2); flex-shrink:0; }
-.conf-btn { padding:5px 12px; border-radius:20px; font-size:12px; font-weight:500; cursor:pointer; font-family:inherit; border:0.5px solid; transition:all .12s; background:var(--bg-2); }
-.conf-btn.yakin  { color:var(--green); border-color:var(--green-m); }
-.conf-btn.ragu   { color:var(--amber); border-color:var(--amber-m); }
-.conf-btn.tandai { color:var(--red);   border-color:var(--red-m);   }
-.conf-btn.yakin.active  { background:var(--green-l); }
-.conf-btn.ragu.active   { background:var(--amber-l); }
-.conf-btn.tandai.active { background:var(--red-l); }
-
-/* NAV BUTTONS */
-.seb-nav-btns { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
-.seb-prev, .seb-next, .seb-skip { flex:1; min-width:100px; text-align:center; }
-.seb-next { background:var(--blue); color:#fff; border-color:var(--blue); }
-.seb-next:hover { background:var(--blue-d); }
-
-/* SUBMIT CONFIRM MODAL */
-.modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,.4); display:flex; align-items:center; justify-content:center; z-index:200; padding:20px; }
-.modal-box { background:var(--bg); border-radius:var(--r-xl); padding:28px; max-width:420px; width:100%; }
-.modal-title { font-size:16px; font-weight:500; margin-bottom:8px; }
-.modal-body { font-size:13px; color:var(--text-2); line-height:1.7; margin-bottom:20px; }
-.modal-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:20px; }
-.modal-stat { text-align:center; background:var(--bg-2); border-radius:var(--r-md); padding:10px; }
-.modal-stat-num { font-size:20px; font-weight:600; }
-.modal-stat-lbl { font-size:10px; color:var(--text-3); margin-top:2px; }
-.modal-actions { display:flex; gap:10px; }
 
 @media (max-width: 600px) {
   .main { padding: 16px 14px 56px; }
   .topbar { padding: 0 14px; }
-  .key-wrap input { width: 140px; }
   .res-score { font-size: 56px; }
-  .pos-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -449,67 +256,31 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
     <div class="topbar-logo">DJP</div>
     <div>
       <div class="topbar-title">Uji Kompetensi Teknis</div>
-      <div class="topbar-sub">Jabatan Struktural KPP · 60 Soal</div>
+      <div class="topbar-sub">Jabatan Struktural KPP · Sesi Arsip</div>
     </div>
-  </div>
-  <div id="access-indicator" style="display:none">
-    <span class="access-chip" id="access-chip"></span>
   </div>
 </div>
 
 <div class="main">
 
 <!-- ══ GATE ══ -->
-<div class="screen" id="screen-gate">
+<div class="screen active" id="screen-gate">
   <div class="gate-hero">
     <h1>Latihan Uji Kompetensi Teknis</h1>
-    <p>Platform latihan soal berbasis AI untuk persiapan uji kompetensi jabatan struktural Kantor Pelayanan Pajak — Direktorat Jenderal Pajak.</p>
+    <p>Platform latihan soal untuk persiapan uji kompetensi jabatan struktural Kantor Pelayanan Pajak. Pilih sesi dari arsip di bawah untuk memulai latihan.</p>
     <div>
       <span class="gate-chip">60 Soal per Sesi</span>
       <span class="gate-chip">40 Pilihan Ganda</span>
       <span class="gate-chip">4 Kasus × 5 Soal</span>
-      <span class="gate-chip">Pembahasan AI</span>
+      <span class="gate-chip">Pembahasan Lengkap</span>
     </div>
   </div>
 
-  <!-- STATUS WIDGET -->
-  <div class="status-widget" id="status-widget">
-    <div class="status-top">
-      <div class="status-title"><div class="pulse loading" id="s-pulse"></div>Status Layanan</div>
-      <div class="concurrent-badge">&#128100; <span class="concurrent-num" id="s-concurrent">—</span> pengguna aktif</div>
-    </div>
-    <div class="status-bar-wrap">
-      <div class="status-bar-track"><div class="status-bar-fill loading" id="s-bar" style="width:60%"></div></div>
-    </div>
-    <div class="status-stats">
-      <div class="stat-box"><div class="stat-num" id="s-sessions-left">—</div><div class="stat-lbl">Sesi tersisa<br>(real-time)</div></div>
-      <div class="stat-box"><div class="stat-num" id="s-served">—</div><div class="stat-lbl">Sesi selesai<br>(otomatis)</div></div>
-      <div class="stat-box"><div class="stat-num" id="s-cost">—</div><div class="stat-lbl">Biaya per<br>sesi</div></div>
-    </div>
-    <div class="status-msg" id="s-msg">Memuat status layanan…</div>
-    <div class="donate-strip">
-      <div class="donate-text">Layanan ini gratis dan didanai dari kantong pribadi. Donasi membantu server tetap hidup. 🙏</div>
-      <a href="/donate.html" class="donate-btn">Dukung Layanan →</a>
-    </div>
-  </div>
-
-  <!-- MODE TOGGLE -->
-  <div class="mode-toggle" id="mode-toggle">
-    <button class="mode-btn active-live" id="mode-live" onclick="selectMode('live')">
-      <div class="mode-title">Latihan Live <span class="mode-tag live">pakai kredit AI</span></div>
-      <div class="mode-desc">Soal dibuat real-time oleh AI. Setiap sesi unik dan berbeda.</div>
-    </button>
-    <button class="mode-btn" id="mode-static" onclick="selectMode('static')">
-      <div class="mode-title">Latihan dari Arsip <span class="mode-tag free">gratis</span></div>
-      <div class="mode-desc">Gunakan sesi yang sudah diselesaikan pengguna lain. Hemat kredit AI.</div>
-    </button>
-  </div>
-
-  <!-- SESSION BROWSER (shown when static mode) -->
-  <div class="session-browser" id="session-browser" style="display:none">
-    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:20px;">
-      <div style="font-size:14px;font-weight:500;margin-bottom:4px;">Pilih Sesi dari Arsip</div>
-      <p style="font-size:12px;color:var(--text-2);margin-bottom:14px;line-height:1.6;">Sesi-sesi di bawah diselesaikan pengguna lain dan disimpan otomatis. Pilih satu untuk mulai latihan tanpa menggunakan kredit AI.</p>
+  <!-- SESSION BROWSER -->
+  <div class="session-browser">
+    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:22px;">
+      <div style="font-size:15px;font-weight:500;margin-bottom:4px;">Pilih Sesi dari Arsip</div>
+      <p style="font-size:12px;color:var(--text-2);margin-bottom:16px;line-height:1.6;">Sesi-sesi di bawah telah tersimpan di repositori. Pilih satu untuk mulai latihan.</p>
       <div class="browser-filters" id="browser-filters">
         <button class="filter-btn act" onclick="filterSessions('all',this)">Semua</button>
         <button class="filter-btn" onclick="filterSessions('A',this)">Jabatan Pengawas</button>
@@ -519,141 +290,10 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
       <div class="session-list" id="session-list">
         <div class="browser-loading"><div class="spin"></div><span>Mengambil data dari arsip…</span></div>
       </div>
-      <div style="margin-top:14px;display:flex;gap:8px;">
+      <div style="margin-top:16px;">
         <button class="btn btn-p" id="start-static-btn" onclick="startStaticSession()" style="display:none">Mulai Sesi Terpilih →</button>
-        <button class="btn btn-o" onclick="selectMode('live')" style="font-size:12px">Buat soal baru saja</button>
       </div>
     </div>
-  </div>
-
-  <!-- SEGMENT SELECTOR (shown when live mode) -->
-  <div id="live-segment-area">
-  <div style="max-width:640px;margin:0 auto 20px;">
-    <div style="font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--text-3);text-align:center;margin-bottom:12px;">Pilih segmen jabatan yang kamu tuju</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;" id="segment-grid">
-
-      <div class="seg-card" id="seg-a" onclick="selectSegment('A')">
-        <div class="seg-badge" style="background:var(--blue-l);color:var(--blue);border-color:var(--blue-m)">Jabatan Pengawas</div>
-        <div class="seg-title">Kepala Seksi</div>
-        <div class="seg-level">Level kompetensi 2–3</div>
-        <div class="seg-desc">Kasi Pengawasan, Kasi Pelayanan, Kasi P3, Kasi PKD, Kasubbag SUKI</div>
-        <div class="seg-indicator">
-          <span class="seg-lvl-pill">Level 2 — Dasar</span>
-          <span class="seg-lvl-pill">Level 3 — Menengah</span>
-        </div>
-      </div>
-
-      <div class="seg-card" id="seg-b" onclick="selectSegment('B')">
-        <div class="seg-badge" style="background:var(--purple-l);color:var(--purple);border-color:var(--purple-m)">Jabatan Administrator</div>
-        <div class="seg-title">Kepala Kantor</div>
-        <div class="seg-level">Level kompetensi 3–4</div>
-        <div class="seg-desc">Kepala KPP, Kepala KP2KP</div>
-        <div class="seg-indicator">
-          <span class="seg-lvl-pill">Level 3 — Menengah</span>
-          <span class="seg-lvl-pill">Level 4 — Mumpuni</span>
-        </div>
-      </div>
-
-    </div>
-
-    <div id="seg-enter-wrap" style="display:none">
-      <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:22px;text-align:center;">
-        <div style="font-size:14px;font-weight:500;margin-bottom:6px;" id="seg-enter-title">—</div>
-        <div style="font-size:12px;color:var(--text-2);margin-bottom:16px;line-height:1.6;" id="seg-enter-desc">—</div>
-        <button class="btn btn-p" style="width:100%;font-size:15px;padding:12px;" onclick="enterApp()">Mulai Latihan →</button>
-        <p style="font-size:11px;color:var(--text-3);margin-top:12px;line-height:1.6;">
-          Layanan ini berbiaya operasional. Jika kamu merasa terbantu,
-          <a href="/donate.html" style="color:var(--amber-m);text-decoration:none;font-weight:500">pertimbangkan donasi kecil</a> 🙏
-        </p>
-      </div>
-    </div>
-  </div>
-  </div><!-- /live-segment-area -->
-</div>
-
-<!-- ══ SELECT ══ -->
-<div class="screen" id="screen-select">
-  <!-- Back button -->
-  <div style="margin-bottom:18px;">
-    <button class="btn btn-o" style="font-size:12px;padding:6px 14px;" onclick="goGate()">← Kembali</button>
-  </div>
-
-  <div style="margin-bottom:22px">
-    <div style="font-size:11px;color:var(--text-3);margin-bottom:4px;" id="select-segment-label">—</div>
-    <h2 style="font-size:18px;font-weight:500;margin-bottom:6px" id="select-title">Pilih Jabatan yang Dituju</h2>
-    <p style="font-size:13px;color:var(--text-2)">Format ujian: <strong>60 soal</strong> — 40 pilihan ganda + 4 studi kasus × 5 soal. Threshold kelulusan 60%.</p>
-  </div>
-  <div class="label">Jabatan yang tersedia</div>
-  <div class="pos-grid" id="pos-grid"></div>
-  <div id="comp-area" style="display:none">
-    <div class="label">Kompetensi teknis yang diujikan</div>
-    <div class="pill-row" id="comp-pills"></div>
-    <hr class="div">
-    <div class="label">Format ujian</div>
-    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:16px 18px;margin-bottom:22px;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-      <div style="text-align:center;padding:12px;background:var(--amber-l);border-radius:var(--r-md)">
-        <div style="font-size:28px;font-weight:600;color:var(--amber-m)">40</div>
-        <div style="font-size:11px;color:var(--amber);margin-top:3px">Soal Pilihan Ganda</div>
-      </div>
-      <div style="text-align:center;padding:12px;background:var(--purple-l);border-radius:var(--r-md)">
-        <div style="font-size:28px;font-weight:600;color:var(--purple-m)">4 × 5</div>
-        <div style="font-size:11px;color:var(--purple);margin-top:3px">Studi Kasus</div>
-      </div>
-    </div>
-    <button class="btn btn-p" id="start-quiz-btn" onclick="startQuiz()" style="width:100%;padding:12px;font-size:15px;">Mulai Latihan 60 Soal →</button>
-    <p style="font-size:11px;color:var(--text-3);margin-top:10px;text-align:center;">Semua 60 soal akan dibuat terlebih dahulu sebelum ujian dimulai.</p>
-  </div>
-</div>
-
-<!-- ══ LOADING ══ -->
-<div class="screen" id="screen-loading">
-  <div style="max-width:560px;margin:32px auto 0;">
-
-    <!-- Header -->
-    <div style="text-align:center;margin-bottom:20px;">
-      <div style="font-size:18px;font-weight:500;margin-bottom:6px;" id="load-title">Menyiapkan 60 Soal…</div>
-      <div style="font-size:13px;color:var(--text-2);line-height:1.65;" id="load-sub">Semua soal dibuat sekaligus sebelum ujian dimulai agar kamu bisa navigasi bebas antar soal tanpa biaya tambahan.</div>
-    </div>
-
-    <!-- Progress card -->
-    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);padding:22px;margin-bottom:14px;">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-        <span style="font-size:13px;font-weight:500;color:var(--text);" id="load-count">0 / 60 soal</span>
-        <span style="font-size:13px;font-weight:500;color:var(--blue);" id="load-pct">0%</span>
-      </div>
-      <div style="height:8px;background:var(--bg-3);border-radius:4px;overflow:hidden;margin-bottom:14px;">
-        <div id="load-bar" style="height:100%;background:var(--blue-m);border-radius:4px;width:0%;transition:width .5s ease;"></div>
-      </div>
-      <div style="font-size:12px;color:var(--text-2);margin-bottom:12px;min-height:16px;" id="load-status">Memulai…</div>
-      <div style="display:flex;align-items:center;gap:6px;margin-bottom:14px;">
-        <div id="load-timer" style="font-size:11px;color:var(--text-3);"></div>
-        <div style="flex:1;"></div>
-        <div id="load-eta" style="font-size:11px;color:var(--text-3);"></div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;gap:4px;justify-content:center;" id="load-dots"></div>
-    </div>
-
-    <!-- Time estimate info -->
-    <div style="background:var(--amber-l);border:0.5px solid var(--amber-m);border-radius:var(--r-lg);padding:14px 16px;margin-bottom:14px;">
-      <div style="font-size:12px;font-weight:500;color:var(--amber);margin-bottom:6px;">⏱ Estimasi waktu persiapan</div>
-      <div style="font-size:12px;color:var(--text-2);line-height:1.7;">
-        Pembuatan 60 soal membutuhkan <strong>64 permintaan ke AI</strong> secara berurutan.
-        Estimasi: <strong>10–15 menit</strong> tergantung kecepatan server.<br>
-        <span style="color:var(--text-3);">Harap biarkan tab ini tetap terbuka selama proses berlangsung.</span>
-      </div>
-    </div>
-
-    <!-- Incomplete session info -->
-    <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:14px 16px;">
-      <div style="font-size:12px;font-weight:500;color:var(--text);margin-bottom:6px;">💡 Jika sesi tidak selesai?</div>
-      <div style="font-size:12px;color:var(--text-2);line-height:1.7;">
-        Soal yang sudah terbuat <strong>tidak terbuang</strong> — biaya API hanya dikenakan untuk soal yang berhasil dibuat.
-        Jika gagal di tengah jalan, kamu bisa klik <strong>"Lanjutkan"</strong> untuk melanjutkan dari soal yang gagal tanpa mengulang dari awal.
-        Sesi baru yang lengkap secara otomatis tersimpan ke arsip untuk pengguna lain.
-      </div>
-    </div>
-
-    <div class="err" id="load-err" style="margin-top:14px;"></div>
   </div>
 </div>
 
@@ -698,11 +338,9 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
       <div class="err" id="err-banner" style="margin-bottom:12px;"></div>
       <div id="section-notice"></div>
       <div id="q-area"></div>
-
-      <!-- Feedback (shown after answering) -->
       <div id="fb-area"></div>
 
-      <!-- Confidence tag bar (shown after answering, BELOW feedback) -->
+      <!-- Confidence tag bar -->
       <div class="conf-bar" id="conf-bar" style="display:none">
         <span class="conf-label">Tandai tingkat keyakinan:</span>
         <button class="conf-btn yakin" id="conf-yakin" onclick="setConfidence('yakin')">✓ Yakin</button>
@@ -723,7 +361,6 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 
 <!-- ══ RESULT ══ -->
 <div class="screen" id="screen-result">
-  <div class="save-banner" id="save-banner" style="margin-bottom:12px;"></div>
   <div style="background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-xl);overflow:hidden;">
     <div class="res-hero">
       <div class="res-score" id="r-score">—</div>
@@ -732,15 +369,15 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
       <div class="res-pos" id="r-pos">—</div>
       <div class="res-grid" id="r-grid"></div>
       <div class="res-actions">
-        <button class="btn btn-o" onclick="goSelect()">Pilih jabatan lain</button>
-        <button class="btn btn-p" onclick="restartSame()">Ulangi sesi →</button>
+        <button class="btn btn-o" onclick="goGate()">← Pilih Sesi Lain</button>
+        <button class="btn btn-p" onclick="restartSame()">Ulangi Sesi Ini →</button>
       </div>
     </div>
   </div>
   <hr class="div">
   <div class="label">Review lengkap jawaban</div>
   <div id="review"></div>
-  <div style="text-align:center;margin-top:20px"><button class="btn btn-o" onclick="goSelect()">← Kembali</button></div>
+  <div style="text-align:center;margin-top:20px"><button class="btn btn-o" onclick="goGate()">← Kembali ke Arsip</button></div>
 </div>
 
 </div><!-- /main -->
@@ -749,826 +386,249 @@ hr.div { border: none; border-top: 0.5px solid var(--border); margin: 22px 0; }
 "use strict";
 
 /* ────────────────────────────────────
-   POSITION DATA
-──────────────────────────────────── */
-// Segment A — Jabatan Pengawas (Kepala Seksi), Level 2–3
-const POSITIONS_PENGAWAS = [
-  { id:"kasi_pengawasan", name:"Kepala Seksi Pengawasan", segment:"A",
-    levelDesc:"Jabatan Pengawas — Level 2–3",
-    competencies:[
-      {name:"Analisis Kepatuhan Wajib Pajak",level:3},
-      {name:"Ekstensifikasi Perpajakan",level:3},
-      {name:"Analisis Potensi Pajak",level:3},
-      {name:"Profiling Wajib Pajak",level:3},
-      {name:"Pemeriksaan Pajak",level:2},
-      {name:"Advokasi Kebijakan Perpajakan",level:2}
-    ]},
-  { id:"kasi_pkd", name:"Kepala Seksi Penjaminan Kualitas Data", segment:"A",
-    levelDesc:"Jabatan Pengawas — Level 2–3",
-    competencies:[
-      {name:"Analisis Potensi Pajak",level:3},
-      {name:"Profiling Wajib Pajak",level:3},
-      {name:"Pengelolaan Database",level:2},
-      {name:"Pengelolaan Aplikasi Umum dan Khusus",level:3},
-      {name:"Pengelolaan Jaringan Internet",level:3},
-      {name:"Advokasi Kebijakan Perpajakan",level:2}
-    ]},
-  { id:"kasi_p3", name:"Kepala Seksi Pemeriksaan, Penilaian, dan Penagihan", segment:"A",
-    levelDesc:"Jabatan Pengawas — Level 2–3",
-    competencies:[
-      {name:"Pemeriksaan Pajak",level:3},
-      {name:"Penilaian Untuk Tujuan Perpajakan di Bidang Bisnis",level:2},
-      {name:"Pelaksanaan Pemetaan untuk Tujuan Perpajakan",level:3},
-      {name:"Penatausahaan Penagihan Pajak",level:3},
-      {name:"Pelaksanaan Tindakan Penagihan Pajak",level:3},
-      {name:"Advokasi Kebijakan Perpajakan",level:2}
-    ]},
-  { id:"kasi_pelayanan", name:"Kepala Seksi Pelayanan", segment:"A",
-    levelDesc:"Jabatan Pengawas — Level 2–3",
-    competencies:[
-      {name:"Advokasi Kebijakan Perpajakan",level:3},
-      {name:"Analisis Dokumen Layanan Perpajakan",level:3},
-      {name:"Penyusunan Informasi Publik di Bidang Perpajakan",level:3},
-      {name:"Pengelolaan Pengaduan Masyarakat di Bidang Perpajakan",level:3},
-      {name:"Inovasi Pelayanan Publik",level:2},
-      {name:"Pengelolaan Arsip Dinamis",level:2}
-    ]},
-  { id:"kasubbag_suki", name:"Kepala Subbagian Umum & Kepatuhan Internal", segment:"A",
-    levelDesc:"Jabatan Pengawas — Level 2–3",
-    competencies:[
-      {name:"Manajemen Perkantoran",level:3},
-      {name:"Manajemen Kinerja Organisasi",level:2},
-      {name:"Advokasi Kebijakan Penganggaran",level:3},
-      {name:"Advokasi Kebijakan Pengelolaan Kekayaan Negara/Daerah",level:2},
-      {name:"Manajemen SDM ASN",level:3},
-      {name:"Penegakan Integritas ASN",level:3}
-    ]}
-];
-
-// Segment B — Jabatan Administrator (Kepala Kantor / Eselon III), Level 3–4
-const POSITIONS_ADMINISTRATOR = [
-  { id:"kakpp", name:"Kepala Kantor Pelayanan Pajak", segment:"B",
-    levelDesc:"Jabatan Administrator — Level 3–4",
-    competencies:[
-      {name:"Advokasi Kebijakan Perpajakan",level:3},
-      {name:"Analisis Kepatuhan Wajib Pajak",level:4},
-      {name:"Analisis Dokumen Layanan Perpajakan",level:3},
-      {name:"Analisis Potensi Pajak",level:4},
-      {name:"Ekstensifikasi Perpajakan",level:3},
-      {name:"Pelaksanaan Tindakan Penagihan Pajak",level:3}
-    ]},
-  { id:"kakp2kp", name:"Kepala KP2KP", segment:"B",
-    levelDesc:"Jabatan Administrator — Level 3–4",
-    competencies:[
-      {name:"Advokasi Kebijakan Perpajakan",level:3},
-      {name:"Analisis Dokumen Layanan Perpajakan",level:3},
-      {name:"Analisis Kepatuhan Wajib Pajak",level:3},
-      {name:"Penyusunan Informasi Publik di Bidang Perpajakan",level:3},
-      {name:"Pengelolaan Pengaduan Masyarakat di Bidang Perpajakan",level:3},
-      {name:"Ekstensifikasi Perpajakan",level:3}
-    ]}
-];
-
-// Active positions — set by segment selection
-let POSITIONS = POSITIONS_PENGAWAS;
-
-/* ────────────────────────────────────
-   SESSION PLAN CONSTANTS
-   Total: 60 = 40 regular + 4 cases × 5 sub-questions
-   Layout: 10 regular → case 1 (5) → 10 regular → case 2 (5) → 10 regular → case 3 (5) → 10 regular → case 4 (5)
-──────────────────────────────────── */
-const TOTAL_QUESTIONS = 60;      // total items answered
-const REGULAR_COUNT = 40;
-const CASE_COUNT = 4;
-const SUBS_PER_CASE = 5;
-// Positions in the 0-59 sequence where cases START:
-// after item 10,20,30,40 (0-indexed: after answering items 0-9, 10-19, etc.)
-// Sequence: 0-9 reg (10), 10-14 case1 (5), 15-24 reg (10), 25-29 case2 (5), 30-39 reg (10), 40-44 case3(5), 45-54 reg(10), 55-59 case4(5)
-// We'll build a PLAN array describing each "slot"
-function buildPlan() {
-  const plan = [];
-  // Order: 4 case blocks first (0-19), then 40 regular (20-59)
-  // Cases come first = generated while API is fresh, not fatigued
-  for (let c = 0; c < 4; c++) {
-    for (let s = 0; s < 5; s++) plan.push({type:'case', caseIdx: c, subIdx: s});
-  }
-  for (let i = 0; i < 40; i++) plan.push({type:'regular', block: Math.floor(i/10)});
-  return plan; // 60 items
-}
-
-/* ────────────────────────────────────
    STATE
 ──────────────────────────────────── */
-let apiKey = "";
-let selectedPos = null;
-let plan = [];
-let questions = [];      // all 60 question objects, pre-generated
-let currentQ = 0;        // current question index (0-based)
-let answers = [];        // {chosen, correct, isCorrect, options} per slot
-let confidences = [];    // "yakin"|"ragu"|"tandai"|null per slot
-let generated = [];      // true once question at index is ready
-let correctCount = 0;
+let questions      = [];   // all question objects from saved session
+let plan           = [];   // [{type, caseIdx, subIdx}] parallel to questions
+let currentQ       = 0;
+let answers        = [];   // answer state per slot
+let confidences    = [];   // "yakin"|"ragu"|"tandai"|null per slot
+let correctCount   = 0;
 let regularCorrect = 0;
-let caseCorrect = 0;
-let answersLog = [];
-let caseVignettes = {};   // caseIdx → {title, body, comp}
-let slotAnswered = false;
+let caseCorrect    = 0;
+let answersLog     = [];
+let caseVignettes  = {};
+let selectedPos    = null; // { name, ... }
+let activeSegment  = "A";
+
+// Session library
+let allSessions           = [];
+let selectedStaticSession = null;
+let lastPlayedSession     = null; // for restartSame()
 
 /* ────────────────────────────────────
-   API KEY
+   INIT
 ──────────────────────────────────── */
-// accessType: "team" | "paid" | "server"
-let accessType = "server";
-let sessionKeyUsed = null;
-
-async function initApp() {
-  // Always show gate — open access
-  showScreen("screen-gate");
-}
-
-let activeSegment = "A";
-
-function selectSegment(seg) {
-  activeSegment = seg;
-  POSITIONS = seg === "A" ? POSITIONS_PENGAWAS : POSITIONS_ADMINISTRATOR;
-  // Update card styles
-  document.getElementById("seg-a").className = "seg-card" + (seg==="A" ? " active-a" : "");
-  document.getElementById("seg-b").className = "seg-card" + (seg==="B" ? " active-b" : "");
-  // Show enter button with segment-appropriate text
-  const wrap = document.getElementById("seg-enter-wrap");
-  wrap.style.display = "block";
-  if (seg === "A") {
-    document.getElementById("seg-enter-title").textContent = "Latihan untuk Jabatan Pengawas (Kepala Seksi)";
-    document.getElementById("seg-enter-desc").textContent = "Soal dirancang pada Level 2–3: analisis data, bimbingan teknis, dan penyelesaian masalah operasional. Sesuai standar KMK 434/MK/PJ/2025.";
-  } else {
-    document.getElementById("seg-enter-title").textContent = "Latihan untuk Jabatan Administrator (Kepala Kantor)";
-    document.getElementById("seg-enter-desc").textContent = "Soal dirancang pada Level 3–4: evaluasi kinerja, rekomendasi strategis, dan pengelolaan lintas fungsi. Sesuai standar KMK 271/MK/SJ/2025.";
-  }
-  wrap.scrollIntoView({behavior:"smooth", block:"nearest"});
-}
-
-function enterApp() {
-  apiKey = "__server__";
-  accessType = "open";
-  const label = activeSegment === "A" ? "Kasi (L2–3)" : "Kakpp (L3–4)";
-  setAccessIndicator("open", label);
-  showScreen("screen-select");
-  renderPositions();
-}
-
-function setAccessIndicator(type, label) {
-  const wrap = document.getElementById("access-indicator");
-  const chip = document.getElementById("access-chip");
-  wrap.style.display = "flex";
-  chip.textContent = label;
-  chip.className = "access-chip " + (type === "team" ? "team" : type === "open" ? "team" : "paid");
-}
-
-
+window.addEventListener("DOMContentLoaded", () => {
+  loadSessionLibrary();
+});
 
 /* ────────────────────────────────────
    SCREENS
 ──────────────────────────────────── */
-// showScreen defined below with status hooks
-function goSelect() {
-  selectedPos = null; caseVignettes = {};
-  questions = []; answers = []; confidences = []; generated = []; answersLog = [];
-  renderPositions();
-  document.getElementById("comp-area").style.display = "none";
-  showScreen("screen-select");
+function showScreen(id) {
+  document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
+  const el = document.getElementById(id);
+  if (el) el.classList.add("active");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
-function restartSame() {
-  questions = []; answers = []; confidences = []; generated = []; answersLog = [];
-  startQuiz();
-}
-
-/* ────────────────────────────────────
-   POSITION SELECTION
-──────────────────────────────────── */
-function renderPositions() {
-  const g = document.getElementById("pos-grid");
-  g.innerHTML = "";
-  // Update select screen header
-  const lbl = document.getElementById("select-segment-label");
-  const ttl = document.getElementById("select-title");
-  if (lbl && ttl) {
-    if (activeSegment === "B") {
-      lbl.textContent = "Segmen B — Jabatan Administrator";
-      ttl.textContent = "Pilih Jabatan Administrator yang Dituju";
-    } else {
-      lbl.textContent = "Segmen A — Jabatan Pengawas";
-      ttl.textContent = "Pilih Jabatan Kepala Seksi yang Dituju";
-    }
-  }
-  POSITIONS.forEach((p,i) => {
-    const d = document.createElement("div");
-    d.className = "pos-card" + (selectedPos && selectedPos.id===p.id ? " sel" : "");
-    d.onclick = () => selectPos(i);
-    // Build competency pill text: "Advokasi L3 · Analisis L3 · Inovasi L2"
-    const compSummary = p.competencies.map(c => {
-      const short = c.name.split(' ').slice(0,2).join(' ');
-      return `${short} L${c.level}`;
-    }).join(' · ');
-    d.innerHTML = `<div class="pname">${p.name}</div><div class="plevel" style="font-size:10px;line-height:1.5;">${compSummary}</div><span class="pbadge">${p.competencies.length} kompetensi</span>`;
-    g.appendChild(d);
-  });
-}
-function selectPos(i) {
-  selectedPos = POSITIONS[i];
-  renderPositions();
-  const pills = document.getElementById("comp-pills");
-  pills.innerHTML = "";
-  selectedPos.competencies.forEach(c => {
-    const el = document.createElement("div");
-    el.className = "pill g";
-    el.textContent = `${c.name} — Level ${c.level}`;
-    pills.appendChild(el);
-  });
-  document.getElementById("comp-area").style.display = "";
-  document.getElementById("comp-area").scrollIntoView({behavior:"smooth",block:"nearest"});
-}
-
-/* ────────────────────────────────────
-   START QUIZ
-──────────────────────────────────── */
-/* ────────────────────────────────────
-   HELPERS — PICK COMPETENCY & VIGNETTE
-──────────────────────────────────── */
-function pickComp() {
-  const comps = selectedPos.competencies;
-  return comps[Math.floor(Math.random() * comps.length)];
-}
-
-async function generateCaseVignette(caseIdx) {
-  const comp = selectedPos.competencies[caseIdx % selectedPos.competencies.length];
-  const existingTitles = Object.values(caseVignettes).map(v => v.title).join(", ");
-  const vigSegCtx = activeSegment === "B"
-    ? "Tantangan manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja, penetapan kebijakan operasional KPP, atau penanganan eskalasi dari kepala seksi."
-    : "Tantangan teknis tingkat seksi: penanganan kasus WP spesifik, pelaksanaan prosedur perpajakan, bimbingan kepada AR/pelaksana, atau penyelesaian masalah operasional seksi.";
-
-  const prompt = `Penyusun soal uji kompetensi teknis DJP Indonesia.
-
-Buat SKENARIO STUDI KASUS untuk jabatan: ${selectedPos.name}
-Fokus kompetensi: ${comp.name} (Level ${comp.level})
-Konteks jabatan: ${vigSegCtx}
-Kasus sebelumnya (JANGAN DUPLIKASI tema): ${existingTitles || "Belum ada"}
-
-Buat skenario nyata dan detail (160-200 kata) dengan: nama instansi/WP fiktif, data angka spesifik, tanggal, permasalahan jelas.
-Gunakan terminologi DJP yang tepat (NPWP, SPT, SKP, STP, LHP, dsb.)
-
-BALAS HANYA JSON (tanpa backtick):
-{"title":"judul singkat kasus (max 10 kata)","body":"teks skenario 160-200 kata","comp":"${comp.name}","compLevel":${comp.level}}`;
-
-  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 600);
-  const txt = data.content.filter(d => d.type === "text").map(d => d.text).join("").replace(/```json|```/g, "").trim();
-  let parsed;
-  try { parsed = JSON.parse(txt); }
-  catch(e) { 
-    // Fallback vignette if parse fails
-    parsed = { title: `Kasus ${caseIdx+1}: ${comp.name}`, body: `Skenario kasus untuk ${comp.name} di KPP. Kepala Seksi diminta mengevaluasi situasi terkait kompetensi ini dan menyusun rekomendasi tindak lanjut.`, comp: comp.name, compLevel: comp.level };
-  }
-  caseVignettes[caseIdx] = parsed;
-}
-
-/* ════════════════════════════════════
-   SEB QUIZ ENGINE — PRE-GEN ALL QS
-════════════════════════════════════ */
-
-// All questions pre-generated before quiz starts
-// questions[] is indexed 0–59, parallel to plan[]
-// State per slot: answers[], confidences[], generated[]
-// (variables declared in STATE block above: answers, confidences, generated, currentQ)
 
 function goGate() {
-  selectedPos = null;
-  questions = []; answers = []; confidences = []; generated = []; answersLog = [];
-  document.getElementById("comp-area").style.display = "none";
+  selectedStaticSession = null;
+  questions = []; answers = []; confidences = []; answersLog = [];
+  document.querySelectorAll(".session-item").forEach(el => el.classList.remove("selected"));
+  document.getElementById("start-static-btn").style.display = "none";
   showScreen("screen-gate");
 }
 
-
 /* ────────────────────────────────────
-   ANSWER DISTRIBUTION SHUFFLE
-   Prevents AI from always picking same letter.
-   After generating a question, shuffle options
-   so the correct answer rotates evenly across a,b,c,d.
+   SESSION LIBRARY
 ──────────────────────────────────── */
-let _answerRotation = ['a','b','c','d','c','b','d','a','b','d','a','c','d','a','c','b']; // 16-cycle sequence
-let _answerIdx = 0;
-
-function getNextCorrectSlot() {
-  // Returns the target letter for the correct answer in this slot
-  const letter = _answerRotation[_answerIdx % _answerRotation.length];
-  _answerIdx++;
-  return letter;
+async function loadSessionLibrary() {
+  document.getElementById("session-list").innerHTML =
+    `<div class="browser-loading"><div class="spin"></div><span>Mengambil sesi tersimpan…</span></div>`;
+  document.getElementById("session-count").textContent = "Memuat…";
+  try {
+    const res  = await fetch("/api/sessions");
+    const data = await res.json();
+    allSessions = data.sessions || [];
+    renderSessionList(allSessions);
+  } catch(e) {
+    document.getElementById("session-list").innerHTML =
+      `<div class="browser-empty">Gagal memuat arsip. Coba muat ulang halaman.<br><small style="color:var(--text-3)">${esc(e.message)}</small></div>`;
+    document.getElementById("session-count").textContent = "";
+  }
 }
 
-function shuffleQuestionOptions(q, targetCorrectLetter) {
-  // Rearrange options so the correct answer lands on targetCorrectLetter
-  // q.correct = current correct letter (e.g. "b")
-  // targetCorrectLetter = desired position (e.g. "a")
-  if (q.correct === targetCorrectLetter) return q; // already in place
-  const letters = ['a','b','c','d'];
-  const correctText = q.options[q.correct]; // the correct answer text
-  // Swap: put correct answer at targetCorrectLetter, move targetCorrectLetter's content to old correct position
-  const displaced = q.options[targetCorrectLetter];
-  q.options[targetCorrectLetter] = correctText;
-  q.options[q.correct] = displaced;
-  q.correct = targetCorrectLetter;
-  return q;
+function filterSessions(seg, btn) {
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("act"));
+  btn.classList.add("act");
+  const filtered = seg === "all" ? allSessions : allSessions.filter(s => s.segment === seg);
+  renderSessionList(filtered);
 }
 
-function startQuiz() {
-  if (!selectedPos) {
-    // Highlight the position grid so user knows to pick one
-    const grid = document.getElementById("pos-grid");
-    grid.style.outline = "2px solid var(--red-m)";
-    grid.style.borderRadius = "var(--r-lg)";
-    setTimeout(() => { grid.style.outline = ""; grid.style.borderRadius = ""; }, 2000);
-    // Show inline message
-    const btn = document.getElementById("start-quiz-btn");
-    if (btn) {
-      const orig = btn.textContent;
-      btn.textContent = "⚠ Pilih jabatan dulu di atas";
-      btn.style.background = "var(--amber-m)";
-      setTimeout(() => { btn.textContent = orig; btn.style.background = ""; }, 2000);
-    }
+function renderSessionList(sessions) {
+  const list  = document.getElementById("session-list");
+  const count = document.getElementById("session-count");
+  if (!sessions.length) {
+    list.innerHTML  = `<div class="browser-empty">Belum ada sesi tersimpan untuk filter ini.</div>`;
+    count.textContent = "0 sesi tersimpan";
     return;
   }
-  plan        = buildPlan();
-  questions   = new Array(TOTAL_QUESTIONS).fill(null);
-  confidences = new Array(TOTAL_QUESTIONS).fill(null);
-  answers     = new Array(TOTAL_QUESTIONS).fill(null);
-  generated   = new Array(TOTAL_QUESTIONS).fill(false);
-  caseVignettes = {};
-  currentQ    = 0;
-  _answerIdx  = 0; // reset answer rotation
+  count.textContent = `${sessions.length} sesi tersimpan`;
+  list.innerHTML = sessions.map(s => {
+    const pct  = Math.round((s.correct / s.totalQ) * 100);
+    const pass = pct >= 60;
+    const date = new Date(s.completedAt).toLocaleDateString("id-ID", { day:"numeric", month:"short", year:"numeric" });
+    return `<div class="session-item" id="si-${s.id}" onclick="selectStaticSession('${s.id}')">
+      <div class="si-score ${pass ? "pass" : "fail"}">${pct}%</div>
+      <div class="si-body">
+        <div class="si-position">${esc(s.position)}</div>
+        <div class="si-meta">${s.correct}/${s.totalQ} benar · ${date} · <span class="si-seg ${(s.segment||"").toLowerCase()}">${esc(s.segmentLabel || s.segment)}</span></div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function selectStaticSession(id) {
+  selectedStaticSession = allSessions.find(s => s.id === id) || { id };
+  document.querySelectorAll(".session-item").forEach(el => el.classList.remove("selected"));
+  const el = document.getElementById("si-" + id);
+  if (el) el.classList.add("selected");
+  document.getElementById("start-static-btn").style.display = "";
+}
+
+async function startStaticSession() {
+  if (!selectedStaticSession) return;
+  const btn = document.getElementById("start-static-btn");
+  btn.disabled = true; btn.textContent = "Memuat…";
+  try {
+    const res     = await fetch("/api/sessions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: "get", id: selectedStaticSession.id })
+    });
+    const session = await res.json();
+    if (session.error) throw new Error(session.error);
+    playStaticSession(session);
+  } catch(e) {
+    btn.disabled = false; btn.textContent = "Mulai Sesi Terpilih →";
+    alert("Gagal memuat sesi: " + e.message);
+  }
+}
+
+function playStaticSession(session) {
+  lastPlayedSession = session; // store for restartSame()
+
+  selectedPos   = { name: session.position, competencies: [] };
+  activeSegment = session.segment;
+  questions     = session.questions || [];
+  plan          = questions.map(q => ({ type: q.type || "regular", caseIdx: q.caseIdx, subIdx: q.subIdx }));
+
   correctCount = 0; regularCorrect = 0; caseCorrect = 0;
-  answersLog  = [];
-  slotAnswered = false;
+  answersLog   = [];
 
-  showScreen("screen-loading");
-  preGenerateAllQuestions();
-}
-
-/* ── PRE-GENERATION PHASE ─────────── */
-async function preGenerateAllQuestions() {
-  const total = TOTAL_QUESTIONS;
-  const startTime = Date.now();
-
-  const timerInterval = setInterval(() => {
-    const elapsed = Math.floor((Date.now() - startTime) / 1000);
-    const done = generated.filter(Boolean).length;
-    const el_min = Math.floor(elapsed/60), el_sec = elapsed % 60;
-    const timerEl = document.getElementById("load-timer");
-    const etaEl   = document.getElementById("load-eta");
-    if (timerEl) timerEl.textContent = `⏱ ${el_min}:${String(el_sec).padStart(2,'0')} berlalu`;
-    if (etaEl) {
-      if (done > 3) {
-        const rate = done / Math.max(elapsed, 1);
-        const rem  = Math.ceil((total - done) / rate);
-        etaEl.textContent = `~${Math.floor(rem/60)}:${String(rem%60).padStart(2,'0')} lagi`;
-      } else { etaEl.textContent = "estimasi 8–12 menit"; }
+  // Rebuild case vignettes from saved questions
+  caseVignettes = {};
+  questions.forEach(q => {
+    if (q.type === "case" && q.subIdx === 0 && q.vigTitle) {
+      caseVignettes[q.caseIdx] = { title: q.vigTitle, body: q.vigBody, comp: q.comp, compLevel: q.compLevel };
     }
-  }, 1000);
-
-  document.getElementById("load-title").textContent = `Menyiapkan ${total} soal…`;
-  document.getElementById("load-sub").textContent   = "Harap tunggu dan jangan tutup tab ini.";
-  buildLoadDots(total);
-
-  // ── PHASE 1: 4 bundled case calls (vignette + 5 soal per call = 4 calls total) ──
-  // Done FIRST while API is fresh. Each bundle = 1 API call instead of 6.
-  for (let caseIdx = 0; caseIdx < 4; caseIdx++) {
-    const startSlot = caseIdx * 5;
-    for (let s = 0; s < 5; s++) setLoadDot(startSlot + s, "generating");
-    updateLoadBar(startSlot, total);
-    document.getElementById("load-status").textContent = `Studi Kasus ${caseIdx+1}/4 — vignette + 5 soal (1 permintaan)…`;
-    try {
-      await generateCaseBundle(caseIdx);
-      for (let s = 0; s < 5; s++) {
-        generated[startSlot + s] = true;
-        setLoadDot(startSlot + s, "ready");
-      }
-    } catch(e) {
-      clearInterval(timerInterval);
-      setLoadDot(startSlot, "error");
-      document.getElementById("load-err").style.display = "block";
-      document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, startSlot);
-      return;
-    }
-    updateLoadBar((caseIdx + 1) * 5, total);
-    if (caseIdx < 3) await pauseBetweenCalls();
-  }
-
-  // ── PHASE 2: 40 regular questions ──
-  for (let i = 20; i < total; i++) {
-    setLoadDot(i, "generating");
-    updateLoadBar(i, total);
-    const comp = pickComp();
-    document.getElementById("load-status").textContent = `Soal reguler ${i - 19}/40: ${comp.name}…`;
-    try {
-      await generateRegularQuestionFor(i, comp);
-      generated[i] = true;
-      setLoadDot(i, "ready");
-    } catch(e) {
-      clearInterval(timerInterval);
-      setLoadDot(i, "error");
-      document.getElementById("load-err").style.display = "block";
-      document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, i);
-      return;
-    }
-    if (i < total - 1) await pauseBetweenCalls();
-  }
-
-  clearInterval(timerInterval);
-  updateLoadBar(total, total);
-  document.getElementById("load-status").textContent = "Semua soal siap!";
-  const etaEl2 = document.getElementById("load-eta"); if (etaEl2) etaEl2.textContent = "";
-  setTimeout(() => {
-    answersLog = [];
-    showScreen("screen-quiz");
-    buildNavGrid();
-    renderCurrentQuestion();
-  }, 600);
-}
-
-function buildLoadDots(total) {
-  const wrap = document.getElementById("load-dots");
-  wrap.innerHTML = "";
-  for (let i=0; i<total; i++) {
-    const d = document.createElement("div");
-    d.id = `ldot-${i}`;
-    d.style.cssText = "width:8px;height:8px;border-radius:2px;background:var(--bg-3);border:0.5px solid var(--border);transition:background .2s,border-color .2s;";
-    if (plan[i]?.type === "case") d.style.borderRadius = "50%";
-    wrap.appendChild(d);
-  }
-}
-
-function setLoadDot(i, state) {
-  const d = document.getElementById(`ldot-${i}`);
-  if (!d) return;
-  const styles = {
-    generating: "background:var(--amber-l);border-color:var(--amber-m);",
-    ready:      "background:var(--green-l);border-color:var(--green-m);",
-    error:      "background:var(--red-l);border-color:var(--red-m);"
-  };
-  d.style.cssText = d.style.cssText.replace(/background:[^;]+;border-color:[^;]+;/, "") + (styles[state] || "");
-}
-
-function updateLoadBar(done, total) {
-  const pct = Math.round((done/total)*100);
-  document.getElementById("load-bar").style.width = pct+"%";
-  document.getElementById("load-count").textContent = `${done} / ${total} soal`;
-  document.getElementById("load-pct").textContent   = pct+"%";
-}
-
-function buildErrorHtml(msg, fromSlot) {
-  let title="Gagal membuat soal", detail=msg, hint="";
-  if (msg.includes("429")||msg.toLowerCase().includes("rate")) {
-    title="Server sibuk"; detail="Terlalu banyak permintaan. Coba lagi dalam 30 detik."; hint="Tunggu sebentar lalu klik Lanjutkan.";
-  } else if (msg.includes("402")||msg.toLowerCase().includes("credit")) {
-    title="Saldo kredit habis"; detail="Kredit API sementara habis."; hint='Coba <a href="/donate.html" style="color:var(--amber-m)">donasi</a> untuk mengisi ulang, atau gunakan sesi dari arsip.';
-  } else if (msg.includes("401")||msg.includes("403")) {
-    title="Masalah autentikasi"; detail="API key bermasalah."; hint="";
-  } else if (msg.toLowerCase().includes("fetch")||msg.toLowerCase().includes("network")) {
-    title="Koneksi terputus"; detail="Gagal terhubung ke server."; hint="Periksa koneksi internet lalu coba lagi.";
-  }
-  return `<div class="err-card">
-    <div class="err-card-head"><div class="err-icon">⚠</div><div>
-      <div class="err-title">${title}</div>
-      <div class="err-msg">${detail}</div>
-    </div></div>
-    ${hint?`<div style="font-size:12px;color:var(--text-3);padding:8px 12px;background:var(--bg-2);border-radius:var(--r-md);margin-bottom:8px;">${hint}</div>`:""}
-    <div class="err-actions">
-      <button class="err-btn primary" onclick="retryPreGen(${fromSlot})">↺ Lanjutkan dari soal ${fromSlot+1}</button>
-      <button class="err-btn secondary" onclick="goToStaticMode()">Gunakan Sesi Arsip</button>
-      <a href="/donate.html" class="err-btn secondary" style="text-decoration:none">Donasi Saldo →</a>
-    </div></div>`;
-}
-
-async function retryPreGen(fromSlot) {
-  document.getElementById("load-err").style.display = "none";
-  const total = TOTAL_QUESTIONS;
-
-  // Retry case bundles first (slots 0-19)
-  for (let caseIdx = 0; caseIdx < 4; caseIdx++) {
-    const startSlot = caseIdx * 5;
-    if (startSlot + 4 < fromSlot) continue; // this bundle already done
-    if (generated[startSlot]) continue;
-    for (let s = 0; s < 5; s++) setLoadDot(startSlot + s, "generating");
-    document.getElementById("load-status").textContent = `Melanjutkan Studi Kasus ${caseIdx+1}…`;
-    try {
-      await generateCaseBundle(caseIdx);
-      for (let s = 0; s < 5; s++) { generated[startSlot+s]=true; setLoadDot(startSlot+s,"ready"); }
-    } catch(e) {
-      setLoadDot(startSlot, "error");
-      document.getElementById("load-err").style.display = "block";
-      document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, startSlot);
-      return;
-    }
-    if (caseIdx < 3) await pauseBetweenCalls();
-  }
-
-  // Retry regular questions (slots 20-59)
-  const regStart = Math.max(20, fromSlot);
-  for (let i = regStart; i < total; i++) {
-    if (generated[i]) continue;
-    setLoadDot(i, "generating");
-    updateLoadBar(i, total);
-    const comp = pickComp();
-    document.getElementById("load-status").textContent = `Melanjutkan soal reguler ${i-19}/40…`;
-    try {
-      await generateRegularQuestionFor(i, comp);
-      generated[i] = true;
-      setLoadDot(i, "ready");
-    } catch(e) {
-      setLoadDot(i, "error");
-      document.getElementById("load-err").style.display = "block";
-      document.getElementById("load-err").innerHTML = buildErrorHtml(e.message, i);
-      return;
-    }
-    if (i < total - 1) await pauseBetweenCalls();
-  }
-
-  updateLoadBar(total, total);
-  document.getElementById("load-status").textContent = "Semua soal siap!";
-  setTimeout(() => { showScreen("screen-quiz"); buildNavGrid(); renderCurrentQuestion(); }, 600);
-}
-
-/* ── CASE BUNDLE GENERATOR ───────────
-   One API call generates: vignette + 5 sub-questions.
-   Replaces 6 separate calls (1 vignette + 5 sub-questions).
-   Cuts total case API calls from 24 → 4.
-──────────────────────────────────── */
-async function generateCaseBundle(caseIdx) {
-  const comp = selectedPos.competencies[caseIdx % selectedPos.competencies.length];
-  const vigSegCtx = activeSegment === "B"
-    ? "manajerial tingkat kantor: koordinasi lintas seksi, evaluasi kinerja, penetapan kebijakan KPP"
-    : "teknis tingkat seksi: penanganan kasus WP, prosedur perpajakan, bimbingan kepada AR";
-
-  // ── CALL 1: Generate vignette only (~250 tokens, ~6s) ──
-  const vigPrompt = `Buat skenario studi kasus DJP untuk:
-Jabatan: ${selectedPos.name} | Kompetensi: ${comp.name} Level ${comp.level}
-Konteks: ${vigSegCtx}
-
-JSON (tanpa teks lain):
-{"title":"judul max 8 kata","body":"skenario 120-150 kata dengan nama WP fiktif, angka, permasalahan jelas","comp":"${comp.name}","compLevel":${comp.level}}`;
-
-  const vigData = await callAPIWithRetry(vigPrompt, "Balas HANYA JSON valid.", 600);
-  const vigTxt = vigData.content.filter(d=>d.type==="text").map(d=>d.text).join("").replace(/```json|```/g,"").trim();
-  let vignette;
-  try { vignette = JSON.parse(vigTxt); }
-  catch(e) { throw new Error(`Vignette Kasus ${caseIdx+1} tidak valid. Coba lagi.`); }
-  caseVignettes[caseIdx] = vignette;
-
-  await pauseBetweenCalls();
-
-  // ── CALL 2: Generate 5 sub-questions referencing the vignette (~1200 tokens, ~15s) ──
-  const aspects = [
-    "identifikasi masalah utama",
-    "analisis data relevan",
-    "evaluasi alternatif solusi",
-    "rekomendasi tindak lanjut",
-    "aspek prosedural atau risiko"
-  ];
-  const vigSnippet = (vignette.body || "").slice(0, 180);
-
-  const qPrompt = `Soal DJP — Studi Kasus.
-Skenario: "${vigSnippet}"
-Jabatan: ${selectedPos.name} | ${comp.name} L${comp.level}
-
-Buat 5 soal pilihan ganda (4 opsi, 1 benar, penjelasan 1 kalimat) untuk aspek:
-1. ${aspects[0]}  2. ${aspects[1]}  3. ${aspects[2]}  4. ${aspects[3]}  5. ${aspects[4]}
-
-JSON array (tanpa teks lain):
-[
-  {"q":1,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"a","explanation":"..."},
-  {"q":2,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"..."},
-  {"q":3,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"..."},
-  {"q":4,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"d","explanation":"..."},
-  {"q":5,"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"a","explanation":"..."}
-]`;
-
-  const qData = await callAPIWithRetry(qPrompt, "Balas HANYA JSON array valid. Tanpa teks lain.", 1800);
-  const qTxt = qData.content.filter(d=>d.type==="text").map(d=>d.text).join("").replace(/```json|```/g,"").trim();
-  let qArr;
-  try { qArr = JSON.parse(qTxt); }
-  catch(e) {
-    if (qTxt.length > 1600) throw new Error(`Soal Kasus ${caseIdx+1} terpotong. Coba lagi.`);
-    throw new Error(`Format soal Kasus ${caseIdx+1} tidak valid. Coba lagi.`);
-  }
-  if (!Array.isArray(qArr) || qArr.length < 5) {
-    throw new Error(`Soal Kasus ${caseIdx+1} tidak lengkap (${qArr?.length||0}/5). Coba lagi.`);
-  }
-
-  // Store 5 questions into correct plan slots
-  qArr.forEach((q, subIdx) => {
-    const slotIdx = caseIdx * 5 + subIdx;
-    const shuffled = shuffleQuestionOptions(
-      { ...q, type:"case", caseIdx, subIdx,
-        comp: comp.name, compLevel: comp.level,
-        vigTitle: vignette.title, vigBody: vignette.body,
-        source: `Materi Webinar KPP — ${comp.name} L${comp.level}`,
-        question: q.question, options: q.options, correct: q.correct, explanation: q.explanation
-      },
-      getNextCorrectSlot()
-    );
-    questions[slotIdx] = shuffled;
   });
+
+  document.getElementById("sess-title").textContent = session.position;
+  const segLabel = session.segment === "B" ? "Administrator/Kakpp — Level 3–4" : "Pengawas/Kasi — Level 2–3";
+  document.getElementById("sess-sub").textContent = `${segLabel} · Sesi Arsip ${session.id}`;
+
+  const qLen  = questions.length;
+  answers     = new Array(qLen).fill(null);
+  confidences = new Array(qLen).fill(null);
+  correctCount = 0; regularCorrect = 0; caseCorrect = 0; answersLog = [];
+  currentQ    = 0;
+
+  showScreen("screen-quiz");
+  buildNavGrid();
+  renderCurrentQuestion();
 }
 
-/* ── QUESTION GENERATORS ─────────── */
-async function generateRegularQuestionFor(idx, comp) {
-  const prevQs = questions.filter(Boolean).slice(-8).map(q=>q.question?.slice(0,50)).join(" | ");
-  const segCtx = activeSegment === "B"
-    ? `Segmen: Jabatan Administrator/Kepala Kantor (KMK 271/MK/SJ/2025)
-Karakteristik Level ${comp.level}: ${comp.level===4?"mengevaluasi sistem kerja, rekomendasi kebijakan kantor, menyusun standar kinerja lintas seksi":"menyelenggarakan dan membimbing, memecahkan masalah teknis, koordinasi lintas seksi"}`
-    : `Segmen: Jabatan Pengawas/Kepala Seksi (KMK 434/MK/PJ/2025)
-Karakteristik Level ${comp.level}: ${comp.level===3?"mengevaluasi hasil kerja, menelaah permasalahan WP, rekomendasi tindak lanjut":"menganalisis data WP, menyusun rencana, melaksanakan sesuai petunjuk teknis"}`;
-
-  const prompt = `Penyusun soal uji kompetensi teknis DJP Indonesia.
-
-Jabatan: ${selectedPos.name}
-Kompetensi: ${comp.name} — Level ${comp.level}
-${segCtx}
-
-Soal sebelumnya (JANGAN DUPLIKASI): ${prevQs || "Belum ada"}
-
-Buat 1 soal skenario kasus nyata — 4 pilihan, 1 benar.
-Pembahasan: max 3 kalimat padat mengutip indikator Level ${comp.level}. Jangan bertele-tele.
-
-BALAS HANYA JSON:
-{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"b","explanation":"3 kalimat pembahasan","source":"Materi Webinar KPP — ${comp.name} L${comp.level}","comp":"${comp.name}","compLevel":${comp.level}}`;
-
-  const data = await callAPI(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 2000);
-  const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
-  let q;
-  try { q = JSON.parse(txt); }
-  catch(parseErr) {
-    if (txt.length > 1800) throw new Error("Respons AI terpotong (terlalu panjang). Coba lagi.");
-    throw new Error("Format respons tidak valid. Coba lagi.");
-  }
-  q.type = "regular";
-  // Shuffle so correct answer is distributed evenly across a,b,c,d
-  q = shuffleQuestionOptions(q, getNextCorrectSlot());
-  questions[idx] = q;
+function restartSame() {
+  if (!lastPlayedSession) { goGate(); return; }
+  playStaticSession(lastPlayedSession);
 }
 
-async function callAPIWithRetry(prompt, system, maxTokens, maxRetries=2) {
-  let lastErr;
-  for (let attempt = 0; attempt <= maxRetries; attempt++) {
-    if (attempt > 0) {
-      // Wait before retry: 5s then 10s
-      await new Promise(r => setTimeout(r, attempt * 5000));
-    }
-    try {
-      return await callAPI(prompt, system, maxTokens);
-    } catch(e) {
-      lastErr = e;
-      if (e.message.includes("batas waktu") || e.message.includes("timeout") || e.message.includes("408") || e.message.includes("502") || e.message.includes("503") || e.message.includes("504")) {
-        if (attempt < maxRetries) continue;
-      }
-      throw e;
-    }
-  }
-  throw lastErr;
-}
-
-// Deliberate pause between calls — prevents rate limit exhaustion on long sessions
-// 1.5s gives ~40 calls/min headroom while adding only ~1.5 min total to 64-call session
-function pauseBetweenCalls() {
-  return new Promise(r => setTimeout(r, 1500));
-}
-
-async function generateCaseSubQuestionFor(idx, caseIdx, subIdx) {
-  const vig = caseVignettes[caseIdx];
-  if (!vig) throw new Error("Vignette missing for case "+caseIdx);
-  const prevSubs = questions.filter((q,i) => q && plan[i]?.type==="case" && plan[i]?.caseIdx===caseIdx).map(q=>q.question?.slice(0,50)).join(" | ");
-  const aspects = [
-    "identifikasi masalah utama dan akar permasalahan",
-    "analisis data dan informasi yang relevan",
-    "evaluasi alternatif solusi yang tersedia",
-    "rekomendasi tindak lanjut dan dasar hukumnya",
-    "aspek prosedural atau mitigasi risiko"
-  ][subIdx];
-
-  const vigSegCtx = activeSegment === "B"
-    ? "manajerial tingkat kantor"
-    : "teknis tingkat seksi";
-
-  // Trim vignette body to reduce prompt size and avoid timeouts
-  const vigSnippet = (vig.body || "").slice(0, 200);
-
-  const prompt = `Soal DJP — Studi Kasus.
-
-Skenario (ringkas): "${vigSnippet}..."
-Jabatan: ${selectedPos.name} | ${vig.comp} L${vig.compLevel} | ${vigSegCtx}
-Aspek: ${aspects}
-Hindari duplikasi: ${prevSubs||"-"}
-
-1 soal pilihan ganda, 4 opsi, 1 benar. Pembahasan 2 kalimat.
-
-JSON:
-{"question":"...","options":{"a":"...","b":"...","c":"...","d":"..."},"correct":"c","explanation":"2 kalimat","source":"Materi Webinar KPP — ${vig.comp}"}`;
-
-  const data = await callAPIWithRetry(prompt, "Balas HANYA JSON valid. Tanpa teks lain.", 1200);
-  const txt = data.content.filter(c=>c.type==="text").map(c=>c.text).join("").replace(/```json|```/g,"").trim();
-  let q;
-  try { q = JSON.parse(txt); }
-  catch(parseErr) {
-    if (txt.length > 1100) throw new Error("Respons AI terpotong (terlalu panjang). Coba lagi.");
-    throw new Error("Format respons tidak valid. Coba lagi.");
-  }
-  q.type = "case";
-  q = shuffleQuestionOptions(q, getNextCorrectSlot()); q.caseIdx = caseIdx; q.subIdx = subIdx;
-  q.comp = vig.comp; q.compLevel = vig.compLevel;
-  q.vigTitle = vig.title; q.vigBody = vig.body;
-  questions[idx] = q;
-}
-
-/* ── NAV GRID ────────────────────── */
+/* ────────────────────────────────────
+   NAV GRID
+──────────────────────────────────── */
 function buildNavGrid() {
   const grid = document.getElementById("seb-nav-grid");
   grid.innerHTML = "";
-  const navTotal = sessionMode==="static" ? questions.length : TOTAL_QUESTIONS;
-  for (let i=0; i<navTotal; i++) {
-    const btn = document.createElement("button");
-    btn.id = `nb-${i}`;
-    btn.className = "seb-nav-btn" + (plan[i]?.type==="case" ? " case-q" : "");
-    btn.textContent = i+1;
-    btn.onclick = (function(idx){ return function(){ goToQuestion(idx); }; })(i);
+  const total = questions.length;
+  for (let i = 0; i < total; i++) {
+    const btn     = document.createElement("button");
+    btn.id        = `nb-${i}`;
+    btn.className = "seb-nav-btn" + (plan[i]?.type === "case" ? " case-q" : "");
+    btn.textContent = i + 1;
+    btn.onclick   = (function(idx) { return function() { goToQuestion(idx); }; })(i);
     grid.appendChild(btn);
   }
-  // Section legend
-  const secs = document.getElementById("seb-nav-sections");
-  secs.innerHTML = `
+  document.getElementById("seb-nav-sections").innerHTML = `
     <div class="seb-nav-sec"><div class="seb-nav-sec-dot reg"></div>Soal reguler</div>
     <div class="seb-nav-sec"><div class="seb-nav-sec-dot cas"></div>Studi kasus (bulat)</div>`;
   updateNavGrid();
 }
 
 function updateNavGrid() {
-  const _navT = sessionMode==="static" ? questions.length : TOTAL_QUESTIONS;
-  for (let i=0; i<_navT; i++) {
+  const total = questions.length;
+  for (let i = 0; i < total; i++) {
     const btn = document.getElementById(`nb-${i}`);
     if (!btn) continue;
-    const base = plan[i]?.type==="case" ? " case-q" : "";
-    if (i === currentQ)           btn.className = "seb-nav-btn current"+base;
-    else if (confidences[i]==="yakin")  btn.className = "seb-nav-btn yakin"+base;
-    else if (confidences[i]==="ragu")   btn.className = "seb-nav-btn ragu"+base;
-    else if (confidences[i]==="tandai") btn.className = "seb-nav-btn tandai"+base;
-    else if (answers[i])                btn.className = "seb-nav-btn answered"+base;
-    else                                btn.className = "seb-nav-btn"+base;
+    const base = plan[i]?.type === "case" ? " case-q" : "";
+    if (i === currentQ)                  btn.className = "seb-nav-btn current" + base;
+    else if (confidences[i] === "yakin") btn.className = "seb-nav-btn yakin" + base;
+    else if (confidences[i] === "ragu")  btn.className = "seb-nav-btn ragu" + base;
+    else if (confidences[i] === "tandai")btn.className = "seb-nav-btn tandai" + base;
+    else if (answers[i])                 btn.className = "seb-nav-btn answered" + base;
+    else                                 btn.className = "seb-nav-btn" + base;
   }
-  // Update stats
-  const ans = answers.filter(Boolean).length;
-  const flagged = confidences.filter(c=>c==="tandai"||c==="ragu").length;
+  const total2    = questions.length;
+  const ans       = answers.filter(Boolean).length;
+  const flagged   = confidences.filter(c => c === "tandai" || c === "ragu").length;
   document.getElementById("stat-answered").textContent = ans;
   document.getElementById("stat-flagged").textContent  = flagged;
-  const _t2 = sessionMode==="static"?questions.length:TOTAL_QUESTIONS; document.getElementById("stat-left").textContent = _t2 - ans;
+  document.getElementById("stat-left").textContent     = total2 - ans;
 }
 
-/* ── RENDER QUESTION ─────────────── */
+/* ────────────────────────────────────
+   RENDER QUESTION
+──────────────────────────────────── */
 function renderCurrentQuestion() {
   const q    = questions[currentQ];
   const slot = plan[currentQ];
   if (!q) return;
 
-  slotAnswered = !!answers[currentQ];
-
-  // Section notice — based on position in plan, not sequential navigation
-  const notice = document.getElementById("section-notice");
-  const isFirstOfCase  = slot.type==="case"    && slot.subIdx===0;
-  const isFirstRegAfterCase = slot.type==="regular" && currentQ>0 && plan[currentQ-1]?.type==="case";
+  // Section notice
+  const notice           = document.getElementById("section-notice");
+  const isFirstOfCase    = slot.type === "case" && slot.subIdx === 0;
+  const isFirstRegAfterCase = slot.type === "regular" && currentQ > 0 && plan[currentQ - 1]?.type === "case";
   if (isFirstOfCase) {
-    notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon cas">📋</div><div class="sec-divider-text"><strong>Studi Kasus ${slot.caseIdx+1} dari 4</strong> — Skenario dan pertanyaan 1–5 terkait.</div></div>`;
+    notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon cas">📋</div><div class="sec-divider-text"><strong>Studi Kasus ${slot.caseIdx + 1} dari 4</strong> — Skenario dan pertanyaan 1–5 terkait.</div></div>`;
   } else if (isFirstRegAfterCase) {
     notice.innerHTML = `<div class="sec-divider"><div class="sec-divider-icon reg">📝</div><div class="sec-divider-text"><strong>Soal Pilihan Ganda</strong> — Blok reguler.</div></div>`;
-  } else if (slot.type==="case" && slot.subIdx>0) {
-    notice.innerHTML = `<div style="font-size:11px;color:var(--purple);background:var(--purple-l);border-radius:var(--r-md);padding:4px 10px;margin-bottom:10px;display:inline-block;">Studi Kasus ${slot.caseIdx+1} · Pertanyaan ${slot.subIdx+1}/5</div>`;
+  } else if (slot.type === "case" && slot.subIdx > 0) {
+    notice.innerHTML = `<div style="font-size:11px;color:var(--purple);background:var(--purple-l);border-radius:var(--r-md);padding:4px 10px;margin-bottom:10px;display:inline-block;">Studi Kasus ${slot.caseIdx + 1} · Pertanyaan ${slot.subIdx + 1}/5</div>`;
   } else {
     notice.innerHTML = "";
   }
 
   // Vignette
   let vigHtml = "";
-  if (slot.type==="case" && caseVignettes[slot.caseIdx]) {
+  if (slot.type === "case" && caseVignettes[slot.caseIdx]) {
     const vig = caseVignettes[slot.caseIdx];
     vigHtml = `<div class="vignette">
-      <div class="vignette-head"><span class="vignette-badge">STUDI KASUS ${slot.caseIdx+1}</span><span class="vignette-title">${esc(vig.title)}</span></div>
+      <div class="vignette-head"><span class="vignette-badge">STUDI KASUS ${slot.caseIdx + 1}</span><span class="vignette-title">${esc(vig.title)}</span></div>
       <div class="vignette-body">${esc(vig.body)}</div>
-      <div class="vignette-sub-ctr">Pertanyaan ${slot.subIdx+1} dari 5</div>
+      <div class="vignette-sub-ctr">Pertanyaan ${slot.subIdx + 1} dari 5</div>
     </div>`;
   }
 
   // Options — restore previously chosen answer if any
   const prev = answers[currentQ];
-  let opts = "";
-  ["a","b","c","d"].forEach(k => {
+  let opts   = "";
+  ["a", "b", "c", "d"].forEach(k => {
     let cls = "opt";
     if (prev) {
-      if (k === q.correct)            cls = "opt correct";
-      else if (k === prev.chosen)     cls = "opt wrong";
+      if (k === q.correct)        cls = "opt correct";
+      else if (k === prev.chosen) cls = "opt wrong";
     }
     const dis = prev ? "disabled" : "";
     opts += `<button class="${cls}" id="opt-${k}" ${dis} onclick="selectAnswer('${k}')">${k.toUpperCase()}. ${esc(q.options[k])}</button>`;
@@ -1577,7 +637,7 @@ function renderCurrentQuestion() {
   document.getElementById("q-area").innerHTML = `
     ${vigHtml}
     <div class="q-card">
-      <div class="q-text"><span style="font-size:12px;color:var(--text-3);display:block;margin-bottom:6px;">Soal ${currentQ+1} dari ${sessionMode==="static"?questions.length:TOTAL_QUESTIONS} · ${esc(q.comp||"")}</span>${esc(q.question)}</div>
+      <div class="q-text"><span style="font-size:12px;color:var(--text-3);display:block;margin-bottom:6px;">Soal ${currentQ + 1} dari ${questions.length} · ${esc(q.comp || "")}</span>${esc(q.question)}</div>
       <div class="options">${opts}</div>
     </div>`;
 
@@ -1592,53 +652,49 @@ function renderCurrentQuestion() {
   const confBar = document.getElementById("conf-bar");
   confBar.style.display = prev ? "" : "none";
   if (prev) {
-    ["yakin","ragu","tandai"].forEach(level => {
-      document.getElementById("conf-"+level).className = "conf-btn "+level+(confidences[currentQ]===level?" active":"");
+    ["yakin", "ragu", "tandai"].forEach(level => {
+      document.getElementById("conf-" + level).className =
+        "conf-btn " + level + (confidences[currentQ] === level ? " active" : "");
     });
   }
 
-  // Update progress bar & q-tag
-  updateQuizProgress();
-  updateNavGrid();
-  window.scrollTo({top:0, behavior:"smooth"});
-}
-
-function updateQuizProgress() {
-  const ans = answers.filter(Boolean).length;
-  const pct = Math.round((ans/TOTAL_QUESTIONS)*100);
-  const q   = questions[currentQ];
-  const slot = plan[currentQ];
-  // Update topbar nav buttons
+  // Nav button state
   document.getElementById("btn-prev").disabled = currentQ === 0;
-  document.getElementById("btn-next").disabled = currentQ === TOTAL_QUESTIONS-1;
+  document.getElementById("btn-next").disabled = currentQ === questions.length - 1;
+
+  updateNavGrid();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-/* ── SELECT ANSWER ───────────────── */
+/* ────────────────────────────────────
+   SELECT ANSWER
+──────────────────────────────────── */
 function selectAnswer(choice) {
-  if (answers[currentQ]) return; // Already answered — no re-answer
-  const q = questions[currentQ];
+  if (answers[currentQ]) return;
+  const q         = questions[currentQ];
   const isCorrect = choice === q.correct;
   answers[currentQ] = { chosen: choice, correct: q.correct, isCorrect, options: q.options };
-  if (isCorrect) { correctCount++; if (plan[currentQ].type==="regular") regularCorrect++; else caseCorrect++; }
+  if (isCorrect) {
+    correctCount++;
+    if (plan[currentQ].type === "regular") regularCorrect++; else caseCorrect++;
+  }
 
-  // Disable options + highlight
-  ["a","b","c","d"].forEach(k => {
-    const btn = document.getElementById("opt-"+k);
+  ["a", "b", "c", "d"].forEach(k => {
+    const btn = document.getElementById("opt-" + k);
     if (!btn) return;
     btn.disabled = true;
-    if (k===q.correct)                    btn.className="opt correct";
-    else if (k===choice && !isCorrect)    btn.className="opt wrong";
+    if (k === q.correct)                 btn.className = "opt correct";
+    else if (k === choice && !isCorrect) btn.className = "opt wrong";
   });
 
-  // Show feedback streaming
   renderFeedback(q, choice);
 
-  // Show confidence bar
   const confBar = document.getElementById("conf-bar");
   confBar.style.display = "";
-  ["yakin","ragu","tandai"].forEach(l => document.getElementById("conf-"+l).className="conf-btn "+l);
+  ["yakin", "ragu", "tandai"].forEach(l =>
+    document.getElementById("conf-" + l).className = "conf-btn " + l
+  );
 
-  // Add to answersLog for result screen
   answersLog.push({
     type: plan[currentQ].type, caseIdx: plan[currentQ].caseIdx, subIdx: plan[currentQ].subIdx,
     question: q.question, chosen: choice, correct: q.correct, isCorrect,
@@ -1650,63 +706,68 @@ function selectAnswer(choice) {
 
 function renderFeedback(q, choice) {
   const isCorrect = choice === q.correct;
-  document.getElementById("fb-area").innerHTML = `<div class="fb ${isCorrect?"ok":"bad"}">
-    <div class="fb-head">${isCorrect?"✓ Benar!":"✗ Kurang tepat — Jawaban benar: "+q.correct.toUpperCase()}</div>
-    <div class="fb-body" id="fb-txt">${esc(q.explanation||"")}</div>
-    <span class="fb-src" id="fb-src" style="display:${q.source?"inline-block":"none"}">${esc(q.source||"")}</span>
+  document.getElementById("fb-area").innerHTML = `<div class="fb ${isCorrect ? "ok" : "bad"}">
+    <div class="fb-head">${isCorrect ? "✓ Benar!" : "✗ Kurang tepat — Jawaban benar: " + q.correct.toUpperCase()}</div>
+    <div class="fb-body">${esc(q.explanation || "")}</div>
+    <span class="fb-src" style="display:${q.source ? "inline-block" : "none"}">${esc(q.source || "")}</span>
   </div>`;
 }
 
-/* ── CONFIDENCE TAGGING ──────────── */
+/* ────────────────────────────────────
+   CONFIDENCE TAGGING
+──────────────────────────────────── */
 function setConfidence(level) {
-  confidences[currentQ] = confidences[currentQ]===level ? null : level;
-  ["yakin","ragu","tandai"].forEach(l => {
-    document.getElementById("conf-"+l).className = "conf-btn "+l+(confidences[currentQ]===l?" active":"");
+  confidences[currentQ] = confidences[currentQ] === level ? null : level;
+  ["yakin", "ragu", "tandai"].forEach(l => {
+    document.getElementById("conf-" + l).className =
+      "conf-btn " + l + (confidences[currentQ] === l ? " active" : "");
   });
   updateNavGrid();
 }
 
-/* ── NAVIGATION ──────────────────── */
+/* ────────────────────────────────────
+   NAVIGATION
+──────────────────────────────────── */
 function goToQuestion(idx) {
-  if (idx<0||idx>=TOTAL_QUESTIONS) return;
+  if (idx < 0 || idx >= questions.length) return;
   currentQ = idx;
   renderCurrentQuestion();
 }
 
 function navQuestion(dir) {
   const next = currentQ + dir;
-  if (next>=0 && next<TOTAL_QUESTIONS) goToQuestion(next);
+  if (next >= 0 && next < questions.length) goToQuestion(next);
 }
 
 function skipQuestion() {
-  // Find next unanswered
-  for (let i=currentQ+1; i<TOTAL_QUESTIONS; i++) {
+  for (let i = currentQ + 1; i < questions.length; i++) {
     if (!answers[i]) { goToQuestion(i); return; }
   }
-  for (let i=0; i<currentQ; i++) {
+  for (let i = 0; i < currentQ; i++) {
     if (!answers[i]) { goToQuestion(i); return; }
   }
-  // All answered — go to next
   navQuestion(1);
 }
 
-/* ── SUBMIT CONFIRM ──────────────── */
+/* ────────────────────────────────────
+   SUBMIT CONFIRM
+──────────────────────────────────── */
 function confirmSubmit() {
-  const ans = answers.filter(Boolean).length;
-  const unanswered = TOTAL_QUESTIONS - ans;
-  const flagged = confidences.filter(c=>c==="tandai"||c==="ragu").length;
-  const modal = document.createElement("div");
+  const ans       = answers.filter(Boolean).length;
+  const unanswered = questions.length - ans;
+  const flagged   = confidences.filter(c => c === "tandai" || c === "ragu").length;
+  const modal     = document.createElement("div");
   modal.className = "modal-overlay";
-  modal.id = "submit-modal";
+  modal.id        = "submit-modal";
   modal.innerHTML = `<div class="modal-box">
     <div class="modal-title">Selesai dan Kumpulkan?</div>
     <div class="modal-body">Pastikan kamu sudah menjawab semua soal dan meninjau soal yang ditandai sebelum mengumpulkan.</div>
     <div class="modal-stats">
       <div class="modal-stat"><div class="modal-stat-num">${ans}</div><div class="modal-stat-lbl">Dijawab</div></div>
-      <div class="modal-stat"><div class="modal-stat-num" style="color:${unanswered>0?"var(--red)":"var(--green)"}">${unanswered}</div><div class="modal-stat-lbl">Belum</div></div>
-      <div class="modal-stat"><div class="modal-stat-num" style="color:${flagged>0?"var(--amber)":"var(--text)"}">${flagged}</div><div class="modal-stat-lbl">Ditandai</div></div>
+      <div class="modal-stat"><div class="modal-stat-num" style="color:${unanswered > 0 ? "var(--red)" : "var(--green)"}">${unanswered}</div><div class="modal-stat-lbl">Belum</div></div>
+      <div class="modal-stat"><div class="modal-stat-num" style="color:${flagged > 0 ? "var(--amber)" : "var(--text)"}">${flagged}</div><div class="modal-stat-lbl">Ditandai</div></div>
     </div>
-    ${unanswered>0?`<div style="font-size:12px;color:var(--amber);background:var(--amber-l);border-radius:var(--r-md);padding:8px 12px;margin-bottom:16px;">Masih ada ${unanswered} soal yang belum dijawab. Soal yang belum dijawab dianggap salah.</div>`:""}
+    ${unanswered > 0 ? `<div style="font-size:12px;color:var(--amber);background:var(--amber-l);border-radius:var(--r-md);padding:8px 12px;margin-bottom:16px;">Masih ada ${unanswered} soal yang belum dijawab. Soal yang belum dijawab dianggap salah.</div>` : ""}
     <div class="modal-actions">
       <button class="btn btn-o" style="flex:1" onclick="document.getElementById('submit-modal').remove()">Kembali</button>
       <button class="btn btn-p" style="flex:1" onclick="submitQuiz()">Ya, Kumpulkan</button>
@@ -1721,133 +782,66 @@ function submitQuiz() {
   showResults();
 }
 
-/* ── STATIC SESSION PLAYER ──────── */
-function renderStaticQuestion() {
-  slotAnswered = !!answers[currentQ];
-  renderCurrentQuestion();
-}
-
-/* ── KEEP OLD nextSlot/processSlot as no-ops for compatibility ── */
-function processSlot() { renderCurrentQuestion(); }
-function nextSlot() { navQuestion(1); }
-
-async function autoSaveLiveSession() {
-  if (sessionMode !== "live") return;
-  const sessionId = generateSessionId();
-  // Build questions array aligned by plan index (not answersLog index)
-  const sessionQuestions = questions.map((q, i) => {
-    if (!q) return null;
-    const ans = answers[i]; // answers[] is indexed same as questions[]
-    return {
-      ...q,
-      vigTitle:   caseVignettes[q.caseIdx]?.title || null,
-      vigBody:    caseVignettes[q.caseIdx]?.body  || null,
-      userAnswer: ans?.chosen    || null,
-      wasCorrect: ans?.isCorrect || false
-    };
-  }).filter(Boolean);
-
-  const sessionData = {
-    id:           sessionId,
-    position:     selectedPos.name,
-    segment:      activeSegment,
-    segmentLabel: activeSegment === "B" ? "Jabatan Administrator" : "Jabatan Pengawas",
-    score:        Math.round((correctCount / Math.max(answersLog.length, 1)) * 100),
-    totalQ:       answersLog.length,
-    correct:      correctCount,
-    completedAt:  new Date().toISOString(),
-    questions:    sessionQuestions
-  };
-
-  // Warn user not to close tab while saving
-  const beforeUnloadHandler = (e) => { e.preventDefault(); e.returnValue = "Sesi sedang disimpan ke arsip. Tunggu sebentar sebelum menutup tab."; };
-  window.addEventListener("beforeunload", beforeUnloadHandler);
-
-  await saveSessionToLibrary(sessionData);
-
-  // Remove warning once saved
-  window.removeEventListener("beforeunload", beforeUnloadHandler);
-}
-
-async function markSessionUsed() {
-  if (accessType === "paid" && sessionKeyUsed) {
-    try {
-      await fetch("/api/validate-key", {
-        method: "POST",
-        headers: {"Content-Type":"application/json"},
-        body: JSON.stringify({type:"use", code:sessionKeyUsed})
-      });
-    } catch(_) {}
-  }
-}
-
+/* ────────────────────────────────────
+   RESULTS
+──────────────────────────────────── */
 function showResults() {
-  markSessionUsed();
-  // Rebuild answersLog from answers[] + questions[] for result/save consistency
+  // Rebuild answersLog from answers[] + questions[]
   answersLog = [];
-  for (let i=0; i<TOTAL_QUESTIONS; i++) {
+  for (let i = 0; i < questions.length; i++) {
     const q = questions[i];
     const a = answers[i];
     if (!q) continue;
     answersLog.push({
       type: plan[i].type, caseIdx: plan[i].caseIdx, subIdx: plan[i].subIdx,
-      question: q.question, chosen: a?.chosen||null, correct: q.correct,
+      question: q.question, chosen: a?.chosen || null, correct: q.correct,
       isCorrect: !!(a?.isCorrect), competency: q.comp, options: q.options,
       explanation: q.explanation, source: q.source
     });
   }
-  correctCount = answersLog.filter(a=>a.isCorrect).length;
-  regularCorrect = answersLog.filter(a=>a.type==="regular"&&a.isCorrect).length;
-  caseCorrect    = answersLog.filter(a=>a.type==="case"   &&a.isCorrect).length;
-  autoSaveLiveSession();
-  showScreen("screen-result");
-  // Show save notice at top of result screen
-  const saveBanner = document.getElementById("save-banner");
-  if (saveBanner && sessionMode === "live") {
-    saveBanner.className = "save-banner show";
-    saveBanner.innerHTML = `<div class="spin" style="width:14px;height:14px;border-width:1.5px;flex-shrink:0"></div> <span>Menyimpan sesi ke arsip… <strong>Jangan tutup tab ini</strong> sampai muncul konfirmasi ✓</span>`;
-  }
-  const total = answersLog.length;
-  const pct = Math.round((correctCount / total) * 100);
-  const pass = pct >= 60;
-  const regTotal = answersLog.filter(a=>a.type==="regular").length;
-  const caseTotal = answersLog.filter(a=>a.type==="case").length;
+  correctCount   = answersLog.filter(a => a.isCorrect).length;
+  regularCorrect = answersLog.filter(a => a.type === "regular" && a.isCorrect).length;
+  caseCorrect    = answersLog.filter(a => a.type === "case" && a.isCorrect).length;
 
-  document.getElementById("r-score").textContent = pct + "%";
-  document.getElementById("r-score").style.color = pass ? "var(--green)" : "var(--red)";
-  document.getElementById("r-sub").textContent = `${correctCount} dari ${total} soal benar`;
+  const total     = answersLog.length;
+  const pct       = Math.round((correctCount / total) * 100);
+  const pass      = pct >= 60;
+  const regTotal  = answersLog.filter(a => a.type === "regular").length;
+  const caseTotal = answersLog.filter(a => a.type === "case").length;
+
+  document.getElementById("r-score").textContent  = pct + "%";
+  document.getElementById("r-score").style.color  = pass ? "var(--green)" : "var(--red)";
+  document.getElementById("r-sub").textContent    = `${correctCount} dari ${total} soal benar`;
   const badge = document.getElementById("r-badge");
   badge.textContent = pass ? "✓ Lulus" : "✗ Belum Lulus";
-  badge.className = "res-badge " + (pass ? "pass" : "fail");
-  document.getElementById("r-pos").textContent = `${selectedPos.name} · Threshold 60% · ${TOTAL_QUESTIONS} Soal`;
+  badge.className   = "res-badge " + (pass ? "pass" : "fail");
+  document.getElementById("r-pos").textContent    = `${selectedPos?.name || ""} · Threshold 60% · ${total} Soal`;
 
   document.getElementById("r-grid").innerHTML = `
     <div class="res-stat blue"><div class="res-stat-num">${pct}%</div><div class="res-stat-lbl">Skor Akhir</div></div>
     <div class="res-stat green"><div class="res-stat-num">${correctCount}</div><div class="res-stat-lbl">Benar</div></div>
-    <div class="res-stat red"><div class="res-stat-num">${total-correctCount}</div><div class="res-stat-lbl">Salah</div></div>
+    <div class="res-stat red"><div class="res-stat-num">${total - correctCount}</div><div class="res-stat-lbl">Salah</div></div>
     <div class="res-stat purple"><div class="res-stat-num">${caseCorrect}/${caseTotal}</div><div class="res-stat-lbl">Benar Kasus</div></div>`;
 
   // Build review
   const rev = document.getElementById("review");
   rev.innerHTML = "";
 
-  // Regular questions
-  const regItems = answersLog.filter(a=>a.type==="regular");
+  const regItems = answersLog.filter(a => a.type === "regular");
   if (regItems.length) {
     const h = document.createElement("div"); h.className = "rev-section";
     h.textContent = `Soal Pilihan Ganda Reguler (${regularCorrect}/${regItems.length} benar)`;
     rev.appendChild(h);
-    regItems.forEach((a,i) => rev.appendChild(makeRevItem(a, i+1, false)));
+    regItems.forEach((a, i) => rev.appendChild(makeRevItem(a, i + 1, false)));
   }
 
-  // Case questions grouped by case
-  for (let ci=0; ci<CASE_COUNT; ci++) {
-    const items = answersLog.filter(a=>a.type==="case" && a.caseIdx===ci);
+  for (let ci = 0; ci < 4; ci++) {
+    const items = answersLog.filter(a => a.type === "case" && a.caseIdx === ci);
     if (!items.length) continue;
-    const vig = caseVignettes[ci];
-    const correct = items.filter(a=>a.isCorrect).length;
-    const h = document.createElement("div"); h.className = "rev-section";
-    h.textContent = `Studi Kasus ${ci+1}${vig?": "+vig.title:""} (${correct}/${items.length} benar)`;
+    const vig    = caseVignettes[ci];
+    const correct = items.filter(a => a.isCorrect).length;
+    const h      = document.createElement("div"); h.className = "rev-section";
+    h.textContent = `Studi Kasus ${ci + 1}${vig ? ": " + vig.title : ""} (${correct}/${items.length} benar)`;
     rev.appendChild(h);
     if (vig) {
       const vd = document.createElement("div");
@@ -1855,436 +849,37 @@ function showResults() {
       vd.innerHTML = `<strong style="color:var(--purple)">Skenario:</strong> ${esc(vig.body)}`;
       rev.appendChild(vd);
     }
-    items.forEach((a,i) => rev.appendChild(makeRevItem(a, i+1, true)));
+    items.forEach((a, i) => rev.appendChild(makeRevItem(a, i + 1, true)));
   }
+
+  showScreen("screen-result");
 }
 
 function makeRevItem(a, n, isCase) {
-  const d = document.createElement("div");
+  const d   = document.createElement("div");
   d.className = "rev-item " + (isCase ? "case-item " : "") + (a.isCorrect ? "r" : "w");
-  const correctAns = a.isCorrect ? "" : ` &nbsp;|&nbsp; Jawaban benar: <strong>${a.correct.toUpperCase()}. ${esc(a.options[a.correct])}</strong>`;
+  const correctAns = a.isCorrect
+    ? ""
+    : ` &nbsp;|&nbsp; Jawaban benar: <strong>${(a.correct || "").toUpperCase()}. ${esc(a.options?.[a.correct] || "")}</strong>`;
   d.innerHTML = `
-    ${isCase ? `<div class="rev-case-label">Kasus ${a.caseIdx+1} – Sub ${a.subIdx+1}</div>` : ""}
+    ${isCase ? `<div class="rev-case-label">Kasus ${a.caseIdx + 1} – Sub ${a.subIdx + 1}</div>` : ""}
     <div class="rev-q">${n}. ${esc(a.question)}</div>
-    <div class="rev-ans" style="color:${a.isCorrect?"var(--green)":"var(--red)"}">
-      Jawaban kamu: ${a.chosen.toUpperCase()}. ${esc(a.options[a.chosen])} ${a.isCorrect?"✓":"✗"}${correctAns}
+    <div class="rev-ans" style="color:${a.isCorrect ? "var(--green)" : "var(--red)"}">
+      Jawaban kamu: ${(a.chosen || "-").toUpperCase()}. ${esc(a.options?.[a.chosen] || "(tidak dijawab)")} ${a.isCorrect ? "✓" : "✗"}${correctAns}
     </div>
-    <div class="rev-comp">${esc(a.competency||"")}</div>`;
+    <div class="rev-comp">${esc(a.competency || "")}</div>`;
   return d;
-}
-
-/* ────────────────────────────────────
-   API HELPER
-──────────────────────────────────── */
-async function callAPI(userPrompt, systemPrompt, maxTokens=2000) {
-  const TIMEOUT_MS = 90000; // 90 seconds — generous for slow servers, but won't hang forever
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), TIMEOUT_MS);
-
-  let resp;
-  try {
-    resp = await fetch("/api/chat", {
-      method: "POST",
-      signal: controller.signal,
-      headers: Object.assign(
-        { "Content-Type": "application/json" },
-        apiKey !== "__server__" ? { "x-api-key": apiKey } : {}
-      ),
-      body: JSON.stringify({
-        model: "claude-sonnet-4-5",
-        max_tokens: maxTokens,
-        system: systemPrompt,
-        messages: [{ role: "user", content: userPrompt }]
-      })
-    });
-  } catch(netErr) {
-    clearTimeout(timeoutId);
-    if (netErr.name === "AbortError") {
-      throw new Error("Permintaan ke AI melebihi batas waktu (90 detik). Server mungkin sibuk — coba lagi.");
-    }
-    throw new Error("Koneksi gagal. Pastikan internet aktif. (" + netErr.message + ")");
-  }
-  clearTimeout(timeoutId);
-  if (!resp.ok) {
-    let detail = "HTTP " + resp.status;
-    try {
-      const errBody = await resp.json();
-      detail = errBody.error?.message || detail;
-      if (resp.status === 401) detail = "API key tidak valid atau kedaluwarsa. Generate key baru di console.anthropic.com/settings/keys.";
-      if (resp.status === 429) detail = "Terlalu banyak permintaan. Tunggu beberapa detik lalu coba lagi.";
-      if (resp.status === 403) detail = "API key tidak memiliki akses. Pastikan key aktif.";
-    } catch(_) {}
-    throw new Error(detail);
-  }
-  return resp.json();
-}
-
-/* ────────────────────────────────────
-   STREAM TEXT
-──────────────────────────────────── */
-function streamText(text, id, onDone) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  let i = 0; el.textContent = "";
-  const tick = () => {
-    el.textContent += text.slice(i, i+6); i += 6;
-    if (i < text.length) setTimeout(tick, 10);
-    else if (onDone) onDone();
-  };
-  tick();
-}
-
-/* ────────────────────────────────────
-   SHOW ERROR
-──────────────────────────────────── */
-function showError(msg) {
-  document.getElementById("err-banner").style.display = "none";
-  document.getElementById("q-area").innerHTML = "";
-  document.getElementById("act-area").innerHTML = "";
-
-  // Classify error type
-  let title = "Gagal membuat soal";
-  let detail = msg;
-  let hint = "";
-  let showStatic = false;
-
-  if (msg.includes("429") || msg.toLowerCase().includes("rate limit") || msg.toLowerCase().includes("terlalu banyak")) {
-    title = "Server sedang sibuk";
-    detail = "Terlalu banyak permintaan dalam waktu singkat. Ini biasanya terjadi saat banyak pengguna aktif bersamaan.";
-    hint = "Tunggu 30–60 detik, lalu coba lagi. Atau gunakan sesi dari arsip yang tidak memerlukan kredit AI.";
-    showStatic = true;
-  } else if (msg.includes("402") || msg.toLowerCase().includes("credit") || msg.toLowerCase().includes("saldo")) {
-    title = "Saldo kredit AI habis";
-    detail = "Kredit API untuk layanan ini sementara habis. Layanan akan pulih setelah admin menambah saldo.";
-    hint = "Gunakan sesi dari arsip pengguna lain (gratis), atau donasi untuk membantu mengisi ulang saldo.";
-    showStatic = true;
-  } else if (msg.includes("401") || msg.includes("403") || msg.toLowerCase().includes("api key")) {
-    title = "Masalah autentikasi API";
-    detail = "API key tidak valid atau sudah kedaluwarsa. Admin perlu memperbarui konfigurasi.";
-    hint = "Hubungi admin atau gunakan sesi dari arsip sementara menunggu perbaikan.";
-    showStatic = true;
-  } else if (msg.toLowerCase().includes("fetch") || msg.toLowerCase().includes("network") || msg.toLowerCase().includes("koneksi")) {
-    title = "Tidak dapat terhubung";
-    detail = "Gagal menghubungi server AI. Periksa koneksi internet kamu.";
-    hint = "Pastikan internet aktif, lalu coba lagi. Jika masalah berlanjut, coba muat ulang halaman.";
-  } else if (msg.toLowerCase().includes("json") || msg.toLowerCase().includes("parse")) {
-    title = "Format respons tidak valid";
-    detail = "AI mengembalikan respons yang tidak bisa dibaca. Ini jarang terjadi.";
-    hint = "Coba lagi — biasanya berhasil pada percobaan berikutnya.";
-  }
-
-  const staticBtn = showStatic
-    ? `<button class="err-btn teal" onclick="goToStaticMode()">Coba Sesi dari Arsip</button>`
-    : "";
-
-  document.getElementById("q-area").innerHTML = `
-    <div class="err-card">
-      <div class="err-card-head">
-        <div class="err-icon">⚠</div>
-        <div>
-          <div class="err-title">${title}</div>
-          <div class="err-msg">${detail}</div>
-        </div>
-      </div>
-      ${hint ? `<div style="font-size:12px;color:var(--text-3);line-height:1.6;padding:10px 12px;background:var(--bg-2);border-radius:var(--r-md);margin-bottom:8px;">${hint}</div>` : ""}
-      <div class="err-actions">
-        <button class="err-btn primary" onclick="processSlot()">↺ Coba Lagi</button>
-        <button class="err-btn secondary" onclick="location.reload()">Muat Ulang Halaman</button>
-        ${staticBtn}
-        <a href="/donate.html" class="err-btn secondary" style="text-decoration:none">Donasi Saldo →</a>
-      </div>
-    </div>`;
-}
-
-function goToStaticMode() {
-  showScreen("screen-gate");
-  selectMode("static");
 }
 
 /* ────────────────────────────────────
    UTILS
 ──────────────────────────────────── */
-
-/* ────────────────────────────────────
-   STATUS WIDGET + HEARTBEAT
-──────────────────────────────────── */
-const SESSION_ID = Math.random().toString(36).slice(2);
-let heartbeatTimer = null;
-
-async function loadStatus() {
-  try {
-    const res = await fetch("/api/status");
-    const d = await res.json();
-
-    const pulse = document.getElementById("s-pulse");
-    const bar   = document.getElementById("s-bar");
-    if (!pulse) return;
-
-    pulse.className = "pulse " + d.health;
-    bar.className   = "status-bar-fill " + d.health;
-    bar.style.width = Math.max(2, d.pctRemaining) + "%";
-
-    document.getElementById("s-concurrent").textContent   = d.concurrent;
-    document.getElementById("s-sessions-left").textContent = d.sessionsLeft.toLocaleString("id-ID");
-    document.getElementById("s-served").textContent       = d.sessionsServed.toLocaleString("id-ID");
-    document.getElementById("s-cost").textContent         = "Rp " + Math.round(d.costPerSession * 17500).toLocaleString("id-ID");
-
-    const spentIDR = Math.round((d.creditsSpent || 0) * 17500).toLocaleString("id-ID");
-    const msgs = {
-      good:     `Saldo cukup untuk ±${d.sessionsLeft} sesi lagi. Sudah terpakai Rp ${spentIDR} dari ${d.sessionsServed} sesi. Layanan berjalan normal.`,
-      low:      `Saldo mulai menipis. Tersisa ±${d.sessionsLeft} sesi (sudah terpakai Rp ${spentIDR} dari ${d.sessionsServed} sesi). Pertimbangkan donasi.`,
-      critical: `⚠ Saldo kritis! Hanya tersisa ±${d.sessionsLeft} sesi. Total terpakai Rp ${spentIDR} dari ${d.sessionsServed} sesi. Bantu dengan donasi sekarang.`
-    };
-    document.getElementById("s-msg").textContent = msgs[d.health] || "";
-  } catch(_) {
-    const p = document.getElementById("s-pulse");
-    if (p) { p.className = "pulse loading"; document.getElementById("s-msg").textContent = "Tidak dapat memuat status saat ini."; }
-  }
-}
-
-function startHeartbeat() {
-  stopHeartbeat();
-  const ping = async () => {
-    try {
-      const res = await fetch("/api/status", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId: SESSION_ID })
-      });
-      // POST response includes concurrent count — update topbar if visible
-      const d = await res.json();
-      if (d.concurrent !== undefined) {
-        // Update gate screen concurrent badge if it's visible
-        const el = document.getElementById("s-concurrent");
-        if (el) el.textContent = d.concurrent;
-      }
-    } catch(_) {}
-  };
-  ping();
-  heartbeatTimer = setInterval(ping, 20000);
-}
-
-function stopHeartbeat() {
-  if (heartbeatTimer) { clearInterval(heartbeatTimer); heartbeatTimer = null; }
-}
-
-// Refresh status when gate is visible — patch into the original showScreen
-const _baseShowScreen = function(id) {
-  document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
-  const el = document.getElementById(id);
-  if (el) el.classList.add("active");
-  window.scrollTo({top:0, behavior:"smooth"});
-};
-function showScreen(id) {
-  _baseShowScreen(id);
-  if (id === "screen-gate") {
-    loadStatus();
-    stopHeartbeat();
-  } else {
-    startHeartbeat();
-  }
-}
-
-
-/* ────────────────────────────────────
-   SESSION MODE & STATIC BROWSER
-──────────────────────────────────── */
-let sessionMode = "live";         // "live" | "static"
-let selectedStaticSession = null; // full session object
-let allSessions = [];
-
-function selectMode(mode) {
-  sessionMode = mode;
-  document.getElementById("mode-live").className   = "mode-btn" + (mode==="live"   ? " active-live"   : "");
-  document.getElementById("mode-static").className = "mode-btn" + (mode==="static" ? " active-static" : "");
-  document.getElementById("session-browser").style.display   = mode==="static" ? "" : "none";
-  document.getElementById("live-segment-area").style.display = mode==="live"   ? "" : "none";
-  if (mode === "static" && allSessions.length === 0) loadSessionLibrary();
-}
-
-async function loadSessionLibrary() {
-  document.getElementById("session-list").innerHTML = `<div class="browser-loading"><div class="spin"></div><span>Mengambil sesi tersimpan…</span></div>`;
-  document.getElementById("session-count").textContent = "Memuat…";
-  try {
-    const res = await fetch("/api/sessions");
-    const data = await res.json();
-    allSessions = data.sessions || [];
-    renderSessionList(allSessions);
-  } catch(e) {
-    document.getElementById("session-list").innerHTML = `<div class="browser-empty">Gagal memuat arsip sesi. Coba lagi nanti.</div>`;
-    document.getElementById("session-count").textContent = "";
-  }
-}
-
-function filterSessions(seg, btn) {
-  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("act"));
-  btn.classList.add("act");
-  const filtered = seg === "all" ? allSessions : allSessions.filter(s => s.segment === seg);
-  renderSessionList(filtered);
-}
-
-function renderSessionList(sessions) {
-  const list = document.getElementById("session-list");
-  const count = document.getElementById("session-count");
-  if (!sessions.length) {
-    list.innerHTML = `<div class="browser-empty">Belum ada sesi tersimpan untuk filter ini.<br>Jadilah yang pertama menyelesaikan sesi live! 🎯</div>`;
-    count.textContent = "0 sesi tersimpan";
-    return;
-  }
-  count.textContent = `${sessions.length} sesi tersimpan`;
-  list.innerHTML = sessions.map(s => {
-    const pct = Math.round((s.correct / s.totalQ) * 100);
-    const pass = pct >= 60;
-    const date = new Date(s.completedAt).toLocaleDateString("id-ID", {day:"numeric",month:"short",year:"numeric"});
-    return `<div class="session-item" id="si-${s.id}" onclick="selectStaticSession('${s.id}')">
-      <div class="si-score ${pass?"pass":"fail"}">${pct}%</div>
-      <div class="si-body">
-        <div class="si-position">${esc(s.position)}</div>
-        <div class="si-meta">${s.correct}/${s.totalQ} benar · ${date} · <span class="si-seg ${s.segment.toLowerCase()}">${esc(s.segmentLabel||s.segment)}</span></div>
-      </div>
-    </div>`;
-  }).join("");
-}
-
-function selectStaticSession(id) {
-  selectedStaticSession = allSessions.find(s => s.id === id) || {id};
-  document.querySelectorAll(".session-item").forEach(el => el.classList.remove("selected"));
-  const el = document.getElementById("si-"+id);
-  if (el) el.classList.add("selected");
-  document.getElementById("start-static-btn").style.display = "";
-}
-
-async function startStaticSession() {
-  if (!selectedStaticSession) return;
-  const btn = document.getElementById("start-static-btn");
-  btn.disabled = true; btn.textContent = "Memuat…";
-  try {
-    // Fetch full session with questions
-    const res = await fetch("/api/sessions", {
-      method: "POST",
-      headers: {"Content-Type":"application/json"},
-      body: JSON.stringify({action:"get", id: selectedStaticSession.id})
-    });
-    const session = await res.json();
-    if (session.error) throw new Error(session.error);
-    playStaticSession(session);
-  } catch(e) {
-    btn.disabled = false; btn.textContent = "Mulai Sesi Terpilih →";
-    alert("Gagal memuat sesi: " + e.message);
-  }
-}
-
-function playStaticSession(session) {
-  // Set up state as if playing a live session but from saved questions
-  selectedPos = { name: session.position, competencies: [] };
-  activeSegment = session.segment;
-  questions = session.questions || [];
-  plan = questions.map((q,i) => ({ type: q.type||"regular", caseIdx: q.caseIdx, subIdx: q.subIdx }));
-  // currentQ removed — use currentQ
-  correctCount = 0; regularCorrect = 0; caseCorrect = 0;
-  answersLog = []; slotAnswered = false;
-  // Rebuild caseVignettes from saved questions
-  caseVignettes = {};
-  questions.forEach(q => {
-    if (q.type === "case" && q.subIdx === 0 && q.vigTitle) {
-      caseVignettes[q.caseIdx] = { title: q.vigTitle, body: q.vigBody, comp: q.comp, compLevel: q.compLevel };
-    }
-  });
-
-  document.getElementById("sess-title").textContent = session.position;
-  const segLabel = session.segment === "B" ? "Administrator/Kakpp — Level 3-4" : "Pengawas/Kasi — Level 2-3";
-  document.getElementById("sess-sub").textContent = `${segLabel} · Sesi Arsip ${session.id}`;
-  sessionMode = "static";
-  // Reset answers/confidence for fresh play of archived session
-  const qLen = questions.length;
-  answers     = new Array(qLen).fill(null);
-  confidences = new Array(qLen).fill(null);
-  generated   = new Array(qLen).fill(true);
-  correctCount = 0; regularCorrect = 0; caseCorrect = 0; answersLog = [];
-  currentQ = 0;
-  showScreen("screen-quiz");
-  buildNavGrid();
-  renderCurrentQuestion();
-}
-
-function renderStaticQuestion() {
-  slotAnswered = false;
-  document.getElementById("err-banner").style.display = "none";
-  document.getElementById("fb-area").innerHTML = "";
-  document.getElementById("act-area").innerHTML = "";
-  document.getElementById("section-notice").innerHTML = "";
-
-  const slot = plan[currentQ];
-  if (!slot) { showResults(); return; }
-  updateProgress(slot);
-
-  const q = questions[currentQ];
-  if (!q) { showError("Soal tidak ditemukan di sesi ini."); return; }
-  window._currentQ = q;
-
-  // Section notices
-  if (q.type === "case" && q.subIdx === 0) {
-    document.getElementById("section-notice").innerHTML = `
-      <div class="sec-divider"><div class="sec-divider-icon cas">📋</div>
-      <div class="sec-divider-text"><strong>Studi Kasus ${q.caseIdx+1} dari 4</strong> — Baca skenario dan jawab 5 pertanyaan terkait.</div></div>`;
-  } else if (q.type === "regular" && currentQ > 0 && questions[currentQ-1]?.type === "case") {
-    document.getElementById("section-notice").innerHTML = `
-      <div class="sec-divider"><div class="sec-divider-icon reg">📝</div>
-      <div class="sec-divider-text"><strong>Kembali ke Soal Reguler</strong></div></div>`;
-  }
-
-  const vig = (q.type === "case" && caseVignettes[q.caseIdx]) ? caseVignettes[q.caseIdx] : null;
-  renderQuestion(q, vig);
-}
-
-/* ────────────────────────────────────
-   SESSION SAVING (auto on complete)
-──────────────────────────────────── */
-function generateSessionId() {
-  const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-  let id = "SES-";
-  for (let i=0; i<6; i++) id += chars[Math.floor(Math.random()*chars.length)];
-  return id;
-}
-
-async function saveSessionToLibrary(sessionData) {
-  const banner = document.getElementById("save-banner");
-  if (banner) { banner.className = "save-banner show"; banner.innerHTML = `<div class="spin" style="width:14px;height:14px;border-width:1.5px"></div> Menyimpan sesi ke arsip…`; }
-  try {
-    const res = await fetch("/api/sessions", {
-      method: "POST",
-      headers: {"Content-Type":"application/json"},
-      body: JSON.stringify({action:"save", session: sessionData})
-    });
-    const d = await res.json();
-    if (d.ok && banner) {
-      banner.innerHTML = `✓ Sesi disimpan ke arsip — ID <strong>${sessionData.id}</strong> (~${d.sizeKB}KB). Pengguna lain bisa menggunakan sesi ini secara gratis.`;
-      setTimeout(() => { banner.className = "save-banner"; }, 10000);
-    } else if (banner) {
-      banner.innerHTML = `⚠ Sesi tidak tersimpan ke arsip: ${d.error || "unknown error"}`;
-      banner.style.background = "var(--red-l)";
-      banner.style.color = "var(--red)";
-      console.warn("Session save error:", d);
-    }
-  } catch(e) {
-    if (banner) { banner.className = "save-banner show"; banner.innerHTML = `⚠ Gagal menyimpan sesi ke arsip: ${e.message}`; banner.style.background = "var(--red-l)"; banner.style.color = "var(--red)"; }
-    console.warn("Session save failed:", e.message);
-  }
-}
-
-window.addEventListener("DOMContentLoaded", () => { initApp(); loadStatus(); });
-
 function esc(s) {
-  return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-}
-
-function toggleGuide() {
-  const body = document.getElementById("guide-body");
-  const arrow = document.getElementById("guide-arrow");
-  const open = body.classList.toggle("open");
-  arrow.classList.toggle("open", open);
-  const toggle = document.getElementById("guide-toggle");
-  toggle.style.borderRadius = open ? "var(--r-md) var(--r-md) 0 0" : "var(--r-md)";
+  return String(s || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 </script>
 </body>
