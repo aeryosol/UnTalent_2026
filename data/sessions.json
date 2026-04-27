@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "sessionsServedTotal": 3,
-    "creditsSpentUSD": 1.2,
-    "lastUpdated": "2026-04-27T02:55:05.650Z"
+    "sessionsServedTotal": 4,
+    "creditsSpentUSD": 1.6,
+    "lastUpdated": "2026-04-27T04:21:53.271Z"
   },
   "sessions": [
     {
@@ -3574,6 +3574,1198 @@
           "correct": "c",
           "explanation": "Level 3 memerlukan kemampuan mengevaluasi hasil kerja tim dan menelaah permasalahan WP secara komprehensif untuk memberikan rekomendasi tindak lanjut yang optimal. Jaminan tanah se",
           "source": "Materi Webinar KPP — Pelaksanaan Tindakan Penagihan Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "SES-TL6DLA",
+      "position": "Kepala KP2KP",
+      "segment": "B",
+      "segmentLabel": "Jabatan Administrator",
+      "score": 100,
+      "totalQ": 60,
+      "correct": 60,
+      "completedAt": "2026-04-27T04:21:51.717Z",
+      "questions": [
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 0,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala KP2KP Muara Bungo, apa identifikasi masalah utama dalam implementasi Coretax System untuk 487 Wajib Pajak UMKM di wilayah Anda?",
+          "options": {
+            "a": "Kesenjangan literasi digital UMKM yang menghambat adopsi teknologi Coretax System",
+            "b": "Kurangnya anggaran operasional KP2KP untuk sosialisasi Coretax",
+            "c": "Keterbatasan jumlah pegawai di KP2KP Muara Bungo",
+            "d": "Infrastruktur jaringan internet yang belum memadai di wilayah"
+          },
+          "correct": "a",
+          "explanation": "Masalah utama adalah mayoritas UMKM belum melek teknologi yang menjadi hambatan fundamental dalam mengadopsi sistem digital Coretax, bukan sekadar masalah infrastruktur atau SDM in",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Sosialisasi Kebijakan Coretax di Wilayah Terpencil",
+          "vigBody": "Sebagai Kepala KP2KP Muara Bungo, Anda menghadapi tantangan implementasi Coretax System di wilayah dengan 487 Wajib Pajak UMKM yang mayoritas belum melek teknologi. Dari evaluasi triwulan, hanya 23% WP yang memahami kebijakan baru ini. PT Sumber Rezeki dan 15 pengusaha lokal mengajukan keberatan ker",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 1,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Data apa yang paling relevan untuk dianalisis dalam merancang strategi implementasi Coretax System di KP2KP Muara Bungo?",
+          "options": {
+            "a": "Data historis penerimaan pajak lima tahun terakhir per sektor usaha",
+            "b": "Profil tingkat pendidikan, usia, jenis usaha, dan penggunaan teknologi dari 487 UMKM",
+            "c": "Data kepemilikan NPWP aktif di seluruh Kabupaten Muara Bungo",
+            "d": "Laporan kinerja KP2KP se-Kanwil DJP Jambi tahun berjalan"
+          },
+          "correct": "b",
+          "explanation": "Data profil komprehensif UMKM (pendidikan, usia, jenis usaha, literasi teknologi) paling relevan untuk merancang program edukasi dan pendampingan yang tersegmentasi dan efektif.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Sosialisasi Kebijakan Coretax di Wilayah Terpencil",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 2,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Manakah alternatif solusi terbaik untuk mengatasi kendala literasi digital UMKM dalam implementasi Coretax System?",
+          "options": {
+            "a": "Menunda implementasi Coretax hingga semua UMKM siap menggunakan teknologi",
+            "b": "Mewajibkan UMKM menggunakan jasa konsultan pajak untuk mengoperasikan Coretax",
+            "c": "Program pendampingan berjenjang dengan melibatkan relawan pajak dan UMKM pioneer sebagai mentor sebaya",
+            "d": "Memberikan insentif fiskal kepada UMKM yang berhasil menggunakan Coretax"
+          },
+          "correct": "c",
+          "explanation": "Pendampingan berjenjang dengan mentor sebaya (peer learning) lebih efektif dan sustainable karena memanfaatkan local champion dan menciptakan multiplier effect di komunitas UMKM.",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Sosialisasi Kebijakan Coretax di Wilayah Terpencil",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 3,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala KP2KP, rekomendasi tindak lanjut apa yang paling strategis untuk keberhasilan implementasi Coretax System jangka panjang?",
+          "options": {
+            "a": "Mengusulkan penambahan pegawai khusus IT di KP2KP Muara Bungo",
+            "b": "Membentuk help desk Coretax 24/7 dengan hotline khusus UMKM",
+            "c": "Mengadakan sosialisasi massal Coretax setiap bulan di gedung pertemuan",
+            "d": "Membangun ekosistem digital pajak melalui kemitraan dengan pemda, komunitas UMKM, dan lembaga pendidikan lokal"
+          },
+          "correct": "d",
+          "explanation": "Membangun ekosistem kolaboratif dengan multi-stakeholder menciptakan dukungan sistemik dan berkelanjutan, melampaui keterbatasan kapasitas KP2KP dan memastikan keberlanjutan pasca ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Sosialisasi Kebijakan Coretax di Wilayah Terpencil",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 0,
+          "subIdx": 4,
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Risiko prosedural apa yang harus dimitigasi dalam implementasi Coretax System di KP2KP dengan mayoritas UMKM belum melek teknologi?",
+          "options": {
+            "a": "Penurunan penerimaan pajak akibat UMKM beralih ke sektor informal",
+            "b": "Kebocoran data perpajakan UMKM akibat sistem keamanan Coretax yang lemah",
+            "c": "Tingginya potensi kesalahan input data dan keterlambatan pelaporan yang berdampak pada sanksi administrasi bagi UMKM",
+            "d": "Konflik kepentingan antara KP2KP dengan Kantor Pelayanan Pajak Pratama induk"
+          },
+          "correct": "c",
+          "explanation": "Risiko prosedural utama adalah kesalahan operasional akibat keterbatasan literasi digital yang dapat menyebabkan sanksi administrasi, sehingga perlu program pendampingan intensif u",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": "Sosialisasi Kebijakan Coretax di Wilayah Terpencil",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 0,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala KP2KP Bengkulu yang menerima laporan lonjakan pengaduan keterlambatan penerbitan SKF, apa identifikasi masalah utama yang harus diprioritaskan?",
+          "options": {
+            "a": "Kurangnya jumlah pegawai di KP2KP Bengkulu untuk melayani semua pengaduan wajib pajak",
+            "b": "Gangguan pada proses bisnis pelayanan SKF yang berdampak langsung pada kepuasan dan kepatuhan wajib pajak",
+            "c": "Sistem aplikasi perpajakan yang sering mengalami error dan perlu diganti segera",
+            "d": "Wajib pajak yang tidak memahami prosedur pengajuan SKF dengan benar"
+          },
+          "correct": "b",
+          "explanation": "Masalah utama adalah gangguan sistemik dalam proses pelayanan SKF yang menimbulkan lonjakan pengaduan, bukan asumsi tentang SDM atau sistem tanpa data pendukung.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Layanan dan Koordinasi Lintas Seksi KP2KP",
+          "vigBody": "Anda sebagai Kepala KP2KP Bengkulu menerima laporan bulanan yang menunjukkan lonjakan pengaduan dari wajib pajak terkait keterlambatan penerbitan Surat Keterangan Fiskal (SKF). Data menunjukkan 45 dari 120 permohonan SKF tertunda lebih dari 14 hari kerja. Setelah penelusuran dokumen, ditemukan bahwa",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 1,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Data apa yang paling relevan untuk dianalisis guna mengidentifikasi akar penyebab keterlambatan penerbitan SKF?",
+          "options": {
+            "a": "Data historis penerimaan pajak lima tahun terakhir di wilayah Bengkulu",
+            "b": "Laporan keuangan tahunan KP2KP Bengkulu dan alokasi anggaran operasional",
+            "c": "Data demografi wajib pajak yang mengajukan pengaduan keterlambatan SKF",
+            "d": "Breakdown waktu proses per tahapan penerbitan SKF, volume permohonan, dan ketersediaan SDM pengelola"
+          },
+          "correct": "d",
+          "explanation": "Analisis waktu proses, volume, dan kapasitas SDM memberikan gambaran konkret tentang bottleneck dalam proses penerbitan SKF.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Layanan dan Koordinasi Lintas Seksi KP2KP",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 2,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Dalam mengevaluasi alternatif solusi untuk mengatasi keterlambatan SKF, pendekatan mana yang paling komprehensif?",
+          "options": {
+            "a": "Melakukan mapping proses, optimalisasi SOP, digitalisasi prosedur, dan penguatan kapasitas SDM secara bertahap",
+            "b": "Mengirim surat teguran kepada semua wajib pajak yang mengeluh agar lebih sabar menunggu",
+            "c": "Menambah jumlah pegawai secara permanen untuk mengantisipasi lonjakan permohonan di masa depan",
+            "d": "Mengurangi jumlah dokumen persyaratan SKF agar proses lebih cepat tanpa koordinasi dengan kantor pusat"
+          },
+          "correct": "a",
+          "explanation": "Solusi komprehensif mencakup perbaikan proses, sistem, dan SDM secara terstruktur untuk mengatasi akar masalah secara menyeluruh.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Layanan dan Koordinasi Lintas Seksi KP2KP",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 3,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut yang paling tepat untuk dilaporkan kepada Kanwil DJP terkait lonjakan pengaduan keterlambatan SKF adalah?",
+          "options": {
+            "a": "Meminta penambahan anggaran operasional tanpa analisis kebutuhan yang jelas",
+            "b": "Mengusulkan quick wins (perbaikan cepat), rencana perbaikan jangka menengah, dan dukungan yang dibutuhkan dari Kanwil",
+            "c": "Melaporkan hasil analisis akar masalah dan tidak melakukan tindakan apapun",
+            "d": "Menyarankan penutupan sementara layanan SKF hingga masalah selesai"
+          },
+          "correct": "b",
+          "explanation": "Rekomendasi efektif mencakup solusi jangka pendek dan menengah disertai permintaan dukungan spesifik berbasis data kepada atasan.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Layanan dan Koordinasi Lintas Seksi KP2KP",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 1,
+          "subIdx": 4,
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "Risiko prosedural apa yang harus diantisipasi jika Kepala KP2KP mengambil keputusan unilateral mengubah prosedur penerbitan SKF tanpa koordinasi?",
+          "options": {
+            "a": "Tidak ada risiko karena Kepala KP2KP memiliki kewenangan penuh atas unit kerjanya",
+            "b": "Peningkatan kepuasan wajib pajak karena proses menjadi lebih fleksibel dan cepat",
+            "c": "Apresiasi dari Kanwil DJP atas inisiatif inovatif dalam meningkatkan kualitas layanan",
+            "d": "Pelanggaran ketentuan peraturan perpajakan, inkonsistensi layanan antar KPP, dan potensi sanksi administratif bagi pejabat"
+          },
+          "correct": "d",
+          "explanation": "Perubahan prosedur tanpa koordinasi melanggar hierarki birokrasi, menciptakan inkonsistensi pelayanan, dan berpotensi menimbulkan sanksi administratif.",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": "Evaluasi Layanan dan Koordinasi Lintas Seksi KP2KP",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 0,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Sebagai Kepala KP2KP Semarapura, apa identifikasi masalah utama dari penurunan rasio kepatuhan SPT Tahunan setelah 6 bulan implementasi Coretax?",
+          "options": {
+            "a": "Wajib Pajak enggan beradaptasi karena sistem baru terlalu kompleks dan kurangnya sosialisasi efektif",
+            "b": "Jumlah Wajib Pajak aktif terlalu banyak sehingga sulit dikelola",
+            "c": "Server Coretax sering down sehingga tidak bisa diakses",
+            "d": "Petugas KP2KP tidak memiliki kompetensi dalam mengoperasikan sistem"
+          },
+          "correct": "a",
+          "explanation": "Masalah utama implementasi sistem baru adalah resistensi perubahan dan gap pemahaman pengguna yang memerlukan sosialisasi dan edukasi komprehensif.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Evaluasi Kepatuhan WP Pasca Implementasi Sistem Coretax",
+          "vigBody": "Anda adalah Kepala KP2KP Semarapura yang mengelola 2.850 Wajib Pajak aktif. Setelah implementasi sistem Coretax selama 6 bulan, terjadi penurunan rasio kepatuhan SPT Tahunan dari 78% menjadi 68%. Data menunjukkan 285 WP yang sebelumnya patuh tidak melaporkan SPT. Seksi Pelayanan melaporkan peningkat",
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 1,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Data analisis apa yang paling relevan untuk mengidentifikasi penyebab spesifik penurunan kepatuhan SPT Tahunan di KP2KP Semarapura?",
+          "options": {
+            "a": "Data jumlah total penerimaan pajak 6 bulan terakhir",
+            "b": "Data jumlah petugas yang sudah dilatih Coretax",
+            "c": "Segmentasi WP yang tidak lapor berdasarkan kategori (UMKM/Karyawan), tingkat literasi digital, dan histori kepatuhan sebelum Coretax",
+            "d": "Data perbandingan kepatuhan dengan KP2KP lain se-Indonesia"
+          },
+          "correct": "c",
+          "explanation": "Segmentasi WP berdasarkan karakteristik spesifik memungkinkan identifikasi pola dan penyebab penurunan yang tepat sasaran untuk intervensi yang efektif.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Evaluasi Kepatuhan WP Pasca Implementasi Sistem Coretax",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 2,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Manakah alternatif solusi yang paling efektif untuk meningkatkan kepatuhan SPT di era Coretax dengan sumber daya KP2KP yang terbatas?",
+          "options": {
+            "a": "Menambah jumlah petugas KP2KP untuk melayani semua WP secara langsung",
+            "b": "Mengirim surat teguran kepada seluruh WP yang belum lapor",
+            "c": "Menunda implementasi Coretax hingga semua WP siap",
+            "d": "Program sosialisasi bertahap berbasis digital (webinar, video tutorial) dan tatap muka terbatas untuk segmen prioritas dengan bantuan relawan pajak"
+          },
+          "correct": "d",
+          "explanation": "Pendekatan hybrid digital-tatap muka dengan segmentasi prioritas dan kolaborasi relawan pajak optimal untuk jangkauan luas dengan efisiensi sumber daya.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Evaluasi Kepatuhan WP Pasca Implementasi Sistem Coretax",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 3,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut prioritas apa yang harus Anda lakukan dalam 30 hari ke depan untuk merespons penurunan kepatuhan ini?",
+          "options": {
+            "a": "Melakukan asistensi intensif kepada 20% WP dengan kontribusi pajak tertinggi, sosialisasi massal via media sosial, dan koordinasi dengan pemda setempa",
+            "b": "Membuat laporan lengkap untuk Kanwil tanpa tindakan konkret",
+            "c": "Menunggu arahan dari pusat tentang kebijakan baru",
+            "d": "Mengajukan penambahan anggaran untuk promosi besar-besaran"
+          },
+          "correct": "a",
+          "explanation": "Pendekatan Pareto (fokus pada kontributor utama) dikombinasi dengan sosialisasi massal dan kolaborasi stakeholder memberikan quick wins dan impact maksimal jangka pendek.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Evaluasi Kepatuhan WP Pasca Implementasi Sistem Coretax",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 2,
+          "subIdx": 4,
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Dari aspek prosedural dan manajemen risiko, apa yang harus Anda pastikan dalam pelaksanaan program peningkatan kepatuhan SPT ini?",
+          "options": {
+            "a": "Memberikan sanksi langsung kepada WP yang tidak patuh",
+            "b": "Fokus hanya pada pencapaian target tanpa dokumentasi",
+            "c": "Mendokumentasikan seluruh kegiatan sosialisasi, memonitor progres kepatuhan mingguan, dan melaporkan kepada Kanwil sesuai SOP untuk mitigasi risiko ke",
+            "d": "Mengubah sistem Coretax sesuai kebutuhan lokal"
+          },
+          "correct": "c",
+          "explanation": "Dokumentasi, monitoring berkala, dan pelaporan sesuai SOP adalah prinsip good governance yang melindungi organisasi dari risiko akuntabilitas dan memastikan traceability program.",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": "Evaluasi Kepatuhan WP Pasca Implementasi Sistem Coretax",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 0,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Sebagai Kepala KP2KP Sumbawa, apa identifikasi masalah utama yang paling tepat dari laporan tingkat kepatuhan SPT Tahunan hanya 68%?",
+          "options": {
+            "a": "Sistem e-Filing yang sering mengalami gangguan teknis",
+            "b": "Kurangnya sosialisasi dan edukasi perpajakan kepada wajib pajak di wilayah kerja KP2KP Sumbawa",
+            "c": "Rendahnya kesadaran wajib pajak akibat rendahnya tingkat pendidikan masyarakat",
+            "d": "Kurangnya jumlah petugas pajak di KP2KP Sumbawa"
+          },
+          "correct": "b",
+          "explanation": "Masalah utama adalah gap komunikasi dan edukasi yang menjadi fungsi penyusunan informasi publik, bukan asumsi teknis atau SDM semata.",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Evaluasi Strategi Publikasi Informasi Perpajakan KP2KP",
+          "vigBody": "Anda adalah Kepala KP2KP Sumbawa yang menerima laporan dari Seksi Pelayanan bahwa tingkat kepatuhan pelaporan SPT Tahunan di wilayah kerja hanya mencapai 68%, jauh di bawah target nasional 82%. Hasil survei menunjukkan 65% wajib pajak UMKM mengaku kurang memahami kewajiban perpajakan mereka. Seksi E",
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 1,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Data tambahan manakah yang paling relevan untuk dianalisis guna memahami akar penyebab rendahnya kepatuhan pelaporan SPT di wilayah KP2KP Sumbawa?",
+          "options": {
+            "a": "Data segmentasi wajib pajak berdasarkan jenis usaha dan demografi serta riwayat kepatuhan periode sebelumnya",
+            "b": "Data jumlah penerbitan NPWP dalam 3 tahun terakhir",
+            "c": "Data penerimaan pajak nasional tahun berjalan",
+            "d": "Data jumlah pegawai KP2KP di seluruh Indonesia"
+          },
+          "correct": "a",
+          "explanation": "Segmentasi dan riwayat kepatuhan membantu mengidentifikasi kelompok spesifik yang perlu ditargetkan dalam penyusunan informasi publik yang efektif.",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Evaluasi Strategi Publikasi Informasi Perpajakan KP2KP",
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 2,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Dalam mengevaluasi alternatif solusi untuk meningkatkan kepatuhan pelaporan SPT, strategi manakah yang paling efektif sesuai kompetensi Penyusunan Informasi Publik L3?",
+          "options": {
+            "a": "Meningkatkan sanksi administratif bagi wajib pajak yang terlambat lapor",
+            "b": "Menyusun program komunikasi publik bertarget dengan konten edukasi multi-channel (media sosial, radio lokal, tatap muka) disesuaikan dengan karakteris",
+            "c": "Menambah jumlah pegawai di Seksi Pelayanan",
+            "d": "Memperpanjang batas waktu pelaporan SPT Tahunan"
+          },
+          "correct": "b",
+          "explanation": "Solusi ini memanfaatkan kompetensi penyusunan informasi publik secara strategis dan terukur sesuai level L3 yang mensyaratkan kemampuan analisis dan adaptasi.",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Evaluasi Strategi Publikasi Informasi Perpajakan KP2KP",
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 3,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Rekomendasi tindak lanjut yang paling komprehensif untuk meningkatkan kepatuhan pelaporan SPT di wilayah KP2KP Sumbawa adalah:",
+          "options": {
+            "a": "Membuat surat edaran kepada seluruh wajib pajak terdaftar",
+            "b": "Melakukan pemeriksaan rutin terhadap wajib pajak yang tidak lapor",
+            "c": "Menyusun roadmap komunikasi 6 bulan dengan 3 fase: pemetaan stakeholder, kampanye edukasi masif, dan pendampingan pelaporan, disertai monitoring berka",
+            "d": "Mengadakan kelas pajak gratis setiap hari Jumat"
+          },
+          "correct": "c",
+          "explanation": "Rekomendasi terstruktur dengan tahapan jelas, pengukuran, dan adaptasi menunjukkan kemampuan L3 dalam merancang strategi komunikasi publik yang sistematis dan berkelanjutan.",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Evaluasi Strategi Publikasi Informasi Perpajakan KP2KP",
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "case",
+          "caseIdx": 3,
+          "subIdx": 4,
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Risiko prosedural apa yang perlu diantisipasi dalam pelaksanaan program peningkatan kepatuhan melalui penyusunan informasi publik di KP2KP Sumbawa?",
+          "options": {
+            "a": "Petugas KP2KP akan kelelahan karena beban kerja bertambah",
+            "b": "Wajib pajak akan melaporkan SPT dengan nilai yang tidak benar",
+            "c": "Anggaran kegiatan akan membengkak melebihi DIPA",
+            "d": "Informasi publik yang disampaikan tidak sesuai ketentuan perundangan atau menyesatkan sehingga berpotensi menimbulkan komplain dan merusak kredibilita"
+          },
+          "correct": "d",
+          "explanation": "Risiko utama dalam penyusunan informasi publik adalah akurasi dan kepatuhan terhadap regulasi, karena kesalahan informasi dapat berdampak luas dan merugikan reputasi institusi.",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": "Evaluasi Strategi Publikasi Informasi Perpajakan KP2KP",
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Labuan Bajo menghadapi resistensi tinggi dari pelaku UMKM sektor pariwisata terhadap kenaikan tarif PPN 12%. Sebagai Kepala KP2KP, Anda harus melakukan advokasi kebijakan kepada asosiasi pengusaha hotel dan restoran yang mengancam aksi demo. Ke",
+          "options": {
+            "a": "Mengundang ketua asosiasi untuk rapat internal di KP2KP dan menjelaskan bahwa kebijakan sudah final sehingga harus dipatuhi, kemudian menyerahkan bros",
+            "b": "Meminta seksi pelayanan untuk membuat video tutorial tentang pengkreditan pajak masukan dan mengunggahnya di media sosial sebagai bentuk sosialisasi m",
+            "c": "Menyelenggarakan forum dialog terbuka dengan asosiasi, membimbing pemahaman mekanisme pengkreditan melalui simulasi kasus riil, dan berkoordinasi deng",
+            "d": "Melaporkan potensi demo kepada Kanwil dan meminta tim khusus dari KPP induk untuk menangani advokasi karena kasusnya sensitif dan melibatkan asosiasi "
+          },
+          "correct": "c",
+          "explanation": "Level 3 mengharuskan kemampuan menyelenggarakan advokasi secara langsung dengan membimbing pemahaman stakeholder melalui metode interaktif. Koordinasi lintas unit (KPP induk) dan i",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Tanjung Redeb menerima laporan dari 15 pelaku UMKM sektor perikanan yang menolak kenaikan tarif PPh Final 0,5% karena merasa terbebani di tengah penurunan harga ikan. Media lokal mulai memberitakan secara negatif dan DPRD mengundang DJP untuk h",
+          "options": {
+            "a": "Langsung menggelar konferensi pers bersama Kakanwil untuk klarifikasi kebijakan, kemudian menyerahkan penanganan lebih lanjut kepada Seksi Ekstensifik",
+            "b": "Membentuk tim gabungan dengan Seksi Ekstensifikasi KPP Pratama dan Humas Kanwil untuk menyusun materi advokasi tersegmentasi, melakukan edukasi langsu",
+            "c": "Meminta Kanwil menunda implementasi kebijakan di wilayah KP2KP sambil melakukan sosialisasi bertahap hanya kepada asosiasi nelayan tanpa melibatkan me",
+            "d": "Fokus menangani pemberitaan media negatif dengan bantuan Humas Kanwil, kemudian menyerahkan penanganan UMKM dan DPRD kepada KPP Pratama"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP menyelenggarakan dan membimbing advokasi dengan koordinasi lintas seksi/unit. Pembentukan tim gabungan dengan materi tersegmentasi menunjukkan kem",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "KP2KP Kutacane menerima 23 pengaduan melalui berbagai kanal dalam sebulan terakhir: 12 pengaduan terkait pelayanan lambat, 8 pengaduan mengenai sikap petugas, dan 3 pengaduan tentang dugaan pungutan liar. Dari hasil analisis, 7 pengaduan pelayanan la",
+          "options": {
+            "a": "Memberikan teguran tertulis kepada 2 pegawai yang sering diadukan dan menambah jumlah loket pelayanan untuk mengatasi keterlambatan layanan",
+            "b": "Fokus menyelesaikan 3 kasus dugaan pungli terlebih dahulu karena paling krusial, sambil menunda penanganan pengaduan pelayanan dan sikap petugas hingg",
+            "c": "Melaporkan seluruh pengaduan ke Kanwil untuk mendapat arahan, kemudian menunggu petunjuk teknis sebelum mengambil tindakan korektif di internal KP2KP",
+            "d": "Mengkoordinasikan rotasi tugas antar seksi untuk mengatasi keterbatasan SDM, membimbing pegawai yang diadukan melalui coaching terstruktur, dan melaku"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP menyelenggarakan dan membimbing dengan koordinasi lintas seksi untuk memecahkan masalah teknis secara komprehensif. Rotasi tugas mengatasi keterba",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Tilamuta menerima instruksi dari Kanwil untuk melaksanakan sosialisasi program PPS (Pemutihan Pajak Kendaraan) yang merupakan kebijakan Pemerintah Daerah Kabupaten Boalemo, namun menimbulkan miskonsepsi di masyarakat yang mengira DJP juga membe",
+          "options": {
+            "a": "Menyelenggarakan forum koordinasi tripartit dengan Dispenda dan perwakilan komunitas UMKM, membimbing tim untuk menyusun materi klarifikasi yang membe",
+            "b": "Membuat surat edaran internal kepada seluruh pegawai KP2KP untuk tidak terlibat dalam sosialisasi kebijakan daerah dan meminta Wajib Pajak datang lang",
+            "c": "Mengirim surat penegasan kepada Kanwil bahwa KP2KP menolak instruksi sosialisasi tersebut karena berpotensi menimbulkan konflik kepentingan antara paj",
+            "d": "Melakukan kunjungan ke setiap komunitas UMKM secara individual untuk memberikan penjelasan verbal tanpa melibatkan Dispenda agar tidak terjadi perdeba"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP menyelenggarakan koordinasi lintas instansi (Dispenda) dan membimbing tim dalam menyusun strategi klarifikasi yang terstruktur. Pemecahan masalah ",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Amahai menerima 47 berkas permohonan sertifikat elektronik untuk 12 PKP yang bergerak di sektor perikanan tangkap. Setelah penelitian dokumen, ditemukan 8 PKP tidak melampirkan LPAD (Laporan Pemberitahuan Aktivitas Digital), 6 PKP mencantumkan ",
+          "options": {
+            "a": "Menolak seluruh berkas yang tidak lengkap dan meminta PKP mengajukan permohonan baru setelah melengkapi dokumen sesuai ketentuan",
+            "b": "Membentuk tim verifikasi lintas fungsi pelayanan-ekstensifikasi, memetakan jenis ketidaklengkapan per kategori, lalu menerbitkan surat klarifikasi ber",
+            "c": "Menghubungi setiap PKP secara personal melalui telepon untuk meminta kelengkapan dokumen tambahan tanpa dokumentasi formal",
+            "d": "Meneruskan seluruh berkas ke KPP Pratama induk untuk dilakukan penelitian ulang mengingat kompleksitas permasalahan dokumentasi"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan kemampuan menyelenggarakan dan membimbing serta koordinasi lintas seksi dalam memecahkan masalah teknis kompleks. Pembentukan tim verifikasi lintas fungsi deng",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Pinrang menerima hasil audit internal yang menunjukkan 34% berkas layanan SPT Tahunan periode 2023 memiliki ketidaklengkapan dokumentasi verifikasi identitas, sementara 28% berkas restitusi PPN tidak disertai berita acara penelitian yang memada",
+          "options": {
+            "a": "Membentuk tim khusus dari pelaksana terbaik untuk mereview semua berkas bermasalah dan menyusun SOP baru tanpa melibatkan seksi lain agar fokus pada p",
+            "b": "Melaporkan temuan ke Kanwil untuk meminta penambahan SDM dan mengusulkan digitalisasi penuh sistem dokumentasi sebagai solusi jangka panjang",
+            "c": "Menyampaikan teguran tertulis kepada petugas yang bertanggung jawab atas berkas bermasalah dan mewajibkan mereka mengikuti pelatihan eksternal tentang",
+            "d": "Menyelenggarakan workshop internal lintas fungsional untuk analisis akar masalah, membimbing pelaksana menyusun checklist verifikasi terstandar, dan m"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan pembimbingan dan koordinasi lintas seksi untuk memecahkan masalah teknis secara struktural. Workshop analisis akar masalah melibatkan ko",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Morotai menerima 34 permintaan data statistik perpajakan dari berbagai pemangku kepentingan dalam sebulan: 12 permintaan dari media lokal tentang realisasi pajak daerah, 8 permintaan dari akademisi untuk penelitian, 9 permintaan dari OPD setemp",
+          "options": {
+            "a": "Membentuk tim khusus pengelola informasi publik dari seluruh seksi, menyusun SOP klasifikasi dan diseminasi data perpajakan sesuai UU KIP, memberikan ",
+            "b": "Menegur Kepala Seksi Pelayanan atas pemberian data tanpa koordinasi, menghentikan sementara seluruh layanan informasi publik sampai ada petunjuk dari ",
+            "c": "Menugaskan Kepala Seksi Pelayanan untuk menangani sendiri semua permintaan informasi publik dengan memberikan panduan singkat tentang data yang boleh ",
+            "d": "Menyerahkan seluruh pengelolaan permintaan informasi publik kepada Kanwil karena KP2KP tidak memiliki kewenangan untuk menentukan klasifikasi data yan"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP menyelenggarakan sistem pengelolaan informasi publik secara terstruktur dan membimbing staf dalam klasifikasi data sesuai regulasi. Pemecahan masa",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Nabire menerima keluhan masif dari 28 pelaku UMKM sektor perikanan yang menolak kenaikan tarif PPh Final 0,5% karena merging dengan sektor lain yang seharusnya dikenakan tarif berbeda. Mereka mengancam akan melakukan aksi demonstrasi dan menghe",
+          "options": {
+            "a": "Segera melaporkan situasi ke Kanwil dan meminta penundaan implementasi kebijakan sampai ada arahan lebih lanjut dari pusat",
+            "b": "Mengeluarkan surat edaran kepada seluruh UMKM bahwa kebijakan bersifat final dan wajib dipatuhi sesuai regulasi yang berlaku",
+            "c": "Menyelenggarakan forum dialog dengan pelaku UMKM, membimbing pemahaman kebijakan dengan data komparasi tarif sektor, dan berkoordinasi dengan Seksi Pe",
+            "d": "Membentuk tim khusus untuk melakukan pemeriksaan terhadap UMKM yang menolak sebagai efek jera agar tidak mempengaruhi wajib pajak lainnya"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan forum advokasi dan membimbing pemahaman kebijakan kepada stakeholders. Memecahkan masalah teknis melalui klarifikasi tarif berbasis data",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Ranai menerima 52 berkas permohonan pemindahbukuan dari wajib pajak UMKM nelayan dengan kelengkapan dokumen bervariasi. Hasil analisis menunjukkan 18 berkas lengkap, 21 berkas kurang lampiran bukti pemotongan, dan 13 berkas salah format SSP. Ti",
+          "options": {
+            "a": "Menyelesaikan semua berkas lengkap terlebih dahulu, kemudian menolak 34 berkas tidak lengkap dan meminta wajib pajak mengajukan ulang permohonan baru",
+            "b": "Mengembalikan semua 34 berkas tidak lengkap tanpa penelitian lebih lanjut dan fokus menyelesaikan 18 berkas lengkap sesuai SOP standar",
+            "c": "Memperpanjang batas waktu penyelesaian untuk semua berkas dan meminta bantuan KPP Pratama induk mengirimkan petugas tambahan untuk membantu proses pen",
+            "d": "Membentuk tim khusus untuk memproses 18 berkas lengkap segera, koordinasi dengan seksi pelayanan untuk membimbing pembetulan 21 berkas kurang lampiran"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan dan membimbing dengan memecahkan masalah teknis melalui koordinasi lintas seksi. Strategi segmentasi penanganan (proses cepat berkas",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Sengeti menerima data dari sistem bahwa 67 Wajib Pajak UMKM di wilayahnya tidak menyampaikan SPT Tahunan 2 tahun berturut-turut, namun masih aktif melakukan transaksi perbankan. Account Representative melaporkan keterbatasan SDM untuk melakukan",
+          "options": {
+            "a": "Menyelenggarakan koordinasi dengan seksi terkait untuk menyusun stratifikasi risiko WP berdasarkan nilai transaksi perbankan, sektor usaha, dan track ",
+            "b": "Menugaskan AR untuk melakukan kunjungan ke seluruh 67 WP secara bertahap sesuai kemampuan SDM yang ada",
+            "c": "Menerbitkan Surat Teguran kepada seluruh 67 WP sekaligus dan menunggu respons mereka sebelum mengambil tindakan lebih lanjut",
+            "d": "Melaporkan kondisi keterbatasan SDM kepada Kanwil dan meminta penambahan pegawai untuk menangani kasus ini"
+          },
+          "correct": "a",
+          "explanation": "Level 3 memerlukan kemampuan menyelenggarakan dan membimbing bawahan dalam menangani masalah teknis dengan koordinasi lintas fungsi. Stratifikasi risiko dan prioritas penanganan me",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Tual menemukan anomali dalam sistem bahwa 89 Wajib Pajak UMKM di wilayah pelabuhan melaporkan omzet konsisten Rp 450 juta (di bawah threshold PKP) selama 3 tahun berturut-turut, padahal data Bea Cukai menunjukkan volume ekspor komoditas laut me",
+          "options": {
+            "a": "Langsung menerbitkan usulan pemeriksaan untuk seluruh 89 WP ke Kanwil dan menyerahkan pelaksanaannya kepada KPP Pratama terdekat",
+            "b": "Menugaskan Seksi Pelayanan untuk memanggil seluruh 89 WP secara serentak guna memberikan konseling kewajiban PKP dan meminta mereka mengkonfirmasi ula",
+            "c": "Menyelenggarakan rapat koordinasi dengan Seksi Pengawasan dan Pelayanan untuk menyusun profiling risiko ketidakpatuhan, membimbing tim melakukan anali",
+            "d": "Membuat laporan ke Kanwil untuk meminta tim khusus dari KPP Pratama melakukan visitasi serentak karena kasus ini di luar kapasitas KP2KP"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing tim dalam analisis kepatuhan yang kompleks serta koordinasi lintas seksi. Kepala KP2KP harus memecahkan masalah teknis an",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Kolaka menemukan 43 Wajib Pajak UMKM di wilayahnya melaporkan penurunan omzet hingga 60% pada SPT Tahunan 2024, namun data POS Indonesia menunjukkan peningkatan volume pengiriman barang dari alamat UMKM tersebut sebesar 85%. Sebagai Kepala KP2K",
+          "options": {
+            "a": "Langsung menerbitkan SP2DK kepada seluruh 43 Wajib Pajak tersebut dan meminta klarifikasi perbedaan data",
+            "b": "Mengoordinasikan analisis lanjutan dengan Seksi Pelayanan dan Pengawasan untuk memetakan pola ketidakpatuhan, membimbing tim menyusun profil risiko pe",
+            "c": "Meminta Account Representative KPP Pratama untuk segera melakukan kunjungan ke seluruh lokasi usaha 43 WP tersebut",
+            "d": "Membuat laporan temuan ke Kanwil dan menunggu instruksi lebih lanjut tanpa melakukan analisis tambahan"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan kemampuan menyelenggarakan dan membimbing analisis dengan koordinasi lintas fungsi internal. Kepala KP2KP harus memecahkan masalah teknis melalui analisis ters",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Piru menerima 156 pertanyaan serupa dari Wajib Pajak tentang kewajiban pelaporan pajak UMKM sektor perikanan pasca terbitnya PP baru. Kepala Seksi Pelayanan melaporkan bahwa petugas menghabiskan 70% waktu untuk menjawab pertanyaan berulang. Med",
+          "options": {
+            "a": "Mengoordinasikan penyusunan infografis dan siaran pers dengan melibatkan Seksi Pelayanan, Seksi Ekstensifikasi, serta berkonsultasi dengan Kanwil untu",
+            "b": "Menginstruksikan seluruh petugas untuk menjawab setiap pertanyaan Wajib Pajak secara individual dan memberikan penjelasan langsung kepada media lokal",
+            "c": "Meminta Kanwil DJP untuk mengirimkan tim khusus menangani pertanyaan Wajib Pajak dan menyerahkan sepenuhnya penanganan informasi kepada Humas Kanwil",
+            "d": "Membuat pengumuman sederhana di papan pengumuman kantor dan meminta Wajib Pajak untuk membaca peraturan PP yang baru secara mandiri"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP menyelenggarakan penyusunan informasi publik dengan membimbing tim lintas seksi untuk menghasilkan materi yang akurat dan mudah dipahami. Koordina",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Amahai menemukan potensi 73 pelaku usaha warung makan dan kafe di kawasan wisata pantai yang belum terdaftar sebagai Wajib Pajak, namun tim penyuluh hanya 2 orang sementara Seksi Pelayanan sedang menangani pelaporan SPT Tahunan. Sebagai Kepala ",
+          "options": {
+            "a": "Menunda kegiatan ekstensifikasi hingga masa pelaporan SPT selesai, kemudian melakukan pendataan dan pendaftaran secara bertahap",
+            "b": "Mengoordinasikan Seksi Pelayanan dan Penyuluhan untuk membentuk tim gabungan, menyelenggarakan kelas pajak di kelurahan dengan melibatkan lurah, dan m",
+            "c": "Meminta Seksi Pelayanan fokus pada pelaporan SPT sambil menugaskan 2 penyuluh untuk mendatangi 73 pelaku usaha satu per satu melakukan sosialisasi",
+            "d": "Mengirim surat himbauan kepada 73 pelaku usaha untuk mendaftar NPWP secara mandiri melalui sistem online dan melaporkan hasilnya dalam 2 minggu"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan kegiatan ekstensifikasi dengan membimbing tim lintas seksi untuk mengatasi keterbatasan SDM. Koordinasi dengan stakeholder eksternal",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Likupang menemukan 41 pelaku usaha kuliner di kawasan wisata mengeluhkan kebingungan tentang insentif pajak UMKM yang baru. Mereka meminta penjelasan langsung karena informasi di media sosial saling bertentangan dan menimbulkan keresahan hingga",
+          "options": {
+            "a": "Meneruskan keluhan ke KPP Pratama dan meminta mereka mengirim petugas untuk sosialisasi ke lokasi",
+            "b": "Membuat surat edaran tertulis berisi penjelasan insentif dan menempelkan di papan pengumuman KP2KP",
+            "c": "Menyelenggarakan forum dialog dengan pelaku usaha, membimbing account representative menjelaskan kebijakan secara terstruktur, dan berkoordinasi denga",
+            "d": "Meminta pelaku usaha datang satu per satu ke KP2KP untuk konsultasi individual sesuai jadwal"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan kegiatan advokasi secara aktif dan membimbing tim dalam memberikan penjelasan kebijakan. Koordinasi lintas unit (dengan Humas) diperluka",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Lobalain menemukan 64 dokumen permohonan SKB (Surat Keterangan Bebas) PPh Pasal 22 impor dari pelaku usaha di wilayah perbatasan yang diajukan dalam 2 minggu terakhir, namun 47 di antaranya tidak melampirkan laporan realisasi impor periode sebe",
+          "options": {
+            "a": "Memerintahkan petugas untuk menolak semua permohonan yang tidak lengkap dan meminta pemohon melengkapi dokumen terlebih dahulu tanpa penelitian lebih ",
+            "b": "Menyetujui permohonan yang sudah lengkap saja dan mengembalikan berkas tidak lengkap tanpa memberikan asistensi atau solusi kepada pemohon",
+            "c": "Langsung meneruskan semua berkas ke KPP Pratama karena KP2KP tidak memiliki kewenangan untuk melakukan penelitian dokumen permohonan SKB PPh Pasal 22",
+            "d": "Menyelenggarakan rapat koordinasi lintas seksi untuk menyusun SOP penelitian dokumen SKB, membimbing petugas dalam verifikasi kelengkan dan keabsahan "
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing dalam analisis dokumen layanan yang kompleks. Kepala KP2KP harus memecahkan masalah teknis terkait lonjakan permohonan SK",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Bojonegoro menemukan 128 Wajib Pajak UMKM di wilayah sentra industri keramik yang tidak melaporkan SPT Tahunan selama 2 tahun berturut-turut, padahal data marketplace menunjukkan omzet masing-masing di atas Rp800 juta per tahun. Seksi Pelayanan",
+          "options": {
+            "a": "Menerbitkan Surat Teguran secara massal kepada seluruh 128 Wajib Pajak dan menyerahkan penanganan kepada Account Representative di KPP induk",
+            "b": "Langsung mengusulkan pemeriksaan bukti permulaan kepada seluruh Wajib Pajak karena terdapat indikasi koordinasi penghindaran pajak yang sistematis",
+            "c": "Membentuk tim lintas seksi untuk melakukan analisis mendalam pola usaha, mengoordinasikan dengan KPP induk untuk pemetaan risiko, dan menyelenggarakan",
+            "d": "Melakukan kunjungan lapangan ke 128 lokasi usaha secara bersamaan dan membuat berita acara untuk diserahkan ke KPP sebagai bahan usulan pemeriksaan"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan program bimbingan, memecahkan masalah teknis kompleks melalui analisis mendalam, dan koordinasi lintas seksi serta dengan KPP induk. Pen",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Bula menemukan 92 Wajib Pajak orang pribadi di wilayah kerjanya yang terdaftar sebagai karyawan perusahaan lokal namun memiliki omzet e-commerce melalui marketplace yang tidak dilaporkan dalam SPT Tahunan. Sistem menunjukkan rata-rata transaksi",
+          "options": {
+            "a": "Melakukan pemeriksaan serentak terhadap seluruh 92 Wajib Pajak untuk memaksimalkan penerimaan pajak dan memberikan efek jera",
+            "b": "Menyelenggarakan edukasi massal terlebih dahulu, melakukan segmentasi risiko kepatuhan, kemudian berkoordinasi dengan KPP Pratama untuk penanganan Waj",
+            "c": "Menyerahkan seluruh data kepada KPP Pratama karena kasus ini di luar kewenangan KP2KP dan memerlukan tindakan pemeriksaan formal",
+            "d": "Mengirimkan surat teguran kepada seluruh 92 Wajib Pajak secara bersamaan dan menunggu respons mereka untuk pembetulan SPT"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP menyelenggarakan solusi komprehensif (edukasi massal), memecahkan masalah teknis kompleks (segmentasi risiko kepatuhan), dan melakukan koordinasi ",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Tilamuta menemukan 67 dokumen permohonan Surat Keterangan Bebas (SKB) PPh Pasal 22 dari pengusaha ekspor yang diajukan dalam 2 bulan terakhir, namun 38 dokumen di antaranya tidak dilengkapi dengan Pemberitahuan Ekspor Barang (PEB) yang telah di",
+          "options": {
+            "a": "Menolak seluruh 38 permohonan yang tidak lengkap dan memerintahkan petugas untuk menerbitkan surat penolakan secara seragam tanpa penelitian lebih lan",
+            "b": "Menyetujui seluruh permohonan yang masuk untuk mempercepat layanan dan meningkatkan kepuasan Wajib Pajak, kemudian meminta kelengkapan dokumen menyusu",
+            "c": "Langsung meneruskan seluruh permohonan ke KPP Pratama untuk diputuskan karena volume permohonan terlalu banyak dan kompleks untuk ditangani di level K",
+            "d": "Menyelenggarakan rapat koordinasi internal untuk menyamakan persepsi tentang kelengkapan dokumen SKB PPh Pasal 22, membimbing petugas dalam penelitian"
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan pembimbingan dan koordinasi lintas seksi untuk menyelesaikan masalah teknis yang kompleks. Menyamakan persepsi melalui rapat koordinasi ",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Morotai menemukan 85 Wajib Pajak badan di wilayahnya yang terdaftar namun tidak menyampaikan SPT selama 2 tahun berturut-turut. Hasil koordinasi dengan Account Representative menunjukkan 52 WP di antaranya sudah tidak beroperasi, 18 WP masih ak",
+          "options": {
+            "a": "Mengelompokkan penanganan berdasarkan segmentasi: pengajuan penghapusan NPWP untuk 52 WP non-aktif, edukasi intensif untuk 18 WP PTKP, dan koordinasi ",
+            "b": "Membuat surat himbauan massal kepada seluruh 85 Wajib Pajak untuk segera melaporkan SPT dan menetapkan sanksi administratif bagi yang tidak patuh dala",
+            "c": "Melimpahkan seluruh kasus kepada KPP Pratama karena jumlahnya terlalu banyak dan memerlukan tindakan pemeriksaan mendalam untuk semua Wajib Pajak ters",
+            "d": "Melakukan kunjungan langsung ke 85 alamat Wajib Pajak secara bersamaan dalam satu bulan untuk memastikan keberadaan dan status usaha masing-masing"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP memecahkan masalah teknis melalui analisis segmentasi risiko kepatuhan yang berbeda. Strategi ini menunjukkan kemampuan membimbing tim dalam penan",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Dokumen Layanan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Parigi menerima 118 dokumen permohonan pemindahbukuan dari Wajib Pajak yang mengalami kesalahan pembayaran pajak. Setelah dianalisis, ditemukan 34 dokumen tidak melampirkan SSP asli, 29 dokumen melewati batas waktu 1 tahun, 22 dokumen memiliki ",
+          "options": {
+            "a": "Mengembalikan seluruh dokumen yang bermasalah kepada Wajib Pajak dan meminta mereka mengajukan permohonan baru sesuai ketentuan",
+            "b": "Mengelompokkan dokumen berdasarkan jenis permasalahan, membimbing tim untuk verifikasi lanjutan pada dokumen dengan ketidaksesuaian data, berkoordinas",
+            "c": "Memprioritaskan pemrosesan 33 dokumen yang lengkap terlebih dahulu sambil menunda penanganan dokumen bermasalah hingga Wajib Pajak melengkapi persyara",
+            "d": "Membentuk tim khusus untuk memproses semua dokumen secara paralel dan memberikan dispensasi waktu untuk dokumen yang melewati batas 1 tahun"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP menyelenggarakan dan membimbing tim dalam analisis dokumen secara terstruktur dengan mengelompokkan permasalahan untuk efisiensi penanganan. Kemam",
+          "source": "Materi Webinar KPP — Analisis Dokumen Layanan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Karimunjawa menemukan 156 pelaku usaha homestay dan penginapan di wilayah kerjanya yang belum memahami kewajiban pemungutan PPh Pasal 4 ayat (2) atas jasa persewaan tanah dan bangunan. Sebagai Kepala KP2KP, Anda mendapat keluhan dari beberapa p",
+          "options": {
+            "a": "Mengusulkan kepada Kanwil untuk memberikan fasilitas pembebasan PPh Pasal 4 ayat (2) bagi seluruh pelaku usaha homestay di wilayah tersebut",
+            "b": "Membuat surat himbauan kepada seluruh pelaku usaha untuk segera membayar pajak tanpa memberikan penjelasan lebih lanjut mengenai aturan perpajakan",
+            "c": "Menyerahkan sepenuhnya kepada Kepala Seksi Pelayanan untuk memberikan konsultasi individual kepada setiap Wajib Pajak yang datang ke kantor",
+            "d": "Menyelenggarakan kegiatan edukasi massal dengan melibatkan Kepala Seksi Pelayanan dan Penyuluhan untuk menjelaskan dasar hukum, mekanisme penyetoran, "
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan Kepala KP2KP menyelenggarakan dan membimbing kegiatan advokasi secara terstruktur dengan melibatkan bawahan. Memecahkan masalah teknis melalui edukasi massal y",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Taliabu menemukan 73 pelaku usaha digital di wilayah kerjanya yang belum memahami ketentuan pajak UMKM terbaru PP 55/2022. Sebagai Kepala KP2KP, Anda mendapat laporan dari Kepala Seksi Pelayanan bahwa banyak WP menolak mengikuti kelas pajak kar",
+          "options": {
+            "a": "Menyelenggarakan rapat koordinasi lintas seksi untuk merancang strategi advokasi bertahap dengan pendekatan tokoh masyarakat dan membimbing pelaksanaa",
+            "b": "Menyerahkan sepenuhnya kepada Kepala Seksi Pelayanan untuk menyelesaikan permasalahan advokasi tersebut",
+            "c": "Langsung membuat laporan ke Kantor Wilayah bahwa WP di wilayah tersebut tidak kooperatif terhadap program advokasi",
+            "d": "Meminta Kepala Seksi Pelayanan untuk memberikan surat teguran kepada seluruh WP yang menolak mengikuti kelas pajak"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing pelaksanaan advokasi dengan koordinasi lintas seksi untuk memecahkan masalah teknis penolakan WP. Strategi advokasi melal",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "KP2KP Weda menerima 47 pengaduan masyarakat dalam sebulan, dengan 18 pengaduan terkait pelayanan petugas, 15 pengaduan terkait sistem aplikasi DJP, 10 pengaduan terkait ketidakjelasan prosedur, dan 4 pengaduan lainnya. Sebagai Kepala KP2KP, Anda mene",
+          "options": {
+            "a": "Menambah jumlah petugas yang menangani pengaduan dan membuat sistem shift kerja untuk mempercepat respons pengaduan",
+            "b": "Meneruskan semua pengaduan ke KPP Pratama induk untuk ditangani secara terpusat agar penyelesaian lebih efisien",
+            "c": "Membentuk tim lintas seksi dengan SOP koordinasi yang jelas, melakukan bimbingan teknis penanganan pengaduan, dan menetapkan batasan waktu penyelesaia",
+            "d": "Fokus menyelesaikan pengaduan pelayanan petugas terlebih dahulu karena jumlahnya paling banyak, baru kemudian menangani pengaduan lainnya"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut Kepala KP2KP untuk menyelenggarakan sistem koordinasi lintas seksi yang efektif dalam pengelolaan pengaduan. Pembimbingan teknis kepada tim dan penetapan SOP denga",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Sungai Penuh menemukan 94 Wajib Pajak orang pribadi di sektor pertanian yang terdaftar namun tidak pernah menyampaikan SPT selama 3 tahun terakhir. Hasil analisis menunjukkan 62 WP memiliki omzet di atas PTKP, 18 WP sudah pindah domisili, dan 1",
+          "options": {
+            "a": "Menyerahkan seluruh kasus kepada Seksi Pelayanan untuk melakukan himbauan massal tanpa analisis lebih lanjut",
+            "b": "Menunggu instruksi dari Kanwil dan hanya melakukan dokumentasi data tanpa tindakan konkret",
+            "c": "Langsung melakukan pemeriksaan bukti permulaan terhadap semua 94 Wajib Pajak untuk memberikan efek jera",
+            "d": "Membimbing Seksi Pengawasan dan Konsultasi melakukan segmentasi penanganan: intensifikasi untuk 62 WP potensial, koordinasi dengan KPP untuk pemindaha"
+          },
+          "correct": "d",
+          "explanation": "Level 3 memerlukan kemampuan membimbing tim dalam memecahkan masalah teknis kompleks melalui segmentasi penanganan berbasis analisis. Koordinasi lintas seksi diperlukan untuk menye",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Watampone menemukan 63 Wajib Pajak badan di sektor konstruksi yang melaporkan omzet konsisten Rp 4,5 miliar per tahun namun tidak pernah menyetor PPN. Setelah dilakukan survei lapangan, ditemukan proyek-proyek bernilai besar yang tidak tercatat",
+          "options": {
+            "a": "Menyelenggarakan rapat koordinasi dengan Seksi Pengawasan untuk menyusun daftar prioritas pemeriksaan, membimbing petugas dalam analisis risiko kepatu",
+            "b": "Langsung menerbitkan himbauan kepada seluruh Wajib Pajak konstruksi untuk melaporkan omzet sebenarnya tanpa melibatkan Seksi lain",
+            "c": "Menyerahkan seluruh data temuan kepada KPP Pratama tanpa melakukan analisis lebih lanjut di tingkat KP2KP",
+            "d": "Membentuk tim khusus dari satu seksi untuk melakukan investigasi mendalam selama 6 bulan sebelum berkoordinasi dengan pihak lain"
+          },
+          "correct": "a",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan koordinasi lintas seksi dan membimbing tim dalam memecahkan masalah teknis kepatuhan. Kepala KP2KP harus mengkoordinasikan analisis ",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "KP2KP Tanjung Redeb menemukan 142 Wajib Pajak yang terdaftar di wilayah kerjanya tidak melaporkan SPT Tahunan selama 2 tahun berturut-turut, padahal data SIDJP menunjukkan adanya transaksi perbankan signifikan. Sebagai Kepala KP2KP, Anda mengidentifi",
+          "options": {
+            "a": "Melakukan himbauan massal melalui surat teguran kepada seluruh 142 Wajib Pajak secara bersamaan dan menunggu respons mereka dalam 30 hari",
+            "b": "Menyerahkan seluruh data kepada KPP Pratama untuk dilakukan pemeriksaan pajak serentak terhadap semua Wajib Pajak yang tidak patuh",
+            "c": "Menyelenggarakan program edukasi tersegmentasi per kelompok Wajib Pajak, membimbing tim untuk melakukan analisis risiko per segmen, dan berkoordinasi ",
+            "d": "Fokus melakukan kunjungan langsung ke 22 pensiunan terlebih dahulu karena jumlahnya paling sedikit dan mudah ditemui di alamat domisili"
+          },
+          "correct": "c",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan program terstruktur dan membimbing tim dalam analisis tersegmentasi berdasarkan karakteristik kepatuhan. Koordinasi lintas seksi den",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "KP2KP Ternate menemukan 127 pelaku usaha sektor pariwisata di wilayah kerjanya yang belum terdaftar sebagai Wajib Pajak, namun data digital menunjukkan omzet signifikan. Tim pelaksana melaporkan kendala teknis dalam verifikasi data karena perbedaan i",
+          "options": {
+            "a": "Menunda seluruh kegiatan ekstensifikasi hingga ada kejelasan kriteria dari Kantor Pusat DJP untuk menghindari kesalahan teknis",
+            "b": "Menyelenggarakan rapat koordinasi dengan KPP Pratama untuk menyamakan persepsi kriteria teknis, membimbing tim dalam verifikasi data, dan menyusun pri",
+            "c": "Memerintahkan tim untuk segera mendaftarkan seluruh 127 pelaku usaha tanpa verifikasi lebih lanjut agar target triwulan tercapai tepat waktu",
+            "d": "Menyerahkan seluruh data temuan kepada KPP Pratama untuk diproses lebih lanjut karena permasalahan teknis di luar kewenangan KP2KP"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan koordinasi lintas unit untuk memecahkan masalah teknis interpretasi kriteria. Kepala KP2KP harus membimbing tim pelaksana dalam verifika",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Ransiki menemukan 89 pelaku UMKM di sektor kuliner yang belum memiliki NPWP melalui survei lapangan. Sebagai bahan penyusunan siaran pers dan konten media sosial KPP Pratama induk, Kepala KP2KP perlu menyusun laporan informasi yang akan ",
+          "options": {
+            "a": "Memfasilitasi pembahasan bersama kedua Kasi untuk merumuskan angle terpadu yang menggabungkan aspek edukasi dan potensi pajak, kemudian membimbing tim",
+            "b": "Menyusun dua versi laporan informasi sesuai permintaan masing-masing Kasi dan menyerahkan keputusan angle kepada KPP Pratama induk",
+            "c": "Meminta KPP Pratama induk menentukan angle yang diinginkan terlebih dahulu sebelum melanjutkan penyusunan laporan informasi",
+            "d": "Menyusun laporan informasi berdasarkan angle edukasi saja karena lebih sesuai dengan fungsi pelayanan KP2KP"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing tim serta melakukan koordinasi lintas seksi dalam penyusunan informasi publik. Kepala KP2KP harus mampu memecahkan masala",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Bitung menemukan 78 pelaku UMKM sektor perikanan di wilayah pesisir yang belum terdaftar sebagai Wajib Pajak. Media lokal memberitakan negatif tentang rendahnya kesadaran pajak di wilayah tersebut. Sebagai Kepala KP2KP, tindakan paling t",
+          "options": {
+            "a": "Segera merilis siaran pers yang membantah pemberitaan media dan menyalahkan pelaku UMKM yang tidak patuh",
+            "b": "Mengoordinasikan dengan seksi pelayanan dan penyuluhan untuk menyusun konten edukasi bertarget, membimbing tim dalam menyampaikan informasi perpajakan",
+            "c": "Menunggu instruksi dari Kanwil DJP terkait konten informasi publik yang boleh disampaikan kepada masyarakat",
+            "d": "Menyerahkan seluruh penanganan informasi publik kepada Account Representative untuk langsung menemui pelaku UMKM"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing penyusunan informasi publik dengan koordinasi lintas seksi. Kepala KP2KP harus memecahkan masalah teknis komunikasi publi",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Nunukan menemukan 156 Wajib Pajak sektor properti yang melaporkan penurunan omzet signifikan pada SPT Tahunan 2024, namun data Sistem Informasi Geografis (SIG) menunjukkan peningkatan aktivitas pembangunan dan transaksi properti di wilay",
+          "options": {
+            "a": "Menyerahkan seluruh data temuan kepada KPP Pratama dan meminta mereka melakukan pemeriksaan menyeluruh terhadap 156 Wajib Pajak tersebut",
+            "b": "Menugaskan pelaksana KP2KP untuk melakukan konfirmasi langsung ke setiap Wajib Pajak dan membuat laporan hasil wawancara sebagai bahan pemeriksaan",
+            "c": "Menyelenggarakan rapat koordinasi dengan KPP Pratama, Seksi Pengawasan dan Konsultasi, serta instansi terkait (BPN, Pemda) untuk menyusun analisis ris",
+            "d": "Membuat himbauan massal kepada 156 Wajib Pajak untuk melakukan pembetulan SPT Tahunan secara sukarela tanpa analisis lebih lanjut"
+          },
+          "correct": "c",
+          "explanation": "Level 3 memerlukan kemampuan menyelenggarakan koordinasi lintas seksi/instansi untuk mengatasi masalah teknis analisis kepatuhan yang kompleks. Kepala KP2KP harus membimbing tim de",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Analisis Kepatuhan Wajib Pajak",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Melonguane menemukan 83 Wajib Pajak sektor properti yang memiliki aset signifikan namun melaporkan omzet rendah dalam SPT Tahunan. Hasil analisis menunjukkan ada indikasi transaksi tidak wajar dengan pihak afiliasi. Sebagai Kepala KP2KP,",
+          "options": {
+            "a": "Langsung menerbitkan surat himbauan kepada seluruh 83 Wajib Pajak untuk membetulkan SPT Tahunan mereka",
+            "b": "Melakukan pemeriksaan lapangan secara langsung ke 83 Wajib Pajak tersebut untuk membuktikan ketidakwajaran transaksi",
+            "c": "Menyerahkan seluruh data kepada KPP Pratama tanpa melakukan analisis lebih lanjut karena kasus ini di luar kewenangan KP2KP",
+            "d": "Menyelenggarakan koordinasi dengan Kepala Seksi Pengawasan dan Konsultasi KPP induk untuk menyusun strategi pengawasan terpadu dan membimbing pelaksan"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mengharuskan menyelenggarakan dan membimbing pelaksanaan analisis kepatuhan serta melakukan koordinasi lintas seksi. Kepala KP2KP harus memecahkan masalah teknis kompleks d",
+          "source": "Materi Webinar KPP — Analisis Kepatuhan Wajib Pajak L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Tual menerima 47 pengaduan melalui berbagai kanal dalam sebulan terakhir terkait pelayanan pajak. Setelah dianalisis, 23 pengaduan berkaitan dengan kendala teknis aplikasi e-Filing, 15 pengaduan tentang keterlambatan penerbitan SKT, dan ",
+          "options": {
+            "a": "Menugaskan staf untuk merespons semua pengaduan secara individual dan melaporkan hasilnya kepada Kanwil",
+            "b": "Meneruskan semua pengaduan kepada KPP Pratama untuk ditindaklanjuti karena di luar kewenangan KP2KP",
+            "c": "Mengkoordinasikan dengan Seksi Pelayanan untuk perbaikan sistem, membimbing petugas dalam penanganan pengaduan serupa, dan menyusun strategi pencegaha",
+            "d": "Fokus menyelesaikan pengaduan tentang sikap petugas terlebih dahulu karena menyangkut citra organisasi"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menyelenggarakan dan membimbing penanganan pengaduan dengan memecahkan masalah teknis secara sistematis. Kepala KP2KP harus mengkoordinasikan lintas seksi untuk mengatasi a",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "c",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Tahuna menerima 52 pengaduan masyarakat terkait pelayanan pajak dalam sebulan terakhir, dengan 18 pengaduan bersifat kompleks melibatkan sengketa penetapan pajak dan dugaan mal administrasi petugas. Sebagai Kepala KP2KP, bagaimana langka",
+          "options": {
+            "a": "Menugaskan pelaksana untuk menyelesaikan semua pengaduan secara mandiri dan melaporkan hasilnya kepada Kepala KP2KP setiap minggu",
+            "b": "Mengklasifikasi pengaduan berdasarkan tingkat kompleksitas, menyelesaikan pengaduan sederhana di KP2KP, dan mengkoordinasikan pengaduan kompleks denga",
+            "c": "Meneruskan seluruh pengaduan kepada KPP Pratama sebagai unit vertikal di atasnya untuk mendapat penyelesaian yang lebih komprehensif",
+            "d": "Membentuk tim khusus internal KP2KP untuk menangani semua pengaduan termasuk yang kompleks tanpa melibatkan unit lain"
+          },
+          "correct": "b",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan dan membimbing pengelolaan pengaduan dengan koordinasi lintas seksi/unit. Pengaduan kompleks memerlukan koordinasi dengan KPP Pratam",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Morotai menemukan 94 pelaku usaha penangkapan ikan yang belum memiliki NPWP di wilayah kerjanya. Setelah dilakukan analisis, teridentifikasi adanya pemahaman keliru di kalangan nelayan bahwa usaha perikanan tangkap dibebaskan dari pajak.",
+          "options": {
+            "a": "Mengirim surat edaran ke seluruh desa tentang kewajiban perpajakan pelaku usaha perikanan dan meminta kepala desa mensosialisasikan kepada warganya",
+            "b": "Berkoordinasi dengan KPP Pratama untuk mengirim Tim Penyuluh Pajak melakukan sosialisasi massal di pelabuhan perikanan",
+            "c": "Melakukan kunjungan door-to-door ke 94 pelaku usaha tersebut untuk menjelaskan kewajiban perpajakan dan membantu pengurusan NPWP secara langsung",
+            "d": "Menyelenggarakan forum edukasi perpajakan dengan mengundang tokoh masyarakat, kepala desa, dan perwakilan nelayan, kemudian membimbing mereka menjadi "
+          },
+          "correct": "d",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan advokasi kebijakan perpajakan dengan pendekatan pembimbingan kepada pihak-pihak kunci yang berpengaruh. Dengan membimbing tokoh masyarak",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Sabang menerima 63 pengaduan terkait lambatnya penerbitan SKT dan kesulitan aktivasi EFIN secara bersamaan dari berbagai desa dalam wilayah kerjanya. Setelah analisis, ditemukan masalah teknis pada sistem dan keterbatasan SDM di seksi pe",
+          "options": {
+            "a": "Mengkoordinasikan penyelesaian lintas seksi, membimbing pelaksana dalam mengatasi masalah teknis sistem, serta melaporkan solusi sistemik ke KPP Prata",
+            "b": "Meneruskan seluruh pengaduan ke KPP Pratama induk dan meminta mereka menyelesaikan karena sudah melewati SLA",
+            "c": "Menugaskan kepala seksi pelayanan untuk menyelesaikan sendiri semua pengaduan tanpa melibatkan seksi lain",
+            "d": "Meminta masyarakat untuk mengajukan pengaduan ulang setelah sistem diperbaiki oleh pusat"
+          },
+          "correct": "a",
+          "explanation": "Level 3 menyelenggarakan dan membimbing pelaksana dalam mengatasi masalah teknis yang kompleks seperti gangguan sistem secara langsung. Koordinasi lintas seksi diperlukan untuk pen",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Advokasi Kebijakan Perpajakan",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Atambua menemukan 67 pengusaha ekspor produk tenun lokal yang mengeluhkan kompleksitas administrasi restitusi PPN. Setelah analisis, ditemukan kendala pemahaman dokumen ekspor dan bukti pungut. Sebagai Kepala KP2KP, tindakan advokasi yan",
+          "options": {
+            "a": "Menyerahkan penanganan kepada Seksi Pelayanan untuk memberikan konsultasi individual kepada setiap pengusaha",
+            "b": "Menyelenggarakan forum edukasi khusus ekspor dengan melibatkan Bea Cukai dan membimbing tim menyusun modul sederhana restitusi PPN, kemudian berkoordi",
+            "c": "Membuat surat rekomendasi kepada Kanwil DJP untuk menyederhanakan prosedur restitusi PPN bagi seluruh pengusaha ekspor",
+            "d": "Menugaskan Account Representative untuk mendampingi proses restitusi dan melaporkan hasilnya kepada KPP Pratama"
+          },
+          "correct": "b",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing tim dalam aktivitas advokasi kompleks. Pemecahan masalah teknis restitusi PPN ekspor memerlukan koordinasi lintas instans",
+          "source": "Materi Webinar KPP — Advokasi Kebijakan Perpajakan L3",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "b",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Penyusunan Informasi Publik di Bidang Perpajakan",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Ransiki menemukan 89 pelaku usaha perikanan tangkap di wilayah kerjanya yang belum memahami insentif PPh Final. Media lokal sering memberitakan rendahnya kesadaran pajak nelayan. Kepala KP2KP perlu menyusun strategi diseminasi informasi ",
+          "options": {
+            "a": "Menugaskan pelaksana seksi ekstensifikasi untuk membuat konten media sosial tentang insentif PPh Final dan mengunggahnya secara mandiri",
+            "b": "Meminta KPP Pratama induk untuk mengirimkan tim penyuluh karena kasus ini memerlukan penanganan di luar kapasitas KP2KP",
+            "c": "Menyerahkan penyusunan informasi kepada tim pelaksana untuk membuat brosur dan menyebarkannya ke pelabuhan tanpa supervisi khusus",
+            "d": "Menyelenggarakan kelas pajak terkoordinasi dengan melibatkan pelaksana dari seksi pelayanan dan ekstensifikasi, menyusun materi berbasis kebutuhan sek"
+          },
+          "correct": "d",
+          "explanation": "Level 3 mensyaratkan kemampuan menyelenggarakan dan membimbing pelaksanaan penyusunan informasi publik secara terstruktur. Kepala KP2KP harus mengkoordinasikan lintas seksi (pelaya",
+          "source": "Materi Webinar KPP — Penyusunan Informasi Publik di Bidang P",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "d",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Pengelolaan Pengaduan Masyarakat di Bidang Perpaja",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Sanana menerima 73 pengaduan masyarakat terkait keterlambatan penerbitan SKT (Surat Keterangan Terdaftar) yang melibatkan koordinasi dengan KPP Pratama induk. Setelah verifikasi, ditemukan hambatan teknis pada sistem validasi NIK di KPP ",
+          "options": {
+            "a": "Mengkoordinasikan penyelesaian dengan KPP Pratama untuk perbaikan sistem, membimbing petugas loket tentang prosedur prioritas SKT, dan memantau penyel",
+            "b": "Meneruskan seluruh pengaduan ke KPP Pratama dan meminta penyelesaian dalam 30 hari kerja",
+            "c": "Membuat surat pengaduan kolektif ke Kanwil untuk eskalasi masalah sistem validasi NIK",
+            "d": "Menugaskan petugas KP2KP untuk memproses langsung penerbitan SKT tanpa koordinasi dengan KPP Pratama"
+          },
+          "correct": "a",
+          "explanation": "Level 3 memerlukan kemampuan memecahkan masalah teknis kompleks melalui koordinasi lintas unit (KPP Pratama) dan membimbing petugas dalam prosedur yang benar. Kepala KP2KP harus me",
+          "source": "Materi Webinar KPP — Pengelolaan Pengaduan Masyarakat di Bid",
+          "vigTitle": null,
+          "vigBody": null,
+          "userAnswer": "a",
+          "wasCorrect": true
+        },
+        {
+          "type": "regular",
+          "comp": "Ekstensifikasi Perpajakan",
+          "compLevel": 3,
+          "question": "Kepala KP2KP Sabu menerima informasi dari lurah setempat terkait 76 pelaku usaha penjualan hasil laut ekspor yang belum memiliki NPWP. Setelah dilakukan penelitian, ditemukan 58 di antaranya memiliki omzet di atas Rp500 juta per tahun namun belum ter",
+          "options": {
+            "a": "Langsung menerbitkan NPWP jabatan untuk seluruh 58 pelaku usaha dan melaporkan hasilnya ke KPP Pratama",
+            "b": "Menyerahkan seluruh data kepada KPP Pratama untuk ditindaklanjuti karena jumlahnya terlalu besar untuk kapasitas KP2KP",
+            "c": "Membentuk tim koordinasi internal, menyusun strategi pendekatan bertahap dengan stakeholder desa, dan membimbing pelaksana dalam melakukan himbauan se",
+            "d": "Melakukan pemeriksaan lapangan secara serentak terhadap 58 pelaku usaha tersebut dan memberikan sanksi administratif"
+          },
+          "correct": "c",
+          "explanation": "Level 3 menuntut kemampuan menyelenggarakan dan membimbing pelaksanaan ekstensifikasi dengan koordinasi lintas fungsi. Pembentukan tim koordinasi dan strategi pendekatan bertahap m",
+          "source": "Materi Webinar KPP — Ekstensifikasi Perpajakan L3",
           "vigTitle": null,
           "vigBody": null,
           "userAnswer": "c",
